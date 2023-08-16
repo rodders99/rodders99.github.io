@@ -1,0 +1,18 @@
+weight: 1
+title: "Data Professional"
+description: "
+<p>Data Engineering</p><p>
+    <img src='/img/logos/bigQuery.png' style='height:64px;'>
+    <img src='/img/logos/devicon_mysql-wordmarkcolour.png' style='height:64px;'></p>
+
+<p>Data Analytics</p><p>
+    <img src='/img/logos/devicon_rcolour.png' style='width:64px;height:64px;'>
+    <img src='/img/logos/devicon_python-wordmarkcolour.png' style='width:64px;height:64px;'>
+    <img src='/img/logos/devicon_pandas-wordmark.png' style='width:64px;height:64px;'></p>
+
+<p>Data Visualisation</p><p>
+    <img src='/img/logos/logos_tableau.png' style='height:48px;'> 
+    <img src='/img/logos/icons_file-type-excel.png' style='height:64px;'>" 
+image: "img/carousel/rods-dvla.jpg"
+
+
