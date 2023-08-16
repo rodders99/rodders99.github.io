@@ -490,11 +490,11 @@ pluralizelisttitles = false
     tags = true
     search = true
 
-[params.carouselCustomers]
-    items = 6
-    auto_play = false
-    slide_speed = 2000
-    pagination_speed = 1000
+#[params.carouselCustomers]
+#    items = 6
+#    auto_play = false
+#    slide_speed = 2000
+#    pagination_speed = 1000
 
 [params.carouselTestimonials]
     items = 4
@@ -524,7 +524,7 @@ pluralizelisttitles = false
     # at 'exampleSite/data/testimonials'.
     # For more information take a look at the README.
     title = "Testimonials"
-    subtitle = "Have a look the replies I received when I asked for a testimonial"
+    subtitle = "Have a look at the replies I received when I asked for a testimonial"
 
 [params.see_more]
     enable = true
@@ -544,7 +544,7 @@ pluralizelisttitles = false
 
 [params.recent_posts]
     enable = true
-    title = "From our blog"
+    title = "From my blog"
     subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
     hide_summary = false
 
