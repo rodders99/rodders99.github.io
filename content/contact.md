@@ -3,8 +3,22 @@ title = "Contact"
 id = "contact"
 +++
 
-# We are here to help you
+# How can I help you?
 
-Are you curious about something? Do you have some kind of problem with our products? As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built gay party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.
+Get in contact, lets have a chat
 
-Please feel free to contact us, our customer service center is working for you 24/7.
+
+{{< fa phone >}} {{< rawhtml >}}
+
+<a href="tel:+44 788 757 0820">+44 788 757 0820</a>
+
+{{</ rawhtml >}}
+
+{{< fa envelope >}} rod.slateruk@gmail.com
+
+{{< fa fab github >}} https://github.com/rodders99
+
+{{< fa globe >}} https://rodders99.github.io
+
+{{< fa fab linkedin >}} https://linkedin.com/rod-slater-uk
+

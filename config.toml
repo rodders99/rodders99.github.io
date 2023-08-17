@@ -30,13 +30,13 @@ pluralizelisttitles = false
     weight     = 1
 
 [[menu.main]]
-    name       = "Option 1: Default Page"
+    name       = "Portfolio"
     url        = "/"
     weight     = 1
     parent     = "menu.home"
 
 [[menu.main]]
-    name       = "Option 2: Application"
+    name       = "Smart Home"
     url        = "/"
     weight     = 2
     parent     = "menu.home"
@@ -59,98 +59,98 @@ pluralizelisttitles = false
     weight     = 5
     parent     = "menu.home"
 
-[[menu.main]]
-    name       = "Features"
-    identifier = "menu.features"
-    url        = "/img/template-easy-customize.png"
-    weight     = 3
+#[[menu.main]]
+#    name       = "Features"
+#    identifier = "menu.features"
+#    url        = "/img/template-easy-customize.png"
+#    weight     = 3
 
-[[menu.main]]
-    name       = "Shortcodes"
-    identifier = "section.shortcodes"
-    url        = ""
-    weight     = 1
-    parent     = "menu.features"
-    post       = 1
+#[[menu.main]]
+#    name       = "Shortcodes"
+#    identifier = "section.shortcodes"
+#    url        = ""
+#    weight     = 1
+#    parent     = "menu.features"
+#    post       = 1
 
-[[menu.main]]
-    name       = "Header variations"
-    identifier = "section.headervariations"
-    url        = ""
-    weight     = 2
-    parent     = "menu.features"
-    post       = 2
+#[[menu.main]]
+#    name       = "Header variations"
+#    identifier = "section.headervariations"
+#    url        = ""
+#    weight     = 2
+#    parent     = "menu.features"
+#    post       = 2
 
-[[menu.main]]
-    name       = "Accordions"
-    url        = ""
-    weight     = 1
-    parent     = "section.shortcodes"
+#[[menu.main]]
+#    name       = "Accordions"
+#    url        = ""
+#    weight     = 1
+#    parent     = "section.shortcodes"
 
-[[menu.main]]
-    name       = "Alerts"
-    url        = ""
-    weight     = 2
-    parent     = "section.shortcodes"
+#[[menu.main]]
+#    name       = "Alerts"
+#    url        = ""
+#    weight     = 2
+#    parent     = "section.shortcodes"
 
-[[menu.main]]
-    name       = "Buttons"
-    url        = ""
-    weight     = 3
-    parent     = "section.shortcodes"
+#[[menu.main]]
+#    name       = "Buttons"
+#    url        = ""
+#    weight     = 3
+#    parent     = "section.shortcodes"
 
-[[menu.main]]
-    name       = "Content Boxes"
-    url        = ""
-    weight     = 4
-    parent     = "section.shortcodes"
+#[[menu.main]]
+#    name       = "Content Boxes"
+#    url        = ""
+#    weight     = 4
+#    parent     = "section.shortcodes"
 
-[[menu.main]]
-    name       = "Horizontal Blocks"
-    url        = ""
-    weight     = 5
-    parent     = "section.shortcodes"
+#[[menu.main]]
+#    name       = "Horizontal Blocks"
+#    url        = ""
+#    weight     = 5
+#    parent     = "section.shortcodes"
 
-[[menu.main]]
-    name       = "Pagination"
-    url        = ""
-    weight     = 6
-    parent     = "section.shortcodes"
+#[[menu.main]]
+#    name       = "Pagination"
+#    url        = ""
+#    weight     = 6
+#    parent     = "section.shortcodes"
 
-[[menu.main]]
-    name       = "Tabs"
-    url        = ""
-    weight     = 7
-    parent     = "section.shortcodes"
+#[[menu.main]]
+#    name       = "Tabs"
+#    url        = ""
+#    weight     = 7
+#    parent     = "section.shortcodes"
 
-[[menu.main]]
-    name       = "Typography"
-    url        = ""
-    weight     = 8
-    parent     = "section.shortcodes"
+#[[menu.main]]
+#    name       = "Typography"
+#    url        = ""
+#    weight     = 8
+#    parent     = "section.shortcodes"
 
-[[menu.main]]
-    name       = "Default Sticky Header"
-    url        = ""
-    weight     = 1
-    parent     = "section.headervariations"
+#[[menu.main]]
+#    name       = "Default Sticky Header"
+#    url        = ""
+#    weight     = 1
+#    parent     = "section.headervariations"
+#
+#[[menu.main]]
+#    name       = "No Sticky Header"
+#    url        = ""
+#    weight     = 2
+#    parent     = "section.headervariations"
 
-[[menu.main]]
-    name       = "No Sticky Header"
-    url        = ""
-    weight     = 2
-    parent     = "section.headervariations"
-
-[[menu.main]]
-    name       = "Light Header"
-    url        = ""
-    weight     = 3
-    parent     = "section.headervariations"
+#[[menu.main]]
+#    name       = "Light Header"
+#    url        = ""
+#    weight     = 3
+#    parent     = "section.headervariations"
 
 [[menu.main]]
     name       = "Portfolio"
     identifier = "menu.portfolio"
-    url        = "/img/template-homepage.png"
+    url        = "/img/tableau-df_veh0220.png"
     weight     = 3
 
 [[menu.main]]
@@ -218,7 +218,7 @@ pluralizelisttitles = false
     post       = 2
 
 [[menu.main]]
-    name       = "About Us"
+    name       = "About Me"
     url        = ""
     weight     = 1
     parent     = "section.about"
@@ -344,7 +344,7 @@ pluralizelisttitles = false
 [[menu.main]]
     name       = "FAQ"
     identifier = "menu.faq"
-    url        = "/faq/"
+    url        = "/non-faq/"
     weight     = 6
 
 [[menu.main]]
