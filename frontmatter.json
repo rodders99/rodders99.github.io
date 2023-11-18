@@ -49,10 +49,10 @@
           "type": "string"
         },
         {
-          "title" : "Author",
-          "name" : "author",
-          "type" : "string",
-          "default" : "Rodders"
+          "title": "Author",
+          "name": "author",
+          "type": "string",
+          "default": "Rodders"
         }
       ]
     }
@@ -69,19 +69,11 @@
       "title": "blog",
       "path": "[[workspace]]/content/blog"
     }
-  ],
-  "frontMatter.taxonomy.tags": [
-    "go",
-    "golang",
-    "hugo",
-    "ipsum",
-    "programming",
-    "theme"
-  ],
-  "frontMatter.taxonomy.categories": [
-    "lorem",
-    "programming",
-    "pseudo",
-    "starting"
+    ,
+    {
+      "title": "projects",
+      "path": "[[workspace]]/content/projects"
+    }
+    
   ]
 }

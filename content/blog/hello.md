@@ -9,7 +9,7 @@ menu: none
 
 This is some initial copy for the new site
 
-![](/images/lilly.png)
+![a](/images/lilly.png)
 
 /images/lilly.png
 
