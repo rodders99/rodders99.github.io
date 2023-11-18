@@ -13,7 +13,6 @@ banner: /img/salifort_logo.png
 ---
 ![a](/img/salifort_logo.png)
 
-
 ### [This paper]({{< notebook "Activity_3b_Salifort_Motors_project_EDA_ANALYSIS.html" >}})
 
 ## Google Advanced Data Analytics Capstone Project - Salifort Motors
@@ -36,4 +35,3 @@ The project was completed using the PACE framework and the conclusion was a numb
       - Machine learning comparative modelling using Logistic Regression, Decision Tree and Random Forest
       - Demonstration of the final model for interactive and batch examples
     - Executive Summary recommendations
-    - 
