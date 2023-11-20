@@ -485,7 +485,7 @@ pluralizelisttitles = false
 
 [permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
-    projects = "/projects/:filename/"
+    projects = "/projects/:year/:month/:day/:filename/"
 
 # Enable or disable top bar with social icons
 [params.topbar]

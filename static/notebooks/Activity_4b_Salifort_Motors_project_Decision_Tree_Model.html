@@ -6844,7 +6844,9 @@ all of MD as it is not optimized for dense, information rich UIs.
    * https://material-components-web.appspot.com/elevation.html
    */
 
-  --jp-shadow-base-lightness: 0;
+  /* The dark theme shadows need a bit of work, but this will probably also require work on the core layout
+   * colors used in the theme as well. */
+  --jp-shadow-base-lightness: 32;
   --jp-shadow-umbra-color: rgba(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
@@ -6898,10 +6900,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--md-grey-400);
-  --jp-border-color1: var(--md-grey-400);
-  --jp-border-color2: var(--md-grey-300);
-  --jp-border-color3: var(--md-grey-200);
+  --jp-border-color0: var(--md-grey-700);
+  --jp-border-color1: var(--md-grey-700);
+  --jp-border-color2: var(--md-grey-800);
+  --jp-border-color3: var(--md-grey-900);
   --jp-inverse-border-color: var(--md-grey-600);
   --jp-border-radius: 2px;
 
@@ -6930,20 +6932,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-ui-font-color0: rgba(255, 255, 255, 1);
+  --jp-ui-font-color1: rgba(255, 255, 255, 0.87);
+  --jp-ui-font-color2: rgba(255, 255, 255, 0.54);
+  --jp-ui-font-color3: rgba(255, 255, 255, 0.38);
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(255, 255, 255, 1);
-  --jp-ui-inverse-font-color1: rgba(255, 255, 255, 1);
-  --jp-ui-inverse-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-ui-inverse-font-color3: rgba(255, 255, 255, 0.5);
+  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
+  --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
+  --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
+  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
 
   /* Content Fonts
    *
@@ -6971,11 +6973,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(0, 0, 0, 1);
-  --jp-content-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-content-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-content-font-color3: rgba(0, 0, 0, 0.38);
-  --jp-content-link-color: var(--md-blue-900);
+  --jp-content-font-color0: rgba(255, 255, 255, 1);
+  --jp-content-font-color1: rgba(255, 255, 255, 1);
+  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
+  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
+  --jp-content-link-color: var(--md-blue-300);
   --jp-content-font-family: system-ui, -apple-system, blinkmacsystemfont,
     'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -7006,10 +7008,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: white;
-  --jp-layout-color1: white;
-  --jp-layout-color2: var(--md-grey-200);
-  --jp-layout-color3: var(--md-grey-400);
+  --jp-layout-color0: #111;
+  --jp-layout-color1: var(--md-grey-900);
+  --jp-layout-color2: var(--md-grey-800);
+  --jp-layout-color3: var(--md-grey-700);
   --jp-layout-color4: var(--md-grey-600);
 
   /* Inverse Layout
@@ -7018,40 +7020,40 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: #111;
-  --jp-inverse-layout-color1: var(--md-grey-900);
-  --jp-inverse-layout-color2: var(--md-grey-800);
-  --jp-inverse-layout-color3: var(--md-grey-700);
+  --jp-inverse-layout-color0: white;
+  --jp-inverse-layout-color1: white;
+  --jp-inverse-layout-color2: var(--md-grey-200);
+  --jp-inverse-layout-color3: var(--md-grey-400);
   --jp-inverse-layout-color4: var(--md-grey-600);
 
   /* Brand/accent */
 
-  --jp-brand-color0: var(--md-blue-900);
-  --jp-brand-color1: var(--md-blue-700);
+  --jp-brand-color0: var(--md-blue-700);
+  --jp-brand-color1: var(--md-blue-500);
   --jp-brand-color2: var(--md-blue-300);
   --jp-brand-color3: var(--md-blue-100);
   --jp-brand-color4: var(--md-blue-50);
-  --jp-accent-color0: var(--md-green-900);
-  --jp-accent-color1: var(--md-green-700);
+  --jp-accent-color0: var(--md-green-700);
+  --jp-accent-color1: var(--md-green-500);
   --jp-accent-color2: var(--md-green-300);
   --jp-accent-color3: var(--md-green-100);
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: var(--md-orange-900);
-  --jp-warn-color1: var(--md-orange-700);
+  --jp-warn-color0: var(--md-orange-700);
+  --jp-warn-color1: var(--md-orange-500);
   --jp-warn-color2: var(--md-orange-300);
   --jp-warn-color3: var(--md-orange-100);
-  --jp-error-color0: var(--md-red-900);
-  --jp-error-color1: var(--md-red-700);
+  --jp-error-color0: var(--md-red-700);
+  --jp-error-color1: var(--md-red-500);
   --jp-error-color2: var(--md-red-300);
   --jp-error-color3: var(--md-red-100);
-  --jp-success-color0: var(--md-green-900);
-  --jp-success-color1: var(--md-green-700);
+  --jp-success-color0: var(--md-green-700);
+  --jp-success-color1: var(--md-green-500);
   --jp-success-color2: var(--md-green-300);
   --jp-success-color3: var(--md-green-100);
-  --jp-info-color0: var(--md-cyan-900);
-  --jp-info-color1: var(--md-cyan-700);
+  --jp-info-color0: var(--md-cyan-700);
+  --jp-info-color1: var(--md-cyan-500);
   --jp-info-color2: var(--md-cyan-300);
   --jp-info-color3: var(--md-cyan-100);
 
@@ -7061,8 +7063,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: var(--md-grey-100);
-  --jp-cell-editor-border-color: var(--md-grey-300);
+  --jp-cell-editor-background: var(--jp-layout-color1);
+  --jp-cell-editor-border-color: var(--md-grey-700);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
@@ -7070,8 +7072,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-font-family: var(--jp-code-font-family-default);
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
-  --jp-cell-prompt-not-active-opacity: 0.5;
-  --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
+  --jp-cell-prompt-not-active-opacity: 1;
+  --jp-cell-prompt-not-active-font-color: var(--md-grey-300);
 
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
@@ -7085,7 +7087,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: var(--md-blue-50);
+  --jp-notebook-multiselected-color: rgba(33, 150, 243, 0.24);
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -7100,13 +7102,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: #fdd;
-  --jp-rendermime-table-row-background: var(--md-grey-100);
-  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
+  --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
+  --jp-rendermime-table-row-background: var(--md-grey-900);
+  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(0, 0, 0, 0.25);
+  --jp-dialog-background: rgba(0, 0, 0, 0.6);
 
   /* Console specific styles */
 
@@ -7114,12 +7116,12 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Toolbar specific styles */
 
-  --jp-toolbar-border-color: var(--jp-border-color1);
+  --jp-toolbar-border-color: var(--jp-border-color2);
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: var(--jp-layout-color1);
-  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24);
+  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
-  --jp-toolbar-active-background: var(--md-grey-300);
+  --jp-toolbar-active-background: var(--jp-layout-color0);
 
   /* Statusbar specific styles */
 
@@ -7128,43 +7130,43 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Input field styles */
 
   --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-input-active-background: var(--jp-layout-color1);
-  --jp-input-hover-background: var(--jp-layout-color1);
-  --jp-input-background: var(--md-grey-100);
+  --jp-input-active-background: var(--jp-layout-color0);
+  --jp-input-hover-background: var(--jp-layout-color2);
+  --jp-input-background: var(--md-grey-800);
   --jp-input-border-color: var(--jp-inverse-border-color);
   --jp-input-active-border-color: var(--jp-brand-color1);
   --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: #d9d9d9;
-  --jp-editor-selected-focused-background: #d7d4f0;
+  --jp-editor-selected-background: var(--jp-layout-color2);
+  --jp-editor-selected-focused-background: rgba(33, 150, 243, 0.24);
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: #008000;
-  --jp-mirror-editor-atom-color: #88f;
-  --jp-mirror-editor-number-color: #080;
-  --jp-mirror-editor-def-color: #00f;
-  --jp-mirror-editor-variable-color: var(--md-grey-900);
-  --jp-mirror-editor-variable-2-color: rgb(0, 54, 109);
-  --jp-mirror-editor-variable-3-color: #085;
-  --jp-mirror-editor-punctuation-color: #05a;
-  --jp-mirror-editor-property-color: #05a;
+  --jp-mirror-editor-keyword-color: var(--md-green-500);
+  --jp-mirror-editor-atom-color: var(--md-blue-300);
+  --jp-mirror-editor-number-color: var(--md-green-400);
+  --jp-mirror-editor-def-color: var(--md-blue-600);
+  --jp-mirror-editor-variable-color: var(--md-grey-300);
+  --jp-mirror-editor-variable-2-color: var(--md-blue-500);
+  --jp-mirror-editor-variable-3-color: var(--md-green-600);
+  --jp-mirror-editor-punctuation-color: var(--md-blue-400);
+  --jp-mirror-editor-property-color: var(--md-blue-400);
   --jp-mirror-editor-operator-color: #a2f;
   --jp-mirror-editor-comment-color: #408080;
-  --jp-mirror-editor-string-color: #ba2121;
-  --jp-mirror-editor-string-2-color: #708;
+  --jp-mirror-editor-string-color: #ff7070;
+  --jp-mirror-editor-string-2-color: var(--md-purple-300);
   --jp-mirror-editor-meta-color: #a2f;
   --jp-mirror-editor-qualifier-color: #555;
-  --jp-mirror-editor-builtin-color: #008000;
+  --jp-mirror-editor-builtin-color: var(--md-green-600);
   --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: #170;
-  --jp-mirror-editor-attribute-color: #00c;
-  --jp-mirror-editor-header-color: blue;
-  --jp-mirror-editor-quote-color: #090;
-  --jp-mirror-editor-link-color: #00c;
+  --jp-mirror-editor-tag-color: var(--md-green-700);
+  --jp-mirror-editor-attribute-color: var(--md-blue-700);
+  --jp-mirror-editor-header-color: var(--md-blue-500);
+  --jp-mirror-editor-quote-color: var(--md-green-300);
+  --jp-mirror-editor-link-color: var(--md-blue-700);
   --jp-mirror-editor-error-color: #f00;
   --jp-mirror-editor-hr-color: #999;
 
@@ -7174,17 +7176,17 @@ all of MD as it is not optimized for dense, information rich UIs.
     and the icon of the user.
   */
 
-  --jp-collaborator-color1: #ffad8e;
-  --jp-collaborator-color2: #dac83d;
-  --jp-collaborator-color3: #72dd76;
-  --jp-collaborator-color4: #00e4d0;
-  --jp-collaborator-color5: #45d4ff;
-  --jp-collaborator-color6: #e2b1ff;
-  --jp-collaborator-color7: #ff9de6;
+  --jp-collaborator-color1: #ad4a00;
+  --jp-collaborator-color2: #7b6a00;
+  --jp-collaborator-color3: #007e00;
+  --jp-collaborator-color4: #008772;
+  --jp-collaborator-color5: #0079b9;
+  --jp-collaborator-color6: #8b45c6;
+  --jp-collaborator-color7: #be208b;
 
   /* Vega extension styles */
 
-  --jp-vega-background: white;
+  --jp-vega-background: var(--md-grey-400);
 
   /* Sidebar-related styles */
 
@@ -7192,15 +7194,28 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Search-related styles */
 
-  --jp-search-toggle-off-opacity: 0.5;
+  --jp-search-toggle-off-opacity: 0.6;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: rgb(245, 200, 0);
+  --jp-search-selected-match-background-color: rgb(255, 225, 0);
   --jp-search-selected-match-color: black;
   --jp-search-unselected-match-background-color: var(
     --jp-inverse-layout-color0
   );
   --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
+
+  /* scrollbar related styles. Supports every browser except Edge. */
+
+  /* colors based on JetBrain's Darcula theme */
+
+  --jp-scrollbar-background-color: #3f4244;
+  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
+
+  /* hacks for setting the thumb shape. These do nothing in Firefox */
+
+  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 
   /* Icon colors that work well with light or dark backgrounds */
   --jp-icon-contrast-color0: var(--md-purple-600);
@@ -7222,15 +7237,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* File or activity icons and switch semantic variables */
   --jp-jupyter-icon-color: #f37626;
   --jp-notebook-icon-color: #f37626;
-  --jp-json-icon-color: var(--md-orange-700);
-  --jp-console-icon-background-color: var(--md-blue-700);
+  --jp-json-icon-color: var(--md-orange-500);
+  --jp-console-icon-background-color: var(--md-blue-500);
   --jp-console-icon-color: white;
-  --jp-terminal-icon-background-color: var(--md-grey-800);
-  --jp-terminal-icon-color: var(--md-grey-200);
-  --jp-text-editor-icon-color: var(--md-grey-700);
-  --jp-inspector-icon-color: var(--md-grey-700);
+  --jp-terminal-icon-background-color: var(--md-grey-200);
+  --jp-terminal-icon-color: var(--md-grey-800);
+  --jp-text-editor-icon-color: var(--md-grey-200);
+  --jp-inspector-icon-color: var(--md-grey-200);
   --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--md-orange-900);
+  --jp-switch-true-position-color: var(--md-orange-700);
 }
 </style>
 <style type="text/css">
@@ -7474,7 +7489,7 @@ a.anchor-link {
   }
 </style>
 <!-- End of mermaid configuration --></head>
-<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7482,26 +7497,63 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Decision-Tree-Model">Decision Tree Model<a class="anchor-link" href="#Decision-Tree-Model">¶</a></h1><h2 id="Model-Overview">Model Overview<a class="anchor-link" href="#Model-Overview">¶</a></h2><p>FAdvantages:
-Simple to understand and to interpret. ...
-Requires little data preparation. ...
-The cost of using the tree (i.e., predicting data) is logarithmic in the number of data points used to train the tree.
-Able to handle both numerical and categorical data. ...
-Able to handle multi-output problems.</p>
-<p>Caveats:
-Prone to Overfitting. ...
-Unstable to Changes in the Data. ...
-Unstable to Noise. ...
-Non-Continuous. ...
-Unbalanced Classes. ...
-Greedy Algorithm. ...
-Computationally Expensive on Large Datasets. ...
-Complex Calculations on Large Datasets.</p>
-<h2 id="Notes">Notes<a class="anchor-link" href="#Notes">¶</a></h2><p>This runs very quickly, no real need to pickle the model.</p>
-<h2 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">¶</a></h2><p>Change variables as required :</p>
-<pre><code>model_prefix     = :str      # prefix for results.csv added to dataset e.g. DT = Decision Tree, LR = logistical Regrression, RF = RandomForest
-dataset          = :str      # datasetname for results.csv
-rerun            = :int      # 1 = append to the Results.csv file with no headers / 0 = Write new file with headers</code></pre>
+<table style="margin-right:auto;margin-left:0px">
+<tr>
+<td><a href="/"><img alt="No description has been provided for this image" src="/img/home.png"/></a></td>
+<td><a href="/">Home</a></td>
+<td><a href="/notebooks/Activity_3a_Salifort_Motors_project_EDA_cleanse.html">EDA Cleanse</a></td>
+<td><a href="/notebooks/Activity_3b_Salifort_Motors_project_EDA_ANALYSIS.html">EDA Analysis</a></td>
+<td><a href="/notebooks/Activity_3c_Salifort_Motors_project_Feature-Engineering.html">Feature Engineering</a></td>
+<td><a href="/notebooks/Activity_4a_Salifort_Motors_project_Logistical_Regression_Model.html">ML Models - Logistical Regression</a></td>
+<td>ML Models - Decision Tree</td>
+<td><a href="/notebooks/Activity_4c_Salifort_Motors_project_Random_Forest_Model.html">ML Models - Random Forest</a></td>
+<td><a href="/notebooks/Activity_9z_Salifort_Motors_project_MODEL-DEMONSTRATION.html">Model Demonstration</a></td>
+</tr>
+</table>
+<h1 id="Salifort-Motors---ML-Modelling---Decision-Tree"><a id="toc1_"></a><a href="#toc0_">Salifort Motors - ML Modelling - Decision Tree</a><a class="anchor-link" href="#Salifort-Motors---ML-Modelling---Decision-Tree">¶</a></h1><h3 id="Document-Information"><a id="toc1_1_1_"></a><a href="#toc0_">Document Information</a><a class="anchor-link" href="#Document-Information">¶</a></h3><table style="margin-right:auto;margin-left:0px">
+<tbody>
+<tr>
+<td>Document Title</td>
+<td>Salifort Motors - ML Modelling - Decision Tree</td>
+</tr>
+<tr>
+<td>Author</td>
+<td>Rod Slater</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Created</td>
+<td>01-11-2023</td>
+</tr>
+<tr>
+<td>Modified</td>
+<td>16-11-2023</td>
+</tr>
+</tbody></table>
+<h3 id="Client-Details"><a id="toc1_1_2_"></a><a href="#toc0_">Client Details</a><a class="anchor-link" href="#Client-Details">¶</a></h3> <table style="margin-right:auto;margin-left:0px">
+<tbody>
+<tr>
+<td>Client Name</td>
+<td>Salifort Motors</td>
+</tr>
+<tr>
+<td>Client Contact</td>
+<td>Mr HR Team</td>
+</tr>
+<tr>
+<td>Client Email </td>
+<td>hr@salifortmotors.it</td>
+</tr>
+<tr>
+<td>Client Project</td>
+<td>HR Team Data Driven Solutions from Machine Learning Models</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Document-Overview"><a id="toc1_1_3_"></a><a href="#toc0_">Document Overview</a><a class="anchor-link" href="#Document-Overview">¶</a></h3><p>ML Modelling using Decision Tree for HR Data provided by Salifort Motors. This notebook details the Decision Tree Modelling process and Performance comparisons</p>
 </div>
 </div>
 </div>
@@ -7512,7 +7564,120 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Initialise-Notebook">Initialise Notebook<a class="anchor-link" href="#Initialise-Notebook">¶</a></h2>
+<h1 id="Table-of-contents">Table of contents<a id="toc0_"></a><a class="anchor-link" href="#Table-of-contents">¶</a></h1><ul>
+<li><a href="#toc1_">Salifort Motors - ML Modelling - Decision Tree</a><ul>
+<li><a href="#toc1_1_1_">Document Information</a></li>
+<li><a href="#toc1_1_2_">Client Details</a></li>
+<li><a href="#toc1_1_3_">Document Overview</a></li>
+</ul>
+</li>
+<li><a href="#toc2_">Decision Tree Model</a><ul>
+<li><a href="#toc2_1_">Notes</a></li>
+<li><a href="#toc2_2_">Initialise Notebook</a><ul>
+<li><a href="#toc2_2_1_">Import Packages</a></li>
+<li><a href="#toc2_2_2_">Set Pandas Options</a></li>
+<li><a href="#toc2_2_3_">Initialise Notebook Options</a></li>
+<li><a href="#toc2_2_4_">Define Functions</a><ul>
+<li><a href="#toc2_2_4_1_">beepr() - make a beep when cell complete (typically fit ops)</a></li>
+<li><a href="#toc2_2_4_2_">display_results() - Function to retrieve scores from Results.csv and display them</a></li>
+<li><a href="#toc2_2_4_3_">predict_test_scores() - Function to get scores from Prediction models</a></li>
+<li><a href="#toc2_2_4_4_">format_GS_results() - Function to get scores from Gridsearch</a></li>
+<li><a href="#toc2_2_4_5_">make_lr_results(model_name, model_object, X_var, y_var, y_pred_var)</a></li>
+<li><a href="#toc2_2_4_6_">Classification Report</a></li>
+<li><a href="#toc2_2_4_7_">Read / Write Pickle Function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#toc3_">Construct Model - DecisionTree - All Features</a><ul>
+<li><a href="#toc3_1_">Import data - DT1</a><ul>
+<li><a href="#toc3_1_1_1_">Code flags:</a></li>
+</ul>
+</li>
+<li><a href="#toc3_2_">Prepare data for modelling - DT1</a></li>
+<li><a href="#toc3_3_">Isolate Outcome and Feature Variables - DT1</a></li>
+<li><a href="#toc3_4_">Test Train split data - DT1</a></li>
+<li><a href="#toc3_5_">Begin Modelling <code>model_dt1</code> - Train data</a><ul>
+<li><a href="#toc3_5_1_">Instantiate Model - Decision Tree - GridSearch - <code>model_dt1</code> - Train data</a></li>
+<li><a href="#toc3_5_2_">Fit Data</a></li>
+<li><a href="#toc3_5_3_">Get &amp; Display GridSearch best_estimator results - Decision Tree - Train Data</a><ul>
+<li><a href="#toc3_5_3_1_">Format and Save Model Scores - <code>model_dt1</code> - Train data</a></li>
+<li><a href="#toc3_5_3_2_">Display Results - <code>model_dt1</code> - Train data</a></li>
+</ul>
+</li>
+<li><a href="#toc3_5_4_">Make Predictions - Decision Tree best_model_ - <code>model_dt1</code> - Test data</a><ul>
+<li><a href="#toc3_5_4_1_">Classification Report - <code>model_dt1</code> - Test data</a></li>
+<li><a href="#toc3_5_4_2_">Prepare and Save Results - Decision Tree - Predict - <code>model_dt1</code> - Test data</a></li>
+<li><a href="#toc3_5_4_3_">Display Results - Test - <code>model_dt1</code> - Test data</a></li>
+</ul>
+</li>
+<li><a href="#toc3_5_5_">Make Predictions - Decision Tree best_estimator_ - <code>model_dt1</code> - Train data</a><ul>
+<li><a href="#toc3_5_5_1_">Classification Report - <code>model_dt1</code> - Train data</a></li>
+<li><a href="#toc3_5_5_2_">Prepare and Save Results - Decision Tree - Predict - <code>model_dt1</code> - Train data</a></li>
+<li><a href="#toc3_5_5_3_">Display Results</a></li>
+<li><a href="#toc3_5_5_4_"> Decision Tree Plot - Visualise splits - <code>model_dt1</code></a></li>
+<li><a href="#toc3_5_5_5_">Confusion Matrix Plots</a></li>
+<li><a href="#toc3_5_5_6_">Feature Importance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#toc4_">END</a></li>
+<li><a href="#toc5_">Construct Model - Decision Tree - No Departments</a><ul>
+<li><a href="#toc5_1_">Import data - <code>DT2</code></a></li>
+<li><a href="#toc5_2_">Prepare data for modelling - <code>model_dt2</code></a></li>
+<li><a href="#toc5_3_">Isolate Outcome and Feature Variables - <code>model_dt2</code></a></li>
+<li><a href="#toc5_4_">Test Train split data - <code>model_dt2</code></a></li>
+<li><a href="#toc5_5_">Begin Modelling <code>model_dt2</code> - Train data</a><ul>
+<li><a href="#toc5_5_1_">Instantiate Model - Decision Tree - GridSearch - <code>model_dt2</code> - Train data</a></li>
+<li><a href="#toc5_5_2_">Fit Data</a></li>
+<li><a href="#toc5_5_3_">Get &amp; Display GridSearch best_estimator results - <code>model_dt2</code> - Train</a><ul>
+<li><a href="#toc5_5_3_1_">Format and Save Model Scores - <code>model_dt2</code> - Train data</a></li>
+<li><a href="#toc5_5_3_2_">Display Results - <code>model_dt2</code> - Train data</a></li>
+</ul>
+</li>
+<li><a href="#toc5_5_4_">Make Predictions - Decision Tree best_model_ - <code>model_dt2</code> - Test data</a><ul>
+<li><a href="#toc5_5_4_1_">Classification Report - <code>model_dt2</code> - Test data</a></li>
+<li><a href="#toc5_5_4_2_">Prepare and Save Results - Decision Tree - Predict - <code>model_dt2</code> - Test data</a></li>
+<li><a href="#toc5_5_4_3_">Display Results - Test - <code>model_dt2</code> - Test data</a></li>
+</ul>
+</li>
+<li><a href="#toc5_5_5_">Make Predictions - Decision Tree best_estimator_ - <code>model_dt2</code> - Train data</a><ul>
+<li><a href="#toc5_5_5_1_">Classification Report - <code>model_dt2</code> - Train data</a></li>
+<li><a href="#toc5_5_5_2_">Prepare and Save Results - Decision Tree - Predict - <code>model_dt2</code> - Train data</a></li>
+<li><a href="#toc5_5_5_3_">Display Results</a></li>
+<li><a href="#toc5_5_5_4_"> Decision Tree Plot - Visualise splits - <code>model_dt2</code></a></li>
+<li><a href="#toc5_5_5_5_">Confusion Matrix Plots</a></li>
+<li><a href="#toc5_5_5_6_">Feature Importance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#toc6_">END</a></li>
+<li><a href="#toc7_">Review Results</a><ul>
+<li><a href="#toc7_1_">Dataset comparison - Decision Tree</a></li>
+<li><a href="#toc7_2_">Model performance</a></li>
+</ul>
+</li>
+<li><a href="#toc8_">Feature Importance</a><ul>
+<li><a href="#toc8_1_">Conclusion, model comparison - Decision Tree.</a></li>
+</ul>
+</li>
+</ul>
+<!-- vscode-jupyter-toc-config
+	numbering=false
+	anchor=true
+	flat=false
+	minLevel=1
+	maxLevel=6
+	/vscode-jupyter-toc-config -->
+<!-- THIS CELL WILL BE REPLACED ON TOC UPDATE. DO NOT WRITE YOUR TEXT IN THIS CELL -->
 </div>
 </div>
 </div>
@@ -7523,7 +7688,39 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Import-Packages">Import Packages<a class="anchor-link" href="#Import-Packages">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Decision-Tree-Model"><a id="toc2_"></a><a href="#toc0_">Decision Tree Model</a><a class="anchor-link" href="#Decision-Tree-Model">¶</a></h1><h2 id="Notes"><a id="toc2_1_"></a><a href="#toc0_">Notes</a><a class="anchor-link" href="#Notes">¶</a></h2><p>This runs very quickly, no real need to pickle the model.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Initialise-Notebook"><a id="toc2_2_"></a><a href="#toc0_">Initialise Notebook</a><a class="anchor-link" href="#Initialise-Notebook">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Import-Packages"><a id="toc2_2_1_"></a><a href="#toc0_">Import Packages</a><a class="anchor-link" href="#Import-Packages">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7580,7 +7777,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Set-Pandas-Options">Set Pandas Options<a class="anchor-link" href="#Set-Pandas-Options">¶</a></h3>
+<h3 id="Set-Pandas-Options"><a id="toc2_2_2_"></a><a href="#toc0_">Set Pandas Options</a><a class="anchor-link" href="#Set-Pandas-Options">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7609,7 +7806,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Initialise-Notebook-Options">Initialise Notebook Options<a class="anchor-link" href="#Initialise-Notebook-Options">¶</a></h3>
+<h3 id="Initialise-Notebook-Options"><a id="toc2_2_3_"></a><a href="#toc0_">Initialise Notebook Options</a><a class="anchor-link" href="#Initialise-Notebook-Options">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7635,7 +7832,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Define-Functions">Define Functions<a class="anchor-link" href="#Define-Functions">¶</a></h3>
+<h3 id="Define-Functions"><a id="toc2_2_4_"></a><a href="#toc0_">Define Functions</a><a class="anchor-link" href="#Define-Functions">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7646,7 +7843,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="beepr()---make-a-beep-when-cell-complete-(typically-fit-ops)">beepr() - make a beep when cell complete (typically fit ops)<a class="anchor-link" href="#beepr()---make-a-beep-when-cell-complete-(typically-fit-ops)">¶</a></h4>
+<h4 id="beepr()---make-a-beep-when-cell-complete-(typically-fit-ops)"><a id="toc2_2_4_1_"></a><a href="#toc0_">beepr() - make a beep when cell complete (typically fit ops)</a><a class="anchor-link" href="#beepr()---make-a-beep-when-cell-complete-(typically-fit-ops)">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7681,7 +7878,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="display_results()---Function-to-retrieve-scores-from-Results.csv-and-display-them">display_results() - Function to retrieve scores from Results.csv and display them<a class="anchor-link" href="#display_results()---Function-to-retrieve-scores-from-Results.csv-and-display-them">¶</a></h4>
+<h4 id="display_results()---Function-to-retrieve-scores-from-Results.csv-and-display-them"><a id="toc2_2_4_2_"></a><a href="#toc0_">display_results() - Function to retrieve scores from Results.csv and display them</a><a class="anchor-link" href="#display_results()---Function-to-retrieve-scores-from-Results.csv-and-display-them">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7719,7 +7916,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="predict_test_scores()---Function-to-get-scores-from-Prediction-models">predict_test_scores() - Function to get scores from Prediction models<a class="anchor-link" href="#predict_test_scores()---Function-to-get-scores-from-Prediction-models">¶</a></h4>
+<h4 id="predict_test_scores()---Function-to-get-scores-from-Prediction-models"><a id="toc2_2_4_3_"></a><a href="#toc0_">predict_test_scores() - Function to get scores from Prediction models</a><a class="anchor-link" href="#predict_test_scores()---Function-to-get-scores-from-Prediction-models">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7771,7 +7968,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="format_GS_results()---Function-to-get-scores-from-Gridsearch">format_GS_results() - Function to get scores from Gridsearch<a class="anchor-link" href="#format_GS_results()---Function-to-get-scores-from-Gridsearch">¶</a></h4>
+<h4 id="format_GS_results()---Function-to-get-scores-from-Gridsearch"><a id="toc2_2_4_4_"></a><a href="#toc0_">format_GS_results() - Function to get scores from Gridsearch</a><a class="anchor-link" href="#format_GS_results()---Function-to-get-scores-from-Gridsearch">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7838,7 +8035,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="make_lr_results(model_name,-model_object,-X_var,-y_var,-y_pred_var)">make_lr_results(model_name, model_object, X_var, y_var, y_pred_var)<a class="anchor-link" href="#make_lr_results(model_name,-model_object,-X_var,-y_var,-y_pred_var)">¶</a></h4>
+<h4 id="make_lr_results(model_name,-model_object,-X_var,-y_var,-y_pred_var)"><a id="toc2_2_4_5_"></a><a href="#toc0_">make_lr_results(model_name, model_object, X_var, y_var, y_pred_var)</a><a class="anchor-link" href="#make_lr_results(model_name,-model_object,-X_var,-y_var,-y_pred_var)">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7903,7 +8100,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Classification-Report">Classification Report<a class="anchor-link" href="#Classification-Report">¶</a></h4>
+<h4 id="Classification-Report"><a id="toc2_2_4_6_"></a><a href="#toc0_">Classification Report</a><a class="anchor-link" href="#Classification-Report">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7973,7 +8170,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Read-/-Write-Pickle-Function">Read / Write Pickle Function<a class="anchor-link" href="#Read-/-Write-Pickle-Function">¶</a></h4><ul>
+<h4 id="Read-/-Write-Pickle-Function"><a id="toc2_2_4_7_"></a><a href="#toc0_">Read / Write Pickle Function</a><a class="anchor-link" href="#Read-/-Write-Pickle-Function">¶</a></h4><ul>
 <li>write_pickle = Write the model</li>
 <li>read_pickle  = Read the model</li>
 </ul>
@@ -8026,7 +8223,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Construct-Model---DecisionTree---All-Features">Construct Model - DecisionTree - All Features<a class="anchor-link" href="#Construct-Model---DecisionTree---All-Features">¶</a></h1>
+<h1 id="Construct-Model---DecisionTree---All-Features"><a id="toc3_"></a><a href="#toc0_">Construct Model - DecisionTree - All Features</a><a class="anchor-link" href="#Construct-Model---DecisionTree---All-Features">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8037,7 +8234,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Import-data---DT1">Import data - DT1<a class="anchor-link" href="#Import-data---DT1">¶</a></h2>
+<h2 id="Import-data---DT1"><a id="toc3_1_"></a><a href="#toc0_">Import data - <code>DT1</code></a><a class="anchor-link" href="#Import-data---DT1">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8054,7 +8251,7 @@ rerun            = :int      # 1 = append to the Results.csv file with no header
 <li><code>salifort_data_FE_focus.csv</code> is the same data with the dummy encoded dept fields removed.</li>
 </ul>
 <p><code>Dept</code> appears to have low correlation across the dataset and I'm curious how much the models are influenced with low correlation features. It turns out that low correlation features have little impact on model performance. which is no surprise really!</p>
-<h4 id="Code-flags:">Code flags:<a class="anchor-link" href="#Code-flags:">¶</a></h4><p><strong>rerun</strong> = flag to identify the first run of the model comparisons and write a NEW Results.csv file. 0 = first run and a new file will be created with headers / 1 = Continuation, Results will be appended to the file.</p>
+<h4 id="Code-flags:"><a id="toc3_1_1_1_"></a><a href="#toc0_">Code flags:</a><a class="anchor-link" href="#Code-flags:">¶</a></h4><p><strong>rerun</strong> = flag to identify the first run of the model comparisons and write a NEW Results.csv file. 0 = first run and a new file will be created with headers / 1 = Continuation, Results will be appended to the file.</p>
 <p><strong>dataset</strong> = Text indicating which dataset is being used, added to the model description during csv save to Results.csv</p>
 <p><strong>model_prefix</strong> = text indicating which ML model is being used, added to the model description during csv save to Results.csv</p>
 </div>
@@ -8136,7 +8333,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Prepare-data-for-modelling---DT1">Prepare data for modelling - DT1<a class="anchor-link" href="#Prepare-data-for-modelling---DT1">¶</a></h2>
+<h2 id="Prepare-data-for-modelling---DT1"><a id="toc3_2_"></a><a href="#toc0_">Prepare data for modelling - DT1</a><a class="anchor-link" href="#Prepare-data-for-modelling---DT1">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8161,7 +8358,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Isolate-Outcome-and-Feature-Variables---DT1">Isolate Outcome and Feature Variables - DT1<a class="anchor-link" href="#Isolate-Outcome-and-Feature-Variables---DT1">¶</a></h2>
+<h2 id="Isolate-Outcome-and-Feature-Variables---DT1"><a id="toc3_3_"></a><a href="#toc0_">Isolate Outcome and Feature Variables - DT1</a><a class="anchor-link" href="#Isolate-Outcome-and-Feature-Variables---DT1">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8193,7 +8390,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Test-Train-split-data---DT1">Test Train split data - DT1<a class="anchor-link" href="#Test-Train-split-data---DT1">¶</a></h2>
+<h2 id="Test-Train-split-data---DT1"><a id="toc3_4_"></a><a href="#toc0_">Test Train split data - DT1</a><a class="anchor-link" href="#Test-Train-split-data---DT1">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8239,7 +8436,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Begin-Modelling-model_dt1---Train-data">Begin Modelling <code>model_dt1</code> - Train data<a class="anchor-link" href="#Begin-Modelling-model_dt1---Train-data">¶</a></h2><p>The DecisionTree model is a good starting place.</p>
+<h2 id="Begin-Modelling-model_dt1---Train-data"><a id="toc3_5_"></a><a href="#toc0_">Begin Modelling <code>model_dt1</code> - Train data</a><a class="anchor-link" href="#Begin-Modelling-model_dt1---Train-data">¶</a></h2><p>The DecisionTree model is a good starting place.</p>
 <pre><code>DecisionTrees are simple to understand and can easily visualise the model by plotting the Tree that was calculated
 There is a risk of over fitting and with 18 feature variables the approach could be too simple for so many variables.
 DecisionTrees are also sensitive to variances in test and train data.</code></pre>
@@ -8253,7 +8450,7 @@ DecisionTrees are also sensitive to variances in test and train data.</code></pr
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instantiate-Model---Decision-Tree---GridSearch---model_dt1---Train-data">Instantiate Model - Decision Tree - GridSearch - <code>model_dt1</code> - Train data<a class="anchor-link" href="#Instantiate-Model---Decision-Tree---GridSearch---model_dt1---Train-data">¶</a></h3>
+<h3 id="Instantiate-Model---Decision-Tree---GridSearch---model_dt1---Train-data"><a id="toc3_5_1_"></a><a href="#toc0_">Instantiate Model - Decision Tree - GridSearch - <code>model_dt1</code> - Train data</a><a class="anchor-link" href="#Instantiate-Model---Decision-Tree---GridSearch---model_dt1---Train-data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8291,7 +8488,7 @@ DecisionTrees are also sensitive to variances in test and train data.</code></pr
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Fit-Data">Fit Data<a class="anchor-link" href="#Fit-Data">¶</a></h3>
+<h3 id="Fit-Data"><a id="toc3_5_2_"></a><a href="#toc0_">Fit Data</a><a class="anchor-link" href="#Fit-Data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8334,7 +8531,7 @@ Wall time: 7 s
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Get-&amp;-Display-GridSearch-best_estimator-results---Decision-Tree---Train-Data">Get &amp; Display GridSearch best_estimator results - Decision Tree - Train Data<a class="anchor-link" href="#Get-&amp;-Display-GridSearch-best_estimator-results---Decision-Tree---Train-Data">¶</a></h3>
+<h3 id="Get-&amp;-Display-GridSearch-best_estimator-results---Decision-Tree---Train-Data"><a id="toc3_5_3_"></a><a href="#toc0_">Get &amp; Display GridSearch best_estimator results - Decision Tree - Train Data</a><a class="anchor-link" href="#Get-&amp;-Display-GridSearch-best_estimator-results---Decision-Tree---Train-Data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8386,7 +8583,7 @@ Best Estimator  :  DecisionTreeClassifier(max_depth=4, random_state=0)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Format-and-Save-Model-Scores---model_dt1---Train-data">Format and Save Model Scores - <code>model_dt1</code> - Train data<a class="anchor-link" href="#Format-and-Save-Model-Scores---model_dt1---Train-data">¶</a></h4>
+<h4 id="Format-and-Save-Model-Scores---model_dt1---Train-data"><a id="toc3_5_3_1_"></a><a href="#toc0_">Format and Save Model Scores - <code>model_dt1</code> - Train data</a><a class="anchor-link" href="#Format-and-Save-Model-Scores---model_dt1---Train-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -8412,7 +8609,7 @@ Best Estimator  :  DecisionTreeClassifier(max_depth=4, random_state=0)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Display-Results---model_dt1---Train-data">Display Results - <code>model_dt1</code> - Train data<a class="anchor-link" href="#Display-Results---model_dt1---Train-data">¶</a></h4>
+<h4 id="Display-Results---model_dt1---Train-data"><a id="toc3_5_3_2_"></a><a href="#toc0_">Display Results - <code>model_dt1</code> - Train data</a><a class="anchor-link" href="#Display-Results---model_dt1---Train-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -8636,7 +8833,7 @@ Best Estimator  :  DecisionTreeClassifier(max_depth=4, random_state=0)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Make-Predictions---Decision-Tree-best_model_---model_dt1---Test-data">Make Predictions - Decision Tree best_model_ - <code>model_dt1</code> - Test data<a class="anchor-link" href="#Make-Predictions---Decision-Tree-best_model_---model_dt1---Test-data">¶</a></h3>
+<h3 id="Make-Predictions---Decision-Tree-best_model_---model_dt1---Test-data"><a id="toc3_5_4_"></a><a href="#toc0_">Make Predictions - Decision Tree best_model_ - <code>model_dt1</code> - Test data</a><a class="anchor-link" href="#Make-Predictions---Decision-Tree-best_model_---model_dt1---Test-data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8664,7 +8861,7 @@ Best Estimator  :  DecisionTreeClassifier(max_depth=4, random_state=0)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Classification-Report---model_dt1---Test-data">Classification Report - <code>model_dt1</code> - Test data<a class="anchor-link" href="#Classification-Report---model_dt1---Test-data">¶</a></h4>
+<h4 id="Classification-Report---model_dt1---Test-data"><a id="toc3_5_4_1_"></a><a href="#toc0_">Classification Report - <code>model_dt1</code> - Test data</a><a class="anchor-link" href="#Classification-Report---model_dt1---Test-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -8732,7 +8929,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Prepare-and-Save-Results---Decision-Tree---Predict---model_dt1---Test-data">Prepare and Save Results - Decision Tree - Predict - <code>model_dt1</code> - Test data<a class="anchor-link" href="#Prepare-and-Save-Results---Decision-Tree---Predict---model_dt1---Test-data">¶</a></h4>
+<h4 id="Prepare-and-Save-Results---Decision-Tree---Predict---model_dt1---Test-data"><a id="toc3_5_4_2_"></a><a href="#toc0_">Prepare and Save Results - Decision Tree - Predict - <code>model_dt1</code> - Test data</a><a class="anchor-link" href="#Prepare-and-Save-Results---Decision-Tree---Predict---model_dt1---Test-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -8760,7 +8957,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Display-Results---Test---model_dt1---Test-data">Display Results - Test - <code>model_dt1</code> - Test data<a class="anchor-link" href="#Display-Results---Test---model_dt1---Test-data">¶</a></h4>
+<h4 id="Display-Results---Test---model_dt1---Test-data"><a id="toc3_5_4_3_"></a><a href="#toc0_">Display Results - Test - <code>model_dt1</code> - Test data</a><a class="anchor-link" href="#Display-Results---Test---model_dt1---Test-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -8903,7 +9100,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Make-Predictions---Decision-Tree-best_estimator_---model_dt1---Train-data">Make Predictions - Decision Tree best_estimator_ - <code>model_dt1</code> - Train data<a class="anchor-link" href="#Make-Predictions---Decision-Tree-best_estimator_---model_dt1---Train-data">¶</a></h3>
+<h3 id="Make-Predictions---Decision-Tree-best_estimator_---model_dt1---Train-data"><a id="toc3_5_5_"></a><a href="#toc0_">Make Predictions - Decision Tree best_estimator_ - <code>model_dt1</code> - Train data</a><a class="anchor-link" href="#Make-Predictions---Decision-Tree-best_estimator_---model_dt1---Train-data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8945,7 +9142,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Classification-Report---model_dt1---Train-data">Classification Report - <code>model_dt1</code> - Train data<a class="anchor-link" href="#Classification-Report---model_dt1---Train-data">¶</a></h4>
+<h4 id="Classification-Report---model_dt1---Train-data"><a id="toc3_5_5_1_"></a><a href="#toc0_">Classification Report - <code>model_dt1</code> - Train data</a><a class="anchor-link" href="#Classification-Report---model_dt1---Train-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -9013,7 +9210,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Prepare-and-Save-Results---Decision-Tree---Predict---model_dt1---Train-data">Prepare and Save Results - Decision Tree - Predict - <code>model_dt1</code> - Train data<a class="anchor-link" href="#Prepare-and-Save-Results---Decision-Tree---Predict---model_dt1---Train-data">¶</a></h4>
+<h4 id="Prepare-and-Save-Results---Decision-Tree---Predict---model_dt1---Train-data"><a id="toc3_5_5_2_"></a><a href="#toc0_">Prepare and Save Results - Decision Tree - Predict - <code>model_dt1</code> - Train data</a><a class="anchor-link" href="#Prepare-and-Save-Results---Decision-Tree---Predict---model_dt1---Train-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -9044,7 +9241,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Display-Results">Display Results<a class="anchor-link" href="#Display-Results">¶</a></h4>
+<h4 id="Display-Results"><a id="toc3_5_5_3_"></a><a href="#toc0_">Display Results</a><a class="anchor-link" href="#Display-Results">¶</a></h4>
 </div>
 </div>
 </div>
@@ -9199,7 +9396,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Decision-Tree-Plot---Visualise-splits---model_dt1">Decision Tree Plot - Visualise splits - <code>model_dt1</code><a class="anchor-link" href="#Decision-Tree-Plot---Visualise-splits---model_dt1">¶</a></h4>
+<h4 id="-Decision-Tree-Plot---Visualise-splits---model_dt1"><a id="toc3_5_5_4_"></a><a href="#toc0_"> Decision Tree Plot - Visualise splits - <code>model_dt1</code></a><a class="anchor-link" href="#-Decision-Tree-Plot---Visualise-splits---model_dt1">¶</a></h4>
 </div>
 </div>
 </div>
@@ -9238,7 +9435,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Confusion-Matrix-Plots">Confusion Matrix Plots<a class="anchor-link" href="#Confusion-Matrix-Plots">¶</a></h4>
+<h4 id="Confusion-Matrix-Plots"><a id="toc3_5_5_5_"></a><a href="#toc0_">Confusion Matrix Plots</a><a class="anchor-link" href="#Confusion-Matrix-Plots">¶</a></h4>
 </div>
 </div>
 </div>
@@ -9337,7 +9534,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Feature-Importance">Feature Importance<a class="anchor-link" href="#Feature-Importance">¶</a></h4>
+<h4 id="Feature-Importance"><a id="toc3_5_5_6_"></a><a href="#toc0_">Feature Importance</a><a class="anchor-link" href="#Feature-Importance">¶</a></h4>
 </div>
 </div>
 </div>
@@ -9506,7 +9703,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="END">END<a class="anchor-link" href="#END">¶</a></h1>
+<h1 id="Construct-Model---Decision-Tree---No-Departments"><a id="toc5_"></a><a href="#toc0_">Construct Model - Decision Tree - No Departments</a><a class="anchor-link" href="#Construct-Model---Decision-Tree---No-Departments">¶</a></h1>
 </div>
 </div>
 </div>
@@ -9517,18 +9714,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Construct-Model---Decision-Tree---No-Departments">Construct Model - Decision Tree - No Departments<a class="anchor-link" href="#Construct-Model---Decision-Tree---No-Departments">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Import-data---DT2">Import data - <code>DT2</code><a class="anchor-link" href="#Import-data---DT2">¶</a></h2>
+<h2 id="Import-data---DT2"><a id="toc5_1_"></a><a href="#toc0_">Import data - <code>DT2</code></a><a class="anchor-link" href="#Import-data---DT2">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9592,7 +9778,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Prepare-data-for-modelling---model_dt2">Prepare data for modelling - <code>model_dt2</code><a class="anchor-link" href="#Prepare-data-for-modelling---model_dt2">¶</a></h2>
+<h2 id="Prepare-data-for-modelling---model_dt2"><a id="toc5_2_"></a><a href="#toc0_">Prepare data for modelling - <code>model_dt2</code></a><a class="anchor-link" href="#Prepare-data-for-modelling---model_dt2">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9617,7 +9803,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Isolate-Outcome-and-Feature-Variables---model_dt2">Isolate Outcome and Feature Variables - <code>model_dt2</code><a class="anchor-link" href="#Isolate-Outcome-and-Feature-Variables---model_dt2">¶</a></h2>
+<h2 id="Isolate-Outcome-and-Feature-Variables---model_dt2"><a id="toc5_3_"></a><a href="#toc0_">Isolate Outcome and Feature Variables - <code>model_dt2</code></a><a class="anchor-link" href="#Isolate-Outcome-and-Feature-Variables---model_dt2">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9649,7 +9835,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Test-Train-split-data---model_dt2">Test Train split data - <code>model_dt2</code><a class="anchor-link" href="#Test-Train-split-data---model_dt2">¶</a></h2>
+<h2 id="Test-Train-split-data---model_dt2"><a id="toc5_4_"></a><a href="#toc0_">Test Train split data - <code>model_dt2</code></a><a class="anchor-link" href="#Test-Train-split-data---model_dt2">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9675,7 +9861,7 @@ None
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Begin-Modelling-model_dt2---Train-data">Begin Modelling <code>model_dt2</code> - Train data<a class="anchor-link" href="#Begin-Modelling-model_dt2---Train-data">¶</a></h2><p>The DecisionTree model is a good starting place.</p>
+<h2 id="Begin-Modelling-model_dt2---Train-data"><a id="toc5_5_"></a><a href="#toc0_">Begin Modelling <code>model_dt2</code> - Train data</a><a class="anchor-link" href="#Begin-Modelling-model_dt2---Train-data">¶</a></h2><p>The DecisionTree model is a good starting place.</p>
 <pre><code>DecisionTrees are simple to understand and can easily visualise the model by plotting the Tree that was calculated
 There is a risk of over fitting and with 18 feature variables the approach could be too simple for so many variables.
 DecisionTrees are also sensitive to variances in test and train data.</code></pre>
@@ -9689,7 +9875,7 @@ DecisionTrees are also sensitive to variances in test and train data.</code></pr
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instantiate-Model---Decision-Tree---GridSearch---model_dt2---Train-data">Instantiate Model - Decision Tree - GridSearch - <code>model_dt2</code> - Train data<a class="anchor-link" href="#Instantiate-Model---Decision-Tree---GridSearch---model_dt2---Train-data">¶</a></h3>
+<h3 id="Instantiate-Model---Decision-Tree---GridSearch---model_dt2---Train-data"><a id="toc5_5_1_"></a><a href="#toc0_">Instantiate Model - Decision Tree - GridSearch - <code>model_dt2</code> - Train data</a><a class="anchor-link" href="#Instantiate-Model---Decision-Tree---GridSearch---model_dt2---Train-data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9727,7 +9913,7 @@ DecisionTrees are also sensitive to variances in test and train data.</code></pr
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Fit-Data">Fit Data<a class="anchor-link" href="#Fit-Data">¶</a></h3>
+<h3 id="Fit-Data"><a id="toc5_5_2_"></a><a href="#toc0_">Fit Data</a><a class="anchor-link" href="#Fit-Data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9768,7 +9954,7 @@ Wall time: 6.38 s
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Get-&amp;-Display-GridSearch-best_estimator-results---model_dt2---Train">Get &amp; Display GridSearch best_estimator results - <code>model_dt2</code> - Train<a class="anchor-link" href="#Get-&amp;-Display-GridSearch-best_estimator-results---model_dt2---Train">¶</a></h3>
+<h3 id="Get-&amp;-Display-GridSearch-best_estimator-results---model_dt2---Train"><a id="toc5_5_3_"></a><a href="#toc0_">Get &amp; Display GridSearch best_estimator results - <code>model_dt2</code> - Train</a><a class="anchor-link" href="#Get-&amp;-Display-GridSearch-best_estimator-results---model_dt2---Train">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9818,7 +10004,7 @@ Best Estimator  :  DecisionTreeClassifier(max_depth=4, random_state=0)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Format-and-Save-Model-Scores---model_dt2---Train-data">Format and Save Model Scores - <code>model_dt2</code> - Train data<a class="anchor-link" href="#Format-and-Save-Model-Scores---model_dt2---Train-data">¶</a></h4>
+<h4 id="Format-and-Save-Model-Scores---model_dt2---Train-data"><a id="toc5_5_3_1_"></a><a href="#toc0_">Format and Save Model Scores - <code>model_dt2</code> - Train data</a><a class="anchor-link" href="#Format-and-Save-Model-Scores---model_dt2---Train-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -9844,7 +10030,7 @@ Best Estimator  :  DecisionTreeClassifier(max_depth=4, random_state=0)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Display-Results---model_dt2---Train-data">Display Results - <code>model_dt2</code> - Train data<a class="anchor-link" href="#Display-Results---model_dt2---Train-data">¶</a></h4>
+<h4 id="Display-Results---model_dt2---Train-data"><a id="toc5_5_3_2_"></a><a href="#toc0_">Display Results - <code>model_dt2</code> - Train data</a><a class="anchor-link" href="#Display-Results---model_dt2---Train-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10011,7 +10197,7 @@ Best Estimator  :  DecisionTreeClassifier(max_depth=4, random_state=0)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Make-Predictions---Decision-Tree-best_model_---model_dt2---Test-data">Make Predictions - Decision Tree best_model_ - <code>model_dt2</code> - Test data<a class="anchor-link" href="#Make-Predictions---Decision-Tree-best_model_---model_dt2---Test-data">¶</a></h3>
+<h3 id="Make-Predictions---Decision-Tree-best_model_---model_dt2---Test-data"><a id="toc5_5_4_"></a><a href="#toc0_">Make Predictions - Decision Tree best_model_ - <code>model_dt2</code> - Test data</a><a class="anchor-link" href="#Make-Predictions---Decision-Tree-best_model_---model_dt2---Test-data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -10039,7 +10225,7 @@ Best Estimator  :  DecisionTreeClassifier(max_depth=4, random_state=0)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Classification-Report---model_dt2---Test-data">Classification Report - <code>model_dt2</code> - Test data<a class="anchor-link" href="#Classification-Report---model_dt2---Test-data">¶</a></h4>
+<h4 id="Classification-Report---model_dt2---Test-data"><a id="toc5_5_4_1_"></a><a href="#toc0_">Classification Report - <code>model_dt2</code> - Test data</a><a class="anchor-link" href="#Classification-Report---model_dt2---Test-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10107,7 +10293,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Prepare-and-Save-Results---Decision-Tree---Predict---model_dt2---Test-data">Prepare and Save Results - Decision Tree - Predict - <code>model_dt2</code> - Test data<a class="anchor-link" href="#Prepare-and-Save-Results---Decision-Tree---Predict---model_dt2---Test-data">¶</a></h4>
+<h4 id="Prepare-and-Save-Results---Decision-Tree---Predict---model_dt2---Test-data"><a id="toc5_5_4_2_"></a><a href="#toc0_">Prepare and Save Results - Decision Tree - Predict - <code>model_dt2</code> - Test data</a><a class="anchor-link" href="#Prepare-and-Save-Results---Decision-Tree---Predict---model_dt2---Test-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10133,7 +10319,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Display-Results---Test---model_dt2---Test-data">Display Results - Test - <code>model_dt2</code> - Test data<a class="anchor-link" href="#Display-Results---Test---model_dt2---Test-data">¶</a></h4>
+<h4 id="Display-Results---Test---model_dt2---Test-data"><a id="toc5_5_4_3_"></a><a href="#toc0_">Display Results - Test - <code>model_dt2</code> - Test data</a><a class="anchor-link" href="#Display-Results---Test---model_dt2---Test-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10309,7 +10495,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Make-Predictions---Decision-Tree-best_estimator_---model_dt2---Train-data">Make Predictions - Decision Tree best_estimator_ - <code>model_dt2</code> - Train data<a class="anchor-link" href="#Make-Predictions---Decision-Tree-best_estimator_---model_dt2---Train-data">¶</a></h3>
+<h3 id="Make-Predictions---Decision-Tree-best_estimator_---model_dt2---Train-data"><a id="toc5_5_5_"></a><a href="#toc0_">Make Predictions - Decision Tree best_estimator_ - <code>model_dt2</code> - Train data</a><a class="anchor-link" href="#Make-Predictions---Decision-Tree-best_estimator_---model_dt2---Train-data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -10351,7 +10537,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Classification-Report---model_dt2---Train-data">Classification Report - <code>model_dt2</code> - Train data<a class="anchor-link" href="#Classification-Report---model_dt2---Train-data">¶</a></h4>
+<h4 id="Classification-Report---model_dt2---Train-data"><a id="toc5_5_5_1_"></a><a href="#toc0_">Classification Report - <code>model_dt2</code> - Train data</a><a class="anchor-link" href="#Classification-Report---model_dt2---Train-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10419,7 +10605,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Prepare-and-Save-Results---Decision-Tree---Predict---model_dt2---Train-data">Prepare and Save Results - Decision Tree - Predict - <code>model_dt2</code> - Train data<a class="anchor-link" href="#Prepare-and-Save-Results---Decision-Tree---Predict---model_dt2---Train-data">¶</a></h4>
+<h4 id="Prepare-and-Save-Results---Decision-Tree---Predict---model_dt2---Train-data"><a id="toc5_5_5_2_"></a><a href="#toc0_">Prepare and Save Results - Decision Tree - Predict - <code>model_dt2</code> - Train data</a><a class="anchor-link" href="#Prepare-and-Save-Results---Decision-Tree---Predict---model_dt2---Train-data">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10447,7 +10633,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Display-Results">Display Results<a class="anchor-link" href="#Display-Results">¶</a></h4>
+<h4 id="Display-Results"><a id="toc5_5_5_3_"></a><a href="#toc0_">Display Results</a><a class="anchor-link" href="#Display-Results">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10635,7 +10821,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Decision-Tree-Plot---Visualise-splits---model_dt2">Decision Tree Plot - Visualise splits - <code>model_dt2</code><a class="anchor-link" href="#Decision-Tree-Plot---Visualise-splits---model_dt2">¶</a></h4>
+<h4 id="-Decision-Tree-Plot---Visualise-splits---model_dt2"><a id="toc5_5_5_4_"></a><a href="#toc0_"> Decision Tree Plot - Visualise splits - <code>model_dt2</code></a><a class="anchor-link" href="#-Decision-Tree-Plot---Visualise-splits---model_dt2">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10674,7 +10860,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Confusion-Matrix-Plots">Confusion Matrix Plots<a class="anchor-link" href="#Confusion-Matrix-Plots">¶</a></h4>
+<h4 id="Confusion-Matrix-Plots"><a id="toc5_5_5_5_"></a><a href="#toc0_">Confusion Matrix Plots</a><a class="anchor-link" href="#Confusion-Matrix-Plots">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10774,7 +10960,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Feature-Importance">Feature Importance<a class="anchor-link" href="#Feature-Importance">¶</a></h4>
+<h4 id="Feature-Importance"><a id="toc5_5_5_6_"></a><a href="#toc0_">Feature Importance</a><a class="anchor-link" href="#Feature-Importance">¶</a></h4>
 </div>
 </div>
 </div>
@@ -10903,7 +11089,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="END">END<a class="anchor-link" href="#END">¶</a></h1>
+<h1 id="Review-Results"><a id="toc7_"></a><a href="#toc0_">Review Results</a><a class="anchor-link" href="#Review-Results">¶</a></h1>
 </div>
 </div>
 </div>
@@ -10914,18 +11100,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Review-Results">Review Results<a class="anchor-link" href="#Review-Results">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Dataset-comparison---Decision-Tree">Dataset comparison - Decision Tree<a class="anchor-link" href="#Dataset-comparison---Decision-Tree">¶</a></h2><p>There is little difference in performance between the two datasets.</p>
+<h2 id="Dataset-comparison---Decision-Tree"><a id="toc7_1_"></a><a href="#toc0_">Dataset comparison - Decision Tree</a><a class="anchor-link" href="#Dataset-comparison---Decision-Tree">¶</a></h2><p>There is little difference in performance between the two datasets.</p>
 <ul>
 <li><code>ALLFeat</code> = complete feature engineered dataset</li>
 <li><code>NoDept</code> = dataset with dummy encoded dept removed</li>
@@ -10940,7 +11115,7 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Model-performance">Model performance<a class="anchor-link" href="#Model-performance">¶</a></h2>
+<h2 id="Model-performance"><a id="toc7_2_"></a><a href="#toc0_">Model performance</a><a class="anchor-link" href="#Model-performance">¶</a></h2>
 </div>
 </div>
 </div>
@@ -11118,9 +11293,9 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The AUC score for the DecisionTree is [0.978] This is a significant improvement over Logistical Regression which came in at [0.886 - 0.879]</p>
+<p>The AUC score for the DecisionTree is [0.978] This is a significant improvement over Logistical Regression which came in at ~0.886 but had a low predicted to leave score.</p>
 <p>F1, Precision, Recall and Accuracy are also within acceptable ranges</p>
-<p>Predictions have also improved significntly, with predicted to leave now at 0.944.</p>
+<p>Predictions have also improved significantly, with predicted to leave now at ~0.9x.</p>
 </div>
 </div>
 </div>
@@ -11131,27 +11306,136 @@ Predict Stay  : 0.99
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Feature-Importance">Feature Importance<a class="anchor-link" href="#Feature-Importance">¶</a></h1><p>The DecisionTree models ranks feature importance as :</p>
+<h1 id="Feature-Importance"><a id="toc8_"></a><a href="#toc0_">Feature Importance</a><a class="anchor-link" href="#Feature-Importance">¶</a></h1><p>The DecisionTree models ranks feature importance as :</p>
 <p>This is more in line with my expectation.<code>satisfaction</code>, which is an employee reported score for how an employee feels about working for Salifort motors, is an important a metric as any other.</p>
-<p>AllFeat|gini importance ||NoDept| gini importance
-| :- | -: | :- | :- | -: |
-satisfaction|0.568||satisfaction|0.568
-tenure|0.152||tenure|0.152
-last_eval|0.145||last_eval|0.145
-number_project|0.103||number_project|0.103
-avg_mnth_hrs|0.032||avg_mnth_hrs|0.032
-dept_management|0||promotion|0
-dept_support|0||salary|0
-dept_sales|0|||
-dept_product_mng|0|||
-dept_marketing|0|||
-dept_RandD|0|||
-dept_hr|0|||
-dept_accounting|0|||
-dept_IT|0|||
-salary|0|||
-promotion|0|||
-dept_technical|0|||</p>
+<table>
+<tr>
+<td>AllFeat</td>
+<td>gini importance</td>
+<td></td>
+<td>NoDept</td>
+<td>gini importance</td>
+</tr>
+<tr>
+<td>satisfaction</td>
+<td>0.568</td>
+<td></td>
+<td>satisfaction</td>
+<td>0.568</td>
+</tr>
+<tr>
+<td>tenure</td>
+<td>0.152</td>
+<td></td>
+<td>tenure</td>
+<td>0.152</td>
+</tr>
+<tr>
+<td>last_eval</td>
+<td>0.145</td>
+<td></td>
+<td>last_eval</td>
+<td>0.145</td>
+</tr>
+<tr>
+<td>number_project</td>
+<td>0.103</td>
+<td></td>
+<td>number_project</td>
+<td>0.103</td>
+</tr>
+<tr>
+<td>avg_mnth_hrs</td>
+<td>0.032</td>
+<td></td>
+<td>avg_mnth_hrs</td>
+<td>0.032</td>
+</tr>
+<tr>
+<td>dept_management</td>
+<td>0</td>
+<td></td>
+<td>promotion</td>
+<td>0</td>
+</tr>
+<tr>
+<td>dept_support</td>
+<td>0</td>
+<td></td>
+<td>salary</td>
+<td>0</td>
+</tr>
+<tr>
+<td>dept_sales</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dept_product_mng</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dept_marketing</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dept_RandD</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dept_hr</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dept_accounting</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dept_IT</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>salary</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>promotion</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dept_technical</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -11162,7 +11446,7 @@ dept_technical|0|||</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Conclusion,-model-comparison---Decision-Tree.">Conclusion, model comparison - Decision Tree.<a class="anchor-link" href="#Conclusion,-model-comparison---Decision-Tree.">¶</a></h2><p>Again, there is almost no difference to the performance of the two datasets (<code>AllFeat</code>/<code>NoDept</code>) when modelled through either Logistic Regression or Decision Tree. Whlie there's a tiny improvement in DecisionTree, there's no difference in feature importance.</p>
+<h2 id="Conclusion,-model-comparison---Decision-Tree."><a id="toc8_1_"></a><a href="#toc0_">Conclusion, model comparison - Decision Tree.</a><a class="anchor-link" href="#Conclusion,-model-comparison---Decision-Tree.">¶</a></h2><p>Again, there is almost no difference to the performance of the two datasets (<code>AllFeat</code>/<code>NoDept</code>) when modelled through either Logistic Regression or Decision Tree. Whlie there's a tiny improvement in DecisionTree, there's no difference in feature importance.</p>
 <p>The improvement we see in DecisionTree is in predictions, where <strong>predicted to leave</strong> has increased from ~30% to ~94%</p>
 </div>
 </div>

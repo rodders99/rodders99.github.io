@@ -6844,7 +6844,9 @@ all of MD as it is not optimized for dense, information rich UIs.
    * https://material-components-web.appspot.com/elevation.html
    */
 
-  --jp-shadow-base-lightness: 0;
+  /* The dark theme shadows need a bit of work, but this will probably also require work on the core layout
+   * colors used in the theme as well. */
+  --jp-shadow-base-lightness: 32;
   --jp-shadow-umbra-color: rgba(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
@@ -6898,10 +6900,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--md-grey-400);
-  --jp-border-color1: var(--md-grey-400);
-  --jp-border-color2: var(--md-grey-300);
-  --jp-border-color3: var(--md-grey-200);
+  --jp-border-color0: var(--md-grey-700);
+  --jp-border-color1: var(--md-grey-700);
+  --jp-border-color2: var(--md-grey-800);
+  --jp-border-color3: var(--md-grey-900);
   --jp-inverse-border-color: var(--md-grey-600);
   --jp-border-radius: 2px;
 
@@ -6930,20 +6932,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-ui-font-color0: rgba(255, 255, 255, 1);
+  --jp-ui-font-color1: rgba(255, 255, 255, 0.87);
+  --jp-ui-font-color2: rgba(255, 255, 255, 0.54);
+  --jp-ui-font-color3: rgba(255, 255, 255, 0.38);
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(255, 255, 255, 1);
-  --jp-ui-inverse-font-color1: rgba(255, 255, 255, 1);
-  --jp-ui-inverse-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-ui-inverse-font-color3: rgba(255, 255, 255, 0.5);
+  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
+  --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
+  --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
+  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
 
   /* Content Fonts
    *
@@ -6971,11 +6973,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(0, 0, 0, 1);
-  --jp-content-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-content-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-content-font-color3: rgba(0, 0, 0, 0.38);
-  --jp-content-link-color: var(--md-blue-900);
+  --jp-content-font-color0: rgba(255, 255, 255, 1);
+  --jp-content-font-color1: rgba(255, 255, 255, 1);
+  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
+  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
+  --jp-content-link-color: var(--md-blue-300);
   --jp-content-font-family: system-ui, -apple-system, blinkmacsystemfont,
     'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -7006,10 +7008,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: white;
-  --jp-layout-color1: white;
-  --jp-layout-color2: var(--md-grey-200);
-  --jp-layout-color3: var(--md-grey-400);
+  --jp-layout-color0: #111;
+  --jp-layout-color1: var(--md-grey-900);
+  --jp-layout-color2: var(--md-grey-800);
+  --jp-layout-color3: var(--md-grey-700);
   --jp-layout-color4: var(--md-grey-600);
 
   /* Inverse Layout
@@ -7018,40 +7020,40 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: #111;
-  --jp-inverse-layout-color1: var(--md-grey-900);
-  --jp-inverse-layout-color2: var(--md-grey-800);
-  --jp-inverse-layout-color3: var(--md-grey-700);
+  --jp-inverse-layout-color0: white;
+  --jp-inverse-layout-color1: white;
+  --jp-inverse-layout-color2: var(--md-grey-200);
+  --jp-inverse-layout-color3: var(--md-grey-400);
   --jp-inverse-layout-color4: var(--md-grey-600);
 
   /* Brand/accent */
 
-  --jp-brand-color0: var(--md-blue-900);
-  --jp-brand-color1: var(--md-blue-700);
+  --jp-brand-color0: var(--md-blue-700);
+  --jp-brand-color1: var(--md-blue-500);
   --jp-brand-color2: var(--md-blue-300);
   --jp-brand-color3: var(--md-blue-100);
   --jp-brand-color4: var(--md-blue-50);
-  --jp-accent-color0: var(--md-green-900);
-  --jp-accent-color1: var(--md-green-700);
+  --jp-accent-color0: var(--md-green-700);
+  --jp-accent-color1: var(--md-green-500);
   --jp-accent-color2: var(--md-green-300);
   --jp-accent-color3: var(--md-green-100);
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: var(--md-orange-900);
-  --jp-warn-color1: var(--md-orange-700);
+  --jp-warn-color0: var(--md-orange-700);
+  --jp-warn-color1: var(--md-orange-500);
   --jp-warn-color2: var(--md-orange-300);
   --jp-warn-color3: var(--md-orange-100);
-  --jp-error-color0: var(--md-red-900);
-  --jp-error-color1: var(--md-red-700);
+  --jp-error-color0: var(--md-red-700);
+  --jp-error-color1: var(--md-red-500);
   --jp-error-color2: var(--md-red-300);
   --jp-error-color3: var(--md-red-100);
-  --jp-success-color0: var(--md-green-900);
-  --jp-success-color1: var(--md-green-700);
+  --jp-success-color0: var(--md-green-700);
+  --jp-success-color1: var(--md-green-500);
   --jp-success-color2: var(--md-green-300);
   --jp-success-color3: var(--md-green-100);
-  --jp-info-color0: var(--md-cyan-900);
-  --jp-info-color1: var(--md-cyan-700);
+  --jp-info-color0: var(--md-cyan-700);
+  --jp-info-color1: var(--md-cyan-500);
   --jp-info-color2: var(--md-cyan-300);
   --jp-info-color3: var(--md-cyan-100);
 
@@ -7061,8 +7063,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: var(--md-grey-100);
-  --jp-cell-editor-border-color: var(--md-grey-300);
+  --jp-cell-editor-background: var(--jp-layout-color1);
+  --jp-cell-editor-border-color: var(--md-grey-700);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
@@ -7070,8 +7072,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-font-family: var(--jp-code-font-family-default);
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
-  --jp-cell-prompt-not-active-opacity: 0.5;
-  --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
+  --jp-cell-prompt-not-active-opacity: 1;
+  --jp-cell-prompt-not-active-font-color: var(--md-grey-300);
 
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
@@ -7085,7 +7087,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: var(--md-blue-50);
+  --jp-notebook-multiselected-color: rgba(33, 150, 243, 0.24);
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -7100,13 +7102,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: #fdd;
-  --jp-rendermime-table-row-background: var(--md-grey-100);
-  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
+  --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
+  --jp-rendermime-table-row-background: var(--md-grey-900);
+  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(0, 0, 0, 0.25);
+  --jp-dialog-background: rgba(0, 0, 0, 0.6);
 
   /* Console specific styles */
 
@@ -7114,12 +7116,12 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Toolbar specific styles */
 
-  --jp-toolbar-border-color: var(--jp-border-color1);
+  --jp-toolbar-border-color: var(--jp-border-color2);
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: var(--jp-layout-color1);
-  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24);
+  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
-  --jp-toolbar-active-background: var(--md-grey-300);
+  --jp-toolbar-active-background: var(--jp-layout-color0);
 
   /* Statusbar specific styles */
 
@@ -7128,43 +7130,43 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Input field styles */
 
   --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-input-active-background: var(--jp-layout-color1);
-  --jp-input-hover-background: var(--jp-layout-color1);
-  --jp-input-background: var(--md-grey-100);
+  --jp-input-active-background: var(--jp-layout-color0);
+  --jp-input-hover-background: var(--jp-layout-color2);
+  --jp-input-background: var(--md-grey-800);
   --jp-input-border-color: var(--jp-inverse-border-color);
   --jp-input-active-border-color: var(--jp-brand-color1);
   --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: #d9d9d9;
-  --jp-editor-selected-focused-background: #d7d4f0;
+  --jp-editor-selected-background: var(--jp-layout-color2);
+  --jp-editor-selected-focused-background: rgba(33, 150, 243, 0.24);
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: #008000;
-  --jp-mirror-editor-atom-color: #88f;
-  --jp-mirror-editor-number-color: #080;
-  --jp-mirror-editor-def-color: #00f;
-  --jp-mirror-editor-variable-color: var(--md-grey-900);
-  --jp-mirror-editor-variable-2-color: rgb(0, 54, 109);
-  --jp-mirror-editor-variable-3-color: #085;
-  --jp-mirror-editor-punctuation-color: #05a;
-  --jp-mirror-editor-property-color: #05a;
+  --jp-mirror-editor-keyword-color: var(--md-green-500);
+  --jp-mirror-editor-atom-color: var(--md-blue-300);
+  --jp-mirror-editor-number-color: var(--md-green-400);
+  --jp-mirror-editor-def-color: var(--md-blue-600);
+  --jp-mirror-editor-variable-color: var(--md-grey-300);
+  --jp-mirror-editor-variable-2-color: var(--md-blue-500);
+  --jp-mirror-editor-variable-3-color: var(--md-green-600);
+  --jp-mirror-editor-punctuation-color: var(--md-blue-400);
+  --jp-mirror-editor-property-color: var(--md-blue-400);
   --jp-mirror-editor-operator-color: #a2f;
   --jp-mirror-editor-comment-color: #408080;
-  --jp-mirror-editor-string-color: #ba2121;
-  --jp-mirror-editor-string-2-color: #708;
+  --jp-mirror-editor-string-color: #ff7070;
+  --jp-mirror-editor-string-2-color: var(--md-purple-300);
   --jp-mirror-editor-meta-color: #a2f;
   --jp-mirror-editor-qualifier-color: #555;
-  --jp-mirror-editor-builtin-color: #008000;
+  --jp-mirror-editor-builtin-color: var(--md-green-600);
   --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: #170;
-  --jp-mirror-editor-attribute-color: #00c;
-  --jp-mirror-editor-header-color: blue;
-  --jp-mirror-editor-quote-color: #090;
-  --jp-mirror-editor-link-color: #00c;
+  --jp-mirror-editor-tag-color: var(--md-green-700);
+  --jp-mirror-editor-attribute-color: var(--md-blue-700);
+  --jp-mirror-editor-header-color: var(--md-blue-500);
+  --jp-mirror-editor-quote-color: var(--md-green-300);
+  --jp-mirror-editor-link-color: var(--md-blue-700);
   --jp-mirror-editor-error-color: #f00;
   --jp-mirror-editor-hr-color: #999;
 
@@ -7174,17 +7176,17 @@ all of MD as it is not optimized for dense, information rich UIs.
     and the icon of the user.
   */
 
-  --jp-collaborator-color1: #ffad8e;
-  --jp-collaborator-color2: #dac83d;
-  --jp-collaborator-color3: #72dd76;
-  --jp-collaborator-color4: #00e4d0;
-  --jp-collaborator-color5: #45d4ff;
-  --jp-collaborator-color6: #e2b1ff;
-  --jp-collaborator-color7: #ff9de6;
+  --jp-collaborator-color1: #ad4a00;
+  --jp-collaborator-color2: #7b6a00;
+  --jp-collaborator-color3: #007e00;
+  --jp-collaborator-color4: #008772;
+  --jp-collaborator-color5: #0079b9;
+  --jp-collaborator-color6: #8b45c6;
+  --jp-collaborator-color7: #be208b;
 
   /* Vega extension styles */
 
-  --jp-vega-background: white;
+  --jp-vega-background: var(--md-grey-400);
 
   /* Sidebar-related styles */
 
@@ -7192,15 +7194,28 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Search-related styles */
 
-  --jp-search-toggle-off-opacity: 0.5;
+  --jp-search-toggle-off-opacity: 0.6;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: rgb(245, 200, 0);
+  --jp-search-selected-match-background-color: rgb(255, 225, 0);
   --jp-search-selected-match-color: black;
   --jp-search-unselected-match-background-color: var(
     --jp-inverse-layout-color0
   );
   --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
+
+  /* scrollbar related styles. Supports every browser except Edge. */
+
+  /* colors based on JetBrain's Darcula theme */
+
+  --jp-scrollbar-background-color: #3f4244;
+  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
+
+  /* hacks for setting the thumb shape. These do nothing in Firefox */
+
+  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 
   /* Icon colors that work well with light or dark backgrounds */
   --jp-icon-contrast-color0: var(--md-purple-600);
@@ -7222,15 +7237,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* File or activity icons and switch semantic variables */
   --jp-jupyter-icon-color: #f37626;
   --jp-notebook-icon-color: #f37626;
-  --jp-json-icon-color: var(--md-orange-700);
-  --jp-console-icon-background-color: var(--md-blue-700);
+  --jp-json-icon-color: var(--md-orange-500);
+  --jp-console-icon-background-color: var(--md-blue-500);
   --jp-console-icon-color: white;
-  --jp-terminal-icon-background-color: var(--md-grey-800);
-  --jp-terminal-icon-color: var(--md-grey-200);
-  --jp-text-editor-icon-color: var(--md-grey-700);
-  --jp-inspector-icon-color: var(--md-grey-700);
+  --jp-terminal-icon-background-color: var(--md-grey-200);
+  --jp-terminal-icon-color: var(--md-grey-800);
+  --jp-text-editor-icon-color: var(--md-grey-200);
+  --jp-inspector-icon-color: var(--md-grey-200);
   --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--md-orange-900);
+  --jp-switch-true-position-color: var(--md-orange-700);
 }
 </style>
 <style type="text/css">
@@ -7474,7 +7489,7 @@ a.anchor-link {
   }
 </style>
 <!-- End of mermaid configuration --></head>
-<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7482,7 +7497,42 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="1a.-Salifort-Motors-EDA---Data-Cleansing">1a. Salifort Motors EDA - Data Cleansing<a class="anchor-link" href="#1a.-Salifort-Motors-EDA---Data-Cleansing">¶</a></h1>
+<table style="margin-right:auto;margin-left:0px">
+<tr>
+<td><a href="/"><img alt="No description has been provided for this image" src="/img/home.png"/></a></td>
+<td><a href="/">Home</a></td>
+<td>EDA Cleanse</td>
+<td><a href="/notebooks/Activity_3b_Salifort_Motors_project_EDA_ANALYSIS.html">EDA Analysis</a></td>
+<td><a href="/notebooks/Activity_3c_Salifort_Motors_project_Feature-Engineering.html">Feature Engineering</a></td>
+<td><a href="/notebooks/Activity_4a_Salifort_Motors_project_Logistical_Regression_Model.html">ML Models - Logistical Regression</a></td>
+<td><a href="/notebooks/Activity_4b_Salifort_Motors_project_Decision_Tree_Model.html">ML Models - Decision Tree</a></td>
+<td><a href="/notebooks/Activity_4c_Salifort_Motors_project_Random_Forest_Model.html">ML Models - Random Forest</a></td>
+<td><a href="/notebooks/Activity_9z_Salifort_Motors_project_MODEL-DEMONSTRATION.html">Model Demonstration</a></td>
+</tr>
+</table>
+<h1 id="Salifort-Motors---EDA-Data-Cleansing"><a id="toc1_"></a><a href="#toc0_">Salifort Motors - EDA Data Cleansing</a><a class="anchor-link" href="#Salifort-Motors---EDA-Data-Cleansing">¶</a></h1><h3 id="Document-Information"><a id="toc1_1_1_"></a><a href="#toc0_">Document Information</a><a class="anchor-link" href="#Document-Information">¶</a></h3><table style="margin-right:auto;margin-left:0px">
+<tbody>
+<tr>
+<td>Document Title</td>
+<td>Salifort Motors - EDA Data Cleansing</td>
+</tr>
+<tr>
+<td>Author</td>
+<td>Rod Slater</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Created</td>
+<td>01-11-2023</td>
+</tr>
+<tr>
+<td>Modified</td>
+<td>16-11-2023</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 </div>
@@ -7493,7 +7543,48 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Data-Provenance">Data Provenance<a class="anchor-link" href="#Data-Provenance">¶</a></h2><ul>
+<h3 id="Client-Details"><a id="toc1_1_2_"></a><a href="#toc0_">Client Details</a><a class="anchor-link" href="#Client-Details">¶</a></h3> <table style="margin-right:auto;margin-left:0px">
+<tbody>
+<tr>
+<td>Client Name</td>
+<td>Salifort Motors</td>
+</tr>
+<tr>
+<td>Client Contact</td>
+<td>Mr HR Team</td>
+</tr>
+<tr>
+<td>Client Email </td>
+<td>hr@salifortmotors.it</td>
+</tr>
+<tr>
+<td>Client Project</td>
+<td>HR Team Data Driven Solutions from Machine Learning Models</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Document-Overview"><a id="toc1_1_3_"></a><a href="#toc0_">Document Overview</a><a class="anchor-link" href="#Document-Overview">¶</a></h3><p>EDA Data Cleasing notebook for HR Data provided by Salifort Motors. This notebook details the steps taken to clean the data prior to data analysis.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Data-Provenance"><a id="toc1_2_"></a><a href="#toc0_">Data Provenance</a><a class="anchor-link" href="#Data-Provenance">¶</a></h2><ul>
 <li>First party data supplied directly to us by the client</li>
 <li>Bias Features :<ul>
 <li>Protected Groups   : There's no data relating to : gender, age, religion, disability in the provided data</li>
@@ -7505,7 +7596,7 @@ a.anchor-link {
 </ul>
 </li>
 </ul>
-<h3 id="Data-PreProcessing">Data PreProcessing<a class="anchor-link" href="#Data-PreProcessing">¶</a></h3><ul>
+<h3 id="Data-PreProcessing"><a id="toc1_2_1_"></a><a href="#toc0_">Data PreProcessing</a><a class="anchor-link" href="#Data-PreProcessing">¶</a></h3><ul>
 <li>Clean columns names apply snake_case</li>
 <li>Remove Duplicates</li>
 <li>Remove missing values</li>
@@ -7522,7 +7613,69 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Initialise-Notebook">Initialise Notebook<a class="anchor-link" href="#Initialise-Notebook">¶</a></h2><ul>
+<h1 id="Table-of-contents">Table of contents<a id="toc0_"></a><a class="anchor-link" href="#Table-of-contents">¶</a></h1><ul>
+<li><a href="#toc1_">Salifort Motors - EDA Data Cleansing</a><ul>
+<li><a href="#toc1_1_1_">Document Information</a></li>
+<li><a href="#toc1_1_2_">Client Details</a></li>
+<li><a href="#toc1_1_3_">Document Overview</a></li>
+<li><a href="#toc1_2_">Data Provenance</a><ul>
+<li><a href="#toc1_2_1_">Data PreProcessing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#toc2_"></a><ul>
+<li><a href="#toc2_1_">Initialise Notebook</a><ul>
+<li><a href="#toc2_1_1_">Import packages</a></li>
+<li><a href="#toc2_1_2_">Set Pandas Options</a></li>
+<li><a href="#toc2_1_3_">Initialise Notebook Options</a></li>
+</ul>
+</li>
+<li><a href="#toc2_2_">Step 2. Data Exploration (Initial EDA and data cleaning)</a><ul>
+<li><a href="#toc2_2_1_">Load dataset</a></li>
+</ul>
+</li>
+<li><a href="#toc2_3_">Variable Information</a><ul>
+<li><a href="#toc2_3_1_">Gather basic information about the data</a></li>
+<li><a href="#toc2_3_2_">Gather descriptive statistics about the data</a></li>
+<li><a href="#toc2_3_3_">Rename columns</a></li>
+<li><a href="#toc2_3_4_">Check missing values</a></li>
+<li><a href="#toc2_3_5_">Check duplicates</a><ul>
+<li><a href="#toc2_3_5_1_">Check for class imbalance before removing duplicates</a></li>
+<li><a href="#toc2_3_5_2_">Check class balance of duplicated rows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#toc3_">Check categorical values for consistency</a></li>
+<li><a href="#toc4_">Correct categorical values for snake_case</a><ul>
+<li><a href="#toc4_1_">Save df1 dataFrame : Minimal Feature Engineering - Duplicates removed</a></li>
+<li><a href="#toc4_2_">Check outliers</a></li>
+<li><a href="#toc4_3_">Save df1 dataFrame : Duplicates removed, <code>tenure</code> outliers removed</a></li>
+</ul>
+</li>
+</ul>
+<!-- vscode-jupyter-toc-config
+	numbering=false
+	anchor=true
+	flat=false
+	minLevel=1
+	maxLevel=6
+	/vscode-jupyter-toc-config -->
+<!-- THIS CELL WILL BE REPLACED ON TOC UPDATE. DO NOT WRITE YOUR TEXT IN THIS CELL -->
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Initialise-Notebook"><a id="toc2_1_"></a><a href="#toc0_">Initialise Notebook</a><a class="anchor-link" href="#Initialise-Notebook">¶</a></h2><ul>
 <li>Import packages</li>
 <li>Load dataset</li>
 </ul>
@@ -7536,7 +7689,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Import-packages">Import packages<a class="anchor-link" href="#Import-packages">¶</a></h3>
+<h3 id="Import-packages"><a id="toc2_1_1_"></a><a href="#toc0_">Import packages</a><a class="anchor-link" href="#Import-packages">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7589,7 +7742,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Set-Pandas-Options">Set Pandas Options<a class="anchor-link" href="#Set-Pandas-Options">¶</a></h3>
+<h3 id="Set-Pandas-Options"><a id="toc2_1_2_"></a><a href="#toc0_">Set Pandas Options</a><a class="anchor-link" href="#Set-Pandas-Options">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7618,7 +7771,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Initialise-Notebook-Options">Initialise Notebook Options<a class="anchor-link" href="#Initialise-Notebook-Options">¶</a></h3>
+<h3 id="Initialise-Notebook-Options"><a id="toc2_1_3_"></a><a href="#toc0_">Initialise Notebook Options</a><a class="anchor-link" href="#Initialise-Notebook-Options">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7644,7 +7797,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Step-2.-Data-Exploration-(Initial-EDA-and-data-cleaning)">Step 2. Data Exploration (Initial EDA and data cleaning)<a class="anchor-link" href="#Step-2.-Data-Exploration-(Initial-EDA-and-data-cleaning)">¶</a></h2>
+<h2 id="Data-Exploration-(Initial-EDA-and-data-cleaning)"><a id="toc2_2_"></a><a href="#toc0_">Data Exploration (Initial EDA and data cleaning)</a><a class="anchor-link" href="#Data-Exploration-(Initial-EDA-and-data-cleaning)">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7655,7 +7808,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Load-dataset">Load dataset<a class="anchor-link" href="#Load-dataset">¶</a></h3>
+<h3 id="Load-dataset"><a id="toc2_2_1_"></a><a href="#toc0_">Load dataset</a><a class="anchor-link" href="#Load-dataset">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7797,7 +7950,29 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Gather-basic-information-about-the-data">Gather basic information about the data<a class="anchor-link" href="#Gather-basic-information-about-the-data">¶</a></h3>
+<h2 id="Variable-Information"><a id="toc2_3_"></a><a href="#toc0_">Variable Information</a><a class="anchor-link" href="#Variable-Information">¶</a></h2><p>Variable  |Description |
+-----|-----|
+satisfaction_level|Employee-reported job satisfaction level [0–1]|
+last_evaluation|Score of employee's last performance review [0–1]|
+number_project|Number of projects employee contributes to|
+average_monthly_hours|Average number of hours employee worked per month|
+time_spend_company|How long the employee has been with the company (years)
+Work_accident|Whether or not the employee experienced an accident while at work
+left|Whether or not the employee left the company
+promotion_last_5years|Whether or not the employee was promoted in the last 5 years
+Department|The employee's department
+salary|The employee's salary (U.S. dollars)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Gather-basic-information-about-the-data"><a id="toc2_3_1_"></a><a href="#toc0_">Gather basic information about the data</a><a class="anchor-link" href="#Gather-basic-information-about-the-data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7853,7 +8028,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Gather-descriptive-statistics-about-the-data">Gather descriptive statistics about the data<a class="anchor-link" href="#Gather-descriptive-statistics-about-the-data">¶</a></h3>
+<h3 id="Gather-descriptive-statistics-about-the-data"><a id="toc2_3_2_"></a><a href="#toc0_">Gather descriptive statistics about the data</a><a class="anchor-link" href="#Gather-descriptive-statistics-about-the-data">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8068,7 +8243,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Rename-columns">Rename columns<a class="anchor-link" href="#Rename-columns">¶</a></h3>
+<h3 id="Rename-columns"><a id="toc2_3_3_"></a><a href="#toc0_">Rename columns</a><a class="anchor-link" href="#Rename-columns">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8159,7 +8334,7 @@ memory usage: 1.1+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Check-missing-values">Check missing values<a class="anchor-link" href="#Check-missing-values">¶</a></h3>
+<h3 id="Check-missing-values"><a id="toc2_3_4_"></a><a href="#toc0_">Check missing values</a><a class="anchor-link" href="#Check-missing-values">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8220,7 +8395,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Check-duplicates">Check duplicates<a class="anchor-link" href="#Check-duplicates">¶</a></h3>
+<h3 id="Check-duplicates"><a id="toc2_3_5_"></a><a href="#toc0_">Check duplicates</a><a class="anchor-link" href="#Check-duplicates">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8270,7 +8445,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Check-for-class-imbalance-before-removing-duplicates">Check for class imbalance before removing duplicates<a class="anchor-link" href="#Check-for-class-imbalance-before-removing-duplicates">¶</a></h4><p>Before any cleaning is carried out we need to check the class balance for the target variable.</p>
+<h4 id="Check-for-class-imbalance-before-removing-duplicates"><a id="toc2_3_5_1_"></a><a href="#toc0_">Check for class imbalance before removing duplicates</a><a class="anchor-link" href="#Check-for-class-imbalance-before-removing-duplicates">¶</a></h4><p>Before any cleaning is carried out we need to check the class balance for the target variable.</p>
 <p>We can see a class imbalance</p>
 </div>
 </div>
@@ -8317,7 +8492,7 @@ Name: proportion, dtype: float64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Check-class-balance-of-duplicated-rows">Check class balance of duplicated rows<a class="anchor-link" href="#Check-class-balance-of-duplicated-rows">¶</a></h4><p>Before removing any duplicated rows, we need to check the balance of the duplicated rows.</p>
+<h4 id="Check-class-balance-of-duplicated-rows"><a id="toc2_3_5_2_"></a><a href="#toc0_">Check class balance of duplicated rows</a><a class="anchor-link" href="#Check-class-balance-of-duplicated-rows">¶</a></h4><p>Before removing any duplicated rows, we need to check the balance of the duplicated rows.</p>
 <p>As we can see the duplicated rows are more or less equal and 3008 duplicated rows = 20% of the total sample (11428 rows) which we are dropping to remove any impact from duplicates on the model.</p>
 </div>
 </div>
@@ -8830,7 +9005,7 @@ Dedupe rows removed   :  3008
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Check-categorical-values-for-consistency">Check categorical values for consistency<a class="anchor-link" href="#Check-categorical-values-for-consistency">¶</a></h1>
+<h1 id="Check-categorical-values-for-consistency"><a id="toc3_"></a><a href="#toc0_">Check categorical values for consistency</a><a class="anchor-link" href="#Check-categorical-values-for-consistency">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8871,7 +9046,7 @@ Dedupe rows removed   :  3008
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Correct-categorical-values-for-snake_case">Correct categorical values for snake_case<a class="anchor-link" href="#Correct-categorical-values-for-snake_case">¶</a></h1>
+<h1 id="Correct-categorical-values-for-snake_case"><a id="toc4_"></a><a href="#toc0_">Correct categorical values for snake_case</a><a class="anchor-link" href="#Correct-categorical-values-for-snake_case">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8896,7 +9071,7 @@ Dedupe rows removed   :  3008
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Save-df1-dataFrame-:-Minimal-Feature-Engineering---Duplicates-removed">Save df1 dataFrame : Minimal Feature Engineering - Duplicates removed<a class="anchor-link" href="#Save-df1-dataFrame-:-Minimal-Feature-Engineering---Duplicates-removed">¶</a></h2>
+<h2 id="Save-df1-dataFrame-:-Minimal-Feature-Engineering---Duplicates-removed"><a id="toc4_1_"></a><a href="#toc0_">Save df1 dataFrame : Minimal Feature Engineering - Duplicates removed</a><a class="anchor-link" href="#Save-df1-dataFrame-:-Minimal-Feature-Engineering---Duplicates-removed">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8936,7 +9111,7 @@ Dedupe rows removed   :  3008
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Check-outliers">Check outliers<a class="anchor-link" href="#Check-outliers">¶</a></h2>
+<h2 id="Check-outliers"><a id="toc4_2_"></a><a href="#toc0_">Check outliers</a><a class="anchor-link" href="#Check-outliers">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9089,7 +9264,7 @@ Upper limit          :    5.5
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Save-df1-dataFrame-:-Duplicates-removed,-tenure-outliers-removed">Save df1 dataFrame : Duplicates removed, <code>tenure</code> outliers removed<a class="anchor-link" href="#Save-df1-dataFrame-:-Duplicates-removed,-tenure-outliers-removed">¶</a></h2>
+<h2 id="Save-df1-dataFrame-:-Duplicates-removed,-tenure-outliers-removed"><a id="toc4_3_"></a><a href="#toc0_">Save df1 dataFrame : Duplicates removed, <code>tenure</code> outliers removed</a><a class="anchor-link" href="#Save-df1-dataFrame-:-Duplicates-removed,-tenure-outliers-removed">¶</a></h2>
 </div>
 </div>
 </div>

@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Activity_9z_Salifort_Motors_Project_MODEL-DEMONSTRATION</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Activity_9z_Salifort_Motors_project_MODEL-DEMONSTRATION</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -6844,7 +6844,9 @@ all of MD as it is not optimized for dense, information rich UIs.
    * https://material-components-web.appspot.com/elevation.html
    */
 
-  --jp-shadow-base-lightness: 0;
+  /* The dark theme shadows need a bit of work, but this will probably also require work on the core layout
+   * colors used in the theme as well. */
+  --jp-shadow-base-lightness: 32;
   --jp-shadow-umbra-color: rgba(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
@@ -6898,10 +6900,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--md-grey-400);
-  --jp-border-color1: var(--md-grey-400);
-  --jp-border-color2: var(--md-grey-300);
-  --jp-border-color3: var(--md-grey-200);
+  --jp-border-color0: var(--md-grey-700);
+  --jp-border-color1: var(--md-grey-700);
+  --jp-border-color2: var(--md-grey-800);
+  --jp-border-color3: var(--md-grey-900);
   --jp-inverse-border-color: var(--md-grey-600);
   --jp-border-radius: 2px;
 
@@ -6930,20 +6932,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-ui-font-color0: rgba(255, 255, 255, 1);
+  --jp-ui-font-color1: rgba(255, 255, 255, 0.87);
+  --jp-ui-font-color2: rgba(255, 255, 255, 0.54);
+  --jp-ui-font-color3: rgba(255, 255, 255, 0.38);
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(255, 255, 255, 1);
-  --jp-ui-inverse-font-color1: rgba(255, 255, 255, 1);
-  --jp-ui-inverse-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-ui-inverse-font-color3: rgba(255, 255, 255, 0.5);
+  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
+  --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
+  --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
+  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
 
   /* Content Fonts
    *
@@ -6971,11 +6973,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(0, 0, 0, 1);
-  --jp-content-font-color1: rgba(0, 0, 0, 0.87);
-  --jp-content-font-color2: rgba(0, 0, 0, 0.54);
-  --jp-content-font-color3: rgba(0, 0, 0, 0.38);
-  --jp-content-link-color: var(--md-blue-900);
+  --jp-content-font-color0: rgba(255, 255, 255, 1);
+  --jp-content-font-color1: rgba(255, 255, 255, 1);
+  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
+  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
+  --jp-content-link-color: var(--md-blue-300);
   --jp-content-font-family: system-ui, -apple-system, blinkmacsystemfont,
     'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -7006,10 +7008,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: white;
-  --jp-layout-color1: white;
-  --jp-layout-color2: var(--md-grey-200);
-  --jp-layout-color3: var(--md-grey-400);
+  --jp-layout-color0: #111;
+  --jp-layout-color1: var(--md-grey-900);
+  --jp-layout-color2: var(--md-grey-800);
+  --jp-layout-color3: var(--md-grey-700);
   --jp-layout-color4: var(--md-grey-600);
 
   /* Inverse Layout
@@ -7018,40 +7020,40 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: #111;
-  --jp-inverse-layout-color1: var(--md-grey-900);
-  --jp-inverse-layout-color2: var(--md-grey-800);
-  --jp-inverse-layout-color3: var(--md-grey-700);
+  --jp-inverse-layout-color0: white;
+  --jp-inverse-layout-color1: white;
+  --jp-inverse-layout-color2: var(--md-grey-200);
+  --jp-inverse-layout-color3: var(--md-grey-400);
   --jp-inverse-layout-color4: var(--md-grey-600);
 
   /* Brand/accent */
 
-  --jp-brand-color0: var(--md-blue-900);
-  --jp-brand-color1: var(--md-blue-700);
+  --jp-brand-color0: var(--md-blue-700);
+  --jp-brand-color1: var(--md-blue-500);
   --jp-brand-color2: var(--md-blue-300);
   --jp-brand-color3: var(--md-blue-100);
   --jp-brand-color4: var(--md-blue-50);
-  --jp-accent-color0: var(--md-green-900);
-  --jp-accent-color1: var(--md-green-700);
+  --jp-accent-color0: var(--md-green-700);
+  --jp-accent-color1: var(--md-green-500);
   --jp-accent-color2: var(--md-green-300);
   --jp-accent-color3: var(--md-green-100);
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: var(--md-orange-900);
-  --jp-warn-color1: var(--md-orange-700);
+  --jp-warn-color0: var(--md-orange-700);
+  --jp-warn-color1: var(--md-orange-500);
   --jp-warn-color2: var(--md-orange-300);
   --jp-warn-color3: var(--md-orange-100);
-  --jp-error-color0: var(--md-red-900);
-  --jp-error-color1: var(--md-red-700);
+  --jp-error-color0: var(--md-red-700);
+  --jp-error-color1: var(--md-red-500);
   --jp-error-color2: var(--md-red-300);
   --jp-error-color3: var(--md-red-100);
-  --jp-success-color0: var(--md-green-900);
-  --jp-success-color1: var(--md-green-700);
+  --jp-success-color0: var(--md-green-700);
+  --jp-success-color1: var(--md-green-500);
   --jp-success-color2: var(--md-green-300);
   --jp-success-color3: var(--md-green-100);
-  --jp-info-color0: var(--md-cyan-900);
-  --jp-info-color1: var(--md-cyan-700);
+  --jp-info-color0: var(--md-cyan-700);
+  --jp-info-color1: var(--md-cyan-500);
   --jp-info-color2: var(--md-cyan-300);
   --jp-info-color3: var(--md-cyan-100);
 
@@ -7061,8 +7063,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: var(--md-grey-100);
-  --jp-cell-editor-border-color: var(--md-grey-300);
+  --jp-cell-editor-background: var(--jp-layout-color1);
+  --jp-cell-editor-border-color: var(--md-grey-700);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
@@ -7070,8 +7072,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-font-family: var(--jp-code-font-family-default);
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
-  --jp-cell-prompt-not-active-opacity: 0.5;
-  --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
+  --jp-cell-prompt-not-active-opacity: 1;
+  --jp-cell-prompt-not-active-font-color: var(--md-grey-300);
 
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
@@ -7085,7 +7087,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: var(--md-blue-50);
+  --jp-notebook-multiselected-color: rgba(33, 150, 243, 0.24);
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -7100,13 +7102,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: #fdd;
-  --jp-rendermime-table-row-background: var(--md-grey-100);
-  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
+  --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
+  --jp-rendermime-table-row-background: var(--md-grey-900);
+  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(0, 0, 0, 0.25);
+  --jp-dialog-background: rgba(0, 0, 0, 0.6);
 
   /* Console specific styles */
 
@@ -7114,12 +7116,12 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Toolbar specific styles */
 
-  --jp-toolbar-border-color: var(--jp-border-color1);
+  --jp-toolbar-border-color: var(--jp-border-color2);
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: var(--jp-layout-color1);
-  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24);
+  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
-  --jp-toolbar-active-background: var(--md-grey-300);
+  --jp-toolbar-active-background: var(--jp-layout-color0);
 
   /* Statusbar specific styles */
 
@@ -7128,43 +7130,43 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Input field styles */
 
   --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-input-active-background: var(--jp-layout-color1);
-  --jp-input-hover-background: var(--jp-layout-color1);
-  --jp-input-background: var(--md-grey-100);
+  --jp-input-active-background: var(--jp-layout-color0);
+  --jp-input-hover-background: var(--jp-layout-color2);
+  --jp-input-background: var(--md-grey-800);
   --jp-input-border-color: var(--jp-inverse-border-color);
   --jp-input-active-border-color: var(--jp-brand-color1);
   --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: #d9d9d9;
-  --jp-editor-selected-focused-background: #d7d4f0;
+  --jp-editor-selected-background: var(--jp-layout-color2);
+  --jp-editor-selected-focused-background: rgba(33, 150, 243, 0.24);
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: #008000;
-  --jp-mirror-editor-atom-color: #88f;
-  --jp-mirror-editor-number-color: #080;
-  --jp-mirror-editor-def-color: #00f;
-  --jp-mirror-editor-variable-color: var(--md-grey-900);
-  --jp-mirror-editor-variable-2-color: rgb(0, 54, 109);
-  --jp-mirror-editor-variable-3-color: #085;
-  --jp-mirror-editor-punctuation-color: #05a;
-  --jp-mirror-editor-property-color: #05a;
+  --jp-mirror-editor-keyword-color: var(--md-green-500);
+  --jp-mirror-editor-atom-color: var(--md-blue-300);
+  --jp-mirror-editor-number-color: var(--md-green-400);
+  --jp-mirror-editor-def-color: var(--md-blue-600);
+  --jp-mirror-editor-variable-color: var(--md-grey-300);
+  --jp-mirror-editor-variable-2-color: var(--md-blue-500);
+  --jp-mirror-editor-variable-3-color: var(--md-green-600);
+  --jp-mirror-editor-punctuation-color: var(--md-blue-400);
+  --jp-mirror-editor-property-color: var(--md-blue-400);
   --jp-mirror-editor-operator-color: #a2f;
   --jp-mirror-editor-comment-color: #408080;
-  --jp-mirror-editor-string-color: #ba2121;
-  --jp-mirror-editor-string-2-color: #708;
+  --jp-mirror-editor-string-color: #ff7070;
+  --jp-mirror-editor-string-2-color: var(--md-purple-300);
   --jp-mirror-editor-meta-color: #a2f;
   --jp-mirror-editor-qualifier-color: #555;
-  --jp-mirror-editor-builtin-color: #008000;
+  --jp-mirror-editor-builtin-color: var(--md-green-600);
   --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: #170;
-  --jp-mirror-editor-attribute-color: #00c;
-  --jp-mirror-editor-header-color: blue;
-  --jp-mirror-editor-quote-color: #090;
-  --jp-mirror-editor-link-color: #00c;
+  --jp-mirror-editor-tag-color: var(--md-green-700);
+  --jp-mirror-editor-attribute-color: var(--md-blue-700);
+  --jp-mirror-editor-header-color: var(--md-blue-500);
+  --jp-mirror-editor-quote-color: var(--md-green-300);
+  --jp-mirror-editor-link-color: var(--md-blue-700);
   --jp-mirror-editor-error-color: #f00;
   --jp-mirror-editor-hr-color: #999;
 
@@ -7174,17 +7176,17 @@ all of MD as it is not optimized for dense, information rich UIs.
     and the icon of the user.
   */
 
-  --jp-collaborator-color1: #ffad8e;
-  --jp-collaborator-color2: #dac83d;
-  --jp-collaborator-color3: #72dd76;
-  --jp-collaborator-color4: #00e4d0;
-  --jp-collaborator-color5: #45d4ff;
-  --jp-collaborator-color6: #e2b1ff;
-  --jp-collaborator-color7: #ff9de6;
+  --jp-collaborator-color1: #ad4a00;
+  --jp-collaborator-color2: #7b6a00;
+  --jp-collaborator-color3: #007e00;
+  --jp-collaborator-color4: #008772;
+  --jp-collaborator-color5: #0079b9;
+  --jp-collaborator-color6: #8b45c6;
+  --jp-collaborator-color7: #be208b;
 
   /* Vega extension styles */
 
-  --jp-vega-background: white;
+  --jp-vega-background: var(--md-grey-400);
 
   /* Sidebar-related styles */
 
@@ -7192,15 +7194,28 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Search-related styles */
 
-  --jp-search-toggle-off-opacity: 0.5;
+  --jp-search-toggle-off-opacity: 0.6;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: rgb(245, 200, 0);
+  --jp-search-selected-match-background-color: rgb(255, 225, 0);
   --jp-search-selected-match-color: black;
   --jp-search-unselected-match-background-color: var(
     --jp-inverse-layout-color0
   );
   --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
+
+  /* scrollbar related styles. Supports every browser except Edge. */
+
+  /* colors based on JetBrain's Darcula theme */
+
+  --jp-scrollbar-background-color: #3f4244;
+  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
+
+  /* hacks for setting the thumb shape. These do nothing in Firefox */
+
+  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 
   /* Icon colors that work well with light or dark backgrounds */
   --jp-icon-contrast-color0: var(--md-purple-600);
@@ -7222,15 +7237,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* File or activity icons and switch semantic variables */
   --jp-jupyter-icon-color: #f37626;
   --jp-notebook-icon-color: #f37626;
-  --jp-json-icon-color: var(--md-orange-700);
-  --jp-console-icon-background-color: var(--md-blue-700);
+  --jp-json-icon-color: var(--md-orange-500);
+  --jp-console-icon-background-color: var(--md-blue-500);
   --jp-console-icon-color: white;
-  --jp-terminal-icon-background-color: var(--md-grey-800);
-  --jp-terminal-icon-color: var(--md-grey-200);
-  --jp-text-editor-icon-color: var(--md-grey-700);
-  --jp-inspector-icon-color: var(--md-grey-700);
+  --jp-terminal-icon-background-color: var(--md-grey-200);
+  --jp-terminal-icon-color: var(--md-grey-800);
+  --jp-text-editor-icon-color: var(--md-grey-200);
+  --jp-inspector-icon-color: var(--md-grey-200);
   --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--md-orange-900);
+  --jp-switch-true-position-color: var(--md-orange-700);
 }
 </style>
 <style type="text/css">
@@ -7474,13 +7489,161 @@ a.anchor-link {
   }
 </style>
 <!-- End of mermaid configuration --></head>
-<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<table style="margin-right:auto;margin-left:0px">
+<tr>
+<td><a href="/"><img alt="No description has been provided for this image" src="/img/home.png"/></a></td>
+<td><a href="/">Home</a></td>
+<td><a href="/notebooks/Activity_3a_Salifort_Motors_project_EDA_cleanse.html">EDA Cleanse</a></td>
+<td><a href="/notebooks/Activity_3b_Salifort_Motors_project_EDA_ANALYSIS.html">EDA Analysis</a></td>
+<td><a href="/notebooks/Activity_3c_Salifort_Motors_project_Feature-Engineering.html">Feature Engineering</a></td>
+<td><a href="/notebooks/Activity_4a_Salifort_Motors_project_Logistical_Regression_Model.html">ML Models - Logistical Regression</a></td>
+<td><a href="/notebooks/Activity_4b_Salifort_Motors_project_Decision_Tree_Model.html">ML Models - Decision Tree</a></td>
+<td><a href="/notebooks/Activity_4c_Salifort_Motors_project_Random_Forest_Model.html">ML Models - Random Forest</a></td>
+<td>Model Demonstration</td>
+</tr>
+</table>
+<h2 id="Salifort-Motors---Demonstration-model---Best-Choice-Random-Forest"><a id="toc1_1_"></a><a href="#toc0_">Salifort Motors - Demonstration model - Best Choice Random Forest</a><a class="anchor-link" href="#Salifort-Motors---Demonstration-model---Best-Choice-Random-Forest">¶</a></h2><h3 id="Document-Information"><a id="toc1_1_1_"></a><a href="#toc0_">Document Information</a><a class="anchor-link" href="#Document-Information">¶</a></h3><table style="margin-right:auto;margin-left:0px">
+<tbody>
+<tr>
+<td>Document Title</td>
+<td>Salifort Motors - Demonstration Model - Best Choice Random Forest</td>
+</tr>
+<tr>
+<td>Author</td>
+<td>Rod Slater</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Created</td>
+<td>01-11-2023</td>
+</tr>
+<tr>
+<td>Modified</td>
+<td>16-11-2023</td>
+</tr>
+</tbody></table>
+<h3 id="Client-Details"><a id="toc1_1_2_"></a><a href="#toc0_">Client Details</a><a class="anchor-link" href="#Client-Details">¶</a></h3> <table style="margin-right:auto;margin-left:0px">
+<tbody>
+<tr>
+<td>Client Name</td>
+<td>Salifort Motors</td>
+</tr>
+<tr>
+<td>Client Contact</td>
+<td>Mr HR Team</td>
+</tr>
+<tr>
+<td>Client Email </td>
+<td>hr@salifortmotors.it</td>
+</tr>
+<tr>
+<td>Client Project</td>
+<td>HR Team Data Driven Solutions from Machine Learning Models</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Document-Overview"><a id="toc1_1_3_"></a><a href="#toc0_">Document Overview</a><a class="anchor-link" href="#Document-Overview">¶</a></h3><p>Demonstration of the ML model created for the Salifort Motors project</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Table-of-contents">Table of contents<a id="toc0_"></a><a class="anchor-link" href="#Table-of-contents">¶</a></h2><ul>
+<li><a href="#toc1_1_">Salifort Motors - Demonstration model - Best Choice Random Forest</a><ul>
+<li><a href="#toc1_1_1_">Document Information</a></li>
+<li><a href="#toc1_1_2_">Client Details</a></li>
+<li><a href="#toc1_1_3_">Document Overview</a></li>
+</ul>
+</li>
+<li><a href="#toc2_">Initialise Notebook</a><ul>
+<li><a href="#toc2_1_1_">Import Packages</a></li>
+<li><a href="#toc2_1_2_">Initialise Notebook Options</a></li>
+<li><a href="#toc2_1_3_">Pickle Load Model developed using the All Features Dataset</a></li>
+</ul>
+</li>
+<li><a href="#toc3_">Random Forest - <code>AllFeat</code> - all fields</a><ul>
+<li><a href="#toc3_1_">Pickle Load model developed using the Focus Features dataset</a></li>
+</ul>
+</li>
+<li><a href="#toc4_">Random Forest - <code>Focus Features</code> - excludes departments</a><ul>
+<li><a href="#toc4_1_">Model Comparison Demonstration</a></li>
+</ul>
+</li>
+<li><a href="#toc5_">Random Forest Model 2 applied to left = 0 data</a><ul>
+<li><a href="#toc5_1_">Summarise model findings</a></li>
+</ul>
+</li>
+<li><a href="#toc6_">Set Prediction Probability Threshold for reporting</a></li>
+</ul>
+<!-- vscode-jupyter-toc-config
+	numbering=false
+	anchor=true
+	flat=false
+	minLevel=1
+	maxLevel=6
+	/vscode-jupyter-toc-config -->
+<!-- THIS CELL WILL BE REPLACED ON TOC UPDATE. DO NOT WRITE YOUR TEXT IN THIS CELL -->
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Initialise-Notebook"><a id="toc2_"></a><a href="#toc0_">Initialise Notebook</a><a class="anchor-link" href="#Initialise-Notebook">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Import-Packages"><a id="toc2_1_1_"></a><a href="#toc0_">Import Packages</a><a class="anchor-link" href="#Import-Packages">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -7497,7 +7660,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Initialise-Notebook-Options">Initialise Notebook Options<a class="anchor-link" href="#Initialise-Notebook-Options">¶</a></h3>
+<h3 id="Initialise-Notebook-Options"><a id="toc2_1_2_"></a><a href="#toc0_">Initialise Notebook Options</a><a class="anchor-link" href="#Initialise-Notebook-Options">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7506,7 +7669,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">load_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Documents/Learning/Salifort-Motors-Capstone-Project/00-data_cleaned/"</span> <span class="c1"># Source folder for cleaned data</span>
@@ -7518,12 +7681,23 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Pickle-Load-Model-developed-using-the-All-Features-Dataset"><a id="toc2_1_3_"></a><a href="#toc0_">Pickle Load Model developed using the All Features Dataset</a><a class="anchor-link" href="#Pickle-Load-Model-developed-using-the-All-Features-Dataset">¶</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ./hr_rf1 model = </span>
@@ -7547,7 +7721,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Random-Forest---AllFeat---all-fields">Random Forest - <code>AllFeat</code> - all fields<a class="anchor-link" href="#Random-Forest---AllFeat---all-fields">¶</a></h1>
+<h1 id="Random-Forest---AllFeat---all-fields"><a id="toc3_"></a><a href="#toc0_">Random Forest - <code>AllFeat</code> - all fields</a><a class="anchor-link" href="#Random-Forest---AllFeat---all-fields">¶</a></h1><p>Function to demonstrate the Random Forest model developed using the all features dataset. This dataset includes dummy encoded dept.</p>
 </div>
 </div>
 </div>
@@ -7556,7 +7730,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">will_they_leave_ex_dept_rf1</span><span class="p">(</span><span class="n">satisfaction</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">last_eval</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">num_proj</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">avg_mnth_hrs</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> 
@@ -7621,7 +7795,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="ML-Model-working-prediction-demonstration-with-Feature-Engineered-dataset">ML Model working prediction demonstration with Feature Engineered dataset<a class="anchor-link" href="#ML-Model-working-prediction-demonstration-with-Feature-Engineered-dataset">¶</a></h2>
+<h2 id="Pickle-Load-model-developed-using-the-Focus-Features-dataset"><a id="toc3_1_"></a><a href="#toc0_">Pickle Load model developed using the Focus Features dataset</a><a class="anchor-link" href="#Pickle-Load-model-developed-using-the-Focus-Features-dataset">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7630,7 +7804,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ./hr_rf2 model = Feature Engineered : avg_mnth_hrs = overworked</span>
@@ -7655,7 +7829,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Random-Forest---NoDept---excludes-departments">Random Forest - <code>NoDept</code> - excludes departments<a class="anchor-link" href="#Random-Forest---NoDept---excludes-departments">¶</a></h1>
+<h1 id="Random-Forest---Focus-Features---excludes-departments"><a id="toc4_"></a><a href="#toc0_">Random Forest - <code>Focus Features</code> - excludes departments</a><a class="anchor-link" href="#Random-Forest---Focus-Features---excludes-departments">¶</a></h1><p>Function to demonstrate the Random Forest model developed using the FOCUS features dataset. This dataset EXCLUDES the dummy encoded dept data.</p>
 </div>
 </div>
 </div>
@@ -7664,7 +7838,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">will_they_leave_ex_dept_rf2</span><span class="p">(</span><span class="n">satisfaction</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">last_eval</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">num_proj</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">tenure</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">overworked</span><span class="p">:</span><span class="nb">bin</span><span class="p">,</span> <span class="n">promotion</span><span class="p">:</span><span class="nb">bin</span><span class="p">,</span> <span class="n">salary</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
@@ -7730,7 +7904,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Model-Comparison-Demonstration">Model Comparison Demonstration<a class="anchor-link" href="#Model-Comparison-Demonstration">¶</a></h2>
+<h2 id="Model-Comparison-Demonstration"><a id="toc4_1_"></a><a href="#toc0_">Model Comparison Demonstration</a><a class="anchor-link" href="#Model-Comparison-Demonstration">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7739,19 +7913,19 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Note Key Feature : tenure, promotion, num_projects, last_eval.</span>
 
-<span class="n">number_of_projects</span>      <span class="o">=</span> <span class="mi">2</span>         <span class="c1"># Discrete range [0-7]</span>
+<span class="n">number_of_projects</span>      <span class="o">=</span> <span class="mi">1</span>         <span class="c1"># Discrete range [0-7]</span>
 <span class="n">salary</span>                  <span class="o">=</span> <span class="mi">1</span>         <span class="c1"># 0 = low, 1 = medium, 2 = high</span>
 <span class="n">satisfaction</span>            <span class="o">=</span> <span class="mf">0.38</span>       <span class="c1"># Continuous [0-1]</span>
-<span class="n">last_evaluation_score</span>   <span class="o">=</span> <span class="mf">0.54</span>       <span class="c1"># Continuous range [0-1]</span>
+<span class="n">last_evaluation_score</span>   <span class="o">=</span> <span class="mf">0.46</span>       <span class="c1"># Continuous range [0-1]</span>
 <span class="n">employee_tenure</span>         <span class="o">=</span> <span class="mi">3</span>         <span class="c1"># Discrete range [2-10]</span>
 <span class="n">promotion_l5y</span>           <span class="o">=</span> <span class="mi">0</span>         <span class="c1"># Binary range [0,1] </span>
 <span class="n">employee_overworked</span>     <span class="o">=</span> <span class="mi">0</span>         <span class="c1"># Binary [0,1] rf2 model only</span>
-<span class="n">avg_mnth_hrs</span>            <span class="o">=</span> <span class="mi">175</span>       <span class="c1"># Discrete range [96 - 310] 175 hrs = overworked rf1 model only</span>
+<span class="n">avg_mnth_hrs</span>            <span class="o">=</span> <span class="mi">300</span>       <span class="c1"># Discrete range [96 - 310] 175 hrs = overworked rf1 model only</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Random Forest Model 1 - All Features"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"=============================================="</span><span class="p">)</span>
@@ -7791,7 +7965,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Random-Forest-Model-2-applied-to-left-=-0-data">Random Forest Model 2 applied to left = 0 data<a class="anchor-link" href="#Random-Forest-Model-2-applied-to-left-=-0-data">¶</a></h1><p>The code below</p>
+<h1 id="Random-Forest-Model-2-applied-to-left-=-0-data"><a id="toc5_"></a><a href="#toc0_">Random Forest Model 2 applied to left = 0 data</a><a class="anchor-link" href="#Random-Forest-Model-2-applied-to-left-=-0-data">¶</a></h1><p>The code below</p>
 <ul>
 <li>reads the employee data file</li>
 <li>filters out any employees that have left (<code>left = 1</code>)</li>
@@ -7806,7 +7980,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load cleaned dataset into a dataframe</span>
@@ -7823,14 +7997,16 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <span class="n">probabilities</span> <span class="o">=</span> <span class="n">model1</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
 
 <span class="n">leave_probabilities</span> <span class="o">=</span> <span class="n">probabilities</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">stay_probabilities</span> <span class="o">=</span>  <span class="n">probabilities</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
 <span class="c1">#print(features.shape)</span>
 <span class="c1">#print(leave_probabilities.shape)</span>
 
 <span class="c1"># Add the probabilities to the new data DataFrame if needed</span>
 <span class="n">features</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">leave_probabilities</span>
+<span class="n">features</span><span class="p">[</span><span class="s1">'stay_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">stay_probabilities</span>
 
 <span class="c1"># Save the updated new data DataFrame with probabilities to a CSV file</span>
-<span class="n">predictions</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'leave_probability'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'leave_probability'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7858,10 +8034,44 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">predictions</span><span class="p">[[</span><span class="s1">'satisfaction'</span><span class="p">,</span> <span class="s1">'last_eval'</span><span class="p">,</span> <span class="s1">'number_project'</span><span class="p">,</span><span class="s1">'tenure'</span><span class="p">,</span><span class="s1">'salary'</span><span class="p">,</span> <span class="s1">'overworked'</span><span class="p">,</span> <span class="s1">'leave_probability'</span><span class="p">]]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">count_above_70</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="n">predictions</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.7</span><span class="p">])</span>
+
+<span class="n">perc_above_70</span> <span class="o">=</span> <span class="p">(</span><span class="n">count_above_70</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="c1"># Print the result</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of leave probability above 70% : </span><span class="si">{</span><span class="n">perc_above_70</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of leave probability above 70%      : </span><span class="si">{</span><span class="n">count_above_70</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Percentage of leave probability above 70% : 0.52%
+Count of leave probability above 70%      : 48
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">predictions</span><span class="p">[[</span><span class="s1">'satisfaction'</span><span class="p">,</span> <span class="s1">'last_eval'</span><span class="p">,</span> <span class="s1">'number_project'</span><span class="p">,</span><span class="s1">'tenure'</span><span class="p">,</span><span class="s1">'salary'</span><span class="p">,</span> <span class="s1">'overworked'</span><span class="p">,</span> <span class="s1">'leave_probability'</span><span class="p">,</span> <span class="s1">'stay_probability'</span><span class="p">]]</span>
 </pre></div>
 </div>
 </div>
@@ -7872,7 +8082,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7899,6 +8109,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <th>salary</th>
 <th>overworked</th>
 <th>leave_probability</th>
+<th>stay_probability</th>
 </tr>
 </thead>
 <tbody>
@@ -7911,6 +8122,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>1</td>
 <td>0</td>
 <td>0.970849</td>
+<td>0.029151</td>
 </tr>
 <tr>
 <th>6534</th>
@@ -7921,6 +8133,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>0</td>
 <td>0</td>
 <td>0.970849</td>
+<td>0.029151</td>
 </tr>
 <tr>
 <th>2358</th>
@@ -7931,6 +8144,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>0</td>
 <td>0</td>
 <td>0.970849</td>
+<td>0.029151</td>
 </tr>
 <tr>
 <th>3701</th>
@@ -7941,6 +8155,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>1</td>
 <td>0</td>
 <td>0.970849</td>
+<td>0.029151</td>
 </tr>
 <tr>
 <th>10193</th>
@@ -7951,9 +8166,11 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>2</td>
 <td>0</td>
 <td>0.970849</td>
+<td>0.029151</td>
 </tr>
 <tr>
 <th>...</th>
+<td>...</td>
 <td>...</td>
 <td>...</td>
 <td>...</td>
@@ -7971,6 +8188,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>0</td>
 <td>1</td>
 <td>0.002233</td>
+<td>0.997767</td>
 </tr>
 <tr>
 <th>3449</th>
@@ -7981,6 +8199,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>1</td>
 <td>0</td>
 <td>0.002233</td>
+<td>0.997767</td>
 </tr>
 <tr>
 <th>9432</th>
@@ -7991,6 +8210,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>0</td>
 <td>1</td>
 <td>0.002233</td>
+<td>0.997767</td>
 </tr>
 <tr>
 <th>9048</th>
@@ -8001,6 +8221,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>0</td>
 <td>1</td>
 <td>0.002233</td>
+<td>0.997767</td>
 </tr>
 <tr>
 <th>2949</th>
@@ -8011,10 +8232,11 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <td>2</td>
 <td>0</td>
 <td>0.002233</td>
+<td>0.997767</td>
 </tr>
 </tbody>
 </table>
-<p>9285 rows × 7 columns</p>
+<p>9285 rows × 8 columns</p>
 </div>
 </div>
 </div>
@@ -8027,7 +8249,7 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Summarise-model-findings">Summarise model findings<a class="anchor-link" href="#Summarise-model-findings">¶</a></h2><p>Count the number of employees that are at risk of leaving with probabilities set at:</p>
+<h2 id="Summarise-model-findings"><a id="toc5_1_"></a><a href="#toc0_">Summarise model findings</a><a class="anchor-link" href="#Summarise-model-findings">¶</a></h2><p>Count the number of employees that are at risk of leaving with probabilities set at:</p>
 <ul>
 <li>High Risk &gt; 85%</li>
 <li>Medium Risk &gt; 50% &lt; 84%</li>
@@ -8041,10 +8263,10 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [92]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">high_risk_threshold</span> <span class="o">=</span> <span class="mf">0.6</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">high_risk_threshold</span> <span class="o">=</span> <span class="mf">0.7</span>
 <span class="n">medium_risk_threshold</span> <span class="o">=</span> <span class="mf">0.5</span>
 
 
@@ -8068,8 +8290,8 @@ The employee is **LIKELY** to leave with a probability of 97.08%
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>High Risk   &gt; 60.0%     : 49   0.53 %
-Medium Risk &gt; 50.0%     : 10   0.11 %
+<pre>High Risk   &gt; 70.0%     : 48   0.52 %
+Medium Risk &gt; 50.0%     : 11   0.12 %
 Low Risk    &lt; 50.0%     : 9226   99.36 %
 Total Staff             : 9285
 </pre>
@@ -8084,7 +8306,7 @@ Total Staff             : 9285
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Set-Prediction-Probability-Threshold-for-reporting">Set Prediction Probability Threshold for reporting<a class="anchor-link" href="#Set-Prediction-Probability-Threshold-for-reporting">¶</a></h1>
+<h1 id="Set-Prediction-Probability-Threshold-for-reporting"><a id="toc6_"></a><a href="#toc0_">Set Prediction Probability Threshold for reporting</a><a class="anchor-link" href="#Set-Prediction-Probability-Threshold-for-reporting">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8093,7 +8315,7 @@ Total Staff             : 9285
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">results_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'Department'</span><span class="p">,</span> <span class="s1">'Count'</span><span class="p">])</span>
@@ -8107,17 +8329,23 @@ Total Staff             : 9285
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [98]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">column_name</span> <span class="ow">in</span> <span class="n">df1</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#result_df = pd.DataFrame(columns=['Team Name', 'Count'])</span>
+
+<span class="k">for</span> <span class="n">column_name</span> <span class="ow">in</span> <span class="n">df1</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">column_name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"dept"</span><span class="p">):</span>
         <span class="c1"># Create a boolean mask based on the probability range</span>
-        <span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">high_risk_threshold</span><span class="p">)</span> 
+        <span class="c1">#mask = (predictions['leave_probability'] &gt;= high_risk_threshold) </span>
+        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="n">df1</span><span class="p">[</span><span class="s1">'probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.7</span><span class="p">]</span>
 
         <span class="c1"># Filter the DataFrame using the mask and group by 'Department'</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">predictions</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">column_name</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Count'</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+        <span class="c1">#print(result)</span>
+        <span class="n">result_df</span> <span class="o">=</span> <span class="n">result_df</span><span class="o">.</span><span class="n">_append</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">result</span>
 </pre></div>
 </div>
 </div>
@@ -8129,38 +8357,58 @@ Total Staff             : 9285
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>   dept_accounting  Count
-0            False     48
-1             True      1
-   dept_hr  Count
-0    False     48
-1     True      1
-   dept_it  Count
-0    False     44
-1     True      5
-   dept_management  Count
-0            False     45
-1             True      4
-   dept_marketing  Count
-0           False     47
-1            True      2
-   dept_product_mng  Count
-0             False     45
-1              True      4
-   dept_randd  Count
-0       False     47
-1        True      2
-   dept_sales  Count
-0       False     37
-1        True     12
-   dept_support  Count
-0         False     43
-1          True      6
-   dept_technical  Count
-0           False     37
-1            True     12
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+File <span class="ansi-green-fg">~/base/lib/python3.11/site-packages/pandas/core/indexes/base.py:3790</span>, in <span class="ansi-cyan-fg">Index.get_loc</span><span class="ansi-blue-fg">(self, key)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3789</span> try:
+<span class="ansi-green-fg">-&gt; 3790</span>     return self._engine.get_loc(casted_key)
+<span class="ansi-green-intense-fg ansi-bold">   3791</span> except KeyError as err:
+
+File <span class="ansi-green-fg">index.pyx:152</span>, in <span class="ansi-cyan-fg">pandas._libs.index.IndexEngine.get_loc</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">index.pyx:181</span>, in <span class="ansi-cyan-fg">pandas._libs.index.IndexEngine.get_loc</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">pandas/_libs/hashtable_class_helper.pxi:7080</span>, in <span class="ansi-cyan-fg">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">pandas/_libs/hashtable_class_helper.pxi:7088</span>, in <span class="ansi-cyan-fg">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="ansi-blue-fg">()</span>
+
+<span class="ansi-red-fg">KeyError</span>: 'probability'
+
+The above exception was the direct cause of the following exception:
+
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[98], line 7</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> for column_name in df1.columns:
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     if column_name.startswith("dept"):
+<span class="ansi-green-intense-fg ansi-bold">      5</span>         # Create a boolean mask based on the probability range
+<span class="ansi-green-intense-fg ansi-bold">      6</span>         #mask = (predictions['leave_probability'] &gt;= high_risk_threshold) 
+<span class="ansi-green-fg">----&gt; 7</span>         filtered_df = df1[df1['probability'] &gt; 0.7]
+<span class="ansi-green-intense-fg ansi-bold">      9</span>         # Filter the DataFrame using the mask and group by 'Department'
+<span class="ansi-green-intense-fg ansi-bold">     10</span>         result = predictions[mask].groupby(column_name).size().reset_index(name='Count')
+
+File <span class="ansi-green-fg">~/base/lib/python3.11/site-packages/pandas/core/frame.py:3893</span>, in <span class="ansi-cyan-fg">DataFrame.__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3891</span> if self.columns.nlevels &gt; 1:
+<span class="ansi-green-intense-fg ansi-bold">   3892</span>     return self._getitem_multilevel(key)
+<span class="ansi-green-fg">-&gt; 3893</span> indexer = self.columns.get_loc(key)
+<span class="ansi-green-intense-fg ansi-bold">   3894</span> if is_integer(indexer):
+<span class="ansi-green-intense-fg ansi-bold">   3895</span>     indexer = [indexer]
+
+File <span class="ansi-green-fg">~/base/lib/python3.11/site-packages/pandas/core/indexes/base.py:3797</span>, in <span class="ansi-cyan-fg">Index.get_loc</span><span class="ansi-blue-fg">(self, key)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3792</span>     if isinstance(casted_key, slice) or (
+<span class="ansi-green-intense-fg ansi-bold">   3793</span>         isinstance(casted_key, abc.Iterable)
+<span class="ansi-green-intense-fg ansi-bold">   3794</span>         and any(isinstance(x, slice) for x in casted_key)
+<span class="ansi-green-intense-fg ansi-bold">   3795</span>     ):
+<span class="ansi-green-intense-fg ansi-bold">   3796</span>         raise InvalidIndexError(key)
+<span class="ansi-green-fg">-&gt; 3797</span>     raise KeyError(key) from err
+<span class="ansi-green-intense-fg ansi-bold">   3798</span> except TypeError:
+<span class="ansi-green-intense-fg ansi-bold">   3799</span>     # If we have a listlike key, _check_indexing_error will raise
+<span class="ansi-green-intense-fg ansi-bold">   3800</span>     #  InvalidIndexError. Otherwise we fall through and re-raise
+<span class="ansi-green-intense-fg ansi-bold">   3801</span>     #  the TypeError.
+<span class="ansi-green-intense-fg ansi-bold">   3802</span>     self._check_indexing_error(key)
+
+<span class="ansi-red-fg">KeyError</span>: 'probability'</pre>
 </div>
 </div>
 </div>
@@ -8170,7 +8418,7 @@ Total Staff             : 9285
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [94]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">total_counts</span> <span class="o">=</span> <span class="mi">0</span>
@@ -8199,7 +8447,7 @@ Total Staff             : 9285
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [95]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># After the loop, 'total_counts' will contain the total count across all departments</span>
@@ -8220,9 +8468,9 @@ Total Staff             : 9285
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
-At 60 % threshold, staff at risk of leaving
-Total Counts: 490
-% of staff at risk : 4.39% %
+At 70 % threshold, staff at risk of leaving
+Total Counts: 480
+% of staff at risk : 4.30% %
 </pre>
 </div>
 </div>
@@ -8233,7 +8481,7 @@ Total Counts: 490
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">features</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'./predictions.csv'</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>

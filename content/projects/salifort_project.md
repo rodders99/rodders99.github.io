@@ -13,8 +13,6 @@ banner: /img/salifort_logo.png
 ---
 ![a](/img/salifort_logo.png)
 
-### [This paper]({{< notebook "Activity_3b_Salifort_Motors_project_EDA_ANALYSIS.html" >}})
-
 ## Google Advanced Data Analytics Capstone Project - Salifort Motors
 
 ## Overview
@@ -35,3 +33,36 @@ The project was completed using the PACE framework and the conclusion was a numb
       - Machine learning comparative modelling using Logistic Regression, Decision Tree and Random Forest
       - Demonstration of the final model for interactive and batch examples
     - Executive Summary recommendations
+
+## Project Documentation
+
+### Client Proposal
+
+### PACE Framework
+
+### Executive Summary
+
+### HR Summary
+
+### Client Report by Team
+
+### Analyst Report
+
+
+
+
+
+### [Salifort Project - Data Cleanse Ops]({{< notebook "Activity_3a_Salifort_Motors_project_EDA_cleanse.html" >}})
+
+### [Salifort Project - EDA Analysis Ops]({{< notebook "Activity_3b_Salifort_Motors_project_EDA_ANALYSIS.html" >}})
+
+### [Salifort Project - Feature Engineering]({{< notebook "Activity_3c_Salifort_Motors_project_Feature-Engineering.html" >}})
+
+### [Salifort Project - Logistical Regression Modelling]({{< notebook "Activity_4a_Salifort_Motors_project_Logistical_Regression_Model.html" >}})
+
+### [Salifort Project - Decision Tree Modelling]({{< notebook "Activity_4b_Salifort_Motors_project_Decision_Tree_Model.html" >}})
+
+### [Salifort Project - Random Forest Modelling]({{< notebook "Activity_4c_Salifort_Motors_project_Random_Forest_Model.html" >}})
+
+### [Salifort Project - Demonstration Model]({{< notebook "Activity_9z_Salifort_Motors_project_MODEL-DEMONSTRATION.html" 
+>}})
