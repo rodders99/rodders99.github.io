@@ -5,9 +5,15 @@ code {
   }
   
   .page-container {
-    margin-left: 60px; 
+    margin-left: 39px;
+    margin-top: 21px;
     max-width: 1440; 
     /*margin: auto;*/
+    font-family: system-ui, -apple-system, 
+    'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: sans-serif;
+    padding-left: 55px;
   }
   
   :root {
@@ -60,7 +66,7 @@ code {
   .datatable-container .header-tools {
     border-bottom: solid 1px var(--dt-border-color);
     padding: var(--dt-padding);
-    padding-left: 0;
+    padding-left: 5px;
     display: flex;
     align-items: baseline;
   }
@@ -230,3 +236,5 @@ code {
   .datatable-container .datatable tbody tr .offline::before {
     background-color: var(--dt-status-offline-color);
   }
+
+ 
