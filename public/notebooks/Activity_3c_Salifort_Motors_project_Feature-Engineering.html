@@ -7747,7 +7747,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load cleaned dataset, with outliers removed, into a dataframe</span>
-<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s2">"salifort_data_cleaned_no_ol.csv"</span><span class="p">)</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s2">"data_cleaned_NoOl_NoFE_AllFeat.csv"</span><span class="p">)</span>
 
 <span class="n">df1</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
@@ -8871,7 +8871,7 @@ Mean hours : 200.14
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Required for the XGBoost modelling</span>
-<span class="n">df1</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">save_path</span><span class="o">+</span><span class="s1">'salifort_data_FE.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># Feature Engineered on avg_mnth_hrs, salary, dept</span>
+<span class="n">df1</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">save_path</span><span class="o">+</span><span class="s1">'data_cleaned_NoOl_FE_AllFeat.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># Feature Engineered on avg_mnth_hrs, salary, dept</span>
 <span class="n">df1</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 </div>
@@ -8940,7 +8940,7 @@ Mean hours : 200.14
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Feature Engineered on avg_mnth_hrs, salary. </span>
 <span class="c1"># dept REMOVED</span>
-<span class="n">df2</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">save_path</span> <span class="o">+</span> <span class="s1">'salifort_data_FE_focus.csv'</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> 
+<span class="n">df2</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">save_path</span> <span class="o">+</span> <span class="s1">'data_cleaned_NoOl_FE_NoDept.csv'</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> 
 <span class="n">df2</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 </div>

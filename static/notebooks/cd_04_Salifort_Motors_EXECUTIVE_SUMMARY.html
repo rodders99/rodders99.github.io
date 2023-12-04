@@ -11,21 +11,21 @@
 <div class="page-container">
 <div class="dropdown">
 <button class="dropbtn">
-<i class="material-icons">menu</i>Data Analysis Documentation
+<i class="material-icons">menu</i>Project Documentation
 </button>
 <div class="dropdown-content">
-<a href="#"> Analysts’ Notebooks</a>
-<div class="submenu">
-<p><a href="/">Home</a>
+<a href="#"><b>Navigation</b></a> <a href="/">Home</a>
 <a href="/projects/1/01/01/salifort_project/">Project Home</a>
-<a href="/notebooks/nb_03_Salifort_Motors_project_EDA_cleanse.html">EDA
+<a href="#"><b>Analyst’s Notebooks</b></a>
+<div class="submenu">
+<p><a href="/notebooks/nb_03_Salifort_Motors_project_EDA_cleanse.html">EDA
 Cleanse</a>
 <a href="/notebooks/nb_04_Salifort_Motors_project_EDA_ANALYSIS.html">EDA
 Analysis</a>
 <a href="/notebooks/nb_05_Salifort_Motors_project_Feature_Engineering.html">Feature
 Engineering</a></p>
 </div>
-<a href="#">ML Models</a>
+<a href="#"><b>ML Models</b></a>
 <div class="submenu">
 <p><a href="/notebooks/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html">Logistical
 Regression</a>
@@ -39,7 +39,7 @@ Comparisons</a>
 <a href="/notebooks/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html">Model
 Demonstration</a></p>
 </div>
-<a href="#"> Client Documentation</a>
+<a href="#"><b>Client Documentation</b></a>
 <div class="submenu">
 <p><a href="/notebooks/cd_01_Salifort_Motors_project-PROPOSAL.html">Client
 Proposal</a>
@@ -156,6 +156,10 @@ Executive Summary</a>
 </ul></li>
 <li><a href="#project-overview">Project Overview</a>
 <ul>
+<li><a href="#ml-model-predictions-summary-for-current-employees">ML
+Model Predictions Summary for CURRENT Employees</a></li>
+<li><a href="#ml-model-predictions-summary-for-left-employees">ML Model
+Predictions Summary for LEFT Employees</a></li>
 <li><a href="#executive-summary">Executive Summary</a></li>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#why-address-this-issue">Why Address This Issue?</a></li>
@@ -185,9 +189,9 @@ up</a></li>
 </ul>
 <h1 id="project-overview">Project Overview</h1>
 <p>Data provided by the Salifort team was analysed to determine key
-factors in employees leaving the company. A machine learning model was
-built and used to model current employees and identify the key reasons
-for employees leaving.</p>
+factors in employees leaving the company. the data was analysed and a
+machine learning model built and used to identify the key reasons for
+employees leaving and predict employees who would leave.</p>
 <p>Exploratory Data Analysis was carried out on the provided data and
 key features of employees who left (the predictor) were identified
 during the ML modelling phase.</p>
@@ -196,14 +200,227 @@ during the ML modelling phase.</p>
 likely to leave</li>
 <li>Employees working more than 175 hrs a month are most likely to
 leave</li>
-<li>Employees working on too many or two few project are most likely to
+<li>Employees working on too many or two few projects are most likely to
 leave</li>
 <li>Sales, Support and Technical make up 61% of all employees and have
 the highest</li>
 <li>employee turnover</li>
 <li>Employees on low or medium salaries are most likely to leave</li>
+<li>Accident was flagged for further investigation since the % of
+employees who were identified with an accident is very high compared to
+the national average.</li>
 </ul>
 <p><img src="../img/key_model_factors.png" width=800></p>
+<p>The Machine Learning model was used to predict employees at risk of
+leaving:</p>
+<p>Using the model, and applying to current employees, we can see there
+are 67 current employees flagged as above low risk, of these 33 are
+medium risk above the 70% threshold and 12 are high risk employees.</p>
+<h2 id="ml-model-predictions-summary-for-current-employees">ML Model
+Predictions Summary for CURRENT Employees</h2>
+<div class="datatable-container">
+<table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+<tr>
+<th>
+probabilities &gt; high_risk_threshold 90%
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Count of employees with leave probability above 90%
+</td>
+<td>
+12
+</td>
+</tr>
+<tr>
+<td>
+Percentage of employees with leave probability above 90%
+</td>
+<td>
+0.13%
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th>
+probabilities &gt; medium_risk_threshold 70%
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Count of employees with leave probability above 70%
+</td>
+<td>
+33
+</td>
+</tr>
+<tr>
+<td>
+Percentage of employees with leave probability above 70%
+</td>
+<td>
+0.36%
+</td>
+</tr>
+<tr>
+<th>
+probabilities &gt; predict_risk_threshold 50%
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Count of employees with leave probability above 50%
+</td>
+<td>
+67
+</td>
+</tr>
+<tr>
+<td>
+Percentage of employees with leave probability above 50%
+</td>
+<td>
+0.72%
+</td>
+</tr>
+</table>
+</div>
+<p>If we apply the model to employees who have already left, effectively
+testing the model against known data, we can see that 72% of employees
+who left would have been flagged by the ML model as at high risk, and
+action perhaps could have been taken before the inevitable. If we lower
+the risk threshold threshold to medium risk at 70%, then over 90% of
+these employees would have been flagged and if we look to those flagged
+above low risk at 50%, 91% of employees would have been flagged.</p>
+<p>To put some perspective around this, the level of accuracy
+demonstrated by the model is significantly better than a random
+guess.</p>
+<h2 id="ml-model-predictions-summary-for-left-employees">ML Model
+Predictions Summary for LEFT Employees</h2>
+<div class="datatable-container">
+<table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+<tr>
+<th>
+probabilities &gt; high_risk_threshold 90%
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Count of employees with leave probability above 90%
+</td>
+<td>
+1360
+</td>
+</tr>
+<tr>
+<td>
+Percentage of employees with leave probability above 90%
+</td>
+<td>
+72.26%
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th>
+probabilities &gt; medium_risk_threshold 70%
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Count of employees with leave probability above 70%
+</td>
+<td>
+1712
+</td>
+</tr>
+<tr>
+<td>
+Percentage of employees with leave probability above 70%
+</td>
+<td>
+90.97%
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<th>
+probabilities &gt; predict_risk_threshold 50%
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Count of employees with leave probability above 50%
+</td>
+<td>
+1731
+</td>
+</tr>
+<tr>
+<td>
+Percentage of employees with leave probability above 50%
+</td>
+<td>
+91.98%
+</td>
+</tr>
+<tr>
+<th>
+% of employees left that were predicted
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th>
+</th>
+<td>
+</td>
+</tr>
+<tr>
+<th>
+XGBoost Predicted to leave &gt; (50% )/ % of employees who left
+</th>
+<td>
+86.94 %
+</td>
+</tr>
+</table>
+</div>
 <h2 id="executive-summary">Executive Summary</h2>
 <ul>
 <li>Support Employee Advancement</li>

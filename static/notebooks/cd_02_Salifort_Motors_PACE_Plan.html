@@ -9,24 +9,23 @@
 </head>
 <body>
 <div class="page-container">
-
 <div class="dropdown">
 <button class="dropbtn">
-<i class="material-icons">menu</i>Data Analysis Documentation
+<i class="material-icons">menu</i>Project Documentation
 </button>
 <div class="dropdown-content">
-<a href="#"> Analysts’ Notebooks</a>
-<div class="submenu">
-<p><a href="/">Home</a>
+<a href="#"><b>Navigation</b></a> <a href="/">Home</a>
 <a href="/projects/1/01/01/salifort_project/">Project Home</a>
-<a href="/notebooks/nb_03_Salifort_Motors_project_EDA_cleanse.html">EDA
+<a href="#"><b>Analyst’s Notebooks</b></a>
+<div class="submenu">
+<p><a href="/notebooks/nb_03_Salifort_Motors_project_EDA_cleanse.html">EDA
 Cleanse</a>
 <a href="/notebooks/nb_04_Salifort_Motors_project_EDA_ANALYSIS.html">EDA
 Analysis</a>
 <a href="/notebooks/nb_05_Salifort_Motors_project_Feature_Engineering.html">Feature
 Engineering</a></p>
 </div>
-<a href="#">ML Models</a>
+<a href="#"><b>ML Models</b></a>
 <div class="submenu">
 <p><a href="/notebooks/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html">Logistical
 Regression</a>
@@ -40,7 +39,7 @@ Comparisons</a>
 <a href="/notebooks/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html">Model
 Demonstration</a></p>
 </div>
-<a href="#"> Client Documentation</a>
+<a href="#"><b>Client Documentation</b></a>
 <div class="submenu">
 <p><a href="/notebooks/cd_01_Salifort_Motors_project-PROPOSAL.html">Client
 Proposal</a>
@@ -503,45 +502,15 @@ Summary</h3>
 <h3 id="build-traintest">Build, Train/Test</h3>
 <p>Build train and test various machine learning models</p>
 <p><code>Project Disclaimer - in reality I wouldn't carry out the sort of overkill development you see here, but I want to compare model performance because I'm curious to see how they perform with feature engineering vs without any Feature Engineering</code></p>
-<div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-<thead>
-<tr>
-<th>
-Dataset
-</th>
-<th>
-Key Features
-</th>
-<th>
-Model
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<code>salifort_data_clean.csv</code>
-</td>
-<td>
-Post EDA Clean, minimal feature engineering<br>Dedupe, Missing Values,
-</td>
-<td>
-Logistic Regression<br>Decision Tree<br>RandomForest
-</tr>
-<pre><code>    &lt;tr&gt;
-        &lt;td&gt;&lt;code&gt;salifort_data_clean_no_ol.csv&lt;/code&gt;&lt;/td&gt;
-        &lt;td&gt;As above with outliers removed&lt;/td&gt;
-        &lt;td&gt;Logistic Regression (LR is sensitive to outliers)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;&lt;code&gt;salifort_data_clean_FE.csv&lt;/code&gt;&lt;/td&gt;
-        &lt;td&gt;As above with Feature Engineering&lt;br&gt;Salary&lt;br&gt;Overworked&lt;/td&gt;
-        &lt;td&gt;Logistic Regression&lt;br&gt;Decision Tree&lt;br&gt;RandomForest&lt;BR&gt;XGBoost&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/tbody&gt;</code></pre>
-</table>
-</div>
+<p><b>cleaned data</b></p>
+<p><code>data_cleaned_NoOl_FE_AllFeat</code> - Cleaned, No Outliers,
+Feature Engineered, all fields included.- (AllFeat)
+<code>data_cleaned_NoOl_FE_NoDept</code> - Cleaned, No Outliers, Feature
+Engineered, departments removed (NoDept)
+<code>data_cleaned_NoOl_NoFE_AllFeat</code> - Cleaned, No Outliers, NOT
+Feature Engineered, all fields included.- (AllFeat)
+<code>data_cleaned_Ol_NoFE_AllFeat</code> - Cleaned, Outliers, NOT
+Feature Engineered, all fields included.- (AllFeat)</p>
 <p>And apply them across the datasets to create a comparison table of
 results I can use for the final model recommendations to promote to
 development of the demonstration model.</p>
@@ -570,6 +539,6 @@ months for</li>
 </ul></li>
 <li>HR and Team Leaders review meeting</li>
 </ul>
-<a href="#top"> scroll to top </a>
+<p><a href="#top"> scroll to top </a></p>
 </div>
 </body>

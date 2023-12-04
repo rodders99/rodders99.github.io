@@ -263,18 +263,20 @@ Files are structured to preserve my sanity
 	│   ├── 05-HR_Summary<br>
 	│   ├── 06-Team_Summaries<br>
 	│   ├── 07-predictions<br>
+    │   ├── 08-plot_data<br>
+    │   ├── 09-project_close<br>
 	│   ├── css<br>
 	│   └── img<br>
 	├── z-dev-notebooks<br>
-	├── Activity_3a_Salifort_Motors_project_EDA_cleanse.ipynb<br>
-	├── Activity_3b_Salifort_Motors_project_EDA_ANALYSIS.ipynb<br>
-	├── Activity_3c_Salifort_Motors_project_Feature_Engineering.ipynb<br>
-	├── Activity_4a_Salifort_Motors_project_Logistical_Regression_Model.ipynb<br>
-	├── Activity_4b_Salifort_Motors_project_Decision_Tree_Model.ipynb<br>
-	├── Activity_4c_Salifort_Motors_project_Random_Forest_Model.ipynb<br>
-	├── Activity_4d_Salifort_Motors_project_XGBoost_Model.ipynb<br>
-	├── Activity_9x_Salifort_Motors_project_Model_Comparisons.ipynb<br>
-	├── Activity_9z_Salifort_Motors_project_MODEL_DEMONSTRATION.ipynb<br>
+	├── nb_03_Salifort_Motors_project_EDA_cleanse.ipynb<br>
+	├── nb_04_Salifort_Motors_project_EDA_ANALYSIS.ipynb<br>
+	├── nb_06_Salifort_Motors_project_Feature_Engineering.ipynb<br>
+	├── nb_06_Salifort_Motors_project_Logistical_Regression_Model.ipynb<br>
+	├── nb_07_Salifort_Motors_project_Decision_Tree_Model.ipynb<br>
+    ├── nb_08_Salifort_Motors_project_XGBoost_Model.ipynb<br>
+	├── nb_09_Salifort_Motors_project_Random_Forest_Model.ipynb<br>
+	├── nb_11_Salifort_Motors_project_Model_Comparisons.ipynb<br>
+	├── nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.ipynb<br>
 
 <br><br><p>
 

@@ -7552,16 +7552,17 @@ a.anchor-link {
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"/>
 <link href="custom-menu.css" rel="stylesheet" type="text/css"/>
 <div class="dropdown">
-<button class="dropbtn"><i class="material-icons">menu</i>Data Analysis Documentation</button>
-<div class="dropdown-content"><a href="#"> Analysts' Notebooks</a>
-<div class="submenu">
+<button class="dropbtn"><i class="material-icons">menu</i>Project Documentation</button>
+<div class="dropdown-content"><a href="#"><b>Navigation</b></a>
 <a href="/">Home</a>
 <a href="/projects/1/01/01/salifort_project/">Project Home</a>
+<a href="#"><b>Analyst's Notebooks</b></a>
+<div class="submenu">
 <a href="/notebooks/nb_03_Salifort_Motors_project_EDA_cleanse.html">EDA Cleanse</a>
 <a href="/notebooks/nb_04_Salifort_Motors_project_EDA_ANALYSIS.html">EDA Analysis</a>
 <a href="/notebooks/nb_05_Salifort_Motors_project_Feature_Engineering.html">Feature Engineering</a>
 </div>
-<a href="#">ML Models</a>
+<a href="#"><b>ML Models</b></a>
 <div class="submenu">
 <a href="/notebooks/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html">Logistical Regression</a>
 <a href="/notebooks/nb_07_Salifort_Motors_project_Decision_Tree_Model.html">Decision Tree</a>
@@ -7570,7 +7571,7 @@ a.anchor-link {
 <a href="/notebooks/nb_11_Salifort_Motors_project_Model_Comparisons.html">Model Comparisons</a>
 <a href="/notebooks/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html">Model Demonstration</a>
 </div>
-<a href="#"> Client Documentation</a>
+<a href="#"><b>Client Documentation</b></a>
 <div class="submenu">
 <a href="/notebooks/cd_01_Salifort_Motors_project-PROPOSAL.html">Client Proposal</a>
 <a href="/notebooks/cd_02_Salifort_Motors_PACE_Plan.html">PACE Plan</a>
@@ -7731,8 +7732,8 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load dataset into a dataframe</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s2">"salifort_data_cleaned_all.csv"</span><span class="p">)</span>          <span class="c1"># 11991 rows, all data including outliers</span>
-<span class="c1">#df1  = pd.read_csv(load_path + "salifort_data_cleaned_no_ol.csv")      # 11167 rows, no outliers (mostly from tenure)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s2">"data_cleaned_Ol_NoFE_AllFeat.csv"</span><span class="p">)</span>          <span class="c1"># 11991 rows, all data including outliers</span>
+<span class="c1">#df1  = pd.read_csv(load_path + "data_cleaned_NoOl_NoFE_AllFeat.csv")      # 11167 rows, no outliers (mostly from tenure)</span>
 
 <span class="c1"># Display first few rows of the dataframe</span>
 

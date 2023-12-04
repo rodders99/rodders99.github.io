@@ -8247,8 +8247,8 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Two datasets for model performance comparison, :</p>
 <ul>
-<li><code>salifort_data_FE.csv</code> is the full data set feature engineered with <code>salary</code> encoded to ordinal,  <code>avg_mth_hrs</code> binary encoded to <code>overwork</code> and dept encoded with dummies</li>
-<li><code>salifort_data_FE_focus.csv</code> is the same data with the dummy encoded dept fields removed.</li>
+<li><code>data_cleaned_NoOl_FE_AllFeat.csv</code> is the full data set feature engineered with <code>salary</code> encoded to ordinal,  <code>avg_mth_hrs</code> binary encoded to <code>overwork</code> and dept encoded with dummies</li>
+<li><code>data_cleaned_NoOl_FE_NoDept.csv</code> is the same data with the dummy encoded dept fields removed.</li>
 </ul>
 <p><code>Dept</code> appears to have low correlation across the dataset and I'm curious how much the models are influenced with low correlation features. It turns out that low correlation features have little impact on model performance. which is no surprise really!</p>
 <h4 id="Code-flags:"><a id="toc3_1_1_1_"></a><a href="#toc0_">Code flags:</a><a class="anchor-link" href="#Code-flags:">¶</a></h4><p><strong>rerun</strong> = flag to identify the first run of the model comparisons and write a NEW Results.csv file. 0 = first run and a new file will be created with headers / 1 = Continuation, Results will be appended to the file.</p>
@@ -8266,7 +8266,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load cleaned dataset into a dataframe</span>
-<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s2">"salifort_data_FE.csv"</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="c1"># Feature engineering on salary, avg_mnth_hrs, dept, outliers removed</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s2">"data_cleaned_NoOl_FE_AllFeat.csv"</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="c1"># Feature engineering on salary, avg_mnth_hrs, dept, outliers removed</span>
 
 <span class="c1"># model_prefix : Str = prefix for results.csv added to dataset</span>
 <span class="n">model_prefix</span>     <span class="o">=</span> <span class="s1">'dt1'</span>
@@ -9630,7 +9630,7 @@ Predict Stay  : 0.99
 <div class="jp-InputPrompt jp-InputArea-prompt">In [147]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s2">"salifort_data_FE_focus.csv"</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="c1"># Feature engineering on salary, avg_mnth_hrs, outliers removed, departments removed</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s2">"data_cleaned_NoOl_FE_NoDept.csv"</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="c1"># Feature engineering on salary, avg_mnth_hrs, outliers removed, departments removed</span>
 
 <span class="n">model_prefix</span>      <span class="o">=</span> <span class="s1">'dt2'</span>         <span class="c1"># prefix for results.csv added to dataset</span>
 <span class="n">dataset</span>           <span class="o">=</span> <span class="s1">'NOdept'</span>      <span class="c1"># dataset name for results.csv     </span>
