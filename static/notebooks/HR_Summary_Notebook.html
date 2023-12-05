@@ -7653,11 +7653,16 @@ a.anchor-link {
 <li><a href="#toc1_1_1_">Document Information</a></li>
 <li><a href="#toc1_1_2_">Client Details</a></li>
 <li><a href="#toc1_1_3_">Document Overview</a></li>
-<li><a href="#toc1_2_">Employees who left percentage by department total and salary range</a><ul>
-<li><a href="#toc1_2_1_">All Employees compared to employees who left</a></li>
 </ul>
 </li>
-<li><a href="#toc1_3_">By Department</a></li>
+<li><a href="#toc2_"></a><ul>
+<li><a href="#toc2_1_">Visualisations - counts and percentages by department</a></li>
+<li><a href="#toc2_2_">Employees who left percentage by department total and salary range</a><ul>
+<li><a href="#toc2_2_1_">Distribution of Salary Levels by Department for Employees who Left</a></li>
+<li><a href="#toc2_2_2_">Visualisations - Comparison of All Employees Vs stayed employees vs left employees</a></li>
+</ul>
+</li>
+<li><a href="#toc2_3_">Visualisations of variables By Department</a></li>
 </ul>
 </li>
 </ul>
@@ -7933,7 +7938,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Visualisations---counts-and-percentages-by-department">Visualisations - counts and percentages by department<a class="anchor-link" href="#Visualisations---counts-and-percentages-by-department">¶</a></h2>
+<h2 id="Visualisations---counts-and-percentages-by-department"><a id="toc2_1_"></a><a href="#toc0_">Visualisations - counts and percentages by department</a><a class="anchor-link" href="#Visualisations---counts-and-percentages-by-department">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7942,7 +7947,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate counts and percentages by department</span>
@@ -7990,7 +7995,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Employees-who-left-percentage-by-department-total-and-salary-range"><a id="toc1_2_"></a><a href="#toc0_">Employees who left percentage by department total and salary range</a><a class="anchor-link" href="#Employees-who-left-percentage-by-department-total-and-salary-range">¶</a></h2>
+<h2 id="Employees-who-left-percentage-by-department-total-and-salary-range"><a id="toc2_2_"></a><a href="#toc0_">Employees who left percentage by department total and salary range</a><a class="anchor-link" href="#Employees-who-left-percentage-by-department-total-and-salary-range">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7999,7 +8004,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Employees who left percentage by department total and salary band / Total employees by department and salary band</span>
@@ -8051,7 +8056,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Distribution-of-Salary-Levels-by-Department-for-Employees-who-Left">Distribution of Salary Levels by Department for Employees who Left<a class="anchor-link" href="#Distribution-of-Salary-Levels-by-Department-for-Employees-who-Left">¶</a></h3>
+<h3 id="Distribution-of-Salary-Levels-by-Department-for-Employees-who-Left"><a id="toc2_2_1_"></a><a href="#toc0_">Distribution of Salary Levels by Department for Employees who Left</a><a class="anchor-link" href="#Distribution-of-Salary-Levels-by-Department-for-Employees-who-Left">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8060,7 +8065,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">melted_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">df_percentage</span><span class="p">,</span><span class="n">value_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">'high'</span><span class="p">,</span><span class="s1">'low'</span><span class="p">,</span><span class="s1">'medium'</span><span class="p">],</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">'dept'</span><span class="p">],</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">'percentage'</span><span class="p">)</span>
@@ -8071,14 +8076,14 @@ a.anchor-link {
 
 <span class="c1"># Plot the bar graph</span>
 
-<span class="n">xorder</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'low'</span><span class="p">,</span><span class="s1">'medium'</span><span class="p">,</span><span class="s1">'high'</span><span class="p">]</span> <span class="c1"># set order of labels of x axis</span>
+<span class="n">x_order</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'low'</span><span class="p">,</span><span class="s1">'medium'</span><span class="p">,</span><span class="s1">'high'</span><span class="p">]</span> <span class="c1"># set order of labels of x axis</span>
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 
 <span class="c1"># Plot bars for each salary level in each department</span>
 <span class="c1">#df_percentage.plot(kind='bar', x = 'dept', stacked=False, ax=ax, order=x_order)</span>
 
-<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s1">'dept'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'percentage'</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">melted_df</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">'salary'</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">'colorblind'</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s1">'dept'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'percentage'</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">melted_df</span><span class="p">,</span>  <span class="n">hue</span><span class="o">=</span><span class="s1">'salary'</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">'colorblind'</span><span class="p">)</span>
 
 
 <span class="c1"># Add lines at 16.6% and 2.8%</span>
@@ -8162,7 +8167,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Visualisations---Comparison-of-All-Employees-Vs-stayed-employees-vs-left-employees"><a id="toc1_2_1_"></a><a href="#toc0_">Visualisations - Comparison of All Employees Vs stayed employees vs left employees</a><a class="anchor-link" href="#Visualisations---Comparison-of-All-Employees-Vs-stayed-employees-vs-left-employees">¶</a></h3><p>Boxplots of feature vs salary for all employees next to employees who left</p>
+<h3 id="Visualisations---Comparison-of-All-Employees-Vs-stayed-employees-vs-left-employees"><a id="toc2_2_2_"></a><a href="#toc0_">Visualisations - Comparison of All Employees Vs stayed employees vs left employees</a><a class="anchor-link" href="#Visualisations---Comparison-of-All-Employees-Vs-stayed-employees-vs-left-employees">¶</a></h3><p>Box plots of feature vs salary for all employees next to employees who left</p>
 </div>
 </div>
 </div>
@@ -8295,7 +8300,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Visualisations-of-variables-By-Department"><a id="toc1_3_"></a><a href="#toc0_">Visualisations of variables By Department</a><a class="anchor-link" href="#Visualisations-of-variables-By-Department">¶</a></h2><p>Plot of key features by dept quartile distribution &amp; Violin plot</p>
+<h2 id="Visualisations-of-variables-By-Department"><a id="toc2_3_"></a><a href="#toc0_">Visualisations of variables By Department</a><a class="anchor-link" href="#Visualisations-of-variables-By-Department">¶</a></h2><p>Plot of key features by dept quartile distribution &amp; Violin plot</p>
 </div>
 </div>
 </div>

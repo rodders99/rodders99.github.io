@@ -7594,7 +7594,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Salifort-Motors---Demonstration-model"><a id="toc1_1_"></a><a href="#toc0_">Salifort Motors - Demonstration model</a><a class="anchor-link" href="#Salifort-Motors---Demonstration-model">¶</a></h1><h3 id="Document-Information"><a id="toc1_1_1_"></a><a href="#toc0_">Document Information</a><a class="anchor-link" href="#Document-Information">¶</a></h3><table style="margin-right:auto;margin-left:0px">
+<h1 id="Salifort-Motors---Demonstration-model"><a id="toc1_"></a><a href="#toc0_">Salifort Motors - Demonstration model</a><a class="anchor-link" href="#Salifort-Motors---Demonstration-model">¶</a></h1><h3 id="Document-Information"><a id="toc1_1_1_"></a><a href="#toc0_">Document Information</a><a class="anchor-link" href="#Document-Information">¶</a></h3><table style="margin-right:auto;margin-left:0px">
 <tbody>
 <tr>
 <td>Document Title</td>
@@ -7663,7 +7663,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Table-of-contents">Table of contents<a id="toc0_"></a><a class="anchor-link" href="#Table-of-contents">¶</a></h2><ul>
-<li><a href="#toc1_1_">Salifort Motors - Demonstration model - Best Choice Random Forest</a><ul>
+<li><a href="#toc1_">Salifort Motors - Demonstration model</a><ul>
 <li><a href="#toc1_1_1_">Document Information</a></li>
 <li><a href="#toc1_1_2_">Client Details</a></li>
 <li><a href="#toc1_1_3_">Document Overview</a></li>
@@ -7673,25 +7673,26 @@ a.anchor-link {
 <li><a href="#toc2_">Initialise Notebook</a><ul>
 <li><a href="#toc2_1_1_">Import Packages</a></li>
 <li><a href="#toc2_1_2_">Initialise Notebook Options</a></li>
-<li><a href="#toc2_1_3_">Pickle Load Model developed using the All Features Dataset</a></li>
+<li><a href="#toc2_2_">Load the dataset</a></li>
+<li><a href="#toc2_3_">Pickle Load models developed using the Focus Features dataset</a></li>
 </ul>
 </li>
-<li><a href="#toc3_">Random Forest - <code>AllFeat</code> - all fields</a><ul>
-<li><a href="#toc3_1_">Pickle Load model developed using the Focus Features dataset</a></li>
+<li><a href="#toc3_">Predict cost of salary increase for employees predicted to leave by the ML Model</a></li>
+<li><a href="#toc4_">Predictions Summary of the model</a></li>
+<li><a href="#toc5_"><code>will_they_leave</code> function- <code>Focus Features</code></a><ul>
+<li><a href="#toc5_1_">Interactive Model Comparison Demonstration</a></li>
 </ul>
 </li>
-<li><a href="#toc4_">Random Forest - <code>Focus Features</code> - excludes departments</a><ul>
-<li><a href="#toc4_1_">Model Comparison Demonstration</a></li>
+<li><a href="#toc6_">Model prediction Summaries</a><ul>
+<li><a href="#toc6_1_1_">Load and Prepare data</a></li>
+<li><a href="#toc6_1_2_">Set Prediction Probability Thresholds for reporting</a></li>
+<li><a href="#toc6_2_">Summary - Random Forest Model Predictions</a></li>
+<li><a href="#toc6_3_">Summary XGBoost Predictions</a></li>
+<li><a href="#toc6_4_">Summary Decision Tree Predictions</a></li>
+<li><a href="#toc6_5_">Summarise model findings</a></li>
 </ul>
 </li>
-<li><a href="#toc5_">Random Forest Model 2 applied to left = 0 data</a><ul>
-<li><a href="#toc5_1_1_">Review Predictions for employees left = 0 (Current Employees)</a></li>
-<li><a href="#toc5_1_2_">Set Prediction Probability Threshold for reporting</a></li>
-<li><a href="#toc5_1_3_">Review Predictions for ALL employees left = 0 &amp; 1 (Current Employees &amp; those who have left)</a></li>
-<li><a href="#toc5_2_">Summarise model findings</a></li>
-</ul>
-</li>
-<li><a href="#toc6_">View Results in browser</a></li>
+<li><a href="#toc7_">View Results in browser</a></li>
 </ul>
 <!-- vscode-jupyter-toc-config
 	numbering=false
@@ -7731,7 +7732,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [126]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -7746,7 +7747,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [127]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add a little colour</span>
@@ -7783,7 +7784,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [128]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">load_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Documents/Learning/Salifort-Motors-Capstone-Project/00-data_cleaned/"</span> <span class="c1"># Source folder for cleaned data</span>
@@ -7806,7 +7807,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Load-the-dataset">Load the dataset<a class="anchor-link" href="#Load-the-dataset">¶</a></h2>
+<h2 id="Load-the-dataset"><a id="toc2_2_"></a><a href="#toc0_">Load the dataset</a><a class="anchor-link" href="#Load-the-dataset">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7815,7 +7816,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [129]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">NoDept_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">load_path</span> <span class="o">+</span> <span class="s2">"data_cleaned_NoOl_FE_NoDept.csv"</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> 
@@ -7832,7 +7833,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[129]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Index(['last_eval', 'left', 'number_project', 'overworked', 'promotion',
        'salary', 'satisfaction', 'tenure'],
@@ -7848,7 +7849,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Pickle-Load-models-developed-using-the-Focus-Features-dataset"><a id="toc3_1_"></a><a href="#toc0_">Pickle Load models developed using the Focus Features dataset</a><a class="anchor-link" href="#Pickle-Load-models-developed-using-the-Focus-Features-dataset">¶</a></h2>
+<h2 id="Pickle-Load-models-developed-using-the-Focus-Features-dataset"><a id="toc2_3_"></a><a href="#toc0_">Pickle Load models developed using the Focus Features dataset</a><a class="anchor-link" href="#Pickle-Load-models-developed-using-the-Focus-Features-dataset">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7857,7 +7858,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [130]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load the trained  Random Forest Model</span>
@@ -7883,7 +7884,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="will_they_leave-function--Focus-Features"><a id="toc4_"></a><a href="#toc0_"><code>will_they_leave</code> function- <code>Focus Features</code></a><a class="anchor-link" href="#will_they_leave-function--Focus-Features">¶</a></h1><p>Function to demonstrate the different predictions from the three models Random Forest, Decision Tree and XGBoost developed using the FOCUS features dataset. This dataset EXCLUDES the dummy encoded dept data.</p>
+<h1 id="Predict-cost-of-salary-increase-for-employees-predicted-to-leave-by-the-ML-Model"><a id="toc3_"></a><a href="#toc0_">Predict cost of salary increase for employees predicted to leave by the ML Model</a><a class="anchor-link" href="#Predict-cost-of-salary-increase-for-employees-predicted-to-leave-by-the-ML-Model">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7892,7 +7893,237 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [141]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Review costs of salary ranges for staff predicted to leave</span>
+<span class="k">def</span> <span class="nf">predict_salary_increase</span><span class="p">(</span><span class="n">modelname</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">salary_inc_perc</span><span class="p">):</span> 
+
+<span class="w">      </span><span class="sd">'''    Generate summary table of costs of a salary increase for predicted employee will leave</span>
+
+<span class="sd">      In: </span>
+<span class="sd">            modelname: str      : String : name of the model file e.g. model_file_xxx </span>
+<span class="sd">            title: str          : String :for the summary title, usually full description of model e.g. 'Decision Tree', 'XGBoost', 'Random Forest'</span>
+<span class="sd">            salary_inc_perc     : Float  : percentage to increase salary by e.g. 0.50</span>
+<span class="sd">      Out:  print of the summary</span>
+<span class="sd">    '''</span>
+
+      <span class="c1"># Set output number format</span>
+      <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.float_format'</span><span class="p">,</span> <span class="s1">'</span><span class="si">{:.2f}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
+
+      <span class="n">df</span> <span class="o">=</span> <span class="n">AllFeat_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+      <span class="n">count_by_group</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'salary'</span><span class="p">,</span> <span class="s1">'left'</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'count'</span><span class="p">)</span>
+
+      <span class="c1"># Select employees stayed (left=0) and employees who left (left=1)</span>
+      <span class="n">features_current_empl</span> <span class="o">=</span> <span class="n">NoDept_df</span><span class="p">[</span><span class="n">NoDept_df</span><span class="p">[</span><span class="s1">'left'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">][[</span><span class="s1">'last_eval'</span><span class="p">,</span> <span class="s1">'number_project'</span><span class="p">,</span>
+            <span class="s1">'overworked'</span><span class="p">,</span> <span class="s1">'promotion'</span><span class="p">,</span> <span class="s1">'salary'</span><span class="p">,</span> <span class="s1">'satisfaction'</span><span class="p">,</span> <span class="s1">'tenure'</span><span class="p">]]</span>
+
+      <span class="c1">#print(features.head())</span>
+
+      <span class="c1"># Predictions for CURRENT EMPLOYEES using model_file_{modelname}</span>
+
+      <span class="k">if</span> <span class="n">modelname</span> <span class="o">==</span> <span class="s2">"model_file_dt"</span><span class="p">:</span>
+            <span class="n">probabilities_cur</span> <span class="o">=</span> <span class="n">model_file_dt</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features_current_empl</span><span class="p">)</span>
+      <span class="k">elif</span> <span class="n">modelname</span> <span class="o">==</span> <span class="s2">"model_file_xg"</span><span class="p">:</span>
+            <span class="n">probabilities_cur</span> <span class="o">=</span> <span class="n">model_file_xg</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features_current_empl</span><span class="p">)</span>
+      <span class="k">elif</span> <span class="n">modelname</span> <span class="o">==</span> <span class="s2">"model_file_rf"</span><span class="p">:</span>
+            <span class="n">probabilities_cur</span> <span class="o">=</span> <span class="n">model_file_rf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features_current_empl</span><span class="p">)</span>
+
+      <span class="n">leave_probabilities_cur</span> <span class="o">=</span> <span class="n">probabilities_cur</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+      <span class="c1">#stay_probabilities_cur =  probabilities_cur[:, 0]</span>
+      <span class="c1">#print(features.shape)</span>
+      <span class="c1">#print(leave_probabilities.shape)</span>
+
+      <span class="c1"># Add the probabilities to the new data DataFrame if needed</span>
+      <span class="n">features_current_empl</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">leave_probabilities_cur</span>
+      <span class="c1">#features_current_empl['stay_probability'] = stay_probabilities_cur</span>
+
+      <span class="c1"># Sort the df</span>
+      <span class="n">predictions_cur</span> <span class="o">=</span> <span class="n">features_current_empl</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'leave_probability'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+      <span class="c1"># predictions_cur</span>
+      <span class="c1"># Summarise predictions</span>
+
+      <span class="n">high_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">high_risk_threshold</span><span class="p">])</span>
+      <span class="n">high_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">high_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+      <span class="n">medium_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">medium_risk_threshold</span><span class="p">])</span>
+      <span class="n">medium_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">medium_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+      <span class="n">low_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">predict_true_threshold</span><span class="p">])</span>
+      <span class="n">predict_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">low_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+
+      <span class="c1"># Display the result</span>
+      <span class="c1"># print(count_by_group)</span>
+
+      <span class="n">high_left</span>   <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">'salary'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'high'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'left'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)]</span>
+      <span class="n">medium_left</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">'salary'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'medium'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'left'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)]</span>
+      <span class="n">low_left</span>    <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">'salary'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'low'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'left'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)]</span>
+
+
+      <span class="c1"># Initialise values</span>
+
+      <span class="n">high_salary</span>   <span class="o">=</span> <span class="mi">150000</span>
+      <span class="n">medium_salary</span> <span class="o">=</span> <span class="mi">100000</span>
+      <span class="n">low_salary</span>    <span class="o">=</span>  <span class="mi">50000</span>
+
+      <span class="c1"># salary_increase_percentage = 0.25 </span>
+
+      <span class="c1"># Count the rows in the filtered DataFrame multiply by salary thresholds</span>
+
+      <span class="c1"># High salary and salary increase </span>
+      <span class="n">high_cost</span> <span class="o">=</span> <span class="n">high_risk_count_cur</span> <span class="o">*</span> <span class="n">high_salary</span> <span class="o">*</span> <span class="n">salary_inc_perc</span>
+
+      <span class="c1"># Assumes medium salary @ £100K and cost to replace is 30% of salary</span>
+      <span class="n">medium_cost</span> <span class="o">=</span> <span class="n">medium_risk_count_cur</span> <span class="o">*</span> <span class="n">medium_salary</span> <span class="o">*</span> <span class="n">salary_inc_perc</span>
+
+      <span class="c1"># Assumes low salary @ £50K and cost to replace is 30% of salary</span>
+      <span class="n">low_cost</span> <span class="o">=</span> <span class="n">low_risk_count_cur</span> <span class="o">*</span> <span class="n">low_salary</span> <span class="o">*</span> <span class="n">salary_inc_perc</span>
+
+      <span class="c1"># Count of employees</span>
+      <span class="c1"># total_count = low_left.shape[0]+medium_left.shape[0]+high_left.shape[0]</span>
+      <span class="n">total_count</span> <span class="o">=</span> <span class="n">high_risk_count_cur</span> <span class="o">+</span> <span class="n">medium_risk_count_cur</span> <span class="o">+</span> <span class="n">low_risk_count_cur</span>
+
+
+      <span class="nb">print</span><span class="p">()</span>
+      <span class="c1"># Display the selected rows</span>
+
+      <span class="nb">print</span><span class="p">(</span><span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> - Cost of salary increase of </span><span class="si">{</span><span class="n">salary_inc_perc</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2"> of total salary)"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\u2500</span><span class="s1">'</span> <span class="o">*</span> <span class="mi">70</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">"                                  |   # of Staff |  Cost Per Head |   Est £ Cost"</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">"Estimate High Salary Left Cost    | </span><span class="si">{:&gt;12,.0f}</span><span class="s2"> | </span><span class="si">{:&gt;14,.0f}</span><span class="s2"> | </span><span class="si">{:&gt;12,.0f}</span><span class="s2"> "</span><span class="o">.</span>
+            <span class="nb">format</span><span class="p">(</span><span class="n">high_risk_count_cur</span><span class="p">,</span> <span class="n">high_cost</span><span class="o">/</span><span class="n">high_risk_count_cur</span><span class="p">,</span> <span class="n">high_cost</span><span class="p">))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">"Estimate Medium Salary Left Cost  | </span><span class="si">{:&gt;12,.0f}</span><span class="s2"> | </span><span class="si">{:&gt;14,.0f}</span><span class="s2"> | </span><span class="si">{:&gt;12,.0f}</span><span class="s2">"</span>
+            <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">medium_risk_count_cur</span><span class="p">,</span> <span class="n">medium_cost</span><span class="o">/</span> <span class="n">medium_risk_count_cur</span><span class="p">,</span> <span class="n">medium_cost</span><span class="p">))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">"Estimate Low Salary Left Cost     | </span><span class="si">{:&gt;12,.0f}</span><span class="s2"> | </span><span class="si">{:&gt;14,.0f}</span><span class="s2"> | </span><span class="si">{:&gt;12,.0f}</span><span class="s2">"</span>
+            <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">low_risk_count_cur</span><span class="p">,</span> <span class="n">low_cost</span><span class="o">/</span> <span class="n">low_risk_count_cur</span><span class="p">,</span> <span class="n">low_cost</span><span class="p">))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">"                                  | ============ |         ====== |    ========="</span><span class="p">)</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">"Estimate TOTAL Salary Left Cost   | </span><span class="si">{:&gt;12,.0f}</span><span class="s2"> |                | </span><span class="si">{:&gt;12,.0f}</span><span class="s2"> "</span>
+            <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_count</span><span class="p">,</span> <span class="n">low_cost</span><span class="o">+</span><span class="n">medium_cost</span><span class="o">+</span><span class="n">high_cost</span><span class="p">))</span>
+
+<span class="c1">#predict_salary_increase('model_file_xg', "Test", 0.50)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Predictions-Summary-of-the-model"><a id="toc4_"></a><a href="#toc0_">Predictions Summary of the model</a><a class="anchor-link" href="#Predictions-Summary-of-the-model">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [132]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_predictions</span><span class="p">(</span><span class="n">modelname</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+<span class="w">       </span><span class="sd">'''    Generate summary table for predictions if an employee will leave and apply predictions to employees left to compare</span>
+
+<span class="sd">    In: </span>
+<span class="sd">        modelname: str      : model_file_xxx name of the model file string. </span>
+<span class="sd">        title: str          : String for the summary title, usually full description of model e.g. 'Decision Tree', 'XGBoost', 'Random Forest'</span>
+<span class="sd">        </span>
+
+<span class="sd">    Out: print of the summary</span>
+<span class="sd">    '''</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+
+              <span class="c1"># Select employees stayed (left=0) and employees who left (left=1)</span>
+              <span class="n">features_current_empl</span> <span class="o">=</span> <span class="n">NoDept_df</span><span class="p">[</span><span class="n">NoDept_df</span><span class="p">[</span><span class="s1">'left'</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">][[</span><span class="s1">'last_eval'</span><span class="p">,</span> <span class="s1">'number_project'</span><span class="p">,</span>
+                     <span class="s1">'overworked'</span><span class="p">,</span> <span class="s1">'promotion'</span><span class="p">,</span> <span class="s1">'salary'</span><span class="p">,</span> <span class="s1">'satisfaction'</span><span class="p">,</span> <span class="s1">'tenure'</span><span class="p">]]</span>
+
+              <span class="c1">#print(features.head())</span>
+
+              <span class="c1"># Predictions for CURRENT EMPLOYEES using model_file_xg for XGBoost</span>
+              <span class="k">if</span> <span class="n">modelname</span> <span class="o">==</span> <span class="s2">"model_file_dt"</span><span class="p">:</span>
+                     <span class="n">probabilities_cur</span> <span class="o">=</span> <span class="n">model_file_dt</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features_current_empl</span><span class="p">)</span>
+              <span class="k">elif</span> <span class="n">modelname</span> <span class="o">==</span><span class="s2">"model_file_rf"</span><span class="p">:</span>
+                     <span class="n">probabilities_cur</span> <span class="o">=</span> <span class="n">model_file_rf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features_current_empl</span><span class="p">)</span>
+              <span class="k">elif</span> <span class="n">modelname</span> <span class="o">==</span> <span class="s2">"model_file_xg"</span><span class="p">:</span>
+                     <span class="n">probabilities_cur</span> <span class="o">=</span> <span class="n">model_file_xg</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features_current_empl</span><span class="p">)</span>
+
+              <span class="n">leave_probabilities_cur</span> <span class="o">=</span> <span class="n">probabilities_cur</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
+              <span class="n">stay_probabilities_cur</span> <span class="o">=</span>  <span class="n">probabilities_cur</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+              <span class="c1">#print(features.shape)</span>
+              <span class="c1">#print(leave_probabilities.shape)</span>
+
+              <span class="c1"># Add the probabilities to the new data DataFrame if needed</span>
+              <span class="n">features_current_empl</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">leave_probabilities_cur</span>
+              <span class="n">features_current_empl</span><span class="p">[</span><span class="s1">'stay_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">stay_probabilities_cur</span>
+
+              <span class="c1"># Sort the df</span>
+              <span class="n">predictions_cur</span> <span class="o">=</span> <span class="n">features_current_empl</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'leave_probability'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+              <span class="c1"># predictions_cur</span>
+              <span class="c1"># Summarise predictions</span>
+
+              <span class="n">high_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">high_risk_threshold</span><span class="p">])</span>
+              <span class="n">high_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">high_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+              <span class="n">medium_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">medium_risk_threshold</span><span class="p">])</span>
+              <span class="n">medium_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">medium_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+              <span class="n">low_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">predict_true_threshold</span><span class="p">])</span>
+              <span class="n">predict_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">low_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+
+              <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> Prediction Summary for CURRENT Employees</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
+                     <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\u2500</span><span class="s1">'</span> <span class="o">*</span> <span class="mi">55</span><span class="p">)</span> 
+              <span class="k">else</span><span class="p">:</span>
+                     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n\n</span><span class="s2">"</span><span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> Prediction Summary for LEFT Employees (how good is the model?)</span><span class="se">\n</span><span class="s2">"</span><span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
+                     <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\u2500</span><span class="s1">'</span> <span class="o">*</span> <span class="mi">55</span><span class="p">)</span> 
+
+       <span class="c1"># Print the result</span>
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"probabilities &gt; high_risk_threshold </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">high_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">high_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
+
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"probabilities &gt; medium_risk_threshold </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">medium_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">medium_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
+
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"probabilities &gt; low_risk_threshold </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">low_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">predict_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
+              
+              <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                     <span class="k">pass</span>
+              <span class="k">else</span><span class="p">:</span>
+                     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">UNDERLINE</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="si">% o</span><span class="s2">f employees left that were predicted</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
+                     <span class="c1">#print('\u2500' * 55) </span>
+                     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'XGBoost Predicted to leave &gt; (</span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1"> )/ % of employees who left         : </span><span class="si">{</span><span class="n">low_risk_count_cur</span><span class="o">/</span><span class="mi">1991</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> %'</span><span class="p">)</span>
+
+
+       <span class="n">predictions_cur</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">predictions_path</span> <span class="o">+</span> <span class="s2">"Predictions_XGBoost.html"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="will_they_leave-function--Focus-Features"><a id="toc5_"></a><a href="#toc0_"><code>will_they_leave</code> function- <code>Focus Features</code></a><a class="anchor-link" href="#will_they_leave-function--Focus-Features">¶</a></h1><p>Function to demonstrate the different predictions from the three models Random Forest, Decision Tree and XGBoost developed using the FOCUS features dataset. This dataset EXCLUDES the dummy encoded dept data.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [133]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">will_they_leave_NoDept</span><span class="p">(</span><span class="n">satisfaction</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">last_eval</span><span class="p">:</span><span class="nb">float</span><span class="p">,</span> <span class="n">num_proj</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">tenure</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">overworked</span><span class="p">:</span><span class="nb">bin</span><span class="p">,</span> <span class="n">promotion</span><span class="p">:</span><span class="nb">bin</span><span class="p">,</span> <span class="n">salary</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
@@ -7982,7 +8213,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Interactive-Model-Comparison-Demonstration"><a id="toc4_1_"></a><a href="#toc0_">Interactive Model Comparison Demonstration</a><a class="anchor-link" href="#Interactive-Model-Comparison-Demonstration">¶</a></h2>
+<h2 id="Interactive-Model-Comparison-Demonstration"><a id="toc5_1_"></a><a href="#toc0_">Interactive Model Comparison Demonstration</a><a class="anchor-link" href="#Interactive-Model-Comparison-Demonstration">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7991,10 +8222,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [134]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Amend the variables below to test if a employee is predicted to leave</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Amend the variables below to create an employee record example to test if a employee is predicted to leave</span>
 <span class="c1"># Note Key Feature : tenure, promotion, num_projects, last_eval.</span>
 
 <span class="n">number_of_projects</span>      <span class="o">=</span> <span class="mi">1</span>         <span class="c1"># Discrete range [0-7]</span>
@@ -8043,7 +8274,7 @@ The employee is **LIKELY** to leave with a probability of 96.11%
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Model-prediction-Summaries">Model prediction Summaries<a class="anchor-link" href="#Model-prediction-Summaries">¶</a></h1><ul>
+<h1 id="Model-prediction-Summaries"><a id="toc6_"></a><a href="#toc0_">Model prediction Summaries</a><a class="anchor-link" href="#Model-prediction-Summaries">¶</a></h1><ul>
 <li>Add some highlighting</li>
 <li>Load the employee data file</li>
 <li>applies the Decision Tree, RandomForest and XGBoost models to the  data</li>
@@ -8061,16 +8292,16 @@ The employee is **LIKELY** to leave with a probability of 96.11%
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Load-and-Prepare-data">Load and Prepare data<a class="anchor-link" href="#Load-and-Prepare-data">¶</a></h3>
+<h3 id="Load-and-Prepare-data"><a id="toc6_1_1_"></a><a href="#toc0_">Load and Prepare data</a><a class="anchor-link" href="#Load-and-Prepare-data">¶</a></h3>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [135]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load cleaned dataset into a dataframe</span>
@@ -8082,8 +8313,8 @@ The employee is **LIKELY** to leave with a probability of 96.11%
 <span class="n">AllFeat_df</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">NoDept_df</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">AllFeat_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">NoDept_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="c1">#print(AllFeat_df.columns)</span>
+<span class="c1">#print(NoDept_df.columns)</span>
 
 <span class="n">AllFeat_LEFT_df</span> <span class="o">=</span> <span class="n">AllFeat_df</span><span class="p">[</span><span class="n">AllFeat_df</span><span class="p">[</span><span class="s1">'left'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'left'</span><span class="p">])</span>
 
@@ -8096,26 +8327,6 @@ The employee is **LIKELY** to leave with a probability of 96.11%
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Index(['dept_accounting', 'dept_hr', 'dept_it', 'dept_management',
-       'dept_marketing', 'dept_product_mng', 'dept_randd', 'dept_sales',
-       'dept_support', 'dept_technical', 'last_eval', 'left', 'number_project',
-       'overworked', 'promotion', 'salary', 'satisfaction', 'tenure'],
-      dtype='object')
-Index(['last_eval', 'left', 'number_project', 'overworked', 'promotion',
-       'salary', 'satisfaction', 'tenure'],
-      dtype='object')
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8123,7 +8334,7 @@ Index(['last_eval', 'left', 'number_project', 'overworked', 'promotion',
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Set-Prediction-Probability-Thresholds-for-reporting"><a id="toc5_1_2_"></a><a href="#toc0_">Set Prediction Probability Thresholds for reporting</a><a class="anchor-link" href="#Set-Prediction-Probability-Thresholds-for-reporting">¶</a></h3>
+<h3 id="Set-Prediction-Probability-Thresholds-for-reporting"><a id="toc6_1_2_"></a><a href="#toc0_">Set Prediction Probability Thresholds for reporting</a><a class="anchor-link" href="#Set-Prediction-Probability-Thresholds-for-reporting">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8132,7 +8343,7 @@ Index(['last_eval', 'left', 'number_project', 'overworked', 'promotion',
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [136]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Set risk thresholds for calcs</span>
@@ -8152,7 +8363,7 @@ Index(['last_eval', 'left', 'number_project', 'overworked', 'promotion',
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Summary---Random-Forest-Model-Predictions"><a id="toc5_"></a><a href="#toc0_">Summary - Random Forest Model Predictions</a><a class="anchor-link" href="#Summary---Random-Forest-Model-Predictions">¶</a></h2>
+<h2 id="Summary---Random-Forest-Model-Predictions"><a id="toc6_2_"></a><a href="#toc0_">Summary - Random Forest Model Predictions</a><a class="anchor-link" href="#Summary---Random-Forest-Model-Predictions">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8161,71 +8372,11 @@ Index(['last_eval', 'left', 'number_project', 'overworked', 'promotion',
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [137]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-
-       <span class="n">features_current_empl</span> <span class="o">=</span> <span class="n">NoDept_df</span><span class="p">[</span><span class="n">NoDept_df</span><span class="p">[</span><span class="s1">'left'</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">][[</span><span class="s1">'last_eval'</span><span class="p">,</span> <span class="s1">'number_project'</span><span class="p">,</span>
-              <span class="s1">'overworked'</span><span class="p">,</span> <span class="s1">'promotion'</span><span class="p">,</span> <span class="s1">'salary'</span><span class="p">,</span> <span class="s1">'satisfaction'</span><span class="p">,</span> <span class="s1">'tenure'</span><span class="p">]]</span>
-
-       <span class="c1">#print(features.head())</span>
-
-       <span class="c1"># Predictions for CURRENT EMPLOYEES</span>
-
-       <span class="n">probabilities_cur</span> <span class="o">=</span> <span class="n">model_file_rf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features_current_empl</span><span class="p">)</span>
-
-       <span class="n">leave_probabilities_cur</span> <span class="o">=</span> <span class="n">probabilities_cur</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
-       <span class="n">stay_probabilities_cur</span> <span class="o">=</span>  <span class="n">probabilities_cur</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
-       <span class="c1">#print(features.shape)</span>
-       <span class="c1">#print(leave_probabilities.shape)</span>
-
-       <span class="c1"># Add the probabilities to the new data DataFrame if needed</span>
-       <span class="n">features_current_empl</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">leave_probabilities_cur</span>
-       <span class="n">features_current_empl</span><span class="p">[</span><span class="s1">'stay_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">stay_probabilities_cur</span>
-
-       <span class="c1"># Save the updated new data DataFrame with probabilities to a CSV file</span>
-       <span class="n">predictions_cur</span> <span class="o">=</span> <span class="n">features_current_empl</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'leave_probability'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-       <span class="c1"># predictions_cur</span>
-       <span class="c1"># Summarise predictions</span>
-
-       <span class="n">high_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">high_risk_threshold</span><span class="p">])</span>
-       <span class="n">high_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">high_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-       <span class="n">medium_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">medium_risk_threshold</span><span class="p">])</span>
-       <span class="n">medium_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">medium_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-       <span class="n">predict_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">predict_true_threshold</span><span class="p">])</span>
-       <span class="n">predict_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">predict_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-
-       <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="s2">"Random Forest Summary for CURRENT Employees</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-              <span class="c1">#print('\u2500' * 55) </span>
-       <span class="k">else</span><span class="p">:</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="s2">"Random Forest Summary for LEFT Employees</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-              <span class="c1">#print('\u2500' * 55) </span>
-
-      <span class="c1"># Print the result</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"probabilities &gt; high_risk_threshold </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">high_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">high_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
-
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"probabilities &gt; medium_risk_threshold </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">medium_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">medium_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
-
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"probabilities &gt; predict_risk_threshold </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">predict_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">predict_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
-       
-       <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-              <span class="k">pass</span>
-       <span class="k">else</span><span class="p">:</span>
-              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">UNDERLINE</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="si">% o</span><span class="s2">f employees left that were predicted</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-              <span class="c1">#print('\u2500' * 55) </span>
-              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Random Forest Predicted to leave &gt; (</span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1"> )/ % of employees who left         : </span><span class="si">{</span><span class="n">predict_risk_count_cur</span><span class="o">/</span><span class="mi">1991</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> %'</span><span class="p">)</span>
-
-
-<span class="n">predictions_cur</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">predictions_path</span> <span class="o">+</span> <span class="s2">"Predictions_Random_Forest.html"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">model_predictions</span><span class="p">(</span><span class="s1">'model_file_rf'</span><span class="p">,</span> <span class="s1">'Random Forest'</span><span class="p">)</span>
+<span class="n">predict_salary_increase</span><span class="p">(</span><span class="s1">'model_file_rf'</span><span class="p">,</span><span class="s1">'Random Forest'</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">)</span> <span class="c1"># modelname and model title</span>
 </pre></div>
 </div>
 </div>
@@ -8239,8 +8390,9 @@ Index(['last_eval', 'left', 'number_project', 'overworked', 'promotion',
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
-<span class="ansi-bold">Random Forest Summary for CURRENT Employees
+<span class="ansi-bold">Random Forest Prediction Summary for CURRENT Employees
 </span>
+───────────────────────────────────────────────────────
 
 <span class="ansi-bold">probabilities &gt; high_risk_threshold 90%</span>
 Count of employees with leave probability above 90%        : 26
@@ -8250,12 +8402,14 @@ Percentage of employees with leave probability above 90%   : 0.28%
 Count of employees with leave probability above 70%        : 48
 Percentage of employees with leave probability above 70%   : 0.52%
 
-<span class="ansi-bold">probabilities &gt; predict_risk_threshold 50%</span>
+<span class="ansi-bold">probabilities &gt; low_risk_threshold 50%</span>
 Count of employees with leave probability above 50%        : 59
 Percentage of employees with leave probability above 50%   : 0.64%
 
-<span class="ansi-bold">Random Forest Summary for LEFT Employees
+
+<span class="ansi-bold">Random Forest Prediction Summary for LEFT Employees (how good is the model?)
 </span>
+───────────────────────────────────────────────────────
 
 <span class="ansi-bold">probabilities &gt; high_risk_threshold 90%</span>
 Count of employees with leave probability above 90%        : 1704
@@ -8265,14 +8419,26 @@ Percentage of employees with leave probability above 90%   : 90.54%
 Count of employees with leave probability above 70%        : 1715
 Percentage of employees with leave probability above 70%   : 91.13%
 
-<span class="ansi-bold">probabilities &gt; predict_risk_threshold 50%</span>
+<span class="ansi-bold">probabilities &gt; low_risk_threshold 50%</span>
 Count of employees with leave probability above 50%        : 1721
 Percentage of employees with leave probability above 50%   : 91.45%
 
 <span class="ansi-bold ansi-underline">
 % of employees left that were predicted
 </span>
-Random Forest Predicted to leave &gt; (50% )/ % of employees who left         : 86.44 %
+XGBoost Predicted to leave &gt; (50% )/ % of employees who left         : 86.44 %
+
+
+<span class="ansi-bold">Random Forest Model Predictions of salary cost increases</span>
+
+<span class="ansi-bold">Cost of salary increase of 50% of total salary)</span>
+──────────────────────────────────────────────────────────────────────
+                                  |   # of Staff |  Cost Per Head |   Est £ Cost
+Estimate High Salary Left Cost    |           26 |         75,000 |    1,950,000 
+Estimate Medium Salary Left Cost  |           48 |         50,000 |    2,400,000
+Estimate Low Salary Left Cost     |           59 |         25,000 |    1,475,000
+                                  | ============ |         ====== |    =========
+Estimate TOTAL Salary Left Cost   |          133 |                |    5,825,000 
 </pre>
 </div>
 </div>
@@ -8285,7 +8451,7 @@ Random Forest Predicted to leave &gt; (50% )/ % of employees who left         : 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Summary-XGBoost-Predictions">Summary XGBoost Predictions<a class="anchor-link" href="#Summary-XGBoost-Predictions">¶</a></h2>
+<h2 id="Summary-XGBoost-Predictions"><a id="toc6_3_"></a><a href="#toc0_">Summary XGBoost Predictions</a><a class="anchor-link" href="#Summary-XGBoost-Predictions">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8294,72 +8460,11 @@ Random Forest Predicted to leave &gt; (50% )/ % of employees who left         : 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [138]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-
-       <span class="c1"># Select employees stayed (left=0) and employees who left (left=1)</span>
-       <span class="n">features_current_empl</span> <span class="o">=</span> <span class="n">NoDept_df</span><span class="p">[</span><span class="n">NoDept_df</span><span class="p">[</span><span class="s1">'left'</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">][[</span><span class="s1">'last_eval'</span><span class="p">,</span> <span class="s1">'number_project'</span><span class="p">,</span>
-              <span class="s1">'overworked'</span><span class="p">,</span> <span class="s1">'promotion'</span><span class="p">,</span> <span class="s1">'salary'</span><span class="p">,</span> <span class="s1">'satisfaction'</span><span class="p">,</span> <span class="s1">'tenure'</span><span class="p">]]</span>
-
-       <span class="c1">#print(features.head())</span>
-
-       <span class="c1"># Predictions for CURRENT EMPLOYEES using model_file_xg for XGBoost</span>
-
-       <span class="n">probabilities_cur</span> <span class="o">=</span> <span class="n">model_file_xg</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features_current_empl</span><span class="p">)</span>
-
-       <span class="n">leave_probabilities_cur</span> <span class="o">=</span> <span class="n">probabilities_cur</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
-       <span class="n">stay_probabilities_cur</span> <span class="o">=</span>  <span class="n">probabilities_cur</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
-       <span class="c1">#print(features.shape)</span>
-       <span class="c1">#print(leave_probabilities.shape)</span>
-
-       <span class="c1"># Add the probabilities to the new data DataFrame if needed</span>
-       <span class="n">features_current_empl</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">leave_probabilities_cur</span>
-       <span class="n">features_current_empl</span><span class="p">[</span><span class="s1">'stay_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">stay_probabilities_cur</span>
-
-       <span class="c1"># Sort the df</span>
-       <span class="n">predictions_cur</span> <span class="o">=</span> <span class="n">features_current_empl</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'leave_probability'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-       <span class="c1"># predictions_cur</span>
-       <span class="c1"># Summarise predictions</span>
-
-       <span class="n">high_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">high_risk_threshold</span><span class="p">])</span>
-       <span class="n">high_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">high_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-       <span class="n">medium_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">medium_risk_threshold</span><span class="p">])</span>
-       <span class="n">medium_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">medium_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-       <span class="n">predict_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">predict_true_threshold</span><span class="p">])</span>
-       <span class="n">predict_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">predict_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-
-       <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"XGBoost Summary for CURRENT Employees</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\u2500</span><span class="s1">'</span> <span class="o">*</span> <span class="mi">55</span><span class="p">)</span> 
-       <span class="k">else</span><span class="p">:</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n\n</span><span class="s2">"</span><span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"XGBoost Summary for LEFT Employees</span><span class="se">\n</span><span class="s2">"</span><span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\u2500</span><span class="s1">'</span> <span class="o">*</span> <span class="mi">55</span><span class="p">)</span> 
-
-      <span class="c1"># Print the result</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"probabilities &gt; high_risk_threshold </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">high_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">high_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
-
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"probabilities &gt; medium_risk_threshold </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">medium_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">medium_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
-
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"probabilities &gt; predict_risk_threshold </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">predict_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">predict_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
-       
-       <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-              <span class="k">pass</span>
-       <span class="k">else</span><span class="p">:</span>
-              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">UNDERLINE</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="si">% o</span><span class="s2">f employees left that were predicted</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-              <span class="c1">#print('\u2500' * 55) </span>
-              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'XGBoost Predicted to leave &gt; (</span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1"> )/ % of employees who left         : </span><span class="si">{</span><span class="n">predict_risk_count_cur</span><span class="o">/</span><span class="mi">1991</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> %'</span><span class="p">)</span>
-
-
-<span class="n">predictions_cur</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">predictions_path</span> <span class="o">+</span> <span class="s2">"Predictions_XGBoost.html"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">model_predictions</span><span class="p">(</span><span class="s1">'model_file_xg'</span><span class="p">,</span> <span class="s1">'XGBoost'</span><span class="p">)</span>
+<span class="n">predict_salary_increase</span><span class="p">(</span><span class="s1">'model_file_xg'</span><span class="p">,</span><span class="s1">'XGBoost'</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">)</span> <span class="c1"># modelname and model title</span>
 </pre></div>
 </div>
 </div>
@@ -8373,7 +8478,7 @@ Random Forest Predicted to leave &gt; (50% )/ % of employees who left         : 
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
-<span class="ansi-bold">XGBoost Summary for CURRENT Employees
+<span class="ansi-bold">XGBoost Prediction Summary for CURRENT Employees
 </span>
 ───────────────────────────────────────────────────────
 
@@ -8385,12 +8490,12 @@ Percentage of employees with leave probability above 90%   : 0.13%
 Count of employees with leave probability above 70%        : 33
 Percentage of employees with leave probability above 70%   : 0.36%
 
-<span class="ansi-bold">probabilities &gt; predict_risk_threshold 50%</span>
+<span class="ansi-bold">probabilities &gt; low_risk_threshold 50%</span>
 Count of employees with leave probability above 50%        : 67
 Percentage of employees with leave probability above 50%   : 0.72%
 
 
-<span class="ansi-bold">XGBoost Summary for LEFT Employees
+<span class="ansi-bold">XGBoost Prediction Summary for LEFT Employees (how good is the model?)
 </span>
 ───────────────────────────────────────────────────────
 
@@ -8402,7 +8507,7 @@ Percentage of employees with leave probability above 90%   : 72.26%
 Count of employees with leave probability above 70%        : 1712
 Percentage of employees with leave probability above 70%   : 90.97%
 
-<span class="ansi-bold">probabilities &gt; predict_risk_threshold 50%</span>
+<span class="ansi-bold">probabilities &gt; low_risk_threshold 50%</span>
 Count of employees with leave probability above 50%        : 1731
 Percentage of employees with leave probability above 50%   : 91.98%
 
@@ -8410,6 +8515,18 @@ Percentage of employees with leave probability above 50%   : 91.98%
 % of employees left that were predicted
 </span>
 XGBoost Predicted to leave &gt; (50% )/ % of employees who left         : 86.94 %
+
+
+<span class="ansi-bold">XGBoost Model Predictions of salary cost increases</span>
+
+<span class="ansi-bold">Cost of salary increase of 50% of total salary)</span>
+──────────────────────────────────────────────────────────────────────
+                                  |   # of Staff |  Cost Per Head |   Est £ Cost
+Estimate High Salary Left Cost    |           12 |         75,000 |      900,000 
+Estimate Medium Salary Left Cost  |           33 |         50,000 |    1,650,000
+Estimate Low Salary Left Cost     |           67 |         25,000 |    1,675,000
+                                  | ============ |         ====== |    =========
+Estimate TOTAL Salary Left Cost   |          112 |                |    4,225,000 
 </pre>
 </div>
 </div>
@@ -8422,7 +8539,7 @@ XGBoost Predicted to leave &gt; (50% )/ % of employees who left         : 86.94 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Summary-Decision-Tree-Predictions">Summary Decision Tree Predictions<a class="anchor-link" href="#Summary-Decision-Tree-Predictions">¶</a></h2>
+<h2 id="Summary-Decision-Tree-Predictions"><a id="toc6_4_"></a><a href="#toc0_">Summary Decision Tree Predictions</a><a class="anchor-link" href="#Summary-Decision-Tree-Predictions">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8431,72 +8548,11 @@ XGBoost Predicted to leave &gt; (50% )/ % of employees who left         : 86.94 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [139]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-
-       <span class="c1"># Select employees stayed (left=0) and employees who left (left=1)</span>
-       <span class="n">features_current_empl</span> <span class="o">=</span> <span class="n">NoDept_df</span><span class="p">[</span><span class="n">NoDept_df</span><span class="p">[</span><span class="s1">'left'</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">][[</span><span class="s1">'last_eval'</span><span class="p">,</span> <span class="s1">'number_project'</span><span class="p">,</span>
-              <span class="s1">'overworked'</span><span class="p">,</span> <span class="s1">'promotion'</span><span class="p">,</span> <span class="s1">'salary'</span><span class="p">,</span> <span class="s1">'satisfaction'</span><span class="p">,</span> <span class="s1">'tenure'</span><span class="p">]]</span>
-
-       <span class="c1">#print(features.head())</span>
-
-       <span class="c1"># Predictions for CURRENT EMPLOYEES using model_file_xg for XGBoost</span>
-
-       <span class="n">probabilities_cur</span> <span class="o">=</span> <span class="n">model_file_dt</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">features_current_empl</span><span class="p">)</span>
-
-       <span class="n">leave_probabilities_cur</span> <span class="o">=</span> <span class="n">probabilities_cur</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
-       <span class="n">stay_probabilities_cur</span> <span class="o">=</span>  <span class="n">probabilities_cur</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
-       <span class="c1">#print(features.shape)</span>
-       <span class="c1">#print(leave_probabilities.shape)</span>
-
-       <span class="c1"># Add the probabilities to the new data DataFrame if needed</span>
-       <span class="n">features_current_empl</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">leave_probabilities_cur</span>
-       <span class="n">features_current_empl</span><span class="p">[</span><span class="s1">'stay_probability'</span><span class="p">]</span> <span class="o">=</span> <span class="n">stay_probabilities_cur</span>
-
-       <span class="c1"># Sort the df</span>
-       <span class="n">predictions_cur</span> <span class="o">=</span> <span class="n">features_current_empl</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">'leave_probability'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-       <span class="c1"># predictions_cur</span>
-       <span class="c1"># Summarise predictions</span>
-
-       <span class="n">high_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">high_risk_threshold</span><span class="p">])</span>
-       <span class="n">high_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">high_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-       <span class="n">medium_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">medium_risk_threshold</span><span class="p">])</span>
-       <span class="n">medium_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">medium_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-       <span class="n">predict_risk_count_cur</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">[</span><span class="n">predictions_cur</span><span class="p">[</span><span class="s1">'leave_probability'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">predict_true_threshold</span><span class="p">])</span>
-       <span class="n">predict_risk_perc_cur</span> <span class="o">=</span> <span class="p">(</span><span class="n">predict_risk_count_cur</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">predictions_cur</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-
-       <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"Decision Tree Summary for CURRENT Employees</span><span class="se">\n</span><span class="s2">"</span><span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\u2500</span><span class="s1">'</span> <span class="o">*</span> <span class="mi">55</span><span class="p">)</span> 
-       <span class="k">else</span><span class="p">:</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n\n</span><span class="s2">"</span><span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"Decision Tree Summary for LEFT Employees</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-              <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\u2500</span><span class="s1">'</span> <span class="o">*</span> <span class="mi">55</span><span class="p">)</span> 
-
-      <span class="c1"># Print the result</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"probabilities &gt; high_risk_threshold </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">high_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">high_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">high_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
-
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span>  <span class="sa">f</span><span class="s2">"probabilities &gt; medium_risk_threshold </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">medium_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">medium_risk_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">medium_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
-
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">"probabilities &gt; predict_risk_threshold </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s2">.0%</span><span class="si">}</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Count of employees with leave probability above </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">        : </span><span class="si">{</span><span class="n">predict_risk_count_cur</span><span class="si">:</span><span class="s1">.0f</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-       <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Percentage of employees with leave probability above </span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1">   : </span><span class="si">{</span><span class="n">predict_risk_perc_cur</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">%'</span><span class="p">)</span>
-       
-       <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-              <span class="k">pass</span>
-       <span class="k">else</span><span class="p">:</span>
-              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">BOLD</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">UNDERLINE</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="si">% o</span><span class="s2">f employees left that were predicted</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">color</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-              <span class="c1">#print('\u2500' * 55) </span>
-              <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Decision Tree Predicted to leave &gt; (</span><span class="si">{</span><span class="n">predict_true_threshold</span><span class="si">:</span><span class="s1">.0%</span><span class="si">}</span><span class="s1"> )/ % of employees who left         : </span><span class="si">{</span><span class="n">predict_risk_count_cur</span><span class="o">/</span><span class="mi">1991</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> %'</span><span class="p">)</span>
-
-
-<span class="n">predictions_cur</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">predictions_path</span> <span class="o">+</span> <span class="s2">"Predictions_Decision_Tree.html"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">model_predictions</span><span class="p">(</span><span class="s1">'model_file_dt'</span><span class="p">,</span> <span class="s1">'Decision Tree'</span><span class="p">)</span>
+<span class="n">predict_salary_increase</span><span class="p">(</span><span class="s1">'model_file_dt'</span><span class="p">,</span><span class="s1">'Decision Tree'</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">)</span> <span class="c1"># modelname and model title</span>
 </pre></div>
 </div>
 </div>
@@ -8510,7 +8566,7 @@ XGBoost Predicted to leave &gt; (50% )/ % of employees who left         : 86.94 
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
-<span class="ansi-bold">Decision Tree Summary for CURRENT Employees
+<span class="ansi-bold">Decision Tree Prediction Summary for CURRENT Employees
 </span>
 ───────────────────────────────────────────────────────
 
@@ -8522,12 +8578,12 @@ Percentage of employees with leave probability above 90%   : 0.43%
 Count of employees with leave probability above 70%        : 87
 Percentage of employees with leave probability above 70%   : 0.94%
 
-<span class="ansi-bold">probabilities &gt; predict_risk_threshold 50%</span>
+<span class="ansi-bold">probabilities &gt; low_risk_threshold 50%</span>
 Count of employees with leave probability above 50%        : 87
 Percentage of employees with leave probability above 50%   : 0.94%
 
 
-<span class="ansi-bold">Decision Tree Summary for LEFT Employees
+<span class="ansi-bold">Decision Tree Prediction Summary for LEFT Employees (how good is the model?)
 </span>
 ───────────────────────────────────────────────────────
 
@@ -8539,14 +8595,26 @@ Percentage of employees with leave probability above 90%   : 71.31%
 Count of employees with leave probability above 70%        : 1730
 Percentage of employees with leave probability above 70%   : 91.92%
 
-<span class="ansi-bold">probabilities &gt; predict_risk_threshold 50%</span>
+<span class="ansi-bold">probabilities &gt; low_risk_threshold 50%</span>
 Count of employees with leave probability above 50%        : 1730
 Percentage of employees with leave probability above 50%   : 91.92%
 
 <span class="ansi-bold ansi-underline">
 % of employees left that were predicted
 </span>
-Decision Tree Predicted to leave &gt; (50% )/ % of employees who left         : 86.89 %
+XGBoost Predicted to leave &gt; (50% )/ % of employees who left         : 86.89 %
+
+
+<span class="ansi-bold">Decision Tree Model Predictions of salary cost increases</span>
+
+<span class="ansi-bold">Cost of salary increase of 50% of total salary)</span>
+──────────────────────────────────────────────────────────────────────
+                                  |   # of Staff |  Cost Per Head |   Est £ Cost
+Estimate High Salary Left Cost    |           40 |         75,000 |    3,000,000 
+Estimate Medium Salary Left Cost  |           87 |         50,000 |    4,350,000
+Estimate Low Salary Left Cost     |           87 |         25,000 |    2,175,000
+                                  | ============ |         ====== |    =========
+Estimate TOTAL Salary Left Cost   |          214 |                |    9,525,000 
 </pre>
 </div>
 </div>
@@ -8559,7 +8627,7 @@ Decision Tree Predicted to leave &gt; (50% )/ % of employees who left         : 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Summarise-model-findings"><a id="toc5_2_"></a><a href="#toc0_">Summarise model findings</a><a class="anchor-link" href="#Summarise-model-findings">¶</a></h2><p>Count the number of employees that are at risk of leaving with probabilities set at:</p>
+<h2 id="Summarise-model-findings"><a id="toc6_5_"></a><a href="#toc0_">Summarise model findings</a><a class="anchor-link" href="#Summarise-model-findings">¶</a></h2><p>Count the number of employees that are at risk of leaving with probabilities set at:</p>
 <ul>
 <li><p>High Risk &gt; 70%</p>
 </li>
@@ -8584,7 +8652,7 @@ Decision Tree Predicted to leave &gt; (50% )/ % of employees who left         : 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="View-Results-in-browser"><a id="toc6_"></a><a href="#toc0_">View Results in browser</a><a class="anchor-link" href="#View-Results-in-browser">¶</a></h1><p><a href="Predictions_XGBoost.html">View XGBoost Predictions.html</a></p>
+<h1 id="View-Results-in-browser"><a id="toc7_"></a><a href="#toc0_">View Results in browser</a><a class="anchor-link" href="#View-Results-in-browser">¶</a></h1><p><a href="Predictions_XGBoost.html">View XGBoost Predictions.html</a></p>
 <p><a href="Predictions_Decision_Tree.html">View Decision Tree Predictions.html</a></p>
 <p><a href="Predictions_Random_Forest.html">View Random Forest Predictions.html</a></p>
 </div>

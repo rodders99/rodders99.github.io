@@ -578,17 +578,20 @@ Predictions Summary for LEFT Employees</h2>
 <div class="datatable-container">
 <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
 <tr>
+<thead>
 <th>
 probabilities &gt; high_risk_threshold 90%
 </th>
 <td>
 </td>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td>
 Count of employees with leave probability above 90%
 </td>
-<td>
+<td style="text-align: right">
 1360
 </td>
 </tr>
@@ -596,7 +599,7 @@ Count of employees with leave probability above 90%
 <td>
 Percentage of employees with leave probability above 90%
 </td>
-<td>
+<td style="text-align: right">
 72.26%
 </td>
 </tr>
@@ -606,6 +609,8 @@ Percentage of employees with leave probability above 90%
 <td>
 </td>
 </tr>
+</tbody>
+<thead>
 <tr>
 <th>
 probabilities &gt; medium_risk_threshold 70%
@@ -613,11 +618,11 @@ probabilities &gt; medium_risk_threshold 70%
 <td>
 </td>
 </tr>
-<tr>
+</thead>
 <td>
 Count of employees with leave probability above 70%
 </td>
-<td>
+<td style="text-align: right">
 1712
 </td>
 </tr>
@@ -625,7 +630,7 @@ Count of employees with leave probability above 70%
 <td>
 Percentage of employees with leave probability above 70%
 </td>
-<td>
+<td style="text-align: right">
 90.97%
 </td>
 </tr>
@@ -636,17 +641,19 @@ Percentage of employees with leave probability above 70%
 </td>
 </tr>
 <tr>
+<thead>
 <th>
 probabilities &gt; predict_risk_threshold 50%
 </th>
 <td>
 </td>
 </tr>
+</thead>
 <tr>
 <td>
 Count of employees with leave probability above 50%
 </td>
-<td>
+<td style="text-align: right">
 1731
 </td>
 </tr>
@@ -654,31 +661,34 @@ Count of employees with leave probability above 50%
 <td>
 Percentage of employees with leave probability above 50%
 </td>
-<td>
+<td style="text-align: right">
 91.98%
 </td>
 </tr>
 <tr>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<thead>
 <th>
 % of employees left that were predicted
 </th>
 <td>
 </td>
 </tr>
-<tr>
-<th>
-</th>
-<td>
-</td>
-</tr>
-<tr>
+</thead>
+<thead>
 <th>
 XGBoost Predicted to leave &gt; (50% )/ % of employees who left
 </th>
-<td>
+<td style="text-align: right">
 86.94 %
 </td>
 </tr>
+</thead>
 </table>
 </div>
 <h2 id="demonstration-of-the-ml-model">Demonstration of the ML
@@ -686,6 +696,6 @@ Model</h2>
 <p>This requires a live setup. Kaggle to the rescue!</p>
 <p>Predictions Files</p>
 <p>Team Report Template</p>
-<p><a href="#top"> scroll to top </a></p>
+<a href="#top"> scroll to top </a>
 </div>
 </body>
