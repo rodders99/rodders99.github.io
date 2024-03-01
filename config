@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "github"]
+	url = https://github.com/rodders99/rodders99.github.io
+	fetch = +refs/heads/*:refs/remotes/github/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[remote "local"]
+	url = ssh://git@hass/gitstore/website
+	fetch = +refs/heads/*:refs/remotes/local/*
+
+
+
+[submodule "themes/hugo-coder"]
+	url = https://github.com/luizdepra/hugo-coder
+	active = true
+
