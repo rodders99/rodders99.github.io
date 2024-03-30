@@ -1,0 +1,11 @@
+<!-- Updated shortcode to handle URL parameters -->
+<div>
+    {{ $filename := .Get 0 }}
+    {{ $params := .Get 1 }}
+    <!-- Constructing the file path with parameters -->
+    {{ $filePath := printf "static/%s.html?%s" $filename $params }}
+    
+    <!-- Reading and embedding the file -->
+    <!-- Note: The readFile function does not process URL parameters, but you can use this as part of the file naming convention if needed -->
+    {{ readFile $filePath | safeHTML }}
+</div>
