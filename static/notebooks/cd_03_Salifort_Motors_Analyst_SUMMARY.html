@@ -1,16 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="color-scheme" content="dark">
 <head>
 <meta name="color-scheme" content="dark light">
-<p><link rel="stylesheet" type="text/css" href="custom-menu.css">
-<link rel="stylesheet" type="text/css" href="project-style.css">
+<p><link rel="stylesheet" type="text/css" href="/css/custom-menu.css">
+<link rel="stylesheet" type="text/css" href="/css/project-style.css">
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"></p>
 <style>
 
+  .tippy-box[data-theme~='tomato'] {
+      background-color: tomato;
+      color: yellow;
+      }
+  body {
+    padding-top: 50px; /* Adjust based on the toolbar's height to avoid content being hidden behind it */
+  }
 </style>
+</head>
 </head>
 <body>
 <div class="page-container">
 
-
+<div class="toolbar" style="width:100%; text-align:center;">
+    <table style="margin-left: 380px">
+        <tbody>
+        <tr><td>
 <div class="dropdown">
 <button class="dropbtn">
 <i class="material-icons">menu</i>Project Documentation
@@ -18,18 +36,18 @@
 <div class="dropdown-content">
 <a href="#"><b>Navigation</b></a> <a href="/">Home</a>
 <a href="/projects/1/01/01/salifort_project/">Project Home</a>
-<a href="#"><b>Analyst’s Notebooks</b></a>
+<a href="#"><b>Analyst's Notebooks</b></a>
 <div class="submenu">
-<p><a href="/notebooks/nb_03_Salifort_Motors_project_EDA_cleanse.html">EDA
+<a href="/notebooks/nb_03_Salifort_Motors_project_EDA_cleanse.html">EDA
 Cleanse</a>
 <a href="/notebooks/nb_04_Salifort_Motors_project_EDA_ANALYSIS.html">EDA
 Analysis</a>
 <a href="/notebooks/nb_05_Salifort_Motors_project_Feature_Engineering.html">Feature
-Engineering</a></p>
+Engineering</a>
 </div>
 <a href="#"><b>ML Models</b></a>
 <div class="submenu">
-<p><a href="/notebooks/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html">Logistical
+<a href="/notebooks/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html">Logistical
 Regression</a>
 <a href="/notebooks/nb_07_Salifort_Motors_project_Decision_Tree_Model.html">Decision
 Tree</a>
@@ -39,14 +57,14 @@ Forest</a>
 <a href="/notebooks/nb_11_Salifort_Motors_project_Model_Comparisons.html">Model
 Comparisons</a>
 <a href="/notebooks/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html">Model
-Demonstration</a></p>
+Demonstration</a>
 </div>
 <a href="#"><b>Client Documentation</b></a>
 <div class="submenu">
-<p><a href="/notebooks/cd_01_Salifort_Motors_project-PROPOSAL.html">Client
+<a href="/notebooks/cd_01_Salifort_Motors_project-PROPOSAL.html">Client
 Proposal</a>
 <a href="/notebooks/cd_02_Salifort_Motors_PACE_Plan.html">PACE Plan</a>
-<a href="/notebooks/cd_03_Salifort_Motors_Analyst_SUMMARY.html">Analyst’s
+<a href="/notebooks/cd_03_Salifort_Motors_Analyst_SUMMARY.html">Analyst's
 Summary</a>
 <a href="/notebooks/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html">Executive
 Summary</a>
@@ -57,24 +75,29 @@ Summary Generator Notebook</a>
 <a href="/notebooks/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html">Team
 Summary example</a>
 <a href="/notebooks/cd_99_Salifort_Motors_Project_Close.html">Project
-Close</a></p>
+Close</a>
 </div>
 </div>
 </div>
+</td></tr></tbody></table></div>
+
+
 <h1 id="analyst-summary">Analyst Summary</h1>
 <h1>
-<code>For internal analysts team eyes only</code>
+
+    For internal analysts team eyes only
+
 </h1>
 <h2 id="document-information">Document Information</h2>
 <div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+<table class="datatable" style="margin-right:auto;margin-left:0px;">
 <tbody>
 <tr>
-<td>
+<td style="width:15%">
 Document Title
 </td>
 <td>
-Salifort Motors - Analyst’s Summary - for internal use only
+Salifort Motors - Analyst's Summary - for internal use only
 </td>
 </tr>
 <tr>
@@ -114,9 +137,9 @@ Modified
 </div>
 <h2 id="client-details">Client Details</h2>
 <div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px">
+<table class="datatable" style="margin-right:auto">
 <tr>
-<td>
+<td style="width:15%">
 Client Name
 </td>
 <td>
@@ -149,91 +172,13 @@ HR Team Data Driven Solutions from Machine Learning Models
 </tr>
 </table>
 </div>
-<h1 id="table-of-contents">Table of Contents</h1>
-<ul>
-<li><a href="#analyst-summary">Analyst Summary</a>
-<ul>
-<li><a href="#document-information">Document Information</a></li>
-<li><a href="#client-details">Client Details</a></li>
-</ul></li>
-<li><a href="#table-of-contents">Table of Contents</a>
-<ul>
-<li><a href="#initial-eda">Initial EDA</a>
-<ul>
-<li><a href="#columns-renamed">Columns Renamed</a></li>
-<li><a href="#missing-values">Missing Values</a></li>
-<li><a href="#data-that-would-assist--assumptions">Data that would
-assist &amp; assumptions</a></li>
-<li><a href="#outliers">Outliers</a></li>
-<li><a href="#duplicated-rows">Duplicated Rows</a></li>
-</ul></li>
-<li><a href="#data-engineering">Data Engineering</a>
-<ul>
-<li><a href="#features-removed">Features removed</a></li>
-<li><a href="#features-engineered">Features Engineered</a></li>
-<li><a href="#datasets">Datasets</a></li>
-</ul></li>
-<li><a href="#exploratory-data-analysis">Exploratory Data Analysis</a>
-<ul>
-<li><a href="#data-overview">Data overview</a></li>
-<li><a href="#initial-pairplot-observations">Initial Pairplot
-observations</a></li>
-<li><a href="#correlation-mean-scores-of-key-features">Correlation mean
-scores of Key features</a></li>
-</ul></li>
-<li><a href="#key-observations">Key Observations</a>
-<ul>
-<li><a href="#avg_mnth_hrs"><code>avg_mnth_hrs</code></a></li>
-<li><a href="#last_eval"><code>last_eval</code></a></li>
-<li><a href="#num_project"><code>num_project</code></a></li>
-<li><a href="#tenure"><code>tenure</code></a></li>
-<li><a href="#promotion"><code>Promotion</code></a></li>
-<li><a href="#employee--manager-ratio">Employee / Manager Ratio</a></li>
-<li><a href="#managers-to-accident-rates">Managers to Accident
-Rates</a></li>
-<li><a href="#salary"><code>salary</code></a></li>
-<li><a href="#satisfaction"><code>satisfaction</code></a></li>
-<li><a href="#dept"><code>dept</code></a></li>
-<li><a href="#accident"><code>accident</code></a></li>
-</ul></li>
-</ul></li>
-<li><a href="#conclusions">Conclusions</a>
-<ul>
-<li><a href="#cost-of-replacing-lost-employees">Cost of replacing lost
-employees</a></li>
-<li><a href="#the-costs-of-replacing-employees-left--1">The costs of
-replacing employees (<code>left = 1</code>)</a></li>
-<li><a
-href="#the-costs-and-savings-by-applying-a-30-pay-increase-to-everyone-who-left">The
-costs (and savings) by applying a 30% pay increase to everyone who
-left</a></li>
-</ul></li>
-<li><a href="#applying-machine-learning-to-staff-retention">Applying
-Machine learning to staff retention</a></li>
-<li><a href="#model-performance-with-real-data">Model Performance with
-real data</a>
-<ul>
-<li><a href="#ml-model-predictions-for-all-employees">ML Model
-Predictions for ALL Employees</a></li>
-<li><a href="#ml-model-applied-to-current-employees">ML Model applied to
-CURRENT employees</a>
-<ul>
-<li><a href="#summary-for-current-employees">Summary for CURRENT
-Employees</a></li>
-</ul></li>
-<li><a href="#conclusion-and-warnings">Conclusion and warnings</a>
-<ul>
-<li><a href="#humans-are-complicated-employees-even-more-so">Humans are
-complicated, employees even more so</a></li>
-</ul></li>
-</ul></li>
-</ul>
+<div id="tableOfContents"></div>
 <h2 id="initial-eda">Initial EDA</h2>
 <h3 id="columns-renamed">Columns Renamed</h3>
 <div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px ; width:auto">
+<table class="datatable" style="margin-right:auto;margin-left:0px ">
 <tr>
-<th>
+<th style="width:15%">
 Old Column Name
 </td>
 <th>
@@ -274,7 +219,7 @@ tenure
 </tr>
 <tr>
 <td>
-<code>Work_accident</code>
+<b>Work_accident</b>
 </td>
 <td>
 accident
@@ -303,50 +248,51 @@ promotion
 <h3 id="data-that-would-assist-assumptions">Data that would assist &amp;
 assumptions</h3>
 <ul>
-<li>We don’t have any information on employee start and end date. We can
+<li>We don't have any information on employee start and end date. We can
 carry out a more thorough analysis if we had this information.</li>
-<li>We don’t have employee leaving reason : dismissed, end of contract,
+<li>We don't have employee leaving reason : dismissed, end of contract,
 resigned, redundancy, other.</li>
 <li>We also do not have employee position, so for example we are unable
 to calculate the employee to manager ratio for each department</li>
 </ul>
 <p>Since all of these pieces of information can have a considerable
-bearing on analysis of <code>left = 1 or not</code> we have to
+bearing on analysis of <b>left = 1 or not</b> we have to
 acknowledge that we are working with limited dataset and can only
 provide guideline insights, therefore certain assumptions have been made
 to support those insights.</p>
-<p>In reality, further investigation with the client’s domain experts
+<p>In reality, further investigation with the client's domain experts
 would hopefully enable us to source this information. Where assumptions
 have been made, these are clearly identified.</p>
 <h3 id="outliers">Outliers</h3>
-<p>824 outlier rows were removed using <code>tenure</code>, this
+<p>824 outlier rows were removed using <b>tenure</b>, this
 represented around 7% of the total data rows. Removal of the outliers is
 only necessary for the Logistical Regression modelling.</p>
 <h3 id="duplicated-rows">Duplicated Rows</h3>
 <p>Duplicated rows equals 3008 rows, about 20% of the total data.</p>
+
 <div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+<table class="datatable" style="margin-right:auto;margin-left:0px">
 <tr>
-<td>
+<td style="text-align:left;width:15%">
 Pre Dedupe Rows
 </td>
-<td style="text-align: right">
+<td style="text-align: left;">
 14999
 </td>
 </tr>
 <tr>
 <td>
-Post Dedupe Rows
+Post Deduplication Rows
 </td>
-<td style="text-align: right">
+<td >
 11991
 </td>
 </tr>
 <tr>
 <td>
-Dedupe rows removed
+Duplicate rows removed
 </td>
-<td style="text-align: right">
+<td >
 3008
 </td>
 </tr>
@@ -354,22 +300,25 @@ Dedupe rows removed
 </div>
 <p>
 There was a class imbalanced in the duplicated data, using
-<code>left</code> as the outcome feature:
+<b>left</b> as the outcome feature:
 </p>
 <div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+<table class="datatable" style="margin-right:auto;margin-left:0px">
 <tr>
-<td colspan="2" style="text-align: right">
-<code>left</code> Count
+<td style="text-align: left; width:15%">
+<b>left</b> Count
 </td>
+<td></td><td style="width:40%"></td>
 </tr>
 <tr>
 <td style="text-align: center">
 1
 </td>
+
 <td style="text-align: right">
 1580
 </td>
+<td style="width:40%"></td>
 </tr>
 <tr>
 <td style="text-align: center">
@@ -378,6 +327,7 @@ There was a class imbalanced in the duplicated data, using
 <td style="text-align: right">
 1428
 </td>
+<td style="width:40%"></td>
 </tr>
 <tr>
 <td colspan="2">
@@ -385,9 +335,9 @@ Name: count, dtype: int64
 </td>
 </tr>
 <tr>
-<td colspan="2" style="text-align: right">
-<code>left</code> Percent
-</td>
+<td colspan="2" style="text-align: left">
+<b>left</b> Percent
+</td><td style="width:40%"></td>
 </tr>
 <tr>
 <td style="text-align: center">
@@ -395,7 +345,7 @@ Name: count, dtype: int64
 </td>
 <td style="text-align: right">
 0.53
-</td>
+</td><td style="width:40%"></td>
 </tr>
 <tr>
 <td style="text-align: center">
@@ -404,6 +354,7 @@ Name: count, dtype: int64
 <td style="text-align: right">
 0.47
 </td>
+<td style="width:40%"></td>
 </tr>
 <tr>
 <td colspan="2">
@@ -414,7 +365,7 @@ Name: proportion, dtype: float64
 </div>
 <h2 id="data-engineering">Data Engineering</h2>
 <h3 id="features-removed">Features removed</h3>
-<p>The <code>accident</code> feature was removed pending further
+<p>The <b>accident</b> feature was removed pending further
 investigation.</p>
 <p>The % of staff who recorded an accident was around 15%, ten times
 higher than the national average. For example in 2013 and 2014 the
@@ -422,11 +373,11 @@ accident rate was between 23 % and 27%. Is this a dangerous place to
 work ?</p>
 <h3 id="features-engineered">Features Engineered</h3>
 <ul>
-<li><code>salary</code> - was ordinal encoded 0 = low, 1= medium, 2 =
+<li><b>salary</b> - was ordinal encoded 0 = low, 1= medium, 2 =
 high</li>
-<li><code>dept</code> - was dummy encoded into binary columns</li>
-<li><code>avg_hrs_mnth</code> - as binary encoded to a new feature
-called <code>overworked</code> on <code>avg_mnth_hrs</code> &gt;
+<li><b>dept</b> - was dummy encoded into binary columns</li>
+<li><b>avg_hrs_mnth</b> - as binary encoded to a new feature
+called <b>overworked</b> on <b>avg_mnth_hrs</b> &gt;
 175</li>
 </ul>
 <h3 id="datasets">Datasets</h3>
@@ -435,9 +386,9 @@ the reduced dataset makes on model performance. It turns out, not a lot
 and the lower the correlation, the less effect it has on the outcome,
 who would have thought?</p>
 <ul>
-<li><p><code>data_cleaned_NoOl_FE_AllFeat.csv</code> - Feature
+<li><p><b>data_cleaned_NoOl_FE_AllFeat.csv</b> - Feature
 engineered, all features in the data set.</p></li>
-<li><p><code>data_cleaned_NoOl_FE_NoDept.csv</code> - Feature
+<li><p><b>data_cleaned_NoOl_FE_NoDept.csv</b> - Feature
 engineered, the dummy encoded department information was removed from
 the dataset.</p></li>
 </ul>
@@ -449,12 +400,12 @@ the dataset.</p></li>
 <li>11,555 Employees</li>
 <li>436 Managers</li>
 </ul></li>
-<li>10,000 current employees (<code>left = 0</code>)
+<li>10,000 current employees (<b>left = 0</b>)
 <ul>
 <li>9,616 current employees</li>
 <li>384 current managers</li>
 </ul></li>
-<li>1,991 employees who have left (<code>left = 1</code>)
+<li>1,991 employees who have left (<b>left = 1</b>)
 <ul>
 <li>16.6% of Total employees</li>
 <li>1,939 employees have left (20.16 of total workforce)</li>
@@ -465,16 +416,15 @@ the dataset.</p></li>
 observations</h3>
 <p>Key features to investigate further :</p>
 <ul>
-<li><code>avg_mnth_hrs</code></li>
-<li><code>number_project</code></li>
-<li><code>satisfaction</code></li>
-<li><code>promotion</code></li>
-<li><code>tenure</code></li>
-<li><code>last_eval</code></li>
-<li><code>salary</code></li>
+<li><b>avg_mnth_hrs</b></li>
+<li><b>number_project</b></li>
+<li><b>satisfaction</b></li>
+<li><b>promotion</b></li>
+<li><b>tenure</b></li>
+<li><b>last_eval</b></li>
+<li><b>salary</b></li>
 </ul>
-<h3 id="correlation-mean-scores-of-key-features">Correlation mean scores
-of Key features</h3>
+<h3 id="correlation-mean-scores-of-key-features">Correlation mean scores of Key features</h3>
 <div class="datatable-container">
 <table class="datatable" style="margin-right:auto;margin-left:0px">
 <tr>
@@ -492,7 +442,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>avg_mnth_hrs</code>
+<b>avg_mnth_hrs</b>
 </th>
 <td style="text-align: center">
 9.17%
@@ -506,7 +456,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>last_eval</code>
+    last_eval
 </th>
 <td style="text-align: center">
 9.06%
@@ -520,7 +470,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>number_project</code>
+number_project
 </th>
 <td style="text-align: center">
 8.81%
@@ -534,7 +484,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>tenure</code>
+tenure
 </th>
 <td style="text-align: center">
 8.11%
@@ -548,7 +498,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>promotion</code>
+promotion
 </th>
 <td style="text-align: center">
 6.27%
@@ -562,7 +512,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>salary</code>
+salary
 </th>
 <td style="text-align: center">
 5.66%
@@ -576,7 +526,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>accident</code>
+accident
 </th>
 <td style="text-align: center">
 4.84%
@@ -590,7 +540,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_management</code>
+dept_management
 </th>
 <td style="text-align: center">
 3.80%
@@ -604,7 +554,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>left</code>
+left
 </th>
 <td style="text-align: center">
 3.32%
@@ -618,7 +568,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>satisfaction</code>
+satisfaction
 </th>
 <td style="text-align: center">
 2.80%
@@ -632,7 +582,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_marketing</code>
+dept_marketing
 </th>
 <td style="text-align: center">
 1.75%
@@ -646,7 +596,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_accounting</code>
+dept_accounting
 </th>
 <td style="text-align: center">
 1.63%
@@ -660,7 +610,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_RandD</code>
+dept_RandD
 </th>
 <td style="text-align: center">
 1.44%
@@ -674,7 +624,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_hr</code>
+dept_hr
 </th>
 <td style="text-align: center">
 1.31%
@@ -688,7 +638,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_product_mng</code>
+dept_product_mng
 </th>
 <td style="text-align: center">
 1.10%
@@ -702,7 +652,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_IT</code>
+dept_IT
 </th>
 <td style="text-align: center">
 0.41%
@@ -716,7 +666,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_support</code>
+dept_support
 </th>
 <td style="text-align: center">
 -0.97%
@@ -730,7 +680,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_technical</code>
+dept_technical
 </th>
 <td style="text-align: center">
 -1.80%
@@ -744,7 +694,7 @@ left = 1 focus
 </tr>
 <tr>
 <th>
-<code>dept_sales</code>
+dept_sales
 </th>
 <td style="text-align: center">
 -3.19%
@@ -759,7 +709,7 @@ left = 1 focus
 </table>
 </div>
 <h2 id="key-observations">Key Observations</h2>
-<h3 id="avg_mnth_hrs"><code>avg_mnth_hrs</code></h3>
+<h3 id="avg_mnth_hrs"><b>avg_mnth_hrs</b></h3>
 <figure>
 <img src="../img/avg_mnth_hrs.png" alt="Alt text" />
 <figcaption aria-hidden="true">Alt text</figcaption>
@@ -768,7 +718,7 @@ left = 1 focus
 <li>34% of staff who left worked a normal 8 hour day.</li>
 <li>66% of staff who left worked more than 8 hours a day.</li>
 </ul>
-<h3 id="last_eval"><code>last_eval</code></h3>
+<h3 id="last_eval"><b>last_eval</b></h3>
 <ul>
 <li>80% of those who left scored above 0.5 (Medium) on their last
 evaluation.</li>
@@ -777,7 +727,7 @@ evaluation.</li>
 <li>With a very low promotion rate, high scoring employees have no
 career development path to pursue</li>
 </ul>
-<h3 id="num_project"><code>num_project</code></h3>
+<h3 id="num_project"><b>num_project</b></h3>
 <figure>
 <img src="../img/num_proj_hrs_image.png" alt="Alt text" />
 <figcaption aria-hidden="true">Alt text</figcaption>
@@ -800,17 +750,17 @@ correlation to employees leaving if they are working on too many
 projects, or too few. This also This also correlates to working hours,
 where a high percentage of employees working more than 175 hrs a month
 are leaving the company</p>
-<h3 id="tenure"><code>tenure</code></h3>
+<h3 id="tenure"><b>tenure</b></h3>
 <ul>
 <li>The mean employee tenure is 3.3 years</li>
 </ul>
-<p>We don’t really have enough data to comment on tenure, however if we
+<p>We don't really have enough data to comment on tenure, however if we
 had start date and end date of employees, we could make some deductions.
 If we also had reason for leaving the analysis could be a lot more
 meaningful, therefore for the purposes of this Capstone Project, certain
 assumptions will be made.</p>
-<h3 id="promotion"><code>Promotion</code></h3>
-<p>There appears to be a very low level of promotion within the client’s
+<h3 id="promotion"><b>Promotion</b></h3>
+<p>There appears to be a very low level of promotion within the client's
 business.</p>
 <p>Only 1.69% of employees who are currently employed have received a
 promotion in the last five years.</p>
@@ -818,7 +768,7 @@ promotion in the last five years.</p>
 <p>In management circles, it is common knowledge that the ideal number
 of direct subordinates a manager should have is 7±2 that is around 8
 employees, plus or minus 2. While this may not apply in all industries
-and situations, it’s a good starting point for measuring the ratio of
+and situations, it's a good starting point for measuring the ratio of
 employees to managers.</p>
 <p>The current ratio of employees to managers in Salifort Motors is
 25:1, that is about 25 employees for each manager.</p>
@@ -828,19 +778,19 @@ developmental growth previously seen.</p>
 <h3 id="managers-to-accident-rates">Managers to Accident Rates</h3>
 <p>As noted earlier, the accident rate % seems very high, in my mind
 this is questionable and requires further investigation.</p>
-<p><code>Extrapolated data</code> However, digging a little deeper, we
+<p><b>Extrapolated data</b> However, digging a little deeper, we
 find that the accident rate % increases as total number employees
 increases. There would be an expectation that we would see a more
 consistent ratio, not an increase in accidents.</p>
-<p><code>NOTE this is an extrapolation of the tenure column to estimate employee start date, this is not real but an example of further analysis that could be carried out if we had the relevant employee start-date, end-date data.</code></p>
-<p>Start date has been calculated as <span
-class="math inline"><em>t</em><em>o</em><em>d</em><em>a</em><em>y</em> − <em>t</em><em>e</em><em>n</em><em>u</em><em>r</em><em>e</em> = <em>S</em><em>t</em><em>a</em><em>r</em><em>t</em><em>D</em><em>a</em><em>t</em><em>e</em></span>
+<p><b>NOTE this is an extrapolation of the tenure column to estimate employee start date, this is not real but an example of further analysis that could be carried out if we had the relevant employee start-date, end-date data.</b></p>
+<p>Start date has been calculated as 
+    <span class="math inline">today-tenure=StartDate</span>
 in this example</p>
 <figure>
 <img src="../img/employee_mgr_accident.png" alt="Alt text" />
 <figcaption aria-hidden="true">Alt text</figcaption>
 </figure>
-<h3 id="salary"><code>salary</code></h3>
+<h3 id="salary"><b>salary</b></h3>
 <p>The majority of staff who left were either on low or medium salary
 levels. This is why employees choose to work and if compensation is
 below market rates, employees will seek better opportunities.</p>
@@ -848,7 +798,7 @@ below market rates, employees will seek better opportunities.</p>
 <img src="../img/salary_comparison.png" alt="alt" />
 <figcaption aria-hidden="true">alt</figcaption>
 </figure>
-<h3 id="satisfaction"><code>satisfaction</code></h3>
+<h3 id="satisfaction"><b>satisfaction</b></h3>
 <figure>
 <img src="../img/satisfaction.png" alt="Alt text" />
 <figcaption aria-hidden="true">Alt text</figcaption>
@@ -869,7 +819,7 @@ staff who stayed</li>
 <li>27% of staff who left, self reported high satisfaction vs 52% of
 staff who stayed</li>
 </ul>
-<h3 id="dept"><code>dept</code></h3>
+<h3 id="dept"><b>dept</b></h3>
 <p>27% of all employees that left were in sales (550 employees left).
 This is not surprising, sales is a tough role, however improving
 recruitment practices to identify better candidates and staff training
@@ -882,8 +832,8 @@ These three departments also represent 61% of all employees.</p>
 <p>R&amp;D and Management have the lowest turnover at 12.25% and 11.95%
 compared to the average of other departments which range from 17% -
 19%</p>
-<h3 id="accident"><code>accident</code></h3>
-<p><code>accident</code> stands out as an outlier. <strong>15% of all
+<h3 id="accident"><b>accident</b></h3>
+<p><b>accident</b> stands out as an outlier. <strong>15% of all
 employees had an accident recorded against them.</strong></p>
 <ul>
 <li>This accident percentage is 6.5 times the national average of 2.3%
@@ -1008,7 +958,7 @@ If the suggested cost to replace an employee is 50% of annual salary,
 this cost increases to $71 million.
 </p>
 <h2 id="the-costs-of-replacing-employees-left-1">The costs of replacing
-employees (<code>left = 1</code>)</h2>
+employees (<b>left = 1</b>)</h2>
 <p>Assuming a nominal cost of 50% of total annual salary to replace a
 member of staff</p>
 <div class="datatable-container">
@@ -1186,7 +1136,7 @@ Estimate TOTAL Salary Left Cost
 <h1 id="applying-machine-learning-to-staff-retention">Applying Machine
 learning to staff retention</h1>
 <p>If we use the machine learning model prediction, we can identify at
-risk employees before it’s too late, for a substantially lower cost than
+risk employees before it's too late, for a substantially lower cost than
 applying salary increases wholesale across the business.</p>
 <div class="datatable-container">
 <table class="datatable" style="margin-right:auto;margin-left:0px">
@@ -1379,7 +1329,7 @@ leaving with a probability &gt; 50% or 48 employees are at risk of
 leaving with a probability &gt; 70%, the first step is to talk to the
 employee.</p>
 <h2 id="conclusion-and-warnings">Conclusion and warnings</h2>
-<p>Having detailed all of this, it’s crucial to keep in mind the
+<p>Having detailed all of this, it's crucial to keep in mind the
 principle that “correlation does not imply causation.” While ML models
 offer powerful predictive capabilities based on data patterns, they
 inherently lack the depth to discern causation in complex human
@@ -1393,10 +1343,10 @@ directly boosts engagement. The underlying causation might be a positive
 workplace culture that encourages interaction and collaboration, leading
 to both higher snack consumption and increased engagement.</p>
 <p>Similarly, with employee turnover prediction, the model can identify
-patterns and correlations, but it’s essential to remember that
-correlation alone doesn’t unveil the reasons behind an employee’s
+patterns and correlations, but it's essential to remember that
+correlation alone doesn't unveil the reasons behind an employee's
 decision to leave. It might hint at factors such as work
-dissatisfaction, but it won’t reveal the underlying causes.</p>
+dissatisfaction, but it won't reveal the underlying causes.</p>
 <p>It is essential that building strong relationships, competitive
 compensation, and genuine care for employees remains paramount. While ML
 models can enhance the understanding, they cannot replace the human
@@ -1411,4 +1361,5 @@ valued and heard will always be at the core of success in retaining top
 talent.</p>
 <a href="#top"> scroll to top </a>
 </div>
+<script src="../../scripts/projects.js"> </script>
 </body>

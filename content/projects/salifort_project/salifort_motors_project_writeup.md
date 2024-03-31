@@ -1,5 +1,5 @@
 ---
-title: Salifort Motors Project 
+title: Salifort Motors Project
 description: Google Advanced Data Analytics Capstone Project
 keywords:
     - Google
@@ -9,7 +9,6 @@ keywords:
     - Machine Learning
 slug: Salifort Motors
 draft: false
-tags: machine learning, pandas, numpy, matplotlib, python, predictive machine learning
 banner: /img/salifort_logo.png
 ---
 
@@ -19,21 +18,24 @@ banner: /img/salifort_logo.png
 
 ### Overview
 
-Salifort Motors (The Client) is a fictitious company experiencing significant loss of employees. They have created a project team to provide data driven suggestions for the HR team to implement to improve employee retention.
+Salifort Motors (The Client) is a fictitious company experiencing significant loss of employees. They have created a project team to provide data driven 
+suggestions for the HR team to implement to improve employee retention.
 
 The estimated cost of lost employees to the client is in the order of $42m for 2022, for 1,991 employees who left employment in 2022, representing 20% of all employees (10,000).
 
 The project was completed using the PACE framework and the conclusion was a number of recommendations for the team at Salifort Motors aimed at improving employee retention.
 
-    As a capstone project, this was a great opportunity for me  to develop tools and workflows for a data 
-    analysis project. While the project only requires a solution with one model, I wanted to see how the 
-    models compared, which is why this is such a large document.
+As a capstone project, this was a great opportunity for me  to develop tools and workflows for a data 
+analysis project. While the project only requires a solution with one model, I wanted to see how the 
+models compared, which is why this is such a large document.
 
-    A typical Data Analysis project would decide on a single model and stick with it!
+A typical Data Analysis project would decide on a single model and stick with it!
 
 ### Client Documentation
 
 #### [Client Proposal]({{< notebook cd_01_Salifort_Motors_project-PROPOSAL.html >}})
+
+This details a typical client proposal for the work that needs to be carried out.
 
 #### [PACE Framework]({{< notebook cd_02_Salifort_Motors_PACE_Plan.html >}})
 

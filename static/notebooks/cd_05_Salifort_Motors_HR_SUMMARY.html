@@ -1,73 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="color-scheme" content="dark">
 <head>
 <meta name="color-scheme" content="dark light">
-<p><link rel="stylesheet" type="text/css" href="custom-menu.css">
-<link rel="stylesheet" type="text/css" href="project-style.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"></p>
+<link rel="stylesheet" type="text/css" href="/css/custom-menu.css">
+<link rel="stylesheet" type="text/css" href="/css/project-style.css">
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
 
+  .tippy-box[data-theme~='tomato'] {
+      background-color: tomato;
+      color: yellow;
+      }
+  body {
+    padding-top: 50px; /* Adjust based on the toolbar's height to avoid content being hidden behind it */
+  }
 </style>
 </head>
+</head>
+
+
 <body>
-<div class="page-container">
-<div class="dropdown">
-<button class="dropbtn">
-<i class="material-icons">menu</i>Project Documentation
-</button>
-<div class="dropdown-content">
-<a href="#"><b>Navigation</b></a> <a href="/">Home</a>
-<a href="/projects/1/01/01/salifort_project/">Project Home</a>
-<a href="#"><b>Analyst’s Notebooks</b></a>
-<div class="submenu">
-<p><a href="/notebooks/nb_03_Salifort_Motors_project_EDA_cleanse.html">EDA
-Cleanse</a>
-<a href="/notebooks/nb_04_Salifort_Motors_project_EDA_ANALYSIS.html">EDA
-Analysis</a>
-<a href="/notebooks/nb_05_Salifort_Motors_project_Feature_Engineering.html">Feature
-Engineering</a></p>
-</div>
-<a href="#"><b>ML Models</b></a>
-<div class="submenu">
-<p><a href="/notebooks/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html">Logistical
-Regression</a>
-<a href="/notebooks/nb_07_Salifort_Motors_project_Decision_Tree_Model.html">Decision
-Tree</a>
-<a href="/notebooks/nb_08_Salifort_Motors_project_XGBoost_Model.html">XGBoost</a>
-<a href="/notebooks/nb_09_Salifort_Motors_project_Random_Forest_Model.html">Random
-Forest</a>
-<a href="/notebooks/nb_11_Salifort_Motors_project_Model_Comparisons.html">Model
-Comparisons</a>
-<a href="/notebooks/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html">Model
-Demonstration</a></p>
-</div>
-<a href="#"><b>Client Documentation</b></a>
-<div class="submenu">
-<p><a href="/notebooks/cd_01_Salifort_Motors_project-PROPOSAL.html">Client
-Proposal</a>
-<a href="/notebooks/cd_02_Salifort_Motors_PACE_Plan.html">PACE Plan</a>
-<a href="/notebooks/cd_03_Salifort_Motors_Analyst_SUMMARY.html">Analyst’s
-Summary</a>
-<a href="/notebooks/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html">Executive
-Summary</a>
-<a href="/notebooks/cd_05_Salifort_Motors_HR_SUMMARY.html">HR
-Summary</a>
-<a href="/notebooks/cd_06_Salifort_Motors_TEAM_SUMMARY.html">Team
-Summary Generator Notebook</a>
-<a href="/notebooks/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html">Team
-Summary example</a>
-<a href="/notebooks/cd_99_Salifort_Motors_Project_Close.html">Project
-Close</a></p>
-</div>
-</div>
-</div>
+    <div class="page-container">
+        <div class="toolbar" style="width:100%; text-align:center;">
+            <table style="margin-left: 380px">
+                <tbody>
+                <tr><td><div class="dropdown">
+    <button class="dropbtn">
+    <i class="material-icons">menu</i>Project Documentation
+    </button>
+    <div class="dropdown-content">
+    <a href="#"><b>Navigation</b></a> <a href="/">Home</a>
+    <a href="/projects/1/01/01/salifort_project/">Project Home</a>
+    <a href="#"><b>Analyst's Notebooks</b></a>
+    <div class="submenu">
+    <a href="/notebooks/nb_03_Salifort_Motors_project_EDA_cleanse.html">EDA
+    Cleanse</a>
+    <a href="/notebooks/nb_04_Salifort_Motors_project_EDA_ANALYSIS.html">EDA
+    Analysis</a>
+    <a href="/notebooks/nb_05_Salifort_Motors_project_Feature_Engineering.html">Feature
+    Engineering</a>
+    </div>
+    <a href="#"><b>ML Models</b></a>
+    <div class="submenu">
+    <a href="/notebooks/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html">Logistical
+    Regression</a>
+    <a href="/notebooks/nb_07_Salifort_Motors_project_Decision_Tree_Model.html">Decision
+    Tree</a>
+    <a href="/notebooks/nb_08_Salifort_Motors_project_XGBoost_Model.html">XGBoost</a>
+    <a href="/notebooks/nb_09_Salifort_Motors_project_Random_Forest_Model.html">Random
+    Forest</a>
+    <a href="/notebooks/nb_11_Salifort_Motors_project_Model_Comparisons.html">Model
+    Comparisons</a>
+    <a href="/notebooks/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html">Model
+    Demonstration</a>
+    </div>
+    <a href="#"><b>Client Documentation</b></a>
+    <div class="submenu">
+    <a href="/notebooks/cd_01_Salifort_Motors_project-PROPOSAL.html">Client
+    Proposal</a>
+    <a href="/notebooks/cd_02_Salifort_Motors_PACE_Plan.html">PACE Plan</a>
+    <a href="/notebooks/cd_03_Salifort_Motors_Analyst_SUMMARY.html">Analyst's
+    Summary</a>
+    <a href="/notebooks/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html">Executive
+    Summary</a>
+    <a href="/notebooks/cd_05_Salifort_Motors_HR_SUMMARY.html">HR
+    Summary</a>
+    <a href="/notebooks/cd_06_Salifort_Motors_TEAM_SUMMARY.html">Team
+    Summary Generator Notebook</a>
+    <a href="/notebooks/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html">Team
+    Summary example</a>
+    <a href="/notebooks/cd_99_Salifort_Motors_Project_Close.html">Project
+    Close</a>
+    </div>
+    </div>
+    </div>
+    </td></tr></tbody></table>
+    </div>
 <h1>
 HR Summary
 </h1>
 <h2 id="document-information">Document Information</h2>
-<div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-<tbody>
+<table class="datatable" style="margin-right:auto;margin-left:0px;width:100% ">
+
 <tr>
-<td>
+<td style="width:15%">
 Document Title
 </td>
 <td>
@@ -106,14 +127,14 @@ Modified
 16-11-2023
 </td>
 </tr>
-</tbody>
+
 </table>
-</div>
+
 <h2 id="client-details">Client Details</h2>
-<div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px">
+
+<table class="datatable" style="margin-right:auto;margin-left:0px; width:100%">
 <tr>
-<td>
+<td style="width:15%">
 Client Name
 </td>
 <td>
@@ -145,79 +166,17 @@ HR Team Data Driven Solutions from Machine Learning Models
 </td>
 </tr>
 </table>
-</div>
-<h2 id="table-of-contents">Table of Contents</h2>
-<ul>
-<li><a href="#document-information">Document Information</a></li>
-<li><a href="#client-details">Client Details</a></li>
-<li><a href="#table-of-contents">Table of Contents</a></li>
-<li><a href="#additional-visualisations">Additional Visualisations</a>
-<ul>
-<li><a
-href="#hr-summary-notebook-for-reference-during-team-manager-discussions-notebook-hr_summary_notebookhtml-">[HR
-Summary Notebook for reference during team manager discussions]({{&lt;
-notebook HR_Summary_Notebook.html &gt;}})</a></li>
-</ul></li>
-<li><a href="#results-of-analysis">Results of analysis</a>
-<ul>
-<li><a href="#key-correlations-of-all-employees">Key correlations of all
-employees</a></li>
-<li><a href="#key-correlations-of-employees-who-left">Key correlations
-of employees who left</a></li>
-</ul></li>
-<li><a href="#observations-from-the-data">Observations from the data</a>
-<ul>
-<li><a href="#eda-observations---last_eval">EDA Observations -
-<code>last_eval</code></a></li>
-<li><a href="#eda-observations---number_project">EDA Observations -
-<code>number_project</code></a></li>
-<li><a href="#eda-observations---avg_mnth_hrs">EDA Observations -
-<code>avg_mnth_hrs</code></a></li>
-<li><a href="#eda-observations---tenure">EDA Observations -
-<code>tenure</code></a>
-<ul>
-<li><a href="#employees-vs-management-to-support-them">Employees vs
-management to support them</a>
-<ul>
-<li><a href="#employee-to-manager-ratio">Employee to Manager
-Ratio</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#eda-observations---satisfaction">EDA Observations -
-<code>satisfaction</code></a></li>
-<li><a href="#eda-observations---accident">EDA Observations -
-<code>accident</code></a></li>
-<li><a href="#eda-observations---promotion">EDA Observations -
-<code>promotion</code></a></li>
-<li><a href="#eda-observations---salary">EDA Observations -
-<code>salary</code></a></li>
-</ul></li>
-<li><a href="#general-recommendations">General Recommendations</a>
-<ul>
-<li><a href="#compensation-and-benefits">Compensation and
-Benefits</a></li>
-<li><a href="#working-conditions">Working Conditions</a></li>
-<li><a href="#recognition-and-appreciation">Recognition and
-Appreciation</a></li>
-<li><a href="#job-satisfaction">Job Satisfaction</a></li>
-<li><a href="#career-growth-opportunities">Career Growth
-Opportunities</a></li>
-</ul></li>
-<li><a href="#about-the-ml-model">About the ML model</a></li>
-<li><a href="#ml-model-predictions-summary-for-current-employees">ML
-Model Predictions Summary for CURRENT Employees</a></li>
-<li><a href="#ml-model-predictions-summary-for-left-employees">ML Model
-Predictions Summary for LEFT Employees</a></li>
-<li><a href="#demonstration-of-the-ml-model">Demonstration of the ML
-Model</a></li>
-</ul>
+
+<h1>Table of Contents</h1>
+<div id="tableOfContents"></div>
+
 <h2 id="additional-visualisations">Additional Visualisations</h2>
 <p>This notebook details a number of different visualisations of the
-data by department and compared to company.</p>
+data by department and compared to company average.</p>
 <p>This can be used during discussions with team managers</p>
 <h3
 id="hr-summary-notebook-for-reference-during-team-manager-discussions"><a
-href="%7B%7B%3C%20notebook%20HR_Summary_Notebook.html%20%3E%7D%7D">HR
+href="/notebooks/HR_Summary_Notebook.html">HR
 Summary Notebook for reference during team manager discussions</a></h3>
 <h2 id="results-of-analysis">Results of analysis</h2>
 <p>Following a comprehensive analysis of the data provided by the HR
@@ -225,31 +184,24 @@ department on employees who have left the organization, I have
 identified several key factors contributing to employee attrition. It is
 crucial to address these issues to enhance employee satisfaction,
 engagement, and retention within the company.</p>
-<h3 id="key-correlations-of-all-employees">Key correlations of all
-employees</h3>
-<figure>
-<img src="../img/all_employees_correlation.png"
-alt="All Employees Correlation" />
-<figcaption aria-hidden="true">All Employees Correlation</figcaption>
-</figure>
-<h3 id="key-correlations-of-employees-who-left">Key correlations of
-employees who left</h3>
-<figure>
-<img src="../img/left_employees_correlation.png"
-alt="Left Employees correlations" />
-<figcaption aria-hidden="true">Left Employees correlations</figcaption>
-</figure>
+
+<h3 id="key-correlations-of-all-employees">Key correlations of all employees</h3>
+<img src="../img/all_employees_correlation.png" alt="All Employees Correlation" />
+
+<h3 id="key-correlations-of-employees-who-left">Key correlations of employees who left</h3>
+<img src="../img/left_employees_correlation.png" alt="Left Employees correlations" />
+
 <h2 id="observations-from-the-data">Observations from the data</h2>
-<h3 id="eda-observations---last_eval"><a id='toc3_2_5_'></a><a
-href="#toc0_">EDA Observations - <code>last_eval</code></a></h3>
+
+<h3 id="eda-observations---last_eval">EDA Observations - <b>last_eval</b></h3>
 <p>Those who left fall generally into one of two groups either low
 scoring or high scoring with 28% of low scoring employees leaving and
 17% of high scoring employees leaving. 46% of employees who left had a
-low or medium score, there’s aso a strong correlation to hours worked as
+low or medium score, there's aso a strong correlation to hours worked as
 seen on the correlation plot, where those who left also tend to work
 more hours.</p>
 <ul>
-<li>There’s a high correlation with <code>satisfaction</code>,
+<li>There's a high correlation with <code>satisfaction</code>,
 <code>number_project</code>, <code>avg_mnth_hrs</code> and
 <code>tenure</code></li>
 <li>20% of those who left had a low <code>last_eval</code> score vs 10%
@@ -259,12 +211,11 @@ of total employees who stayed</li>
 <li>54% of those who left had a high <code>last_eval</code> score vs 51%
 of total employees who stayed</li>
 </ul>
-<figure>
+
+
 <img src="../img/last_eval_quadplot.png" alt="Last Eval quadplot" />
-<figcaption aria-hidden="true">Last Eval quadplot</figcaption>
-</figure>
-<h3 id="eda-observations---number_project"><a id='toc3_3_4_'></a><a
-href="#toc0_">EDA Observations - <code>number_project</code></a></h3>
+
+<h3 id="eda-observations---number_project">EDA Observations - <b>number_project</b></h3>
 <p><strong>Caveats</strong> - The number of projects is a simple metric
 that does not take into account either the complexity or duration of the
 project. A member of staff could only have worked on one project, but
@@ -289,19 +240,12 @@ projects where 95% of the staff were retained.</p></li>
 of the staff were retained or 6+ projects where 3% of the staff were
 retained.</p></li>
 </ul>
-<figure>
-<img src="../img/avg_hrs_num_project.png"
-alt="Avg Hours / Number of Projects plot" />
-<figcaption aria-hidden="true">Avg Hours / Number of Projects
-plot</figcaption>
-</figure>
-<figure>
-<img src="../img/num_projects_quadplot.png"
-alt="Number of Projects Quadplot" />
-<figcaption aria-hidden="true">Number of Projects Quadplot</figcaption>
-</figure>
-<h3 id="eda-observations---avg_mnth_hrs"><a id='toc3_4_4_'></a><a
-href="#toc0_">EDA Observations - <code>avg_mnth_hrs</code></a></h3>
+
+
+<img src="../img/num_projects_quadplot.png" alt="Number of Projects Quadplot" />
+
+<h3 id="eda-observations---avg_mnth_hrs"><b>avg_mnth_hrs</b></h3>
+<img src="../img/avg_hrs_num_project.png" alt="Avg Hours / Number of Projects plot" />
 <ul>
 <li>30% of employees who left, worked LESS than an average of 150 hours
 a month (average less than <strong>7</strong> hours a day)</li>
@@ -309,24 +253,20 @@ a month (average less than <strong>7</strong> hours a day)</li>
 a month (average more than <strong>9</strong> hours a day)</li>
 <li>100% of employees who worked 300 or more hours, left employment</li>
 </ul>
-<figure>
 <img src="../img/avg_mnth_hrs_quadplot.png"
 alt="Avg Monthly Hours Quadplot" />
-<figcaption aria-hidden="true">Avg Monthly Hours Quadplot</figcaption>
-</figure>
-<h3 id="eda-observations---tenure"><a id='toc3_5_4_'></a><a
-href="#toc0_">EDA Observations - <code>tenure</code></a></h3>
+
+<h3 id="eda-observations---tenure">EDA Observations - <b>tenure</b></h3>
 <ul>
 <li>93% of staff who left had a tenure of 3 &amp; 5 years</li>
 <li>43% of staff who left had a tenure of 2 years or less (847)</li>
 <li>684 outlier records identified = about 7% of total record count</li>
 <li>87% of staff have been employed for 4 years or less and in theory
-would not qualify for promotion_last_5_years, <strong>maybe, we don’t
+would not qualify for promotion_last_5_years, <strong>maybe, we don't
 have enough data to be sure</strong></li>
 </ul>
-<h4
-id="employees-vs-management-to-support-them"><a id='toc3_5_4_2_'></a><a
-href="#toc0_">Employees vs management to support them</a></h4>
+<h3 id="employees-vs-management-to-support-them">Employees vs management to support them</h3>
+
 <p>We are making assumptions here!</p>
 <p>We would need some additional information in the dataset to identify
 the start year for each employee and which department managers belong
@@ -334,8 +274,8 @@ to.</p>
 <p>In management circles, it is common knowledge that the ideal number
 of direct subordinates a manager should have is 7±2 that is around 8
 employees,plus or minus 2.</p>
-<h5 id="employee-to-manager-ratio"><a id='toc3_5_4_2_1_'></a><a
-href="#toc0_">Employee to Manager Ratio</a></h5>
+
+<h3 id="employee-to-manager-ratio">Employee to Manager Ratio</h3>
 <p>Currently within Salifort Motors, there are 9616 current employees
 (not management) and 384 Managers (not employees). This puts the
 employee manager ratio at 23 employees for every manager.</p>
@@ -348,12 +288,11 @@ the opportunity to grow management resources within the business is
 high.</p>
 <p>Consideration should be given to the development path for employees
 to move into management.</p>
-<figure>
+
+
 <img src="../img/tenure_quadplot.png" alt="Tenure quadplot" />
-<figcaption aria-hidden="true">Tenure quadplot</figcaption>
-</figure>
-<h3 id="eda-observations---satisfaction"><a id='toc3_6_4_'></a><a
-href="#toc0_">EDA Observations - <code>satisfaction</code></a></h3>
+
+<h3 id="eda-observations---satisfaction">EDA Observations - <b>satisfaction</b></h3>
 <p>The feature is not collinear with any others.</p>
 <p>Employees who left had lower mean and medium scores than those that
 stayed.</p>
@@ -371,13 +310,10 @@ staff who stayed</li>
 <li>27% of staff who left, self reported high satisfaction vs 52% of
 staff who stayed</li>
 </ul>
-<figure>
-<img src="../img/satisfaction_quadplot.png"
-alt="Satisfaction quadplot" />
-<figcaption aria-hidden="true">Satisfaction quadplot</figcaption>
-</figure>
-<h3 id="eda-observations---accident"><a id='toc3_7_4_'></a><a
-href="#toc0_">EDA Observations - <code>accident</code></a></h3>
+<img src="../img/satisfaction_quadplot.png" alt="Satisfaction quadplot" />
+
+
+<h3 id="eda-observations---accident">EDA Observations - <b>accident</b></h3>
 <p><strong>15% of all employees had an accident recorded against
 them.</strong></p>
 <ul>
@@ -402,8 +338,8 @@ people who left)</p>
 <p>[^1] In 2022, the rate of injury cases was 2.3 cases per 100 FTE
 workers, unchanged from 2021. US Bureau Labour of Statistics, US
 Department of Labour - https://www.bls.gov/news.release/pdf/osh.pdf</p>
-<h3 id="eda-observations---promotion"><a id='toc3_8_4_'></a><a
-href="#toc0_">EDA Observations - <code>promotion</code></a></h3>
+
+<h3 id="eda-observations---promotion">EDA Observations - <b>promotion</b></h3>
 <p>93% of staff have a tenure of five or less than 5 years.</p>
 <ul>
 <li>of the 10,000 current staff, 1.95% have received a promotion in the
@@ -415,28 +351,22 @@ years</li>
 <li>There was one employee who left with a tenure 5 years or
 greater</li>
 </ul>
-<h3 id="eda-observations---salary"><a id='toc3_9_4_'></a><a
-href="#toc0_">EDA Observations - <code>salary</code></a></h3>
+<h3 id="eda-observations---salary">EDA Observations - <b>salary</b></h3>
 <ul>
 <li>59% of staff who left were on a low salary</li>
 <li>98.6% of staff who left were on a low or medium salary</li>
 </ul>
-<figure>
+
 <img src="../img/salary_quadplot.png" alt="Salary quadplot" />
-<figcaption aria-hidden="true">Salary quadplot</figcaption>
-</figure>
-<figure>
-<img src="../img/salary_hrs_projs_adhocplot.png"
-alt="Salary / Hours / Number of Projects plot" />
-<figcaption aria-hidden="true">Salary / Hours / Number of Projects
-plot</figcaption>
-</figure>
-<figure>
-<img src="../img/salary_dep_heatmaps.png"
-alt="Salary Department Heatmaps" />
-<figcaption aria-hidden="true">Salary Department Heatmaps</figcaption>
-</figure>
+
+
+<img src="../img/salary_hrs_projs_adhocplot.png" alt="Salary / Hours / Number of Projects plot" />
+
+<img src="../img/salary_dep_heatmaps.png" alt="Salary Department Heatmaps" />
+
+
 <h2 id="general-recommendations">General Recommendations</h2>
+
 <h3 id="compensation-and-benefits">Compensation and Benefits</h3>
 <p>One prominent factor associated with employee departure is low pay.
 It is evident that a significant number of departing employees expressed
@@ -573,61 +503,58 @@ above low risk at 50%, 91% of employees would have been flagged.</p>
 <p>To put some perspective around this, the level of accuracy
 demonstrated by the model is significantly better than a random
 guess.</p>
-<h2 id="ml-model-predictions-summary-for-left-employees">ML Model
-Predictions Summary for LEFT Employees</h2>
-<div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-<tr>
-<thead>
-<th>
-probabilities &gt; high_risk_threshold 90%
-</th>
-<td>
-</td>
-</tr>
-</thead>
+
+<h2 id="ml-model-predictions-summary-for-left-employees">ML Model Predictions Summary for LEFT Employees</h2>
+<table class="datatable" style="margin-right:auto;margin-left:0px; ">
+    <thead>
+        <tr>
+        <th style="text-align:left; width:60%">probabilities &gt; high_risk_threshold 90%</th>
+        <th>
+        </th>
+        </tr>
+    </thead>
 <tbody>
 <tr>
-<td>
-Count of employees with leave probability above 90%
-</td>
-<td style="text-align: right">
-1360
-</td>
+    <td>
+        Count of employees with leave probability above 90%
+    </td>
+    <td style="text-align: right">
+        1,360
+    </td>
+</tr>
+<tr>
+    <td style="text-align:left">
+        <b>Percentage of employees with leave probability above 90%</b>
+    </td>
+    <td style="text-align: right">
+    72.26%
+    </td>
 </tr>
 <tr>
 <td>
-Percentage of employees with leave probability above 90%
 </td>
-<td style="text-align: right">
-72.26%
+<td>
 </td>
+</tr>
+
+
+<tr>
+    <td>
+        <b>probabilities &gt; medium_risk_threshold 70%</b>
+    </td>
+    <td>
+    </td>
 </tr>
 <tr>
-<td>
-</td>
-<td>
-</td>
-</tr>
-</tbody>
-<thead>
-<tr>
-<th>
-probabilities &gt; medium_risk_threshold 70%
-</th>
-<td>
-</td>
-</tr>
-</thead>
 <td>
 Count of employees with leave probability above 70%
 </td>
 <td style="text-align: right">
-1712
+1,712
 </td>
 </tr>
 <tr>
-<td>
+<td style="text-align:left">
 Percentage of employees with leave probability above 70%
 </td>
 <td style="text-align: right">
@@ -641,56 +568,55 @@ Percentage of employees with leave probability above 70%
 </td>
 </tr>
 <tr>
-<thead>
-<th>
-probabilities &gt; predict_risk_threshold 50%
-</th>
-<td>
-</td>
+    <td style="text-align:left">
+        <b>probabilities &gt; predict_risk_threshold 50%</b>
+    </td>
+    <td>
+    </td>
 </tr>
-</thead>
+
 <tr>
-<td>
-Count of employees with leave probability above 50%
-</td>
-<td style="text-align: right">
-1731
-</td>
-</tr>
-<tr>
-<td>
-Percentage of employees with leave probability above 50%
-</td>
-<td style="text-align: right">
-91.98%
-</td>
+    <td>
+        Count of employees with leave probability above 50%
+    </td>
+    <td style="text-align: right">
+        1,731
+    </td>
 </tr>
 <tr>
-<td>
-</td>
-<td>
-</td>
+    <td style="text-align:left">
+        Percentage of employees with leave probability above 50%
+    </td>
+    <td style="text-align: right">
+        91.98%
+    </td>
 </tr>
 <tr>
-<thead>
-<th>
-% of employees left that were predicted
-</th>
-<td>
-</td>
+    <td>
+    </td>
+    <td>
+    </td>
 </tr>
-</thead>
-<thead>
-<th>
+<tr>
+
+    <td style="text-align:left">
+        <b>% of employees left that were predicted</b>
+    </td>
+    <td>
+    </td>
+</tr>
+
+<td style="text-align:left">
 XGBoost Predicted to leave &gt; (50% )/ % of employees who left
-</th>
+</td>
 <td style="text-align: right">
 86.94 %
 </td>
 </tr>
 </thead>
 </table>
-</div>
+
+
 <h2 id="demonstration-of-the-ml-model">Demonstration of the ML
 Model</h2>
 <p>This requires a live setup. Kaggle to the rescue!</p>
@@ -698,4 +624,7 @@ Model</h2>
 <p>Team Report Template</p>
 <a href="#top"> scroll to top </a>
 </div>
+<script src="../../scripts/projects.js"> </script>
+
 </body>
+</html>

@@ -13,10 +13,10 @@ style = "github-dark"
 
 [params]
   author = "Rodders"
-  info = "Data Analayst"
+  info = "Data Analyst / Wrangler "
   description = "Rodders's personal website"
-  keywords = "blog,developer,personal, analyst, pandas, python"
-  avatarurl = "images/avatar.jpg"
+  keywords = "blog,developer,personal, analyst, pandas, python, homeassistant,smart-home,oh-my"
+  avatarurl = "img/avatars/avatar.png"
   #gravatar = "john.doe@example.com"
 
   faviconSVG = "/img/favicon.svg"
@@ -45,12 +45,12 @@ style = "github-dark"
   name = "Github"
   icon = "fa-brands fa-github fa-2x"
   weight = 1
-  url = "https://rodders99.github.io/"
-# [[params.social]]
-#   name = "Gitlab"
-#   icon = "fa-brands fa-gitlab fa-2x"
-#   weight = 2
-#   url = "https://gitlab.com/johndoe/"
+  url = "https://github.com/rodders99"
+[[params.social]]
+  name = "LlinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = " https://linkedin.com/rod-slater-uk"
 # [[params.social]]
 #   name = "Twitter"
 #   icon = "fa-brands fa-x-twitter fa-2x"
@@ -63,6 +63,14 @@ style = "github-dark"
   weight = 1
   url  = "posts/"
 [[menu.main]]
-  name = "About"
+  name = "Projects"
   weight = 2
+  url  = "projects/"
+[[menu.main]]
+  name = "About"
+  weight = 3
   url = "about/"
+[[menu.main]]
+  name = "Contact"
+  weight = 4
+  url = "contact/"
