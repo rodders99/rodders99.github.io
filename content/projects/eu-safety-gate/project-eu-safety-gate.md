@@ -52,7 +52,7 @@ surveillance efforts undertaken by the EU/EEA national authorities.
 Due to the dynamic nature of the system, the data may vary
 depending on the time of extraction.
 
-![Safety Gate Logo](/safetygate/img/Safety_Gate_Logo.png)
+![Safety Gate Logo](https://rodders.me/img/safetygate/img/Safety_Gate_Logo.png)
 
 ## EU Safety Gate Summary Report
 

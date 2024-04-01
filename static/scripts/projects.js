@@ -61,7 +61,7 @@ function updateHrefsWithPrefix(country1) {
       //const country1 = getPrefix();
       if (!country1) return; // If no country1 is found, do nothing
       
-      const links = document.querySelectorAll('a');
+      const links = document.querySelectorAll('a:not(.nochange)');
       links.forEach(function(link) {
           var currentHref = link.getAttribute('href');
           var newSrc = currentHref.replace('all', `${country1}`);
