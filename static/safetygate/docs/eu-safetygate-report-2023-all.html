@@ -41,89 +41,97 @@
       <table style="margin-left: 23%">
           <tr>
             <td>
-              <div style="text-align:left;" id="CountryReport">
+<!-- NAVIGATION MENU-->
+              <div style="text-align:left;" >
               <div class="dropdown" style="font-size:16px; color: white">
                 <button class="dropbtn">
                   <i class="material-icons">menu</i>
                 </button>
-            <div class="dropdown-content">
-              <a href="#"><b>Navigation</b></a> 
-              <div class="submenu">
-                <a href="/">Home</a>
-                <a href="/posts/eu-safety-gate/project-eu-safety-gate/">EU Safetygate Project Home</a>
-              
-          </div>
-          <a href="#"><b>Analyst's Notebooks</b></a>
-            <div class="submenu">
-
-            <a href="EU-Safetygate-about.html">About the EU Safetygate data</a>
-            
-            </div>
-            <a href="#"><b>Safety Gate Summary Analysis</b></a>
-              <div class="submenu">
-                <a href="eu-safetygate-report-2023-all.html?country1=all" class="nochange">Safety Gate Detailed Summary </a>
-              </div>
-              <a href="#"><b>Safety Gate Compare Countries</b></a>
-                <div class="submenu">
-                  <a href="eu-safetygate-report-comparison.html?country1=france&country2=germany">Compare Countries</a>
-                </div>
-
-            </b></a>
-            <a href="#"><b>Country of Origin Report</b></a>
-            <div class="submenu">
-                <a href="eu-safetygate-report-2023-country.html?country1=china">China</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=france">France</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=germany">Germany</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=india">India</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=italy">Italy</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=japan">Japan</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=poland">Poland</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=spain">Spain</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=sweden">Sweden</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=taiwan">Taiwan</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=türkiye">Türkiye</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=uk">UK</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=usa">USA</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=unknown">Unknown</a>
-                <a href="eu-safetygate-report-2023-country.html?country1=other">Other not top 15</a>
-              </div>
-            </div>
+              <div class="dropdown-content">
+                <a href="#"><b>Navigation</b></a> 
+                  <div class="submenu">
+                    <a href="/">Home</a>
+                    <a href="/projects/eu-safety-gate/project-eu-safety-gate/">EU Safetygate Project Home</a>
+                    
+                    
+                  </div>
+                  <a href="#"><b>Analyst's Notebooks</b></a>
+                  <div class="submenu">
+                    <a href="eu-safetygate-about.html">About the EU Safetygate data</a>
+                    <a href="eu-safetygate-report-2023-meta-data.html">EU Safetygate Meta Data Overview</a>
+                    <a href="eu-safetygate-report-2023-feature-engineering.html">EU Safetygate Feature Engineering</a>
+                    </div>
+                  <a href="#"><b>Safety Gate Summary Analysis</b></a>
+                    <div class="submenu">
+                    <a href="eu-safetygate-report-2023-all.html?country1=all" class="nochange">Safety Gate Detailed Summary </a>
+                  </div>
+                  <a href="#"><b>Safety Gate Compare Countries</b></a>
+                    <div class="submenu">
+                    <a href="eu-safetygate-report-2023-comparison.html?country1=france&country2=germany">Compare Countries</a>
+                    </div>
+                    <a href="#"><b>Country of Origin Report</b></a>
+                    <div class="submenu">
+                        <a href="eu-safetygate-report-2023-country.html?country1=china">China</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=france">France</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=germany">Germany</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=india">India</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=italy">Italy</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=japan">Japan</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=poland">Poland</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=spain">Spain</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=sweden">Sweden</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=taiwan">Taiwan</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=türkiye">Türkiye</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=uk">UK</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=usa">USA</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=unknown">Unknown</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=other">Other not top 15</a>
+                      </div>
+                    </div>
           </td>
+          <!-- JUMP TO MENU-->
           <td style="padding-left: 10px; padding-right: 10px;">
             <div id="JumptoSection">Jump to section</div>
           </td>
           <td style="padding-left: 10px; padding-right: 10px;">
             <div id="JumptoSection">
               <select onchange="window.location.hash=this.value" >
-                <option value="header-1">EU Safetygate report</option>
-                <option value="header-2">Country Annual Total</option>
-                <option value="header-5">Country Product Category</option>
-                <option value="header-8">Risk Category</option>
-                <option value="header-11">Counterfeit</option>
-                <option value="header-14">Action Required / Responsible Party</option>
-                <option value="header-16">Submitting Country</option>
-                <option value="header-19">Top 3 Product Categories</option>
-                <option value="header-20">#1 - Top Product Category</option>
-                <option value="header-21">#1 - Product Category Annual / Total</option>
-                <option value="header-24">#1 - Product Category Risk Category</option>
-                <option value="header-27">#1 - Product Category Counterfeit</option>
-                <option value="header-30">#1 - Product Category Action Required / Responsible Party</option>
-                <option value="header-32">#1 - Product Category Submitting Country</option>
-                <option value="header-35">#1 - Product Category Top Brands</option>
-                <option value="header-37">#2 - Top Product Category</option>
-                <option value="header-38">#2 - Product Category Annual / Total</option>
-                <option value="header-41">#2 - Product Category Risk Category</option>
-                <option value="header-44">#2 - Product Category Counterfeit</option>
-                <option value="header-47">#2 - Product Category Action Required / Responsible Party</option>
-                <option value="header-49">#2 - Product Category Submitting Country</option>
-                <option value="header-52">#2 - Product Category Top Brands</option>
-                <option value="header-55">#3 - Top Product Category</option>
+                <option value="header-0">EU Safetygate report</option>
+                <option value="header-1">Total Annual Alerts Issued</option>
+                <option value="header-2">YoY Change</option>
+                <option value="header-2">Geographic Plot Submitting Country 2022 vs 2023</option>
+                <option value="header-7">Economic Area of Product Origin</option>
+                <option value="header-11">Country of Product Origin</option>
+                <option value="header-16">Product Categories</option>
+                <option value="header-19">Risk Categories</option>
+                <option value="header-22">Counterfeit</option>
+                <option value="header-25">Action Required</option>
+                <option value="header-28">Responsible Party</option>
+                <option value="header-31">Submitting Country</option>
+                <option value="header-35">Country List Alerts, Product & Risk Categories</option>
+                <option value="header-36">Top 15 Brands</option>
+                <option value="header-37">Top 3 Product Categories</option>
+                <option value="header-38">#1 - Top Product Category</option>
+                <option value="header-39">#1 - Product Category Annual / Total</option>
+                <option value="header-40">#1 - Product Category Submitting Country</option>
+                <option value="header-41">#1 - Product Category Risk Category</option>
+                <option value="header-42">#1 - Product Category Counterfeit</option>
+                <option value="header-43">#1 - Product Category Action Required / Responsible Party</option>
+                <option value="header-45">#1 - Product Category Top Brands</option>
+                <option value="header-46">#2 - Top Product Category</option>
+                <option value="header-47">#2 - Product Category Annual / Total</option>
+                <option value="header-48">#2 - Product Category Submitting Country</option>
+                <option value="header-49">#2 - Product Category Risk Category</option>
+                <option value="header-50">#2 - Product Category Counterfeit</option>
+                <option value="header-51">#2 - Product Category Action Required / Responsible Party</option>
+                <option value="header-53">#2 - Product Category Top Brands</option>
+                <option value="header-54">#3 - Top Product Category</option>
                 <option value="header-55">#3 - Product Category Annual / Total</option>
-                <option value="header-58">#3 - Product Category Risk Category</option>
-                <option value="header-61">#3 - Product Category Counterfeit</option>
-                <option value="header-64">#3 - Product Category Action Required / Responsible Party</option>
-                <option value="header-66">#3 - Product Category Submitting Country</option>
-                <option value="header-69">#3 - Product Category Top Brands</option>
+                <option value="header-56">#3 - Product Category Submitting Country</option>
+                <option value="header-57">#3 - Product Category Risk Category</option>
+                <option value="header-58">#3 - Product Category Counterfeit</option>
+                <option value="header-59">#3 - Product Category Action Required / Responsible Party</option>
+                <option value="header-61">#3 - Product Category Top Brands</option>
                 
               </select>
             </div>
@@ -638,76 +646,145 @@ Economic Area split by Economic Area groups the countries under :
       <td style="text-align:center;" ><a href="https://rodders.me/img/china-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/china-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/china-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/china-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr> 
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=china">China</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/china-top3s.png"><img src="https://rodders.me/img/china-top3s"  ></a></td>
+    </tr> 
 
     <tr>
       <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=france">France</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/france-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/france-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/france-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/france-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
+    </tr>
+    
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=france">France</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/france-top3s.png"><img src="https://rodders.me/img/france-top3s"  ></a></td>
     </tr> 
 
     <tr>
-      <td>Germany</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=germany">Germany</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/germany-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/germany-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/germany-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/germany-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr> 
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=germany">Germany</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/germany-top3s.png"><img src="https://rodders.me/img/germany-top3s"  ></a></td>
+    </tr> 
 
     <tr>
-      <td>India</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=india">India</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/india-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/india-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/india-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/india-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr> 
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=india">India</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/india-top3s.png"><img src="https://rodders.me/img/india-top3s"  ></a></td>
+    </tr> 
 
     <tr>
-      <td>Italy</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=italy">Italy</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/italy-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/italy-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/italy-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/italy-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr> 
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=italy">Italy</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/italy-top3s.png"><img src="https://rodders.me/img/italy-top3s"  ></a></td>
+    </tr> 
 
     <tr>
-      <td>Japan</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=japan">Japan</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/japan-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/japan-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/japan-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/japan-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr> 
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=japan">Japan</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/japan-top3s.png"><img src="https://rodders.me/img/japan-top3s"  ></a></td>
+    </tr> 
 
     <tr>
-      <td>Poland</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland">Poland</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/poland-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/poland-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/poland-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/poland-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr> 
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland">Poland</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/poland-top3s.png"><img src="https://rodders.me/img/poland-top3s"  ></a></td>
+    </tr> 
 
     <tr>
-      <td>Spain</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland">Spain</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/spain-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/spain-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/spain-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/spain-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
+    </tr> 
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=spain">Spain</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/spain-top3s.png"><img src="https://rodders.me/img/spain-top3s"  ></a></td>
     </tr> 
 
 
     <tr>
-      <td>Sweden</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=sweden">Sweden</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/sweden-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/sweden-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/sweden-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/sweden-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr>
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=sweden">Sweden</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/sweden-top3s.png"><img src="https://rodders.me/img/sweden-top3s"  ></a></td>
+    </tr> 
 
     <tr>
-      <td>Taiwan</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=taiwan">Taiwan</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/taiwan-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/taiwan-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/taiwan-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/taiwan-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr>
-
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=taiwan">Taiwan</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/taiwan-top3s.png"><img src="https://rodders.me/img/taiwan-top3s"  ></a></td>
+    </tr> 
 
     <tr>
-      <td>UK</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=uk">UK</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/uk-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/uk-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/uk-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/uk-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr>
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=uk">UK</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/uk-top3s.png"><img src="https://rodders.me/img/uk-top3s"  ></a></td>
+    </tr> 
 
     <tr>
-      <td>USA</th>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=usa">USA</A></th>
       <td style="text-align:center;" ><a href="https://rodders.me/img/usa-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/usa-annual-and-cumulative-alerts.png"  ></a></td>
       <td style="text-align:center;" ><a href="https://rodders.me/img/usa-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/usa-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr>
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=usa">USA</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/usa-top3s.png"><img src="https://rodders.me/img/usa-top3s"  ></a></td>
+    </tr> 
 
-  
+
+    <tr>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=other">Other</A></th>
+      <td style="text-align:center;" ><a href="https://rodders.me/img/other-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/other-annual-and-cumulative-alerts.png"  ></a></td>
+      <td style="text-align:center;" ><a href="https://rodders.me/img/other-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/other-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
+    </tr>
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=other">Other</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/other-top3s.png"><img src="https://rodders.me/img/other-top3s"  ></a></td>
+    </tr> 
+
+
+    <tr>
+      <td><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=unknown">Unknown</A></th>
+      <td style="text-align:center;" ><a href="https://rodders.me/img/unknown-annual-and-cumulative-alerts.png"><img src="https://rodders.me/img/unknown-annual-and-cumulative-alerts.png"  ></a></td>
+      <td style="text-align:center;" ><a href="https://rodders.me/img/unknown-annual-cumulative-alerts-and-yoy-change.png"><img src="https://rodders.me/img/unknown-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
+    </tr>
+    <tr>
+      <td ><A href="http://localhost:1313/safetygate/docs/eu-safetygate-report-2023-country.html?country1=unknown">Unknown</A></th>
+      <td colspan="2" style="text-align:center;" ><a href="https://rodders.me/img/unknown-top3s.png"><img src="https://rodders.me/img/unknown-top3s"  ></a></td>
+    </tr> 
+
 </tbody>
 
 </table>
@@ -716,7 +793,7 @@ Economic Area split by Economic Area groups the countries under :
 
 
 
-<h2 >Top 15 Brands</h2>
+<h2>Top 15 Brands</h2>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -730,11 +807,12 @@ Economic Area split by Economic Area groups the countries under :
 
 
 
+<H1 >Top 3 Product Categories</H1>
 <!-- Product 0 -->
-<H1 class="">Top 3 Product Categories</H1>
 
+<h1 class="product_cat0">#1 - Top 3 Product Categories</h1>
 
-<h3 class="product_cat0">Total & Annual Alerts</h3>
+<h2 class="product_cat0">Total, Annual and Cumulative Alerts</h2>
 
 
 <div class="datatable-container">
@@ -755,11 +833,10 @@ Economic Area split by Economic Area groups the countries under :
     <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h3 class="product_cat0">Submitting Country</h3>
+    <h2 class="product_cat0">Submitting Country</h2>
 
 
 
-    <h3 >Alerts by Submitting Country 2022 Vs 2023</h3>
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
@@ -791,7 +868,6 @@ Economic Area split by Economic Area groups the countries under :
 
 <h2 class="product_cat0">Risk Category</h2>
 
-<h3 >Alerts by Risk Category 2022 Vs 2023</h3>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -866,7 +942,7 @@ Economic Area split by Economic Area groups the countries under :
     </div>   
     
 
-      <h2 class="product_cat0">Action Required </h2>
+      <h2 class="product_cat0">Compulsory / Voluntary Action Required </h2>
 
       <div class="datatable-container">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -903,7 +979,7 @@ Economic Area split by Economic Area groups the countries under :
 
         </div>   
         
-        <h2 class="product_cat0">Responsible Party Required </h2>
+        <h2 class="product_cat0">Compulsory / Voluntary Responsible Party</h2>
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
@@ -962,8 +1038,9 @@ to enlarge)</td>
 
 
 <!-- Product 1 -->
+<h1 class="product_cat1">#2 - Top 3 Product Categories</h1>
 
-<h2 class="product_cat1">Annual and Cumulative Alerts</h2>
+<h2 class="product_cat1">#2 - Total, Annual and Cumulative Alerts</h2>
 
 
 <div class="datatable-container">
@@ -989,7 +1066,7 @@ to enlarge)</td>
 
     <h2 class="product_cat1">Submitting Country</h2>
 
-    <h3 >Alerts by Submitting Country 2022 Vs 2023</h3>
+    
     
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1024,8 +1101,6 @@ to enlarge)</td>
         </div>
 
 <h2 class="product_cat1">Risk Category</h2>
-
-<h3 >Alerts by Risk Category 2022 Vs 2023</h3>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1064,17 +1139,22 @@ to enlarge)</td>
 
         </div>
         
-        <h2 class="product_cat1">Counterfeit </h2>
+<h2 class="product_cat1">Counterfeit </h2>
 
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
-              <tr><td>
-                <a href="https://rodders.me/img/all-countries-product-1-counterfeit-2022-vs-2023.png">
-                  <img src="https://rodders.me/img/all-countries-product-1-counterfeit-2022-vs-2023.png"  ></a>
-                  </td></tr></tbody></table>
-                  <a href="#" class="gototop">Go to Top</a>
-</div>
+              <tr>
+                <td>
+                  <a href="https://rodders.me/img/all-countries-product-1-counterfeit-2022-vs-2023.png">
+                  <img src="https://rodders.me/img/all-countries-product-1-counterfeit-2022-vs-2023.png"  >
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+          <a href="#" class="gototop">Go to Top</a>
+        </div>
 
 
 
@@ -1106,7 +1186,7 @@ to enlarge)</td>
     </div>   
     
 
-    <h2 class="product_cat1">Action Required </h2>
+    <h2 class="product_cat1">Compulsory / Voluntary Action Required </h2>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1142,7 +1222,7 @@ to enlarge)</td>
 
         </div>   
         
-        <h2 class="product_cat1">Responsible Party Required </h2>
+        <h2 class="product_cat1">Compulsory / Voluntary Responsible Party</h2>
 
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1202,8 +1282,8 @@ to enlarge)</td>
 
 <!-- Product 2 -->
 
-<h2 class="product_cat2">Annual and Cumulative Alerts</h2>
-
+<h1 class="product_cat2">#3 - Top 3 Product Categories</h1>
+<h2 class="product_cat2">Total, Annual and Cumulative Alerts</h2>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1224,10 +1304,8 @@ to enlarge)</td>
 
     </div>
 
-    <h2 class="product_cat2">Submitting Country</h2>
+<h2 class="product_cat2">Submitting Country</h2>
 
-    <h3 >Alerts by Submitting Country 2022 Vs 2023</h3>
-    
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
@@ -1259,8 +1337,6 @@ to enlarge)</td>
         </div>
 
 <h2 class="product_cat2">Risk Category</h2>
-
-<h3 >Alerts by Risk Category 2022 Vs 2023</h3>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1339,7 +1415,7 @@ to enlarge)</td>
     </div>   
     
 
-    <h2 class="product_cat2">Action Required </h2>
+<h2 class="product_cat2">Compulsory / Voluntary Action Required </h2>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1373,7 +1449,7 @@ to enlarge)</td>
 
         </div>   
         
-        <h2 class="product_cat2">Responsible Party Required </h2>
+<h2 class="product_cat2">Compulsory / Voluntary Responsible Party</h2>
 
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
