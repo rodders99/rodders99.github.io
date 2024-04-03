@@ -119,6 +119,7 @@ async function updateContent() {
         await updateHeadingsWithPrefix(country);
         await update_product_cat(); // Updates class=product_catn where n = a number
         await updateHrefsWithPrefix(country1);
+        await generateToC();
         // Await more updates if necessary
     
     }
