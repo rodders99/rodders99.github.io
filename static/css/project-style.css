@@ -17,7 +17,11 @@
 code {
     display: inline-block;
     border: solid 2px #5882FA;
-    font-size: 12px;
+    font-family: Consolas,"courier new";
+    /*font-size: 12px;*/
+    padding: 2px;
+    /* font-size: 105%; */
+  
   }
   
   .gototop {
