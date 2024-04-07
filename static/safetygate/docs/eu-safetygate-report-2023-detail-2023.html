@@ -14,27 +14,8 @@
 <title>eu-safetygate-report-2023</title>
 
 </head>
-<style>
-  .toolbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 100;
-  }
-  .tippy-box[data-theme~='tomato'] {
-      background-color: tomato;
-      color: yellow;
-      }
-  body {
-    padding-top: 50px; /* Adjust based on the toolbar's height to avoid content being hidden behind it */
-  }
-    </style>
-<body>
+
+<body class="exclude-page">
 
 <div class="page-container">
     <div class="toolbar" style="width:100%; text-align:center;">
@@ -56,22 +37,22 @@
                   </div>
                   <a href="#"><b>Analyst's Notebooks</b></a>
                   <div class="submenu">
-                    <a href="eu-safetygate-about.html">About the EU Safetygate data</a>
                     <a href="eu-safetygate-report-2023-meta-data.html">EU Safetygate Meta Data Overview</a>
                     <a href="eu-safetygate-report-2023-feature-engineering.html">EU Safetygate Feature Engineering</a>
+                    <a href="eu-safetygate-report-2023-plot-plan.html">EU Safetygate Visualisation Plan</a>
+              
                     </div>
-                  <a href="#"><b>Safety Gate Summary Analysis</b></a>
-                    <div class="submenu">
-                      <a href="eu-safetygate-report-2023-detail.html" class="nochange">Safety Gate 2023 Detailed Summary </a>
-                    <a href="eu-safetygate-report-2023-all.html?country1=all" class="nochange">Safety Gate Detailed Summary </a>
+                    
+                        <a href="#"><b>Safety Gate Summary Analysis</b></a>
+                        <div class="submenu">
+                        <a href="eu-safetygate-report-2023-detail-2023.html" class="nochange">Safety Gate 2023 Summary </a>
+                        <a href="eu-safetygate-report-2023-all.html?country1=all" class="nochange">Safety Gate Total Summary </a>
+                        <a href="eu-safetygate-report-2023-comparison.html?country1=france&country2=germany">Compare Countries</a>
                   </div>
-                  <a href="#"><b>Safety Gate Compare Countries</b></a>
+                  <a href="#"><b>Safety Gate Country Report Card</b></a>
+                  
                     <div class="submenu">
-                    <a href="eu-safetygate-report-2023-comparison.html?country1=france&country2=germany">Compare Countries</a>
-                    </div>
-                    <a href="#"><b>Country of Origin Report</b></a>
-                    <div class="submenu">
-                        <a href="eu-safetygate-report-2023-country.html?country1=china">China</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=china">China Report Card</a>
                         <a href="eu-safetygate-report-2023-country.html?country1=france">France</a>
                         <a href="eu-safetygate-report-2023-country.html?country1=germany">Germany</a>
                         <a href="eu-safetygate-report-2023-country.html?country1=india">India</a>
@@ -82,7 +63,7 @@
                         <a href="eu-safetygate-report-2023-country.html?country1=spain">Spain</a>
                         <a href="eu-safetygate-report-2023-country.html?country1=sweden">Sweden</a>
                         <a href="eu-safetygate-report-2023-country.html?country1=taiwan">Taiwan</a>
-                        <a href="eu-safetygate-report-2023-country.html?country1=türkiye">Türkiye</a>
+                        <a href="eu-safetygate-report-2023-country.html?country1=turkey">Turkey</a>
                         <a href="eu-safetygate-report-2023-country.html?country1=uk">UK</a>
                         <a href="eu-safetygate-report-2023-country.html?country1=usa">USA</a>
                         <a href="eu-safetygate-report-2023-country.html?country1=unknown">Unknown</a>
@@ -90,51 +71,59 @@
                       </div>
                     </div>
           </td>
-          <!-- JUMP TO MENU
+          <!-- JUMP TO MENU -->
           <td style="padding-left: 10px; padding-right: 10px;">
             <div id="JumptoSection">Jump to section</div>
           </td>
           <td style="padding-left: 10px; padding-right: 10px;">
             <div id="JumptoSection">
               <select onchange="window.location.hash=this.value" >
-                <option value="header-0">EU Safetygate report</option>
-                <option value="header-1">Total Annual Alerts Issued</option>
-                <option value="header-2">YoY Change</option>
-                <option value="header-2">Geographic Plot Submitting Country 2022 vs 2023</option>
-                <option value="header-7">Economic Area of Product Origin</option>
-                <option value="header-11">Country of Product Origin</option>
-                <option value="header-16">Product Categories</option>
-                <option value="header-19">Risk Categories</option>
-                <option value="header-22">Counterfeit</option>
-                <option value="header-25">Action Required</option>
-                <option value="header-28">Responsible Party</option>
-                <option value="header-31">Submitting Country</option>
-                <option value="header-35">Country List Alerts, Product & Risk Categories</option>
-                <option value="header-36">Top 15 Brands</option>
-                <option value="header-37">Top 3 Product Categories</option>
-                <option value="header-38">#1 - Top Product Category</option>
-                <option value="header-39">#1 - Product Category Annual / Total</option>
-                <option value="header-40">#1 - Product Category Submitting Country</option>
-                <option value="header-41">#1 - Product Category Risk Category</option>
-                <option value="header-42">#1 - Product Category Counterfeit</option>
-                <option value="header-43">#1 - Product Category Action Required / Responsible Party</option>
-                <option value="header-45">#1 - Product Category Top Brands</option>
-                <option value="header-46">#2 - Top Product Category</option>
-                <option value="header-47">#2 - Product Category Annual / Total</option>
-                <option value="header-48">#2 - Product Category Submitting Country</option>
-                <option value="header-49">#2 - Product Category Risk Category</option>
-                <option value="header-50">#2 - Product Category Counterfeit</option>
-                <option value="header-51">#2 - Product Category Action Required / Responsible Party</option>
-                <option value="header-53">#2 - Product Category Top Brands</option>
-                <option value="header-54">#3 - Top Product Category</option>
-                <option value="header-55">#3 - Product Category Annual / Total</option>
-                <option value="header-56">#3 - Product Category Submitting Country</option>
-                <option value="header-57">#3 - Product Category Risk Category</option>
-                <option value="header-58">#3 - Product Category Counterfeit</option>
-                <option value="header-59">#3 - Product Category Action Required / Responsible Party</option>
-                <option value="header-61">#3 - Product Category Top Brands</option>
+                <option value="header-1">Worldwide - Annual Alerts</option>
+                <option value="header-2">Worldwide - Total Annual Alerts Issued</option>
+                <option value="header-3">Worldwide - Annual and Cumulative Alerts</option>
+                <option value="header-4">Worldwide - Annual Alerts Issued - YoY Change </option>
+                <option value="header-5">Worldwide - Submitting Country</option>
+                <option value="header-9">What happened between 2022-2023?</option>
+                <option value="header-10">European Ban on Lilial in Cosmetics - March 2021</option>
+                <option value="header-16">Top 30 Cosmetics Brands for Safety Alerts </option>
+                <option value="header-18">Economic Area of Product origin 2022 Vs 2023 </option>
+                <option value="header-19">Country of Product Origin</option>
+                <option value="header-23">Product Categories</option>
+                <option value="header-26">Risk Category</option>
+                <option value="header-29">Counterfeit type</option>
+                <option value="header-32">Action Required</option>
+                <option value="header-35">Responsible Party</option>
+                <option value="header-38">Top 15 Countries - Key Fact sheets</option>
+                <option value="header-40">Top 30 Worldwide Brands for Safety Alerts</option>
+                <option value="header-42">Top 3 Worldwide Product Categories</option>
+                <option value="header-43">#1 - Top 3 Product Categories</option>
+                <option value="header-44">#1 - Total Annual and Cumulative Alerts</option>
+                <option value="header-45">#1 - Submitting Country</option>
+                <option value="header-46">#1 - Risk Category</option>
+                <option value="header-47">#1 - Counterfeit </option>
+                <option value="header-48">#1 - Compulsory / Voluntary Action Required /Responsible Party </option>
+                <option value="header-49">#1 - Action Required</option>
+                <option value="header-50">#1 - Responsible Party</option>
+                <option value="header-51">#1 - Top 30 Brands for Safety Alerts</option>
+                <option value="header-52">#2 - Top 3 Product Categories</option>
+                <option value="header-53">#2 - Total Annual and Cumulative Alerts</option>
+                <option value="header-54">#2 - Submitting Country</option>
+                <option value="header-55">#2 - Risk Category</option>
+                <option value="header-56">#2 - Counterfeit </option>
+                <option value="header-57">#2 - Action Required</option>
+                <option value="header-58">#2 - Responsible Party</option>
+                <option value="header-59">#2 - Top Brands for Safety Alerts</option>
+                <option value="header-60">#3 - Top 3 Product Categories</option>
+                <option value="header-61">#3 - Total Annual and Cumulative Alerts</option>
+                <option value="header-62">#3 - Submitting Country</option>
+                <option value="header-63">#3 - Risk Category</option>
+                <option value="header-64">#3 - Counterfeit </option>
+                <option value="header-65">#3 - Action Required </option>
+                <option value="header-66">#3 - Responsible Party</option>
+                <option value="header-67">#3 - Top Brands for Safety Alerts</option>
+
                 
-              </select>-->
+              </select>
             </div>
           </td>
           
@@ -147,23 +136,7 @@
 
     <div id="tableOfContents"></div>
     
-<h1 >Total Annual Alerts Issued</h1>
-
-  <div class="datatable-container">
-    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-    <tbody> 
-    <tr><td>  <a href="https://rodders.me/img/submitting-country-geo-plot.png">
-  <img src="https://rodders.me/img/submitting-country-geo-plot.png">
-</td>
-</tr>
-</tbody>
-</table> 
-<h3 >Submitting Country - Map Plot 2022 Vs 2023</h3>
-<a href="#" class="gototop">Go to Top</a>
-</div>
-
-<h2>Annual Alerts 2022 Vs 2023</h2>
-
+    <h2>Annual Alerts</h2>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -172,6 +145,9 @@
   <img src="https://rodders.me/img/number-of-alerts-validated-on-safetygate-from-2003-to-2023.png"  /></a></td></tr></tbody></table>
   <a href="#" class="gototop">Go to Top</a>
 </div>
+
+<h2>Total Annual Alerts Issued</h2>
+
 
 <p>Over the last few years, the EU Safetygate member states issue on average around 2,000
   - 2,200 safety alerts per year. 
@@ -234,10 +210,10 @@
 
 </table>
 </div>
-  
- 
 
 
+
+<h2 >Annual and Cumulative Alerts</h2>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -258,9 +234,10 @@
       </tr>
     </tbody>
   </table>
-<a href="#" class="gototop">Go to Top</a></div>
+<a href="#" class="gototop">Go to Top</a>
+</div>
 
-<h2 >YoY Change for Alerts Issued</h2>
+<h2 >Annual Alerts Issued - YoY Change </h2>
 <p>2023 saw a 59% increase in the average number of alerts issued in a year, with the total alerts
 issued increasing from 2,100 alerts in 2022 to 3,349 in 2023, an
 increase of 1,249 over the previous year.</p>
@@ -284,27 +261,78 @@ increase of 1,249 over the previous year.</p>
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
+<h2>Submitting Country</h2>
+
+<p>The country that submitted the safety alert.</p>
+
+<h3 >Map Plot 2022 Vs 2023</h3>
+  <div class="datatable-container">
+    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+    <tbody> 
+    <tr><td>  <a href="https://rodders.me/img/submitting-country-geo-plot.png">
+  <img src="https://rodders.me/img/submitting-country-geo-plot.png">
+</td>
+</tr>
+</tbody>
+</table> 
+<a href="#" class="gototop">Go to Top</a>
+</div>
 
 
+<h3 >2022 Vs 2023</h3>
 
-<h1>What happened between 2022-2023?</h1>
+<div class="datatable-container">
+  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+  <tbody> 
+    <tr><td>
+      <a href="https://rodders.me/img/all-countries-submitting-country-2022-vs-2023.png">
+        <img src="https://rodders.me/img/all-countries-submitting-country-2022-vs-2023.png" ></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a href="#" class="gototop">Go to Top</a>
+</div>
 
-<p>2023 was an exception with the introduction of the ban on the chemical 'lilial / BMHCA' for use in cosmetics.</p>
+
+<h3>Annual Alerts and Annual Percentage of Total</h3>
+<div class="datatable-container">
+  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+  <tbody> 
+
+    <tr>
+      <th style="text-align:center;">Annual Count</th>
+      <th style="text-align:center;">Annual Percent of Total</th>
+    </tr> 
+    <tr>
+      <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-submitting-country-annual-alerts.png">
+        <img src="https://rodders.me/img/all-countries-submitting-country-annual-alerts.png"  ></a></td>
+      <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-submitting-country-annual-alerts-percentage.png">
+        <img src="https://rodders.me/img/all-countries-submitting-country-annual-alerts-percentage.png"  ></a></td>
+  </tr>
+</tbody>
+</table>
+<a href="#" class="gototop">Go to Top</a>
+</div>
+
+
+<h2>What happened between 2022-2023?</h2>
+
+<H3>European Ban on Lilial in Cosmetics - March 2021</H3>
+<p>2023 was an exception with the introduction of the ban on the chemical <a href="https://en.wikipedia.org/wiki/Lilial">lilial / BMHCA</a> for use in cosmetics on 1st March 2022.</p>
   <ul><li>In 2023 1,087 safety alerts were issued for products containing BMHCA</li>
   <li>Around 30% of these were issued to products manufactured in Italy</li></ul> 
 </p>
 <p>The significant increase seen 2023 over 2022 is due to a change in regulations for a Butylphenyl Methylpropional
-(BMHCA, trade name 'Lilial') BMHCA,  a chemical commonly used in cosmetics.
-<br>
+(BMHCA, trade name 'Lilial') BMHCA,  a chemical commonly used in cosmetics.</p>
+<p>
 BMHCA is now deemed to be hazardous and unsuitable for use in cosmetic products due to the fact that it is included in so many products.  
-While an individual exposure poses a minimal risk, cumulative exposure from the use of multiple products containing this chemical increases the risk considerably. 
-<br>
-See BMHCA in cosmetics for further information. 
-<br>
+While an individual exposure poses a minimal risk, cumulative exposure from the use of multiple products containing this chemical increases the risk considerably. </p>
+<p>
 It's also worth noting that BMHCA is a fragrance commonly used in household cleaning products, however no guidance has been issued for the it's use in cleaning products at this stage. 
 </p>
 
-<div style="background-color: white;">
+<div style="background-color: white; display: inline-block; ">
 <img src="../img/bmhca-molecule.png"><br> BMHCA "Lilial" Molecule</div>
 
 
@@ -315,19 +343,7 @@ Labelling and Packaging (CLP) Regulations.</p>
 This ban affected around 1,100 - 1,200 products (90-95% of the annual increase of (1,249) alerts or 32-35% of all alerts issued (3,349) in 2023), and is the reason for the 
 significant increase seen in the Safetygate analysis.</p>
 
-<h2>Cosmetics</h2>
-<p>Major brands including 
-  <ul><li>Nivea (Beiersdorf Global AG) - affecting 39 products</li> 
-    <li>Palmolive (Colgate-Palmolive) - affecting 29 products</li>
-    <li>Vidal (Proctor & Gamble) - affecting 16 products</li>
-    <li>Dove (Unilever) - affecting 9 products</li>
-    <li>To name a few</li></ul>
-    
-    Have been manufacturing & selling products with a banned chemical in them, 
-  even though their respective trade associations gave plenty of notice resulting in a compulsory or voluntary ban and withdrawal from sale. </p>
-
-
-<h2>UK and BMHCA</h2>
+<h3>UK and BMHCA</h3>
 <p>
 Article 15 of the UK and EU Cosmetics Regulations requires CMR-classified substances to undergo an
 exemption process to assess whether they can continue to be used as cosmetic ingredients. This regulatory
@@ -342,29 +358,18 @@ used in cosmetic products in GB until:</p>
 <ul><li>15 October 2022, as placing on the market deadline;</li>
 <li>15 December 2022, as making available (off-shelf) deadline.</li></ul>
 
-<p>The draft regulation implementing the BMHCA/'Lilial' ban in GB is still going through the legislative
-process, as per this public news. </p>
+<p>The Cosmetic, Toiletry and Perfumery Association (CTPA) advised its members to voluntarily remove Lilial from cosmetic products by the end of 2021. 
+  The UK's cosmetic regulation has since been updated to include Lilial in Annex II LIST OF SUBSTANCES PROHIBITED IN COSMETIC PRODUCTS</p>
 
-<h3>CTPA will keep companies updated on any further developments.</h3>
+<h3>What about other markets?</h3>
 
-<p>The legislative process for BMHCA began before the UK left the EU. It is important to stress that the CMR
-classification of BMHCA and the ban now in force in the EU, and expected in GB shortly, is based on the
-hazardous properties a substance might have under a "worst case" situation and does not take account of
-whether there is any risk associated with specific uses or exposures. Consumers who have bought cosmetic
-and personal care products that contain BMHCA, can be reassured that these products are still safe to use.
-They will have undergone a rigorous safety assessment by an expert safety assessor to ensure their safe
-use.</p>
+  <p>Lilial is still permitted for use in cosmetics in other countries outside the EU and the UK.</p>
 
-[https://www.ctpa.org.uk/file.php?fileid=4135](https://www.ctpa.org.uk/file.php?fileid=4135)
+<h3>Scientific Opinion on BMHCA</h3>
 
-<p>This effectively means any products containing BMHCA and produced in the UK will be illegal to export to EU countries. </p>
-
-
-<h2>Scientific Opinion on BMHCA</h2> 
-
-<p>*Does the SCCS consider Butylphenyl methylpropional (p-BMHCA) safe for use as a
+<h4>Does the SCCS consider Butylphenyl methylpropional (p-BMHCA) safe for use as a
 fragrance ingredient in cosmetic leave-on and rinse-off type products in a concentration
-limit(s) according the ones set up by IFRA as reported above?*</p>
+limit(s) according the ones set up by IFRA as reported above?</h4>
 
 <p>On individual product basis, Butylphenyl methylpropional (p-BMHCA) (CAS 80-54-6) with
 alpha-tocopherol at 200 ppm, can be considered safe when used as fragrance ingredient in
@@ -372,12 +377,16 @@ different cosmetic leave-on and rinse-off type products. However, considering th
 deterministic aggregate exposure, arising from the use of different product types together,
 Butylphenyl methylpropional at the proposed concentrations cannot be considered as safe.</p>
 <p>
-This Opinion is not applicable to the use of p-BMHCA in any sprayable products that could
-lead to exposure of the consumer's lung by inhalation.</p>
-<p>
-*Does the SCCS have any further scientific concerns with regard to the use of Butylphenyl
+
+  <h4> "first-tier deterministic aggregate exposure" refers to an initial, simplified assessment of total exposure to a particular substance from all sources and routes, using fixed input values for variables.
+    This approach provides a preliminary estimate of exposure that can help identify potential risks and determine whether more detailed, possibly probabilistic, and higher-tier assessments are needed. 
+      It's a conservative approach that aims to ensure safety by not underestimating potential exposure levels, but it might not capture the full variability and uncertainty inherent in real-world exposure scenarios.</h4>
+
+      <p>This Opinion is not applicable to the use of p-BMHCA in any sprayable products that could lead to exposure of the consumer's lung by inhalation.</p>
+
+<h4>Does the SCCS have any further scientific concerns with regard to the use of Butylphenyl
 methylpropional (p-BMHCA) as a fragrance ingredient in cosmetic leave-on and/or rinse-off
-type products?*</p>
+type products?</h4>
 
 <p>Evaluation of this substance by other scientific bodies (e.g. under REACH) should also be
 taken into consideration by the Applicant for potential future assessment of the substance.
@@ -389,8 +398,22 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 
 <a href ="https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf">https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf</a>
 
-  <h2>The European Cosmetics Industry</h2>
+  <h3>The European Cosmetics Industry</h3>
   
+  <h4>Country of Product Origin</h4>
+  <div class="datatable-container">
+    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+    <tbody> 
+    <tr><td>
+  <a href="https://rodders.me/img/cosmetics-alerts-by-country-of-origin-2022-vs-2023.png">
+    <img src="https://rodders.me/img/cosmetics-alerts-by-country-of-origin-2022-vs-2023.png" ></a>
+    
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <a href="#" class="gototop">Go to Top</a>
+  </div>
     <p>It is estimated that the cosmetics and personal care industry brings at least €29 billion in added value to the European economy annually. 
       €11 billion is contributed directly by the manufacture of cosmetic products and €18 billion indirectly through the supply chain (Eurostat 2015).</p>
 
@@ -401,21 +424,30 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
       jobs are generated in the wider economy as a result of employees spending their wages on goods and services.</p>
     <p>Source: https://cosmeticseurope.eu/cosmetics-industry/ </p>
 
-    <h2>Italy and Cosmetics</h2>
+<h3>Italy and Cosmetics</h3>
     <p>Italy represents a significant portion of the European cosmetics and personal care products market, with a value of €11.5 billion. </p>
       <p>This places Italy among the largest national markets within Europe, following Germany (€14.3 billion) and France (€12.9 billion).</p>
 
+<h3>Top 30 Cosmetics Brands for Safety Alerts </h3>
 
-<code>Economic Area of Product Origin</code> split by: 
+<a href="https://rodders.me/img/top30-cosmetics-brands-2023.png">
+  <img src="https://rodders.me/img/top30-cosmetics-brands-2023.png" ></a>
 
-<ul>
+
+<h1>Which countries' products get the most alerts?</h1>
+
+      The following visualisations show the <code>Economic Area of Product Origin</code> with categories defined as: 
+
+<p><ul>
   <li><code>EU Countries</code> within Schengen or European Economic Area (Ex Italy for visibility of 2023 alerts)</li>
-  <li><code>Italy</code> - Italy represents around 30% of all alerts issued in 2023</li>
+  <li><code>Italy</code> - Italy represents around 15% of all alerts issued in 2023 and is highlighted for the 2023 exception</li>
   <li><code>Outside EU</code> - Every other country not within the Eu Countries</li>
   <li><code>China</code> - China represents a large proportion of Global Trade</li>
 </ul>
-<h2>Economic Area of Product Origin</h2>
-<h3>Economic Area of Product origin 2022 Vs 2023 </h3>
+
+</p>
+
+<h2>Economic Area of Product origin 2022 Vs 2023 </h2>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -428,63 +460,32 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 </tr>
 </tbody>
 </table>
-<a href="#" class="gototop">Go to Top</a></div>
-
-
-  <h3>Economic Area of Product Origin Total Alerts </h3>
-  <div class="datatable-container">
-    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-    <tbody> 
-    <tr><td>
-  <a href="https://rodders.me/img/economic-area-of-product-origin-total-alerts.png">
-    <img src="https://rodders.me/img/economic-area-of-product-origin-total-alerts.png" ></a>
-    <a href="#" ><div class="gototop">Go to Top</div></a> 
-  </td></tr></tbody></table></div>
-
-
-    <h3>Economic Area of Product origin Annual Alerts </h3>
-  <div class="datatable-container">
-    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-    <tbody> 
-    <tr><td>
-        <a href="https://rodders.me/img/economic-area-of-product-origin-annual-alerts.png">
-    <img src="https://rodders.me/img/economic-area-of-product-origin-annual-alerts.png" ></a>
-   <a href="#" ><div class="gototop">Go to Top</div></a> 
-  </td></tr></tbody></table></div>
-
-<h2 >Alerts by Country of Product Origin</h2>
-
-<p>Within the Top 15 countries are two entries </p>
-<ul><code>other</code> (where the country isn't in the top 15) and represents 2,933 products or 8.4% of the total</ul>
-<ul><code>Unknown</code> (where the reporting member didn't record the country of origin) and represents 9,173 products 25.8% of the total Alerts issued</ul>
-
-<h3 > Alerts by Country of Product Origin 2022 Vs 2023</h3>
-<div class="datatable-container">
-  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-  <tbody> 
-  <tr><td><a href="https://rodders.me/img/all-countries-country-of-origin-2022-vs-2023-total-alerts.png">
-  <img src="https://rodders.me/img/all-countries-country-of-origin-2022-vs-2023-total-alerts.png" ></p></a>
-  <a href="#" ><div class="gototop">Go to Top</div></a> 
-</td></tr></tbody></table></div>
-<h3 >Country of Product Origin</h3>
-
-<div class="datatable-container">
-  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-  <tbody> 
-    <tr>
-      <th style="text-align:center;">All Countries</th>
-      <th style="text-align:center;">Excluding Unknown</th>
-    </tr>   
-    <tr>
-      <td><a href="https://rodders.me/img/all-countries-country-of-origin-total-alerts-percentage.png"> <img src="https://rodders.me/img/all-countries-country-of-origin-total-alerts-percentage.png"  ></a></td>
-      <td ><a href="https://rodders.me/img/all-countries-country-of-origin-total-alerts-percentage-(exc-unknown).png"><img src="https://rodders.me/img/all-countries-country-of-origin-total-alerts-percentage-(exc-unknown).png"  ></a></td>
-  </tr>    
-</tbody>  
-</table>
-</div>
 <a href="#" class="gototop">Go to Top</a>
+</div>
 
-<h3 >Annual Alerts by Country of Product Origin</h3>
+<h2 >Country of Product Origin</h2>
+
+<p>Within the Top 15 countries are two entries :</p>
+<ul><code>other</code> (where the country isn't in the top 15) and represents 2,933 products or 8.4% of the total</ul>
+<ul><code>Unknown</code> (where the reporting member didn't record the country of origin) and represents 9,173 products, or 25.8% of the total Alerts issued</ul>
+
+<h3 >2022 Vs 2023</h3>
+<div class="datatable-container">
+  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+    <tbody> 
+      <tr>
+        <td>
+          <a href="https://rodders.me/img/all-countries-country-of-origin-2022-vs-2023-total-alerts.png">
+            <img src="https://rodders.me/img/all-countries-country-of-origin-2022-vs-2023-total-alerts.png" ></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="#" class="gototop">Go to Top</a>
+
+</div>
+
+<h3>Annual Alerts</h3>
 
 
 <div class="datatable-container">
@@ -500,11 +501,11 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
    </tr>
 </tbody>
 </table>
-</div>
 <a href="#" class="gototop">Go to Top</a>
+</div>
 
  
-<h3 >Annual Alerts by Country of Product Origin (percentage of Total)</h3>
+<h3 >Annual Alerts - Percentage of Total</h3>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -523,9 +524,9 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 </div>
 
 
-<h2 >Product Category</h2>
+<h2>Product Categories</h2>
 
-  <h3 >Alerts by Product Category 2022 Vs 2023</h3>
+  <h3 >2022 Vs 2023</h3> 
   <div class="datatable-container">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
@@ -539,19 +540,15 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
     <a href="#" class="gototop">Go to Top</a>
     </div>
     
-  <h3 >Total & Annual Alerts by Product Category</h3>
+  <h3 >Total & Annual Alerts</h3>
+
+  <p>Over the last few years the Toys and Automotive categories are generally those with the most safety alerts. </p>
+  
+  <p>The exception being 2023 where cosmetics took the top spot with 32% of all alerts issued being for cosmetic products.</p>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
-    <tr>
-      <th style="text-align:center;">Total</th>
-      <th style="text-align:center;"></th>
-    </tr> 
-    <tr>
-      <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-category-total-alerts-percentage.png"><img src="https://rodders.me/img/all-countries-product-category-total-alerts-percentage.png"  ></a></td>
-      <td style="text-align:center;" ></td>
-  </tr>
     <tr>
       <th style="text-align:center;">Annual Count</th>
       <th style="text-align:center;">Annual Percent of Total</th>
@@ -570,7 +567,12 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 
 <h2 >Risk Category</h2>
 
-  <h3 >Alerts by Risk Category 2022 Vs 2023</h3>
+<ul><li>The majority of Injury risks come from the automotive product category (9.7% of 2022/2023 total)</li>
+  <li>The majority of risks from Toys are breathing obstruction (7% of total) and chemical (7% of total)</li>
+  <li>As previously noted the cosmetics risk is from the recent ban of BMHCA</li>
+  </ul>
+
+  <h3 >2022 Vs 2023</h3>
   <div class="datatable-container">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
@@ -582,19 +584,12 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
           <a href="#" class="gototop">Go to Top</a></div>
 
 
-<h3 >Total & Annual Alerts by Risk Category</h3>
+<h3 >Total & Annual Alerts</h3>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
-    <tr>
-      <th style="text-align:center;">Total</th>
-      <th style="text-align:center;"></th>
-    </tr> 
-    <tr>
-      <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-risk-category-total-alerts-percentage.png"><img src="https://rodders.me/img/all-countries-risk-category-total-alerts-percentage.png"  ></a></td>
-      <td style="text-align:center;" ></td>
-  </tr>
+   
     <tr>
       <th style="text-align:center;">Annual Count</th>
       <th style="text-align:center;">Annual Percent of Total</th>
@@ -605,13 +600,13 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
   </tr>
 </tbody>
 </table>
-</div>
-<a href="#" class="gototop">Go to Top</a>
+<a href="#" class="gototop">Go to Top</a></div>
+
 
 <h2 >Counterfeit type</h2>
 
 
-    <h3 >Alerts by Counterfeit type 2022 Vs 2023</h3>
+    <h3 >2022 Vs 2023</h3>
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
@@ -621,19 +616,12 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
             <a href="#" class="gototop">Go to Top</a></div>
   
   
-<h3>Total & Annual Alerts by Counterfeit type</h3>
+<h3>Total & Annual Alerts </h3>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
-    <tr>
-      <th style="text-align:center;">Total</th>
-      <th style="text-align:center;"></th>
-    </tr> 
-    <tr>
-      <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-counterfeit-total-alerts-percentage.png"><img src="https://rodders.me/img/all-countries-counterfeit-total-alerts-percentage.png"  ></a></td>
-      <td style="text-align:center;" > &nbsp; </td>
-  </tr>
+
     <tr>
       <th style="text-align:center;">Annual Count</th>
       <th style="text-align:center;">Annual Percent of Total</th>
@@ -644,12 +632,14 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
   </tr>
 </tbody>
 </table>
-</div>
 <a href="#" class="gototop">Go to Top</a>
+</div>
 
-<h2 >Compulsory / Voluntary - Action Required</h2>
+<h2 >Action Required</h2>
 
-<h3 >Alerts by Action Required 2022 Vs 2023</h3>
+The increase in the percentage of alerts requiring a ban from sale in 2023 is due to the ban of the chemical BMHCA in cosmetics.
+
+<h3 >2022 Vs 2023</h3>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -659,13 +649,13 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
         <a href="#" class="gototop">Go to Top</a></div>
 
 
-<h3 >Total & Annual Alerts by Action Required</h3>
+<h3>Total & Annual Alerts</h3>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
       <th style="text-align:center;">Annual Action Required</th>
-      <th style="text-align:center;">Total Action Required</th>
+      <th style="text-align:center;">Compulsory Vs Voluntary</th>
     </tr> 
     <tr>
       <td style="text-align:center;" >
@@ -679,12 +669,14 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
             </td>
   
       </tr>
-      </tbody></table></div>
+      </tbody></table>
       <a href="#" class="gototop">Go to Top</a>
+    </div>
 
+<h2 >Responsible Party</h2>
 
-      <h2 >Compulsory / Voluntary Alerts - Responsible Party</h2>
-      <h3 >Compulsory / Voluntary Alerts by Responsible Party 2022 Vs 2023</h3>
+  
+<h3 >2022 Vs 2023</h3>
       
       <div class="datatable-container">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -693,16 +685,17 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
             <a href="https://rodders.me/img/all-countries-responsible-partry-2022-vs-2023.png">
         <img src="https://rodders.me/img/all-countries-responsible-partry-2022-vs-2023.png" ></a>
       </td></tr></tbody></table>
-      <a href="#" class="gototop">Go to Top</a></div>
+      <a href="#" class="gototop">Go to Top</a>
+    </div>
 
-      <h3 >Total & Annual Alerts by Responsible Party</h3>
+<h3 >Annual Alerts</h3>
 
       <div class="datatable-container">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>   
     <tr>
       <th style="text-align:center;">Annual Responsible Party</th>
-      <th style="text-align:center;">Total Responsible Party</th>
+      <th style="text-align:center;">Compulsory Vs Voluntary</th>
     </tr> 
     <tr>
       <td style="text-align:center;" >
@@ -719,74 +712,18 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
     </tr>
 </tbody>
 </table>
-</div>
 <a href="#" class="gototop">Go to Top</a>
-
-
-<h2 >Submitting Country</h2>
-
-<p>The country that issued the alert to the Safetygate team.</p>
-<h3 >Alerts by Submitting Country 2022 Vs 2023</h3>
-<div class="datatable-container">
-  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-  <tbody> 
-    <tr><td>
-      <a href="https://rodders.me/img/safetygate-geoplot-submitting-country.png">
-        <img src="https://rodders.me/img/safetygate-geoplot-submitting-country.png" ></a>
-        </td></tr></tbody></table>
-        <a href="#" class="gototop">Go to Top</a>
-        </div>
-
-
-
-<h3 >Alerts by Submitting Country 2022 Vs 2023</h3>
-
-<div class="datatable-container">
-  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-  <tbody> 
-    <tr><td>
-      <a href="https://rodders.me/img/all-countries-submitting-country-2022-vs-2023.png">
-        <img src="https://rodders.me/img/all-countries-submitting-country-2022-vs-2023.png" ></a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<a href="#" class="gototop">Go to Top</a></div>
-
-
-
-<h3 >Total & Annual Alerts by Submitting Country</h3>
-<div class="datatable-container">
-  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-  <tbody> 
-    <tr>
-      <th style="text-align:center;">Total</th>
-      <th style="text-align:center;"></th>
-    </tr> 
-    <tr>
-      <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-submitting-country-total-alerts-percentage.png">
-        <img src="https://rodders.me/img/all-countries-submitting-country-total-alerts-percentage.png"  ></a></td>
-      <td style="text-align:center;" ></td>
-  </tr>
-    <tr>
-      <th style="text-align:center;">Annual Count</th>
-      <th style="text-align:center;">Annual Percent of Total</th>
-    </tr> 
-    <tr>
-      <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-submitting-country-annual-alerts.png">
-        <img src="https://rodders.me/img/all-countries-submitting-country-annual-alerts.png"  ></a></td>
-      <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-submitting-country-annual-alerts-percentage.png">
-        <img src="https://rodders.me/img/all-countries-submitting-country-annual-alerts-percentage.png"  ></a></td>
-  </tr>
-</tbody>
-</table>
 </div>
-<a href="#" class="gototop">Go to Top</a>
 
 
 
+<h2>Top 15 Countries - Key Fact sheets</h2>
 
-<h2>Cumulative, Annual and YoY change - Alerts issued to Country of Product Origin</h2>
+<p>Programmatically created reproductions of the Top 3 Risk and Product category by country visualisation in the official Fact sheet. 
+<a href="https://www.mpo.cz/assets/en/consumer-protection/products-safety/2024/3/Safety-Gate-2023-factsheet.pdf">Safety_Gate_2023_Factsheet_EN.pdf</a></p>
+
+
+<h3>Cumulative, Annual and YoY change / Top3 Categories (Risk/Product)</h3>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -946,28 +883,29 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
+<h1>Top 30 Worldwide brands for Safety Alerts</h1>
 
-
-<h2>Top 15 Brands</h2>
+<h2>Top 30 Brands</h2>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td>
-      <a href="https://rodders.me/img/all-countries-top-15-brands-for-safety-alerts.png">
-        <img src="https://rodders.me/img/all-countries-top-15-brands-for-safety-alerts.png"></a>
+      <a href="https://rodders.me/img/all-countries-top-30-brands-for-safety-alerts.png">
+        <img src="https://rodders.me/img/all-countries-top-30-brands-for-safety-alerts.png"></a>
       </td></tr>
     </tbody></table>
-        <a href="#" class="gototop">Go to Top</a></div>
+        <a href="#" class="gototop">Go to Top</a>
+      </div>
 
 
 
-<H1 >Top 3 Product Categories</H1>
+<H1 >Top 3 Worldwide Product Categories</H1>
 <!-- Product 0 -->
 
-<h1 class="product_cat0">#1 - Top 3 Product Categories</h1>
+<h2 class="product_cat0">#1 - Top 3 Product Categories</h2>
 
-<h2 class="product_cat0">Total, Annual and Cumulative Alerts</h2>
+<h3 class="product_cat0">Total, Annual and Cumulative Alerts</h3>
 
 
 <div class="datatable-container">
@@ -988,9 +926,9 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
     <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h2 class="product_cat0">Submitting Country</h2>
+<h3 class="product_cat0">Submitting Country</h3>
 
-
+<h4 class="product_cat0">2022 Vs 2023</h4>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1002,6 +940,7 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
             <a href="#" class="gototop">Go to Top</a>
           </div>
     
+<h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1009,7 +948,7 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
     
         <tr>
           <th style="text-align:center;">Annual Total</th>
-          <th style="text-align:center;">Cumulative Total and YoY Change</th>
+          <th style="text-align:center;">Annual % of total</th>
         </tr> 
         <tr>
           <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-0-submitting-country-annual-alerts.png"><img src="https://rodders.me/img/all-countries-product-0-submitting-country-annual-alerts.png"  ></a></td>
@@ -1021,7 +960,8 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
         <a href="#" class="gototop">Go to Top</a>
         </div>
 
-<h2 class="product_cat0">Risk Category</h2>
+<h3 class="product_cat0">Risk Category</h3>
+<h4 class="product_cat0">2022 Vs 2023</h4>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1033,20 +973,14 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
         <a href="#" class="gototop">Go to Top</a>
 </div>
 
-    <div class="datatable-container">
+<h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
+
+<div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
-        <tr>
-          <th style="text-align:center;">Total</th>
-          <th style="text-align:center;"></th>
-        </tr>    
-        <tr>
-          <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-0-risk-category-total-alerts-percentage.png"><img src="https://rodders.me/img/all-countries-product-0-risk-category-total-alerts-percentage.png"  ></a></td>
-          <td style="text-align:center;" ></td>
-        </tr> 
-        <tr>
+
           <th style="text-align:center;">Annual Total</th>
-          <th style="text-align:center;">Cumulative Total and YoY Change</th>
+          <th style="text-align:center;">Annual % of Total</th>
         </tr> 
         <tr>
           <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-0-risk-category-annual-alerts.png"><img src="https://rodders.me/img/all-countries-product-0-risk-category-annual-alerts.png"  ></a></td>
@@ -1058,7 +992,8 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
         <a href="#" class="gototop">Go to Top</a>
         </div>
         
-        <h2 class="product_cat0">Counterfeit </h2>
+<h3 class="product_cat0">Counterfeit </h3>
+<h4>2022 Vs 2023</h4>
         <div class="datatable-container">
 
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1069,22 +1004,17 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
               <a href="#" class="gototop">Go to Top</a>
             </div>
 
+
+<h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
+
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
-        <tr>
-          <th style="text-align:center;">Total</th>
-          <th style="text-align:center;"></th>
-        </tr>    
-        <tr>
-          <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-0-counterfeit-total-alerts-percentage.png">
-            <img src="https://rodders.me/img/all-countries-product-0-counterfeit-total-alerts-percentage.png"  ></a></td>
-          <td style="text-align:center;" ></td>
-        </tr> 
+
  
         <tr>
           <th style="text-align:center;">Annual Total</th>
-          <th style="text-align:center;">Cumulative Total and YoY Change</th>
+          <th style="text-align:center;">Annual % of Total</th>
         </tr> 
         <tr>
           <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-0-counterfeit-annual-alerts.png"><img src="https://rodders.me/img/all-countries-product-0-counterfeit-annual-alerts.png"  ></a></td>
@@ -1097,7 +1027,10 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
     </div>   
     
 
-      <h2 class="product_cat0">Compulsory / Voluntary Action Required </h2>
+      <h3 class="product_cat0">Compulsory / Voluntary Action Required /Responsible Party </h3>
+
+      <h3 class="product_cat0">Action Required</h3>
+      <h4 class="product_cat0">2022 Vs 2023</h4>
 
       <div class="datatable-container">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1113,12 +1046,15 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
         <a href="#" class="gototop">Go to Top</a>
       </div>
 
+      <h4 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h4>
+
+
       <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr>
                 <th style="text-align:center;">Annual Total</th>
-                <th style="text-align:center;">Cumulative Total and YoY Change</th>
+                <th style="text-align:center;">Compulsory Vs Voluntary</th>
             </tr> 
             <tr>
               <td >
@@ -1134,7 +1070,8 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 
         </div>   
         
-        <h2 class="product_cat0">Compulsory / Voluntary Responsible Party</h2>
+        <h3 class="product_cat0">Responsible Party</h3>
+          <h4 class="product_cat0">2022 Vs 2023</h4>
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
@@ -1146,6 +1083,7 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
         </div>
 
 
+        <h4 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h4>
 
             <div class="datatable-container">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1153,7 +1091,7 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
     
                 <tr>
                   <th style="text-align:center;">Annual Total</th>
-                  <th style="text-align:center;">Cumulative Total and YoY Change</th>
+                  <th style="text-align:center;">Compulsory Vs Voluntary</th>
                 </tr> 
                 <tr>
                   <td >
@@ -1171,18 +1109,18 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 
 
 
-<h2 class="product_cat0">Top Brands for Safety Alerts</h2>
+<h3 class="product_cat0">Top 30 Brands for Safety Alerts</h3>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 <tr >
-<th >Top 15 Brands</th>
+<th >Top 30 Brands</th>
 </tr>
 </thead>
 <tbody>
 <tr >
-<td style="text-align: center;"><a href="https://rodders.me/img/all-countries-product-0-top-15-brands-for-safety-alerts.png"><img src="https://rodders.me/img/all-countries-product-0-top-15-brands-for-safety-alerts.png" ><br>(click
-to enlarge)</td>
+<td style="text-align: center;"><a href="https://rodders.me/img/all-countries-product-0-top-30-brands-for-safety-alerts.png">
+  <img src="https://rodders.me/img/all-countries-product-0-top-30-brands-for-safety-alerts.png" ></td>
 </tr>
 </tbody>
 </table>
@@ -1193,9 +1131,9 @@ to enlarge)</td>
 
 
 <!-- Product 1 -->
-<h1 class="product_cat1">#2 - Top 3 Product Categories</h1>
+<h2 class="product_cat1">#2 - Top 3 Product Categories</h2>
 
-<h2 class="product_cat1">#2 - Total, Annual and Cumulative Alerts</h2>
+<h3 class="product_cat1">Total, Annual and Cumulative Alerts</h3>
 
 
 <div class="datatable-container">
@@ -1219,7 +1157,7 @@ to enlarge)</td>
 
     </div>
 
-    <h2 class="product_cat1">Submitting Country</h2>
+    <h4 class="product_cat1">2022 Vs 2023</h4>
 
     
     
@@ -1235,6 +1173,7 @@ to enlarge)</td>
           <a href="#" class="gototop">Go to Top</a>
 </div>
     
+<h3 class="product_cat1">Submitting Country</h3>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1255,7 +1194,8 @@ to enlarge)</td>
 
         </div>
 
-<h2 class="product_cat1">Risk Category</h2>
+<h3 class="product_cat1">Risk Category</h3>
+<h4 class="product_cat1">2022 Vs 2023</h4>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1267,18 +1207,12 @@ to enlarge)</td>
           <a href="#" class="gototop">Go to Top</a>
 </div>
 
+<h4 class="product_cat1">Annual Total / Annual Percentage of Total</h4>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
-        <tr>
-          <th style="text-align:center;">Total</th>
-          <th style="text-align:center;"></th>
-        </tr>    
-        <tr>
-          <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-1-risk-category-total-alerts-percentage.png"><img src="https://rodders.me/img/all-countries-product-1-risk-category-total-alerts-percentage.png"  ></a></td>
-          <td style="text-align:center;" ></td>
-        </tr> 
+
         <tr>
           <th style="text-align:center;">Annual Total</th>
           <th style="text-align:center;">Cumulative Total and YoY Change</th>
@@ -1294,7 +1228,8 @@ to enlarge)</td>
 
         </div>
         
-<h2 class="product_cat1">Counterfeit </h2>
+<h3 class="product_cat1">Counterfeit </h3>
+<h4 class="product_cat1">2022 Vs 2023 </h4>
 
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1311,20 +1246,12 @@ to enlarge)</td>
           <a href="#" class="gototop">Go to Top</a>
         </div>
 
+        <h4 class="product_cat1">Annual Total and Annual Percentage of Total</h4>
 
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
-        <tr>
-          <th style="text-align:center;">Total</th>
-          <th style="text-align:center;"></th>
-        </tr>    
-        <tr>
-          <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-1-counterfeit-total-alerts-percentage.png">
-            <img src="https://rodders.me/img/all-countries-product-1-counterfeit-total-alerts-percentage.png"  ></a></td>
-          <td style="text-align:center;" ></td>
-        </tr> 
  
         <tr>
           <th style="text-align:center;">Annual Total</th>
@@ -1341,7 +1268,9 @@ to enlarge)</td>
     </div>   
     
 
-    <h2 class="product_cat1">Compulsory / Voluntary Action Required </h2>
+    <h3 class="product_cat1">Action Required</h3>
+
+    <h4 class="product_cat1">2022 Vs 2023</h4>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1353,7 +1282,7 @@ to enlarge)</td>
               <a href="#" class="gototop">Go to Top</a>
 </div>
 
-
+<h4 class="product_cat1">Annual Total / Annual Percentage of Total</h4>
 
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1361,7 +1290,7 @@ to enlarge)</td>
 
             <tr>
               <th style="text-align:center;">Annual Total</th>
-              <th style="text-align:center;">Cumulative Total and YoY Change</th>
+              <th style="text-align:center;">Annual Percentage of Total</th>
             </tr> 
             <tr>
               <td >
@@ -1377,7 +1306,8 @@ to enlarge)</td>
 
         </div>   
         
-        <h2 class="product_cat1">Compulsory / Voluntary Responsible Party</h2>
+        <h3 class="product_cat1">Responsible Party</h3>
+        <h4 class="product_cat1">2022 Vs 2023</h4>
 
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1389,7 +1319,7 @@ to enlarge)</td>
                   <a href="#" class="gototop">Go to Top</a>
 </div>
 
-
+<h4 class="product_cat1">Annual Total / Annual Percentage of Total</h4>
 
             <div class="datatable-container">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1397,7 +1327,7 @@ to enlarge)</td>
     
                 <tr>
                   <th style="text-align:center;">Annual Total</th>
-                  <th style="text-align:center;">Cumulative Total and YoY Change</th>
+                  <th style="text-align:center;">Annual Percentage of Total</th>
                 </tr> 
                 <tr>
                   <td >
@@ -1415,17 +1345,17 @@ to enlarge)</td>
 
 
 
-<h2 class="product_cat1">Top Brands for Safety Alerts</h2>
+<h3 class="product_cat1">Top Brands for Safety Alerts</h3>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 <tr >
-<th >Top 15 Brands</th>
+<th >Top 30 Brands</th>
 </tr>
 </thead>
 <tbody>
 <tr >
-<td style="text-align: center;"><a href="https://rodders.me/img/all-countries-product-1-top-15-brands-for-safety-alerts.png"><img src="https://rodders.me/img/all-countries-product-1-top-15-brands-for-safety-alerts.png" ><br>(click
+<td style="text-align: center;"><a href="https://rodders.me/img/all-countries-product-1-top-30-brands-for-safety-alerts.png"><img src="https://rodders.me/img/all-countries-product-1-top-30-brands-for-safety-alerts.png" ><br>(click
 to enlarge)</td>
 </tr>
 </tbody>
@@ -1437,8 +1367,8 @@ to enlarge)</td>
 
 <!-- Product 2 -->
 
-<h1 class="product_cat2">#3 - Top 3 Product Categories</h1>
-<h2 class="product_cat2">Total, Annual and Cumulative Alerts</h2>
+<h2 class="product_cat2">#3 - Top 3 Product Categories</h2>
+<h3 class="product_cat2">Total, Annual and Cumulative Alerts</h3>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1459,7 +1389,8 @@ to enlarge)</td>
 
     </div>
 
-<h2 class="product_cat2">Submitting Country</h2>
+<h3 class="product_cat2">Submitting Country</h3>
+<h4>2022 Vs 2023</h4>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1470,7 +1401,8 @@ to enlarge)</td>
               </td></tr></tbody></table>
               <a href="#" class="gototop">Go to Top</a>
 </div>
-    
+<h4>Annual Total and Annual Percentage of Total</h4>
+
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1491,7 +1423,9 @@ to enlarge)</td>
 
         </div>
 
-<h2 class="product_cat2">Risk Category</h2>
+<h3 class="product_cat2">Risk Category</h3>
+<h4>2022 Vs 2023</h4>
+
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1502,21 +1436,15 @@ to enlarge)</td>
         </td></tr></tbody></table>
         <a href="#" class="gototop">Go to Top</a>
 </div>
+<h4>Annual Total and Annual Percentage of Total</h4>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
-        <tr>
-          <th style="text-align:center;">Total</th>
-          <th style="text-align:center;"></th>
-        </tr>    
-        <tr>
-          <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-2-risk-category-total-alerts-percentage.png"><img src="https://rodders.me/img/all-countries-product-2-risk-category-total-alerts-percentage.png"  ></a></td>
-          <td style="text-align:center;" ></td>
-        </tr> 
+
         <tr>
           <th style="text-align:center;">Annual Total</th>
-          <th style="text-align:center;">Cumulative Total and YoY Change</th>
+          <th style="text-align:center;">Annual Percentage of Total</th>
         </tr> 
         <tr>
           <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-2-risk-category-annual-alerts.png"><img src="https://rodders.me/img/all-countries-product-2-risk-category-annual-alerts.png"  ></a></td>
@@ -1529,7 +1457,9 @@ to enlarge)</td>
 
         </div>
         
-        <h2 class="product_cat2">Counterfeit </h2>
+        <h3 class="product_cat2">Counterfeit </h3>
+        <h4>2022 Vs 2023</h4>
+
 
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1541,23 +1471,17 @@ to enlarge)</td>
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
+<h4>Annual Total and Annual Percentage of Total</h4>
+
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
-        <tr>
-          <th style="text-align:center;">Total</th>
-          <th style="text-align:center;"></th>
-        </tr>    
-        <tr>
-          <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-2-counterfeit-total-alerts-percentage.png">
-            <img src="https://rodders.me/img/all-countries-product-2-counterfeit-total-alerts-percentage.png"  ></a></td>
-          <td style="text-align:center;" ></td>
-        </tr> 
+
  
         <tr>
           <th style="text-align:center;">Annual Total</th>
-          <th style="text-align:center;">Cumulative Total and YoY Change</th>
+          <th style="text-align:center;">Annual Percentage of Total</th>
         </tr> 
         <tr>
           <td style="text-align:center;" ><a href="https://rodders.me/img/all-countries-product-2-counterfeit-annual-alerts.png"><img src="https://rodders.me/img/all-countries-product-2-counterfeit-annual-alerts.png"  ></a></td>
@@ -1570,7 +1494,8 @@ to enlarge)</td>
     </div>   
     
 
-<h2 class="product_cat2">Compulsory / Voluntary Action Required </h2>
+<h3 class="product_cat2">Action Required </h3>        
+<h4>2022 Vs 2023</h4>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1582,13 +1507,15 @@ to enlarge)</td>
               <a href="#" class="gototop">Go to Top</a>
 </div>
 
+<h4>Annual Total and Annual Percentage of Total</h4>
+
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody> 
 
             <tr>
               <th style="text-align:center;">Annual Total</th>
-              <th style="text-align:center;">Cumulative Total and YoY Change</th>
+              <th style="text-align:center;">Annual Percentage of Total</th>
             </tr> 
             <tr>
               <td >
@@ -1604,7 +1531,9 @@ to enlarge)</td>
 
         </div>   
         
-<h2 class="product_cat2">Compulsory / Voluntary Responsible Party</h2>
+<h3 class="product_cat2">Responsible Party</h3>
+<h4>2022 Vs 2023</h4>
+
 
         <div class="datatable-container">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1616,13 +1545,15 @@ to enlarge)</td>
                   <a href="#" class="gototop">Go to Top</a>
 </div>
 
+<h4>Annual Total and Annual Percentage of Total</h4>
+
         <div class="datatable-container">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
               <tbody> 
     
                 <tr>
                   <th style="text-align:center;">Annual Total</th>
-                  <th style="text-align:center;">Cumulative Total and YoY Change</th>
+                  <th style="text-align:center;">Annual Percentage of Total</th>
                 </tr> 
                 <tr>
                   <td >
@@ -1640,21 +1571,22 @@ to enlarge)</td>
 
 
 
-<h2 class="product_cat2">Top Brands for Safety Alerts</h2>
+<h3 class="product_cat2">Top Brands for Safety Alerts</h3>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 <tr >
-<th >Top 15 Brands</th>
+<th >Top 30 Brands</th>
 </tr>
 </thead>
 <tbody>
 <tr >
-<td style="text-align: center;"><a href="https://rodders.me/img/all-countries-product-2-top-15-brands-for-safety-alerts.png"><img src="https://rodders.me/img/all-countries-product-2-top-15-brands-for-safety-alerts.png" ><br>(click
-to enlarge)</td>
+<td style="text-align: center;"><a href="https://rodders.me/img/all-countries-product-2-top-30-brands-for-safety-alerts.png"><img src="https://rodders.me/img/all-countries-product-2-top-30-brands-for-safety-alerts.png" ></td>
 </tr>
 </tbody>
 </table>
+<a href="#" class="gototop">Go to Top</a>
+
 </div>
 
 

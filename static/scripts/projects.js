@@ -1,3 +1,5 @@
+
+
 function getUrlParameter(name) {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
@@ -15,13 +17,14 @@ const params = currentUrl.searchParams;
 const paramName = 'country1';
 const defaultValue = 'all-countries';
 
+if (!document.body.classList.contains("exclude-page")) {
 if (!params.has(paramName)) {
     params.set(paramName, defaultValue);
     // Redirect to the new URL with the default parameter
     window.location.href = currentUrl.toString();
 }
 
-
+}
 function generateToC() {
     const toc = document.createElement('ul');
     const container = document.getElementById('tableOfContents');
@@ -112,15 +115,18 @@ function capitalizeFirstLetter(string) {
 
   
 async function updateContent() {
-        // var country1 = getUrlParameter('country1');
-        const country = capitalizeFirstLetter(country1);
-        
+    // var country1 = getUrlParameter('country1');
+    const country = capitalizeFirstLetter(country1);
+    if (!document.body.classList.contains("exclude-page")) {
         await updateImageSources(country1);
-        await updateHeadingsWithPrefix(country);
-        await update_product_cat(); // Updates class=product_catn where n = a number
         await updateHrefsWithPrefix(country1);
-        await generateToC();
-        // Await more updates if necessary
+        await update_product_cat(); // Updates class=product_catn where n = a number
+
+
+    }        
+    await updateHeadingsWithPrefix(country);
+    await generateToC();
+    // Await more updates if necessary
     
     }
 updateContent();
