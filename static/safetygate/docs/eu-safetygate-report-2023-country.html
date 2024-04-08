@@ -14,26 +14,7 @@
 <title>eu-safetygate-report-2023</title>
 
 </head>
-<style>
-  .toolbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 100;
-  }
-  .tippy-box[data-theme~='tomato'] {
-      background-color: tomato;
-      color: yellow;
-      }
-  body {
-    padding-top: 50px; /* Adjust based on the toolbar's height to avoid content being hidden behind it */
-  }
-    </style>
+
 <body>
 
   <div class="page-container">
@@ -71,21 +52,21 @@
                     
                       <div class="submenu">
                           <a href="eu-safetygate-report-2023-country.html?country1=china">China Report Card</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=france">France</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=germany">Germany</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=india">India</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=italy">Italy</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=japan">Japan</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=poland">Poland</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=netherlands">The Netherlands</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=spain">Spain</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=sweden">Sweden</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=taiwan">Taiwan</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=turkey">Turkey</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=uk">UK</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=usa">USA</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=unknown">Unknown</a>
-                          <a href="eu-safetygate-report-2023-country.html?country1=other">Other not top 15</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=france">France Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=germany">Germany Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=india">India Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=italy">Italy Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=japan">Japan Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=poland">Poland Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=netherlands">The Netherlands Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=spain">Spain Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=sweden">Sweden Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=taiwan">Taiwan Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=turkey">Turkey Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=uk">UK Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=usa">USA Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=unknown">Unknown Report Card</a>
+                          <a href="eu-safetygate-report-2023-country.html?country1=other">Other not top 15 Report Card</a>
                         </div>
                       </div>
             </td>
@@ -187,7 +168,7 @@
 
 <h3 class="ChangeCountry">Top3 Product Category and Risk</h3>
 
-<div class="datatable-container">
+<div class="datatable-container" id="Countrytop3">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -249,7 +230,7 @@
       <th style="text-align:center;">2022 Vs 2023</th>
     </tr> 
     <tr>
-      <td style="text-align:center;" id="isk-category-percentag"><a href="https://rodders.me/img/all-risk-category-total-alerts-percentage.png"><img src="https://rodders.me/img/risk-category-total-alerts-percentage.png" class="change" ></a></td>
+      <td style="text-align:center;" id="risk-category-percentage"><a href="https://rodders.me/img/all-risk-category-total-alerts-percentage.png"><img src="https://rodders.me/img/risk-category-total-alerts-percentage.png" class="change" ></a></td>
       <td style="text-align:center;" id="risk-category-2022vs2023"><a href="https://rodders.me/img/all-risk-category-2022-vs-2023.png"><img src="https://rodders.me/img/risk-category-2022-vs-2023.png" class="change" ></a></td>
   </tr>
 </tbody>
@@ -1093,6 +1074,9 @@
   tippy('#CompareCountries', {content: 'Select any two countries and click compare to view the visualisations side by side.', theme: 'tomato'});
   tippy('#JumptoSection', {content: 'Select a section to jump to.', theme: 'tomato'});
   tippy('#CountryReport', {content: 'Select a Country to view a detailed report or compare countries.', theme: 'tomato', placement: 'left',});
+
+  tippy('#Countrytop3', {content: 'Top3 Product and Risk Categories for country.', theme: 'tomato', placement: 'left',});
+
 
   tippy('#country-total-alerts-vs-row', {content: 'Percentage of safety alerts issued to Country of Product Origin Vs Rest of the world.', theme: 'tomato'});
   tippy('#country-2022vs2023', {content: '2022 Vs 2023 comparison of percentage of safety alerts issued to Country of Product Origin Vs Rest of the world.', theme: 'tomato'});

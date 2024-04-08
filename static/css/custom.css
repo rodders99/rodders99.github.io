@@ -51,3 +51,8 @@ body {
     text-align: center;
     z-index: 100;
   }
+
+  .tippy-box[data-theme~='tomato'] {
+    background-color: tomato;
+    color: yellow;
+    }
