@@ -17,7 +17,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2px;
-    padding-top: 50px; /* Adjust based on the toolbar's height to avoid content being hidden behind it */
+    padding-top: 52px; /* Adjust based on the toolbar's height to avoid content being hidden behind it */
     
 }
 
