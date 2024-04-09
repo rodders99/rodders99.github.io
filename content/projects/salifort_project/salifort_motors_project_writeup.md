@@ -23,7 +23,9 @@ suggestions for the HR team to implement to improve employee retention.
 
 The estimated cost of lost employees to the client is in the order of $42m for 2022, for 1,991 employees who left employment in 2022, representing 20% of all employees (10,000).
 
-The project was completed using the PACE framework and the conclusion was a number of recommendations for the team at Salifort Motors aimed at improving employee retention.
+The project was completed using the PACE framework and the conclusion was :
+- A Machine Learning model that can 
+- a number of recommendations for the team at Salifort Motors aimed at improving employee retention.
 
 As a capstone project, this was a great opportunity for me  to develop tools and workflows for a data 
 analysis project. While the project only requires a solution with one model, I wanted to see how the 
