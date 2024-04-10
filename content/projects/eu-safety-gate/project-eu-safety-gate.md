@@ -1,14 +1,15 @@
-+++ 
-draft = false
-date = 2024-03-02T09:57:08Z
++++
 title = "EU SafetyGate Report 2023"
+date = 2024-03-02T09:15:27.561Z
 description = "Analysis of EU SafetyGate data"
+draft = false
 slug = ""
-authors = ["Rodders"]
-tags = ["Python", "R", "Pandas", "Numpy", "Matplotlib"]
-categories = []
+authors = [ "Rodders" ]
+tags = [ "Python", "R", "Pandas", "Numpy", "Matplotlib" ]
+categories = [ ]
 externalLink = ""
-series = []
+series = [ ]
+preview = "/img/Safety_Gate_Logo.png"
 +++
 
 ![Safety Gate Logo](https://rodders.me/img/Safety_Gate_Logo.png)

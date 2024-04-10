@@ -1,6 +1,7 @@
 ---
-title: Salifort Motors Project
+title: Salifort Motors - Google Advanced Analytics Capstone Project
 description: Google Advanced Data Analytics Capstone Project
+date: 2024-02-10
 keywords:
     - Google
     - Data Analytics
@@ -9,10 +10,11 @@ keywords:
     - Machine Learning
 slug: Salifort Motors
 draft: false
-banner: /img/salifort_logo.png
+preview: /img/salifort_project/salifort_logo.png
+banner: /img/salifort_project/salifort_logo.png
 ---
 
-![Salifort Logo](/img/salifort_logo.png)
+![Salifort Logo](/salifort_project/img/salifort_logo.png)
 
 ## Google Advanced Data Analytics Capstone Project - Salifort Motors
 
@@ -24,6 +26,7 @@ suggestions for the HR team to implement to improve employee retention.
 The estimated cost of lost employees to the client is in the order of $42m for 2022, for 1,991 employees who left employment in 2022, representing 20% of all employees (10,000).
 
 The project was completed using the PACE framework and the conclusion was :
+
 - A Machine Learning model that can 
 - a number of recommendations for the team at Salifort Motors aimed at improving employee retention.
 
@@ -35,56 +38,52 @@ A typical Data Analysis project would decide on a single model and stick with it
 
 ### Client Documentation
 
-#### [Client Proposal]({{< notebook cd_01_Salifort_Motors_project-PROPOSAL.html >}})
+- [Client Proposal](/salifort_project/docs/cd_01_Salifort_Motors_project-PROPOSAL.html)
 
-This details a typical client proposal for the work that needs to be carried out.
+    This details a typical client proposal for the work that needs to be carried out.
 
-#### [PACE Framework]({{< notebook cd_02_Salifort_Motors_PACE_Plan.html >}})
+- [PACE Framework](/salifort_project/docs/cd_02_Salifort_Motors_PACE_Plan.html)
+- [Executive Summary](/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html)
 
-#### [Executive Summary]({{< notebook cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html >}})
+- [HR Summary](/salifort_project/docs/cd_05_Salifort_Motors_HR_SUMMARY.html)
 
-#### [HR Summary]({{< notebook cd_05_Salifort_Motors_HR_SUMMARY.html >}})
+- [HR Summary Notebook for discussion](/salifort_project/docs/HR_Summary_Notebook.html)
 
-##### [HR Summary Notebook for discussion]({{< notebook HR_Summary_Notebook.html >}})
-
-#### [Team Summary]({{< notebook cd_06_Salifort_Motors_TEAM_SUMMARY.html >}} )
+- [Team Summary](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.html)
 
 Generates a report for each department
 
-##### [Example Team Summary Notebook (Plots for presentations)]({{< notebook cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html >}} )
+- [Example Team Summary Notebook (Plots for presentations)](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html)
 
 An example of the generated Team report
 
-#### [Analyst Report]({{< notebook cd_03_Salifort_Motors_Analyst_SUMMARY.html >}})
+- [Analyst Report](/salifort_project/docs/cd_03_Salifort_Motors_Analyst_SUMMARY.html)
 
-
-
-#### [Project Close]({{< notebook cd_99_Salifort_Motors_Project_Close.html >}})
+- [Project Close](/salifort_project/docs/cd_99_Salifort_Motors_Project_Close.html)
 
 ### Analyst's Project Notebooks
 
-#### [Salifort Project - Data Cleanse Ops]({{< notebook nb_03_Salifort_Motors_project_EDA_cleanse.html >}})
+- [Salifort Project - Data Cleanse Ops](/salifort_project/docs/nb_03_Salifort_Motors_project_EDA_cleanse.html)
 
-#### [Salifort Project - EDA Analysis Ops]({{< notebook nb_04_Salifort_Motors_project_EDA_ANALYSIS.html >}})
+- [Salifort Project - EDA Analysis Ops](/salifort_project/docs/nb_04_Salifort_Motors_project_EDA_ANALYSIS.html)
 
-#### [Salifort Project - Feature Engineering]({{< notebook nb_05_Salifort_Motors_project_Feature_Engineering.html >}})
+- [Salifort Project - Feature Engineering](/salifort_project/docs/nb_05_Salifort_Motors_project_Feature_Engineering.html)
 
-#### [Salifort Project - Logistical Regression Modelling]({{< notebook nb_06_Salifort_Motors_project_Logistic_Regression_Model.html >}})
+- [Salifort Project - Logistical Regression Modelling](/salifort_project/docs/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html)
 
-#### [Salifort Project - Decision Tree Modelling]({{< notebook nb_07_Salifort_Motors_project_Decision_Tree_Model.html >}})
+- [Salifort Project - Decision Tree Modelling](/salifort_project/docs/nb_07_Salifort_Motors_project_Decision_Tree_Model.html)
 
+- [Salifort Project - XGBoost Modelling](/salifort_project/docs/nb_08_Salifort_Motors_project_XGBoost_Model.html)
 
-#### [Salifort Project - Random Forest Modelling]({{< notebook nb_08_Salifort_Motors_project_XGBoost_Model.html >}})
+- [Salifort Project - Random Forest Modelling](/salifort_project/docs/nb_09_Salifort_Motors_project_Random_Forest_Model.html)
 
-#### [Salifort Project - Random Forest Modelling]({{< notebook nb_09_Salifort_Motors_project_Random_Forest_Model.html >}})
+- [Salifort Project - Model Comparisons](/salifort_project/docs/nb_11_Salifort_Motors_project_Model_Comparisons.html)
 
-#### [Salifort Project - Model Comparisons]({{< notebook nb_11_Salifort_Motors_project_Model_Comparisons.html >}})
+- [Salifort Project - Demonstration Model](/salifort_project/docs/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html)
 
-#### [Salifort Project - Demonstration Model]({{< notebook nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html >}})
+### About this project structure
 
-## About this project structure
-
-### Methods
+#### Methods
 
 Since this is for educational purposes I set out with a number of goals additional to the project objective:
 
@@ -246,9 +245,9 @@ The HR dataset is processed through the models and columns added with prediction
 
 This is a template that can be customised by the HR Team for each team manager. By simply changing one variable for the team an entire report can be generated, saving the HR team a lot of time prepapring for meetings with team managers.
 
-#### [Salifort Project - Team Summary Jupyter Notebook]({{< notebook Activity_6a_Salifort_Motors_TEAM_SUMMARY.html >}})
+#### [Salifort Project - Team Summary Jupyter Notebook](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.html)
 
-This notebook provides two elements to the team manager : 
+This notebook provides two elements to the team manager :
 
 takes the variable for the team and applies a series of code cells to present the team's employee data as a series of comparative plots that demonstrate these metrics side by side for the company, the employees in that team that left and the current employees along with indicators across all plots for the average for the company.
 

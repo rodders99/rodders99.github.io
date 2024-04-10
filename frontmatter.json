@@ -1,0 +1,81 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "datetime"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "fields",
+          "fields": []
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "authors",
+          "name": "authors",
+          "type": "choice",
+          "choices": [
+            "Rodders"
+          ]
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "externalLink",
+          "name": "externalLink",
+          "type": "string"
+        },
+        {
+          "title": "series",
+          "name": "series",
+          "type": "fields",
+          "fields": []
+        }
+      ]
+    }
+  ],
+  "frontMatter.website.host": "https://rodders99.github.io",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "about",
+      "path": "[[workspace]]/content/about"
+    },
+    {
+      "title": "contact",
+      "path": "[[workspace]]/content/contact"
+    },
+    {
+      "path": "[[workspace]]/content/projects",
+      "title": "projects"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/content/posts"
+    }
+  ]
+}
