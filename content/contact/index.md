@@ -3,7 +3,7 @@ title = "Contact"
 id = "contact"
 +++
 
-# How can I help you?
+## How can I help you?
 
 Get in contact, lets have a chat
 
@@ -25,6 +25,6 @@ Get in contact, lets have a chat
 
 {{< rawhtml >}}
 
-<table><tr><td>table woo</td></tr></table>
+
 
 {{</ rawhtml >}}
