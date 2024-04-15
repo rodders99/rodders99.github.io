@@ -7,7 +7,6 @@ id = "contact"
 
 Get in contact, lets have a chat
 
-
 {{< fa phone >}} {{< rawhtml >}}
 
 <a href="tel:+44 788 757 0820">+44 788 757 0820</a>
@@ -22,9 +21,6 @@ Get in contact, lets have a chat
 
 {{< fa fab linkedin >}} https://linkedin.com/rod-slater-uk
 
-
 {{< rawhtml >}}
-
-
 
 {{</ rawhtml >}}

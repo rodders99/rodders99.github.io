@@ -211,3 +211,169 @@
 [W 2024-04-06 12:18:01.913 ServerApp] 403 GET /api/kernelspecs?1712402281905 (@127.0.0.1) 1.27ms referer=None
 [I 2024-04-06 12:18:05.950 ServerApp] User 53fbc83d543b41058794970421bbab0e logged in.
 [I 2024-04-06 12:18:05.950 ServerApp] 302 POST /login? (53fbc83d543b41058794970421bbab0e@127.0.0.1) 321.94ms
+[W 2024-04-11 14:33:20.125 ServerApp] 404 GET /hub/api (@127.0.0.1) 1.13ms referer=None
+[W 2024-04-11 14:33:20.158 ServerApp] 404 GET /hub/api (@127.0.0.1) 1.10ms referer=None
+[W 2024-04-11 14:33:20.160 ServerApp] 404 GET /hub/api (@127.0.0.1) 0.95ms referer=None
+[W 2024-04-11 14:33:20.160 ServerApp] 404 GET /hub/api (@127.0.0.1) 1.47ms referer=None
+[W 2024-04-11 14:33:20.194 ServerApp] 404 GET /tree? (@127.0.0.1) 1.10ms referer=None
+[W 2024-04-11 14:33:20.290 ServerApp] 404 GET /tree? (@127.0.0.1) 0.97ms referer=None
+[W 2024-04-11 14:33:20.292 ServerApp] 404 GET /tree? (@127.0.0.1) 0.75ms referer=None
+[W 2024-04-11 14:33:20.293 ServerApp] 404 GET /tree? (@127.0.0.1) 0.79ms referer=None
+[W 2024-04-11 14:33:20.504 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:20.504 ServerApp] 403 GET /api/kernelspecs?1712842400300 (@127.0.0.1) 1.17ms referer=None
+[W 2024-04-11 14:33:20.506 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:20.507 ServerApp] 403 GET /api/kernels?1712842400305 (@127.0.0.1) 1.01ms referer=None
+[W 2024-04-11 14:33:20.507 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:20.508 ServerApp] 403 GET /api/kernelspecs?1712842400311 (@127.0.0.1) 1.03ms referer=None
+[W 2024-04-11 14:33:20.508 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:20.509 ServerApp] 403 GET /api/kernels?1712842400313 (@127.0.0.1) 1.00ms referer=None
+[W 2024-04-11 14:33:20.510 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:20.511 ServerApp] 403 GET /api/kernels?1712842400319 (@127.0.0.1) 1.54ms referer=None
+[W 2024-04-11 14:33:20.511 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:20.511 ServerApp] 403 GET /api/sessions?1712842400321 (@127.0.0.1) 2.14ms referer=None
+[W 2024-04-11 14:33:20.512 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:20.512 ServerApp] 403 GET /api/kernels?1712842400323 (@127.0.0.1) 2.75ms referer=None
+[W 2024-04-11 14:33:20.513 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:20.513 ServerApp] 403 GET /api/sessions?1712842400324 (@127.0.0.1) 3.69ms referer=None
+[W 2024-04-11 14:33:21.174 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:21.175 ServerApp] 403 GET /api/kernelspecs?1712842401091 (@127.0.0.1) 1.15ms referer=None
+[W 2024-04-11 14:33:21.175 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:21.176 ServerApp] 403 GET /api/kernels?1712842401092 (@127.0.0.1) 1.01ms referer=None
+[W 2024-04-11 14:33:21.461 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:21.462 ServerApp] 403 GET /api/kernels?1712842401178 (@127.0.0.1) 1.12ms referer=None
+[W 2024-04-11 14:33:21.463 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:21.463 ServerApp] 403 GET /api/sessions?1712842401179 (@127.0.0.1) 0.96ms referer=None
+[W 2024-04-11 14:33:21.584 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 1784, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/tornado/web.py", line 3278, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/home/hass/base/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 761, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2024-04-11 14:33:21.585 ServerApp] 403 GET /api/kernelspecs?1712842401464 (@127.0.0.1) 1.14ms referer=None
+[I 2024-04-11 14:33:24.314 ServerApp] User d24849ad4de04d14a6d904af2361fc92 logged in.
+[I 2024-04-11 14:33:24.315 ServerApp] 302 POST /login? (d24849ad4de04d14a6d904af2361fc92@127.0.0.1) 251.93ms

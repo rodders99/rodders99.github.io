@@ -39,6 +39,10 @@ It is an interesting look into the world of dangerous and non compliant products
 2) Country level analysis is not available for the EU Safety Gate Data (I couldn't find any, it may exist), while there is an annual summary report, it's a bit scant on details!
 3) I'm interested in the idea of low CO2 dashboards - which are dashboards with pre rendered visualisations, reducing cloud processing energy and cost requirements.
 
+### Project README.md
+
+
+
 ### Analysts Notes
 
 - [EU Safetygate Meta Data Overview](/safetygate/docs/eu-safetygate-report-2023-meta-data.html)

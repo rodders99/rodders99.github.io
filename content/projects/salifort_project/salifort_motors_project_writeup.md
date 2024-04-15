@@ -43,7 +43,9 @@ A typical Data Analysis project would decide on a single model and stick with it
     This details a typical client proposal for the work that needs to be carried out.
 
 - [PACE Framework](/salifort_project/docs/cd_02_Salifort_Motors_PACE_Plan.html)
-- [Executive Summary](/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html)
+- [Executive Summary Analysis](/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html)
+
+- [Executive Summary Presentation](/salifort_project/presentation/cd_05a_executive_summary_slides_marp.html)
 
 - [HR Summary](/salifort_project/docs/cd_05_Salifort_Motors_HR_SUMMARY.html)
 
