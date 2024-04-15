@@ -20,19 +20,26 @@ banner: /img/salifort_project/salifort_logo.png
 
 ### Overview
 
-Salifort Motors (The Client) is a fictitious company experiencing significant loss of employees. They have created a project team to provide data driven 
-suggestions for the HR team to implement to improve employee retention.
+Salifort Motors (The Client) is a fictitious company experiencing significant loss of employees.
+They have created a project team to provide data driven suggestions for the HR team to implement to
+improve employee retention.
 
-The estimated cost of lost employees to the client is in the order of $42m for 2022, for 1,991 employees who left employment in 2022, representing 20% of all employees (10,000).
+The estimated cost of lost employees to the client is in the order of £42m for 2022, for 1,991
+employees who left employment in 2022, representing 20% of all employees (10,000).
 
-The project was completed using the PACE framework and the conclusion was :
+The project was completed using the PACE framework and the conclusions were :
 
-- A Machine Learning model that can 
+- A Machine Learning model that can make predictions on the probability of an employee leaving
 - a number of recommendations for the team at Salifort Motors aimed at improving employee retention.
 
-As a capstone project, this was a great opportunity for me  to develop tools and workflows for a data 
-analysis project. While the project only requires a solution with one model, I wanted to see how the 
-models compared, which is why this is such a large document.
+```
+As a capstone project, this was a great opportunity for me  
+to develop tools and workflows for a data analysis project. 
+
+While the project only requires a solution with one model, 
+I wanted to see how the models compared, which is why this 
+is such a large document. 
+```
 
 A typical Data Analysis project would decide on a single model and stick with it!
 
@@ -43,11 +50,12 @@ A typical Data Analysis project would decide on a single model and stick with it
     This details a typical client proposal for the work that needs to be carried out.
 
 - [PACE Framework](/salifort_project/docs/cd_02_Salifort_Motors_PACE_Plan.html)
+
 - [Executive Summary Analysis](/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html)
+  - [HR Summary Presentation](/salifort_project/presentation/cd_04a_executive_summary_slides_marp.html)
 
-- [Executive Summary Presentation](/salifort_project/presentation/cd_05a_executive_summary_slides_marp.html)
-
-- [HR Summary](/salifort_project/docs/cd_05_Salifort_Motors_HR_SUMMARY.html)
+- [HR Summary Analysis](/salifort_project/docs/cd_04a_Salifort_Motors_EXECUTIVE_SUMMARY_PRESENTATION)
+  - [HR Summary Presentation](/salifort_project/presentation/cd_05a_Salifort_Motors_HR_SUMMARY_PRESENTATION.html)
 
 - [HR Summary Notebook for discussion](/salifort_project/docs/HR_Summary_Notebook.html)
 
@@ -105,7 +113,7 @@ Outside of the typical functions (load, save, etc), functions were created for v
 
 Reporting functions.
 
-**eda_single(dataframe: object, var: str, decplace:int):**
+**```eda_single(dataframe: object, var: str, decplace:int)```:**
 
     Return a df summary of the EDA variable.
     in  : dataframe: Object = The dataframe to EDA
@@ -113,7 +121,7 @@ Reporting functions.
           decplace: int     = Number of decimal place for pandas.options.display.float_format # to be removed
     out : dataframe summary of the variable 
 
-**eda_dual(dataframe: object, var1: str, var2: str, decplace: int):**
+**```eda_dual(dataframe: object, var1: str, var2: str, decplace: int)```:**
 
     Return a df summary of the EDA variable.
     in  : dataframe: Object = The dataframe to EDA
@@ -122,7 +130,7 @@ Reporting functions.
           decplace: int     = Number of decimal place for pandas.options.display.float_format # to be removed
     out : dataframe grouped by summary of the variable 
 
-**eda_single_bins(dataframe: object, var: str, bins: list, labels: list, decplace: int):**
+**```eda_single_bins(dataframe: object, var: str, bins: list, labels: list, decplace: int)```:**
 
     Return a BINNED df summary of the EDA variable.
     in  : dataframe: Object = The dataframe to EDA
@@ -134,14 +142,14 @@ Reporting functions.
 
 Various visualisation functions.
 
-**correlation_single(dataframe: object, var: str):**
+**```correlation_single(dataframe: object, var: str)```:**
 
     Return a single row from the correlation plot.
     in  : dataframe: Object = The dataframe to EDA
           var: String       = variable to summarise
     out : correlation heatmap plot
 
-**quadplot(dataframe:object, var:str, annotate:bool):**
+**```quadplot(dataframe:object, var:str, annotate:bool)```:**
 
     Quad plot 2x2 histogram, heatmap, barplot, violinplot,
     in  : dataframe     : Object        = Dataframe to analyse
@@ -149,7 +157,7 @@ Various visualisation functions.
         : annotate      : Bool          = Annotate the heatmap (if lots of data select False) True / False
     out : 4 x plots of the variable.
 
-**scatplot_single(dataframe: object, x_var: str, y_var: str):**
+**```scatplot_single(dataframe: object, x_var: str, y_var: str)```:**
 
     Create scatterplot of two variables,
     in  : dataframe : Object = Dataframe to analyse
@@ -157,7 +165,7 @@ Various visualisation functions.
         : y_var     : Str    = Second variable to plot on y-axis
     out : single scatterplot
 
-**scatplot_multi(dataframe: object, var1: str):**
+**```scatplot_multi(dataframe: object, var1: str)```:**
 
     Create scatterplots of one variable against all variables in dataframe,
     in  : dataframe : Object = Dataframe to analyse
@@ -166,8 +174,8 @@ Various visualisation functions.
 
 ##### For modelling
 
-**make_results(model_name: str, model_object: object, X_var: str, y_var: str, y_pred_var: str):**
-    '''
+**```make_results(model_name: str, model_object: object, X_var: str, y_var: str, y_pred_var: str) ```:**
+
     Returns a pandas df with the F1, recall, precision, and accuracy scores
     for the model with the best mean F1 score across all validation folds.
 
@@ -180,7 +188,7 @@ Various visualisation functions.
 
     Out: pandas df containing precision, recall, f1, accuracy, and AUC scores of the models
 
-**format_GS_results(model_name:str, model_object, metric:str):**
+**```format_GS_results(model_name:str, model_object, metric:str)```:**
 
     Returns a pandas df with the F1, recall, precision, accuracy, and auc scores
     from the GridSearch.
@@ -190,7 +198,7 @@ Various visualisation functions.
         model_object: a fit GridSearchCV object from test data
         metric (string): precision, recall, f1, accuracy, or auc
 
-**classification_report_summary(name:str, y_var:str, y_pred_var:str):**
+**```classification_report_summary(name:str, y_var:str, y_pred_var:str)```:**
 
     Gather stats from predictions and format into a report
 
@@ -210,13 +218,13 @@ Compare model performances across the most common models Logistical Regression, 
 Compare the effect on model performance of using the complete dataset and a feature engineered version  where features that had very low or no correlation were removed.
       - In this project it was mainly the departments the employee worked in that had little bearing on the results.
   
-Two datasets were created <code>AllFeat</code> which had all of the dataset features with and <code>NoDept</code> which had the departments removed.
+Two datasets were created <code>AllFeat</code> which had all of the dataset features,  and <code>NoDept</code> which had the departments removed.
 
 Each model was created, trained, used for predictions and scored. These scores were stored in Results.csv
   
 #### Goal 5
 
-Create working demonstrations of the models to give 'live' performance comparisons that would be easier to understand for the client's team. e.g.  rather than presenting F1 scores, AUC, Precision, etc. I can present an example where the model has been applied and a prediction given. 
+Create working demonstrations of the models to give 'live' performance comparisons that would be easier to understand for the client's team. e.g.  rather than presenting F1 scores, AUC, Precision, etc. I can present an example where the model has been applied and a prediction given.
 
 Four examples were developed and can be found in the following notebooks:
 
