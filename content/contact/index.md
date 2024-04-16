@@ -19,7 +19,7 @@ Get in contact, lets have a chat
 
 {{< fa globe >}} https://rodders99.github.io
 
-{{< fa fab linkedin >}} https://linkedin.com/rod-slater-uk
+{{< fa fab linkedin >}} https://www.linkedin.com/in/rod-slater-uk/
 
 {{< rawhtml >}}
 

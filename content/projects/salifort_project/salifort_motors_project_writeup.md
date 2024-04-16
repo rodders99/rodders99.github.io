@@ -52,9 +52,9 @@ A typical Data Analysis project would decide on a single model and stick with it
 - [PACE Framework](/salifort_project/docs/cd_02_Salifort_Motors_PACE_Plan.html)
 
 - [Executive Summary Analysis](/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html)
-  - [HR Summary Presentation](/salifort_project/presentation/cd_04a_executive_summary_slides_marp.html)
+  - [Executive Summary Presentation](/salifort_project/presentation/cd_04a_Salifort_Motors_EXECUTIVE_SUMMARY_PRESENTATION.html)
 
-- [HR Summary Analysis](/salifort_project/docs/cd_04a_Salifort_Motors_EXECUTIVE_SUMMARY_PRESENTATION)
+- [HR Summary Analysis](/salifort_project/docs/cd_05_Salifort_Motors_HR_SUMMARY.html)
   - [HR Summary Presentation](/salifort_project/presentation/cd_05a_Salifort_Motors_HR_SUMMARY_PRESENTATION.html)
 
 - [HR Summary Notebook for discussion](/salifort_project/docs/HR_Summary_Notebook.html)

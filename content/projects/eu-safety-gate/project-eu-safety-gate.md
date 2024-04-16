@@ -53,17 +53,17 @@ It is an interesting look into the world of dangerous and non compliant products
 
 Top Level analysis of the 2022 - 2023 dataset with visualisations for totals / 2022 Vs 2023 along with top 3 risk and product category visualisations for each country of product origin.
 
-- [Safety Gate Detailed Summary](/safetygate/docs/eu-safetygate-report-2023-detail.html)
+- [Safety Gate Detailed Summary for 2023](/safetygate/docs/eu-safetygate-report-2023-detail-2023.html)
 
 ### Safety Gate Summary Analysis
 
 Top Level analysis of the entire dataset with visualisations for total alerts issued / 2022 Vs 2023 along with top 3 risk and product category visualisations for each country of product origin.
 
-- [Safety Gate Detailed Summary](/safetygate/docs/eu-safetygate-report-2023-all.html)
+- [Safety Gate Detailed Summary for entire dataset](/safetygate/docs/eu-safetygate-report-2023-all.html)
 
 ### Safety Gate Compare Countries
 
-- [Compare Countries](eu-safetygate-report-2023-comparison.html?country1=france&country2=germany)
+- [Compare Countries](/safetygate/docs/eu-safetygate-report-2023-comparison.html?country1=france&country2=germany)
 
 ### Country of Origin Report
 
@@ -141,4 +141,4 @@ licence](https://creativecommons.org/licenses/by/4.0/).
 This means that reuse is allowed provided appropriate credit is given and any changes are indicated.
 
 Since this entire analysis is based on data from the EU, and I have used visualisations from the official annual summary as inspiration for the programmatically created version of these visualisations,
-the creative commons license applies this work hosted on [rodders99.github.io](rodders99.github.io), this means that reuse of this analysis and it's visualisations is allowed provided appropriate credit is given and any changes are indicated.
+the creative commons license applies this work hosted on [rodders99.github.io](https://rodders99.github.io), this means that reuse of this analysis and it's visualisations is allowed provided appropriate credit is given and any changes are indicated.

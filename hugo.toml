@@ -47,10 +47,10 @@ style = "github-dark"
   weight = 1
   url = "https://github.com/rodders99"
 [[params.social]]
-  name = "LlinkedIn"
+  name = "LinkedIn"
   icon = "fa-brands fa-linkedin fa-2x"
   weight = 2
-  url = " https://linkedin.com/rod-slater-uk"
+  url = "https://www.linkedin.com/in/rod-slater-uk/"
 # [[params.social]]
 #   name = "Twitter"
 #   icon = "fa-brands fa-x-twitter fa-2x"
