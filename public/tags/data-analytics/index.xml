@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data analytics on Rodders</title>
+    <link>https://rodders.me/tags/data-analytics/</link>
+    <description>Recent content in data analytics on Rodders</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/data-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DVLA Data - Google Data Analytics Portfolio Project</title>
+      <link>https://rodders.me/projects/dvla-data-google-analytics/google-data-analytics-portfolio-project-dvla-data/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/dvla-data-google-analytics/google-data-analytics-portfolio-project-dvla-data/</guid>
+      <description>Course Portfolio Project Link to heading For the completion stage of the Google Data Analytics Specialisation course we were asked to complete a data analysis project from start to finish. This allowed me to apply much of the lessons learned during the course to something I had some passion about: sustainable energy and transportation. Specifically looking at the adoption of Electric Vehicles in the UK, which in turn led me on to the broader issues of media messaging around this topic, which has become a separate topic, the bot is running as you read this.</description>
+    </item>
+    
+  </channel>
+</rss>

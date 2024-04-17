@@ -1,3 +1,5 @@
 .history
 .vscode
 resources/_gen
+*.jpg
+*.png

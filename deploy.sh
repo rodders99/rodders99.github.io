@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "pwd : %B_S-krQw4My)7]"
+USER=u115952086
+HOST=access1001100812.webspace-data.io
+DIR=www/   # the directory where your web site files should go
+
+hugo && rsync -avz --delete public/ ${USER}@${HOST}:~/${DIR} # this will delete everything on the server that's not in the local public folder 
+
+exit 0

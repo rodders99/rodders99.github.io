@@ -12,7 +12,7 @@ series = [ ]
 preview = "/img/Safety_Gate_Logo.png"
 +++
 
-![Safety Gate Logo](https://rodders.me/img/Safety_Gate_Logo.png)
+![Safety Gate Logo](https://rodders.me/safetygate/img/Safety_Gate_Logo.png)
 
 ## The EU Safety Gate project
 
@@ -41,13 +41,11 @@ It is an interesting look into the world of dangerous and non compliant products
 
 ### Project README.md
 
-
-
 ### Analysts Notes
 
 - [EU Safetygate Meta Data Overview](/safetygate/docs/eu-safetygate-report-2023-meta-data.html)
 - [EU Safetygate Feature Engineering](/safetygate/docs/eu-safetygate-report-2023-feature-engineering.html)
-- [EU Safetygate Visalisations Plan ](/safetygate/docs/eu-safetygate-report-2023-plot-plan.html)
+- [EU Safetygate Visualisations Plan](/safetygate/docs/eu-safetygate-report-2023-plot-plan.html)
 
 ### Safety Gate 2023 Analysis
 
@@ -71,13 +69,13 @@ A detailed analysis with extensive visualisations of all key features of the dat
 
 | | | | |
 | :-: |  :-: | :-: | :-: |
-|[![China Flag](https://rodders.me/img/icons/china-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=china)|[![France flag](https://rodders.me/img/icons/france-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=france)|[![India flag](https://rodders.me/img/icons/india-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=india)|[![Italy flag](https://rodders.me/img/icons/italy-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=italy)
+|[![China Flag](https://rodders.me/safetygate/img/icons/china-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=china)|[![France flag](https://rodders.me/safetygate/img/icons/france-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=france)|[![India flag](https://rodders.me/safetygate/img/icons/india-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=india)|[![Italy flag](https://rodders.me/safetygate/img/icons/italy-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=italy)
 |[China](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=china)|[France](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=france)|[India](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=india)| [Italy](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=italy)
-|[![Japan Flag](https://rodders.me/img/icons/japan-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=japan)|[![Netherlands flag](https://rodders.me/img/icons/netherlands-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=netherlands)|[![Poland flag](https://rodders.me/img/icons/poland-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland)|[![Spain flag](https://rodders.me/img/icons/spain-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=spain)|
+|[![Japan Flag](https://rodders.me/safetygate/img/icons/japan-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=japan)|[![Netherlands flag](https://rodders.me/safetygate/img/icons/netherlands-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=netherlands)|[![Poland flag](https://rodders.me/safetygate/img/icons/poland-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland)|[![Spain flag](https://rodders.me/safetygate/img/icons/spain-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=spain)|
 |[Japan](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=japan)|[Netherlands](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=netherlands)|[Poland](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland)|[Spain](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=spain)
-|[![Sweden Flag](https://rodders.me/img/icons/sweden-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=sweden)|[![Taiwan flag](https://rodders.me/img/icons/taiwan-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=tawian)|[![Turkey flag](https://rodders.me/img/icons/turkey-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=turkey)|[![UK flag](https://rodders.me/img/icons/uk-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=uk)|
+|[![Sweden Flag](https://rodders.me/safetygate/img/icons/sweden-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=sweden)|[![Taiwan flag](https://rodders.me/safetygate/img/icons/taiwan-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=tawian)|[![Turkey flag](https://rodders.me/safetygate/img/icons/turkey-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=turkey)|[![UK flag](https://rodders.me/safetygate/img/icons/uk-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=uk)|
 |[Sweden Flag](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=sweden)|[Taiwan](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=taiwan)|[Turkey](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=turkey)|[UK](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=uk)
-|[![USA Flag](https://rodders.me/img/icons/usa-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=usa)|||
+|[![USA Flag](https://rodders.me/safetygate/img/icons/usa-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=usa)|||
 |[USA Flag](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=usa)|[Unknown](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=Unknown)|[Other (not top15)](/safetygate/docs/eu-safetygate-report-2023-country.html?country1=other)||
 
 ### My Analysis
@@ -95,9 +93,9 @@ Inspiration :
 
 | Source  | Official Version | Python version |
 | :- |:- |:- |
-|[source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_Factsheet_EN.pdf) |![img](https://rodders.me/img/inspiration-top3s.png) | ![img](https://rodders.me/img/italy-top3s.png)
-| [source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf) | ![img](https://rodders.me/img/inspiration-purpleplot.png)  | ![img](https://rodders.me/img/number-of-alerts-validated-on-safetygate-from-2003-to-2023.png)
-| [source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf) | ![img](https://rodders.me/img/inspiration-geoplot.png)  | ![img](https://rodders.me/img/submitting-country-geo-plot.png)
+|[source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_Factsheet_EN.pdf) |![img](https://rodders.me/safetygate/img/inspiration-top3s.png) | ![img](https://rodders.me/safetygate/img/italy-top3s.png)
+| [source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf) | ![img](https://rodders.me/safetygate/img/inspiration-purpleplot.png)  | ![img](https://rodders.me/safetygate/img/number-of-alerts-validated-on-safetygate-from-2003-to-2023.png)
+| [source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf) | ![img](https://rodders.me/safetygate/img/inspiration-geoplot.png)  | ![img](https://rodders.me/safetygate/img/submitting-country-geo-plot.png)
 
 ## About the EU Safety Gate Rapid Alert System
 

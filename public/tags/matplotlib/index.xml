@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>matplotlib on Rodders</title>
+    <link>https://rodders.me/tags/matplotlib/</link>
+    <description>Recent content in matplotlib on Rodders</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 02 Mar 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EU SafetyGate Report 2023</title>
+      <link>https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/</link>
+      <pubDate>Sat, 02 Mar 2024 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/</guid>
+      <description>The EU Safety Gate project Link to heading About this Project Link to heading I first encountered the EU Safetygate in my previous role.
+Since 2003, the Safety Gate has enabled a quick exchange of information among EU/EEA Member States and the European Commission about dangerous non-food products posing a risk to the health and safety of consumers. Appropriate follow-up has to be taken by the national authorities so that the notified dangerous products are removed from the market.</description>
+    </item>
+    
+    <item>
+      <title>SMMT - UK Electric Vehicle Registrations (and other fuels)</title>
+      <link>https://rodders.me/projects/smmt-google-analytics-project/uk-vehicle-registration-analysis/</link>
+      <pubDate>Sat, 02 Dec 2023 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/smmt-google-analytics-project/uk-vehicle-registration-analysis/</guid>
+      <description>Project Goal Link to heading To obtain additional monthly car registration data to add to my DVLA Registration Dashboard in Tableau.
+Monthly Vehicle Registration by Fuel Type and Keepership Link to heading This is additional data being added to the DVLA Registered Vehicles dashboard I maintain on Tableau. The DVLA data is issued annually and only gives annual totals for registered vehicles. SMMT publish data monthly in an image format and this project, grabs that data from the images and processes it into a CSV file suitable for import into Tableau.</description>
+    </item>
+    
+    <item>
+      <title>Google ADVANCED Data Analytics Course Passed!</title>
+      <link>https://rodders.me/posts/2023-10-26-google-advanced-data-analytics-completed-/google-advanced-data-analytics-completed/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/posts/2023-10-26-google-advanced-data-analytics-completed-/google-advanced-data-analytics-completed/</guid>
+      <description>https://coursera.org/share/06a6ec416a2c8bddbdea6858dbf0c5d4
+Google&amp;rsquo;s Advanced Data Analytics Course Link to heading I have successfully completed and passed Google&amp;rsquo;s Advanced Data Analytics Course!
+The course covered a wide array of topics, from advanced data processing techniques and complex analytical methods to visualizing and presenting data in compelling ways. Each module was designed to build not just theoretical knowledge but practical skills that I could immediately apply. Through hands-on projects and case studies, I delved deep into the nuances of BigQuery, data visualization, and machine learning, gaining insights that have already begun to transform the way I approach data.</description>
+    </item>
+    
+  </channel>
+</rss>

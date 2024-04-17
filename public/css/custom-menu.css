@@ -1,0 +1,54 @@
+/* Style the dropdown button */
+.dropbtn {
+    background-color: #2a3338;
+    color: white;
+    padding: 1px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, 
+    'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2a3338;
+    min-width: 160px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1;
+    font-family: sans-serif;
+
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 10px ;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    text-decoration: none;
+    display: flex;
+    font-family: sans-serif;
+
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: rgb(61, 68, 73);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.submenu {
+    padding-left: 20px; /* Adjust the indentation as needed */
+}
