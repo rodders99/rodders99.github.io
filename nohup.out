@@ -1157,3 +1157,6 @@
 [W 2024-04-17 10:46:23.279 ServerApp] 403 GET /api/kernelspecs?1713347183176 (@127.0.0.1) 1.16ms referer=None
 [I 2024-04-17 10:46:33.895 ServerApp] User 374c8c43719e42e29d564e6b0ac71efb logged in.
 [I 2024-04-17 10:46:33.896 ServerApp] 302 POST /login? (374c8c43719e42e29d564e6b0ac71efb@127.0.0.1) 159.64ms
+[I 2024-04-18 09:50:39.419 LabApp] Build is up to date
+[W 2024-04-18 09:50:42.980 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&1713430242975 (bccbc04e7c1d42f299202d7a3f8129a7@127.0.0.1) 1.36ms referer=http://localhost:8888/lab/tree/Untitled1.ipynb
+[W 2024-04-18 09:50:42.980 ServerApp] 404 GET /api/contents/Untitled1.ipynb?content=0&1713430242975 (127.0.0.1): file or directory does not exist: 'Untitled1.ipynb'

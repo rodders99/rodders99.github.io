@@ -25,25 +25,25 @@ if (!params.has(paramName)) {
 }
 
 }
-function generateToC() {
-    const toc = document.createElement('ul');
-    const container = document.getElementById('tableOfContents');
-   container.innerHTML = ''; // Clear previous ToC content
-   document.querySelectorAll('h1, h2, h3').forEach((header, index) => {
-    const anchor = `header-${index}`;
-    header.id = anchor;
+function generateIDs() {
+    //const toc = document.createElement('ul');
+    //const container = document.getElementById('tableOfContents');
+   // container.innerHTML = ''; // Clear previous ToC content
+    document.querySelectorAll('h1, h2, h3').forEach((header, index) => {
+        const anchor = `header-${index}`;
+        header.id = anchor;
 
-    const listItem = document.createElement('li');
-    listItem.className = header.tagName.toLowerCase();
-    const link = document.createElement('a');
-    link.href = `#${anchor}`;
-    link.textContent = header.textContent;
-    listItem.appendChild(link);
+        //const listItem = document.createElement('li');
+        //listItem.className = header.tagName.toLowerCase();
+        //const link = document.createElement('a');
+        //link.href = `#${anchor}`;
+        //link.textContent = header.textContent;
+        //listItem.appendChild(link);
 
-    toc.appendChild(listItem);
-});
+        //toc.appendChild(listItem);
+    });
 
-container.appendChild(toc);
+   // container.appendChild(toc);
 }
 
 
@@ -125,13 +125,13 @@ async function updateContent() {
 
     }        
     await updateHeadingsWithPrefix(country);
-    await generateToC();
+    await generateIDs();
     // Await more updates if necessary
     
     }
 updateContent();
 setTimeout(function() {
-    generateToC(); // Called after all updates are done
+    generateIDs(); // Called after all updates are done
 }, 1000);
 
 

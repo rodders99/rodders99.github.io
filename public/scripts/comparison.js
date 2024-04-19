@@ -78,15 +78,9 @@ function updateHrefsWithPrefix(country1) {
       const links1 = document.querySelectorAll('a.country1');
       links1.forEach(function(link) {
           var currentHref = link.getAttribute('href');
-          var newSrc = currentHref.replace('all', `${country1}`);
-          link.setAttribute('href', newSrc);
-      });
+          var newS}
 
-      if (!country2) return; // If no country1 is found, do nothing
-      
-      const links2 = document.querySelectorAll('a.country2');
-      links2.forEach(function(link) {
-          var currentHref = link.getAttribute('href');
+          container.appendChild(toc);rentHref = link.getAttribute('href');
           var newSrc = currentHref.replace('all', `${country2}`);
           link.setAttribute('href', newSrc);
       });
