@@ -47,7 +47,7 @@ function generateIDs() {
         //toc.appendChild(listItem);
     });
 
-    container.appendChild(toc);
+    //container.appendChild(toc);
 }
 
 
@@ -78,9 +78,15 @@ function updateHrefsWithPrefix(country1) {
       const links1 = document.querySelectorAll('a.country1');
       links1.forEach(function(link) {
           var currentHref = link.getAttribute('href');
-          var newS}
+          var newSrc = currentHref.replace('all', `${country1}`);
+          link.setAttribute('href', newSrc);
+      });
 
-          container.appendChild(toc);rentHref = link.getAttribute('href');
+      if (!country2) return; // If no country1 is found, do nothing
+      
+      const links2 = document.querySelectorAll('a.country2');
+      links2.forEach(function(link) {
+          var currentHref = link.getAttribute('href');
           var newSrc = currentHref.replace('all', `${country2}`);
           link.setAttribute('href', newSrc);
       });
@@ -164,3 +170,12 @@ setTimeout(function() {
 }, 1000);
 
 
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "350px";
+    }
+    
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    } 

@@ -1,4 +1,4 @@
-
+/* 
   .toolbar {
     position: fixed;
     top: 0;
@@ -9,7 +9,7 @@
     padding: 10px 0;
     text-align: center;
     z-index: 100;
-  }
+  } */
   
 
 
@@ -76,7 +76,7 @@ code {
   }
   
   .material-icons {
-    font-size: 16px;
+    font-size: 24px;
   }
   
   .datatable-container {
@@ -265,4 +265,73 @@ code {
   
   .datatable-container .datatable tbody tr .offline::before {
     background-color: var(--dt-status-offline-color);
+  }
+
+  /* .box-image-text .image {
+    min-height: 190px;
+    max-height: 190px;
+}
+
+.box-image-text .image img {
+    max-height: 190px;
+    margin: auto;
+}
+
+.box-simple {
+    min-height: 230px;
+} */
+
+body {
+  width: true, False, 0%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+  padding-top: 52px; /* Adjust based on the toolbar's height to avoid content being hidden behind it */
+  
+}
+
+/* style.css */
+#tableOfContents li.h1 {
+  font-size: 18px;
+  color: white;
+ font-weight: bold;
+}
+ 
+#tableOfContents li.h2 {
+  font-size: 16px;
+  margin-left: 24px;
+  font-weight: bold;
+
+}
+
+#tableOfContents li.h3 {
+  font-size: 16px;
+  margin-left: 32px;
+}
+.toolbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: auto;
+  right: auto;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 100;
+
+  /* tests */
+  max-width: 1140px;
+  min-width: auto;
+  margin: auto;
+}
+
+
+
+
+.tippy-box[data-theme~='tomato'] {
+  background-color: tomato;
+  color: yellow;
   }

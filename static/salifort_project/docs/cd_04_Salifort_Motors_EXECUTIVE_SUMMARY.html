@@ -17,16 +17,11 @@
 
 
 <body>
-<div class="page-container">
     <!-- BEGIN NAVIGATION -->
-    <div class="toolbar" style="width:100%; text-align:center;">
-        <table style="margin-left: 23%; text-align: left;">
-            <tbody>
-                <tr><td>
-                    <div class="dropdown" style="font-size:16px; color: white">
-                    <button class="dropbtn">
-                    <i class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;<b>Project Documentation</b></button>
-    <div class="dropdown-content">
+    <div class="page-container">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
         <a href="#"><b>Navigation</b></a> 
         <a href="/">Home</a>
         <a href="/projects/salifort_project/salifort-motors/">Project Home</a>
@@ -57,12 +52,15 @@
             <a href="/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.html">Team Summary Generator Notebook</a>
             <a href="/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html">Team Summary example</a>
             <a href="/salifort_project/docs/cd_99_Salifort_Motors_Project_Close.html">Project Close</a>
-            </div>
+        </div>
     </div>
-    </div>
-    </td></tr></tbody></table>
-    </div>
-    <!-- END NAVIGATION -->
+
+
+<div class="toolbar" style="width:100%; text-align:center;">
+    <span class="menu dropbtn" style="align-items:center;" onclick="openNav()"><i style="align-items:center" class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;Menu</span>
+
+</div>
+<!-- END NAVIGATION -->
 <h1 id="salifort-motors-executive-summary">Salifort Motors Executive
 Summary</h1>
 <h2 id="document-information">Document Information</h2>
@@ -609,5 +607,6 @@ data.</li>
 
 
 </body>
+<script src="../../scripts/projects.js"> </script>
 
 </html>

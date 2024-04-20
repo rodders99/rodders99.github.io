@@ -5,26 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="color-scheme" content="dark">
 <meta name="color-scheme" content="dark light">
-<link rel="stylesheet" type="text/css" href="/css/custom-menu.css">
-<link rel="stylesheet" type="text/css" href="/css/project-style.css">
 <link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="/css/project-style.css">
 <title>Salifort Motors project - Project Proposal</title>
 
 </head>
 
 
 <body>
-    <div class="page-container">
     <!-- BEGIN NAVIGATION -->
-    <div class="toolbar" style="width:100%; text-align:center;">
-        <table style="margin-left: 23%; text-align: left;">
-            <tbody>
-                <tr><td>
-                    <div class="dropdown" style="font-size:16px; color: white">
-                    <button class="dropbtn">
-                    <i class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;<b>Project Documentation</b></button>
-    <div class="dropdown-content">
+    <div class="page-container">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
         <a href="#"><b>Navigation</b></a> 
         <a href="/">Home</a>
         <a href="/projects/salifort_project/salifort-motors/">Project Home</a>
@@ -55,18 +50,21 @@
             <a href="/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.html">Team Summary Generator Notebook</a>
             <a href="/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html">Team Summary example</a>
             <a href="/salifort_project/docs/cd_99_Salifort_Motors_Project_Close.html">Project Close</a>
-            </div>
+        </div>
     </div>
-    </div>
-    </td></tr></tbody></table>
-    </div>
-    <!-- END NAVIGATION -->
+
+
+<div class="toolbar" style="width:100%; text-align:center;">
+    <span class="menu dropbtn" style="align-items:center;" onclick="openNav()"><i style="align-items:center" class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;Menu</span>
+
+</div>
+<!-- END NAVIGATION -->
 <h1 id="client-proposal">Client Proposal</h1>
 <h2 id="document-information">Document Information</h2>
 <div class="datatable-container">
-<table class="datatable" style="margin-right:auto;margin-left:0px">
-<tbody>
-<tr>
+    <table class="datatable" style="margin-right:auto;margin-left:0px">
+        <tbody>
+            <tr>
 <td style="width:15%">
 Document Title
 </td>
@@ -251,6 +249,7 @@ and what can be done to improve the models (more data)</p>
 <p><a href="#top"> scroll to top </a></p>
 </div>
 </body>
+<script src="../../scripts/projects.js"> </script>
 
 
 
