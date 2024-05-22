@@ -8,7 +8,7 @@ hugo && rsync -avz --delete public/ ${USER}@${HOST}:~/${DIR} # this will delete 
 
 git add .
 read -p "Input commit message : " message
-git commit -m "$1"
-git push github
+git commit -m "$message"
+git push github 
 
 exit 0

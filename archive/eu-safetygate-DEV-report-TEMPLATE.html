@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<link rel="stylesheet" type="text/css" href="css/custom-menu.css">
+<link rel="stylesheet" type="text/css" href="css/project-style.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+<head>
+<meta name="color-scheme" content="dark light">
+
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="page-container">
+<div class="dropdown">
+<button class="dropbtn"><i class="material-icons">menu</i>EU Safetygate 2023</button>
+<div class="dropdown-content"><a href="#"><b>Navigation</b></a>
+<a href="/">Home</a>
+<a href="/projects/1/01/01/salifort_project/">Project Home</a>
+<a href="#"><b>Analyst's Notebooks</b></a>
+<div class="submenu">
+<a href="/safetygate/EU-Safetygate-01-data-acquisition.html">Data Acquisition</a>
+<a href="/safetygate/EU-Safetygate-02-feature-engineering.html">Data cleanse & Feature Engineering</a>
+<a href="/safetygate/EU-Safetygate-03-EDA.html">EDA Analysis</a>
+</div>
+<a href="#"><b>ML Models</b></a>
+<div class="submenu">
+<a href="/safetygate/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html">Logistical Regression</a>
+<a href="/safetygate/nb_07_Salifort_Motors_project_Decision_Tree_Model.html">Decision Tree</a>
+<a href="/safetygate/nb_08_Salifort_Motors_project_XGBoost_Model.html">XGBoost</a>
+<a href="/safetygate/nb_09_Salifort_Motors_project_Random_Forest_Model.html">Random Forest</a>
+<a href="/safetygate/nb_11_Salifort_Motors_project_Model_Comparisons.html">Model Comparisons</a>
+<a href="/safetygate/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html">Model Demonstration</a>
+</div>
+<a href="#"><b>Client Documentation</b></a>
+<div class="submenu">
+<a href="/safetygate/cd_01_Salifort_Motors_project-PROPOSAL.html">Client Proposal</a>
+<a href="/safetygate/cd_02_Salifort_Motors_PACE_Plan.html">PACE Plan</a>
+<a href="/safetygate/cd_03_Salifort_Motors_Analyst_SUMMARY.html">Analyst's Summary</a>
+<a href="/safetygate/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html">Executive Summary</a>
+<a href="/safetygate/cd_05_Salifort_Motors_HR_SUMMARY.html">HR Summary</a>
+<a href="/safetygate/cd_06_Salifort_Motors_TEAM_SUMMARY.html">Team Summary Generator Notebook</a>
+<a href="/safetygate/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html">Team Summary example</a>
+<a href="/safetygate/cd_99_Salifort_Motors_Project_Close.html">Project Close</a>
+</div>
+</div>
+</div>
+
+<h2 id="product_cat0"> This text will be replaced by "Toys from xxxx"</h1>
+
+<h1 id="heading"> Suffix Heading</h1>
+<h1 id="heading1"> Prefix Heading</h1>
+
+<p id ="heading2">This is body text that will be replaced </p>
+
+<img id="image1" src="../img/placeholder1.png" alt="Dynamic Image 1">
+
+<img id="image2" src="../img/placeholder1.png" alt="Dynamic Image 2">
+
+
+<script>
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+    // FUNCTION : Update Image Sources
+    function updateImageSources(prefix) {
+        var images = document.querySelectorAll('img');
+        images.forEach(function(img) {
+            var src = img.getAttribute('src');
+            var lastSlashIndex = src.lastIndexOf('/');
+            var newSrc = src.substring(0, lastSlashIndex + 1) + prefix + "-" + src.substring(lastSlashIndex + 1);
+            img.setAttribute('src', newSrc);
+        });
+    }
+
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     var imagePrefix = getUrlParameter('prefix');
+    //     updateImageSources(imagePrefix);
+    //     document.getElementById('heading').textContent = 'Image prefix: ' + imagePrefix;
+   
+    // FUNCTION : Get H1 Headings and add prefix + original text
+    function updateHeadingsWithPrefix(prefix) {
+        var headings = document.querySelectorAll('h1'); // Adjust for h2, h3, etc. as needed
+        headings.forEach(function(heading) {
+            heading.textContent = prefix + ' ' + heading.textContent;
+        });
+        }
+
+    // Change Headings from prefix parameter URL
+    document.addEventListener("DOMContentLoaded", function() {
+        var prefix = getUrlParameter('prefix');
+        let country = capitalizeFirstLetter(prefix);
+        updateImageSources(prefix);
+        updateHeadingsWithPrefix(country);
+        document.getElementById('heading').textContent = 'Append to end of id=heading - ' + country ; 
+        document.getElementById('heading1').textContent = country + ' - Prepend to start of heading id=heading1' ; 
+        document.getElementById('heading2').textContent = country + ' - Prepend to start of paragraph id=heading2' ; 
+
+    function capitalizeFirstLetter(string) {
+        return  string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    
+   
+   })   
+   
+   // Path to the text file
+    var prefix = getUrlParameter('prefix')
+    const filePath = '../headings/' + prefix + '-0-product-category.txt';
+    fetch(filePath)
+        .then(response => response.text())
+        .then(data => {
+            // Assuming the file contains a single line to be used as the header
+            document.getElementById('product_cat0').textContent = data + " - Product Category from Text File ";
+        })
+        .catch(error => console.error('Error fetching file:', error));;
+</script>

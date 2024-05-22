@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  EU SafetyGate Report 2023 · Rodders
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Rodders">
+<meta name="description" content="Analysis of EU SafetyGate data">
+<meta name="keywords" content="blog,developer,personal, analyst, pandas, python, homeassistant,smart-home,oh-my">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="EU SafetyGate Report 2023"/>
+<meta name="twitter:description" content="Analysis of EU SafetyGate data"/>
+
+<meta property="og:title" content="EU SafetyGate Report 2023" />
+<meta property="og:description" content="Analysis of EU SafetyGate data" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2024-03-02T09:15:27+00:00" />
+<meta property="article:modified_time" content="2024-03-02T09:15:27+00:00" />
+
+
+
+
+<link rel="canonical" href="https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.fa74189526e858f964d89230d76de3b1dd7aa7d5e112c726978c80a47e8d34f5.css" integrity="sha256-&#43;nQYlSboWPlk2JIw123jsd16p9XhEscml4yApH6NNPU=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://rodders.me/">
+      Rodders
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/">
+          EU SafetyGate Report 2023
+        </a>
+      </h1>
+    </header>
+
+    <p><img src="https://rodders.me/safetygate/img/Safety_Gate_Logo.png" alt="Safety Gate Logo"></p>
+<h2 id="the-eu-safety-gate-project">
+  The EU Safety Gate project
+  <a class="heading-link" href="#the-eu-safety-gate-project">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="about-this-project">
+  About this Project
+  <a class="heading-link" href="#about-this-project">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I first encountered the EU Safetygate in my previous role.</p>
+<p>Since 2003, the Safety Gate has enabled a quick exchange of information among EU/EEA Member States and the European Commission about
+dangerous non-food products posing a risk to the health and safety of consumers. Appropriate follow-up has to be taken by the national
+authorities so that the notified dangerous products are removed from the market.</p>
+<p>To facilitate the transmission of information to the public, the Commission also manages the <a href="https://ec.europa.eu/safety-gate/#/screen/home"  class="external-link" target="_blank" rel="noopener">Safety Gate public website</a>.</p>
+<p>The alerts are translated into all EU languages, in addition to Icelandic, Norwegian, Arabic, and Ukrainian. Businesses also have at their disposal the Business Safety
+Gateway to inform national authorities quickly and efficiently about safety concerns regarding a product that they have put on the market.</p>
+<p>This tool will become compulsory under the General Product Safety Regulation.</p>
+<p>It is an interesting look into the world of dangerous and non compliant products that are sold across the world, but specifically relates to the European Union.</p>
+<h3 id="why-this-analysis">
+  Why this analysis?
+  <a class="heading-link" href="#why-this-analysis">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>Having encountered the data in a previous role, I was curious how each country approaches their safety recalls (Do they act on compulsory or voluntary motivation?)</li>
+<li>Country level analysis is not available for the EU Safety Gate Data (I couldn&rsquo;t find any, it may exist), while there is an annual summary report, it&rsquo;s a bit scant on details!</li>
+<li>I&rsquo;m interested in the idea of low CO2 dashboards - which are dashboards with pre rendered visualisations, reducing cloud processing energy and cost requirements.</li>
+</ol>
+<h3 id="project-readmemd">
+  Project README.md
+  <a class="heading-link" href="#project-readmemd">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h3 id="analysts-notes">
+  Analysts Notes
+  <a class="heading-link" href="#analysts-notes">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="/safetygate/docs/eu-safetygate-report-2023-meta-data.html" >EU Safetygate Meta Data Overview</a></li>
+<li><a href="/safetygate/docs/eu-safetygate-report-2023-feature-engineering.html" >EU Safetygate Feature Engineering</a></li>
+<li><a href="/safetygate/docs/eu-safetygate-report-2023-plot-plan.html" >EU Safetygate Visualisations Plan</a></li>
+</ul>
+<h3 id="safety-gate-2023-analysis">
+  Safety Gate 2023 Analysis
+  <a class="heading-link" href="#safety-gate-2023-analysis">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Top Level analysis of the 2022 - 2023 dataset with visualisations for totals / 2022 Vs 2023 along with top 3 risk and product category visualisations for each country of product origin.</p>
+<ul>
+<li><a href="/safetygate/docs/eu-safetygate-report-2023-detail-2023.html" >Safety Gate Detailed Summary for 2023</a></li>
+</ul>
+<h3 id="safety-gate-summary-analysis">
+  Safety Gate Summary Analysis
+  <a class="heading-link" href="#safety-gate-summary-analysis">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Top Level analysis of the entire dataset with visualisations for total alerts issued / 2022 Vs 2023 along with top 3 risk and product category visualisations for each country of product origin.</p>
+<ul>
+<li><a href="/safetygate/docs/eu-safetygate-report-2023-all.html" >Safety Gate Detailed Summary for entire dataset</a></li>
+</ul>
+<h3 id="safety-gate-compare-countries">
+  Safety Gate Compare Countries
+  <a class="heading-link" href="#safety-gate-compare-countries">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="/safetygate/docs/eu-safetygate-report-2023-comparison.html?country1=france&amp;country2=germany" >Compare Countries</a></li>
+</ul>
+<h3 id="country-of-origin-report">
+  Country of Origin Report
+  <a class="heading-link" href="#country-of-origin-report">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>A detailed analysis with extensive visualisations of all key features of the data.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=china" ><img src="https://rodders.me/safetygate/img/icons/china-flag.webp" alt="China Flag"></a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=france" ><img src="https://rodders.me/safetygate/img/icons/france-flag.webp" alt="France flag"></a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=india" ><img src="https://rodders.me/safetygate/img/icons/india-flag.webp" alt="India flag"></a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=italy" ><img src="https://rodders.me/safetygate/img/icons/italy-flag.webp" alt="Italy flag"></a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=china" >China</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=france" >France</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=india" >India</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=italy" >Italy</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=japan" ><img src="https://rodders.me/safetygate/img/icons/japan-flag.webp" alt="Japan Flag"></a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=netherlands" ><img src="https://rodders.me/safetygate/img/icons/netherlands-flag.webp" alt="Netherlands flag"></a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland" ><img src="https://rodders.me/safetygate/img/icons/poland-flag.webp" alt="Poland flag"></a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=spain" ><img src="https://rodders.me/safetygate/img/icons/spain-flag.webp" alt="Spain flag"></a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=japan" >Japan</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=netherlands" >Netherlands</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland" >Poland</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=spain" >Spain</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=sweden" ><img src="https://rodders.me/safetygate/img/icons/sweden-flag.webp" alt="Sweden Flag"></a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=tawian" ><img src="https://rodders.me/safetygate/img/icons/taiwan-flag.webp" alt="Taiwan flag"></a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=turkey" ><img src="https://rodders.me/safetygate/img/icons/turkey-flag.webp" alt="Turkey flag"></a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=uk" ><img src="https://rodders.me/safetygate/img/icons/uk-flag.webp" alt="UK flag"></a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=sweden" >Sweden Flag</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=taiwan" >Taiwan</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=turkey" >Turkey</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=uk" >UK</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=usa" ><img src="https://rodders.me/safetygate/img/icons/usa-flag.webp" alt="USA Flag"></a></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=usa" >USA Flag</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=Unknown" >Unknown</a></td>
+<td style="text-align:center"><a href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=other" >Other (not top15)</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="my-analysis">
+  My Analysis
+  <a class="heading-link" href="#my-analysis">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>This analysis report aims to address the lack of summary and country level data with a comprehensive set of visualisations of the key features of the Safety Gate Data by country and country comparison.</p>
+<p>Extensive feature engineering was carried out in order to produce meaningful and clear visualisations.</p>
+<p>This was a great opportunity for me to flex my DA &amp; visualisations skills with a secondary goal to recreate some of the visualisations from the &lsquo;official&rsquo; report using Python, Pandas and Matplotlib.</p>
+<p>A good example of my programmatic recreations are the country level top 3 visualisations showing the top 3 product categories and top 3 risks, in the official report and the geoplot, showing
+2022 vs 2023 how many alerts were issued by each country.</p>
+<p>Inspiration :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Source</th>
+<th style="text-align:left">Official Version</th>
+<th style="text-align:left">Python version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_Factsheet_EN.pdf"  class="external-link" target="_blank" rel="noopener">source</a></td>
+<td style="text-align:left"><img src="https://rodders.me/safetygate/img/inspiration-top3s.png" alt="img"></td>
+<td style="text-align:left"><img src="https://rodders.me/safetygate/img/italy-top3s.png" alt="img"></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf"  class="external-link" target="_blank" rel="noopener">source</a></td>
+<td style="text-align:left"><img src="https://rodders.me/safetygate/img/inspiration-purpleplot.png" alt="img"></td>
+<td style="text-align:left"><img src="https://rodders.me/safetygate/img/number-of-alerts-validated-on-safetygate-from-2003-to-2023.png" alt="img"></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf"  class="external-link" target="_blank" rel="noopener">source</a></td>
+<td style="text-align:left"><img src="https://rodders.me/safetygate/img/inspiration-geoplot.png" alt="img"></td>
+<td style="text-align:left"><img src="https://rodders.me/safetygate/img/submitting-country-geo-plot.png" alt="img"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="about-the-eu-safety-gate-rapid-alert-system">
+  About the EU Safety Gate Rapid Alert System
+  <a class="heading-link" href="#about-the-eu-safety-gate-rapid-alert-system">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The <a href="https://ec.europa.eu/safety-gate/#/screen/home"  class="external-link" target="_blank" rel="noopener">Safety Gate rapid alert system</a> plays an important role
+enabling swift and effective action to be taken across the single European market when a dangerous product is found.</p>
+<p>Exchange of information on dangerous non-food products kicked
+off informally in 2001. It became compulsory in 2002 under the
+General Product Safety Directive which set up the rapid alert system
+for dangerous non-food products. In December 2024, the General
+Product Safety Regulation will replace the Directive and the rapid
+alert system will officially be renamed Safety Gate.</p>
+<p>EU Safety Gate is The data in this report and is based on information from national
+authorities on measures taken against dangerous non-food products.</p>
+<p>Data has been sourced from <a href="https://ec.europa.eu/safety-gate/"  class="external-link" target="_blank" rel="noopener">Safety Gate Web Site</a>.</p>
+<p>This information includes various risks that they have identified,
+mainly to consumers’ health and safety but also to the environment
+or risks in relation to professional products (i.e. products not
+normally available to consumers). The report also takes into account
+data related to information exchanged among member countries
+that is not published on the Safety Gate website.
+The report presents statistics on the rapid alert system. It does not
+purport to give a comprehensive picture of all dangerous products
+on the single market, nor does it give an overview of all market
+surveillance efforts undertaken by the EU/EEA national authorities.
+Due to the dynamic nature of the system, the data may vary
+depending on the time of extraction.</p>
+<h2 id="creative-commons-license">
+  Creative Commons License
+  <a class="heading-link" href="#creative-commons-license">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The reuse policy of European Commission documents is implemented by the Commission Decision 2011/833/EU
+of 12 December 2011 on the reuse of Commission documents (OJ L 330, 14.12.2011, p. 39). Except otherwise noted,
+the reuse of this document is authorised under a <a href="https://creativecommons.org/licenses/by/4.0/"  class="external-link" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International (CC-BY 4.0)
+licence</a>.</p>
+<p>This means that reuse is allowed provided appropriate credit is given and any changes are indicated.</p>
+<p>Since this entire analysis is based on data from the EU, and I have used visualisations from the official annual summary as inspiration for the programmatically created version of these visualisations,
+the creative commons license applies this work hosted on <a href="https://rodders99.github.io"  class="external-link" target="_blank" rel="noopener">rodders99.github.io</a>, this means that reuse of this analysis and it&rsquo;s visualisations is allowed provided appropriate credit is given and any changes are indicated.</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     Rodders 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

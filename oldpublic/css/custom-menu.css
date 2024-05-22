@@ -1,0 +1,148 @@
+/* Style the dropdown button */
+.dropbtn {
+    background-color: inherit; /*#2a3338;*/
+    color: white;
+    /* padding: 1px; */
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, 
+    'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+    /* box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2); */
+    display: flex;
+    align-items: center;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: inherit; /*#2a3338; */
+    min-width: 160px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1;
+    font-family: sans-serif;
+
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 10px ;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    text-decoration: none;
+    display: flex;
+    font-family: sans-serif;
+
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #1c1b22; /*rgb(61, 68, 73);*/
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.submenu {
+    padding-left: 20px; /* Adjust the indentation as needed */
+}
+
+ /* The side navigation menu */
+.sidenav {
+height: 90vh; /* 100% Full-height */
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+bottom: 0;
+left: 0;
+background-color: #1c1b22 ; /* #111; /* Black*/ 
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 60px; /* Place content 60px from the top */
+padding-bottom: 20px; /* Place content 60px from the top */
+overflow-y: auto;
+transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+flex-grow: 1;
+text-align: left; /* Align the menu to the left */
+font-family: sans-serif;
+font-size: 16px;
+
+
+
+}
+
+
+
+  
+
+/* The navigation menu links */
+.sidenav a {
+padding: 4px 4px 4px 32px;
+text-decoration: none;
+font-size: 16px;
+color: white;
+
+display: block;
+transition: 0.3s;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+position: absolute;
+top: 50px;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+transition: margin-left .5s;
+padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+} 
+
+.countries {
+display: flex;
+justify-content: left; /* Center the country elements within the countries container */
+flex-grow: 1; /* Allow this element to take up any extra space */
+align-items: center;
+}
+
+.country {
+margin: 0 10px; /* Space out the country elements */
+align-items: center;
+}
+
+.compare {
+/* Align the compare button to the right */
+margin: 0 10px; /* Space out the country elements */
+}
+
+.menu {
+/* Align the menu to the left */
+flex-grow: 0;
+margin: 0 10px;
+font-size: 18px;
+align-items: center;
+
+
+}

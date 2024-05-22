@@ -129,10 +129,16 @@ async function updateContent() {
     // Await more updates if necessary
     
     }
-updateContent();
-setTimeout(function() {
-    generateIDs(); // Called after all updates are done
-}, 1000);
+
+    // Wait until document has completed loading
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        updateContent();
+        setTimeout(function() {
+            generateIDs(); // Called after all updates are done
+        }, 1000);
+    
+    });
 
 
 function openNav() {

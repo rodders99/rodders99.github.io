@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Language on Rodders</title>
+    <link>https://rodders.me/tags/r-language/</link>
+    <description>Recent content in R Language on Rodders</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/r-language/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google ADVANCED Data Analytics Course Passed!</title>
+      <link>https://rodders.me/posts/2023-10-26-google-advanced-data-analytics-completed-/google-advanced-data-analytics-completed/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/posts/2023-10-26-google-advanced-data-analytics-completed-/google-advanced-data-analytics-completed/</guid>
+      <description>https://coursera.org/share/06a6ec416a2c8bddbdea6858dbf0c5d4
+Google&amp;rsquo;s Advanced Data Analytics Course Link to heading I have successfully completed and passed Google&amp;rsquo;s Advanced Data Analytics Course!
+The course covered a wide array of topics, from advanced data processing techniques and complex analytical methods to visualizing and presenting data in compelling ways. Each module was designed to build not just theoretical knowledge but practical skills that I could immediately apply. Through hands-on projects and case studies, I delved deep into the nuances of BigQuery, data visualization, and machine learning, gaining insights that have already begun to transform the way I approach data.</description>
+    </item>
+    
+    <item>
+      <title>DVLA Data - Google Data Analytics Portfolio Project</title>
+      <link>https://rodders.me/projects/dvla-data-google-analytics/google-data-analytics-portfolio-project-dvla-data/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/dvla-data-google-analytics/google-data-analytics-portfolio-project-dvla-data/</guid>
+      <description>Course Portfolio Project Link to heading For the completion stage of the Google Data Analytics Specialisation course we were asked to complete a data analysis project from start to finish. This allowed me to apply much of the lessons learned during the course to something I had some passion about: sustainable energy and transportation. Specifically looking at the adoption of Electric Vehicles in the UK, which in turn led me on to the broader issues of media messaging around this topic, which has become a separate topic, the bot is running as you read this.</description>
+    </item>
+    
+    <item>
+      <title>Google Data Analytics Course Passed!</title>
+      <link>https://rodders.me/posts/2023-08-14-google-data-analytics-completed/google-data-analytics-completed/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/posts/2023-08-14-google-data-analytics-completed/google-data-analytics-completed/</guid>
+      <description>https://www.coursera.org/account/accomplishments/professional-cert/L4GS97QJ8KCZ
+A Milestone Achieved Link to heading Completing the Google Data Analytics Specialization on Coursera 📊
+A few months ago, I was unfortunately made redundant which gave me the opportunity to reflect and decide what I really wanted to do when I grew up. This little voyage of discovery led me to the world of data analytics and data science and I decided to re-enter education and develop some new skills in these fast growing and changing specialisations.</description>
+    </item>
+    
+  </channel>
+</rss>
