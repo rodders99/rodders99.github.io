@@ -68,7 +68,7 @@
                             <option value="header-108">#3 - Product Category Top Brands for Safety Alerts</option>
                     </select></div>
                     
-                            <div id="CompareCountries">Compare Countries</div>
+                            <div id="CompareCountries"><h2>Compare Countries></h2></div>
                         <div id="CompareCountries" class="country"><select id="country1" >
                             <option value="china">China</option>
                             <option value="france">France</option>
