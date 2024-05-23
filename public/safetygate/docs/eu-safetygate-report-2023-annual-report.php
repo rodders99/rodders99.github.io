@@ -39,40 +39,48 @@
                  
               <select onchange="window.location.hash=this.value"  class="country">
                 <option value="header-0">EU Safetygate report</option>
-                <option value="header-1">Total Annual Alerts Issued</option>
-                <option value="header-2">YoY Change</option>
-                <option value="header-3">Geographic Plot Submitting Country 2022 vs 2023</option>
-                <option value="header-6">Economic Area of Product Origin</option>
+                <option value="header-2">Total Annual Alerts Issued</option>
+                <option value="header-3">YoY Change</option>
+                <option value="header-4">Geographic Plot Submitting Country 2022 vs 2023</option>
+                <option value="header-5">Top3 Product & Risk Categories</option>
+                <option value="header-5">Submitting Country</option>
+                <option value="header-7">Economic Area of Product Origin</option>
                 <option value="header-9">Country of Product Origin</option>
                 <option value="header-14">Product Categories</option>
                 <option value="header-17">Risk Categories</option>
                 <option value="header-20">Counterfeit</option>
                 <option value="header-23">Action Required</option>
                 <option value="header-26">Responsible Party</option>
-                <option value="header-29">Top 15 Countries Fact Sheets, Annual Alerts, Product & Risk Categories</option>
-                <option value="header-30">Top 30 Brands</option>
-                <option value="header-31">Top 3 Product Categories</option>
-                <option value="header-32">#1 - Top Product Category</option>
-                <option value="header-33">#1 - Product Category Annual / Total</option>
-                <option value="header-34">#1 - Product Category Submitting Country</option>
-                <option value="header-35">#1 - Product Category Risk Category</option>
-                <option value="header-36">#1 - Product Category Counterfeit</option>
-                <option value="header-37">#1 - Product Category Action Required / Responsible Party</option>
-                <option value="header-39">#1 - Product Category Top Brands</option>
-                <option value="header-40">#2 - Top Product Category</option>
-                <option value="header-41">#2 - Product Category Annual / Total</option>
-                <option value="header-42">#2 - Product Category Submitting Country</option>
-                <option value="header-43">#2 - Product Category Risk Category</option>
-                <option value="header-44">#2 - Product Category Counterfeit</option>
-                <option value="header-45">#2 - Product Category Action Required / Responsible Party</option>
-                <option value="header-47">#2 - Product Category Top Brands</option>
-                <option value="header-48">#3 - Top Product Category</option>
-                <option value="header-49">#3 - Product Category Annual / Total</option>
-                <option value="header-50">#3 - Product Category Submitting Country</option>
-                <option value="header-51">#3 - Product Category Risk Category</option>
-                <option value="header-52">#3 - Product Category Counterfeit</option>
-                <option value="header-53">#3 - Product Category Action Required / Responsible Party</option>
-                <option value="header-55">#3 - Product Category Top Brands</option>
+                <option value="header-28">Top 15 Countries Fact Sheets, Annual Alerts, Product & Risk Categories</option>
+                <option value="header-29">Top 30 Brands</option>
+
+                <option value="header-30">Top 3 Product Categories</option>
+                <option value="header-31">#1 - Top Product Category</option>
+                <option value="header-32">#1 - Product Category Annual / Total</option>
+                <option value="header-33">#1 - Product Category Submitting Country</option>
+                <option value="header-34">#1 - Product Category Risk Category</option>
+                <option value="header-35">#1 - Product Category Counterfeit</option>
+                <option value="header-36">#1 - Product Category Action Required</option>
+                <option value="header-36">#1 - Product Category Responsible Party</option>
+                <option value="header-37">#1 - Product Category Top Brands</option>
+                
+                <option value="header-39">#2 - Top Product Category</option>
+                <option value="header-40">#2 - Product Category Annual / Total</option>
+                <option value="header-41">#2 - Product Category Submitting Country</option>
+                <option value="header-42">#2 - Product Category Risk Category</option>
+                <option value="header-43">#2 - Product Category Counterfeit</option>
+                <option value="header-44">#2 - Product Category Action Required</option>
+                <option value="header-45">#2 - Product Category Responsible Party</option>
+                <option value="header-46">#2 - Product Category Top Brands</option>
+
+                <option value="header-47">#3 - Top Product Category</option>
+                <option value="header-48">#3 - Product Category Annual / Total</option>
+                <option value="header-49">#3 - Product Category Submitting Country</option>
+                <option value="header-50">#3 - Product Category Risk Category</option>
+                <option value="header-51">#3 - Product Category Counterfeit</option>
+                <option value="header-52">#3 - Product Category Action Required</option>
+                <option value="header-53">#3 - Product Category Responsible Party</option>
+                <option value="header-54">#3 - Product Category Top Brands</option>
                 
               </select>
             </div></div>
@@ -903,7 +911,7 @@ increase of 1,249 over the previous year.</p>
 
 <h1 class="product_cat0">#1 - Top 3 Product Categories</h1>
 
-<h2 class="product_cat0">Total, Annual and Cumulative Alerts</h2>
+<h2 class="product_cat0">#1 - Total, Annual and Cumulative Alerts</h2>
 
 
 <div class="datatable-container" id="all-product-cat-0-annual-cumulative">
@@ -928,7 +936,7 @@ increase of 1,249 over the previous year.</p>
     <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h2 class="product_cat0">Submitting Country</h2>
+    <h2 class="product_cat0">#1 - Submitting Country</h2>
 
 
 
@@ -973,7 +981,7 @@ increase of 1,249 over the previous year.</p>
         <a href="#" class="gototop">Go to Top</a>
         </div>
 
-<h2 class="product_cat0">Risk Category</h2>
+<h2 class="product_cat0">#1 - Risk Category</h2>
 
 <div class="datatable-container" id="all-product-cat-0-risk-category-ly_vs_ty">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1015,7 +1023,7 @@ increase of 1,249 over the previous year.</p>
         <a href="#" class="gototop">Go to Top</a>
         </div>
         
-        <h2 class="product_cat0">Counterfeit </h2>
+        <h2 class="product_cat0">#1 - Counterfeit </h2>
         <div class="datatable-container" id="all-product-cat-0-counterfeit-ly_vs_ty">
 
     <div class="datatable-container" id="all-product-cat-0-counterfeit-Annual-Percentage">
@@ -1056,7 +1064,7 @@ increase of 1,249 over the previous year.</p>
     </div>   
     
 
-      <h2 class="product_cat0">Compulsory / Voluntary Action Required </h2>
+      <h2 class="product_cat0">#1 - Compulsory / Voluntary Action Required </h2>
 
       <div class="datatable-container" id="all-product-cat-0-action-required-ly_vs_ty">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1093,7 +1101,7 @@ increase of 1,249 over the previous year.</p>
 
         </div>   
         
-        <h2 class="product_cat0">Compulsory / Voluntary Responsible Party</h2>
+        <h2 class="product_cat0">#1 - Compulsory / Voluntary Responsible Party</h2>
         <div class="datatable-container" id="all-product-cat-0-responsible-ly_vs_ty">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
@@ -1130,7 +1138,7 @@ increase of 1,249 over the previous year.</p>
 
 
 
-<h2 class="product_cat0">Top Brands for Safety Alerts</h2>
+<h2 class="product_cat0">#1 - Top Brands for Safety Alerts</h2>
 <div class="datatable-container" id="all-product-cat-0-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -1181,7 +1189,7 @@ increase of 1,249 over the previous year.</p>
 
     </div>
 
-    <h2 class="product_cat1">Submitting Country</h2>
+    <h2 class="product_cat1">#2 - Submitting Country</h2>
 
     
     
@@ -1227,7 +1235,7 @@ increase of 1,249 over the previous year.</p>
 
         </div>
 
-<h2 class="product_cat1">Risk Category</h2>
+<h2 class="product_cat1">#2 - Risk Category</h2>
 
 <div class="datatable-container" id="all-product-cat-1-risk-category-ly_vs_ty">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1271,7 +1279,7 @@ increase of 1,249 over the previous year.</p>
 
         </div>
         
-<h2 class="product_cat1">Counterfeit </h2>
+<h2 class="product_cat1">#2 - Counterfeit </h2>
 
         <div class="datatable-container" id="all-product-cat-1-counterfeit-ly_vs_ty">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1318,7 +1326,7 @@ increase of 1,249 over the previous year.</p>
     </div>   
     
 
-    <h2 class="product_cat1">Compulsory / Voluntary Action Required </h2>
+    <h2 class="product_cat1">#2 - Compulsory / Voluntary Action Required </h2>
 
     <div class="datatable-container" id="all-product-cat-1-action-required-ly_vs_ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1354,7 +1362,7 @@ increase of 1,249 over the previous year.</p>
 
         </div>   
         
-        <h2 class="product_cat1">Compulsory / Voluntary Responsible Party</h2>
+        <h2 class="product_cat1">#2 - Compulsory / Voluntary Responsible Party</h2>
 
         <div class="datatable-container" id="all-product-cat-1-responsible-ly_vs_ty">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1392,7 +1400,7 @@ increase of 1,249 over the previous year.</p>
 
 
 
-<h2 class="product_cat1">Top Brands for Safety Alerts</h2>
+<h2 class="product_cat1">#2 - Top Brands for Safety Alerts</h2>
 <div class="datatable-container" id="ll-product-cat-1-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -1415,7 +1423,7 @@ increase of 1,249 over the previous year.</p>
 <!-- Product 2 -->
 
 <h1 class="product_cat2">#3 - Top 3 Product Categories</h1>
-<h2 class="product_cat2">Total, Annual and Cumulative Alerts</h2>
+<h2 class="product_cat2">#3 - Total, Annual and Cumulative Alerts</h2>
 
 <div class="datatable-container" id="all-product-cat-2-annual-cumulative">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1440,7 +1448,7 @@ increase of 1,249 over the previous year.</p>
 
     </div>
 
-<h2 class="product_cat2">Submitting Country</h2>
+<h2 class="product_cat2">#3 - Submitting Country</h2>
 
     <div class="datatable-container" id="all-product-cat-2-submitting-country-ly_vs_ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1481,7 +1489,7 @@ increase of 1,249 over the previous year.</p>
 
         </div>
 
-<h2 class="product_cat2">Risk Category</h2>
+<h2 class="product_cat2">#3 - Risk Category</h2>
 
 <div class="datatable-container" id="all-product-cat-2-risk-category-ly_vs_ty">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1521,7 +1529,7 @@ increase of 1,249 over the previous year.</p>
 
         </div>
         
-        <h2 class="product_cat2">Counterfeit </h2>
+        <h2 class="product_cat2">#3 - Counterfeit </h2>
 
         <div class="datatable-container" id="all-product-cat-2-counterfeit-ly_vs_ty">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1565,7 +1573,7 @@ increase of 1,249 over the previous year.</p>
     </div>   
     
 
-<h2 class="product_cat2">Compulsory / Voluntary Action Required </h2>
+<h2 class="product_cat2">#3 - Compulsory / Voluntary Action Required </h2>
 
     <div class="datatable-container" id="all-product-cat-2-action-required-ly_vs_ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1599,7 +1607,7 @@ increase of 1,249 over the previous year.</p>
 
         </div>   
         
-<h2 class="product_cat2">Compulsory / Voluntary Responsible Party</h2>
+<h2 class="product_cat2">#3 - Compulsory / Voluntary Responsible Party</h2>
 
         <div class="datatable-container" id="all-product-cat-2-responsible-ly_vs_ty">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1637,7 +1645,7 @@ increase of 1,249 over the previous year.</p>
 
 
 
-<h2 class="product_cat2">Top Brands for Safety Alerts</h2>
+<h2 class="product_cat2">#3 - Top Brands for Safety Alerts</h2>
 <div class="datatable-container" id="all-product-cat-2-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 

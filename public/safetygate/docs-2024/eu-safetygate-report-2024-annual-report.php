@@ -816,7 +816,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 
 <h1 class="product_cat0">#1 - Top 3 Product Categories</h1>
 
-<h2 class="product_cat0">Total, Annual and Cumulative Alerts</h2>
+<h2 class="product_cat0">#1 - Total, Annual and Cumulative Alerts</h2>
 
 
 <div class="datatable-container" id="all-product-cat-0-annual-cumulative">
@@ -838,7 +838,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
     <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h2 class="product_cat0">Submitting Country</h2>
+    <h2 class="product_cat0">#1 - Submitting Country</h2>
 
     <div class="datatable-container" id="all-product-cat-0-submitting-country-LYvsTY">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -878,7 +878,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
     
 
 
-<h2 class="product_cat0">Risk Category</h2>
+<h2 class="product_cat0">#1 - Risk Category</h2>
 
 <div class="datatable-container" id="all-product-cat-0-risk-category-LYvsTY">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -916,7 +916,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 <a href="#" class="gototop">Go to Top</a>
 </div>
         
-<h2 class="product_cat0">Counterfeit </h2>
+<h2 class="product_cat0">#1 - Counterfeit </h2>
         <div class="datatable-container" id="all-product-cat-0-counterfeit-LYvsTY">
 
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -954,7 +954,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
             </div>
 
 
-            <h2 class="product_cat0">Compulsory / Voluntary Action Required / Responsible Party </h2>
+            <h2 class="product_cat0">#1 - Compulsory / Voluntary Action Required / Responsible Party </h2>
 
             <div class="datatable-container">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -978,7 +978,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
                 </div>   
                 
 
-<h2 class="product_cat0">Top Brands for Safety Alerts</h2>
+<h2 class="product_cat0">#1 - Top Brands for Safety Alerts</h2>
 <div class="datatable-container" id="all-product-cat-0-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -1024,7 +1024,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 
     </div>
 
-    <h2 class="product_cat1">Submitting Country</h2>
+    <h2 class="product_cat1">#2 - Submitting Country</h2>
 
 
     
@@ -1064,7 +1064,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
           <a href="#" class="gototop">Go to Top</a>
 </div>    
 
-<h2 class="product_cat1">Risk Category</h2>
+<h2 class="product_cat1">#2 - Risk Category</h2>
 
 
 <div class="datatable-container" id="all-product-cat-1-risk-category-LYvsTY">
@@ -1102,7 +1102,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 </div>
 
         
-<h2 class="product_cat1">Counterfeit </h2>
+<h2 class="product_cat1">#2 - Counterfeit </h2>
 
         <div class="datatable-container" id="all-product-cat-1-counterfeit-LYvsTY">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1145,7 +1145,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
         </div>
     
 
-    <h2 class="product_cat1">Compulsory / Voluntary Action Required / Responsible Party </h2>
+    <h2 class="product_cat1">#2 - Compulsory / Voluntary Action Required / Responsible Party </h2>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1168,7 +1168,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 
         </div>   
         
-<h2 class="product_cat1">Top Brands for Safety Alerts</h2>
+<h2 class="product_cat1">#2 - Top Brands for Safety Alerts</h2>
 <div class="datatable-container" id="ll-product-cat-1-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -1193,7 +1193,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 <!-- Product 2 -->
 
 <h1 class="product_cat2">#3 - Top 3 Product Categories</h1>
-<h2 class="product_cat2">Total, Annual and Cumulative Alerts</h2>
+<h2 class="product_cat2">#3 - Total, Annual and Cumulative Alerts</h2>
 
 <div class="datatable-container" id="all-product-cat-2-annual-cumulative">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1212,7 +1212,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 
     </div>
 
-<h2 class="product_cat2">Submitting Country</h2>
+<h2 class="product_cat2">#3 - Submitting Country</h2>
 
 <div class="datatable-container" id="all-product-cat-2-submitting-country-LYvsTY">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1247,7 +1247,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 </div>
     
 
-<h2 class="product_cat2">Risk Category</h2>
+<h2 class="product_cat2">#3 - Risk Category</h2>
 
 <div class="datatable-container" id="all-product-cat-2-risk-category-LYvsTY">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1283,7 +1283,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
         <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h2 class="product_cat2">Counterfeit </h2>
+<h2 class="product_cat2">#3 - Counterfeit </h2>
 
  
     <div class="datatable-container" id="all-product-cat-2-counterfeit-Annual-Percentage">
@@ -1331,7 +1331,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 
     </div>   
 
-<h2 class="product_cat2">Compulsory / Voluntary Action Required </h2>
+<h2 class="product_cat2">#3 - Compulsory / Voluntary Action Required </h2>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1348,7 +1348,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
                   <a href="#" class="gototop">Go to Top</a>
 </div>
 
-  <h2 class="product_cat2">Top Brands for Safety Alerts</h2>
+  <h2 class="product_cat2">#3 - Top Brands for Safety Alerts</h2>
 <div class="datatable-container" id="all-product-cat-2-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
