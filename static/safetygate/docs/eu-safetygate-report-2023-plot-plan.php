@@ -7,7 +7,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="/css/custom.css">
-<link rel="stylesheet" type="text/css" href="/css/custom-menu.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" type="text/css" href="/css/project-style.css">
 
@@ -18,21 +18,19 @@
 <body>
 <!-- NAVIGATION MENU-->
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!-- <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
   
-  <?php include 'menu.php'; ?>
   
-  </div>
-  
-                  <div class="page-container">
-                    
-                    <div class="toolbar" style="width:100%; text-align:center;">
-                      <span class="menu dropbtn" style="align-items:center;" onclick="openNav()"><i style="align-items:center" class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;Menu</span>
-                  </div>
+  <div class="page-container">
+    
+    <div class="toolbar" style="width:100%; text-align:center;">
+      <!-- <span class="menu dropbtn" style="align-items:center;" onclick="openNav()"><i style="align-items:center" class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;Menu</span> -->
+      <?php include 'menu-2023.php'; ?></div>
+                  <!-- </div> -->
 <!-- CONTENT -->
 <h1>EU Safety Gate - Visualisation Plan</h2>
-  <img src="https://rodders.me/safetygate/img/Safety_Gate_Logo.png" alt="Safety Gate Logo" style="width:50%">
+  <img src="https://rodders.me/safetygate/img/icons/Safety_Gate_Logo.png" alt="Safety Gate Logo" style="width:50%">
 
 
 

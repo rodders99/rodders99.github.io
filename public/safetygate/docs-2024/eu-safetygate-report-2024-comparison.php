@@ -7,7 +7,7 @@
 <!-- <link rel="stylesheet" href="/css/coder-dark.css" media="screen"> -->
 <!-- <link rel="stylesheet" type="text/css" href="/css/coder.css"> -->
 <link rel="stylesheet" type="text/css" href="/css/custom.css">
-<link rel="stylesheet" type="text/css" href="/css/custom-menu.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" type="text/css" href="/css/project-style.css">
 
@@ -20,21 +20,22 @@
              
               <!-- NAVIGATION MENU-->
  
-              <div id="mySidenav" class="sidenav">
+              <!-- <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
              
-                <?php include 'menu.php'; ?>
+                
               
               </div>
-                    
+                     -->
           
     <div class="page-container">
-        <div class="toolbar" >
+        <div class="toolbar" style="width:100%; text-align:center; align-items:center">
                             
             <!-- JUMP TO MENU-->
-            <span class="menu dropbtn" style="align-items:center;" onclick="openNav()"><i style="align-items:center" class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;Menu</span>
-            <div id="JumptoSection">Jump to section</div>
-          <div class="countries">
+            <!-- <span class="menu dropbtn" style="align-items:center;" onclick="openNav()"><i style="align-items:center" class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;Menu</span> -->
+            <?php include 'menu-2024.php'; ?></div>
+            <div id="JumptoSection"><h2>Jump to section</h2>
+            <div class="countries">
                     <div id="JumptoSection" >
                         <select onchange="window.location.hash=this.value" class="country">
                             <option value="header-0">EU Safetygate report</option>
@@ -69,7 +70,7 @@
                             <option value="header-108">#3 - Product Category Top Brands for Safety Alerts</option>
                     </select></div>
                     
-                            <div id="CompareCountries">Compare Countries</div>
+                            <div id="CompareCountries"><h2>Compare Countries</h2></div>
                         <div id="CompareCountries" class="country"><select id="country1" >
                             <option value="china">China</option>
                             <option value="france">France</option>
@@ -111,8 +112,9 @@
                         </select>
                             
                             
-        <button onclick="redirectToComparison()" class="country">Compare</button> </div>
-</div></div>
+        <button onclick="redirectToComparison()" class="country">Compare</button> </div></div>
+</div>
+<!-- </div> -->
 
     <h1 >EU Safetygate report - Compare Countries 2024 Year to Date</h1>
     <p><img src="https://rodders.me/safetygate/img-2024/icons/Safety_Gate_Logo.png" alt="Safety Gate Logo" style="width:50%"></p>

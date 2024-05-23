@@ -7,7 +7,7 @@
 <!-- <link rel="stylesheet" href="/css/coder-dark.css" media="screen"> -->
 <!-- <link rel="stylesheet" type="text/css" href="/css/coder.css"> -->
 <link rel="stylesheet" type="text/css" href="/css/custom.css">
-<link rel="stylesheet" type="text/css" href="/css/custom-menu.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" type="text/css" href="/css/project-style.css">
 
@@ -19,23 +19,21 @@
 
 <!-- NAVIGATION MENU-->
 
-<div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<!-- <div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 
-<?php include 'menu.php'; ?>
 
-</div>
 
 
       <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
-          <span class="menu dropbtn" style="align-items:center;" onclick="openNav()"><i style="align-items:center" class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;Menu</span>
+          <!-- <span class="menu dropbtn" style="align-items:center;" onclick="openNav()"><i style="align-items:center" class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;Menu</span> -->
 
      
           <!-- JUMP TO MENU -->
-
+          <?php include 'menu-2023.php'; ?></div>
           <div class="countries">
-            <div id="JumptoSection" class="country" style="align-items:center;">Jump to section</div>
+            <div id="JumptoSection" class="country" style="align-items:center;"><h2>Jump to section</h2></div>
               <div class="country">
 
               <select onchange="window.location.hash=this.value" class="country">
@@ -86,7 +84,7 @@
                 
               </select>
             </div></div>
- </div>
+ <!-- </div> -->
 
     <h1 class="nochange">EU Safetygate report</h1>
     <p><img src="https://rodders.me/safetygate/img/icons/Safety_Gate_Logo.png" style="width:50%"></p>

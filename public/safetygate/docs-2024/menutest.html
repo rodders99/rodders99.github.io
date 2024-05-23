@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Top Bar Menu with Dropdown</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        #dropdown-menu, #dropdown-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #dropdown-menu li {
+        display: inline-block;
+        background: #f2f2f2;
+        padding: 10px;
+    }
+    
+    #dropdown-menu li:hover {
+        background: #ddd;
+    }
+    
+    #dropdown-menu li ul {
+        display: none;
+    }
+    
+    #dropdown-menu li:hover ul {
+        display: block;
+    }
+            
+
+
+        .content {
+            padding: 16px;
+            margin-top: 50px; /* Add a top margin to avoid content overlay */
+        }
+    </style>
+</head>
+<body>
+
+    <?php include 'menu.php'; ?>
+    </body>div
+</body>
+</html>
