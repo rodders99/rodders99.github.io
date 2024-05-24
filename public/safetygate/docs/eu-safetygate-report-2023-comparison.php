@@ -43,12 +43,12 @@
                             <option value="header-9">Cumulative and Annual YoY change Alerts</option>
                             <option value="header-10">Top 3 Product Categories</option>
 
-                            <option value="header-11">Countries - Product Category</option>
-                            <option value="header-16">Countries - Risk Category</option>
-                            <option value="header-21">Countries - Counterfeit </option>
-                            <option value="header-26">Countries - Action Required / Responsible Party</option>
-                            <option value="header-30">Countries - Submitting Country</option>
-                            <option value="header-35"><b>Top 3 Product Categories</b></option>
+                            <option value="header-11">Product Category</option>
+                            <option value="header-16">Risk Category</option>
+                            <option value="header-21">Counterfeit </option>
+                            <option value="header-26">Action Required / Responsible Party</option>
+                            <option value="header-30">Submitting Country</option>
+                            <option value="header-35">Top 3 Product Categories</option>
 
                             <option value="header-36">#1 - Top Product Category</option>
                             <option value="header-37">#1 - Product Category Percentage of Total Worldwide Alerts</option>
@@ -1022,7 +1022,7 @@
         </div>
         <br><a href="#" class="gototop">Go to Top</a>
 
-        <h2>#2 - Submitting Country</h2>
+        <h2>#1 - Submitting Country</h2>
 
         <h3>Percentage by Country</h3>
 

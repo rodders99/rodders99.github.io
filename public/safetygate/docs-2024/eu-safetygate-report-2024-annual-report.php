@@ -43,44 +43,45 @@
       <div class="country">
                  
               <select onchange="window.location.hash=this.value"  class="country">
-                <option value="header-0">EU Safetygate report</option>
-                <option value="header-2">Total Annual Alerts Issued</option>
-                <option value="header-4">YoY Change</option>
-                <option value="header-5">Cosmetics Note</option>
-                <option value="header-6">Cosmetics Product Sub Categories</option>
-                <option value="header-6">Cosmetics Top 30 brands</option>
-                <option value="header-8">Submitting Country</option>
-                <option value="header-10">Economic Area of Product Origin</option>
-                <option value="header-13">Country of Product Origin</option>
-                <option value="header-17">Product Categories</option>
-                <option value="header-20">Risk Categories</option>
+                <option value="header-1">EU Safetygate report</option>
+                <option value="header-3">Total Annual Alerts Issued</option>
+                <option value="header-4">Annual, Cumulative and YoY Change</option>
+                <option value="header-6">Top 3 Product and Risk Categories</option>
+                <option value="header-7">Cosmetics Top the 2024 Charts</option>
+                <option value="header-8">Cosmetics Product Sub Categories</option>
+                <option value="header-10">Cosmetics Top 30 brands</option>
+                <option value="header-12">Submitting Country</option>
+                <option value="header-14">Economic Area of Product Origin</option>
+                <option value="header-18">Country of Product Origin</option>
+                <option value="header-21">Product Categories</option>
+                <option value="header-24">Risk Categories</option>
                 <option value="header-27">Counterfeit</option>
-                <option value="header-29">Action Required</option>
-                <option value="header-31">Responsible Party</option>
-                <option value="header-34">Top 15 Countries Fact Sheets, Annual Alerts, Product & Risk Categories</option>
-                <option value="header-35">Top 30 Brands</option>
-                <option value="header-36">Top 3 Product Categories</option>
-                <option value="header-37">#1 - Top Product Category</option>
-                <option value="header-38">#1 - Product Category Annual / Total</option>
-                <option value="header-39">#1 - Product Category Submitting Country</option>
-                <option value="header-40">#1 - Product Category Risk Category</option>
-                <option value="header-41">#1 - Product Category Counterfeit</option>
-                <option value="header-42">#1 - Product Category Action Required / Responsible Party</option>
-                <option value="header-43">#1 - Product Category Top Brands</option>
-                <option value="header-44">#2 - Top Product Category</option>
-                <option value="header-45">#2 - Product Category Annual / Total</option>
-                <option value="header-46">#2 - Product Category Submitting Country</option>
-                <option value="header-47">#2 - Product Category Risk Category</option>
-                <option value="header-48">#2 - Product Category Counterfeit</option>
-                <option value="header-49">#2 - Product Category Action Required / Responsible Party</option>
-                <option value="header-50">#2 - Product Category Top Brands</option>
-                <option value="header-51">#3 - Top Product Category</option>
-                <option value="header-52">#3 - Product Category Annual / Total</option>
-                <option value="header-53">#3 - Product Category Submitting Country</option>
-                <option value="header-54">#3 - Product Category Risk Category</option>
-                <option value="header-55">#3 - Product Category Counterfeit</option>
-                <option value="header-56">#3 - Product Category Action Required / Responsible Party</option>
-                <option value="header-57">#3 - Product Category Top Brands</option>
+                <option value="header-30">Action Required</option>
+                <option value="header-33">Responsible Party</option>
+                <option value="header-36">Top 15 Countries Fact Sheets, Annual Alerts, Product & Risk Categories</option>
+                <option value="header-37">Top 30 Brands</option>
+                <option value="header-38">Top 3 Product Categories</option>
+                <option value="header-39">#1 - Top Product Category</option>
+                <option value="header-40">#1 - Product Category Annual Cumulative Alerts</option>
+                <option value="header-41">#1 - Product Category Submitting Country</option>
+                <option value="header-42">#1 - Product Category Risk Category</option>
+                <option value="header-43">#1 - Product Category Counterfeit</option>
+                <option value="header-44">#1 - Product Category Action Required / Responsible Party</option>
+                <option value="header-45">#1 - Product Category Top Brands</option>
+                <option value="header-46">#2 - Top Product Category</option>
+                <option value="header-47">#2 - Product Category Annual Cumulative Alerts</option>
+                <option value="header-48">#2 - Product Category Submitting Country</option>
+                <option value="header-49">#2 - Product Category Risk Category</option>
+                <option value="header-50">#2 - Product Category Counterfeit</option>
+                <option value="header-51">#2 - Product Category Action Required / Responsible Party</option>
+                <option value="header-52">#2 - Product Category Top Brands</option>
+                <option value="header-53">#3 - Top Product Category</option>
+                <option value="header-54">#3 - Product Category Annual Cumulative Alerts</option>
+                <option value="header-55">#3 - Product Category Submitting Country</option>
+                <option value="header-56">#3 - Product Category Risk Category</option>
+                <option value="header-57">#3 - Product Category Counterfeit</option>
+                <option value="header-58">#3 - Product Category Action Required / Responsible Party</option>
+                <option value="header-59">#3 - Product Category Top Brands</option>
                 
               </select>
             </div></div>
@@ -164,11 +165,11 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 </div>
 
     
-    <h3>Cosmetics continue to top the charts</h3>
-<p>2022-2023 were exceptions, with the introduction of the ban on the chemical 'lilial / BMHCA' for use in cosmetics.</p>
+    <h2>Cosmetics continue to top the charts</h2>
+<p>2022-2024 were exceptional years, with the introduction of the ban on the chemical 'lilial / BMHCA' for use in cosmetics.</p>
 <ul><li>In 2022 156 safety alerts were issued for products containing BMHCA</li>  
 <li>In 2023 833 safety alerts were issued for products containing BMHCA</li>
-  <li>In 2024 165 safety alerts were issued for products containing BMHCA</li></ul>
+  <li>In 2024 165 safety alerts were issued for products containing BMHCA (Year to date)</li></ul>
   </p>
   <p>So far in 2024 around 17% of all alerts issued so far this year have been for Cosmetics, with the largest sub categories being perfumes / aftershaves and soaps.</p>
 
@@ -419,24 +420,22 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
       </tbody></table>
           <a href="#" class="gototop">Go to Top</a></div>
 
-          <h2 >Risk Category</h2>
-
-          <h3 >Annual Alerts by Risk Category - Percentage of Total</h3>
-          <div class="datatable-container">
-            <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-            <tbody> 
-              <tr>
-                <td id="all-risk-category-Annual-Percentage">
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts-percentage.png">
-                  <img src="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts-percentage.png"></a>
-                </td>
-                <td id="all-risk-category-annual-total">
-                  <a href="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts.png">
-                    <img src="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts.png"></a>
-                  </td>
-              </tr>
-              </tbody></table>
-                  <a href="#" class="gototop">Go to Top</a></div>
+  <h3 >Annual Alerts by Risk Category - Percentage of Total</h3>
+  <div class="datatable-container">
+    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+    <tbody> 
+      <tr>
+        <td id="all-risk-category-Annual-Percentage">
+        <a href="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts-percentage.png">
+          <img src="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts-percentage.png"></a>
+        </td>
+        <td id="all-risk-category-annual-total">
+          <a href="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts.png">
+            <img src="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts.png"></a>
+          </td>
+      </tr>
+      </tbody></table>
+          <a href="#" class="gototop">Go to Top</a></div>
 
 
 <h2 >Counterfeit type</h2>
@@ -461,7 +460,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
             <a href="#" class="gototop">Go to Top</a></div>
   
   
-            <h2 >Counterfeit type</h2>
+    
 
 
             <h3 >Annual Alerts by Counterfeit type - Percentage of Total</h3>

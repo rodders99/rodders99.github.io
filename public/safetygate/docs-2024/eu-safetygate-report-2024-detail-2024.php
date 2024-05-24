@@ -45,16 +45,20 @@
               <div class="country">
 
               <select onchange="window.location.hash=this.value" class="country">
-                <option value="header-1">Worldwide - Annual Alerts</option>
-                <option value="header-2">Worldwide - Total Annual Alerts Issued</option>
-                <option value="header-3">Worldwide - Annual and Cumulative Alerts</option>
-                <option value="header-4">Worldwide - Annual Alerts Issued - YoY Change </option>
-                <option value="header-5">Worldwide - Submitting Country</option>
-                <option value="header-9">What happened between 2022-2023?</option>
-                <option value="header-10">European Ban on Lilial in Cosmetics - March 2021</option>
-                <option value="header-16">Top 30 Cosmetics Brands for Safety Alerts </option>
-                <option value="header-18">Economic Area of Product origin 2022 Vs 2023 </option>
-                <option value="header-19">Country of Product Origin</option>
+                <option value="header-2">Annual Alerts</option>
+                <option value="header-3">Total Annual Alerts Issued</option>
+                <option value="header-4">Annual and Cumulative Alerts</option>
+                <option value="header-5">Submitting Country</option>
+                <option value="header-8">What's happening with Cosmetics ??</option>
+                <option value="header-9">&nbsp;&nbsp;&nbsp;European Ban on Lilial in Cosmetics - March 2021</option>
+                <option value="header-10">&nbsp;&nbsp;&nbsp;UK Ban on Lilial in Cosmetics - Dec 2022</option>
+                <option value="header-11">&nbsp;&nbsp;&nbsp;Other Markets</option>
+                <option value="header-12">&nbsp;&nbsp;&nbsp;Scientific Opinion</option>
+                <option value="header-13">&nbsp;&nbsp;&nbsp;The European Cosmetics Industry</option>
+                <option value="header-15">&nbsp;&nbsp;&nbsp;Affected Cosmetic Sub-Categories</option>
+                <option value="header-16">&nbsp;&nbsp;&nbsp;Top 30 Cosmetics Brands for Safety Alerts </option>
+                <option value="header-17">Economic Area of Product origin 2022 Vs 2023 </option>
+                <option value="header-20">Country of Product Origin</option>
                 <option value="header-23">Product Categories</option>
                 <option value="header-26">Risk Category</option>
                 <option value="header-29">Counterfeit type</option>
@@ -62,32 +66,35 @@
                 <option value="header-35">Responsible Party</option>
                 <option value="header-38">Top 15 Countries - Key Fact sheets</option>
                 <option value="header-40">Top 30 Worldwide Brands for Safety Alerts</option>
+
                 <option value="header-42">Top 3 Worldwide Product Categories</option>
+
                 <option value="header-43">#1 - Top 3 Product Categories</option>
                 <option value="header-44">#1 - Total Annual and Cumulative Alerts</option>
                 <option value="header-45">#1 - Submitting Country</option>
-                <option value="header-46">#1 - Risk Category</option>
-                <option value="header-47">#1 - Counterfeit </option>
-                <option value="header-48">#1 - Compulsory / Voluntary Action Required /Responsible Party </option>
-                <option value="header-49">#1 - Action Required</option>
-                <option value="header-50">#1 - Responsible Party</option>
-                <option value="header-51">#1 - Top 30 Brands for Safety Alerts</option>
-                <option value="header-52">#2 - Top 3 Product Categories</option>
-                <option value="header-53">#2 - Total Annual and Cumulative Alerts</option>
-                <option value="header-54">#2 - Submitting Country</option>
-                <option value="header-55">#2 - Risk Category</option>
-                <option value="header-56">#2 - Counterfeit </option>
-                <option value="header-57">#2 - Action Required</option>
-                <option value="header-58">#2 - Responsible Party</option>
-                <option value="header-59">#2 - Top Brands for Safety Alerts</option>
-                <option value="header-60">#3 - Top 3 Product Categories</option>
-                <option value="header-61">#3 - Total Annual and Cumulative Alerts</option>
-                <option value="header-62">#3 - Submitting Country</option>
-                <option value="header-63">#3 - Risk Category</option>
-                <option value="header-64">#3 - Counterfeit </option>
-                <option value="header-65">#3 - Action Required </option>
-                <option value="header-66">#3 - Responsible Party</option>
-                <option value="header-67">#3 - Top Brands for Safety Alerts</option>
+                <option value="header-48">#1 - Risk Category</option>
+                <option value="header-51">#1 - Counterfeit </option>
+                <option value="header-55">#1 - Action Required</option>
+                <option value="header-58">#1 - Responsible Party</option>
+                <option value="header-60">#1 - Top 30 Brands for Safety Alerts</option>
+
+                <option value="header-61">#2 - Top 3 Product Categories</option>
+                <option value="header-63">#2 - Total Annual and Cumulative Alerts</option>
+                <option value="header-63">#2 - Submitting Country</option>
+                <option value="header-66">#2 - Risk Category</option>
+                <option value="header-69">#2 - Counterfeit </option>
+                <option value="header-73">#2 - Action Required</option>
+                <option value="header-75">#2 - Responsible Party</option>
+                <option value="header-78">#2 - Top Brands for Safety Alerts</option>
+                
+                <option value="header-79">#3 - Top 3 Product Categories</option>
+                <option value="header-80">#3 - Total Annual and Cumulative Alerts</option>
+                <option value="header-81">#3 - Submitting Country</option>
+                <option value="header-84">#3 - Risk Category</option>
+                <option value="header-87">#3 - Counterfeit </option>
+                <option value="header-91">#3 - Action Required </option>
+                <option value="header-93">#3 - Responsible Party</option>
+                <option value="header-96">#3 - Top Brands for Safety Alerts</option>
 
                 
               </select>
@@ -130,102 +137,102 @@
 	<colgroup width="85"></colgroup>
 	<colgroup span="11" width="40"></colgroup>
 	<tr>
-		<td height="17" align="left">year</td>
-		<td align="right" sdval="2005" sdnum="2057;"><b>2005</b></td>
-		<td align="right" sdval="2006" sdnum="2057;"><b>2006</b></td>
-		<td align="right" sdval="2007" sdnum="2057;"><b>2007</b></td>
-		<td align="right" sdval="2008" sdnum="2057;"><b>2008</b></td>
-		<td align="right" sdval="2009" sdnum="2057;"><b>2009</b></td>
-		<td align="right" sdval="2010" sdnum="2057;"><b>2010</b></td>
-		<td align="right" sdval="2011" sdnum="2057;"><b>2011</b></td>
-		<td align="right" sdval="2012" sdnum="2057;"><b>2012</b></td>
-		<td align="right" sdval="2013" sdnum="2057;"><b>2013</b></td>
-		<td align="right" sdval="2014" sdnum="2057;"><b>2014</b></td>
-		<td align="right" sdval="2015" sdnum="2057;"><b>2015</b></td>
+		<td height="17" style="text-align:left">year</td>
+		<td style="text-align:right"  sdval="2005" sdnum="2057;"><b>2005</b></td>
+		<td style="text-align:right"  sdval="2006" sdnum="2057;"><b>2006</b></td>
+		<td style="text-align:right"  sdval="2007" sdnum="2057;"><b>2007</b></td>
+		<td style="text-align:right"  sdval="2008" sdnum="2057;"><b>2008</b></td>
+		<td style="text-align:right"  sdval="2009" sdnum="2057;"><b>2009</b></td>
+		<td style="text-align:right"  sdval="2010" sdnum="2057;"><b>2010</b></td>
+		<td style="text-align:right"  sdval="2011" sdnum="2057;"><b>2011</b></td>
+		<td style="text-align:right"  sdval="2012" sdnum="2057;"><b>2012</b></td>
+		<td style="text-align:right"  sdval="2013" sdnum="2057;"><b>2013</b></td>
+		<td style="text-align:right"  sdval="2014" sdnum="2057;"><b>2014</b></td>
+		<td style="text-align:right"  sdval="2015" sdnum="2057;"><b>2015</b></td>
 	</tr>
 	<tr>
-		<td height="17" align="left">YTD Up to Week 16</td>
-		<td align="right" sdval="151" sdnum="2057;">151</td>
-		<td align="right" sdval="235" sdnum="2057;">235</td>
-		<td align="right" sdval="350" sdnum="2057;">350</td>
-		<td align="right" sdval="445" sdnum="2057;">445</td>
-		<td align="right" sdval="568" sdnum="2057;">568</td>
-		<td align="right" sdval="685" sdnum="2057;">685</td>
-		<td align="right" sdval="348" sdnum="2057;">348</td>
-		<td align="right" sdval="571" sdnum="2057;">571</td>
-		<td align="right" sdval="456" sdnum="2057;">456</td>
-		<td align="right" sdval="615" sdnum="2057;">615</td>
-		<td align="right" sdval="555" sdnum="2057;">555</td>
+		<td height="17" style="text-align:left">YTD Up to Week 16</td>
+		<td style="text-align:right"  sdval="151" sdnum="2057;">151</td>
+		<td style="text-align:right"  sdval="235" sdnum="2057;">235</td>
+		<td style="text-align:right"  sdval="350" sdnum="2057;">350</td>
+		<td style="text-align:right"  sdval="445" sdnum="2057;">445</td>
+		<td style="text-align:right"  sdval="568" sdnum="2057;">568</td>
+		<td style="text-align:right"  sdval="685" sdnum="2057;">685</td>
+		<td style="text-align:right"  sdval="348" sdnum="2057;">348</td>
+		<td style="text-align:right"  sdval="571" sdnum="2057;">571</td>
+		<td style="text-align:right"  sdval="456" sdnum="2057;">456</td>
+		<td style="text-align:right"  sdval="615" sdnum="2057;">615</td>
+		<td style="text-align:right"  sdval="555" sdnum="2057;">555</td>
 	</tr>
 	<tr>
-		<td height="17" align="left">TOTAL</td>
-		<td align="right" sdval="554" sdnum="2057;">554</td>
-		<td align="right" sdval="852" sdnum="2057;">852</td>
-		<td align="right" sdval="1302" sdnum="2057;">1302</td>
-		<td align="right" sdval="1495" sdnum="2057;">1495</td>
-		<td align="right" sdval="1614" sdnum="2057;">1614</td>
-		<td align="right" sdval="1906" sdnum="2057;">1906</td>
-		<td align="right" sdval="1493" sdnum="2057;">1493</td>
-		<td align="right" sdval="1798" sdnum="2057;">1798</td>
-		<td align="right" sdval="1914" sdnum="2057;">1914</td>
-		<td align="right" sdval="2167" sdnum="2057;">2167</td>
-		<td align="right" sdval="1779" sdnum="2057;">1779</td>
+		<td height="17" style="text-align:left">TOTAL</td>
+		<td style="text-align:right"  sdval="554" sdnum="2057;">554</td>
+		<td style="text-align:right"  sdval="852" sdnum="2057;">852</td>
+		<td style="text-align:right"  sdval="1302" sdnum="2057;">1302</td>
+		<td style="text-align:right"  sdval="1495" sdnum="2057;">1495</td>
+		<td style="text-align:right"  sdval="1614" sdnum="2057;">1614</td>
+		<td style="text-align:right"  sdval="1906" sdnum="2057;">1906</td>
+		<td style="text-align:right"  sdval="1493" sdnum="2057;">1493</td>
+		<td style="text-align:right"  sdval="1798" sdnum="2057;">1798</td>
+		<td style="text-align:right"  sdval="1914" sdnum="2057;">1914</td>
+		<td style="text-align:right"  sdval="2167" sdnum="2057;">2167</td>
+		<td style="text-align:right"  sdval="1779" sdnum="2057;">1779</td>
 	</tr>
 	<tr>
-		<td height="17" align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
+		<td height="17" style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
 	</tr>
 	<tr>
-		<td height="17" align="left">year</td>
-		<td align="right" sdval="2016" sdnum="2057;"><b>2016</b></td>
-		<td align="right" sdval="2017" sdnum="2057;"><b>2017</b></td>
-		<td align="right" sdval="2018" sdnum="2057;"><b>2018</b></td>
-		<td align="right" sdval="2019" sdnum="2057;"><b>2019</b></td>
-		<td align="right" sdval="2020" sdnum="2057;"><b>2020</b></td>
-		<td align="right" sdval="2021" sdnum="2057;"><b>2021</b></td>
-		<td align="right" sdval="2022" sdnum="2057;"><b>2022</b></td>
-		<td align="right" sdval="2023" sdnum="2057;"><b>2023</b></td>
-		<td align="right" sdval="2024" sdnum="2057;"><b>2024</b></td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
+		<td height="17" style="text-align:left">year</td>
+		<td style="text-align:right"  sdval="2016" sdnum="2057;"><b>2016</b></td>
+		<td style="text-align:right"  sdval="2017" sdnum="2057;"><b>2017</b></td>
+		<td style="text-align:right"  sdval="2018" sdnum="2057;"><b>2018</b></td>
+		<td style="text-align:right"  sdval="2019" sdnum="2057;"><b>2019</b></td>
+		<td style="text-align:right"  sdval="2020" sdnum="2057;"><b>2020</b></td>
+		<td style="text-align:right"  sdval="2021" sdnum="2057;"><b>2021</b></td>
+		<td style="text-align:right"  sdval="2022" sdnum="2057;"><b>2022</b></td>
+		<td style="text-align:right"  sdval="2023" sdnum="2057;"><b>2023</b></td>
+		<td style="text-align:right"  sdval="2024" sdnum="2057;"><b>2024</b></td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
 	</tr>
 	<tr>
-		<td height="17" align="left">YTD Up to Week 16</td>
-		<td align="right" sdval="534" sdnum="2057;">534</td>
-		<td align="right" sdval="591" sdnum="2057;">591</td>
-		<td align="right" sdval="606" sdnum="2057;">606</td>
-		<td align="right" sdval="673" sdnum="2057;">673</td>
-		<td align="right" sdval="665" sdnum="2057;">665</td>
-		<td align="right" sdval="619" sdnum="2057;">619</td>
-		<td align="right" sdval="718" sdnum="2057;">718</td>
-		<td align="right" sdval="839" sdnum="2057;">839</td>
-		<td align="right" sdval="995" sdnum="2057;">995</td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
+		<td height="17" style="text-align:left">YTD Up to Week 16</td>
+		<td style="text-align:right"  sdval="534" sdnum="2057;">534</td>
+		<td style="text-align:right"  sdval="591" sdnum="2057;">591</td>
+		<td style="text-align:right"  sdval="606" sdnum="2057;">606</td>
+		<td style="text-align:right"  sdval="673" sdnum="2057;">673</td>
+		<td style="text-align:right"  sdval="665" sdnum="2057;">665</td>
+		<td style="text-align:right"  sdval="619" sdnum="2057;">619</td>
+		<td style="text-align:right"  sdval="718" sdnum="2057;">718</td>
+		<td style="text-align:right"  sdval="839" sdnum="2057;">839</td>
+		<td style="text-align:right"  sdval="995" sdnum="2057;">995</td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
 	</tr>
 	<tr>
-		<td height="17" align="left">TOTAL</td>
-		<td align="right" sdval="1815" sdnum="2057;">1815</td>
-		<td align="right" sdval="1922" sdnum="2057;">1922</td>
-		<td align="right" sdval="1954" sdnum="2057;">1954</td>
-		<td align="right" sdval="2015" sdnum="2057;">2015</td>
-		<td align="right" sdval="2075" sdnum="2057;">2075</td>
-		<td align="right" sdval="1970" sdnum="2057;">1970</td>
-		<td align="right" sdval="1983" sdnum="2057;">1983</td>
-		<td align="right" sdval="3023" sdnum="2057;">3023</td>
-		<td align="right" sdval="995" sdnum="2057;">995</td>
-		<td align="left"><br></td>
-		<td align="left"><br></td>
+		<td height="17" style="text-align:left">TOTAL</td>
+		<td style="text-align:right"  sdval="1815" sdnum="2057;">1815</td>
+		<td style="text-align:right"  sdval="1922" sdnum="2057;">1922</td>
+		<td style="text-align:right"  sdval="1954" sdnum="2057;">1954</td>
+		<td style="text-align:right"  sdval="2015" sdnum="2057;">2015</td>
+		<td style="text-align:right"  sdval="2075" sdnum="2057;">2075</td>
+		<td style="text-align:right"  sdval="1970" sdnum="2057;">1970</td>
+		<td style="text-align:right"  sdval="1983" sdnum="2057;">1983</td>
+		<td style="text-align:right"  sdval="3023" sdnum="2057;">3023</td>
+		<td style="text-align:right"  sdval="995" sdnum="2057;">995</td>
+		<td style="text-align:left"><br></td>
+		<td style="text-align:left"><br></td>
 	</tr>
 
 
@@ -302,7 +309,7 @@ increase of 1,249 over the previous year.</p>
 </div>
 
 
-<h2>What happened between 2022-2023?</h2>
+<h2>What's happening with Cosmetics?</h2>
 
 <H3>European Ban on Lilial in Cosmetics - March 2021</H3>
 <p>2023 was an exception with the introduction of the ban on the chemical <a href="https://en.wikipedia.org/wiki/Lilial">lilial / BMHCA</a> for use in cosmetics on 1st March 2022.</p>
@@ -907,8 +914,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td>
-      <a href="https://rodders.me/safetygate/img-2024/all-countries-top-30-brands-for-safety-alerts-ty.png">
-        <img src="https://rodders.me/safetygate/img-2024/all-countries-top-30-brands-for-safety-alerts-ty.png"></a>
+      <a href="https://rodders.me/safetygate/img-2024/all-countries-top-30-brands-for-safety-alerts.png">
+        <img src="https://rodders.me/safetygate/img-2024/all-countries-top-30-brands-for-safety-alerts.png"></a>
       </td></tr>
     </tbody></table>
         <a href="#" class="gototop">Go to Top</a>
@@ -946,9 +953,9 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
     <a href="#" class="gototop">Go to Top</a>
     </div>
 
-<h3 class="product_cat0">Submitting Country</h3>
+<h2 class="product_cat0">#1 - Submitting Country</h2>
 
-<h4 class="product_cat0">2022 Vs 2023</h4>
+<h3 class="product_cat0">2022 Vs 2023</h4>
 
     <div class="datatable-container" id="all-product-cat-0-submitting-country-2022vs2023">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -960,7 +967,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
             <a href="#" class="gototop">Go to Top</a>
           </div>
     
-<h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
+<h3 class="product_cat0">Annual Total and Annual Percentage of Total</h3>
 
     <div class="datatable-container" id="all-product-cat-0-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -984,8 +991,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         <a href="#" class="gototop">Go to Top</a>
         </div>
 
-<h3 class="product_cat0">Risk Category</h3>
-<h4 class="product_cat0">2022 Vs 2023</h4>
+<h2 class="product_cat0">#1 - Risk Category</h2>
+<h3 class="product_cat0">2022 Vs 2023</h3>
 
 <div class="datatable-container" id="all-product-cat-0-risk-category-2022vs2023">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -997,7 +1004,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
+<h3 class="product_cat0">Annual Total and Annual Percentage of Total</h3>
 
 <div class="datatable-container" id="all-product-cat-0-risk-category-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1020,8 +1027,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         <a href="#" class="gototop">Go to Top</a>
         </div>
         
-<h3 class="product_cat0">Counterfeit </h3>
-<h4>2022 Vs 2023</h4>
+<h2 class="product_cat0">#1 - Counterfeit </h2>
+<h3>2022 Vs 2023</h3>
         <div class="datatable-container" id="all-product-cat-0-counterfeit-2022vs2023">
 
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1034,7 +1041,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
             </div>
 
 
-<h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
+<h3 class="product_cat0">Annual Total and Annual Percentage of Total</h3>
 
     <div class="datatable-container" id="all-product-cat-0-counterfeit-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1046,10 +1053,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <th style="text-align:center;">Annual % of Total</th>
         </tr> 
         <tr>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts.png"  ></a></td>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts-percentage.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts-percentage.png"  ></a></td>
         </tr> 
@@ -1060,10 +1067,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
     </div>   
     
 
-      <h3 class="product_cat0">Compulsory / Voluntary Action Required /Responsible Party </h3>
+      <h2 class="product_cat0">#1 - Compulsory / Voluntary Action Required /Responsible Party </h2>
 
-      <h3 class="product_cat0">Action Required</h3>
-      <h4 class="product_cat0">2022 Vs 2023</h4>
+      <h2 class="product_cat0">#1 - Action Required</h2>
+      <h3 class="product_cat0">2022 Vs 2023</h3>
 
       <div class="datatable-container" id="all-product-cat-0-action-required-2022vs2023">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1071,7 +1078,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
             <tr>
               <td>
                 <a href = "https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-ly-vs-ty.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-ly-vs-ty.png"  ></a>
+                <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-ly-vs-ty.png" ></a>
               </td>
             </tr>
           </tbody>
@@ -1079,7 +1086,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         <a href="#" class="gototop">Go to Top</a>
       </div>
 
-      <h4 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h4>
+      <h3 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h3>
 
 
       <div class="datatable-container" id="all-product-cat-0-action-required-Annual-Percentage">
@@ -1090,12 +1097,12 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
                 <th style="text-align:center;">Compulsory Vs Voluntary</th>
             </tr> 
             <tr>
-              <td style="width:49%">
+              <td style="width:48%">
                 <a href ="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-annual-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-annual-alerts.png"  ></a></td>
-              <td style="width:49%">
+                <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-annual-alerts.png"></a></td>
+              <td style="width:48%">
                 <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-total-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-total-alerts.png"  ></a></td>
+                <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-total-alerts.png"></a></td>
             </tr> 
           </tbody>
         </table>
@@ -1103,7 +1110,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>   
         
-        <h3 class="product_cat0">Responsible Party</h3>
+        <h2 class="product_cat0">#1 - Responsible Party</h2>
           <h4 class="product_cat0">2022 Vs 2023</h4>
         <div class="datatable-container" id="all-product-cat-0-responsible-2022vs2023">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1116,7 +1123,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         </div>
 
 
-        <h4 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h4>
+        <h3 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h3>
 
             <div class="datatable-container" id="all-product-cat-0-responsible-Annual-Percentage">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1142,14 +1149,14 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
 
 
-<h3 class="product_cat0">Top 30 Brands for Safety Alerts</h3>
+<h2 class="product_cat0">#1 - Top 30 Brands for Safety Alerts</h2>
 <div class="datatable-container" id="all-product-cat-0-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 <tr >
 <th >Top 30 Brands</th>
 </tr>
-</thead> all-countries-product-0-top-30-brands-for-safety-alerts-ty
+</thead>
 <tbody>
 <tr >
 <td style="text-align: center;">
@@ -1168,7 +1175,6 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 <h2 class="product_cat1">#2 - Top 3 Product Categories</h2>
 
 <h3 class="product_cat1">Total, Annual and Cumulative Alerts</h3>
-
 
 <div class="datatable-container" id="all-product-cat-1-annual-cumulative">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1192,7 +1198,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
     </div>
 
-    <h4 class="product_cat1">2022 Vs 2023</h4>
+    <h2 class="product_cat1">#2 - Submitting Country</h2>
+    <h3 class="product_cat1">2022 Vs 2023</h3>
 
     
     
@@ -1208,7 +1215,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <a href="#" class="gototop">Go to Top</a>
 </div>
     
-<h3 class="product_cat1">Submitting Country</h3>
+<h3 class="product_cat1">Annual Total / Annual Percentage of Total</h3>
 
     <div class="datatable-container" id="all-product-cat-1-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1219,11 +1226,11 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <th style="text-align:center;">Cumulative Total and YoY Change</th>
         </tr> 
         <tr>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-annual-alerts.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-annual-alerts.png"  ></a>
           </td>
-          <td style="text-align:center;" >
+          <td style="text-align:center;  width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-annual-percentage.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-annual-percentage.png"  ></a>
           </td>
@@ -1235,8 +1242,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>
 
-<h3 class="product_cat1">Risk Category</h3>
-<h4 class="product_cat1">2022 Vs 2023</h4>
+<h2 class="product_cat1">#2 - Risk Category</h2>
+<h3 class="product_cat1">2022 Vs 2023</h3>
 
 <div class="datatable-container" id="all-product-cat-1-risk-category-2022vs2023">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1248,7 +1255,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h4 class="product_cat1">Annual Total / Annual Percentage of Total</h4>
+<h3 class="product_cat1">Annual Total / Annual Percentage of Total</h3>
 
     <div class="datatable-container" id="all-product-cat-1-risk-category-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1259,10 +1266,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <th style="text-align:center;">Cumulative Total and YoY Change</th>
         </tr> 
         <tr>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts.png"  ></a></td>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts-percentage.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts-percentage.png"  ></a></td>
         </tr> 
@@ -1273,8 +1280,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>
         
-<h3 class="product_cat1">Counterfeit </h3>
-<h4 class="product_cat1">2022 Vs 2023 </h4>
+<h2 class="product_cat1">#2 - Counterfeit </h2>
+<h3 class="product_cat1">2022 Vs 2023 </h3>
 
         <div class="datatable-container" id="all-product-cat-1-counterfeit-2022vs2023">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1291,7 +1298,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <a href="#" class="gototop">Go to Top</a>
         </div>
 
-        <h4 class="product_cat1">Annual Total and Annual Percentage of Total</h4>
+        <h3 class="product_cat1">Annual Total and Annual Percentage of Total</h3>
 
 
     <div class="datatable-container" id="all-product-cat-1-counterfeit-Annual-Percentage">
@@ -1303,10 +1310,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <th style="text-align:center;">Cumulative Total and YoY Change</th>
         </tr> 
         <tr>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts.png"  ></a></td>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts-percentage.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts-percentage.png"  ></a></td>
         </tr> 
@@ -1316,10 +1323,11 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
     </div>   
     
+    <h2 class="product_cat1">#2 - Annual Total / Compulsory Vs Voluntary Total</h2>
 
-    <h3 class="product_cat1">Action Required</h3>
+    <h2 class="product_cat1">#2 - Action Required</h2>
 
-    <h4 class="product_cat1">2022 Vs 2023</h4>
+    <h3 class="product_cat1">2022 Vs 2023</h3>
 
     <div class="datatable-container" id="all-product-cat-1-action-required-2022vs2023">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1331,7 +1339,6 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
               <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h4 class="product_cat1">Annual Total / Compulsory Vs Voluntary Total</h4>
 
         <div class="datatable-container" id="all-product-cat-1-action-required-CvsV">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1342,10 +1349,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
               <th style="text-align:center;">Compulsory Vs Voluntary Total</th>
             </tr> 
             <tr>
-              <td >
+              <td style="width:49%">
                 <a href ="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-annual-alerts.png">
                 <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-annual-alerts.png"  ></a></td>
-              <td >
+              <td style="width:49%">
                 <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-total-alerts.png">
                 <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-total-alerts.png"  ></a></td>
             </tr> 
@@ -1355,8 +1362,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>   
         
-        <h3 class="product_cat1">Responsible Party</h3>
-        <h4 class="product_cat1">2022 Vs 2023</h4>
+        <h2 class="product_cat1">#2 - Responsible Party</h2>
+        <h3 class="product_cat1">2022 Vs 2023</h3>
 
         <div class="datatable-container" id="all-product-cat-1-responsible-2022vs2023">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1368,7 +1375,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
                   <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h4 class="product_cat1">Annual Total / Compulsory Vs Voluntary Total</h4>
+<h3 class="product_cat1">Annual Total / Compulsory Vs Voluntary Total</h3>
 
             <div class="datatable-container" id="all-product-cat-1-responsible-CvsV">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1379,10 +1386,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
                   <th style="text-align:center;">Compulsory Vs Voluntary Total</th>
                 </tr> 
                 <tr>
-                  <td >
+                  <td style="width:49%">
                     <a href ="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-annual-alerts.png">
                     <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-annual-alerts.png"  ></a></td>
-                  <td >
+                  <td style="width:49%">
                     <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-total-alerts.png">
                     <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-total-alerts.png"  ></a></td>
                 </tr> 
@@ -1394,7 +1401,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
 
 
-<h3 class="product_cat1">Top Brands for Safety Alerts</h3>
+<h2 class="product_cat1">#2 - Top Brands for Safety Alerts</h2>
 <div class="datatable-container" id="all-product-cat-1-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -1429,10 +1436,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
       <th style="text-align:center;">Cumulative Total and YoY Change</th>
     </tr> 
     <tr>
-      <td style="text-align:center;" >
+      <td style="text-align:center; width:49%" >
         <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-annual-and-cumulative-alerts.png">
           <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-annual-and-cumulative-alerts.png" ></a></td>
-      <td style="text-align:center;" >
+      <td style="text-align:center; width:49%" >
         <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-annual-cumulative-alerts-and-yoy-change.png">
           <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
     </tr> 
@@ -1443,8 +1450,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
     </div>
 
-<h3 class="product_cat2">Submitting Country</h3>
-<h4>2022 Vs 2023</h4>
+<h2 class="product_cat2">#3 - Submitting Country</h2>
+<h3>2022 Vs 2023</h3>
 
     <div class="datatable-container" id="all-product-cat-2-submitting-country-2022vs2023">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1455,7 +1462,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
               </td></tr></tbody></table>
               <a href="#" class="gototop">Go to Top</a>
 </div>
-<h4>Annual Total and Annual Percentage of Total</h4>
+<h3>Annual Total and Annual Percentage of Total</h3>
 
 
     <div class="datatable-container" id="all-product-cat-2-submitting-country-Annual-Percentage">
@@ -1467,11 +1474,11 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <th style="text-align:center;">Cumulative Total and YoY Change</th>
         </tr> 
         <tr>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-annual-alerts.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-annual-alerts.png"  ></a>
           </td>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-annual-percentage.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-annual-percentage.png"  ></a>
           </td>
@@ -1483,8 +1490,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>
 
-<h3 class="product_cat2">Risk Category</h3>
-<h4>2022 Vs 2023</h4>
+<h2 class="product_cat2">#3 - Risk Category</h2>
+<h3>2022 Vs 2023</h3>
 
 
 <div class="datatable-container" id="all-product-cat-2-risk-category-2022vs2023">
@@ -1499,7 +1506,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
   </table>
         <a href="#" class="gototop">Go to Top</a>
 </div>
-<h4>Annual Total and Annual Percentage of Total</h4>
+
+<h3>Annual Total and Annual Percentage of Total</h3>
 
     <div class="datatable-container" id="all-product-cat-2-risk-category-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1510,10 +1518,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <th style="text-align:center;">Annual Percentage of Total</th>
         </tr> 
         <tr>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts.png"  ></a></td>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts-percentage.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts-percentage.png"  ></a></td>
         </tr> 
@@ -1524,8 +1532,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>
         
-        <h3 class="product_cat2">Counterfeit </h3>
-        <h4>2022 Vs 2023</h4>
+        <h3 class="product_cat2">#3 - Counterfeit </h3>
+        <h3>2022 Vs 2023</h3>
 
 
         <div class="datatable-container" id="all-product-cat-2-counterfeit-2022vs2023">
@@ -1538,7 +1546,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h4>Annual Total and Annual Percentage of Total</h4>
+<h3>Annual Total and Annual Percentage of Total</h3>
 
 
     <div class="datatable-container" id="all-product-cat-2-counterfeit-Annual-Percentage">
@@ -1551,10 +1559,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <th style="text-align:center;">Annual Percentage of Total</th>
         </tr> 
         <tr>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts.png"  ></a></td>
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:49%" >
           <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts-percentage.png">
             <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts-percentage.png"  ></a></td>
         </tr> 
@@ -1564,9 +1572,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
     </div>   
     
+    <h2>#3 - Annual Total and Compulsory Vs Voluntary Total</h2>
 
-<h3 class="product_cat2">Action Required </h3>        
-<h4>2022 Vs 2023</h4>
+<h2 class="product_cat2">#3 - Action Required </h2>
+<h3>2022 Vs 2023</h3>
 
     <div class="datatable-container" id="all-product-cat-2-action-required-2022vs2023">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1578,7 +1587,6 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
               <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h4>Annual Total and Compulsory Vs Voluntary Total</h4>
 
         <div class="datatable-container" id="all-product-cat-2-action-required-CvsV">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1589,10 +1597,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
               <th style="text-align:center;">Compulsory Vs Voluntary Total</th>
             </tr> 
             <tr>
-              <td >
+              <td style=" width:49%">
                 <a href ="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-annual-alerts.png">
                 <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-annual-alerts.png"  ></a></td>
-              <td >
+              <td style=" width:49%">
                 <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-total-alerts.png">
                 <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-total-alerts.png"  ></a></td>
             </tr> 
@@ -1602,8 +1610,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>   
         
-<h3 class="product_cat2">Responsible Party</h3>
-<h4>2022 Vs 2023</h4>
+<h2 class="product_cat2">#3 - Responsible Party</h2>
+<h3>2022 Vs 2023</h3>
 
 
         <div class="datatable-container" id="all-product-cat-2-responsible-2022vs2023">
@@ -1616,15 +1624,15 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
                   <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h4>Annual Total Compulsory Vs Voluntary Total</h4>
+<h3>#3 - Annual / Total Compulsory Vs Voluntary Total</h3>
 
         <div class="datatable-container" id="all-product-cat-2-responsible-CvsV">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
               <tbody> 
     
                 <tr>
-                  <th style="text-align:center;">Annual Total</th>
-                  <th style="text-align:center;">Compulsory Vs Voluntary Total</th>
+                  <th style="text-align:center; width:49%">Annual Total</th>
+                  <th style="text-align:center; width:49%">Compulsory Vs Voluntary Total</th>
                 </tr> 
                 <tr>
                   <td >
@@ -1642,7 +1650,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
 
 
-<h3 class="product_cat2">Top Brands for Safety Alerts</h3>
+<h2 class="product_cat2">#3 - Top Brands for Safety Alerts</h2>
 <div class="datatable-container" id="all-product-cat-2-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 

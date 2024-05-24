@@ -37,16 +37,21 @@
               <div class="country">
 
               <select onchange="window.location.hash=this.value" class="country">
-                <option value="header-1">Worldwide - Annual Alerts</option>
-                <option value="header-2">Worldwide - Total Annual Alerts Issued</option>
-                <option value="header-3">Worldwide - Annual and Cumulative Alerts</option>
-                <option value="header-4">Worldwide - Annual Alerts Issued - YoY Change </option>
-                <option value="header-5">Worldwide - Submitting Country</option>
-                <option value="header-9">What happened between 2022-2023?</option>
-                <option value="header-10">European Ban on Lilial in Cosmetics - March 2021</option>
-                <option value="header-16">Top 30 Cosmetics Brands for Safety Alerts </option>
-                <option value="header-18">Economic Area of Product origin 2022 Vs 2023 </option>
-                <option value="header-19">Country of Product Origin</option>
+                <option value="header-2">Annual Alerts</option>
+                <option value="header-3">Total Annual Alerts Issued</option>
+                <option value="header-4">Annual and Cumulative Alerts</option>
+                <option value="header-5">Cumulative Alerts and YoY Change </option>
+                <option value="header-6">Submitting Country Map Visualisation</option>
+                <option value="header-10">What happened between 2022-2023?</option>
+                <option value="header-11">&nbsp;&nbsp;&nbsp;European Ban on Lilial in Cosmetics - March 2021</option>
+                <option value="header-12">&nbsp;&nbsp;&nbsp;UK Ban on Lilial in Cosmetics - Dec 2022</option>
+                <option value="header-13">&nbsp;&nbsp;&nbsp;Other Markets</option>
+                <option value="header-14">&nbsp;&nbsp;&nbsp;Scientific Opinion</option>
+                <option value="header-15">&nbsp;&nbsp;&nbsp;The European Cosmetics Industry</option>
+                <option value="header-17">&nbsp;&nbsp;&nbsp;Top 30 Cosmetics Brands for Safety Alerts </option>
+                <option value="header-18">Which Countries receive the most alerts?</option>
+                <option value="header-19">Economic Area of Product origin 2022 Vs 2023 </option>
+                <option value="header-20">Country of Product Origin</option>
                 <option value="header-23">Product Categories</option>
                 <option value="header-26">Risk Category</option>
                 <option value="header-29">Counterfeit type</option>
@@ -55,6 +60,7 @@
                 <option value="header-38">Top 15 Countries - Key Fact sheets</option>
                 <option value="header-40">Top 30 Worldwide Brands for Safety Alerts</option>
                 <option value="header-42">Top 3 Worldwide Product Categories</option>
+
                 <option value="header-43">#1 - Top 3 Product Categories</option>
                 <option value="header-44">#1 - Total Annual and Cumulative Alerts</option>
                 <option value="header-45">#1 - Submitting Country</option>
@@ -64,6 +70,7 @@
                 <option value="header-49">#1 - Action Required</option>
                 <option value="header-50">#1 - Responsible Party</option>
                 <option value="header-51">#1 - Top 30 Brands for Safety Alerts</option>
+
                 <option value="header-52">#2 - Top 3 Product Categories</option>
                 <option value="header-53">#2 - Total Annual and Cumulative Alerts</option>
                 <option value="header-54">#2 - Submitting Country</option>
@@ -72,6 +79,7 @@
                 <option value="header-57">#2 - Action Required</option>
                 <option value="header-58">#2 - Responsible Party</option>
                 <option value="header-59">#2 - Top Brands for Safety Alerts</option>
+                
                 <option value="header-60">#3 - Top 3 Product Categories</option>
                 <option value="header-61">#3 - Total Annual and Cumulative Alerts</option>
                 <option value="header-62">#3 - Submitting Country</option>
@@ -228,10 +236,10 @@ increase of 1,249 over the previous year.</p>
 <p>The country that submitted the safety alert.</p>
 
 <h3 >Map Plot 2022 Vs 2023</h3>
-  <div class="datatable-container" id="all-AnnualGeoplot">
-    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+<div class="datatable-container" id="all-AnnualGeoplot">
+  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
-    <tr><td>  <a href="https://rodders.me/safetygate/img/submitting-country-geo-plot.png">
+      <tr><td>  <a href="https://rodders.me/safetygate/img/submitting-country-geo-plot.png">
   <img src="https://rodders.me/safetygate/img/submitting-country-geo-plot.png">
 </td>
 </tr>
@@ -362,7 +370,7 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 
   <h3>The European Cosmetics Industry</h3>
   
-  <h4>Country of Product Origin</h4>
+  <h4>Cosmetics Country of Product Origin</h4>
   <div class="datatable-container" id="all-Cosmetics-Coo">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
@@ -441,7 +449,7 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 <ul><code>other</code> Where the country isn't in the top 15, and represents 2,933 products or 8.4% of the total</ul>
 <ul><code>Unknown</code> Where the reporting member didn't record the country of origin, and represents 9,173 products, or 25.8% of the total Alerts issued</ul>
 
-<h3 >2022 Vs 2023</h3>
+
 <div class="datatable-container" id="all-Coo-2022-vs-2023">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 

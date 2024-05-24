@@ -17,7 +17,7 @@ echo '
            </ul>
        </li>
        <li>
-        <a href = "#"><b>Data Visualisations</b></a>
+        <a href = "#"><b>Report Year</b></a>
            <ul>
                <li><a href = "https://rodders.me/safetygate/docs-2024/eu-safetygate-report-2024-detail-2024.php">2024 Year to date</a></li>
                <li><a href = "https://rodders.me/safetygate/docs/eu-safetygate-report-2023-annual-report.php"><b><u>Annual Report 2023</u></b></a></li>

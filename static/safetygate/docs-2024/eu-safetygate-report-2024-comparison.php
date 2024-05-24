@@ -39,35 +39,43 @@
                     <div id="JumptoSection" >
                         <select onchange="window.location.hash=this.value" class="country">
                             <option value="header-0">EU Safetygate report</option>
-                            <option value="header-1">Countries - Annual, Cumulative and YoY Change</option>
-                            <option value="header-8">Top 3 Product and Risk Categories</option>
-                            <option value="header-9">Countries - Product Category</option>
-                            <option value="header-14">Countries - Risk Category</option>
-                            <option value="header-19">Countries - Counterfeit </option>
-                            <option value="header-24">Countries - Action Required / Responsible Party</option>
-                            <option value="header-28">Countries - Submitting Country</option>
-                            <option value="header-33">Top 3 Product Categories</option>
-                            <option value="header-34">#1 - Top Product Category</option>
+                            <option value="header-3">Percentage of total alerts Vs RoW</option>
+                            <option value="header-4">Annual, Cumulative Alerts</option>
+                            <option value="header-5">Cumulative and YoY Change</option>
+                            <option value="header-6">Top 3 Product and Risk Categories</option>
+                            <option value="header-7">Product Category</option>
+                            <option value="header-12">Risk Category</option>
+                            <option value="header-17">Counterfeit </option>
+                            <option value="header-22">Action Required / Responsible Party</option>
+                            <option value="header-26">Submitting Country</option>
+                            <option value="header-31">Top 3 Product Categories</option>
+
+                            <option value="header-32">#1 - Top Product Category</option>
+                            <option value="header-34">#1 - Category Percentage of Country Alerts </option>
                             <option value="header-35">#1 - Product Category Annual, Cumulative & YoY Change</option>
-                            <option value="header-39">#1 - Product Category Risk Category</option>
-                            <option value="header-44">#1 - Product Category Counterfeit ?</option>
-                            <option value="header-49">#1 - Product Category Action Required / Responsible Party</option>
-                            <option value="header-53">#1 - Product Category Submitting Country</option>
-                            <option value="header-58">#1 - Product Category Top Brands for Safety Alerts</option>
-                            <option value="header-59">#2 - Top Product Category</option>
-                            <option value="header-62">#2 - Product Category Annual, Cumulative & YoY Change</option>
-                            <option value="header-64">#2 - Product Category Risk Category</option>
-                            <option value="header-69">#2 - Product Category Counterfeit</option>
-                            <option value="header-74">#2 - Product Category Action Required / Responsible Party</option>
-                            <option value="header-78">#2 - Product Category Submitting Country</option>
-                            <option value="header-83">#2 - Product Category Top Brands for Safety Alerts</option>
-                            <option value="header-84">#3 - Top Product Category</option>
+                            <option value="header-37">#1 - Product Category Risk Category</option>
+                            <option value="header-42">#1 - Product Category Counterfeit ?</option>
+                            <option value="header-47">#1 - Product Category Action Required / Responsible Party</option>
+                            <option value="header-51">#1 - Product Category Submitting Country</option>
+                            <option value="header-56">#1 - Product Category Top Brands for Safety Alerts</option>
+
+                            <option value="header-57">#2 - Top Product Category</option>
+                            <option value="header-59">#2 - Category Percentage of Country Alerts </option>
+                            <option value="header-60">#2 - Product Category Annual, Cumulative & YoY Change</option>
+                            <option value="header-62">#2 - Product Category Risk Category</option>
+                            <option value="header-67">#2 - Product Category Counterfeit</option>
+                            <option value="header-72">#2 - Product Category Action Required / Responsible Party</option>
+                            <option value="header-76">#2 - Product Category Submitting Country</option>
+                            <option value="header-81">#2 - Product Category Top Brands for Safety Alerts</option>
+                            
+                            <option value="header-82">#3 - Top Product Category</option>
+                            <option value="header-84">#3 - Category Percentage of Country Alerts </option>
                             <option value="header-85">#3 - Product Category Annual, Cumulative & YoY Change</option>
-                            <option value="header-89">#3 - Product Category Risk Category</option>
-                            <option value="header-94">#3 - Product Category Counterfeit ?</option>
-                            <option value="header-99">#3 - Product Category Action Required / Responsible Party</option>
-                            <option value="header-103">#3 - Product Category Submitting Country</option>
-                            <option value="header-108">#3 - Product Category Top Brands for Safety Alerts</option>
+                            <option value="header-87">#3 - Product Category Risk Category</option>
+                            <option value="header-92">#3 - Product Category Counterfeit ?</option>
+                            <option value="header-97">#3 - Product Category Action Required / Responsible Party</option>
+                            <option value="header-101">#3 - Product Category Submitting Country</option>
+                            <option value="header-106">#3 - Product Category Top Brands for Safety Alerts</option>
                     </select></div>
                     
                             <div id="CompareCountries"><h2>Compare Countries</h2></div>
@@ -663,42 +671,43 @@
 <H1 >Top 3 Product Categories</H1>
 
 <h1 >#1 - Product Category</h1>
-<h2 >#1 - Annual, Cumulative & YoY Change</h2>
+
+<h2 >#1 - Annual Total</h2>
 
 <h3 >Percentage of Total Alerts</h3>
 
-    <div class="datatable-container">
-      <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-0-percentage">
+<div class="datatable-container">
+    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-0-percentage">
         <tbody> 
-  
-        <tr>
-          <th style="text-align:center;width:10%">Total</th>
-          <td style="text-align:center;" >
-            <a href="https://rodders.me/safetygate/img-2024/all-product-0-total-alerts-percentage.png" class="country1">
-                <img src="https://rodders.me/safetygate/img-2024/product-0-total-alerts-percentage.png" class="country1" >
-            </a>
-        </td>      
-          <td style="text-align:center;" >
-            <a href="https://rodders.me/safetygate/img-2024/all-product-0-total-alerts-percentage.png" class="country2">
-                <img src="https://rodders.me/safetygate/img-2024/product-0-total-alerts-percentage.png" class="country2" >
-            </a>
-        </td>      
-        
             
-        </tr>    
-        <tr>
-        
-        </tr> 
-</tbody>
-</table>
-<a href="#" class="gototop">Go to Top</a>
-</div>
-
-
-<h3 >Annual Total</h3>
-  <div class="datatable-container">
-    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-0-annual-cumulative">
-      <tbody> 
+            <tr>
+                <th style="text-align:center;width:10%">Total</th>
+                <td style="text-align:center;" >
+                    <a href="https://rodders.me/safetygate/img-2024/all-product-0-total-alerts-percentage.png" class="country1">
+                        <img src="https://rodders.me/safetygate/img-2024/product-0-total-alerts-percentage.png" class="country1" >
+                    </a>
+                </td>      
+                <td style="text-align:center;" >
+                    <a href="https://rodders.me/safetygate/img-2024/all-product-0-total-alerts-percentage.png" class="country2">
+                        <img src="https://rodders.me/safetygate/img-2024/product-0-total-alerts-percentage.png" class="country2" >
+                    </a>
+                </td>      
+                
+                
+            </tr>    
+            <tr>
+                
+                </tr> 
+            </tbody>
+        </table>
+        <a href="#" class="gototop">Go to Top</a>
+    </div>
+    
+    
+    <h3 >Annual, Cumulative Total</h3>
+    <div class="datatable-container">
+        <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-0-annual-cumulative">
+            <tbody> 
       <tr>
         <th style="text-align:center;width:10%">Annual Alerts</th>
         <td style="text-align:center;" >
@@ -832,10 +841,10 @@
             <tr>
               <th style="text-align:center;width:10%">Total</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-0-total-counterfeit-type-percentage-of-all.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-0-counterfeit-total-alerts-percentage.png" class="country1">
                     <img src="https://rodders.me/safetygate/img-2024/product-0-counterfeit-total-alerts-percentage.png"  class="country1"></a>
                 </td>
-              <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2024/all-product-0-total-counterfeit-type-percentage-of-all.png" class="country2">
+              <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2024/all-product-0-counterfeit-total-alerts-percentage.png" class="country2">
                 <img src="https://rodders.me/safetygate/img-2024/product-0-counterfeit-total-alerts-percentage.png"  class="country2"></a>
             </td>
             </tr> </tbody>
@@ -851,11 +860,11 @@
             <tr>
                 <th style="text-align:center;width:10%">Previous Year Vs Current Year</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-0-total-counterfeit-type-ly-vs-ty.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-0-counterfeit-ly-vs-ty.png" class="country1">
                 <img src="https://rodders.me/safetygate/img-2024/product-0-counterfeit-ly-vs-ty.png"  class="country1"></a>
             </td>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-0-total-counterfeit-type-ly-vs-ty.png" class="country2">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-0-counterfeit-ly-vs-ty.png" class="country2">
                 <img src="https://rodders.me/safetygate/img-2024/product-0-counterfeit-ly-vs-ty.png"  class="country2"></a>
             </td>
             </tr> 
@@ -873,11 +882,11 @@
             <tr>
               <th style="text-align:center;width:10%">Annual Total</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-0-annual-counterfeit-alerts-issued.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-0-counterfeit-annual-alerts.png" class="country1">
                     <img src="https://rodders.me/safetygate/img-2024/product-0-counterfeit-annual-alerts.png" class="country1" ></a>
                 </td>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-0-annual-counterfeit-alerts-issued.png" class="country2">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-0-counterfeit-annual-alerts.png" class="country2">
                     <img src="https://rodders.me/safetygate/img-2024/product-0-counterfeit-annual-alerts.png" class="country2" ></a>
                 </td>
             </tr> 
@@ -895,11 +904,11 @@
             <tr>
                 <th style="text-align:center;">Annual Percentage of Total</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-0-annual-counterfeit-alerts-issued-percentage-by-type.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-0-counterfeit-annual-alerts-percentage.png" class="country1">
                     <img src="https://rodders.me/safetygate/img-2024/product-0-counterfeit-annual-alerts-percentage.png"  class="country1"></a>
                 </td>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-0-annual-counterfeit-alerts-issued-percentage-by-type.png" class="country2">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-0-counterfeit-annual-alerts-percentage.png" class="country2">
                     <img src="https://rodders.me/safetygate/img-2024/product-0-counterfeit-annual-alerts-percentage.png"  class="country2"></a>
                 </td>
             </tr> 
@@ -1125,7 +1134,7 @@
 
 <h1 >#2 - Product Category</h1>
 
-<h2 >#2 - Annual / Total</h2>
+<h2 >#2 - Annual Total</h2>
 
 <h3 >Percentage of Total Alerts</h3>
 
@@ -1294,10 +1303,10 @@
             <tr>
               <th style="text-align:center;width:10%">Total</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-1-total-counterfeit-type-percentage-of-all.png" class="country1">
+                     <a href="https://rodders.me/safetygate/img-2024/all-product-1-counterfeit-total-alerts-percentage.png" class="country1">
                     <img src="https://rodders.me/safetygate/img-2024/product-1-counterfeit-total-alerts-percentage.png"  class="country1"></a>
                 </td>
-              <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2024/all-product-1-total-counterfeit-type-percentage-of-all.png" class="country2">
+              <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2024/all-product-1-counterfeit-total-alerts-percentage.png" class="country2">
                 <img src="https://rodders.me/safetygate/img-2024/product-1-counterfeit-total-alerts-percentage.png"  class="country2"></a>
             </td>
             </tr> 
@@ -1318,11 +1327,11 @@
             <tr>
                 <th style="text-align:center;width:10%">Previous Year Vs Current Year</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-1-total-counterfeit-type-ly-vs-ty.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-1-counterfeit-ly-vs-ty.png" class="country1">
                 <img src="https://rodders.me/safetygate/img-2024/product-1-counterfeit-ly-vs-ty.png"  class="country1"></a>
             </td>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-1-total-counterfeit-type-ly-vs-ty.png" class="country2">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-1-counterfeit-ly-vs-ty.png" class="country2">
                 <img src="https://rodders.me/safetygate/img-2024/product-1-counterfeit-ly-vs-ty.png"  class="country2"></a>
             </td>
             </tr> 
@@ -1340,11 +1349,11 @@
             <tr>
               <th style="text-align:center;width:10%">Annual Total</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-1-annual-counterfeit-alerts-issued.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-1-counterfeit-annual-alerts.png" class="country1">
                     <img src="https://rodders.me/safetygate/img-2024/product-1-counterfeit-annual-alerts.png" class="country1" ></a>
                 </td>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-1-annual-counterfeit-alerts-issued.png" class="country2">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-1-counterfeit-annual-alerts.png" class="country2">
                     <img src="https://rodders.me/safetygate/img-2024/product-1-counterfeit-annual-alerts.png" class="country2" ></a>
                 </td>
             </tr> 
@@ -1364,11 +1373,11 @@
             <tr>
                 <th style="text-align:center;">Annual Percentage of Total</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-1-annual-counterfeit-alerts-issued-percentage-by-type.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-1-counterfeit-annual-alerts-percentage.png" class="country1">
                     <img src="https://rodders.me/safetygate/img-2024/product-1-counterfeit-annual-alerts-percentage.png"  class="country1"></a>
                 </td>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-1-annual-counterfeit-alerts-issued-percentage-by-type.png" class="country2">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-1-counterfeit-annual-alerts-percentage.png" class="country2">
                     <img src="https://rodders.me/safetygate/img-2024/product-1-counterfeit-annual-alerts-percentage.png"  class="country2"></a>
                 </td>
             </tr> 
@@ -1610,11 +1619,11 @@
         <tr>
           <th style="text-align:center;width:10%">Total</th>
           <td style="text-align:center;" >
-          <a href="https://rodders.me/safetygate/img-2024/all-product-2-total-alerts-percentage-of-all.png" class="country1">
-          <img src="https://rodders.me/safetygate/img-2024/product-2-total-alerts-percentage-of-all.png" class="country1" ></a></td>      
+          <a href="https://rodders.me/safetygate/img-2024/all-product-2-total-alerts-percentage.png" class="country1">
+          <img src="https://rodders.me/safetygate/img-2024/product-2-total-alerts-percentage.png" class="country1" ></a></td>      
           <td style="text-align:center;" >
-          <a href="https://rodders.me/safetygate/img-2024/all-product-2-total-alerts-percentage-of-all.png" class="country2">
-          <img src="https://rodders.me/safetygate/img-2024/product-2-total-alerts-percentage-of-all.png" class="country2" ></a></td>      
+          <a href="https://rodders.me/safetygate/img-2024/all-product-2-total-alerts-percentage.png" class="country2">
+          <img src="https://rodders.me/safetygate/img-2024/product-2-total-alerts-percentage.png" class="country2" ></a></td>      
         
             
         </tr>    
@@ -1769,10 +1778,10 @@
             <tr>
               <th style="text-align:center;width:10%">Total</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-2-total-counterfeit-type-percentage-of-all.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-2-counterfeit-total-alerts-percentage.png" class="country1">
                     <img src="https://rodders.me/safetygate/img-2024/product-2-counterfeit-total-alerts-percentage.png"  class="country1"></a>
                 </td>
-              <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2024/all-product-2-total-counterfeit-type-percentage-of-all.png" class="country2">
+              <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2024/all-product-2-counterfeit-total-alerts-percentage.png" class="country2">
                 <img src="https://rodders.me/safetygate/img-2024/product-2-counterfeit-total-alerts-percentage.png"  class="country2"></a>
             </td>
             </tr>   
@@ -1788,11 +1797,11 @@
             <tr>
                 <th style="text-align:center;width:10%">Previous Year Vs Current Year</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-2-total-counterfeit-type-ly-vs-ty.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-2-counterfeit-ly-vs-ty.png" class="country1">
                 <img src="https://rodders.me/safetygate/img-2024/product-2-counterfeit-ly-vs-ty.png"  class="country1"></a>
             </td>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-2-total-counterfeit-type-ly-vs-ty.png" class="country2">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-2-counterfeit-ly-vs-ty.png" class="country2">
                 <img src="https://rodders.me/safetygate/img-2024/product-2-counterfeit-ly-vs-ty.png"  class="country2"></a>
             </td>
             </tr> 
@@ -1810,11 +1819,11 @@
             <tr>
               <th style="text-align:center;width:10%">Annual Total</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-2-annual-counterfeit-alerts-issued.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-2-counterfeit-annual-alerts.png" class="country1">
                     <img src="https://rodders.me/safetygate/img-2024/product-2-counterfeit-annual-alerts.png" class="country1" ></a>
                 </td>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-2-annual-counterfeit-alerts-issued.png" class="country2">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-2-counterfeit-annual-alerts.png" class="country2">
                     <img src="https://rodders.me/safetygate/img-2024/product-2-counterfeit-annual-alerts.png" class="country2" ></a>
                 </td>
             </tr> 
@@ -1834,11 +1843,11 @@
             <tr>
                 <th style="text-align:center;">Annual Percentage of Total</th>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-2-annual-counterfeit-alerts-issued-percentage-by-type.png" class="country1">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-2-counterfeit-annual-alerts-percentage.png" class="country1">
                     <img src="https://rodders.me/safetygate/img-2024/product-2-counterfeit-annual-alerts-percentage.png"  class="country1"></a>
                 </td>
               <td style="text-align:center;" >
-                <a href="https://rodders.me/safetygate/img-2024/all-product-2-annual-counterfeit-alerts-issued-percentage-by-type.png" class="country2">
+                <a href="https://rodders.me/safetygate/img-2024/all-product-2-counterfeit-annual-alerts-percentage.png" class="country2">
                     <img src="https://rodders.me/safetygate/img-2024/product-2-counterfeit-annual-alerts-percentage.png"  class="country2"></a>
                 </td>
             </tr> 
