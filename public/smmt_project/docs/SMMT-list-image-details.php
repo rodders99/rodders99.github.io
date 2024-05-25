@@ -3,7 +3,12 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SMMT-2b-CLEANSE-fueltype-oldformat</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>SMMT-list-image-details</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="/css/project-style.css">
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7542,211 +7547,378 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
-<main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Import-Packages">Import Packages<a class="anchor-link" href="#Import-Packages">¶</a></h1>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+  <div class="page-container">
+    <!-- BEGIN NAVIGATION -->
+    <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
+    <?php include 'menu-smmt.php'; ?>        
+    </div>
+    <!-- END NAVIGATION -->
+    <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" style="padding: 20px 0"></div><main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
-<span class="kn">from</span> <span class="nn">termcolor</span> <span class="kn">import</span> <span class="n">colored</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">PIL.ExifTags</span> <span class="kn">import</span> <span class="n">TAGS</span>
+<span class="kn">import</span> <span class="nn">pytesseract</span>
+<span class="kn">import</span> <span class="nn">os</span> 
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">isfile</span><span class="p">,</span> <span class="n">join</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">csv</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Initialise-Notebook-Variables">Initialise Notebook Variables<a class="anchor-link" href="#Initialise-Notebook-Variables">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [112]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># source_path = "/home/hass/Development/Learning/Python/smmtdata/ocr/"</span>
-<span class="n">source_path</span> <span class="o">=</span> <span class="s2">"ocr/"</span>
-<span class="n">import_name</span> <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_2a_fueltype_ocr_oldformat.txt"</span>
-<span class="n">import_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">import_name</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">source_path</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"/home/hass/Development/Learning/Projects/smmtdata-evolved/fuel_type/"</span><span class="p">,</span> <span class="s2">"/home/hass/Development/Learning/Projects/smmtdata-evolved/cust_type/"</span><span class="p">)</span>
 
-<span class="c1"># output_path = "/home/hass/Development/Learning/Python/smmtdata/ocr/"</span>
-<span class="n">output_path</span> <span class="o">=</span> <span class="s2">"ocr/"</span>
-<span class="n">output_name</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">+</span> <span class="s2">"OUT_2b_cleansed_fueltype_oldformat.csv"</span>
-<span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_name</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+<span class="n">data_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Development/Learning/Projects/smmtdata-evolved/python/"</span>
+<span class="n">output_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Development/Learning/Projects/smmtdata-evolved/ocr/"</span>
+<span class="c1">#output_name = output_path + "OUT_1a_fueltype_ocr_newformat.txt"</span>
+<span class="c1"># output_file = open(output_name ,"w")</span>
+
+<span class="n">info_dict</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1">#"Filename": img.filename,</span>
+        <span class="c1"># "Image Size": img.size,</span>
+        <span class="s2">"Image Height"</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">height</span><span class="p">,</span>
+        <span class="s2">"Image Width"</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">width</span><span class="p">,</span>
+        <span class="s2">"Image Format"</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">format</span><span class="p">,</span>
+        <span class="s2">"Image Mode"</span><span class="p">:</span> <span class="n">img</span><span class="o">.</span><span class="n">mode</span>        
+        <span class="p">}</span>
+<span class="n">file_dict</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">file_types</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"*.png"</span><span class="p">,</span><span class="s2">"*.jpg"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">file_type</span> <span class="ow">in</span> <span class="n">file_types</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">source_path</span><span class="p">:</span>
+        <span class="c1">#print(source)</span>
+        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">Path</span><span class="p">(</span><span class="n">source</span><span class="p">)</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">file_type</span><span class="p">):</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+            <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>        
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{:&lt;40}</span><span class="s2"> </span><span class="si">{:&gt;20}</span><span class="s2"> </span><span class="si">{:&gt;10}</span><span class="s2"> </span><span class="si">{:&gt;10}</span><span class="s2"> "</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filename</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">img</span><span class="o">.</span><span class="n">height</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">format</span><span class="p">))</span>
+            <span class="n">file_dict</span><span class="p">[</span><span class="n">filename</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">height</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Oct-Fuel-2016-and-YTD-cars-old.png                        706       1350        PNG 
+Feb-Fuel-2019-and-YTD-cars-old.png                        598       1200        PNG 
+Mar-Fuel-2019-and-YTD-cars-old.png                       1600       3210        PNG 
+Mar-Fuel-2017-and-YTD-cars-old.png                       1626       3263        PNG 
+Apr-Fuel-2018-and-YTD-cars-old.png                        400        800        PNG 
+Aug-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Mar-Fuel-2021-and-YTD-cars.png                           1408       1200        PNG 
+Mar-Fuel-2018-and-YTD-cars-old.png                       1784       3334        PNG 
+May-Fuel-2018-and-YTD-cars-old.png                        443        800        PNG 
+Apr-Fuel-2019-and-YTD-cars-old.png                       1600       3210        PNG 
+Jun-Fuel-2021-and-YTD-cars.png                           1408       1200        PNG 
+Oct-Fuel-2019-and-YTD-cars.png                           1408       1200        PNG 
+Aug-Fuel-2018-and-YTD-cars-old.png                        648       1300        PNG 
+Mar-Fuel-2020-and-YTD-cars.png                           1388       1200        PNG 
+Feb-Fuel-2017-and-YTD-cars-old.png                        460        900        PNG 
+Dec-Fuel-2017-and-YTD-cars-old.png                       1599       3206        PNG 
+Feb-Fuel-2018-and-YTD-cars-old.png                       1600       3206        PNG 
+Apr-Fuel-2017-and-YTD-cars-old.png                        444        900        PNG 
+Jul-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+May-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Nov-Fuel-2017-and-YTD-cars-old.png                       1620       3246        PNG 
+Dec-Fuel-2016-and-YTD-cars-old.png                        477        900        PNG 
+Sep-Fuel-2017-and-YTD-cars-old.png                       1600       3207        PNG 
+Sep-Fuel-2019-and-YTD-cars.png                           1451       1200        PNG 
+Jan-Fuel-2019-and-YTD-cars-old.png                       1600       3210        PNG 
+Jan-Fuel-202xx3-and-YTD-cars.png                         1899       1618        PNG 
+Mar-Fuel-2023-and-YTD-cars.png                           1408       1200        PNG 
+Aug-Fuel-2019-and-YTD-cars.png                           1408       1200        PNG 
+Apr-Fuel-2021-and-YTD-cars.png                           1408       1200        PNG 
+Dec-Fuel-2019-and-YTD-cars.png                           1408       1200        PNG 
+Jun-Fuel-2017-and-YTD-cars-old.png                       1623       3333        PNG 
+Nov-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+May-Fuel-2021-and-YTD-cars.png                           1408       1200        PNG 
+Dec-Fuel-202x1-and-YTD-cars.png                          1908       1618        PNG 
+Feb-Fuel-2020-and-YTD-cars.png                           1408       1200        PNG 
+Jul-Fuel-2021-and-YTD-cars.png                           1408       1200        PNG 
+Oct-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Nov-Fuel-2020-and-YTD-cars.png                           1388       1200        PNG 
+Jul-Fuel-2018-and-YTD-cars-old.png                       1600       3210        PNG 
+May-Fuel-2017-and-YTD-cars-old.png                        453        900        PNG 
+Sep-Fuel-2021-and-YTD-cars.png                           1415       1200        PNG 
+Sep-Fuel-2018-and-YTD-cars-old.png                        598       1200        PNG 
+Jul-Fuel-2019-and-YTD-cars.png                           1408       1200        PNG 
+jul-Fuel-2017-and-YTD-cars-old.png                        447        900        PNG 
+Sep-Fuel-2020-and-YTD-cars.png                           1388       1200        PNG 
+Oct-Fuel-2021-and-YTD-cars.png                           1415       1200        PNG 
+Mar-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Jun-Fuel-201xx9-and-YTD-cars.png                         1899       1618        PNG 
+Oct-Fuel-2020-and-YTD-cars.png                           1388       1200        PNG 
+Dec-Fuel-2018-and-YTD-cars-old.png                       1600       3210        PNG 
+Jan-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Apr-Fuel-202x0-and-YTD-cars.png                          1906       1642        PNG 
+Oct-Fuel-2018-and-YTD-cars-old.png                        598       1200        PNG 
+Apr-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Dec-Fuel-2020-and-YTD-cars.png                           1388       1200        PNG 
+May-Fuel-2020-and-YTD-cars.png                           1432       1200        PNG 
+Feb-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Jan-Fuel-202x1-and-YTD-cars.png                          1899       1618        PNG 
+Jan-Fuel-2017-and-YTD-cars-old.png                        467        900        PNG 
+Aug-Fuel-2017-and-YTD-cars-old.png                        453        900        PNG 
+0-blob.png                                                693        788        PNG 
+Jan-Fuel-2018-and-YTD-cars-old.png                       1600       3206        PNG 
+May-Fuel-2019-and-YTD-cars-old.png                        598       1200        PNG 
+Jan-Fuel-202x0-and-YTD-cars.png                          1899       1618        PNG 
+Jun-Fuel-2020-and-YTD-cars.png                           1393       1200        PNG 
+Dec-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Sep-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Aug-Fuel-2020-and-YTD-cars.png                           1388       1200        PNG 
+Nov-Fuel-2019-and-YTD-cars.png                           1457       1200        PNG 
+Feb-Fuel-202x3-and-YTD-cars.png                          1408       1200        PNG 
+Jun-Fuel-2022-and-YTD-cars.png                           1899       1618        PNG 
+Nov-Fuel-2016-and-YTD-cars-old.png                        471        900        PNG 
+Nov-Fuel-2021-and-YTD-cars.png                           1415       1200        PNG 
+Feb-Fuel-2021-and-YTD-cars.png                           1408       1200        PNG 
+Nov-Fuel-2018-and-YTD-cars-old.png                        598       1200        PNG 
+Aug-Fuel-2021-and-YTD-cars.png                           1408       1200        PNG 
+Jun-Fuel-2018-and-YTD-cars-old.png                        598       1200        PNG 
+Oct-Fuel-2017-and-YTD-cars-old.png                       1600       3206        PNG 
+Jul-Fuel-2020-and-YTD-cars.png                           1388       1200        PNG 
+July-Sales-2019-and-YTD-cars.png                          833       1200       JPEG 
+December-Sales-20x21-and-YTD-cars.png                    1131       1635       JPEG 
+May-Sales-2021-and-YTD-cars.png                           829       1200        PNG 
+March-Sales-2021-and-YTD-cars.png                         829       1200        PNG 
+December-Sales-2019-and-YTD-cars.png                      839       1200        PNG 
+December-Sales-2020-and-YTD-cars.png                      830       1200        PNG 
+July-Sales-2021-and-YTD-cars.png                          830       1200        PNG 
+January-Sales-20x21-and-YTD-cars.png                     1129       1635        PNG 
+October-Sales-2019-and-YTD-cars.png                       839       1200        PNG 
+September-Sales-2019-and-YTD-cars.png                     833       1200       JPEG 
+July-Sales-2020-and-YTD-cars.png                          830       1200        PNG 
+June-sales-20x21-and-YTD-cars.png                        1129       1635        PNG 
+November-Sales-2022-and-YTD-cars.png                     1129       1634        PNG 
+September-Sales-2020-and-YTD-cars.png                     830       1200        PNG 
+March-Sales-2020-and-YTD-cars.png                         830       1200        PNG 
+November-Sales-2020-and-YTD-cars.png                      830       1200        PNG 
+September-Sales-2021-and-YTD-cars.png                     830       1200        PNG 
+January-Sales-2022-and-YTD-cars.png                      1129       1634        PNG 
+October-Sales-2020-YTD-and-cars.png                       830       1200        PNG 
+July-Sales-2022-and-YTD-cars.png                         1129       1634        PNG 
+April-Sales-2020-and-YTD-cars.png                         830       1200        PNG 
+May-Sales-2022-and-YTD-cars.png                          1129       1634        PNG 
+May-Sales-2020-and-YTD-cars.png                           830       1200        PNG 
+August-Sales-20x21-YTD-and-cars.png                      1131       1635        PNG 
+March-Sales-2022-and-YTD-cars.png                        1129       1634        PNG 
+April-Sales-2023-and-YTD-cars.png                         831       1200        PNG 
+September-Sales-2022-and-YTD-cars.png                    1129       1634        PNG 
+October-Sales-2022-and-YTD-cars.png                      1129       1634        PNG 
+November-Sales-2021-and-YTD-cars.png                      830       1200        PNG 
+March-Sales-20x23-and-YTD-cars.png                       1129       1634        PNG 
+Aug-Sales-2022-and-YTD-cars.png                          1129       1634        PNG 
+June-Sales-2022-and-YTD-cars.png                         1129       1634        PNG 
+April-Sales-2022-and-YTD-cars.png                        1129       1634        PNG 
+November-Sales-20x19-and-YTD-cars.png                    1134       1634       JPEG 
+February-Sales-2021-and-YTD-cars.png                      829       1200        PNG 
+June-Sales-2020-and-YTD-cars.png                          830       1200        PNG 
+December-Sales-2022-and-YTD-cars.png                     1129       1634        PNG 
+April-Sales-2021-and-YTD-cars.png                         829       1200        PNG 
+February-Sales-2022-and-YTD-cars.png                     1129       1634        PNG 
+August-Sales-2019-and-YTD-cars.png                        839       1200        PNG 
+June-Sales-20x19-and-YTD-cars.png                        1132       1653        PNG 
+August-Sales-2020-and-YTD-cars.png                        830       1200        PNG 
+February-Sales-2023-and-YTD-cars.png                      829       1200        PNG 
+January-Sales-20x20-and-YTD-cars.png                     1130       1634       JPEG 
+January-Sales-20x23-and-YTD-cars.png                     1129       1634        PNG 
+February-Sales-2020-and-YTD-cars.png                      830       1200        PNG 
+October-Sales-2021-and-YTD-cars.png                       830       1200        PNG 
+</pre>
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Replacements-&amp;-removals-lists">Replacements &amp; removals lists<a class="anchor-link" href="#Replacements-&amp;-removals-lists">¶</a></h2><p>Replacements list tuple</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [111]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">REPLACEMENTS</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="s2">"Mhev diesel"</span><span class="p">,</span> <span class="s2">"MHEV_Diesel"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"Mhevdiesel"</span><span class="p">,</span> <span class="s2">"MHEV_Diesel"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"Mhev petrol"</span><span class="p">,</span> <span class="s2">"MHEV_Petrol"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"Mhevpetrol"</span><span class="p">,</span> <span class="s2">"MHEV_Petrol"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" 3 "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" 5 "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" 2 "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"  "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">","</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">data_path</span> <span class="o">+</span> <span class="s2">"imageinfo.csv"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">infowriter</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s2">","</span><span class="p">)</span>
 
-<span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1---Clean-the-data">1 - Clean the data<a class="anchor-link" href="#1---Clean-the-data">¶</a></h2><ul>
-<li>Remove unwanted change and market share lines</li>
-<li>Correct Tesseract common errors</li>
-<li>Remove blank lines</li>
-<li>Generate a clean CSV for the PANDAS import</li>
-<li>Track line numbers for error reporting</li>
-</ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"DATA CLEANSING : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
-<span class="n">uline</span> <span class="o">=</span> <span class="n">colored</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">,</span> <span class="s2">"black"</span><span class="p">,</span> <span class="s2">"on_white"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">uline</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-
-<span class="c1"># Keep count of line numbers to provide feedback when there are an incorrect number of fields in the OCR output</span>
-<span class="n">line_count</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="c1"># Iterate import_file for line removals</span>
-
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">import_file</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"before </span><span class="se">\n</span><span class="s2">==============</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">line</span><span class="p">)</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="s2">"change"</span> <span class="ow">in</span> <span class="n">line</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="s2">"mkt"</span> <span class="ow">in</span> <span class="n">line</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="s2">"Mkt"</span> <span class="ow">in</span> <span class="n">line</span>
-    <span class="n">d</span> <span class="o">=</span> <span class="s2">"Mit"</span> <span class="ow">in</span> <span class="n">line</span>
-    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="c1"># ignore line</span>
-        <span class="c1"># print("Change True" + "\n")</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">file_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="n">fn</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">infowriter</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="n">fn</span><span class="p">,</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]])</span>
+<span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         
-
-    <span class="k">elif</span> <span class="n">b</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        
-        <span class="c1"># also do nothing</span>
-        <span class="c1">#print("mkt True" + "\n")</span>
-    <span class="k">elif</span> <span class="n">c</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1">#print("Mkt True" + "\n")</span>
-    <span class="k">elif</span> <span class="n">d</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Mit True" + "\n")</span>
-    <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">:</span>
-        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Blank Line" + "\n")   </span>
-    <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">"</span><span class="se">\n\r</span><span class="s2">"</span><span class="p">:</span>
-        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Blank Line" + "\n")</span>
-    <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">"</span><span class="se">\f</span><span class="s2">"</span><span class="p">:</span>
-        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Blank Line" + "\n")</span>
-    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Blank Line" + "\n")</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">old</span><span class="p">,</span> <span class="n">new</span> <span class="ow">in</span> <span class="n">REPLACEMENTS</span><span class="p">:</span>      <span class="c1"># Replace text from REPLACEMENTS dictionary</span>
-            <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">old</span><span class="p">,</span><span class="n">new</span><span class="p">)</span>
-    
-    
-            
-        <span class="n">linecheck</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">linecheck</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">8</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"Line Error : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">line_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"  Field Count : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">linecheck</span><span class="p">)))</span>
-            <span class="n">error_line</span> <span class="o">=</span> <span class="n">colored</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="s2">"black"</span><span class="p">,</span> <span class="s2">"on_white"</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span> 
-            <span class="nb">print</span><span class="p">(</span><span class="n">error_line</span><span class="p">)</span>
-        <span class="n">output_line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-        <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_line</span><span class="p">)</span>
-        <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="c1">#print(line_count)</span>
-
-    
-
-
-<span class="n">output_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"The generated file needs to be validated, OCR is not 100</span><span class="si">% r</span><span class="s2">eliable"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">" Import File : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">" Output File : "</span> <span class="o">+</span> <span class="n">output_name</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>('Oct-Fuel-2016-and-YTD-cars-old.png', (706, 1350, 'PNG'))
+('Feb-Fuel-2019-and-YTD-cars-old.png', (598, 1200, 'PNG'))
+('Mar-Fuel-2019-and-YTD-cars-old.png', (1600, 3210, 'PNG'))
+('Mar-Fuel-2017-and-YTD-cars-old.png', (1626, 3263, 'PNG'))
+('Apr-Fuel-2018-and-YTD-cars-old.png', (400, 800, 'PNG'))
+('Aug-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Mar-Fuel-2021-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Mar-Fuel-2018-and-YTD-cars-old.png', (1784, 3334, 'PNG'))
+('May-Fuel-2018-and-YTD-cars-old.png', (443, 800, 'PNG'))
+('Apr-Fuel-2019-and-YTD-cars-old.png', (1600, 3210, 'PNG'))
+('Jun-Fuel-2021-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Oct-Fuel-2019-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Aug-Fuel-2018-and-YTD-cars-old.png', (648, 1300, 'PNG'))
+('Mar-Fuel-2020-and-YTD-cars.png', (1388, 1200, 'PNG'))
+('Feb-Fuel-2017-and-YTD-cars-old.png', (460, 900, 'PNG'))
+('Dec-Fuel-2017-and-YTD-cars-old.png', (1599, 3206, 'PNG'))
+('Feb-Fuel-2018-and-YTD-cars-old.png', (1600, 3206, 'PNG'))
+('Apr-Fuel-2017-and-YTD-cars-old.png', (444, 900, 'PNG'))
+('Jul-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('May-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Nov-Fuel-2017-and-YTD-cars-old.png', (1620, 3246, 'PNG'))
+('Dec-Fuel-2016-and-YTD-cars-old.png', (477, 900, 'PNG'))
+('Sep-Fuel-2017-and-YTD-cars-old.png', (1600, 3207, 'PNG'))
+('Sep-Fuel-2019-and-YTD-cars.png', (1451, 1200, 'PNG'))
+('Jan-Fuel-2019-and-YTD-cars-old.png', (1600, 3210, 'PNG'))
+('Jan-Fuel-202xx3-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Mar-Fuel-2023-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Aug-Fuel-2019-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Apr-Fuel-2021-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Dec-Fuel-2019-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Jun-Fuel-2017-and-YTD-cars-old.png', (1623, 3333, 'PNG'))
+('Nov-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('May-Fuel-2021-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Dec-Fuel-202x1-and-YTD-cars.png', (1908, 1618, 'PNG'))
+('Feb-Fuel-2020-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Jul-Fuel-2021-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Oct-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Nov-Fuel-2020-and-YTD-cars.png', (1388, 1200, 'PNG'))
+('Jul-Fuel-2018-and-YTD-cars-old.png', (1600, 3210, 'PNG'))
+('May-Fuel-2017-and-YTD-cars-old.png', (453, 900, 'PNG'))
+('Sep-Fuel-2021-and-YTD-cars.png', (1415, 1200, 'PNG'))
+('Sep-Fuel-2018-and-YTD-cars-old.png', (598, 1200, 'PNG'))
+('Jul-Fuel-2019-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('jul-Fuel-2017-and-YTD-cars-old.png', (447, 900, 'PNG'))
+('Sep-Fuel-2020-and-YTD-cars.png', (1388, 1200, 'PNG'))
+('Oct-Fuel-2021-and-YTD-cars.png', (1415, 1200, 'PNG'))
+('Mar-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Jun-Fuel-201xx9-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Oct-Fuel-2020-and-YTD-cars.png', (1388, 1200, 'PNG'))
+('Dec-Fuel-2018-and-YTD-cars-old.png', (1600, 3210, 'PNG'))
+('Jan-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Apr-Fuel-202x0-and-YTD-cars.png', (1906, 1642, 'PNG'))
+('Oct-Fuel-2018-and-YTD-cars-old.png', (598, 1200, 'PNG'))
+('Apr-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Dec-Fuel-2020-and-YTD-cars.png', (1388, 1200, 'PNG'))
+('May-Fuel-2020-and-YTD-cars.png', (1432, 1200, 'PNG'))
+('Feb-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Jan-Fuel-202x1-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Jan-Fuel-2017-and-YTD-cars-old.png', (467, 900, 'PNG'))
+('Aug-Fuel-2017-and-YTD-cars-old.png', (453, 900, 'PNG'))
+('0-blob.png', (693, 788, 'PNG'))
+('Jan-Fuel-2018-and-YTD-cars-old.png', (1600, 3206, 'PNG'))
+('May-Fuel-2019-and-YTD-cars-old.png', (598, 1200, 'PNG'))
+('Jan-Fuel-202x0-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Jun-Fuel-2020-and-YTD-cars.png', (1393, 1200, 'PNG'))
+('Dec-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Sep-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Aug-Fuel-2020-and-YTD-cars.png', (1388, 1200, 'PNG'))
+('Nov-Fuel-2019-and-YTD-cars.png', (1457, 1200, 'PNG'))
+('Feb-Fuel-202x3-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Jun-Fuel-2022-and-YTD-cars.png', (1899, 1618, 'PNG'))
+('Nov-Fuel-2016-and-YTD-cars-old.png', (471, 900, 'PNG'))
+('Nov-Fuel-2021-and-YTD-cars.png', (1415, 1200, 'PNG'))
+('Feb-Fuel-2021-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Nov-Fuel-2018-and-YTD-cars-old.png', (598, 1200, 'PNG'))
+('Aug-Fuel-2021-and-YTD-cars.png', (1408, 1200, 'PNG'))
+('Jun-Fuel-2018-and-YTD-cars-old.png', (598, 1200, 'PNG'))
+('Oct-Fuel-2017-and-YTD-cars-old.png', (1600, 3206, 'PNG'))
+('Jul-Fuel-2020-and-YTD-cars.png', (1388, 1200, 'PNG'))
+('July-Sales-2019-and-YTD-cars.png', (833, 1200, 'JPEG'))
+('December-Sales-20x21-and-YTD-cars.png', (1131, 1635, 'JPEG'))
+('May-Sales-2021-and-YTD-cars.png', (829, 1200, 'PNG'))
+('March-Sales-2021-and-YTD-cars.png', (829, 1200, 'PNG'))
+('December-Sales-2019-and-YTD-cars.png', (839, 1200, 'PNG'))
+('December-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('July-Sales-2021-and-YTD-cars.png', (830, 1200, 'PNG'))
+('January-Sales-20x21-and-YTD-cars.png', (1129, 1635, 'PNG'))
+('October-Sales-2019-and-YTD-cars.png', (839, 1200, 'PNG'))
+('September-Sales-2019-and-YTD-cars.png', (833, 1200, 'JPEG'))
+('July-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('June-sales-20x21-and-YTD-cars.png', (1129, 1635, 'PNG'))
+('November-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('September-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('March-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('November-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('September-Sales-2021-and-YTD-cars.png', (830, 1200, 'PNG'))
+('January-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('October-Sales-2020-YTD-and-cars.png', (830, 1200, 'PNG'))
+('July-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('April-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('May-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('May-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('August-Sales-20x21-YTD-and-cars.png', (1131, 1635, 'PNG'))
+('March-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('April-Sales-2023-and-YTD-cars.png', (831, 1200, 'PNG'))
+('September-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('October-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('November-Sales-2021-and-YTD-cars.png', (830, 1200, 'PNG'))
+('March-Sales-20x23-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('Aug-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('June-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('April-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('November-Sales-20x19-and-YTD-cars.png', (1134, 1634, 'JPEG'))
+('February-Sales-2021-and-YTD-cars.png', (829, 1200, 'PNG'))
+('June-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('December-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('April-Sales-2021-and-YTD-cars.png', (829, 1200, 'PNG'))
+('February-Sales-2022-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('August-Sales-2019-and-YTD-cars.png', (839, 1200, 'PNG'))
+('June-Sales-20x19-and-YTD-cars.png', (1132, 1653, 'PNG'))
+('August-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('February-Sales-2023-and-YTD-cars.png', (829, 1200, 'PNG'))
+('January-Sales-20x20-and-YTD-cars.png', (1130, 1634, 'JPEG'))
+('January-Sales-20x23-and-YTD-cars.png', (1129, 1634, 'PNG'))
+('February-Sales-2020-and-YTD-cars.png', (830, 1200, 'PNG'))
+('October-Sales-2021-and-YTD-cars.png', (830, 1200, 'PNG'))
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>

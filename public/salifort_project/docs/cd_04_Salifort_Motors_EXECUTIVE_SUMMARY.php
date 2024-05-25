@@ -145,11 +145,13 @@ medium risk above the 70% threshold and 12 are high risk employees.</p>
 <h2 id="ml-model-predictions-summary-for-current-employees">ML Model
 Predictions Summary for CURRENT Employees</h2>
 
+<h2>Risk Threshold Above 90%</h2>
+
 <div class="datatable-container">
 <table class="datatable" style="margin-right:auto;margin-left:0px; ">
 <tr>
 <th style="width:70%">
-probabilities &gt; high_risk_threshold 90%
+    probabilities &gt; high_risk_threshold 90%
 </th>
 <td>
 </td>
@@ -158,7 +160,7 @@ probabilities &gt; high_risk_threshold 90%
 <td>
 Count of employees with leave probability above 90%
 </td>
-<td>
+<td style="text-align: center">
 12
 </td>
 </tr>
@@ -166,14 +168,22 @@ Count of employees with leave probability above 90%
 <td>
 Percentage of employees with leave probability above 90%
 </td>
-<td>
+<td style="text-align: center">
 0.13%
 </td>
 </tr>
+</table>
+</div>
 
-<th>
+<h2>Risk Threshold Above 70%</h2>
+
+<div class="datatable-container">
+<table class="datatable" style="margin-right:auto;margin-left:0px; ">
+<tr>
+<th style="width:70%">
 probabilities &gt; medium_risk_threshold 70%
 </th>
+</thead><tbody>
 <td>
 </td>
 </tr>
@@ -181,7 +191,7 @@ probabilities &gt; medium_risk_threshold 70%
 <td>
 Count of employees with leave probability above 70%
 </td>
-<td>
+<td style="text-align: center">
 33
 </td>
 </tr>
@@ -189,12 +199,18 @@ Count of employees with leave probability above 70%
 <td>
 Percentage of employees with leave probability above 70%
 </td>
-<td>
+<td style="text-align: center">
 0.36%
 </td>
-</tr>
+</tr></tbody>
+</table>
+</div>
+
+<h2>Risk Threshold 50%</h2>
+<div class="datatable-container">
+<table class="datatable" style="margin-right:auto;margin-left:0px; ">
 <tr>
-<th>
+<th style="width:70%">
 probabilities &gt; predict_risk_threshold 50%
 </th>
 <td>
@@ -210,7 +226,7 @@ probabilities &gt; predict_risk_threshold 50%
 <td>
 Count of employees with leave probability above 50%
 </td>
-<td>
+<td style="text-align: center">
 67
 </td>
 </tr>
@@ -218,12 +234,13 @@ Count of employees with leave probability above 50%
 <td>
 Percentage of employees with leave probability above 50%
 </td>
-<td>
+<td style="text-align: center">
 0.72%
 </td>
 </tr>
 </table>
 </div>
+
 <p>If we apply the model to employees who have already left, effectively
 testing the model against known data, we can see that 72% of employees
 who left would have been flagged by the ML model as at high risk, and
@@ -249,7 +266,7 @@ probabilities &gt; high_risk_threshold 90%
 <td>
 Count of employees with leave probability above 90%
 </td>
-<td>
+<td style="text-align: center">
 1360
 </td>
 </tr>
@@ -257,7 +274,7 @@ Count of employees with leave probability above 90%
 <td>
 Percentage of employees with leave probability above 90%
 </td>
-<td>
+<td style="text-align: center">
 72.26%
 </td>
 </tr>
@@ -267,8 +284,14 @@ Percentage of employees with leave probability above 90%
 <td>
 </td>
 </tr>
+</table>
+</div>
+<h2>Risk Threshold Above 70%</h2>
+
+<div class="datatable-container">
+<table class="datatable" style="margin-right:auto;margin-left:0px; ">
 <tr>
-<th>
+<th style="width:70%">
 probabilities &gt; medium_risk_threshold 70%
 </th>
 <td>
@@ -278,7 +301,7 @@ probabilities &gt; medium_risk_threshold 70%
 <td>
 Count of employees with leave probability above 70%
 </td>
-<td>
+<td style="text-align: center">
 1712
 </td>
 </tr>
@@ -286,7 +309,7 @@ Count of employees with leave probability above 70%
 <td>
 Percentage of employees with leave probability above 70%
 </td>
-<td>
+<td style="text-align: center">
 90.97%
 </td>
 </tr>
@@ -296,8 +319,13 @@ Percentage of employees with leave probability above 70%
 <td>
 </td>
 </tr>
-<tr>
-<th>
+</table>
+</div>
+<h2>Risk Threshold Above 70%</h2>
+
+<div class="datatable-container">
+<table class="datatable" style="margin-right:auto;margin-left:0px; "><tr>
+<th style="width:70%">
 probabilities &gt; predict_risk_threshold 50%
 </th>
 <td>
@@ -307,7 +335,7 @@ probabilities &gt; predict_risk_threshold 50%
 <td>
 Count of employees with leave probability above 50%
 </td>
-<td>
+<td style="text-align: center">
 1731
 </td>
 </tr>
@@ -315,7 +343,7 @@ Count of employees with leave probability above 50%
 <td>
 Percentage of employees with leave probability above 50%
 </td>
-<td>
+<td style="text-align: center">
 91.98%
 </td>
 </tr>
@@ -332,11 +360,16 @@ Percentage of employees with leave probability above 50%
 <td>
 </td>
 </tr>
-<tr>
-<th>
+</table>
+</div>
+<h2>Risk Threshold Above 70%</h2>
+
+<div class="datatable-container">
+<table class="datatable" style="margin-right:auto;margin-left:0px; "><tr>
+<th style="width:70%">
 XGBoost Predicted to leave &gt; (50% )/ % of employees who left
 </th>
-<td>
+<td style="text-align: center">
 86.94 %
 </td>
 </tr>

@@ -3,7 +3,12 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SMMT-1b-CLEANSE-fueltype-newformat</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>SMMT-2a-OCR-fueltype-oldformat</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="/css/project-style.css">
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7540,8 +7545,12 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+
+<!-- End of mermaid configuration -->
+</head>
+
 <body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
+
     <div class="page-container">
       <!-- BEGIN NAVIGATION -->
       <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
@@ -7550,246 +7559,163 @@ a.anchor-link {
       <!-- END NAVIGATION -->
       <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" style="padding: 20px 0"></div>
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
+
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Import-Libraries">Import Libraries<a class="anchor-link" href="#Import-Libraries">¶</a></h1>
+<h2 id="Import-Packages">Import Packages<a class="anchor-link" href="#Import-Packages">¶</a></h2>
 </div>
 </div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dda26eaa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
-<span class="kn">from</span> <span class="nn">termcolor</span> <span class="kn">import</span> <span class="n">colored</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">psutil</span>
+<span class="kn">import</span> <span class="nn">pytesseract</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">listdir</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">isfile</span><span class="p">,</span> <span class="n">join</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=15e179fc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Initialise-Notebook-options-and-variables">Initialise Notebook options and variables<a class="anchor-link" href="#Initialise-Notebook-options-and-variables">¶</a></h2>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Initialise-Notebook-Options">Initialise Notebook Options<a class="anchor-link" href="#Initialise-Notebook-Options">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dda26eac">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">source_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Development/smmtdata-evolved/ocr/"</span>
-<span class="c1">#source_path = "ocr/"</span>
-<span class="n">import_name</span> <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_1a_fueltype_OCR_newformat-2023.txt"</span>
-<span class="n">import_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">import_name</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">source_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Development/smmtdata-evolved/fuel_type/"</span>
+<span class="c1">#source_path = "../fuel_type/"</span>
 <span class="n">output_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Development/smmtdata-evolved/ocr/"</span>
-<span class="c1">#output_path = "ocr/"</span>
-<span class="n">output_name</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">+</span> <span class="s2">"OUT_1b_fueltype_CLEANSE_newformat-2023.csv"</span>
-<span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_name</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+<span class="c1">#output_path = "../ocr/"</span>
+<span class="n">output_name</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">+</span> <span class="s2">"OUT_2a_fueltype_ocr_oldformat-2023.txt"</span>
+<span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_name</span> <span class="p">,</span><span class="s2">"a"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=23300d02">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Replacements-&amp;-removals-lists">Replacements &amp; removals lists<a class="anchor-link" href="#Replacements-&amp;-removals-lists">¶</a></h2><p>Replacements list tuple</p>
+<h2 id="Define-functions">Define functions<a class="anchor-link" href="#Define-functions">¶</a></h2>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=adf298fa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create list of replacements = lookup : Replacement</span>
-<span class="n">REPLACEMENTS</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="s2">"MHEV diesel"</span><span class="p">,</span> <span class="s2">"MHEV_Diesel"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"MHEVdiesel"</span><span class="p">,</span> <span class="s2">"MHEV_Diesel"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"MHEV petrol"</span><span class="p">,</span> <span class="s2">"MHEV_Petrol"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"MHEVpetrol"</span><span class="p">,</span> <span class="s2">"MHEV_Petrol"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" 3 "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" 5 "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" 2 "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'January'</span><span class="p">,</span><span class="s1">'January,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'February'</span><span class="p">,</span><span class="s1">'February,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'March'</span><span class="p">,</span><span class="s1">'March,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'April'</span><span class="p">,</span><span class="s1">'April,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'May'</span><span class="p">,</span><span class="s1">'May,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'June'</span><span class="p">,</span><span class="s1">'June,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'July'</span><span class="p">,</span><span class="s1">'July,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'August'</span><span class="p">,</span><span class="s1">'August,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'September'</span><span class="p">,</span><span class="s1">'September,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'October'</span><span class="p">,</span><span class="s1">'October,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'November'</span><span class="p">,</span><span class="s1">'November,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'December'</span><span class="p">,</span><span class="s1">'December,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'JANUARY'</span><span class="p">,</span><span class="s1">'January,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'FEBRUARY'</span><span class="p">,</span><span class="s1">'February,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'MARCH'</span><span class="p">,</span><span class="s1">'March,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'APRIL'</span><span class="p">,</span><span class="s1">'April,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'MAY'</span><span class="p">,</span><span class="s1">'May,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'JUNE'</span><span class="p">,</span><span class="s1">'June,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'JULY'</span><span class="p">,</span><span class="s1">'July,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'AUGUST'</span><span class="p">,</span><span class="s1">'August,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'SEPTEMBER'</span><span class="p">,</span><span class="s1">'September,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'OCTOBER'</span><span class="p">,</span><span class="s1">'October,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'NOVEMBER'</span><span class="p">,</span><span class="s1">'November,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'DECEMBER'</span><span class="p">,</span><span class="s1">'December,,'</span><span class="p">),</span>
-    <span class="c1"># (',2019,2018','2019,2018'),</span>
-    <span class="c1"># (',2019,2018','2019,2018'),</span>
-    <span class="c1"># (',2020,2019','2020,2019'),</span>
-    <span class="c1"># (',2021,2020','2021,2020'),</span>
-    <span class="c1"># (',2022,2021','2022,2021'),</span>
-    <span class="c1"># (',2023,2022','2023,2022'),</span>
-    <span class="p">(</span><span class="s1">'2019 2018'</span><span class="p">,</span><span class="s1">',2019,2018'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2019 2018'</span><span class="p">,</span><span class="s1">',2019,2018'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2020 2019'</span><span class="p">,</span><span class="s1">',2020,2019'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2021 2020'</span><span class="p">,</span><span class="s1">',2021,2020'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2022 2021'</span><span class="p">,</span><span class="s1">',2022,2021'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2023 2022'</span><span class="p">,</span><span class="s1">',2023,2022'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">",,20"</span><span class="p">,</span> <span class="s2">",20"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"   "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"  "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">","</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">doit</span><span class="p">(</span><span class="n">img_crop</span><span class="p">):</span>
 
-<span class="p">]</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="o">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">img_crop</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="s2">"-c tessedit_char_whitelist=' 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'  --psm 6"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+        <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+
+
+<span class="c1"># Set Debug Parameters</span>
+<span class="n">debug</span> <span class="o">=</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=225d9b46">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Clean-the-data">Clean the data<a class="anchor-link" href="#Clean-the-data">¶</a></h2><ul>
-<li>Remove unwanted change and market share lines</li>
-<li>Correct Tesseract common errors</li>
-<li>Remove blank lines</li>
-<li>Generate a clean CSV for the PANDAS import</li>
-<li>Track line numbers for error reporting</li>
+<h1 id="Process-the-file-through-tesseract-OCR">Process the file through tesseract OCR<a class="anchor-link" href="#Process-the-file-through-tesseract-OCR">¶</a></h1><ul>
+<li>Iterate over files in the ocr directory</li>
+<li>Crop the image</li>
+<li>OCR the image</li>
+<li>Store the text (in the doit function)</li>
 </ul>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=856caca3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"DATA CLEANSING : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
-<span class="n">uline</span> <span class="o">=</span> <span class="n">colored</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">,</span> <span class="s2">"black"</span><span class="p">,</span> <span class="s2">"on_white"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">uline</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get fuel data from the old smmt format</span>
+<span class="c1">##################################################################</span>
+<span class="c1"># Image width is 100%, we only need the top half of the data for Fuel type and customer type</span>
+<span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">Path</span><span class="p">(</span><span class="n">source_path</span><span class="p">)</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">"*-old.png"</span><span class="p">):</span>
+    <span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_name</span> <span class="p">,</span><span class="s2">"a"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="n">img_crop</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">width</span><span class="p">,</span> <span class="n">img</span><span class="o">.</span><span class="n">height</span> <span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">debug</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># double check filename = file contents</span>
 
-
-
-<span class="n">line_count</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># Keep count of the line count to report errors</span>
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">import_file</span><span class="p">:</span>
-
-<span class="c1"># Remove lines matching</span>
-    <span class="k">if</span> <span class="s2">"change"</span> <span class="ow">in</span> <span class="n">line</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span> 
-        <span class="k">pass</span>
-        <span class="c1"># ignore line</span>
-        <span class="c1"># print("Change True" + "\n")</span>
+        <span class="c1"># Image._show(img_crop)</span>
+        <span class="c1"># img_crop.show()</span>
+        <span class="c1">#absolute_path = str(path)</span>
+        <span class="c1">#output_file.write(absolute_path + "\n")</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">width</span><span class="p">)</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="n">display</span><span class="p">(</span><span class="n">img_crop</span><span class="p">)</span>
+        <span class="n">doit</span><span class="p">(</span><span class="n">img_crop</span><span class="p">)</span> <span class="c1"># OCR and tet save function</span>
         
-    <span class="k">elif</span> <span class="s2">"mkt"</span> <span class="ow">in</span> <span class="n">line</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="k">pass</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("mkt True" + "\n")</span>
-    <span class="k">elif</span> <span class="s2">"Mkt"</span> <span class="ow">in</span> <span class="n">line</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="k">pass</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Mkt True" + "\n")</span>
-    <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">:</span>
-        <span class="k">pass</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Blank Line" + "\n")   </span>
-    <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">"</span><span class="se">\n\r</span><span class="s2">"</span><span class="p">:</span>
-        <span class="k">pass</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Blank Line" + "\n")</span>
-    <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">"</span><span class="se">\f</span><span class="s2">"</span><span class="p">:</span>
-        <span class="k">pass</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Blank Line" + "\n")</span>
-    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">pass</span>
-        <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Blank Line" + "\n")</span>
-    <span class="k">else</span><span class="p">:</span>
-<span class="c1">#################################################################</span>
-<span class="c1"># Search and replace</span>
+        <span class="c1">#input()</span>
+    <span class="n">output_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="c1">#a = input()</span>
+    <span class="c1">#for proc in psutil.process_iter():</span>
+    <span class="c1">#    if proc.name() == "display":</span>
+    <span class="c1">#        proc.kill()</span>
+    
 
-        <span class="k">for</span> <span class="n">old</span><span class="p">,</span> <span class="n">new</span> <span class="ow">in</span> <span class="n">REPLACEMENTS</span><span class="p">:</span>
-            <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">old</span><span class="p">,</span><span class="n">new</span><span class="p">)</span>
-        
-        <span class="n">linecheck</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">linecheck</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"Line Error : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">line_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"  Field Count : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">linecheck</span><span class="p">)))</span>
-            <span class="n">error_line</span> <span class="o">=</span> <span class="n">colored</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="s2">"black"</span><span class="p">,</span> <span class="s2">"on_white"</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span> 
-            <span class="nb">print</span><span class="p">(</span><span class="n">error_line</span><span class="p">)</span>
-        <span class="n">output_line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-        <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_line</span><span class="p">)</span>
-        <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-    <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+
 <span class="n">output_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"FINISHED"</span><span class="p">)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"The generated file needs to be validated, OCR is not 100</span><span class="si">% r</span><span class="s2">eliable"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">" Import File : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">" Output File : "</span> <span class="o">+</span> <span class="n">output_name</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================="</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"output file saved in "</span> <span class="o">+</span> <span class="n">output_name</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"========================================="</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7806,32 +7732,15 @@ a.anchor-link {
 
 
 
-DATA CLEANSING : /home/hass/Development/smmtdata-evolved/ocr/OUT_1a_fueltype_OCR_newformat-2023.txt
-<span class="ansi-black-fg ansi-white-intense-bg">================================================================================================================================</span>
-
-
-FINISHED
-
-
-
-
-The generated file needs to be validated, OCR is not 100% reliable
-================================================================================================================================
-
-
- Import File : /home/hass/Development/smmtdata-evolved/ocr/OUT_1a_fueltype_OCR_newformat-2023.txt
-
-
- Output File : /home/hass/Development/smmtdata-evolved/ocr/OUT_1b_fueltype_CLEANSE_newformat-2023.csv
-
-
-================================================================================================================================
+=========================================
+output file saved in /home/hass/Development/smmtdata-evolved/ocr/OUT_2a_fueltype_ocr_oldformat-2023.txt
+=========================================
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-</main>
+</div></main>
 </body>
 </html>

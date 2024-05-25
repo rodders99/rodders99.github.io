@@ -3,7 +3,12 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SMMT-3b-CLEANSE-custtype-newformat</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>SMMT-2b-CLEANSE-fueltype-oldformat</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="/css/project-style.css">
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7542,6 +7547,14 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
+
+  <div class="page-container">
+    <!-- BEGIN NAVIGATION -->
+    <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
+    <?php include 'menu-smmt.php'; ?>        
+    </div>
+    <!-- END NAVIGATION -->
+    <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" style="padding: 20px 0"></div>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7549,7 +7562,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Import-Libraries">Import Libraries<a class="anchor-link" href="#Import-Libraries">¶</a></h1>
+<h1 id="Import-Packages">Import Packages<a class="anchor-link" href="#Import-Packages">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7558,7 +7571,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
@@ -7575,7 +7588,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Initialise-notebook-options">Initialise notebook options<a class="anchor-link" href="#Initialise-notebook-options">¶</a></h2>
+<h2 id="Initialise-Notebook-Variables">Initialise Notebook Variables<a class="anchor-link" href="#Initialise-Notebook-Variables">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7584,18 +7597,17 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">source_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Development/smmtdata-evolved/ocr/"</span>
-<span class="c1">#source_path = "ocr/"</span>
-
-<span class="n">import_name</span> <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_3a_custtype_OCR_newformat-2023.txt"</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># source_path = "/home/hass/Development/Learning/Python/smmtdata/ocr/"</span>
+<span class="n">source_path</span> <span class="o">=</span> <span class="s2">"ocr/"</span>
+<span class="n">import_name</span> <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_2a_fueltype_ocr_oldformat.txt"</span>
 <span class="n">import_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">import_name</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 
-<span class="n">output_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Development/smmtdata-evolved/ocr/"</span>
-<span class="c1">#output_path = "ocr/"</span>
-<span class="n">output_name</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">+</span> <span class="s2">"OUT_3b_custtype_CLEANSE_newformat-2023.csv"</span>
+<span class="c1"># output_path = "/home/hass/Development/Learning/Python/smmtdata/ocr/"</span>
+<span class="n">output_path</span> <span class="o">=</span> <span class="s2">"ocr/"</span>
+<span class="n">output_name</span> <span class="o">=</span> <span class="n">output_path</span> <span class="o">+</span> <span class="s2">"OUT_2b_cleansed_fueltype_oldformat.csv"</span>
 <span class="n">output_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_name</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7622,49 +7634,15 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">REPLACEMENTS</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="s2">"MHEV diesel"</span><span class="p">,</span> <span class="s2">"MHEV_Diesel"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"MHEVdiesel"</span><span class="p">,</span> <span class="s2">"MHEV_Diesel"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"MHEV petrol"</span><span class="p">,</span> <span class="s2">"MHEV_Petrol"</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">"MHEVpetrol"</span><span class="p">,</span> <span class="s2">"MHEV_Petrol"</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"Mhev diesel"</span><span class="p">,</span> <span class="s2">"MHEV_Diesel"</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"Mhevdiesel"</span><span class="p">,</span> <span class="s2">"MHEV_Diesel"</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"Mhev petrol"</span><span class="p">,</span> <span class="s2">"MHEV_Petrol"</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"Mhevpetrol"</span><span class="p">,</span> <span class="s2">"MHEV_Petrol"</span><span class="p">),</span>
     <span class="p">(</span><span class="s2">" 3 "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
     <span class="p">(</span><span class="s2">" 5 "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
     <span class="p">(</span><span class="s2">" 2 "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" i "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
     <span class="p">(</span><span class="s2">"  "</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">","</span><span class="p">,</span> <span class="s2">" "</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">","</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'January'</span><span class="p">,</span><span class="s1">'January,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'February'</span><span class="p">,</span><span class="s1">'February,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'March'</span><span class="p">,</span><span class="s1">'March,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'April'</span><span class="p">,</span><span class="s1">'April,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'May'</span><span class="p">,</span><span class="s1">'May,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'June'</span><span class="p">,</span><span class="s1">'June,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'July'</span><span class="p">,</span><span class="s1">'July,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'August'</span><span class="p">,</span><span class="s1">'August,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'September'</span><span class="p">,</span><span class="s1">'September,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'October'</span><span class="p">,</span><span class="s1">'October,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'November'</span><span class="p">,</span><span class="s1">'November,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'December'</span><span class="p">,</span><span class="s1">'December,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'JANUARY'</span><span class="p">,</span><span class="s1">'January,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'FEBRUARY'</span><span class="p">,</span><span class="s1">'February,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'MARCH'</span><span class="p">,</span><span class="s1">'March,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'APRIL'</span><span class="p">,</span><span class="s1">'April,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'MAY'</span><span class="p">,</span><span class="s1">'May,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'JUNE'</span><span class="p">,</span><span class="s1">'June,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'JULY'</span><span class="p">,</span><span class="s1">'July,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'AUGUST'</span><span class="p">,</span><span class="s1">'August,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'SEPTEMBER'</span><span class="p">,</span><span class="s1">'September,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'OCTOBER'</span><span class="p">,</span><span class="s1">'October,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'NOVEMBER'</span><span class="p">,</span><span class="s1">'November,,'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'DECEMBER'</span><span class="p">,</span><span class="s1">'December,,'</span><span class="p">),</span>
-   
-    <span class="p">(</span><span class="s1">'2019,2018'</span><span class="p">,</span><span class="s1">',2019,2018'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2019,2018'</span><span class="p">,</span><span class="s1">',2019,2018'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2020,2019'</span><span class="p">,</span><span class="s1">',2020,2019'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2021,2020'</span><span class="p">,</span><span class="s1">',2021,2020'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2022,2021'</span><span class="p">,</span><span class="s1">',2022,2021'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">'2023,2022'</span><span class="p">,</span><span class="s1">',2023,2022'</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">',,20'</span><span class="p">,</span><span class="s1">',20'</span><span class="p">)</span>
+    <span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="s2">","</span><span class="p">)</span>
 
 <span class="p">]</span>
 </pre></div>
@@ -7705,60 +7683,81 @@ a.anchor-link {
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
 
-<span class="n">line_count</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># count lines</span>
+<span class="c1"># Keep count of line numbers to provide feedback when there are an incorrect number of fields in the OCR output</span>
+<span class="n">line_count</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Iterate import_file for line removals</span>
 
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">import_file</span><span class="p">:</span>
-
-    <span class="k">if</span> <span class="s2">"change"</span> <span class="ow">in</span> <span class="n">line</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="k">pass</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"before </span><span class="se">\n</span><span class="s2">==============</span><span class="se">\n</span><span class="s2">"</span> <span class="o">+</span> <span class="n">line</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="s2">"change"</span> <span class="ow">in</span> <span class="n">line</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="s2">"mkt"</span> <span class="ow">in</span> <span class="n">line</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="s2">"Mkt"</span> <span class="ow">in</span> <span class="n">line</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="s2">"Mit"</span> <span class="ow">in</span> <span class="n">line</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="c1"># ignore line</span>
         <span class="c1"># print("Change True" + "\n")</span>
         
-    <span class="k">elif</span> <span class="s2">"mkt"</span> <span class="ow">in</span> <span class="n">line</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="k">pass</span>
+
+    <span class="k">elif</span> <span class="n">b</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        
         <span class="c1"># also do nothing</span>
-        <span class="c1"># print("mkt True" + "\n")</span>
-    <span class="k">elif</span> <span class="s2">"Mkt"</span> <span class="ow">in</span> <span class="n">line</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="k">pass</span>
+        <span class="c1">#print("mkt True" + "\n")</span>
+    <span class="k">elif</span> <span class="n">c</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Mkt True" + "\n")</span>
+        <span class="c1">#print("Mkt True" + "\n")</span>
+    <span class="k">elif</span> <span class="n">d</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1"># also do nothing</span>
+        <span class="c1"># print("Mit True" + "\n")</span>
     <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">:</span>
-        <span class="k">pass</span>
+        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="c1"># also do nothing</span>
-        <span class="c1"># print("Mkt True" + "\n")</span>
+        <span class="c1"># print("Blank Line" + "\n")   </span>
+    <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">"</span><span class="se">\n\r</span><span class="s2">"</span><span class="p">:</span>
+        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1"># also do nothing</span>
+        <span class="c1"># print("Blank Line" + "\n")</span>
+    <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">"</span><span class="se">\f</span><span class="s2">"</span><span class="p">:</span>
+        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1"># also do nothing</span>
+        <span class="c1"># print("Blank Line" + "\n")</span>
     <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">pass</span>
-        <span class="c1"># also do nothing / skip line</span>
+        <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1"># also do nothing</span>
         <span class="c1"># print("Blank Line" + "\n")</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">old</span><span class="p">,</span> <span class="n">new</span> <span class="ow">in</span> <span class="n">REPLACEMENTS</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">old</span><span class="p">,</span> <span class="n">new</span> <span class="ow">in</span> <span class="n">REPLACEMENTS</span><span class="p">:</span>      <span class="c1"># Replace text from REPLACEMENTS dictionary</span>
             <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">old</span><span class="p">,</span><span class="n">new</span><span class="p">)</span>
-       
-        <span class="n">linecheck</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">linecheck</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+    
+    
+            
+        <span class="n">linecheck</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">linecheck</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">8</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">"Line Error : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">line_count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"  Field Count : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">linecheck</span><span class="p">)))</span>
             <span class="n">error_line</span> <span class="o">=</span> <span class="n">colored</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="s2">"black"</span><span class="p">,</span> <span class="s2">"on_white"</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span> 
             <span class="nb">print</span><span class="p">(</span><span class="n">error_line</span><span class="p">)</span>
-        <span class="n">output_line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span> 
+        <span class="n">output_line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
         <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_line</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">output_line</span><span class="p">)</span>
         <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-        <span class="c1">#print(line)</span>
         <span class="n">line_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1">#print(line_count)</span>
+
     
 
+
 <span class="n">output_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-
-
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"The generated file needs to be validated, OCR is not 100</span><span class="si">% r</span><span class="s2">eliable"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Import File : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">" Import File : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Output File : "</span> <span class="o">+</span> <span class="n">output_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">" Output File : "</span> <span class="o">+</span> <span class="n">output_name</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
 </pre></div>

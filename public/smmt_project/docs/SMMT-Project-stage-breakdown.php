@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="color-scheme" content="dark">
 
-<link rel="stylesheet" type="text/css" href="/css/custom-menu.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
 <link rel="stylesheet" type="text/css" href="/css/project-style.css">
 <link rel="stylesheet" type="text/css" href="/css/custom.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -19,54 +19,14 @@
 </style>
 </head>
 <body>
-<div class="page-container">
-  
-    <div class="toolbar" style="width:100%; text-align:center;">
-        <table style="margin-left: 23%; text-align: left;">
-            <tbody>
-            <tr>
-              <td>
-                <div class="dropdown">
-                <button class="dropbtn">
-                <i class="material-icons">menu</i>&nbsp;Project Documentation
-                </button>
-                <div class="dropdown-content">
-                <p><a href="#"><b>Navigation</b></a> <a href="/">Home</a>
-                <a href="/projects/1/01/01/salifort_project/">SMMT Data Acquisition
-                Project Home</a></p>
-                <a href="#"><b>Project Documentation</b></a>
-                <div class="submenu">
-                <p><a href="/notebooks/Project Overview">0-SMMT Data
-                Project-stage-breakdown.md</a>
-                <a href="https://public.tableau.com/views/VehiclesRegisteredforUKdf_VEH0220/FrontPage?:language=en-GB&:display_count=n&:origin=viz_share_link">Tableau
-                Dashboard</a>
-                <a href="/notebooks/SMMT-1c-SAVE-fueltype-newformat.html">SMMT-1c-SAVE-fueltype-newformat.ipynb</a></p>
-                </div>
-                <a href="#"><b>Notebooks - Fuel/Customer New Format</b></a>
-                <div class="submenu">
-                <p><a href="/notebooks/SMMT-1a-OCR-fueltype-newformat.html">SMMT-1a-OCR-fueltype-newformat.ipynb</a>
-                <a href="/notebooks/SMMT-1b-CLEANSE-fueltype-newformat.html">SMMT-1b-CLEANSE-fueltype-newformat.ipynb</a>
-                <a href="/notebooks/SMMT-1c-SAVE-fueltype-newformat.html">SMMT-1c-SAVE-fueltype-newformat.ipynb</a></p>
-                </div>
-                <a href="#"><b>Notebooks - Fuel Old Format</b></a>
-                <div class="submenu">
-                <p><a href="/notebooks/SMMT-2a-OCR-fueltype-oldformat.html">SMMT-2a-OCR-fueltype-oldformat.ipynb</a>
-                <a href="/notebooks/SMMT-2b-CLEANSE-fueltype-oldformat.html">SMMT-2b-CLEANSE-fueltype-oldformat.ipynb</a>
-                <a href="/notebooks/SMMT-2c-SAVE-pandas-fueltype-oldformat.html">SMMT-2c-SAVE-pandas-fueltype-oldformat.py</a></p>
-                </div>
-                <a href="#"><b>Notebooks - Customer Old Format</b></a>
-                <div class="submenu">
-                <p><a href="/notebooks/SMMT-3a-OCR-custtype-newformat.html">SMMT-3a-OCR-custtype-newformat.ipynb</a>
-                <a href="/notebooks/SMMT-3b-CLEANSE-custtype-newformat.html">SMMT-3b-CLEANSE-custtype-newformat.ipynb</a>
-                <a href="/notebooks/SMMT-3c-SAVE-pandas-custtype-newformat.html">SMMT-3c-SAVE-pandas-custtype-newformat.py</a></p>
-                </div>
-                <a href="#"><b>Notebooks - Misc</b></a>
-                <div class="submenu">
-                <p><a href="/notebooks/SMMT-3a-OCR-custtype-newformat.html">SMMT-3a-OCR-custtype-newformat.ipynb</a></p>
-                </div>
-                </div>
-                </div>
-                </td></tr></tbody></table></div>
+<body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
+  <div class="page-container">
+    <!-- BEGIN NAVIGATION -->
+    <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
+    <?php include 'menu-smmt.php'; ?>        
+    </div>
+    <!-- END NAVIGATION -->
+    <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" style="padding: 20px 0"></div>
 <h1 id="project-goal">Project Goal</h1>
 <p>To obtain additional monthly car registration data to add to my DVLA
 Registration Dashboard in Tableau.</p>

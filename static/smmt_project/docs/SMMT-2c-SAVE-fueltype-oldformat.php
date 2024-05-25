@@ -3,7 +3,12 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SMMT-3c-SAVE-custtype-newformat</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>SMMT-2c-SAVE-fueltype-oldformat</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="/css/project-style.css">
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7542,7 +7547,13 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
-<main>
+  <div class="page-container">
+    <!-- BEGIN NAVIGATION -->
+    <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
+    <?php include 'menu-smmt.php'; ?>        
+    </div>
+    <!-- END NAVIGATION -->
+    <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" style="padding: 20px 0"></div><main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7558,7 +7569,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
@@ -7577,7 +7588,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Initialise-notebook-options">Initialise notebook options<a class="anchor-link" href="#Initialise-notebook-options">¶</a></h1>
+<h1 id="Initialise-Notebook-variables-and-options">Initialise Notebook variables and options<a class="anchor-link" href="#Initialise-Notebook-variables-and-options">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7586,119 +7597,18 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">source_path</span> <span class="o">=</span> <span class="s2">"/home/hass/Development/smmtdata-evolved/ocr/"</span>
-<span class="c1">#source_path = "ocr/"</span>
-<span class="n">import_name</span> <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_3b_custtype_CLEANSE_newformat-2023.csv"</span>
-<span class="n">output_name</span> <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_3c_custtype_FINISHED_newformat-2023.csv"</span>
-<span class="n">error_name</span>  <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_3d_custtype_FINISHED_newformat_errors-2023.log"</span>
-
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">source_path</span> <span class="o">=</span> <span class="s2">"ocr/"</span>
+<span class="n">import_name</span> <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_2b_cleansed_fueltype_oldformat.csv"</span>
+<span class="n">output_name</span> <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_2c_fueltype_oldformat.csv"</span>
+<span class="n">error_name</span>  <span class="o">=</span> <span class="n">source_path</span> <span class="o">+</span> <span class="s2">"OUT_2d_fueltype_oldformat_errors.log"</span>
 
 <span class="c1"># Constants</span>
 <span class="n">num_lines</span> <span class="o">=</span> <span class="mi">0</span>           <span class="c1"># lines in the import file, determined later</span>
-<span class="n">fieldcount</span> <span class="o">=</span> <span class="mi">6</span>          <span class="c1"># Number of lines per month including month header</span>
-<span class="n">cat_count</span> <span class="o">=</span> <span class="mi">4</span>           <span class="c1"># number of lines with data to capture</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Count lines for import</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">import_name</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">linecount</span><span class="p">:</span>
-    <span class="n">num_lines</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">linecount</span><span class="p">)</span>
-
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Opening File      : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Expecting         : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num_lines</span> <span class="o">/</span> <span class="n">fieldcount</span> <span class="o">*</span> <span class="n">cat_count</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" Rows"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Output File       : "</span> <span class="o">+</span> <span class="n">output_name</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>
-
-================================================================================================================================
-Opening File      : /home/hass/Development/smmtdata-evolved/ocr/OUT_3b_custtype_CLEANSE_newformat-2023.csv
-Expecting         : 112 Rows
-Output File       : /home/hass/Development/smmtdata-evolved/ocr/OUT_3c_custtype_FiNISHED_newformat-2023.csv
-================================================================================================================================
-
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Import file into Pandas dataframe</span>
-<span class="n">import_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">import_name</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">1</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">2</span> <span class="p">:</span> <span class="nb">object</span><span class="p">})</span>
-
-<span class="c1"># Create Pandas dataframe for the transposed record</span>
-<span class="n">output_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span>
-<span class="s2">"Usage"</span><span class="p">,</span>
-<span class="s2">"Source"</span><span class="p">,</span>
-<span class="s2">"Year"</span><span class="p">,</span>
-<span class="s2">"Month"</span><span class="p">,</span>
-<span class="s2">"Topcat"</span><span class="p">,</span>
-<span class="s2">"Subcat"</span><span class="p">,</span>
-<span class="s2">"Quantity"</span><span class="p">,</span>
-<span class="s2">"Acquire_Date"</span><span class="p">,</span>
-<span class="s2">"Acquire_By"</span><span class="p">,</span>
-<span class="s2">"Acquire_ Method"</span><span class="p">,</span>
-<span class="s2">"fileDate"</span>
-<span class="p">]</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Error handling</span>
-<span class="n">debug</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">error_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">error_name</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">error_rep</span><span class="p">(</span><span class="n">ir</span><span class="p">,</span> <span class="n">sd</span><span class="p">,</span> <span class="n">fld</span><span class="p">,</span> <span class="n">error</span><span class="p">):</span> <span class="c1"># input_row, source, subcat, qty</span>
-    <span class="n">error_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">ir</span><span class="p">)</span> <span class="o">+</span> <span class="n">sd</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">fld</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">error</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">fieldcount</span> <span class="o">=</span> <span class="mi">3</span>          <span class="c1"># Number of lines per month including month header</span>
+<span class="n">cat_count</span> <span class="o">=</span> <span class="mi">7</span>           <span class="c1"># Number of categories</span>
 </pre></div>
 </div>
 </div>
@@ -7711,7 +7621,7 @@ Output File       : /home/hass/Development/smmtdata-evolved/ocr/OUT_3c_custtype_
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Data-cleansing">Data cleansing<a class="anchor-link" href="#Data-cleansing">¶</a></h2>
+<h1 id="Format-dataframe-and-save-as-longdata">Format dataframe and save as longdata<a class="anchor-link" href="#Format-dataframe-and-save-as-longdata">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7720,7 +7630,55 @@ Output File       : /home/hass/Development/smmtdata-evolved/ocr/OUT_3c_custtype_
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## Count lines for import</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">import_name</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">linecount</span><span class="p">:</span>
+    <span class="n">num_lines</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">linecount</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Total Import lines      :'</span><span class="p">,</span> <span class="n">num_lines</span><span class="p">)</span> 
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Opening File      : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Expecting         : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num_lines</span> <span class="o">/</span> <span class="n">fieldcount</span> <span class="o">*</span> <span class="n">cat_count</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" Rows"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Output File       : "</span> <span class="o">+</span> <span class="n">output_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">import_name</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">1</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">2</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">3</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">4</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">5</span> <span class="p">:</span> <span class="nb">object</span>
+                                                 <span class="p">,</span> <span class="mi">6</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">7</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">8</span> <span class="p">:</span> <span class="nb">object</span><span class="p">,</span> <span class="mi">9</span> <span class="p">:</span> <span class="nb">object</span><span class="p">})</span>
+<span class="c1"># Error Logging</span>
+<span class="n">debug</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">error_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">error_name</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">error_rep</span><span class="p">(</span><span class="n">input_row</span><span class="p">,</span> <span class="n">sourcedate</span><span class="p">,</span> <span class="n">field</span><span class="p">,</span> <span class="n">error</span><span class="p">):</span>
+    <span class="n">error_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"Input Line : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">input_row</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" : "</span> <span class="o">+</span> <span class="n">out_source</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">field</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">error</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Feature-Replacement-Lookups,-feature-engineering-lookups">Feature Replacement Lookups, feature engineering lookups<a class="anchor-link" href="#Feature-Replacement-Lookups,-feature-engineering-lookups">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">TOPCATLOOKUP</span> <span class="o">=</span> <span class="p">{</span>
@@ -7730,23 +7688,16 @@ Output File       : /home/hass/Development/smmtdata-evolved/ocr/OUT_3c_custtype_
     <span class="s2">"Total"</span><span class="p">:</span> <span class="s2">"Fuel_TOTAL"</span><span class="p">,</span>
     <span class="s2">"Private"</span><span class="p">:</span> <span class="s2">"Customer"</span><span class="p">,</span>
     <span class="s2">"Fleet"</span><span class="p">:</span> <span class="s2">"Customer"</span><span class="p">,</span>
-    <span class="s2">"Business"</span><span class="p">:</span> <span class="s2">"Customer"</span><span class="p">,</span>
-    <span class="s2">"Total"</span> <span class="p">:</span> <span class="s2">"Fuel Total"</span><span class="p">,</span>
-    <span class="s2">"Mhev_diesel"</span><span class="p">:</span> <span class="s2">"xHEV"</span><span class="p">,</span>
-    <span class="s2">"Hev"</span> <span class="p">:</span> <span class="s2">"HEV"</span><span class="p">,</span>
-    <span class="s2">"Hev"</span> <span class="p">:</span> <span class="s2">"xHEV"</span><span class="p">,</span>
-    <span class="s2">"Total"</span><span class="p">:</span> <span class="s2">"Total"</span><span class="p">,</span>
-    <span class="s2">"Mhev_petrol"</span><span class="p">:</span> <span class="s2">"xHEV"</span><span class="p">,</span>
-    <span class="s2">"Bev"</span> <span class="p">:</span> <span class="s2">"Plugin"</span><span class="p">,</span>
-    <span class="s2">"Phev"</span> <span class="p">:</span> <span class="s2">"Plugin"</span>
+    <span class="s2">"Business"</span><span class="p">:</span> <span class="s2">"Customer"</span>
     <span class="p">}</span>
-
 <span class="k">def</span> <span class="nf">get_tcat</span><span class="p">(</span><span class="n">g_scat</span><span class="p">):</span>    
     <span class="k">try</span><span class="p">:</span>
         <span class="n">g_topcat</span> <span class="o">=</span> <span class="n">TOPCATLOOKUP</span><span class="p">[</span><span class="n">g_scat</span><span class="p">]</span>
     <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
         <span class="n">g_topcat</span> <span class="o">=</span> <span class="s2">"err"</span>
+
     <span class="k">return</span> <span class="n">g_topcat</span>
+
 
 <span class="n">SCATLOOKUP</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">"Diesel"</span> <span class="p">:</span> <span class="s2">"Diesel"</span><span class="p">,</span>
@@ -7782,7 +7733,7 @@ Output File       : /home/hass/Development/smmtdata-evolved/ocr/OUT_3c_custtype_
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Add-data-to-table">Add data to table<a class="anchor-link" href="#Add-data-to-table">¶</a></h2>
+<h1 id="Initialise-output-pandas-dataframe">Initialise output pandas dataframe<a class="anchor-link" href="#Initialise-output-pandas-dataframe">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7791,132 +7742,114 @@ Output File       : /home/hass/Development/smmtdata-evolved/ocr/OUT_3c_custtype_
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">addtotbl</span><span class="p">(</span><span class="n">sub_cat</span><span class="p">,</span> <span class="n">top_cat</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">qty</span><span class="p">):</span>
-   <span class="c1"># print(sub_cat, month, year, source, qty)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create Pandas dataframe for the transposed record</span>
+<span class="n">output_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span>
+<span class="s2">"Usage"</span><span class="p">,</span>
+<span class="s2">"Source"</span><span class="p">,</span>
+<span class="s2">"Year"</span><span class="p">,</span>
+<span class="s2">"Month"</span><span class="p">,</span>
+<span class="s2">"Topcat"</span><span class="p">,</span>
+<span class="s2">"Subcat"</span><span class="p">,</span>
+<span class="s2">"Quantity"</span><span class="p">,</span>
+<span class="s2">"Acquire_Date"</span><span class="p">,</span>
+<span class="s2">"Acquire_By"</span><span class="p">,</span>
+<span class="s2">"Acquire_Method"</span><span class="p">,</span>
+<span class="s2">"fileDate"</span>
+<span class="p">]</span>
+<span class="p">)</span>
 
-<span class="c1"># Add top categories to sub categories</span>
-    <span class="k">if</span> <span class="n">sub_cat</span> <span class="o">==</span> <span class="s2">"Total"</span><span class="p">:</span>
-        <span class="n">topcat</span> <span class="o">=</span> <span class="s2">"Customer"</span>
-    <span class="k">elif</span> <span class="n">sub_cat</span> <span class="o">==</span> <span class="s2">"Private"</span><span class="p">:</span>
-        <span class="n">topcat</span> <span class="o">=</span> <span class="s2">"Customer"</span>
-    <span class="k">elif</span> <span class="n">sub_cat</span> <span class="o">==</span> <span class="s2">"Fleet"</span><span class="p">:</span>
-        <span class="n">topcat</span> <span class="o">=</span> <span class="s2">"Customer"</span>
-    <span class="k">elif</span> <span class="n">sub_cat</span> <span class="o">==</span> <span class="s2">"Private"</span><span class="p">:</span>
-        <span class="n">topcat</span> <span class="o">=</span> <span class="s2">"Customer"</span>
-    <span class="k">elif</span> <span class="n">sub_cat</span> <span class="o">==</span> <span class="s2">"Business"</span><span class="p">:</span>
-        <span class="n">topcat</span> <span class="o">=</span> <span class="s2">"Customer"</span>    
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">topcat</span><span class="o">=</span><span class="s2">"err"</span>
-    
-    <span class="n">new_row</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"Usage"</span> <span class="p">:</span> <span class="s2">"Private"</span><span class="p">,</span>
-            <span class="s2">"Source"</span> <span class="p">:</span> <span class="n">source</span><span class="p">,</span>
-            <span class="s2">"Year"</span> <span class="p">:</span> <span class="n">year</span><span class="p">,</span>
-            <span class="s2">"Month"</span> <span class="p">:</span> <span class="n">month</span><span class="p">,</span>
-            <span class="s2">"Topcat"</span> <span class="p">:</span> <span class="n">topcat</span><span class="p">,</span>
-            <span class="s2">"Subcat"</span> <span class="p">:</span> <span class="n">sub_cat</span><span class="p">,</span>
-            <span class="s2">"Quantity"</span> <span class="p">:</span> <span class="n">qty</span><span class="p">,</span>
-            <span class="s2">"Acquire_Date"</span> <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"</span><span class="si">%d</span><span class="s2">-%m-%y"</span><span class="p">),</span>
-            <span class="s2">"Acquire_By"</span> <span class="p">:</span> <span class="s2">"Tesseract-new"</span><span class="p">,</span>
-            <span class="s2">"Acquire_ Method"</span> <span class="p">:</span> <span class="s2">"Manual"</span><span class="p">,</span>
-            <span class="s2">"fileDate"</span> <span class="p">:</span> <span class="n">month</span> <span class="o">+</span> <span class="s2">"-"</span> <span class="o">+</span> <span class="n">year</span><span class="p">}</span>
-    <span class="n">output_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">output_table</span><span class="p">)]</span> <span class="o">=</span> <span class="n">new_row</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Shuffle-data-into-the-right-fields-and-save-it">Shuffle data into the right fields and save it<a class="anchor-link" href="#Shuffle-data-into-the-right-fields-and-save-it">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Declare variables for data transposition</span>
+<span class="c1">#print(output_table)</span>
+
+<span class="c1"># Declare variables for data transposition</span>
 
 <span class="n">input_row</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">input_col</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
 
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_lines</span><span class="p">,</span> <span class="n">fieldcount</span><span class="p">):</span>  <span class="c1"># start, total lines in file, number of fields per month </span>
-    <span class="n">input_row</span> <span class="o">=</span> <span class="n">i</span>
-    <span class="n">out_usage</span> <span class="o">=</span> <span class="s2">"Personal"</span>
-    <span class="n">out_month</span> <span class="o">=</span> <span class="n">import_dataframe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="p">,</span> <span class="n">input_col</span><span class="p">]</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
-    <span class="n">input_row</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">source_year</span> <span class="o">=</span> <span class="n">import_dataframe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="p">,</span> <span class="n">input_col</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+<span class="c1">#print(df.iloc[input_row, input_col])</span>
+
+
+<span class="n">newrow_num</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># print(df.dtypes)</span>
+
+<span class="n">out_acquire_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'</span><span class="si">%d</span><span class="s1">-%m-%y'</span><span class="p">)</span>
+<span class="n">out_acquire_by</span> <span class="o">=</span> <span class="s2">"tesseract-old"</span>
+<span class="n">out_acquire_method</span> <span class="o">=</span> <span class="s2">"Manual"</span>
+<span class="n">out_usage</span> <span class="o">=</span> <span class="s2">"Private"</span>
+<span class="c1">#</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_lines</span><span class="p">,</span> <span class="n">fieldcount</span><span class="p">):</span> <span class="c1"># start, lines in file, rows per month</span>
+    <span class="n">input_row</span> <span class="o">=</span> <span class="n">x</span>
+    <span class="n">out_month</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="p">,</span> <span class="n">input_col</span><span class="p">]</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+    <span class="n">source_year</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">input_col</span><span class="p">]</span>
     <span class="n">out_source</span> <span class="o">=</span> <span class="n">out_month</span> <span class="o">+</span> <span class="s2">"-"</span> <span class="o">+</span> <span class="n">source_year</span>
-    <span class="n">out_year0</span> <span class="o">=</span> <span class="n">import_dataframe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-    <span class="n">out_year1</span> <span class="o">=</span> <span class="n">import_dataframe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-    <span class="n">input_row</span> <span class="o">+=</span> <span class="mi">1</span>
 
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">fieldcount</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">):</span> <span class="c1"># # lines to capture, -1 excludes month header</span>
-        <span class="n">o_subcat</span> <span class="o">=</span> <span class="n">import_dataframe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
-        <span class="n">out_qty</span> <span class="o">=</span> <span class="n">import_dataframe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-        <span class="n">out_subcat</span> <span class="o">=</span> <span class="n">get_scat</span><span class="p">(</span><span class="n">o_subcat</span><span class="p">)</span>
-        <span class="n">out_topcat</span> <span class="o">=</span> <span class="n">get_tcat</span><span class="p">(</span><span class="n">o_subcat</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span> <span class="c1"># Three rows per month one for each year + header</span>
+        <span class="n">out_year</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="o">+</span><span class="n">i</span><span class="p">,</span> <span class="n">input_col</span><span class="p">]</span>
+
+
+        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span> <span class="c1"># 8 fields per year</span>
+            <span class="n">o_subcat</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span> <span class="p">,</span> <span class="n">input_col</span> <span class="o">+</span> <span class="n">y</span><span class="p">]</span>
+            <span class="c1"># out_topcat = TOPCATLOOKUP[out_sub_cat]</span>
+            <span class="n">out_topcat</span> <span class="o">=</span> <span class="n">get_tcat</span><span class="p">(</span><span class="n">o_subcat</span><span class="p">)</span>
  
-        <span class="k">if</span> <span class="n">out_qty</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span> <span class="o">!=</span> <span class="kc">True</span><span class="p">:</span>
-            <span class="n">out_qty</span> <span class="o">=</span> <span class="s2">"err"</span>
-            <span class="n">error_rep</span><span class="p">(</span><span class="n">input_row</span><span class="p">,</span> <span class="n">out_source</span><span class="p">,</span> <span class="s2">"out_total0"</span><span class="p">,</span> <span class="n">out_subcat</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">out_topcat</span> <span class="o">==</span> <span class="s2">"err"</span><span class="p">:</span>
-            <span class="n">error_rep</span><span class="p">(</span><span class="n">input_row</span><span class="p">,</span> <span class="n">out_source</span><span class="p">,</span> <span class="n">out_subcat</span><span class="p">,</span> <span class="n">out_qty</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">out_subcat</span> <span class="o">==</span> <span class="s2">"err"</span><span class="p">:</span>
-            <span class="n">error_rep</span><span class="p">(</span><span class="n">input_row</span><span class="p">,</span> <span class="n">out_source</span><span class="p">,</span> <span class="n">out_subcat</span><span class="p">,</span> <span class="n">out_qty</span><span class="p">)</span>
+            <span class="n">out_subcat</span> <span class="o">=</span> <span class="n">get_scat</span><span class="p">(</span><span class="n">o_subcat</span><span class="p">)</span>
+
+            <span class="n">out_qty</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span> <span class="o">+</span> <span class="n">i</span> <span class="p">,</span> <span class="n">input_col</span> <span class="o">+</span> <span class="n">y</span><span class="p">]</span>
+
+            <span class="c1"># Error checking and reporting</span>
+            <span class="k">if</span> <span class="n">out_topcat</span> <span class="o">==</span> <span class="s2">"err"</span><span class="p">:</span> 
+                <span class="n">error_rep</span><span class="p">(</span><span class="n">input_row</span><span class="p">,</span> <span class="n">out_source</span><span class="p">,</span> <span class="n">o_subcat</span><span class="p">,</span> <span class="n">out_qty</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">out_subcat</span> <span class="o">==</span> <span class="s2">"err"</span><span class="p">:</span>
+                <span class="n">error_rep</span><span class="p">(</span><span class="n">input_row</span><span class="p">,</span> <span class="n">out_source</span><span class="p">,</span> <span class="n">out_subcat</span><span class="p">,</span> <span class="n">out_qty</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">out_qty</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span> <span class="o">!=</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="n">out_qty</span> <span class="o">=</span> <span class="s2">"err"</span>
+                <span class="n">error_rep</span><span class="p">(</span><span class="n">input_row</span><span class="o">+</span> <span class="n">i</span> <span class="o">+</span><span class="mi">1</span> <span class="p">,</span> <span class="n">out_source</span><span class="p">,</span> <span class="n">out_subcat</span><span class="p">,</span> <span class="n">out_qty</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">source_year</span> <span class="o">==</span> <span class="n">out_year</span><span class="p">:</span>
+                <span class="n">out_source</span> <span class="o">=</span> <span class="s2">"Primary"</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">out_source</span> <span class="o">=</span> <span class="s2">"Secondary"</span>
+
+            <span class="c1"># Insert new row into output dataframe</span>
+            <span class="n">new_row</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">"Usage"</span>          <span class="p">:</span> <span class="n">out_usage</span><span class="p">,</span>
+                        <span class="s2">"Source"</span>         <span class="p">:</span> <span class="n">out_source</span><span class="p">,</span>
+                        <span class="s2">"Year"</span>           <span class="p">:</span> <span class="n">out_year</span><span class="p">,</span>
+                        <span class="s2">"Month"</span>          <span class="p">:</span> <span class="n">out_month</span><span class="p">,</span>
+                        <span class="s2">"Topcat"</span>         <span class="p">:</span> <span class="n">out_topcat</span><span class="p">,</span>
+                        <span class="s2">"Subcat"</span>         <span class="p">:</span> <span class="n">out_subcat</span><span class="p">,</span>
+                        <span class="s2">"Quantity"</span>       <span class="p">:</span> <span class="n">out_qty</span><span class="p">,</span>
+                        <span class="s2">"Acquire_Date"</span>   <span class="p">:</span> <span class="n">out_acquire_date</span><span class="p">,</span>
+                        <span class="s2">"Acquire_By"</span>     <span class="p">:</span> <span class="n">out_acquire_by</span><span class="p">,</span>
+                        <span class="s2">"Acquire_Method"</span> <span class="p">:</span> <span class="n">out_acquire_method</span><span class="p">,</span>
+                        <span class="s2">"fileDate"</span>       <span class="p">:</span> <span class="n">out_month</span> <span class="o">+</span> <span class="s2">"-"</span>  <span class="o">+</span> <span class="n">out_year</span><span class="p">}</span>
+            <span class="n">output_table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">output_table</span><span class="p">)]</span> <span class="o">=</span> <span class="n">new_row</span>
+            <span class="k">if</span> <span class="n">debug</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">new_row</span><span class="p">)</span>
 
 
-        <span class="k">if</span> <span class="n">debug</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"Called : "</span> <span class="o">+</span> <span class="n">out_subcat</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">out_month</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span>  <span class="n">out_year0</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span>  <span class="s2">"Primary"</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span>  <span class="nb">str</span><span class="p">(</span><span class="n">out_qty</span><span class="p">))</span>
-        <span class="n">addtotbl</span><span class="p">(</span><span class="n">out_subcat</span><span class="p">,</span> <span class="n">out_topcat</span><span class="p">,</span> <span class="n">out_month</span><span class="p">,</span> <span class="n">out_year0</span><span class="p">,</span> <span class="s2">"Primary"</span><span class="p">,</span> <span class="n">out_qty</span><span class="p">)</span>
-    
-        <span class="n">out_qty</span> <span class="o">=</span> <span class="n">import_dataframe</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">input_row</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">out_qty</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span> <span class="o">!=</span> <span class="kc">True</span><span class="p">:</span>
-            <span class="n">out_qty</span> <span class="o">=</span> <span class="s2">"err"</span>
-            <span class="n">error_rep</span><span class="p">(</span><span class="n">out_source</span><span class="p">,</span> <span class="s2">"out_total1"</span><span class="p">,</span> <span class="n">out_subcat</span><span class="p">)</span>
-        <span class="n">addtotbl</span><span class="p">(</span><span class="n">out_subcat</span><span class="p">,</span> <span class="n">out_topcat</span><span class="p">,</span> <span class="n">out_month</span><span class="p">,</span> <span class="n">out_year1</span><span class="p">,</span> <span class="s2">"Secondary"</span><span class="p">,</span> <span class="n">out_qty</span><span class="p">)</span>
-        <span class="c1">#print("Year 1")</span>
-        <span class="n">input_row</span> <span class="o">+=</span><span class="mi">1</span>
-    <span class="n">input_row</span> <span class="o">+=</span><span class="mi">1</span>
-  
+
+<span class="c1">#print(output_table)</span>
 <span class="n">error_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="n">output_table</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">output_name</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="c1">#jname = source_path + "3c-json.json"</span>
+<span class="c1">#jname = source_path + "2c-json.json"</span>
 <span class="c1">#output_table.to_json(jname, index=True)</span>
-
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"The generated file needs to be validated, OCR is not 100</span><span class="si">% r</span><span class="s2">eliable"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Opening File      : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Output File       : "</span> <span class="o">+</span> <span class="n">output_name</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Expecting         : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num_lines</span> <span class="o">/</span> <span class="n">fieldcount</span> <span class="o">*</span> <span class="n">cat_count</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" Rows"</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Output File       : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">output_table</span><span class="o">.</span><span class="n">index</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" Rows"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Error report      : "</span> <span class="o">+</span> <span class="n">error_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"      Import File : "</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"      Output File : "</span> <span class="o">+</span> <span class="n">output_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"        Expecting : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num_lines</span> <span class="o">/</span> <span class="n">fieldcount</span> <span class="o">*</span> <span class="n">cat_count</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" Rows"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"      Output File : "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">output_table</span><span class="o">.</span><span class="n">index</span><span class="p">))</span> <span class="o">+</span> <span class="s2">" Rows"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"     Error report : "</span> <span class="o">+</span> <span class="n">error_name</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Errors detected:"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>
+
 
 
 <span class="n">error_file</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="n">error_name</span><span class="p">,</span><span class="s1">'r'</span><span class="p">)</span>
@@ -7924,53 +7857,14 @@ Output File       : /home/hass/Development/smmtdata-evolved/ocr/OUT_3c_custtype_
 <span class="k">if</span> <span class="n">line</span> <span class="o">==</span> <span class="s2">""</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"No Errors"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Errors detected, edit SOURCE FILE :"</span> <span class="o">+</span> <span class="n">import_name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"================================================================================================================================"</span><span class="p">)</span>   
     <span class="k">while</span><span class="p">(</span><span class="n">line</span><span class="o">!=</span><span class="s2">""</span><span class="p">):</span>
         <span class="n">error_line</span> <span class="o">=</span> <span class="n">colored</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="s2">"black"</span><span class="p">,</span> <span class="s2">"on_white"</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span> 
         <span class="nb">print</span><span class="p">(</span><span class="n">error_line</span><span class="p">)</span>
         <span class="n">line</span><span class="o">=</span><span class="n">error_file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="n">error_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>
-
-
-
-The generated file needs to be validated, OCR is not 100% reliable
-================================================================================================================================
-
-
-
-
-Opening File      : /home/hass/Development/smmtdata-evolved/ocr/OUT_3b_custtype_CLEANSE_newformat-2023.csv
-
-
-Output File       : /home/hass/Development/smmtdata-evolved/ocr/OUT_3c_custtype_FiNISHED_newformat-2023.csv
-
-
-Expecting         : 112 Rows
-Output File       : 112 Rows
-
-
-Error report      : /home/hass/Development/smmtdata-evolved/ocr/OUT_3d_custtype_FINISHED_newformat_errors-2023.log
-
-
-================================================================================================================================
-
-
-Errors detected:
-================================================================================================================================
-No Errors
-</pre>
 </div>
 </div>
 </div>

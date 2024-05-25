@@ -3,7 +3,12 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SMMT-1b-CLEANSE-fueltype-newformat</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>SMMT-1b-CLEANSE-fueltype-newformat</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/custom.css">
+<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="/css/project-style.css">
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7556,6 +7561,26 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1>Data cleanse & feature engineering operations</h1>
+<p>This notebook carries out datacleanse, error detection and feature engineering on the unclean wide format csv before saving to long format csv.</p>
+<table>
+  <tr>
+    <td>Notebook Name</td><td>Function</td></tr>
+    <tr>
+      <td>SMMT-1a-OCR-fueltype-newformat.ipynb</td>
+      <td>Optical Character recognition of the image files in the import directory. Save to unclean csv</td>
+    </tr>
+    <tr>
+      <td><b>SMMT-1b-CLEANSE-fueltype-newformat.ipynb</b></td>
+      <td><b>Datacleanse, error fetection and feature engineering. Saves to cleansed file</b></td>
+    </tr>
+    <tr>
+      <td>SMMT-1b-CLEANSE-fueltype-newformat.ipynb</td>
+      <td>Datacleanse, error detection and feature engineering. Saves to cleansed csv file in long data format.</td>
+    </tr>
+
+</table>
+
 <h1 id="Import-Libraries">Import Libraries<a class="anchor-link" href="#Import-Libraries">¶</a></h1>
 </div>
 </div>
