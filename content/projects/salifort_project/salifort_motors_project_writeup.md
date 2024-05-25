@@ -45,51 +45,51 @@ A typical Data Analysis project would decide on a single model and stick with it
 
 ### Client Documentation
 
-- [Client Proposal](/salifort_project/docs/cd_01_Salifort_Motors_project-PROPOSAL.html)
+- [Client Proposal](/salifort_project/docs/cd_01_Salifort_Motors_project-PROPOSAL.php)
 
     This details a typical client proposal for the work that needs to be carried out.
 
-- [PACE Framework](/salifort_project/docs/cd_02_Salifort_Motors_PACE_Plan.html)
+- [PACE Framework](/salifort_project/docs/cd_02_Salifort_Motors_PACE_Plan.php)
 
-- [Executive Summary Analysis](/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html)
+- [Executive Summary Analysis](/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.php)
   - [Executive Summary Presentation](/salifort_project/presentation/cd_04a_Salifort_Motors_EXECUTIVE_SUMMARY_PRESENTATION.html)
 
-- [HR Summary Analysis](/salifort_project/docs/cd_05_Salifort_Motors_HR_SUMMARY.html)
+- [HR Summary Analysis](/salifort_project/docs/cd_05_Salifort_Motors_HR_SUMMARY.php)
   - [HR Summary Presentation](/salifort_project/presentation/cd_05a_Salifort_Motors_HR_SUMMARY_PRESENTATION.html)
 
-- [HR Summary Notebook for discussion](/salifort_project/docs/HR_Summary_Notebook.html)
+- [HR Summary Notebook for discussion](/salifort_project/docs/HR_Summary_Notebook.php)
 
-- [Team Summary](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.html)
+- [Team Summary](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.php)
 
 Generates a report for each department
 
-- [Example Team Summary Notebook (Plots for presentations)](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html)
+- [Example Team Summary Notebook (Plots for presentations)](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.php)
 
 An example of the generated Team report
 
-- [Analyst Report](/salifort_project/docs/cd_03_Salifort_Motors_Analyst_SUMMARY.html)
+- [Analyst Report](/salifort_project/docs/cd_03_Salifort_Motors_Analyst_SUMMARY.php)
 
-- [Project Close](/salifort_project/docs/cd_99_Salifort_Motors_Project_Close.html)
+- [Project Close](/salifort_project/docs/cd_99_Salifort_Motors_Project_Close.php)
 
 ### Analyst's Project Notebooks
 
-- [Salifort Project - Data Cleanse Ops](/salifort_project/docs/nb_03_Salifort_Motors_project_EDA_cleanse.html)
+- [Salifort Project - Data Cleanse Ops](/salifort_project/docs/nb_03_Salifort_Motors_project_EDA_cleanse.htphpml)
 
-- [Salifort Project - EDA Analysis Ops](/salifort_project/docs/nb_04_Salifort_Motors_project_EDA_ANALYSIS.html)
+- [Salifort Project - EDA Analysis Ops](/salifort_project/docs/nb_04_Salifort_Motors_project_EDA_ANALYSIS.php)
 
-- [Salifort Project - Feature Engineering](/salifort_project/docs/nb_05_Salifort_Motors_project_Feature_Engineering.html)
+- [Salifort Project - Feature Engineering](/salifort_project/docs/nb_05_Salifort_Motors_project_Feature_Engineering.php)
 
-- [Salifort Project - Logistical Regression Modelling](/salifort_project/docs/nb_06_Salifort_Motors_project_Logistic_Regression_Model.html)
+- [Salifort Project - Logistical Regression Modelling](/salifort_project/docs/nb_06_Salifort_Motors_project_Logistic_Regression_Model.php)
 
-- [Salifort Project - Decision Tree Modelling](/salifort_project/docs/nb_07_Salifort_Motors_project_Decision_Tree_Model.html)
+- [Salifort Project - Decision Tree Modelling](/salifort_project/docs/nb_07_Salifort_Motors_project_Decision_Tree_Model.php)
 
-- [Salifort Project - XGBoost Modelling](/salifort_project/docs/nb_08_Salifort_Motors_project_XGBoost_Model.html)
+- [Salifort Project - XGBoost Modelling](/salifort_project/docs/nb_08_Salifort_Motors_project_XGBoost_Model.php)
 
-- [Salifort Project - Random Forest Modelling](/salifort_project/docs/nb_09_Salifort_Motors_project_Random_Forest_Model.html)
+- [Salifort Project - Random Forest Modelling](/salifort_project/docs/nb_09_Salifort_Motors_project_Random_Forest_Model.php)
 
-- [Salifort Project - Model Comparisons](/salifort_project/docs/nb_11_Salifort_Motors_project_Model_Comparisons.html)
+- [Salifort Project - Model Comparisons](/salifort_project/docs/nb_11_Salifort_Motors_project_Model_Comparisons.php)
 
-- [Salifort Project - Demonstration Model](/salifort_project/docs/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html)
+- [Salifort Project - Demonstration Model](/salifort_project/docs/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.php)
 
 ### About this project structure
 
@@ -255,7 +255,7 @@ The HR dataset is processed through the models and columns added with prediction
 
 This is a template that can be customised by the HR Team for each team manager. By simply changing one variable for the team an entire report can be generated, saving the HR team a lot of time prepapring for meetings with team managers.
 
-#### [Salifort Project - Team Summary Jupyter Notebook](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.html)
+#### [Salifort Project - Team Summary Jupyter Notebook](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.php)
 
 This notebook provides two elements to the team manager :
 
