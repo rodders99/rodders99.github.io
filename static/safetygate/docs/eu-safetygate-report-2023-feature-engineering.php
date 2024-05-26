@@ -825,7 +825,7 @@ the reuse of this document is authorised under a <a href="https://creativecommon
 licence</a>.</p>
 <p>This means that reuse is allowed provided appropriate credit is given and any changes are indicated.</p>
 <p>Since this entire analysis is based on data from the EU, and I have used visualisations from the official annual summary as inspiration for the programmatically created version of these visualisations,
-the creative commons license applies this work hosted on <a href="https://rodders99.github.io">rodders99.github.io</a>, this means that reuse of this analysis and its visualisations is allowed provided appropriate credit is given and any changes are indicated.</p>
+the creative commons license applies this work hosted on <a href="https://rodders.me">rodders.me</a>, this means that reuse of this analysis and its visualisations is allowed provided appropriate credit is given and any changes are indicated.</p>
 
 </div>
 <script src="../../scripts/projects.js"> </script>

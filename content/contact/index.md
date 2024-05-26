@@ -17,7 +17,7 @@ Get in contact, lets have a chat
 
 {{< fa fab github >}} https://github.com/rodders99
 
-{{< fa globe >}} https://rodders99.github.io
+{{< fa globe >}} https://rodders.me
 
 {{< fa fab linkedin >}} https://www.linkedin.com/in/rod-slater-uk/
 

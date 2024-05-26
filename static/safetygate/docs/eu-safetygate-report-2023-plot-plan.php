@@ -666,7 +666,7 @@
   <p>This means that reuse is allowed provided appropriate credit is given and any changes are indicated.</p>
   <p>Since this entire analysis is based on data from the EU, and I have used visualisations from the official annual summary 
     as inspiration for the programmatically created version of these visualisations,
-  the creative commons license applies this work hosted on <a href="https://rodders99.github.io">https://rodders99.github.io</a>, 
+  the creative commons license applies this work hosted on <a href="https://rodders.me">https://rodders.me</a>, 
   this means that reuse of this analysis and it's visualisations is allowed provided appropriate credit is given and any changes are indicated.</p>
   
 

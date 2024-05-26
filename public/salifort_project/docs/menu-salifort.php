@@ -51,9 +51,9 @@ echo '
            <ul>
               
            
-           <li><a href="/salifort_project/presentation/cd_04a_Salifort_Motors_EXECUTIVE_SUMMARY_PRESENTATION.html">Executive Summary PRESENTATION</a></li>
+           <li><a href="https://rodders.me/salifort_project/presentation/cd_04a_Salifort_Motors_EXECUTIVE_SUMMARY_PRESENTATION.html">Executive Summary PRESENTATION</a></li>
            
-           <li><a href="/salifort_project/presentation/cd_05a_Salifort_Motors_HR_SUMMARY_PRESENTATION.html">HR Summary PRESENTATION</a></li>
+           <li><a href="https://rodders.me/salifort_project/presentation/cd_05a_Salifort_Motors_HR_SUMMARY_PRESENTATION.html">HR Summary PRESENTATION</a></li>
            
 
            </ul>

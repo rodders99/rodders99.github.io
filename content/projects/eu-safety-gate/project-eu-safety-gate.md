@@ -139,4 +139,4 @@ licence](https://creativecommons.org/licenses/by/4.0/).
 This means that reuse is allowed provided appropriate credit is given and any changes are indicated.
 
 Since this entire analysis is based on data from the EU, and I have used visualisations from the official annual summary as inspiration for the programmatically created version of these visualisations,
-the creative commons license applies this work hosted on [rodders99.github.io](https://rodders99.github.io), this means that reuse of this analysis and it's visualisations is allowed provided appropriate credit is given and any changes are indicated.
+the creative commons license applies this work hosted on [rodders.me](https://rodders.me), this means that reuse of this analysis and it's visualisations is allowed provided appropriate credit is given and any changes are indicated.

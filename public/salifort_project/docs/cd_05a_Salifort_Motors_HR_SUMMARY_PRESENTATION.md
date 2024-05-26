@@ -13,14 +13,14 @@ paginate: true
 #backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
-![bg left:40% 80%](https://rodders99.github.io/salifort_project/img/salifort_logo.png)
+![bg left:40% 80%](https://rodders.me/salifort_project/img/salifort_logo.png)
 
 # **Salifort Motors**
 # **HR SUMMARY**
 
 HR Data Analysis and Employee Retention Strategy
 
-    https://rodders99.github.io/projects/salifort_project/salifort-motors/
+    https://rodders.me/projects/salifort_project/salifort-motors/
 
 ---
 

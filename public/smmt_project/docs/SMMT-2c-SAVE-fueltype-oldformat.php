@@ -2936,6 +2936,7 @@ input::placeholder {
   padding: 0 25px 0 10px;
   text-align: left;
   -moz-appearance: none;
+  appearance: none;
   -webkit-appearance: none;
 }
 
@@ -7309,6 +7310,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 /* Force rendering true colors when outputing to pdf */
 * {
   -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 /* Misc */

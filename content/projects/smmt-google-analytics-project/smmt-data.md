@@ -36,30 +36,30 @@ If you wish to source data from the SMMT, please contact them directly: [https:/
 
 ## Project Documentation
 
-- [Project Details](/smmt_project/docs/SMMT-Project-stage-breakdown.php)
+- [Project Details](https://rodders.me/smmt_project/docs/SMMT-Project-stage-breakdown.php)
 
 - [Tableau Dashboard](https://public.tableau.com/views/VehiclesRegisteredforUKdf_VEH0220/FrontPage?:language=en-GB&:display_count=n&:origin=viz_share_link)
 
 ### Notebooks - Fuel / Customer new format
 
-- [SMMT-1a-OCR-fueltype-newformat.ipynb](/smmt_project/docs/SMMT-1a-OCR-fueltype-newformat.php)
+- [SMMT-1a-OCR-fueltype-newformat.ipynb](https://rodders.me/smmt_project/docs/SMMT-1a-OCR-fueltype-newformat.php)
 
-- [SMMT-1b-CLEANSE-fueltype-newformat.ipynb](/smmt_project/docs/SMMT-1b-CLEANSE-fueltype-newformat.php)
+- [SMMT-1b-CLEANSE-fueltype-newformat.ipynb](https://rodders.me/smmt_project/docs/SMMT-1b-CLEANSE-fueltype-newformat.php)
 
-- [SMMT-1c-SAVE-fueltype-newformat.ipynb](/smmt_project/docs/SMMT-1c-SAVE-fueltype-newformat.php)
+- [SMMT-1c-SAVE-fueltype-newformat.ipynb](https://rodders.me/smmt_project/docs/SMMT-1c-SAVE-fueltype-newformat.php)
 
 ### Notebooks - Fuel Old Format
 
-- [SMMT-2a-OCR-fueltype-oldformat.ipynb](/smmt_project/docs/SMMT-2a-OCR-fueltype-oldformat.php)
+- [SMMT-2a-OCR-fueltype-oldformat.ipynb](https://rodders.me/smmt_project/docs/SMMT-2a-OCR-fueltype-oldformat.php)
 
-- [SMMT-2b-CLEANSE-fueltype-oldformat.ipynb](/smmt_project/docs/SMMT-2b-CLEANSE-fueltype-oldformat.php)
+- [SMMT-2b-CLEANSE-fueltype-oldformat.ipynb](https://rodders.me/smmt_project/docs/SMMT-2b-CLEANSE-fueltype-oldformat.php)
 
-- [SMMT-2c-SAVE-fueltype-oldformat.ipynb](/smmt_project/docs/SMMT-2c-SAVE-fueltype-oldformat.php)
+- [SMMT-2c-SAVE-fueltype-oldformat.ipynb](https://rodders.me/smmt_project/docs/SMMT-2c-SAVE-fueltype-oldformat.php)
 
 ### Notebooks - Customer Old Format
 
-- [SMMT-3a-OCR-custtype-newformat.ipynb](/smmt_project/docs/SMMT-3a-OCR-custtype-newformat.php)
+- [SMMT-3a-OCR-custtype-newformat.ipynb](https://rodders.me/smmt_project/docs/SMMT-3a-OCR-custtype-newformat.php)
 
-- [SMMT-3b-CLEANSE-custtype-newformat.ipynb](/smmt_project/docs/SMMT-3b-CLEANSE-custtype-newformat.php)
+- [SMMT-3b-CLEANSE-custtype-newformat.ipynb](https://rodders.me/smmt_project/docs/SMMT-3b-CLEANSE-custtype-newformat.php)
 
-- [SMMT-3c-SAVE-custtype-newformat.ipynb](/smmt_project/docs/SMMT-3c-SAVE-custtype-newformat.php)
+- [SMMT-3c-SAVE-custtype-newformat.ipynb](https://rodders.me/smmt_project/docs/SMMT-3c-SAVE-custtype-newformat.php)
