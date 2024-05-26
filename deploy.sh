@@ -16,7 +16,7 @@ DEST=/home/hass/Documents/data-projects
 
 ## Backup smmt project
 echo "Backing up ${SOURCE}/content/projects/smmt_project from website to ${DEST}/smmtdata-evolved/docs/content/projects"
-cp -R $SOURCE/content/projects/smmt-google-analytics-project/* $DEST/smmtdata-evolved/0docs/content/projects
+cp -R $SOURCE/content/projects/smmt-google-analytics-project/* $DEST/smmtdata-evolved/docs/content/projects
 echo "Backing up ${SOURCE} /static/smmt_project/docs/* from website to ${DEST}/smmtdata-evolved/docs"
 cp -R $SOURCE/static/smmt_project/docs/* $DEST/smmtdata-evolved/docs
 
