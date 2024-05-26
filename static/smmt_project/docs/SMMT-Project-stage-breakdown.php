@@ -391,7 +391,7 @@ different image layouts and image dimensions.</p>
 <h2 id="notebooks-and-outputs">Notebooks and outputs</h2>
 <h3 id="new-format-fuel-type">New Format Fuel Type</h3>
 <h4
-id=""><a href="/smmt_project/docs/SMMT-1a-OCR-fueltype-newformat.php">1a-OCR-fueltype-newformat.ipynb</a>
+id=""><a href="/smmt_project/docs/SMMT-1a-OCR-fueltype-newformat.php">SMMT-1a-OCR-fueltype-newformat.ipynb</a>
 <code>1a-OCR-fueltype-newformat.ipynb</code></h4>
 <p><img alt="New Format Fuel" src="/smmt_project/img/new-format-fuel-full.png"></p>
 <p>Crop and OCR images</p>
@@ -426,7 +426,7 @@ id=""><a href = "/smmt_project/docs/SMMT-1b-CLEANSE-fueltype-newformat.php"><cod
   HEV,17792,14561
   TOTAL,145204,124394</code></pre>
 <h4
-id=""><a href="/smmt_project/docs/SMMT-1c-SAVEfueltype-newformat.php"><code>SMMT-1c-SAVEfueltype-newformat.ipynb</code></a></h4>
+id=""><a href="/smmt_project/docs/SMMT-1c-SAVE-fueltype-newformat.php"><code>SMMT-1c-SAVEfueltype-newformat.ipynb</code></a></h4>
 <p>Add top level category for fuel types, convert fuel types into sub
 categories, validation check / error reporting, shuffle data into the
 right fields, save to csv
@@ -452,7 +452,7 @@ right fields, save to csv
   <h3 >New Format Keepership Type</h3>
 
   <h4 >
-    <a href="/smmt_project/docs/SMMT-3a-OCR-custtype-newformat.php"><code>3a-OCR-custtype-newformat.ipynb</code></a></h4>
+    <a href="/smmt_project/docs/SMMT-3a-OCR-custtype-newformat.php"><code>SMMT-3a-OCR-custtype-newformat.ipynb</code></a></h4>
 <p><img alt="New Format customer" src="/smmt_project/img/new-format-customer-full.png"></p>
 <p>Crop and OCR images</p>
 <p><img alt="New Format customer cropped"  src="/smmt_project/img/new-format-customer-crop1.png"></p>
@@ -467,21 +467,23 @@ right fields, save to csv
   TOTAL  145204  124394</code></pre>
 
   <h4 id="">
-  <a href="/smmt_project/docs/SMMT-3b-CLEANSE-custtype-newformat.php"><code>3b-smmt-CLEANSE-custtype-newformat.ipynb</code></a
+  <a href="/smmt_project/docs/SMMT-3b-CLEANSE-custtype-newformat.php"><code>SMMT-3b-CLEANSE-custtype-newformat.ipynb</code></a>
+  </h4>
 
-data cleanse TXT File, format and save into a CSV <code>../ocr/OUT_3a_custtype_CLEANSE_newformat-2023.csv</code>
+<p>data cleanse TXT File, format and save into a CSV </p>
 
-Example output stored in CSV file
+<p>Example output stored in CSV file</p>
 
+<pre><code>
       May,,
       ,2023,2022
       Private,65932,66242
       Fleet,76207,55649
       Business,3065,2503
       TOTAL,145204,124394
-
+</code></pre>
 <h4> 
-  <a href="/smmt_project/docs/SMMT-3c-SAVE-custtype-newformat.php"><code>3c-smmt-SAVE-custtype-newformat.ipynb</code></a></h4>
+  <a href="/smmt_project/docs/SMMT-3c-SAVE-custtype-newformat.php"><code>SMMT-3c-SAVE-custtype-newformat.ipynb</code></a></h4>
 <p>validation check / error reporting, save to csv
 <code>../ocr/OUT_3c_custtype_newformat-FINISHED-2023.csv</code></p>
 <p>Example output store in CSV file</p>
@@ -513,7 +515,7 @@ Example output stored in CSV file
   Mkt share 2015 513 457 30 443 521 36</code></pre>
 
   <h4 id="">
-<a href="/smmt_project/docs/SMMT-2b-CLEANSE-fueltype-oldformat.php"><code>2b-smmt-CLEANSE-fueltype-oldformat.ipynb</code></a></h4>
+<a href="/smmt_project/docs/SMMT-2b-CLEANSE-fueltype-oldformat.php"><code>SMMT-2b-CLEANSE-fueltype-oldformat.ipynb</code></a></h4>
 <p>Data cleanse TXT File, format into csv.</p>
 <p>Save into a CSV
 <code>../ocr/OUT_3a_custtype_CLEANSE_oldformat-2023.csv</code></p>
@@ -523,7 +525,7 @@ Example output stored in CSV file
   2015,177664,91177,81125,5362,78662,92596,6406</code></pre>
 
   <h4 id="">
-    <a href="/smmt_project/docs/SMMT-2c-SAVE-fueltype-oldformat.php"><code>2c-smmt-SAVE-fueltype-oldformat.ipynb</code></a></h4>
+    <a href="/smmt_project/docs/SMMT-2c-SAVE-fueltype-oldformat.php"><code>SMMT-2c-SAVE-fueltype-oldformat.ipynb</code></a></h4>
 <p>Validation check / error reporting, variable shuffling with pandas
 and recovery of OLD data without a primary source.</p>
 <p>Save to csv

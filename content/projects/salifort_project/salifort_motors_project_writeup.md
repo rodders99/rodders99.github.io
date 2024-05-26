@@ -73,7 +73,7 @@ An example of the generated Team report
 
 ### Analyst's Project Notebooks
 
-- [Salifort Project - Data Cleanse Ops](/salifort_project/docs/nb_03_Salifort_Motors_project_EDA_cleanse.htphpml)
+- [Salifort Project - Data Cleanse Ops](/salifort_project/docs/nb_03_Salifort_Motors_project_EDA_cleanse.php)
 
 - [Salifort Project - EDA Analysis Ops](/salifort_project/docs/nb_04_Salifort_Motors_project_EDA_ANALYSIS.php)
 
