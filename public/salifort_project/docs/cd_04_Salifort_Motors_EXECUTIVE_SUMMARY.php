@@ -245,7 +245,7 @@ Percentage of employees with leave probability above 50%
 testing the model against known data, we can see that 72% of employees
 who left would have been flagged by the ML model as at high risk, and
 action perhaps could have been taken before the inevitable. If we lower
-the risk threshold threshold to medium risk at 70%, then over 90% of
+the risk threshold to medium risk at 70%, then over 90% of
 these employees would have been flagged and if we look to those flagged
 above low risk at 50%, 91% of employees would have been flagged.</p>
 <p>To put some perspective around this, the level of accuracy

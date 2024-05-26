@@ -7695,7 +7695,7 @@ a.anchor-link {
         <span class="n">a</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="k">else</span><span class="p">:</span> 
         <span class="n">display</span><span class="p">(</span><span class="n">img_crop</span><span class="p">)</span>
-        <span class="n">doit</span><span class="p">(</span><span class="n">img_crop</span><span class="p">)</span> <span class="c1"># OCR and tet save function</span>
+        <span class="n">doit</span><span class="p">(</span><span class="n">img_crop</span><span class="p">)</span> <span class="c1"># OCR and the save function</span>
         
         <span class="c1">#input()</span>
     <span class="n">output_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>

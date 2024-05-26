@@ -124,7 +124,7 @@
 </div>
 <!-- </div> -->
 
-    <h1 >EU Safetygate report - Compare Countries 2024 Year to Date</h1>
+    <h1 >EU Safety Gate report - Compare Countries 2024 Year to Date</h1>
     <p><img src="https://rodders.me/safetygate/img-2024/icons/Safety_Gate_Logo.png" alt="Safety Gate Logo" style="width:50%"></p>
 
 

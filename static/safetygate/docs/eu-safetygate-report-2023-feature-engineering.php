@@ -556,7 +556,7 @@ There are 111 countries of origin, the top 15 of these represent > 90% of the to
     <p>This example would be split into {<B>compulsory/voluntary</B>}{<b>responsible_party</b>} {<b>action required</b>}</p>
     <p>e.g.</p>
     <p>{compulsory/voluntary responsible party} options : unknown, retailer, distributor, importer, manufacturer, other</p>
-    <p>{compulsory/voluntary action required} options :  Ban, recall, withdrawl,  destruction, removal, criminal, borderstop, warnings</p>
+    <p>{compulsory/voluntary action required} options :  Ban, recall, withdrawal,  destruction, removal, criminal, borderstop, warnings</p>
 
 <br>
     New columns with binary mappings added:
@@ -624,7 +624,7 @@ There are 111 countries of origin, the top 15 of these represent > 90% of the to
 <h3>Compulsory measures mapping order of priority</h3>
 <h3 ><code>Compulsory measures</code> -&gt; Binary columns encoding</a></h3>
 <p>Set binary values in column if true else false</p>
-<p>Since multiple values can exist in each field, the order is relevant, we want to indicate severity and the simple contains search will match ay instance, therefore, 
+<p>Since multiple values can exist in each field, the order is relevant, we want to indicate severity and the simple contains search will match any instance, therefore, 
 most import is the last search since it will overwrite previous matches</p>
 
 <div class="datatable-container">

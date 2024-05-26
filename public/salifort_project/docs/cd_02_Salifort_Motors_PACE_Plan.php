@@ -140,24 +140,25 @@ Gantt</a></p>
 <p>Agreed project deliverables:</p>
 
 <h3>Produce an Executive Summary of the data and project detailing key findings and recommendations</h3>
-    <p><A href="/salifort_project/presentation/cd_05a_executive_summary_slides.html">Executive Summary Presentation</A></p>
-    <p><A href="/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html">Executive Summary Detailed Analysis</A></p>
+    <p><A href="/salifort_project/presentation/cd_04a_Salifort_Motors_EXECUTIVE_SUMMARY_PRESENTATION.html">Executive Summary Presentation</A></p>
+    <p><A href="/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.php">Executive Summary Detailed Analysis</A></p>
 <h3>Produce an in depth analysts' report of findings and recommendations</h3>
-    <p><A href="/static/salifort_project/docs/cd_03_Salifort_Motors_Analyst_SUMMARY.html">Analyst Detailed SUMMARY</A></p>
+    <p><A href="/static/salifort_project/docs/cd_03_Salifort_Motors_Analyst_SUMMARY.php">Analyst Detailed SUMMARY</A></p>
 
 
 <h3>Demonstration model :</h3>
 <ul><li>Interactive model for what if modelling</li>
 <li>Apply the model to current employee data to Identify employees “at risk” of leaving</li>
 </ul>
-<p><a href="/salifort_project/docs/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.html">Demonstration Model</a></p>
+<p><a href="/salifort_project/docs/nb_12_Salifort_Motors_project_MODEL_DEMONSTRATION.php">Demonstration Model</a></p>
 
 
 <h3>Follow Up:</g3>
 
 <h3>Support HR team &  Team Leader with analysis to support workshops to review the data for their teams.</h3>
 <p><a href="/salifort_project/docs/cd_05_Salifort_Motors_HR_SUMMARY.html">HR Summary Analysis</a></p>
-<p><a href="/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.html"> Team Summary Analysis Generator Notebook</a></p>
+<p><A href="/salifort_project/presentation/cd_05a_Salifort_Motors_HR_SUMMARY_PRESENTATION.html">HR Summary Presentation</A></p>
+<p><a href="/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.php"> Team Summary Analysis Generator Notebook</a></p>
 <p><a href="/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY-example-output.html">Team Summary Generator Example output</a></p>
 <li>Setup a review session with Leadership and HR to compare data pre
 and post project</li>
@@ -246,7 +247,7 @@ for further analysis and modelling
 </ul></li>
 <li>Dataset Preparation:
 <ul>
-<li>Because this is a capstone project and not real life, I will will
+<li>Because this is a capstone project and not real life, I will
 prepare two datasets to evaluate performance of these across the four
 models we'll evaluate for this project, because I'm curious how the two
 different datasets will perform.</li>
@@ -379,7 +380,7 @@ Analysis and visualisations of key data features Vs
 plot)</li>
 <li>Detailed Analysis of variable</li>
 </ul></li>
-<li>Further adhoc visualisations and analysis will be produced driven by
+<li>Further ad hoc visualisations and analysis will be produced driven by
 the</li>
 <li>variable comparison observations</li>
 </ul>

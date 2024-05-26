@@ -144,7 +144,7 @@ engagement, and retention within the company.</p>
 <p>Those who left fall generally into one of two groups either low
 scoring or high scoring with 28% of low scoring employees leaving and
 17% of high scoring employees leaving. 46% of employees who left had a
-low or medium score, there's aso a strong correlation to hours worked as
+low or medium score, there's also a strong correlation to hours worked as
 seen on the correlation plot, where those who left also tend to work
 more hours.</p>
 <ul>
@@ -449,7 +449,7 @@ Percentage of employees with leave probability above 50%
 testing the model against known data, we can see that 72% of employees
 who left would have been flagged by the ML model as at high risk, and
 action perhaps could have been taken before the inevitable. If we lower
-the risk threshold threshold to medium risk at 70%, then over 90% of
+the risk threshold to medium risk at 70%, then over 90% of
 these employees would have been flagged and if we look to those flagged
 above low risk at 50%, 91% of employees would have been flagged.</p>
 <p>To put some perspective around this, the level of accuracy

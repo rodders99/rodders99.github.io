@@ -245,7 +245,7 @@
 <p>2023 saw a 59% increase in the average number of alerts issued in a year, with the total alerts
 issued increasing from 2,100 alerts in 2022 to 3,349 in 2023, an
 increase of 1,249 over the previous year.</p>
-<p>2024 Year to date, there has been a 19% increase in the number of alerts issued compared ot the previous year.</p>
+<p>2024 Year to date, there has been a 19% increase in the number of alerts issued compared to the previous year.</p>
 <div class="datatable-container" id="all-AnnualCumulative" >
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
