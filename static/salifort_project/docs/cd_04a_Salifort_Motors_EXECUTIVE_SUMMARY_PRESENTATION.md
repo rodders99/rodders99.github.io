@@ -97,7 +97,7 @@ Current Risk Assessment:
 <th>Compensation and Benefits</th>
 <th>Work Environment</th>
 </tr>
-</theadd>
+</thead>
 <tr><td>Ensure competitiveness<br>and fairness </td>
 <td>Flexible working to accommodate  employee needs</td>
 </tr>
@@ -109,7 +109,7 @@ Current Risk Assessment:
 
 - Review and adjust policies affecting at-risk employees
 
-- Enhance data collection for more accurate modeling, including start/end dates and specific reasons for leaving.
+- Enhance data collection for more accurate modelling, including start/end dates and specific reasons for leaving.
 
 #### Long-term Strategy
 

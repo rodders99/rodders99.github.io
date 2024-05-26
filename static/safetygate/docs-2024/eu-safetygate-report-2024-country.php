@@ -1149,7 +1149,7 @@
         </div>
 
 
-        <h2 class="prodct_cat2">#3 - Top Brands</h2>
+        <h2 class="product_cat2">#3 - Top Brands</h2>
 
 
 <h3  class="product_cat2" >Top Brands for Safety Alerts</h3>

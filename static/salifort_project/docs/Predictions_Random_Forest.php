@@ -22,7 +22,7 @@
 </div>
 <!-- END NAVIGATION -->
 <br><br>
-<h1>Random Forest Model Pedictions on complete dataset</h1>
+<h1>Random Forest Model Predictions on complete dataset</h1>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px">
   <thead>

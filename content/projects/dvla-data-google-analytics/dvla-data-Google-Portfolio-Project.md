@@ -47,7 +47,7 @@ The UK Government (gov.uk) publish lots of datasets in the rather unhelpful wide
 
 ### Kaggle Dataset, an exercise in R language for data manipulation
 
-My R project detailed in the kaggle link takes data from [https://www.gov.uk/government/statistical-data-sets/vehicle-licensing-statistics-data-files](https://www.gov.uk/government/statistical-data-sets/vehicle-licensing-statistics-data-files) and carries out cleaning, transformation, EDA, aggregation and merging to produce a longdata format csv more suited to machine analysis and dashboarding. 
+My R project detailed in the kaggle link takes data from [https://www.gov.uk/government/statistical-data-sets/vehicle-licensing-statistics-data-files](https://www.gov.uk/government/statistical-data-sets/vehicle-licensing-statistics-data-files) and carries out cleaning, transformation, EDA, aggregation and merging to produce a long data format csv more suited to machine analysis and dashboarding. 
 
 This is then uploaded to my local MySql server and further visualisation carried out with Tableau.
 

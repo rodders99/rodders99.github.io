@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" type="text/css" href="/css/project-style.css">
 
-<title>EU Safety Report Compare Countries</title>
+<title>EU Safety Gate Report - Compare Countries</title>
 
 </head>
 
@@ -38,7 +38,7 @@
             <div class="countries">
                     <div id="JumptoSection" >
                         <select onchange="window.location.hash=this.value" class="country">
-                            <option value="header-0">EU Safetygate report</option>
+                            <option value="header-0">EU Safety Gate report</option>
                             <option value="header-3">Percentage of total alerts Vs RoW</option>
                             <option value="header-4">Annual, Cumulative Alerts</option>
                             <option value="header-5">Cumulative and YoY Change</option>

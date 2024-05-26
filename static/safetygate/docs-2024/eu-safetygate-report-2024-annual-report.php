@@ -43,7 +43,7 @@
       <div class="country">
                  
               <select onchange="window.location.hash=this.value"  class="country">
-                <option value="header-1">EU Safetygate report</option>
+                <option value="header-1">EU Safety Gate report</option>
                 <option value="header-3">Total Annual Alerts Issued</option>
                 <option value="header-4">Annual, Cumulative and YoY Change</option>
                 <option value="header-6">Top 3 Product and Risk Categories</option>
@@ -91,13 +91,13 @@
                  
  
 
-    <h1>EU Safetygate report - 2024 Year to Date</h1>
+    <h1>EU Safety Gate report - 2024 Year to Date</h1>
     <p><img src="https://rodders.me/safetygate/img-2024/icons/Safety_Gate_Logo.png" style="width:50%"></p>
 
 <!-- <div id="tableOfContents"></div> -->
 
 <h2 >YTD Annual Alerts Issued</h2>
-<p>Over the last few years, the EU Safetygate member states issue safety alerts for on average around 2,000
+<p>Over the last few years, the EU Safety Gate member states issue safety alerts for on average around 2,000
 - 2,200 safety alerts per year. 
 
 <ul><li>Around 25% of all alerts issued are for products where the Country of Origin is unknown.</li></ul>

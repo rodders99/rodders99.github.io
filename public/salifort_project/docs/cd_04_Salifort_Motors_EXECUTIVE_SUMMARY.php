@@ -443,7 +443,7 @@ satisfaction.</p>
 <h3 id="recognise-commitment">Recognise commitment</h3>
 
             
-<img src="/salifort_project/img/employee_committment.png" alt="Alt text" />
+<img src="/salifort_project/img/employee_commitment.png" alt="Alt text" />
 
 
 <p>Recognizing employee commitment and tenure is an essential aspect of

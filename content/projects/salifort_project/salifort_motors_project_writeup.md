@@ -105,7 +105,7 @@ Experiment, experiment, break it, fix it, experiment, learn
 
 Develop workflow functions to handle common tasks across different models types.
 
-Four models were created with a notebook for each. The workflows are nearly identical in each since I could establish a common set of steps and standardise the most labour intensive into functions where the entire step could be replaced with a function call.
+Four models were created with a notebook for each. The workflows are nearly identical in each since I could establish a common set of steps and standardise the most labour-intensive into functions where the entire step could be replaced with a function call.
 
 Outside of the typical functions (load, save, etc), functions were created for visualising, and reporting.
 
@@ -245,7 +245,7 @@ And outputs a prediction from the main three models
 
 ##### Summary
 
-The models are run through the dataset for employees who have left and employes who have stayed. So, for example 1991 exmployees had left, the models are run on these employees to see how many it would have predicted to leave and again on the current employees to predict who is at risk from leaving.
+The models are run through the dataset for employees who have left and employees who have stayed. So, for example 1991 employees had left, the models are run on these employees to see how many it would have predicted to leave and again on the current employees to predict who is at risk from leaving.
 
 ##### Predictions on datafile
 
@@ -253,7 +253,7 @@ The HR dataset is processed through the models and columns added with prediction
 
 ##### Team Manager's report
 
-This is a template that can be customised by the HR Team for each team manager. By simply changing one variable for the team an entire report can be generated, saving the HR team a lot of time prepapring for meetings with team managers.
+This is a template that can be customised by the HR Team for each team manager. By simply changing one variable for the team an entire report can be generated, saving the HR team a lot of time preparing for meetings with team managers.
 
 #### [Salifort Project - Team Summary Jupyter Notebook](/salifort_project/docs/cd_06_Salifort_Motors_TEAM_SUMMARY.php)
 

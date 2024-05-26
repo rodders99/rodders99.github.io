@@ -2886,6 +2886,7 @@ input::placeholder {
   padding: 0 25px 0 10px;
   text-align: left;
   -moz-appearance: none;
+  appearance: none;
   -webkit-appearance: none;
 }
 
@@ -5743,7 +5744,7 @@ body.lm-mod-override-cursor .jp-OutputArea-output.jp-mod-isolated::before {
 /*
 Hiding collapsers in print mode.
 
-Note: input and output wrappers have "display: block" propery in print mode.
+Note: input and output wrappers have "display: block" property in print mode.
 */
 
 @media print {
@@ -7256,9 +7257,10 @@ all of MD as it is not optimized for dense, information rich UIs.
 }
 </style>
 <style type="text/css">
-/* Force rendering true colors when outputing to pdf */
+/* Force rendering true colors when outputting to pdf */
 * {
   -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 /* Misc */
@@ -8338,7 +8340,7 @@ dtype: object</pre>
 <p>$$ z = \frac{(x - u)}{s}$$</p>
 <p>where u is the mean of the training samples or zero if with_mean=False, and s is the standard deviation of the training samples or one if with_std=False.</p>
 <p>Centering and scaling happen independently on each feature by computing the relevant statistics on the samples in the training set. Mean and standard deviation are then stored to be used on later data using transform.</p>
-<p>Standardization of a dataset is a common requirement for many machine learning estimators: they might behave badly if the individual features do not more or less look like standard normally distributed data (e.g. Gaussian with 0 mean and unit variance).</p>
+<p>Standardisation of a dataset is a common requirement for many machine learning estimators: they might behave badly if the individual features do not more or less look like standard normally distributed data (e.g. Gaussian with 0 mean and unit variance).</p>
 </div>
 </div>
 </div>

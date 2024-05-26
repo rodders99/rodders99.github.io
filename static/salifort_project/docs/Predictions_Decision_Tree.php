@@ -23,7 +23,7 @@
 <!-- END NAVIGATION -->
 <br><br>
 
-<h1>Decision Tree Model Pedictions on complete dataset</h1>
+<h1>Decision Tree Model Predictions on complete dataset</h1>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px">
   <thead>

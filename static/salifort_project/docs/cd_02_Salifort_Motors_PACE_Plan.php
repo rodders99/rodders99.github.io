@@ -137,10 +137,10 @@ Gantt</a></p>
 </figure>
 
 <h3 id="project-deliverables">Project Deliverables</h3>
-<p>Agred project deliverables:</p>
+<p>Agreed project deliverables:</p>
 
 <h3>Produce an Executive Summary of the data and project detailing key findings and recommendations</h3>
-    <p><A href="/salifort_project/presentation/cd_05a_executive_summary_slides_marp.html">Executive Summary Presentation</A></p>
+    <p><A href="/salifort_project/presentation/cd_05a_executive_summary_slides.html">Executive Summary Presentation</A></p>
     <p><A href="/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.html">Executive Summary Detailed Analysis</A></p>
 <h3>Produce an in depth analysts' report of findings and recommendations</h3>
     <p><A href="/static/salifort_project/docs/cd_03_Salifort_Motors_Analyst_SUMMARY.html">Analyst Detailed SUMMARY</A></p>
@@ -213,7 +213,7 @@ Modelling support and Metrics
 </td>
 <td>
 sklearn.model_selection GridSearch<br>sklearn.metrics - model
-scoring<br>s klearn.plot_tree - Decision Tree Visualisations
+scoring<br>sklearn.plot_tree - Decision Tree Visualisations
 </td>
 </tr>
 <tr>

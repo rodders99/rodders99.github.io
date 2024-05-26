@@ -4,7 +4,7 @@ echo '
 <a href = "#"><b>Navigation</b></a>
 <div class="submenu">
 <a href = "https://rodders.me/">Home</a>
-<a href = "https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/">EU Safetygate Project Home</a>
+<a href = "https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/">EU Safety Gate Project Home</a>
 </div>
 
 <a href = "#"><b>Analyst&#39;s Notebooks</b></a>

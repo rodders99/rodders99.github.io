@@ -2885,6 +2885,7 @@ input::placeholder {
   padding: 0 25px 0 10px;
   text-align: left;
   -moz-appearance: none;
+  appearance: none;
   -webkit-appearance: none;
 }
 
@@ -5742,7 +5743,7 @@ body.lm-mod-override-cursor .jp-OutputArea-output.jp-mod-isolated::before {
 /*
 Hiding collapsers in print mode.
 
-Note: input and output wrappers have "display: block" propery in print mode.
+Note: input and output wrappers have "display: block" property in print mode.
 */
 
 @media print {
@@ -7255,9 +7256,10 @@ all of MD as it is not optimized for dense, information rich UIs.
 }
 </style>
 <style type="text/css">
-/* Force rendering true colors when outputing to pdf */
+/* Force rendering true colors when outputting to pdf */
 * {
   -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 /* Misc */

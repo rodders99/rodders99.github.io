@@ -309,7 +309,7 @@ greater</li>
 
 <img src="/salifort_project/img/salary_hrs_projs_adhocplot.png" alt="Salary / Hours / Number of Projects plot" />
 
-<img src="/salifort_project/img/salary_dep_heatmaps.png" alt="Salary Department Heatmaps" />
+<img src="/salifort_project/img/salary_dep_heatmaps.png" alt="Salary Department Heatmap" />
 
 
 <h2 id="general-recommendations">General Recommendations</h2>

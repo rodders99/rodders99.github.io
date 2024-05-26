@@ -23,7 +23,7 @@
 </div>
 <!-- END NAVIGATION -->
 <br><br>
-<h1>XGBoost Model Pedictions on complete dataset</h1>
+<h1>XGBoost Model Predictions on complete dataset</h1>
 
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px">

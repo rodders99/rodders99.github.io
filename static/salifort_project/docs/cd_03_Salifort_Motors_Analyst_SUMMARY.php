@@ -144,7 +144,7 @@ last_eval
 </tr>
 <tr>
 <td>
-average_montly_hours
+average_monthly_hours
 </td>
 <td>
 avg_mnth_hrs

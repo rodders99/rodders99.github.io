@@ -5743,7 +5743,7 @@ body.lm-mod-override-cursor .jp-OutputArea-output.jp-mod-isolated::before {
 /*
 Hiding collapsers in print mode.
 
-Note: input and output wrappers have "display: block" propery in print mode.
+Note: input and output wrappers have "display: block" property in print mode.
 */
 
 @media print {
@@ -7256,7 +7256,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 }
 </style>
 <style type="text/css">
-/* Force rendering true colors when outputing to pdf */
+/* Force rendering true colors when outputting to pdf */
 * {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
@@ -7875,7 +7875,7 @@ a.anchor-link {
 <th>satisfaction_level</th>
 <th>last_evaluation</th>
 <th>number_project</th>
-<th>average_montly_hours</th>
+<th>average_monthly_hours</th>
 <th>time_spend_company</th>
 <th>Work_accident</th>
 <th>left</th>
@@ -8055,7 +8055,7 @@ Data columns (total 10 columns):
  0   satisfaction_level     14999 non-null  float64
  1   last_evaluation        14999 non-null  float64
  2   number_project         14999 non-null  int64  
- 3   average_montly_hours   14999 non-null  int64  
+ 3   average_monthly_hours   14999 non-null  int64  
  4   time_spend_company     14999 non-null  int64  
  5   Work_accident          14999 non-null  int64  
  6   left                   14999 non-null  int64  
@@ -8124,7 +8124,7 @@ memory usage: 1.1+ MB
 <th>satisfaction_level</th>
 <th>last_evaluation</th>
 <th>number_project</th>
-<th>average_montly_hours</th>
+<th>average_monthly_hours</th>
 <th>time_spend_company</th>
 <th>Work_accident</th>
 <th>left</th>
@@ -8329,7 +8329,7 @@ memory usage: 1.1+ MB
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>Index(['satisfaction_level', 'last_evaluation', 'number_project', 'average_montly_hours', 'time_spend_company',
+<pre>Index(['satisfaction_level', 'last_evaluation', 'number_project', 'average_monthly_hours', 'time_spend_company',
        'Work_accident', 'left', 'promotion_last_5years', 'Department', 'salary'],
       dtype='object')</pre>
 </div>
@@ -8347,7 +8347,7 @@ memory usage: 1.1+ MB
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Rename columns as needed</span>
 <span class="n">df0</span> <span class="o">=</span> <span class="n">df0</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'satisfaction_level'</span><span class="p">:</span> <span class="s1">'satisfaction'</span><span class="p">,</span>
                             <span class="s1">'last_evaluation'</span> <span class="p">:</span> <span class="s1">'last_eval'</span><span class="p">,</span>
-                            <span class="s1">'average_montly_hours'</span><span class="p">:</span> <span class="s1">'avg_mnth_hrs'</span><span class="p">,</span>
+                            <span class="s1">'average_monthly_hours'</span><span class="p">:</span> <span class="s1">'avg_mnth_hrs'</span><span class="p">,</span>
                             <span class="s1">'time_spend_company'</span><span class="p">:</span> <span class="s1">'tenure'</span><span class="p">,</span>
                             <span class="s1">'Work_accident'</span><span class="p">:</span> <span class="s1">'accident'</span><span class="p">,</span>
                             <span class="s1">'Department'</span><span class="p">:</span> <span class="s1">'dept'</span><span class="p">,</span> 
