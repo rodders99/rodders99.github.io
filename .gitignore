@@ -3,3 +3,5 @@
 resources/_gen
 *.jpg
 *.png
+deploy.sh
+deploy-local.sh
