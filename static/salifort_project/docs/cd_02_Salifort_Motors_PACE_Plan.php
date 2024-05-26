@@ -143,7 +143,7 @@ Gantt</a></p>
     <p><A href="/salifort_project/presentation/cd_04a_Salifort_Motors_EXECUTIVE_SUMMARY_PRESENTATION.html">Executive Summary Presentation</A></p>
     <p><A href="/salifort_project/docs/cd_04_Salifort_Motors_EXECUTIVE_SUMMARY.php">Executive Summary Detailed Analysis</A></p>
 <h3>Produce an in depth analysts' report of findings and recommendations</h3>
-    <p><A href="/static/salifort_project/docs/cd_03_Salifort_Motors_Analyst_SUMMARY.php">Analyst Detailed SUMMARY</A></p>
+    <p><A href="/salifort_project/docs/cd_03_Salifort_Motors_Analyst_SUMMARY.php">Analyst Detailed SUMMARY</A></p>
 
 
 <h3>Demonstration model :</h3>

@@ -24,7 +24,7 @@ Since 2003, the Safety Gate has enabled a quick exchange of information among EU
 dangerous non-food products posing a risk to the health and safety of consumers. Appropriate follow-up has to be taken by the national
 authorities so that the notified dangerous products are removed from the market.
 
-To facilitate the transmission of information to the public, the Commission also manages the [Safety Gate public website](https://ec.europa.eu/safety-gate/#/screen/home).
+To facilitate the transmission of information to the public, the Commission also manages the [Safety Gate public Website](https://ec.europa.eu/safety-gate/#/screen/home).
 
 The alerts are translated into all EU languages, in addition to Icelandic, Norwegian, Arabic, and Ukrainian. Businesses also have at their disposal the Business Safety
 Gateway to inform national authorities quickly and efficiently about safety concerns regarding a product that they have put on the market.
@@ -112,14 +112,14 @@ alert system will officially be renamed Safety Gate.
 EU Safety Gate is The data in this report and is based on information from national
 authorities on measures taken against dangerous non-food products.
 
-Data has been sourced from [Safety Gate Web Site](https://ec.europa.eu/safety-gate/).
+Data has been sourced from [Safety Gate Website](https://ec.europa.eu/safety-gate/).
 
 This information includes various risks that they have identified,
 mainly to consumers’ health and safety but also to the environment
 or risks in relation to professional products (i.e. products not
 normally available to consumers). The report also takes into account
 data related to information exchanged among member countries
-that is not published on the Safety Gate website.
+that is not published on the Safety Gate Website.
 The report presents statistics on the rapid alert system. It does not
 purport to give a comprehensive picture of all dangerous products
 on the single market, nor does it give an overview of all market

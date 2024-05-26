@@ -46,7 +46,7 @@
 
 <h2>Data Source</h2>
 
-<p>Data was sourced from the EU Safety Gate web site : <a href="https://ec.europa.eu/safety-gate-alerts/screen/webReport#recentAlerts">https://ec.europa.eu/safety-gate-alerts/screen/webReport#recentAlerts</a></p>
+<p>Data was sourced from the EU Safety Gate Website : <a href="https://ec.europa.eu/safety-gate-alerts/screen/webReport#recentAlerts">https://ec.europa.eu/safety-gate-alerts/screen/webReport#recentAlerts</a></p>
 
 <h2>Plot Calculations</h2>
 <div class="datatable-container" style="width:100%; ">

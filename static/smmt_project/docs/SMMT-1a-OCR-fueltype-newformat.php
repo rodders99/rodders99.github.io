@@ -5794,7 +5794,7 @@ body.lm-mod-override-cursor .jp-OutputArea-output.jp-mod-isolated::before {
 /*
 Hiding collapsers in print mode.
 
-Note: input and output wrappers have "display: block" propery in print mode.
+Note: input and output wrappers have "display: block" property in print mode.
 */
 
 @media print {
@@ -7307,7 +7307,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 }
 </style>
 <style type="text/css">
-/* Force rendering true colors when outputing to pdf */
+/* Force rendering true colors when outputting to pdf */
 * {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
@@ -7575,11 +7575,11 @@ a.anchor-link {
     </tr>
     <tr>
       <td>SMMT-1b-CLEANSE-fueltype-newformat.ipynb</td>
-      <td>Datacleanse, error fetection and feature engineering. Saves to cleansed file</td>
+      <td>Data cleanse, error detection and feature engineering. Saves to cleansed file</td>
     </tr>
     <tr>
       <td>SMMT-1b-CLEANSE-fueltype-newformat.ipynb</td>
-      <td>Datacleanse, error detection and feature engineering. Saves to cleansed csv file in long data format.</td>
+      <td>Data cleanse, error detection and feature engineering. Saves to cleansed csv file in long data format.</td>
     </tr>
 
 </table>

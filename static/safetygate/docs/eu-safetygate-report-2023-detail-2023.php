@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" type="text/css" href="/css/project-style.css">
 
-<title>eu-safetygate-report-2023</title>
+<title>EU Safety Gate Report-2023</title>
 
 </head>
 
