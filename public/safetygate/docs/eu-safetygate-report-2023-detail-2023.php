@@ -94,7 +94,7 @@
             </div></div>
  <!-- </div> -->
 
-    <h1 class="nochange">EU Safetygate report</h1>
+    <h1 class="nochange">EU Safety Gate report</h1>
     <p><img src="https://rodders.me/safetygate/img/icons/Safety_Gate_Logo.png" style="width:50%"></p>
 
     <div id="tableOfContents"></div>
@@ -117,7 +117,7 @@
 <h2>Total Annual Alerts Issued</h2>
 
 
-<p>Over the last few years, the EU Safetygate member states issue on average around 2,000
+<p>Over the last few years, the EU Safety Gate member states issue on average around 2,000
   - 2,200 safety alerts per year. 
 
   <ul><li>Around 25% of all alerts issued are for products where the Country of Origin is unknown.</li>
@@ -311,7 +311,7 @@ Since 1 March 2022, butylphenyl methylpropional (BMHCA/'Lilial') is classified a
 Labelling and Packaging (CLP) Regulations.</p>
 <p>
 This ban affected around 1,100 - 1,200 products (90-95% of the annual increase of (1,249) alerts or 32-35% of all alerts issued (3,349) in 2023), and is the reason for the 
-significant increase seen in the Safetygate analysis.</p>
+significant increase seen in the Safety Gate analysis.</p>
 
 <h3>UK and BMHCA</h3>
 <p>

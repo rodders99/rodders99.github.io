@@ -18,7 +18,7 @@ preview = "/img/Safety_Gate_Logo.png"
 
 ### About this Project
 
-I first encountered the EU Safetygate in my previous role.
+I first encountered the EU Safety Gate in my previous role.
 
 Since 2003, the Safety Gate has enabled a quick exchange of information among EU/EEA Member States and the European Commission about
 dangerous non-food products posing a risk to the health and safety of consumers. Appropriate follow-up has to be taken by the national
@@ -43,9 +43,9 @@ It is an interesting look into the world of dangerous and non compliant products
 
 ### Analysts Notes
 
-- [EU Safetygate Meta Data Overview](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-meta-data.php)
-- [EU Safetygate Feature Engineering](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-feature-engineering.php)
-- [EU Safetygate Visualisations Plan](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-plot-plan.php)
+- [EU Safety Gate Meta Data Overview](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-meta-data.php)
+- [EU Safety Gate Feature Engineering](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-feature-engineering.php)
+- [EU Safety Gate Visualisations Plan](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-plot-plan.php)
 
 ### Safety Gate 2023 Analysis
 

@@ -5,7 +5,7 @@ echo '
 <ul>
     <li><a href="#">Site Navigation</a>
         <ul>
-           <li><a href = "https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/">EU Safetygate Project Home</a></li>
+           <li><a href = "https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/">EU Safety Gate Project Home</a></li>
         </ul>
 
        <li>
