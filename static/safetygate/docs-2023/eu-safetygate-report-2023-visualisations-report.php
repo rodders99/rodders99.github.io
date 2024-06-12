@@ -15,7 +15,8 @@
 
 </head>
 
-<body class="exclude-page">
+<body>
+   <!-- class="exclude-page"> -->
 
 <!-- NAVIGATION MENU-->
 
@@ -647,11 +648,11 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
       <th style="text-align:center;">Compulsory Vs Voluntary</th>
     </tr> 
     <tr>
-      <td style="text-align:center; width:49%" >
+      <td style="text-align:center;" >
         <a href="https://rodders.me/safetygate/img-2023/all-countries-action-required-annual-alerts.png">
           <img src="https://rodders.me/safetygate/img-2023/all-countries-action-required-annual-alerts.png"  ></a></td>
 
-          <td style="text-align:center;" >
+          <td style="text-align:center; width:50%" >
             <a href="https://rodders.me/safetygate/img-2023/all-countries-action-required-total-alerts.png">
               <img src="https://rodders.me/safetygate/img-2023/all-countries-action-required-total-alerts.png"  >
             </a>
@@ -687,7 +688,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
       <th style="text-align:center;">Compulsory Vs Voluntary</th>
     </tr> 
     <tr>
-      <td style="text-align:center; width:49%" >
+      <td style="text-align:center; width:50%" >
         <a href="https://rodders.me/safetygate/img-2023/all-countries-responsible-party-annual-alerts.png">
         <img src="https://rodders.me/safetygate/img-2023/all-countries-responsible-party-annual-alerts.png"  ></a></td>
    
@@ -978,8 +979,12 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <th style="text-align:center;">Annual % of Total</th>
         </tr> 
         <tr>
-          <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts.png"><img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts.png"  ></a></td>
-          <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts-percentage.png"><img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts-percentage.png"  ></a></td>
+          <td style="text-align:center;" >
+          <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts.png">
+            <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts.png"  ></a></td>
+          <td style="text-align:center;" >
+          <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts-percentage.png">
+            <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts-percentage.png"  ></a></td>
         </tr> 
     
         </tbody>
@@ -994,7 +999,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody> 
             <tr><td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png"><img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png"  ></a>
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png"  ></a>
               </td></tr></tbody></table>
               <a href="#" class="gototop">Go to Top</a>
             </div>
@@ -1012,8 +1018,12 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <th style="text-align:center;">Annual % of Total</th>
         </tr> 
         <tr>
-          <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-annual-alerts.png"><img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-annual-alerts.png"  ></a></td>
-          <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-annual-alerts-percentage.png"><img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-annual-alerts-percentage.png"  ></a></td>
+          <td style="text-align:center;" >
+          <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-annual-alerts.png">
+            <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-annual-alerts.png"  ></a></td>
+          <td style="text-align:center;" >
+          <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-annual-alerts-percentage.png">
+            <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-annual-alerts-percentage.png"  ></a></td>
         </tr> 
       </tbody>
     </table>
@@ -1052,7 +1062,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
                 <th style="text-align:center;">Compulsory Vs Voluntary</th>
             </tr> 
             <tr>
-              <td style="width:49%">
+              <td style="width:50%">
                 <a href ="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-annual-alerts.png">
                 <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-annual-alerts.png"  ></a></td>
               <td >
@@ -1089,7 +1099,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
                   <th style="text-align:center;">Compulsory Vs Voluntary</th>
                 </tr> 
                 <tr>
-                  <td style="width:49%" >
+                  <td style="width:50%" >
                     <a href ="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-annual-alerts.png">
                     <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-annual-alerts.png"  ></a></td>
                   <td >
@@ -1301,7 +1311,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
               <th style="text-align:center;">Compulsory Vs Voluntary Total</th>
             </tr> 
             <tr>
-              <td style="width:49%">
+              <td style="width:50%">
                 <a href ="https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-annual-alerts.png">
                 <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-annual-alerts.png"  ></a></td>
               <td >
@@ -1338,7 +1348,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
                   <th style="text-align:center;">Compulsory Vs Voluntary Total</th>
                 </tr> 
                 <tr>
-                  <td style="width:49%">
+                  <td style="width:50%">
                     <a href ="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-annual-alerts.png">
                     <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-annual-alerts.png"  ></a></td>
                   <td >
@@ -1530,7 +1540,7 @@ to enlarge)</td>
               <th style="text-align:center;">Compulsory Vs Voluntary Total</th>
             </tr> 
             <tr>
-              <td style="width:49%">
+              <td style="width:50%">
                 <a href ="https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-annual-alerts.png">
                 <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-annual-alerts.png"  ></a></td>
               <td >
@@ -1568,7 +1578,7 @@ to enlarge)</td>
                   <th style="text-align:center;">Compulsory Vs Voluntary Total</th>
                 </tr> 
                 <tr>
-                  <td style="width:49%">
+                  <td style="width:50%">
                     <a href ="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-annual-alerts.png">
                     <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-annual-alerts.png"  ></a></td>
                   <td >

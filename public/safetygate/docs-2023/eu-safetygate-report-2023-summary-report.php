@@ -16,15 +16,8 @@
 
 </head>
 
-<body class="exclude-page">
-
-  <!-- NAVIGATION MENU-->
-
-  <!-- <div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-
-
-
+<body> 
+  <!-- class="exclude-page"> -->
 
   <div class="page-container">
     <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
@@ -154,12 +147,12 @@
 
 
     <div class="datatable-container" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/../img-2023/table-0-annual_alert_count.php' ?>
+      <?php include '../img-2023/table-0-annual_alert_count.php' ?>
     </div>
 
 
     <div class="datatable-container" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/../img-2023/table-1-annual_alert_count.php' ?>
+      <?php include '../img-2023/table-1-annual_alert_count.php' ?>
     </div>
 
     <h2>Annual Alerts Issued - YoY Change </h2>
@@ -172,20 +165,20 @@
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
-            <th style="text-align:center;">All Countries</th>
-            <th style="text-align:center;">Excluding Unknown</th>
+            <th style="text-align:center;">All Countries Annual & Cumulative Alerts</th>
+            <th style="text-align:center;">All Countries Annual YoY Change and Cumulative Alerts</th>
           </tr>
           <tr>
             <td style="text-align:center;">
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-annual-and-cumulative-alerts.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-annual-and-cumulative-alerts.png"></a>
             </td>
             <td style="text-align:center;">
               <a
-                href="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change-(exc-unknown).png">
+                href="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change-(exc-unknown).png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
         </tbody>
@@ -206,14 +199,14 @@
 
     <div class="datatable-container" id="table-alert-submitted-by"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/../img-2023/table-alert-submitted-by.php'; ?>
+      <?php include '../img-2023/table-alert-submitted-by.php'; ?>
       <a href="#" class="gototop">Go to Top</a>
 
     </div>
 
     <h3>2022 Vs 2023</h3>
     <p>Italy exhibited a remarkable surge in enforcement activity, with the number of alert submissions from Italy
-      skyrocketing from 51 in 2022 to 821 in 2023.
+      skyrocketing from 47 in 2022 to 788 in 2023.
       This substantial increase is primarily attributed to the ban on the chemical Lilial in cosmetics. Italy's
       proactive stance in enforcing this regulation
       has led to a significant rise in reported cases, highlighting the country's commitment to consumer safety and
@@ -238,16 +231,16 @@
 
 
     <p></p>
+    
+    
+    <h2>Product Categories</h2>
     <div class="datatable-container" id="table-product-category-change.php"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/../img-2023/table-product-category-change.php'; ?>
+      <?php include '../img-2023/table-product-category-change.php'; ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
     <p></p>
-
-
-    <h2>Product Categories</h2>
-
+    
     <p>Over the last few years the Toys and Automotive categories are generally those with the most safety alerts. </p>
 
     <p>The exception being 2023 where cosmetics took the top spot with 32% of all alerts issued being for cosmetic
@@ -263,13 +256,6 @@
       be due to enhanced safety checks and reporting mechanisms for electrical appliances.</p>
 
 
-    <div class="datatable-container" id="table-product-category-change"
-      style="margin-right:auto;margin-left:0px; width:100%">
-
-      <?php include '../img-2023/../img-2023/table-product-category-change.php'; ?>
-      <a href="#" class="gototop">Go to Top</a>
-
-    </div>
 
     <h1 class="header-tools">What happened between 2022-2023?</h1>
 
@@ -278,7 +264,7 @@
     <p>2023 was an exception with the introduction of the ban on the chemical <a
         href="https://en.wikipedia.org/wiki/Lilial">lilial / BMHCA</a> for use in cosmetics on 1st March 2022.</p>
     <ul>
-      <li>In 2023 1,087 safety alerts were issued for products containing BMHCA</li>
+      <li>In 2023 1,072 safety alerts were issued for products containing BMHCA</li>
       <li>Around 30% of these were issued to products manufactured in Italy</li>
     </ul>
     </p>
@@ -394,7 +380,7 @@
     <h3>Cosmetics Sub Categories affected by the ban</h3>
     <div class="datatable-container" id="table-cosmetics-product-sub-cat-change"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/../table-cosmetics-product-sub-cat-change.php' ?>
+      <?php include '../img-2023/table-cosmetics-product-sub-cat-change.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
@@ -409,7 +395,7 @@
 
     <p>For every 10 workers employed in the European cosmetics and personal care industry, at least two further
       jobs are generated in the wider economy as a result of employees spending their wages on goods and services.</p>
-    <p>Source: https://cosmeticseurope.eu/cosmetics-industry/ </p>
+    <p>Source: <a href="https://cosmeticseurope.eu/cosmetics-industry/">https://cosmeticseurope.eu/cosmetics-industry/</a> </p>
 
     <h3>Cosmetic Products Safety Gate Alerts, Country of origin</h3>
     <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
@@ -929,8 +915,8 @@
                   src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts.png"></a>
             </td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts-percentage.png"><img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts-percentage.png"></a>
+                href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts-percentage.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-annual-alerts-percentage.png"></a>
             </td>
           </tr>
 
@@ -947,8 +933,8 @@
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png"><img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png"></a>
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png">
+             <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1016,12 +1002,12 @@
             <th style="text-align:center;">Compulsory Vs Voluntary</th>
           </tr>
           <tr>
-            <td style="width:49%">
+            <td >
               <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-annual-alerts.png">
                 <img
                   src="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-annual-alerts.png"></a>
             </td>
-            <td>
+            <td style="width:50%">
               <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-total-alerts.png">
                 <img
                   src="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-total-alerts.png"></a>
@@ -1062,12 +1048,12 @@
             <th style="text-align:center;">Compulsory Vs Voluntary</th>
           </tr>
           <tr>
-            <td style="width:49%">
+            <td >
               <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-annual-alerts.png">
                 <img
                   src="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-annual-alerts.png"></a>
             </td>
-            <td>
+            <td style="width:50%">
               <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-total-alerts.png">
                 <img
                   src="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-total-alerts.png"></a>
@@ -1695,7 +1681,7 @@
 </body>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
-<!-- <script src="../../scripts/comparison.js"> </script> -->
+<script src="projects-2023.js"> </script>
 
 <script>
   // Hovertips
