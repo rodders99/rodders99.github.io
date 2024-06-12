@@ -232,9 +232,9 @@
 </table>
 </div>
 
-<h2>Fix Motor Vehicles - Brand name / Country of origin inconsistencies</h2>
+<h2>Fix Brand name / Country of origin inconsistencies</h2>
 
-<p><code>Motor Vehicles</code> is one of the largest categories for safety alerts being issued (after toys, and for 2023, cosmetics), it's worthwhile to improve the quality of relevant data where possible.</p>
+<p>It's worthwhile to improve the quality of relevant data where possible for larger product categories.</p>
 
 <h4>Begin with </h4>
 <ul>
@@ -425,6 +425,9 @@ There are two product category fields:
     </tbody>
     </table>
 </div>
+
+
+
 
 
 <h2>Feature Engineer <code>country_top15</code></h2>

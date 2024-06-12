@@ -1,0 +1,90 @@
+,column,counts,percentage,country,type
+0,Chemical,249,32.80632411067194,China,risk
+1,Injuries,118,15.5467720685112,China,risk
+2,Breathing Obstruction,116,15.2832674571805,China,risk
+3,Toys,211,27.79973649538867,China,category
+4,Electrical Appliances,176,23.18840579710145,China,category
+5,other,66,8.695652173913043,China,category
+6,Chemical,98,59.756097560975604,France,risk
+7,Injuries,37,22.5609756097561,France,risk
+8,Fire,15,9.146341463414634,France,risk
+9,Cosmetics,99,60.36585365853659,France,category
+10,Automotive,59,35.97560975609756,France,category
+11,Childcare Equipment,2,1.2195121951219512,France,category
+12,Injuries,128,62.4390243902439,Germany,risk
+13,Chemical,35,17.073170731707318,Germany,risk
+14,Fire,26,12.682926829268293,Germany,risk
+15,Automotive,143,69.7560975609756,Germany,category
+16,Cosmetics,27,13.170731707317074,Germany,category
+17,other,12,5.853658536585367,Germany,category
+18,Chemical,21,95.45454545454545,India,risk
+19,Injuries,1,4.545454545454546,India,risk
+20,Cosmetics,15,68.18181818181817,India,category
+21,Clothing & Fashion,4,18.181818181818183,India,category
+22,Jewellery,1,4.545454545454546,India,category
+23,Chemical,375,75.75757575757575,Italy,risk
+24,Injuries,95,19.19191919191919,Italy,risk
+25,Fire,9,1.8181818181818181,Italy,risk
+26,Cosmetics,353,71.31313131313132,Italy,category
+27,Clothing & Fashion,78,15.757575757575756,Italy,category
+28,Automotive,32,6.4646464646464645,Italy,category
+29,Injuries,28,65.11627906976744,Japan,risk
+30,Fire,8,18.6046511627907,Japan,risk
+31,Environment,5,11.627906976744185,Japan,risk
+32,Automotive,41,95.34883720930233,Japan,category
+33,Chemicals,1,2.3255813953488373,Japan,category
+34,Electrical Appliances,1,2.3255813953488373,Japan,category
+35,Chemical,90,75.63025210084034,Poland,risk
+36,Injuries,17,14.285714285714285,Poland,risk
+37,Breathing Obstruction,4,3.361344537815126,Poland,risk
+38,Cosmetics,85,71.42857142857143,Poland,category
+39,other,8,6.722689075630252,Poland,category
+40,Clothing & Fashion,6,5.042016806722689,Poland,category
+41,Chemical,72,79.12087912087912,Spain,risk
+42,Injuries,10,10.989010989010989,Spain,risk
+43,Breathing Obstruction,3,3.296703296703297,Spain,risk
+44,Cosmetics,64,70.32967032967034,Spain,category
+45,Automotive,8,8.791208791208792,Spain,category
+46,Chemicals,7,7.6923076923076925,Spain,category
+47,Injuries,6,50.0,Sweden,risk
+48,Environment,2,16.666666666666664,Sweden,risk
+49,Fire,2,16.666666666666664,Sweden,risk
+50,Automotive,9,75.0,Sweden,category
+51,Toys,1,8.333333333333332,Sweden,category
+52,Chemicals,1,8.333333333333332,Sweden,category
+53,Microbiological,1,33.33333333333333,Taiwan,risk
+54,Electric Shock,1,33.33333333333333,Taiwan,risk
+55,Injuries,1,33.33333333333333,Taiwan,risk
+56,other,1,33.33333333333333,Taiwan,category
+57,Electrical Appliances,1,33.33333333333333,Taiwan,category
+58,Automotive,1,33.33333333333333,Taiwan,category
+59,Injuries,32,45.714285714285715,Türkiye,risk
+60,Chemical,27,38.57142857142858,Türkiye,risk
+61,Breathing Obstruction,5,7.142857142857142,Türkiye,risk
+62,Cosmetics,24,34.285714285714285,Türkiye,category
+63,Clothing & Fashion,21,30.0,Türkiye,category
+64,other,9,12.857142857142856,Türkiye,category
+65,Injuries,24,42.857142857142854,UK,risk
+66,Chemical,20,35.714285714285715,UK,risk
+67,Fire,7,12.5,UK,risk
+68,Automotive,32,57.14285714285714,UK,category
+69,Cosmetics,16,28.57142857142857,UK,category
+70,Chemicals,4,7.142857142857142,UK,category
+71,Injuries,17,40.476190476190474,USA,risk
+72,Chemical,15,35.714285714285715,USA,risk
+73,Fire,8,19.047619047619047,USA,risk
+74,Automotive,25,59.523809523809526,USA,category
+75,Cosmetics,11,26.190476190476193,USA,category
+76,Chemicals,5,11.904761904761903,USA,category
+77,Chemical,543,55.29531568228106,Unknown,risk
+78,Injuries,118,12.016293279022404,Unknown,risk
+79,Breathing Obstruction,110,11.201629327902241,Unknown,risk
+80,Cosmetics,205,20.875763747454176,Unknown,category
+81,Toys,192,19.551934826883908,Unknown,category
+82,Electrical Appliances,138,14.052953156822811,Unknown,category
+83,Chemical,176,61.53846153846154,other,risk
+84,Injuries,57,19.93006993006993,other,risk
+85,Breathing Obstruction,19,6.643356643356643,other,risk
+86,Cosmetics,138,48.25174825174825,other,category
+87,Automotive,35,12.237762237762238,other,category
+88,Toys,24,8.391608391608392,other,category

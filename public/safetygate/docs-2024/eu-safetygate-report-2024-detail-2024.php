@@ -272,7 +272,7 @@ increase of 1,249 over the previous year.</p>
 
 
 
-<h3 >2022 Vs 2023</h3>
+<h3 >Last Year Vs Current Year</h3>
 
 <div class="datatable-container" id="all-submitting-country-2022vs2023">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -467,7 +467,7 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h2>Economic Area of Product origin 2022 Vs 2023 </h2>
+<h2>Economic Area of Product origin Last Year Vs Current Year </h2>
 <p>Italy has been highlighted to show the significant number of alerts issued against cosmetics manufactured in Italy.</p>
 
 <div class="datatable-container" id="all-Economic-Area-2022-vs-2023">

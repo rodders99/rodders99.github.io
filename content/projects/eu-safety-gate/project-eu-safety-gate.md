@@ -12,7 +12,7 @@ series = [ ]
 preview = "/img/Safety_Gate_Logo.png"
 +++
 
-![Safety Gate Logo](https://rodders.me/safetygate/img/icons/Safety_Gate_Logo.png)
+![Safety Gate Logo](/safetygate/img/icons/Safety_Gate_Logo.png)
 
 ## The EU Safety Gate project
 
@@ -43,25 +43,27 @@ It is an interesting look into the world of dangerous and non compliant products
 
 ### Analysts Notes
 
-- [EU Safety Gate Meta Data Overview](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-meta-data.php)
-- [EU Safety Gate Feature Engineering](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-feature-engineering.php)
-- [EU Safety Gate Visualisations Plan](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-plot-plan.php)
-
-### Safety Gate 2023 Analysis
-
-Top Level analysis of the 2022 - 2023 dataset with visualisations for totals / 2022 Vs 2023 along with top 3 risk and product category visualisations for each country of product origin.
-
-- [Safety Gate Detailed Summary for 2023](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-detail-2023.php)
+- [EU Safety Gate Meta Data Overview](/safetygate/docs/eu-safetygate-report-2023-meta-data.php)
+- [EU Safety Gate Feature Engineering](/safetygate/docs/eu-safetygate-report-2023-feature-engineering.php)
+- [EU Safety Gate Visualisations Plan](/safetygate/docs/eu-safetygate-report-2023-plot-plan.php)
 
 ### Safety Gate Summary Analysis
 
-Top Level analysis of the entire dataset with visualisations for total alerts issued / 2022 Vs 2023 along with top 3 risk and product category visualisations for each country of product origin.
+This report provides a comprehensive overview of safety alerts issued by the European Union for non-food products throughout the year. This report highlights the most notable data and trends, including significant increases or decreases in alerts, common types of hazards, and categories of products most frequently flagged. It aims to give readers a clear and concise understanding of the key safety concerns and regulatory actions taken within the year.
 
-- [Safety Gate Detailed Summary for entire dataset](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-all.php)
+- [Safety Gate Detailed Summary for 2023](/safetygate/docs/eu-safetygate-report-2023-summary-report.php)
+- [Safety Gate Detailed Summary for 2024](/safetygate/docs-2024/eu-safetygate-report-2024-summary-report.php)
+
+### Safety Gate Visualisations Report Analysis
+
+This Report compiles a detailed collection of visualisations depicting the safety alerts issued for non-food products by the European Union. Featuring around 1,100 meticulously crafted matplotlib plots, this report offers an in-depth visual analysis of the total alerts, allowing readers to easily interpret complex data trends, hazard types, and affected product categories. It serves as a valuable resource for those seeking to understand the broader patterns and specifics of safety alerts through a graphical representation.
+
+- [Safety Gate Detailed Summary for entire 2023 dataset](/safetygate/docs/eu-safetygate-report-2023-visualisations-report.php)
+- [Safety Gate Detailed Summary for entire 2024 dataset](/safetygate/docs-2024/eu-safetygate-report-2024-visualisations-report.php)
 
 ### Safety Gate Compare Countries
 
-- [Compare Countries](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-comparison.php?country1=france&country2=germany)
+- [Compare Countries](/safetygate/docs/eu-safetygate-report-2023-comparison.php?country1=france&country2=germany)
 
 ### Country of Origin Report
 
@@ -69,14 +71,14 @@ A detailed analysis with extensive visualisations of all key features of the dat
 
 | | | | |
 | :-: |  :-: | :-: | :-: |
-|[![China](https://rodders.me/safetygate/img/icons/china-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=china)|[![France](https://rodders.me/safetygate/img/icons/france-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=france)|[![India](https://rodders.me/safetygate/img/icons/india-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=india)|[![Italy flag](https://rodders.me/safetygate/img/icons/italy-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=italy)
-|[China](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=china)|[France](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=france)|[India](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=india)| [Italy](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=italy)
-|[![Japan](https://rodders.me/safetygate/img/icons/japan-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=japan)|[![Netherlands](https://rodders.me/safetygate/img/icons/netherlands-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=netherlands)|[![Poland](https://rodders.me/safetygate/img/icons/poland-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=poland)|[![Spain](https://rodders.me/safetygate/img/icons/spain-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=spain)|
-|[Japan](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=japan)|[Netherlands](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=netherlands)|[Poland](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=poland)|[Spain](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=spain)
-|[![Sweden](https://rodders.me/safetygate/img/icons/sweden-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=sweden)|[![Taiwan](https://rodders.me/safetygate/img/icons/taiwan-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=tawian)|[![Turkey](https://rodders.me/safetygate/img/icons/turkey-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=turkey)|[![UK](https://rodders.me/safetygate/img/icons/uk-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=uk)|
-|[Sweden](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=sweden)|[Taiwan](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=taiwan)|[Turkey](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=turkey)|[UK](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=uk)
-|[![USA](https://rodders.me/safetygate/img/icons/usa-flag.webp)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=usa)|||
-|[USA](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=usa)|[Unknown](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=Unknown)|[Other (not top15)](https://rodders.me/safetygate/docs/eu-safetygate-report-2023-country.php?country1=other)||
+|[![China](/safetygate/img/icons/china-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=china)|[![France](/safetygate/img/icons/france-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=france)|[![India](/safetygate/img/icons/india-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=india)|[![Italy flag](/safetygate/img/icons/italy-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=italy)
+|[China](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=china)|[France](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=france)|[India](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=india)| [Italy](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=italy)
+|[![Japan](/safetygate/img/icons/japan-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=japan)|[![Netherlands](/safetygate/img/icons/netherlands-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=netherlands)|[![Poland](/safetygate/img/icons/poland-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=poland)|[![Spain](/safetygate/img/icons/spain-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=spain)|
+|[Japan](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=japan)|[Netherlands](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=netherlands)|[Poland](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=poland)|[Spain](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=spain)
+|[![Sweden](/safetygate/img/icons/sweden-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=sweden)|[![Taiwan](/safetygate/img/icons/taiwan-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=tawian)|[![Turkey](/safetygate/img/icons/turkey-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=turkey)|[![UK](/safetygate/img/icons/uk-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=uk)|
+|[Sweden](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=sweden)|[Taiwan](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=taiwan)|[Turkey](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=turkey)|[UK](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=uk)
+|[![USA](/safetygate/img/icons/usa-flag.webp)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=usa)|||
+|[USA](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=usa)|[Unknown](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=Unknown)|[Other (not top15)](/safetygate/docs/eu-safetygate-report-2023-country.php?country1=other)||
 
 ### My Analysis
 
@@ -86,16 +88,16 @@ Extensive feature engineering was carried out in order to produce meaningful and
 
 This was a great opportunity for me to flex my DA & visualisations skills with a secondary goal to recreate some of the visualisations from the 'official' report using Python, Pandas and Matplotlib.
 
-A good example of my programmatic recreations are the country level top 3 visualisations showing the top 3 product categories and top 3 risks, in the official report and the geoplot, showing 
+A good example of programmatic recreations are the country level top 3 visualisations showing the top 3 product categories and top 3 risks, in the official report and the geoplot, showing 
 2022 vs 2023 how many alerts were issued by each country.
 
 Inspiration :
 
 | Source  | Official Version | Python version |
 | :- |:- |:- |
-|[source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_Factsheet_EN.pdf) |![img](https://rodders.me/safetygate/img/inspiration-top3s.png) | ![img](https://rodders.me/safetygate/img/italy-top3s.png)
-| [source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf) | ![img](https://rodders.me/safetygate/img/inspiration-purpleplot.png)  | ![img](https://rodders.me/safetygate/img/number-of-alerts-validated-on-safetygate-from-2003-to-2023.png)
-| [source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf) | ![img](https://rodders.me/safetygate/img/inspiration-geoplot.png)  | ![img](https://rodders.me/safetygate/img/submitting-country-geo-plot.png)
+|[source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_Factsheet_EN.pdf) |![img](/safetygate/img/icons/inspiration-top3.png) | ![img](/safetygate/img/italy-top3s.png)
+| [source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf) | ![img](/safetygate/img/icons/inspiration-purpleplot.png)  | ![img](/safetygate/img/number-of-alerts-validated-on-safetygate-from-2005-to-2023.png)
+| [source](https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/statisticsAndAnualReports/2023/Safety_Gate_2023_report_EN.pdf) | ![img](/safetygate/img/icons/inspiration-geoplot.png)  | ![img](/safetygate/img/submitting-country-geo-plot.png)
 
 ## About the EU Safety Gate Rapid Alert System
 
@@ -139,4 +141,4 @@ licence](https://creativecommons.org/licenses/by/4.0/).
 This means that reuse is allowed provided appropriate credit is given and any changes are indicated.
 
 Since this entire analysis is based on data from the EU, and I have used visualisations from the official annual summary as inspiration for the programmatically created version of these visualisations,
-the creative commons license applies this work hosted on [rodders.me](https://rodders.me), this means that reuse of this analysis and it's visualisations is allowed provided appropriate credit is given and any changes are indicated.
+the creative commons license applies this work hosted on [rodders.me](), this means that reuse of this analysis and it's visualisations is allowed provided appropriate credit is given and any changes are indicated.

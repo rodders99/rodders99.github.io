@@ -89,7 +89,7 @@ function updateProduct_categoryContent(element) {
   const classList = Array.from(element.classList);
   const productCatClass = classList.find(className => className.startsWith('product_cat'));
   const index = productCatClass.replace('product_cat', '');
-  const filePath = `../headings/${country1}-${index}-product-category.txt`;
+  const filePath = `../headings-2023/${country1}-${index}-product-category.txt`;
 
   fetch(filePath)
       .then(response => response.text())
