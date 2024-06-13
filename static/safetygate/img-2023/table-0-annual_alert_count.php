@@ -4,7 +4,7 @@
 
 <tr style="text-align: right;">
 
-      <th>year</th>
+
 
       <th style="text-align:right; min-width: 10%;">2005</th>
 

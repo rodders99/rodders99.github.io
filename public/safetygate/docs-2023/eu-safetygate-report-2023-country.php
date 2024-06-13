@@ -208,8 +208,8 @@
     </tr> 
     <tr>
       <td style="text-align:center; width:49%" id="risk-category-percentage">
-        <a href="https://rodders.me/safetygate/img-2023/all-risk-category-total-alerts-percentage.png">
-          <img src="https://rodders.me/safetygate/img-2023/risk-category-total-alerts-percentage.png" class="change" ></a></td>
+        <a href="https://rodders.me/safetygate/img-2023/all-risk-category-total-alerts-percentage-2005-2023.png">
+          <img src="https://rodders.me/safetygate/img-2023/risk-category-total-alerts-percentage-2005-2023.png" class="change" ></a></td>
       <td style="text-align:center; width:49%" id="risk-category-2022vs2023">
         <a href="https://rodders.me/safetygate/img-2023/all-risk-category-2022-vs-2023.png">
           <img src="https://rodders.me/safetygate/img-2023/risk-category-2022-vs-2023.png" class="change" ></a></td>
@@ -489,9 +489,10 @@
           <td style="text-align:center; width:49%" id="product-cat-0-counterfeit-type-percentage" >
             <a href="https://rodders.me/safetygate/img-2023/all-product-0-counterfeit-total-alerts-percentage.png">
            <img src="https://rodders.me/safetygate/img-2023/product-0-counterfeit-total-alerts-percentage.png"  class="change"></a></td>
+
           <td style="text-align:center; width:49%" id="product-cat-0-counterfeit-type-2022vs2023">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-0-total-counterfeit-type-2022-vs-2023.png">
-              <img src="https://rodders.me/safetygate/img-2023/product-0-counterfeit-2022-vs-2023.png"  class="change"></a></td>
+            <a href="https://rodders.me/safetygate/img-2023/all-product-0-counterfeit-2022-vs-2023.png">
+           <img src="https://rodders.me/safetygate/img-2023/product-0-counterfeit-2022-vs-2023.png"  class="change"></a></td>
         </tr> 
         </tbody>
       </table>
@@ -508,11 +509,12 @@
         </tr> 
         <tr>
           <td style="text-align:center; width:49%" id="product-cat-0-counterfeit-type-annual">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-0-annual-counterfeit-alerts-issued.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-0-counterfeit-annual-alerts.png">
               <img src="https://rodders.me/safetygate/img-2023/product-0-counterfeit-annual-alerts.png" class="change" ></a></td>
-          <td style="text-align:center;width:49%" id="product-cat-0-counterfeit-type-annual-percentage">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-0-annual-counterfeit-alerts-issued-percentage-by-type.png">
-              <img src="https://rodders.me/safetygate/img-2023/product-0-counterfeit-annual-alerts-percentage.png"  class="change"></a></td>
+          
+              <td style="text-align:center;width:49%" id="product-cat-0-counterfeit-type-annual-percentage">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-0-counterfeit-annual-alerts-percentage.png">
+           <img src="https://rodders.me/safetygate/img-2023/product-0-counterfeit-annual-alerts-percentage.png"  class="change"></a></td>
         </tr> 
       </tbody>
     </table>
@@ -672,7 +674,7 @@
           <a href="https://rodders.me/safetygate/img-2023/all-product-1-annual-and-cumulative-alerts.png">
             <img src="https://rodders.me/safetygate/img-2023/product-1-annual-and-cumulative-alerts.png" class="change" ></a></td>
         <td style="text-align:center; width:49%" id="product-cat-1-annual-yoy-change">
-          <a href="https://rodders.me/safetygate/img-2023/all-product-1-annual-and-yoy-change.png">
+          <a href="https://rodders.me/safetygate/img-2023/all-product-1-annual-cumulative-alerts-and-yoy-change.png">
             <img src="https://rodders.me/safetygate/img-2023/product-1-annual-cumulative-alerts-and-yoy-change.png"  class="change"></a></td>
       </tr> 
        
@@ -740,10 +742,10 @@
         </tr>    
         <tr>
           <td style="text-align:center; width:49%" id="product-cat-1-counterfeit-type-percentage">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-1-total-counterfeit-type-percentage-of-all.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-1-counterfeit-total-alerts-percentage.png">
               <img src="https://rodders.me/safetygate/img-2023/product-1-counterfeit-total-alerts-percentage.png"  class="change"></a></td>
           <td style="text-align:center; width:49%" id="product-cat-1-counterfeit-type-2022vs2023">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-1-total-counterfeit-type-2022-vs-2023.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-1-counterfeit-2022-vs-2023.png">
               <img src="https://rodders.me/safetygate/img-2023/product-1-counterfeit-2022-vs-2023.png"  class="change"></a></td>
         </tr> 
         </tbody>
@@ -761,10 +763,10 @@
         </tr> 
         <tr>
           <td style="text-align:center; width:49%" id="product-cat-1-counterfeit-type-annual">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-1-annual-counterfeit-alerts-issued.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-1-counterfeit-annual-alerts.png">
               <img src="https://rodders.me/safetygate/img-2023/product-1-counterfeit-annual-alerts.png" class="change" ></a></td>
           <td style="text-align:center; width:49%" id="product-cat-1-counterfeit-type-annual-percentage">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-1-annual-counterfeit-alerts-issued-percentage-by-type.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-1-counterfeit-annual-alerts-percentage.png">
               <img src="https://rodders.me/safetygate/img-2023/product-1-counterfeit-annual-alerts-percentage.png"  class="change"></a></td>
         </tr> 
       </tbody>
@@ -797,7 +799,7 @@
         </tr> 
         <tr id="product-cat-1-action-required-responsible-party-annual">
           <td style="text-align:center; width:49%" >
-            <a href="https://rodders.me/safetygate/img-2023/all-product-1-required-action-annual-alerts.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-1-action-required-annual-alerts.png">
               <img src="https://rodders.me/safetygate/img-2023/product-1-action-required-annual-alerts.png"  class="change"></a></td>
           <td style="text-align:center;" >
             <a href="https://rodders.me/safetygate/img-2023/all-product-1-responsible-party-annual-alerts.png">
@@ -932,7 +934,7 @@
           <a href="https://rodders.me/safetygate/img-2023/all-product-2-annual-and-cumulative-alerts.png">
             <img src="https://rodders.me/safetygate/img-2023/product-2-annual-and-cumulative-alerts.png" class="change" ></a></td>
         <td style="text-align:center; width:49%" id="product-cat-2-annual-yoy-change">
-          <a href="https://rodders.me/safetygate/img-2023/all-product-2-annual-and-yoy-change.png">
+          <a href="https://rodders.me/safetygate/img-2023/all-product-2-annual-cumulative-alerts-and-yoy-change.png">
             <img src="https://rodders.me/safetygate/img-2023/product-2-annual-cumulative-alerts-and-yoy-change.png" class="change"></a></td>
       </tr> 
        
@@ -1001,10 +1003,10 @@
         </tr>    
         <tr>
           <td style="text-align:center; width:49%" id="product-cat-2-counterfeit-type-percentage">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-2-total-counterfeit-type-percentage-of-all.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-2-counterfeit-total-alerts-percentage.png">
               <img src="https://rodders.me/safetygate/img-2023/product-2-counterfeit-total-alerts-percentage.png"  class="change"></a></td>
           <td style="text-align:center; width:49%" id="product-cat-2-counterfeit-type-2022vs2023" >
-            <a href="https://rodders.me/safetygate/img-2023/all-product-2-total-counterfeit-type-2022-vs-2023.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-2-counterfeit-2022-vs-2023.png">
               <img src="https://rodders.me/safetygate/img-2023/product-2-counterfeit-2022-vs-2023.png"  class="change"></a></td>
         </tr> 
         </tbody>
@@ -1022,10 +1024,10 @@
         </tr> 
         <tr>
           <td style="text-align:center; width:49%" id="product-cat-2-counterfeit-type-annual">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-2-annual-counterfeit-alerts-issued.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-2-counterfeit-annual-alerts.png">
               <img src="https://rodders.me/safetygate/img-2023/product-2-counterfeit-annual-alerts.png" class="change" ></a></td>
           <td style="text-align:center; width:49%" id="product-cat-2-counterfeit-type-annual-percentage">
-            <a href="https://rodders.me/safetygate/img-2023/all-product-2-annual-counterfeit-alerts-issued-percentage-by-type.png">
+            <a href="https://rodders.me/safetygate/img-2023/all-product-2-counterfeit-annual-alerts-percentage.png">
               <img src="https://rodders.me/safetygate/img-2023/product-2-counterfeit-annual-alerts-percentage.png"  class="change"></a></td>
         </tr> 
       </tbody>
@@ -1154,7 +1156,7 @@
 
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
-<script src="../../scripts/projects.js"> </script>
+<script src="projects-2023.js"> </script>
 
 <script>
   // Hovertips

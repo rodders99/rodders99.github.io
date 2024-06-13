@@ -77,7 +77,7 @@ function updateHrefsWithPrefix(country1) {
 function updateHeadingsWithPrefix(country1) {
     var headings = document.querySelectorAll('.ChangeCountry'); // Adjust for h2, h3, etc. as needed
     headings.forEach(function(heading) {
-        heading.textContent = country1 + ' - ' + heading.textContent;
+        heading.textContent = country1.toUpperCase() + ' - ' + heading.textContent;
     });
     }
 
@@ -112,6 +112,9 @@ function capitalizeFirstLetter(string) {
         return  string.charAt(0).toUpperCase() + string.slice(1);
     }
 
+    function capitalizeCountry(string) {
+        return  string.toUpperCase();
+    }
 
   
 async function updateContent() {
