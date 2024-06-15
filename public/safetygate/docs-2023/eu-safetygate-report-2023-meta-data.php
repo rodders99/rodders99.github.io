@@ -29,7 +29,7 @@
       <?php include 'menu-2023.php'; ?></div>
                   <!-- </div> -->
                   <h1>EU Safety Gate Data - Meta Data</h1>
-                  <img src="https://rodders.me/safetygate/img-2023/Safety_Gate_Logo.png" alt="Safety Gate Logo" style="width:50%">
+                  <img src="https://rodders.me/safetygate/img-2023/icons/Safety_Gate_Logo.png" alt="Safety Gate Logo" style="width:50%">
                   <h2>Data Source</h2>
                   
                   <p>Data was sourced from <a href="https://ec.europa.eu/safety-gate-alerts/screen/webReport">https://ec.europa.eu/safety-gate-alerts/screen/webReport</a> as weekly files in 

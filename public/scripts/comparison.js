@@ -14,9 +14,9 @@ const params = currentUrl.searchParams;
 
 // Check if the parameter is set, and set a default value if it isn't
 const paramName1 = 'country1';
-const defaultValue1 = 'all';
+const defaultValue1 = 'all-countries';
 const paramName2 = 'country2';
-const defaultValue2 = 'all';
+const defaultValue2 = 'all-countries';
 
 if (!params.has(paramName1)) {
     params.set(paramName1, defaultValue1);

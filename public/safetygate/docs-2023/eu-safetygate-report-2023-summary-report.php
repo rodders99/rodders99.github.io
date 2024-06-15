@@ -16,8 +16,7 @@
 
 </head>
 
-<body> 
-  <!-- class="exclude-page"> -->
+<body class="exclude-page"> 
 
   <div class="page-container">
     <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
@@ -220,8 +219,8 @@
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
-            <td> <a href="https://rodders.me/safetygate/img-2023/submitting-country-geo-plot.png">
-                <img src="https://rodders.me/safetygate/img-2023/submitting-country-geo-plot.png">
+            <td> <a href="https://rodders.me/safetygate/img-2023/all-countries-submitting-country-geo-plot.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-submitting-country-geo-plot.png">
             </td>
           </tr>
         </tbody>
@@ -264,7 +263,7 @@
     <p>2023 was an exception with the introduction of the ban on the chemical <a
         href="https://en.wikipedia.org/wiki/Lilial">lilial / BMHCA</a> for use in cosmetics on 1st March 2022.</p>
     <ul>
-      <li>In 2023 1,072 safety alerts were issued for products containing BMHCA</li>
+      <li>In 2023 1,072 safety alerts were issued for products containing the chemical BMHCA</li>
       <li>Around 30% of these were issued to products manufactured in Italy</li>
     </ul>
     </p>
@@ -272,9 +271,8 @@
       (BMHCA, trade name 'Lilial') BMHCA, a chemical commonly used in cosmetics.</p>
     <p>
       BMHCA is now deemed to be hazardous and unsuitable for use in cosmetic products due to the fact that it is
-      included in so many products.
-      While an individual exposure poses a minimal risk, cumulative exposure from the use of multiple products
-      containing this chemical increases the risk considerably. </p>
+      included in so many products. While an individual exposure poses a minimal risk, cumulative exposure from the use of 
+      multiple products containing this chemical increases the risk considerably. </p>
     <p>
       It's also worth noting that BMHCA is a fragrance commonly used in household cleaning products, however no guidance
       has been issued for it's use in cleaning products at this stage.
@@ -366,8 +364,8 @@
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/cosmetics-country-of-origin-2022-vs-2023.png">
-                <img src="https://rodders.me/safetygate/img-2023/cosmetics-country-of-origin-2022-vs-2023.png"></a>
+              <a href="https://rodders.me/safetygate/img-2023/cosmetics-country-of-origin-ly-vs-ty.png">
+                <img src="https://rodders.me/safetygate/img-2023/cosmetics-country-of-origin-ly-vs-ty.png"></a>
 
             </td>
           </tr>
@@ -842,14 +840,14 @@
 
     <h4 class="product_cat0">2022 Vs 2023</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-submitting-country-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-0-submitting-country-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-submitting-country-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-submitting-country-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-0-submitting-country-2022-vs-2023.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-product-0-submitting-country-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -886,13 +884,13 @@
     <h3 class="product_cat0">Risk Category</h3>
     <h4 class="product_cat0">2022 Vs 2023</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-risk-category-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-0-risk-category-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-2022-vs-2023.png">
-                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-2022-vs-2023.png"></a>
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-ly-vs-ty.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -927,14 +925,14 @@
 
     <h3 class="product_cat0">Counterfeit </h3>
     <h4>2022 Vs 2023</h4>
-    <div class="datatable-container" id="all-product-cat-0-counterfeit-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-0-counterfeit-ly-vs-ty">
 
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png">
-             <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png"></a>
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-ly-vs-ty.png">
+             <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -976,14 +974,14 @@
     <h3 class="product_cat0">Action Required</h3>
     <h4 class="product_cat0">2022 Vs 2023</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-action-required-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-0-action-required-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-2022-vs-2023.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1021,14 +1019,14 @@
 
     <h3 class="product_cat0">Responsible Party</h3>
     <h4 class="product_cat0">2022 Vs 2023</h4>
-    <div class="datatable-container" id="all-product-cat-0-responsible-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-0-responsible-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-2022-vs-2023.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1129,14 +1127,14 @@
 
 
 
-    <div class="datatable-container" id="all-product-cat-1-submitting-country-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-1-submitting-country-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-submitting-country-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-submitting-country-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-1-submitting-country-2022-vs-2023.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-product-1-submitting-country-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1177,13 +1175,13 @@
     <h3 class="product_cat1">Risk Category</h3>
     <h4 class="product_cat1">2022 Vs 2023</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-risk-category-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-1-risk-category-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-risk-category-2022-vs-2023.png">
-                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-risk-category-2022-vs-2023.png"></a>
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-risk-category-ly-vs-ty.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-risk-category-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1224,13 +1222,13 @@
     <h3 class="product_cat1">Counterfeit </h3>
     <h4 class="product_cat1">2022 Vs 2023 </h4>
 
-    <div class="datatable-container" id="all-product-cat-1-counterfeit-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-1-counterfeit-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-counterfeit-2022-vs-2023.png">
-                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-counterfeit-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-counterfeit-ly-vs-ty.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-counterfeit-ly-vs-ty.png">
               </a>
             </td>
           </tr>
@@ -1273,14 +1271,14 @@
 
     <h4 class="product_cat1">2022 Vs 2023</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-action-required-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-1-action-required-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-2022-vs-2023.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1319,14 +1317,14 @@
     <h3 class="product_cat1">Responsible Party</h3>
     <h4 class="product_cat1">2022 Vs 2023</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-responsible-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-1-responsible-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-2022-vs-2023.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1422,14 +1420,14 @@
     <h3 class="product_cat2">Submitting Country</h3>
     <h4>2022 Vs 2023</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-submitting-country-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-2-submitting-country-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-submitting-country-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-submitting-country-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-2-submitting-country-2022-vs-2023.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-product-2-submitting-country-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1468,13 +1466,13 @@
     <h4>2022 Vs 2023</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-risk-category-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-2-risk-category-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-risk-category-2022-vs-2023.png">
-                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-risk-category-2022-vs-2023.png"></p>
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-risk-category-ly-vs-ty.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-risk-category-ly-vs-ty.png"></p>
               </a>
             </td>
           </tr>
@@ -1513,13 +1511,13 @@
     <h4>2022 Vs 2023</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-counterfeit-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-2-counterfeit-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-counterfeit-2022-vs-2023.png">
-                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-counterfeit-2022-vs-2023.png"></a>
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-counterfeit-ly-vs-ty.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-counterfeit-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1559,14 +1557,14 @@
     <h3 class="product_cat2">Action Required </h3>
     <h4>2022 Vs 2023</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-action-required-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-2-action-required-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-2022-vs-2023.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1606,14 +1604,14 @@
     <h4>2022 Vs 2023</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-responsible-2022vs2023">
+    <div class="datatable-container" id="all-product-cat-2-responsible-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-2022-vs-2023.png">
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-2022-vs-2023.png"></a>
+                  src="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1708,7 +1706,7 @@
     content: 'Submitting Country 2022 Vs 2023.',
     theme: 'tomato'
   });
-  tippy('#all-submitting-country-2022vs2023', {
+  tippy('#all-submitting-country-ly-vs-ty', {
     content: 'Submitting Country 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato'
   });
@@ -1724,11 +1722,11 @@
     content: 'Cosmetics - Top 30 brands for Safety Alerts.',
     theme: 'tomato'
   });
-  tippy('#all-Economic-Area-2022-vs-2023', {
+  tippy('#all-Economic-Area-ly-vs-ty', {
     content: '2022 Vs 2023 comparison of Economic Area of Product Origin (Feature Engineered) by Percentage of total for top 15.',
     theme: 'tomato'
   });
-  tippy('#all-Coo-2022-vs-2023', {
+  tippy('#all-Coo-ly-vs-ty', {
     content: '2022 Vs 2023 comparison of percentage of safety alerts issued to Country of Product Origin.',
     theme: 'tomato'
   });
@@ -1736,7 +1734,7 @@
     content: 'Country of product origin, Annual Total and Annual Percentage of Total..',
     theme: 'tomato'
   });
-  tippy('#all-product-category-2022vs2023', {
+  tippy('#all-product-category-ly-vs-ty', {
     content: 'Product Category 2022 Vs 2023 percentage of Total safety alerts.',
     theme: 'tomato'
   });
@@ -1744,7 +1742,7 @@
     content: 'Product Category , Annual Total and Annual Percentage of Total..',
     theme: 'tomato'
   });
-  tippy('#all-risk-category-2022vs2023', {
+  tippy('#all-risk-category-ly-vs-ty', {
     content: 'Risk Category type 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato'
   });
@@ -1752,7 +1750,7 @@
     content: 'Risk Category, Annual Total and Annual Percentage of Total..',
     theme: 'tomato'
   });
-  tippy('#all-counterfeit-2022vs2023', {
+  tippy('#all-counterfeit-ly-vs-ty', {
     content: 'Counterfeit type 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato'
   });
@@ -1760,7 +1758,7 @@
     content: 'Counterfeit, Annual Total and Annual Percentage of Total.',
     theme: 'tomato'
   });
-  tippy('#all-action-required-2022vs2023', {
+  tippy('#all-action-required-ly-vs-ty', {
     content: 'Compulsory and Voluntary action required 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato'
   });
@@ -1768,7 +1766,7 @@
     content: 'Compulsory and Voluntary action required Annual Total and Total Comparison.',
     theme: 'tomato'
   });
-  tippy('#all-responsible-2022vs2023', {
+  tippy('#all-responsible-ly-vs-ty', {
     content: 'Compulsory and Voluntary Responsible Party 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato'
   });
@@ -1795,7 +1793,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-0-submitting-country-2022vs2023', {
+  tippy('#all-product-cat-0-submitting-country-ly-vs-ty', {
     content: '<b><u>#1 Product Category</u></b><br>2022 Vs 20232 Submitting Country as percentage of total safety alerts issued.',
     theme: 'tomato',
     allowHTML: true,
@@ -1807,7 +1805,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-0-risk-category-2022vs2023', {
+  tippy('#all-product-cat-0-risk-category-ly-vs-ty', {
     content: '<b><u>#1 Product Category</u></b><br>2022 Vs 20232 Risk Category as percentage of total safety alerts issued.',
     theme: 'tomato',
     allowHTML: true,
@@ -1819,7 +1817,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-0-counterfeit-2022vs2023', {
+  tippy('#all-product-cat-0-counterfeit-ly-vs-ty', {
     content: '<b><u>#1 Product Category</u></b><br>Counterfeit Type 2022 Vs 2023 percentage of safety alerts issued.',
     theme: 'tomato',
     allowHTML: true,
@@ -1831,7 +1829,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-0-action-required-2022vs2023', {
+  tippy('#all-product-cat-0-action-required-ly-vs-ty', {
     content: '<b><u>#1 Product Category</u></b><br>Compulsory and Voluntary action required 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato',
     allowHTML: true,
@@ -1843,7 +1841,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-0-responsible-2022vs2023', {
+  tippy('#all-product-cat-0-responsible-ly-vs-ty', {
     content: '<b><u>#1 Product Category</u></b><br>Compulsory and Voluntary Responsible Party 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato',
     allowHTML: true,
@@ -1868,7 +1866,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-1-submitting-country-2022vs2023', {
+  tippy('#all-product-cat-1-submitting-country-ly-vs-ty', {
     content: '<b><u>#2 Product Category</u></b><br>2022 Vs 20232 Submitting Country as percentage of total safety alerts issued.',
     theme: 'tomato',
     allowHTML: true,
@@ -1880,7 +1878,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-1-risk-category-2022vs2023', {
+  tippy('#all-product-cat-1-risk-category-ly-vs-ty', {
     content: '<b><u>#2 Product Category</u></b><br>2022 Vs 20232 Risk Category as percentage of total safety alerts issued.',
     theme: 'tomato',
     allowHTML: true,
@@ -1892,7 +1890,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-1-counterfeit-2022vs2023', {
+  tippy('#all-product-cat-1-counterfeit-ly-vs-ty', {
     content: '<b><u>#2 Product Category</u></b><br>Counterfeit Type 2022 Vs 2023 percentage of safety alerts issued.',
     theme: 'tomato',
     allowHTML: true,
@@ -1904,7 +1902,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-1-action-required-2022vs2023', {
+  tippy('#all-product-cat-1-action-required-ly-vs-ty', {
     content: '<b><u>#2 Product Category</u></b><br>Compulsory and Voluntary action required 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato',
     allowHTML: true,
@@ -1916,7 +1914,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-1-responsible-2022vs2023', {
+  tippy('#all-product-cat-1-responsible-ly-vs-ty', {
     content: '<b><u>#2 Product Category</u></b><br>Compulsory and Voluntary Responsible Party 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato',
     allowHTML: true,
@@ -1942,7 +1940,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-2-submitting-country-2022vs2023', {
+  tippy('#all-product-cat-2-submitting-country-ly-vs-ty', {
     content: '<b><u>#3 Product Category</u></b><br>2022 Vs 20232 Submitting Country as percentage of total safety alerts issued.',
     theme: 'tomato',
     allowHTML: true,
@@ -1954,7 +1952,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-2-risk-category-2022vs2023', {
+  tippy('#all-product-cat-2-risk-category-ly-vs-ty', {
     content: '<b><u>#3 Product Category</u></b><br>2022 Vs 20232 Risk Category as percentage of total safety alerts issued.',
     theme: 'tomato',
     allowHTML: true,
@@ -1966,7 +1964,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-2-counterfeit-2022vs2023', {
+  tippy('#all-product-cat-2-counterfeit-ly-vs-ty', {
     content: '<b><u>#3 Product Category</u></b><br>Counterfeit Type 2022 Vs 2023 percentage of safety alerts issued.',
     theme: 'tomato',
     allowHTML: true,
@@ -1978,7 +1976,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-2-action-required-2022vs2023', {
+  tippy('#all-product-cat-2-action-required-ly-vs-ty', {
     content: '<b><u>#3 Product Category</u></b><br>Compulsory and Voluntary action required 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato',
     allowHTML: true,
@@ -1990,7 +1988,7 @@
     allowHTML: true,
   });
 
-  tippy('#all-product-cat-2-responsible-2022vs2023', {
+  tippy('#all-product-cat-2-responsible-ly-vs-ty', {
     content: '<b><u>#3 Product Category</u></b><br>Compulsory and Voluntary Responsible Party 2022 Vs 2023 percentage of safety alerts.',
     theme: 'tomato',
     allowHTML: true,

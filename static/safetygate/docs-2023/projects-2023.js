@@ -67,7 +67,7 @@ function updateHrefsWithPrefix(country1) {
       const links = document.querySelectorAll('a:not(.nochange)');
       links.forEach(function(link) {
           var currentHref = link.getAttribute('href');
-          var newSrc = currentHref.replace('all', `${country1}`);
+          var newSrc = currentHref.replace('all-countries', `${country1}`);
           link.setAttribute('href', newSrc);
       });
   }

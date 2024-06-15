@@ -131,63 +131,21 @@
     <li>2023 was exceptional with 3412 alerts issued.</li></ul>
     
     
-<div class="datatable-container" id="AnnualTable">
-  <table class="datatable" style="margin-right:auto;margin-left:0px; width:100% ; border-spacing:10px">
-<tr >
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2005</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2006</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2007</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2008</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2009</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2010</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2011</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2012</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2013</th>
-  <th style="padding: 10px;  text-align: right " ></th>
- </tr>
- <tr>
-  <td style="padding: 20px;  text-align: right " >690</td>
-  <td style="padding: 20px;  text-align: right " >898</td>
-  <td style="padding: 20px;  text-align: right " >1,328</td>
-  <td style="padding: 20px;  text-align: right " >1,527</td>
-  <td style="padding: 20px;  text-align: right " >1,663</td>
-  <td style="padding: 20px;  text-align: right " >1,970</td>
-  <td style="padding: 20px;  text-align: right " >1,539</td>
-  <td style="padding: 20px;  text-align: right " >1,917</td>
-  <td style="padding: 20px;  text-align: right " >2,021</td>
-<td></td>
- </tr>
- <tr >
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2014</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2015</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2016</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2017</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2018</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2019</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2020</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2021</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right " >2022</th>
-  <th style="padding-bottom: 10px; padding-top: 10px; padding-left:0px; padding-right:20px;  text-align: right; font-size: 24px" >2023</th>
- </tr>
- <tr >
-  <td style="padding: 20px;  text-align: right ">2,242</td>
-  <td style="padding: 20px;  text-align: right " >1,852</td>
-  <td style="padding: 20px;  text-align: right " >1,873</td>
-  <td style="padding: 20px;  text-align: right " >2,020</td>
-  <td style="padding: 20px;  text-align: right " >2,047</td>
-  <td style="padding: 20px;  text-align: right " >2,152</td>
-  <td style="padding: 20px;  text-align: right " >2,216</td>
-  <td style="padding: 20px;  text-align: right " >2,104</td>
-  <td style="padding: 20px;  text-align: right " >2,100</td>
-  <td style="padding: 20px;  text-align: right ; font-size:24px" >3,349</td>
- </tr>
+    <div class="datatable-container" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
+      <?php include '../img-2023/table-0-annual_alert_count.php' ?>
+    </div>
 
-</table>
-</div>
+
+    <div class="datatable-container" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
+      <?php include '../img-2023/table-1-annual_alert_count.php' ?>
+    </div>
 
 
 
-<h2 >Annual and Cumulative Alerts</h2>
+<h2 >Annual Alerts Issued - YoY Change </h2>
+<p>2023 saw a 59% increase in the average number of alerts issued in a year, with the total alerts
+issued increasing from 2,100 alerts in 2022 to 3,349 in 2023, an
+increase of 1,249 over the previous year.</p>
 
 <div class="datatable-container" id="all-AnnualCumulative" >
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -202,40 +160,14 @@
           </a>
         </td>
         <td style="text-align:center;" >
-          <A href="https://rodders.me/safetygate/img-2023/all-countries-annual-and-cumulative-alerts-(exc-unknown).png">
-            <img src="https://rodders.me/safetygate/img-2023/all-countries-annual-and-cumulative-alerts-(exc-unknown).png" style='width:100%' alt="Cumulative_Annual_Alerts_Issued" /></a>
-        </td>
+    <a href="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change.png">
+    <img src="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
       </tr>
     </tbody>
   </table>
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h2 >Annual Alerts Issued - YoY Change </h2>
-<p>2023 saw a 59% increase in the average number of alerts issued in a year, with the total alerts
-issued increasing from 2,100 alerts in 2022 to 3,349 in 2023, an
-increase of 1,249 over the previous year.</p>
-
- 
-<div class="datatable-container" id="all-AnnualYoY">
-<table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-<tbody> 
-<tr>
-  <th style="text-align:center;">All Countries</th>
-  <th style="text-align:center;">Excluding Unknown</th>
-</tr> 
-<tr>
-  <td style="text-align:center;" >
-    <a href="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change.png">
-    <img src="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change.png"  ></a></td>
-  <td style="text-align:center;" >
-    <a href="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change-(exc-unknown).png">
-    <img src="https://rodders.me/safetygate/img-2023/all-countries-annual-cumulative-alerts-and-yoy-change-(exc-unknown).png"></a></td>
-</tr>
-</tbody>
-</table>
-<a href="#" class="gototop">Go to Top</a>
-</div>
 
 <h2>Submitting Country</h2>
 
@@ -261,8 +193,8 @@ increase of 1,249 over the previous year.</p>
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td>
-      <a href="https://rodders.me/safetygate/img-2023/all-countries-submitting-country-2022-vs-2023.png">
-        <img src="https://rodders.me/safetygate/img-2023/all-countries-submitting-country-2022-vs-2023.png" ></a>
+      <a href="https://rodders.me/safetygate/img-2023/all-countries-submitting-country-ly-vs-ty.png">
+        <img src="https://rodders.me/safetygate/img-2023/all-countries-submitting-country-ly-vs-ty.png" ></a>
       </td>
     </tr>
   </tbody>
@@ -292,137 +224,9 @@ increase of 1,249 over the previous year.</p>
 </div>
 
 
-<h2>What happened between 2022-2023?</h2>
-
-<H3>European Ban on Lilial in Cosmetics - March 2021</H3>
-<p>2023 was an exception with the introduction of the ban on the chemical <a href="https://en.wikipedia.org/wiki/Lilial">lilial / BMHCA</a> for use in cosmetics on 1st March 2022.</p>
-  <ul><li>In 2023 1,087 safety alerts were issued for products containing BMHCA</li>
-  <li>Around 30% of these were issued to products manufactured in Italy</li></ul> 
-</p>
-<p>The significant increase seen 2023 over 2022 is due to a change in regulations for a Butylphenyl Methylpropional
-(BMHCA, trade name 'Lilial') BMHCA,  a chemical commonly used in cosmetics.</p>
-<p>
-BMHCA is now deemed to be hazardous and unsuitable for use in cosmetic products due to the fact that it is included in so many products.  
-While an individual exposure poses a minimal risk, cumulative exposure from the use of multiple products containing this chemical increases the risk considerably. </p>
-<p>
-It's also worth noting that BMHCA is a fragrance commonly used in household cleaning products, however no guidance has been issued for the it's use in cleaning products at this stage. 
-</p>
-
-<div style="background-color: white; display: inline-block; ">
-<img src="https://rodders.me/safetygate/img-2023/icons/bmhca-molecule.png"><br> BMHCA "Lilial" Molecule</div>
-
-
-<p>
-Since 1 March 2022, butylphenyl methylpropional (BMHCA/'Lilial') is classified as a Carcinogenic, Mutagenic or Reprotoxic (CMR) category 1B substance under the EU and GB Classification, 
-Labelling and Packaging (CLP) Regulations.</p>
-<p>
-This ban affected around 1,100 - 1,200 products (90-95% of the annual increase of (1,249) alerts or 32-35% of all alerts issued (3,349) in 2023), and is the reason for the 
-significant increase seen in the Safety Gate analysis.</p>
-
-<h3>UK and BMHCA</h3>
-<p>
-Article 15 of the UK and EU Cosmetics Regulations requires CMR-classified substances to undergo an
-exemption process to assess whether they can continue to be used as cosmetic ingredients. This regulatory
-process has not yet been completed under the UK Cosmetics Regulation. Therefore, the new EU provisions
-for BMHCA/'Lilial' do not apply in GB. However, a ban is expected in GB on 15 December 2022 (the 'off-
-shelf' date).</p>
-
-<p>While companies have been working towards the deadline of 1 March 2022 for products for both the EU
-and UK markets, as advised by CTPA, as of revision date of this statement, BMHCA/'Lilial' can be legally
-used in cosmetic products in GB until:</p>
-
-<ul><li>15 October 2022, as placing on the market deadline;</li>
-<li>15 December 2022, as making available (off-shelf) deadline.</li></ul>
-
-<p>The Cosmetic, Toiletry and Perfumery Association (CTPA) advised its members to voluntarily remove Lilial from cosmetic products by the end of 2021. 
-  The UK's cosmetic regulation has since been updated to include Lilial in Annex II LIST OF SUBSTANCES PROHIBITED IN COSMETIC PRODUCTS</p>
-
-<h3>What about other markets?</h3>
-
-  <p>Lilial is still permitted for use in cosmetics in other countries outside the EU and the UK.</p>
-
-<h3>Scientific Opinion on BMHCA</h3>
-
-<h4>Does the SCCS consider Butylphenyl methylpropional (p-BMHCA) safe for use as a
-fragrance ingredient in cosmetic leave-on and rinse-off type products in a concentration
-limit(s) according the ones set up by IFRA as reported above?</h4>
-
-<p>On individual product basis, Butylphenyl methylpropional (p-BMHCA) (CAS 80-54-6) with
-alpha-tocopherol at 200 ppm, can be considered safe when used as fragrance ingredient in
-different cosmetic leave-on and rinse-off type products. However, considering the first-tier
-deterministic aggregate exposure, arising from the use of different product types together,
-Butylphenyl methylpropional at the proposed concentrations cannot be considered as safe.</p>
-<p>
-
-  <h4> "first-tier deterministic aggregate exposure" refers to an initial, simplified assessment of total exposure to a particular substance from all sources and routes, using fixed input values for variables.
-    This approach provides a preliminary estimate of exposure that can help identify potential risks and determine whether more detailed, possibly probabilistic, and higher-tier assessments are needed. 
-      It's a conservative approach that aims to ensure safety by not underestimating potential exposure levels, but it might not capture the full variability and uncertainty inherent in real-world exposure scenarios.</h4>
-
-      <p>This Opinion is not applicable to the use of p-BMHCA in any sprayable products that could lead to exposure of the consumer's lung by inhalation.</p>
-
-<h4>Does the SCCS have any further scientific concerns with regard to the use of Butylphenyl
-methylpropional (p-BMHCA) as a fragrance ingredient in cosmetic leave-on and/or rinse-off
-type products?</h4>
-
-<p>Evaluation of this substance by other scientific bodies (e.g. under REACH) should also be
-taken into consideration by the Applicant for potential future assessment of the substance.
-Butylphenyl methylpropional is also used as a fragrance ingredient in some non-cosmetic
-products such as household cleaners and detergents. As no specific exposure data were
-made available to SCCS to assess exposure following these non-cosmetic uses, it was not
-possible to include them in the aggregated exposure scenarios. Therefore, the actual total
-exposure of the consumer may be higher than exposure from cosmetic products alone.</p>
-
-<a href ="https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf">https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf</a>
-
-  <h3>The European Cosmetics Industry</h3>
-  
-  <h4>Cosmetics Country of Product Origin</h4>
-  <div class="datatable-container" id="all-Cosmetics-Coo">
-    <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-    <tbody> 
-    <tr><td>
-  <a href="https://rodders.me/safetygate/img-2023/cosmetics-country-of-origin-2022-vs-2023.png">
-    <img src="https://rodders.me/safetygate/img-2023/cosmetics-country-of-origin-2022-vs-2023.png" ></a>
-    
-  </td>
-  </tr>
-  </tbody>
-  </table>
-  <a href="#" class="gototop">Go to Top</a>
-  </div>
-    <p>It is estimated that the cosmetics and personal care industry brings at least €29 billion in added value to the European economy annually. 
-      €11 billion is contributed directly by the manufacture of cosmetic products and €18 billion indirectly through the supply chain (Eurostat 2015).</p>
-
-    <p>Including direct, indirect and induced economic activity, the industry supports over 3.6 million jobs. 
-      In 2022, over 254,259 people were employed directly, and a further 2.78 million indirectly in the cosmetics value chain.</p>
-      
-    <p>For every 10 workers employed in the European cosmetics and personal care industry, at least two further 
-      jobs are generated in the wider economy as a result of employees spending their wages on goods and services.</p>
-    <p>Source: https://cosmeticseurope.eu/cosmetics-industry/ </p>
-
-<h3>Italy and Cosmetics</h3>
-    <p>Italy represents a significant portion of the European cosmetics and personal care products market, with a value of €11.5 billion. </p>
-      <p>This places Italy among the largest national markets within Europe, following Germany (€14.3 billion) and France (€12.9 billion).</p>
-
-<h3>Top 30 Cosmetics Brands for Safety Alerts </h3>
-
-
-<div class="datatable-container" id="all-Cosmetics-Brands">
-  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-  <tbody> 
-    <tr>
-      <td>
-<a href="https://rodders.me/safetygate/img-2023/top30-cosmetics-brands-2023.png">
-  <img src="https://rodders.me/safetygate/img-2023/top30-cosmetics-brands-2023.png" ></a>
-</td>
-</tr>
-</tbody></table>
-<a href="#" class="gototop">Go to Top</a>
-</div>
-
 <h1>Which countries' products get the most alerts?</h1>
 
-      The following visualisations show the <code>Economic Area of Product Origin</code> with categories defined as: 
+    <p>The following visualisations show the <code>Economic Area of Product Origin</code> with categories defined as: </p>
 
 <p><ul>
   <li><code>EU Countries</code> within Schengen or European Economic Area (Ex Italy for visibility of 2023 alerts)</li>
@@ -433,14 +237,14 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
 
 </p>
 
-<h2>Economic Area of Product origin 2022 Vs 2023 </h2>
+<h2>Economic Area of Product origin Previous Year Vs Current Year </h2>
 
 <div class="datatable-container" id="all-Economic-Area-2022-vs-2023">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
   <tr><td>
-<a href="https://rodders.me/safetygate/img-2023/economic-area-of-product-origin-2022-vs-2023-total-alerts.png">
-  <img src="https://rodders.me/safetygate/img-2023/economic-area-of-product-origin-2022-vs-2023-total-alerts.png" ></a>
+<a href="https://rodders.me/safetygate/img-2023/all-countries-economic-area-of-product-origin-total-alerts-ly-vs-ty-.png">
+  <img src="https://rodders.me/safetygate/img-2023/all-countries-economic-area-of-product-origin-total-alerts-ly-vs-ty-.png" ></a>
   
 </td>
 </tr>
@@ -461,8 +265,8 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
     <tbody> 
       <tr>
         <td>
-          <a href="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-2022-vs-2023-total-alerts.png">
-            <img src="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-2022-vs-2023-total-alerts.png" ></a>
+          <a href="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-total-alerts-ly-vs-ty-.png">
+            <img src="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-total-alerts-ly-vs-ty-.png" ></a>
           </td>
         </tr>
       </tbody>
@@ -478,40 +282,23 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
-      <th style="text-align:center;">All Countries</th>
-      <th style="text-align:center;">Excluding Unknown</th>
+      <th style="text-align:center;">All Countries' of product origin Annual Alerts</th>
+      <th style="text-align:center;">All Countries' of product origin percentage of Alerts issued</th>
     </tr> 
     <tr>
-      <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts.png"><img src="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts.png"  ></a></td>
-      <td style="text-align:center;" ><a href="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts-(exc-unknown).png"><img src="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts-(exc-unknown).png"  ></a></td>
+      <td style="text-align:center;" >
+        <a href="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts.png">
+          <img src="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts.png"  ></a></td>
+          <td style="text-align:center;" >
+        <a href="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts-percentage.png">
+          <img src="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts-percentage.png"  ></a></td>
    </tr>
 </tbody>
 </table>
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
- 
-<h3 >Annual Alerts - Percentage of Total</h3>
 
-<div class="datatable-container" id="all-Coo-Annual-Percentage">
-  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-  <tbody> 
-    <tr>
-      <th style="text-align:center;">All Countries</th>
-      <th style="text-align:center;">Excluding Unknown</th>
-    </tr> 
-    <tr>
-      <td style="text-align:center;" >
-        <a href="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts-percentage.png">
-          <img src="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts-percentage.png"  ></a></td>
-      <td style="text-align:center;" >
-        <a href="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts-percentage-(exc-unknown).png">
-          <img src="https://rodders.me/safetygate/img-2023/all-countries-country-of-origin-annual-alerts-percentage-(exc-unknown).png"  ></a></td>
-  </tr>
-</tbody>
-</table>
-<a href="#" class="gototop">Go to Top</a>
-</div>
 
 
 <h2>Product Categories</h2>
@@ -521,8 +308,8 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
       <tr><td>
-        <a href="https://rodders.me/safetygate/img-2023/all-countries-product-category-2022-vs-2023.png">
-          <img src="https://rodders.me/safetygate/img-2023/all-countries-product-category-2022-vs-2023.png" ></a>
+        <a href="https://rodders.me/safetygate/img-2023/all-countries-product-category-ly-vs-ty.png">
+          <img src="https://rodders.me/safetygate/img-2023/all-countries-product-category-ly-vs-ty.png" ></a>
         </td>
       </tr>
     </tbody>
@@ -567,8 +354,8 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
       <tr><td>
-        <a href="https://rodders.me/safetygate/img-2023/all-countries-risk-category-2022-vs-2023.png">
-          <img src="https://rodders.me/safetygate/img-2023/all-countries-risk-category-2022-vs-2023.png" ></a>
+        <a href="https://rodders.me/safetygate/img-2023/all-countries-risk-category-ly-vs-ty.png">
+          <img src="https://rodders.me/safetygate/img-2023/all-countries-risk-category-ly-vs-ty.png" ></a>
         </td></tr>
       </tbody></table>
           <a href="#" class="gototop">Go to Top</a></div>
@@ -601,8 +388,8 @@ exposure of the consumer may be higher than exposure from cosmetic products alon
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr><td>
-          <a href="https://rodders.me/safetygate/img-2023/all-countries-counterfeit-2022-vs-2023.png">
-            <img src="https://rodders.me/safetygate/img-2023/all-countries-counterfeit-2022-vs-2023.png" ></a></td></tr></tbody></table>
+          <a href="https://rodders.me/safetygate/img-2023/all-countries-counterfeit-ly-vs-ty.png">
+            <img src="https://rodders.me/safetygate/img-2023/all-countries-counterfeit-ly-vs-ty.png" ></a></td></tr></tbody></table>
             <a href="#" class="gototop">Go to Top</a></div>
   
   
@@ -634,8 +421,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td>
-      <a href="https://rodders.me/safetygate/img-2023/all-countries-action-required-2022-vs-2023.png">
-        <img src="https://rodders.me/safetygate/img-2023/all-countries-action-required-2022-vs-2023.png" ></a></td></tr></tbody></table>
+      <a href="https://rodders.me/safetygate/img-2023/all-countries-action-required-ly-vs-ty.png">
+        <img src="https://rodders.me/safetygate/img-2023/all-countries-action-required-ly-vs-ty.png" ></a></td></tr></tbody></table>
         <a href="#" class="gototop">Go to Top</a></div>
 
 
@@ -672,8 +459,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody> 
           <tr><td>
-            <a href="https://rodders.me/safetygate/img-2023/all-countries-responsible-partry-2022-vs-2023.png">
-        <img src="https://rodders.me/safetygate/img-2023/all-countries-responsible-partry-2022-vs-2023.png" ></a>
+            <a href="https://rodders.me/safetygate/img-2023/all-countries-responsible-partry-ly-vs-ty.png">
+        <img src="https://rodders.me/safetygate/img-2023/all-countries-responsible-partry-ly-vs-ty.png" ></a>
       </td></tr></tbody></table>
       <a href="#" class="gototop">Go to Top</a>
     </div>
@@ -930,8 +717,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr><td>
-          <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-submitting-country-2022-vs-2023.png">
-            <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-submitting-country-2022-vs-2023.png" ></a>
+          <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-submitting-country-ly-vs-ty.png">
+            <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-submitting-country-ly-vs-ty.png" ></a>
             </td></tr></tbody></table>
             <a href="#" class="gototop">Go to Top</a>
           </div>
@@ -963,8 +750,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td>
-      <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-2022-vs-2023.png">
-        <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-2022-vs-2023.png" ></a>
+      <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-ly-vs-ty.png">
+        <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-risk-category-ly-vs-ty.png" ></a>
         </td></tr></tbody></table>
         <a href="#" class="gototop">Go to Top</a>
 </div>
@@ -999,8 +786,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody> 
             <tr><td>
-              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png">
-                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-2022-vs-2023.png"  ></a>
+              <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-ly-vs-ty.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-counterfeit-ly-vs-ty.png"  ></a>
               </td></tr></tbody></table>
               <a href="#" class="gototop">Go to Top</a>
             </div>
@@ -1042,8 +829,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <tbody> 
             <tr>
               <td >
-                <a href = "https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-2022-vs-2023.png">
-                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-2022-vs-2023.png"  ></a>
+                <a href = "https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-ly-vs-ty.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-action-required-ly-vs-ty.png"  ></a>
               </td>
             </tr>
           </tbody>
@@ -1081,8 +868,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr><td>
-                <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-2022-vs-2023.png">
-                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-2022-vs-2023.png"  ></a>
+                <a href="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-ly-vs-ty.png">
+                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-0-responsible-party-ly-vs-ty.png"  ></a>
                 </td></tr></tbody></table>
                 <a href="#" class="gototop">Go to Top</a>
         </div>
@@ -1171,8 +958,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr><td>
-            <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-submitting-country-2022-vs-2023.png">
-              <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-submitting-country-2022-vs-2023.png" ></a>
+            <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-submitting-country-ly-vs-ty.png">
+              <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-submitting-country-ly-vs-ty.png" ></a>
               </td></tr>
             </tbody>
           </table>
@@ -1211,8 +998,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody>
       <tr><td>
-        <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-risk-category-2022-vs-2023.png">
-          <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-risk-category-2022-vs-2023.png" ></a>
+        <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-risk-category-ly-vs-ty.png">
+          <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-risk-category-ly-vs-ty.png" ></a>
           </td></tr></tbody></table>
           <a href="#" class="gototop">Go to Top</a>
 </div>
@@ -1250,8 +1037,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
             <tbody>
               <tr>
                 <td>
-                  <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-counterfeit-2022-vs-2023.png">
-                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-counterfeit-2022-vs-2023.png"  >
+                  <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-counterfeit-ly-vs-ty.png">
+                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-counterfeit-ly-vs-ty.png"  >
                   </a>
                 </td>
               </tr>
@@ -1294,8 +1081,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr><td>
-            <a href= "https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-2022-vs-2023.png">
-              <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-2022-vs-2023.png"></a>
+            <a href= "https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-ly-vs-ty.png">
+              <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-action-required-ly-vs-ty.png"></a>
               </td></tr></tbody></table>
               <a href="#" class="gototop">Go to Top</a>
 </div>
@@ -1331,8 +1118,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr><td>
-                <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-2022-vs-2023.png">
-                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-2022-vs-2023.png"  ></a>
+                <a href="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-ly-vs-ty.png">
+                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-1-responsible-party-ly-vs-ty.png"  ></a>
                   </td></tr></tbody></table>
                   <a href="#" class="gototop">Go to Top</a>
 </div>
@@ -1418,8 +1205,8 @@ to enlarge)</td>
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr><td>
-            <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-submitting-country-2022-vs-2023.png">
-              <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-submitting-country-2022-vs-2023.png" ></a>
+            <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-submitting-country-ly-vs-ty.png">
+              <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-submitting-country-ly-vs-ty.png" ></a>
               </td></tr></tbody></table>
               <a href="#" class="gototop">Go to Top</a>
 </div>
@@ -1453,8 +1240,8 @@ to enlarge)</td>
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody>
       <tr><td>
-        <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-risk-category-2022-vs-2023.png">
-        <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-risk-category-2022-vs-2023.png" ></p></a>
+        <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-risk-category-ly-vs-ty.png">
+        <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-risk-category-ly-vs-ty.png" ></p></a>
         </td></tr></tbody></table>
         <a href="#" class="gototop">Go to Top</a>
 </div>
@@ -1487,8 +1274,8 @@ to enlarge)</td>
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr><td>
-                <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-counterfeit-2022-vs-2023.png">
-                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-counterfeit-2022-vs-2023.png"  ></a>
+                <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-counterfeit-ly-vs-ty.png">
+                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-counterfeit-ly-vs-ty.png"  ></a>
 </td></tr></tbody></table>
 <a href="#" class="gototop">Go to Top</a>
 </div>
@@ -1523,8 +1310,8 @@ to enlarge)</td>
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr><td>
-            <a href = "https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-2022-vs-2023.png">
-              <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-2022-vs-2023.png"  ></a>
+            <a href = "https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-ly-vs-ty.png">
+              <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-action-required-ly-vs-ty.png"  ></a>
               </td></tr></tbody></table>
               <a href="#" class="gototop">Go to Top</a>
 </div>
@@ -1561,8 +1348,8 @@ to enlarge)</td>
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr><td>
-                <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-2022-vs-2023.png">
-                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-2022-vs-2023.png"  ></a>
+                <a href="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-ly-vs-ty.png">
+                  <img src="https://rodders.me/safetygate/img-2023/all-countries-product-2-responsible-party-ly-vs-ty.png"  ></a>
                   </td></tr></tbody></table>
                   <a href="#" class="gototop">Go to Top</a>
 </div>

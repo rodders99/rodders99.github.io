@@ -35,7 +35,7 @@ echo '
            </ul>
        </li>
        <li>
-        <a href = "#"><b>2023 Country Report</b></a>
+        <a href = "#"><b>2023 By Country</b></a>
            <ul>
               
                 <li><a href = "eu-safetygate-report-2023-comparison.php?country1=france&country2=germany">2023 Compare Countries</a></li>

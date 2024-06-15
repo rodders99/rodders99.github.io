@@ -6,13 +6,13 @@
 
 
 
-      <th style="text-align:right; min-width: 10%;">Alert submitted by</th>
+      <th style="text-align:right; min-width: 15%;">Alert submitted by</th>
 
-      <th style="text-align:right; min-width: 13%;">2022</th>
+      <th style="text-align:right; min-width: 12%;">2022</th>
 
-      <th style="text-align:right; min-width: 13%;">2023</th>
+      <th style="text-align:right; min-width: 12%;">2023</th>
 
-      <th style="text-align:right; min-width: 13%;">change</th>
+      <th style="text-align:right; min-width: 12%;">change</th>
 
     </tr>
 
