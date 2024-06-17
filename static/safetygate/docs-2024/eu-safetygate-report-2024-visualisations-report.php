@@ -18,6 +18,7 @@
 <body class="exclude-page">
 
 
+
              
               <!-- NAVIGATION MENU-->
  
@@ -43,45 +44,44 @@
       <div class="country">
                  
               <select onchange="window.location.hash=this.value"  class="country">
-                <option value="header-1">EU Safety Gate report</option>
-                <option value="header-3">Total Annual Alerts Issued</option>
-                <option value="header-4">Annual, Cumulative and YoY Change</option>
-                <option value="header-6">Top 3 Product and Risk Categories</option>
-                <option value="header-7">Cosmetics Top the 2024 Charts</option>
-                <option value="header-8">Cosmetics Product Sub Categories</option>
-                <option value="header-10">Cosmetics Top 30 brands</option>
-                <option value="header-12">Submitting Country</option>
-                <option value="header-14">Economic Area of Product Origin</option>
-                <option value="header-18">Country of Product Origin</option>
-                <option value="header-21">Product Categories</option>
-                <option value="header-24">Risk Categories</option>
-                <option value="header-27">Counterfeit</option>
-                <option value="header-30">Action Required</option>
-                <option value="header-33">Responsible Party</option>
-                <option value="header-36">Top 15 Countries Fact Sheets, Annual Alerts, Product & Risk Categories</option>
+              <option value="header-1">EU Safety Gate Visualisations report - 2024 Year to Date</option>
+                <option value="header-6">Top3 Product Category and Risk</option>
+                <option value="header-7">Cosmetics continue to top the charts</option>
+                <option value="header-8">Cosmetic Sub Categories affected</option>
+                <option value="header-9">All Countries</option>
+                <option value="header-10">Top 30 brands for cosmetics safety alerts 2022 - 2024 YTD</option>
+                <option value="header-12">Submitting Country
+                <option value="header-14">Economic Area of Product origin</option>
+                <option value="header-18">Alerts by Country of Product Origin</option>
+                <option value="header-19">Country of Product Origin</option>
+                <option value="header-20">Previous Year Vs Current Year</option>
+                <option value="header-21">Product Category</option>
+                <option value="header-24">Risk Category</option>
+                <option value="header-27">Counterfeit type</option>
+                <option value="header-30">Compulsory / Voluntary Action Required</option>
+                <option value="header-33">Compulsory / Voluntary Responsible Party</option>
+                <option value="header-36">Top 15 countries, fact sheet.</option>
                 <option value="header-37">Top 30 Brands</option>
                 <option value="header-38">Top 3 Product Categories</option>
-                <option value="header-39">#1 - Top Product Category</option>
-                <option value="header-40">#1 - Product Category Annual Cumulative Alerts</option>
-                <option value="header-41">#1 - Product Category Submitting Country</option>
-                <option value="header-42">#1 - Product Category Risk Category</option>
-                <option value="header-43">#1 - Product Category Counterfeit</option>
-                <option value="header-44">#1 - Product Category Action Required / Responsible Party</option>
-                <option value="header-45">#1 - Product Category Top Brands</option>
-                <option value="header-46">#2 - Top Product Category</option>
-                <option value="header-47">#2 - Product Category Annual Cumulative Alerts</option>
-                <option value="header-48">#2 - Product Category Submitting Country</option>
-                <option value="header-49">#2 - Product Category Risk Category</option>
-                <option value="header-50">#2 - Product Category Counterfeit</option>
-                <option value="header-51">#2 - Product Category Action Required / Responsible Party</option>
-                <option value="header-52">#2 - Product Category Top Brands</option>
-                <option value="header-53">#3 - Top Product Category</option>
-                <option value="header-54">#3 - Product Category Annual Cumulative Alerts</option>
-                <option value="header-55">#3 - Product Category Submitting Country</option>
-                <option value="header-56">#3 - Product Category Risk Category</option>
-                <option value="header-57">#3 - Product Category Counterfeit</option>
-                <option value="header-58">#3 - Product Category Action Required / Responsible Party</option>
-                <option value="header-59">#3 - Product Category Top Brands</option>
+                <option value="header-39">#1 - Top 3 Product Categories</option>
+                <option value="header-41">#1 - Submitting Country</option>
+                <option value="header-42">#1 - Risk Category</option>
+                <option value="header-43">#1 - Counterfeit </option>
+                <option value="header-44">#1 - Compulsory / Voluntary Action Required / Responsible Party </option>
+                <option value="header-45">#1 - Top Brands for Safety Alerts</option>
+                <option value="header-46">#2 - Top 3 Product Categories</option>
+                <option value="header-48">#2 - Submitting Country</option>
+                <option value="header-49">#2 - Risk Category</option>
+                <option value="header-50">#2 - Counterfeit </option>
+                <option value="header-51">#2 - Compulsory / Voluntary Action Required / Responsible Party </option>
+                <option value="header-52">#2 - Top Brands for Safety Alerts</option>
+                <option value="header-53">#3 - Top 3 Product Categories</option>
+                <option value="header-54">#3 - Total, Annual and Cumulative Alerts</option>
+                <option value="header-55">#3 - Submitting Country</option>
+                <option value="header-56">#3 - Risk Category</option>
+                <option value="header-57">#3 - Counterfeit </option>
+                <option value="header-58">#3 - Compulsory / Voluntary Action Required </option>
+                <option value="header-59">#3 - Top Brands for Safety Alerts</option>
                 
               </select>
             </div></div>
@@ -118,8 +118,8 @@
       <th style="text-align:left;"><h3>All Countries</h3><p>Comparing alerts issued up to the noted week for each year.</p></th>
       <tr>
         <td style="text-align:center;">
-          <A href="https://rodders.me/safetygate/img-2024/all-countries-ytd-comparison-number-of-alerts-issued.png">
-            <img src="https://rodders.me/safetygate/img-2024/all-countries-ytd-comparison-number-of-alerts-issued.png"  />
+          <A href="https://rodders.me/safetygate/img-2024/number-of-alerts-validated-on-safetygate-from-2005-to-2024.png">
+            <img src="https://rodders.me/safetygate/img-2024/number-of-alerts-validated-on-safetygate-from-2005-to-2024.png"  />
           </a>
         </td>
       
@@ -218,7 +218,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
       </div>
 
  
-<h3 >Submitting Country - 2022 Vs 2023</h3>
+<h3 >Submitting Country - Previous Year Vs Current Year</h3>
 
 <p>Comparing up to the noted week for each year.</p>
 
@@ -320,7 +320,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 <ul><code>Unknown</code> (where the reporting member didn't record the country of origin) and represents 9,173 products 25.8% of the total Alerts issued</ul>
 
 
-<h3 >Country of Product Origin</h3> 
+<h3 >Previous Year Vs Current Year</h3> 
 
 
 
@@ -369,7 +369,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 
 <h2 >Product Category</h2>
 
-  <h3 >Alerts by Product Category 2023 Vs 2024</h3>
+  <h3 >Alerts by Product Category Previous Year Vs Current Year</h3>
   <div class="datatable-container" id="all-product-category-LYvsTY">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
@@ -409,7 +409,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 
 <h2 >Risk Category</h2>
 
-  <h3 >Alerts by Risk Category 2022 Vs 2023</h3>
+  <h3 >Alerts by Risk Category Previous Year Vs Current Year</h3>
   <div class="datatable-container" id="all-risk-category-LYvsTY">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
@@ -447,7 +447,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 <h2 >Counterfeit type</h2>
 
 
-    <h3 >Alerts by Counterfeit type 2022 Vs 2023</h3>
+    <h3 >Alerts by Counterfeit type Previous Year Vs Current Year</h3>
     <div class="datatable-container" id="all-counterfeit-LYvsTY">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
@@ -994,8 +994,8 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 <tbody>
 <tr >
 <td style="text-align: center;">
-  <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-top-30-brands-for-safety-alerts-ty.png">
- <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-top-30-brands-for-safety-alerts-ty.png"></td>
+  <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-top-30-brands-for-safety-alerts.png">
+ <img src="https://rodders.me/safetygate/img-2024/all-countries-product-0-top-30-brands-for-safety-alerts.png"></td>
 </tr>
 </tbody>
 </table>
@@ -1184,8 +1184,8 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 <tbody>
 <tr >
 <td style="text-align: center;">
-  <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-top-30-brands-for-safety-alerts-ty.png">
- <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-top-30-brands-for-safety-alerts-ty.png">
+  <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-top-30-brands-for-safety-alerts.png">
+ <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-top-30-brands-for-safety-alerts.png">
 </td>
 </tr>
 </tbody>
@@ -1364,8 +1364,8 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 <tbody>
 <tr >
 <td style="text-align: center;">
-  <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-top-30-brands-for-safety-alerts-ty.png">
- <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-top-30-brands-for-safety-alerts-ty.png"></td>
+  <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-top-30-brands-for-safety-alerts.png">
+ <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-top-30-brands-for-safety-alerts.png"></td>
 </tr>
 </tbody>
 </table>
@@ -1375,7 +1375,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
 
 
 
-<script src="/scripts/projects.js"> </script>
+<script src="projects-2024.js"> </script>
 
 
 
@@ -1395,7 +1395,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
     
     tippy('#all-AnnualCumulative', {content: 'Cumulative and annual safety alerts issued Worldwide.', theme: 'tomato'});
     tippy('#all-AnnualYoY', {content: 'Cumulative and annual YoY change safety alerts issued Worldwide.', theme: 'tomato'});
-    tippy('#all-AnnualGeoplot', {content: 'Submitting Country 2022 Vs 2023.', theme: 'tomato'});
+    tippy('#all-AnnualGeoplot', {content: 'Submitting Country Previous Year Vs Current Year.', theme: 'tomato'});
     
     tippy('#all-submitting-country-LYvsTY', {content: 'Submitting Country Last Year Vs This Year, YTD percentage of Total safety alerts.', theme: 'tomato'});
     tippy('#all-submitting-country-total-Percentage', {content: 'Submitting Country Percentage of Total.', theme: 'tomato'});
@@ -1449,7 +1449,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-0-submitting-country-LYvsTY', 
-        {content: '<b><u>#1 Product Category</u></b><br>2022 Vs 20232 Submitting Country as percentage of total safety alerts issued.', 
+        {content: '<b><u>#1 Product Category</u></b><br>Previous Year Vs Current Year2 Submitting Country as percentage of total safety alerts issued.', 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-0-submitting-country-Annual-Percentage', 
@@ -1457,7 +1457,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-0-risk-category-LYvsTY', 
-        {content: '<b><u>#1 Product Category</u></b><br>2022 Vs 20232 Risk Category as percentage of total safety alerts issued.', 
+        {content: '<b><u>#1 Product Category</u></b><br>Previous Year Vs Current Year2 Risk Category as percentage of total safety alerts issued.', 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-0-risk-category-Annual-Percentage', 
@@ -1498,7 +1498,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-1-submitting-country-LYvsTY', 
-        {content: '<b><u>#2 Product Category</u></b><br>2022 Vs 20232 Submitting Country as percentage of total safety alerts issued.', 
+        {content: '<b><u>#2 Product Category</u></b><br>Previous Year Vs Current Year2 Submitting Country as percentage of total safety alerts issued.', 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-1-submitting-country-Annual-Percentage', 
@@ -1506,7 +1506,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-1-risk-category-LYvsTY', 
-        {content: '<b><u>#2 Product Category</u></b><br>2022 Vs 20232 Risk Category as percentage of total safety alerts issued.', 
+        {content: '<b><u>#2 Product Category</u></b><br>Previous Year Vs Current Year2 Risk Category as percentage of total safety alerts issued.', 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-1-risk-category-Annual-Percentage', 
@@ -1548,7 +1548,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-2-submitting-country-LYvsTY', 
-        {content: '<b><u>#3 Product Category</u></b><br>2022 Vs 20232 Submitting Country as percentage of total safety alerts issued.', 
+        {content: '<b><u>#3 Product Category</u></b><br>Previous Year Vs Current Year2 Submitting Country as percentage of total safety alerts issued.', 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-2-submitting-country-Annual-Percentage', 
@@ -1556,7 +1556,7 @@ issued increasing from 748 alerts in 2023 to 943 so far in 2024, an increase of 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-2-risk-category-LYvsTY', 
-        {content: '<b><u>#3 Product Category</u></b><br>2022 Vs 20232 Risk Category as percentage of total safety alerts issued.', 
+        {content: '<b><u>#3 Product Category</u></b><br>Previous Year Vs Current Year2 Risk Category as percentage of total safety alerts issued.', 
         theme: 'tomato', allowHTML: true,});
 
     tippy('#all-product-cat-2-risk-category-Annual-Percentage', 

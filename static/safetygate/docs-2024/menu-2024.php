@@ -30,8 +30,8 @@ echo '
            <ul>
             <li><a href = "/safetygate/docs-2023/eu-safetygate-report-2023-summary-report.php">2023 Annual Safety Alerts Report Summary</a></li>
             <li><a href = "/safetygate/docs-2023/eu-safetygate-report-2023-visualisations-report.php">2023 Comprehensive Data Visualisations</a></li>
-            <li><a href = "eu-safetygate-report-2023-annual-report.php"><b>2024 Annual Safety Alerts Report Summary</a></b></li>
-            <li><a href = "eu-safetygate-report-2024-visulisations-report.php"><b>2024 Comprehensive Data Visualisations</b></a></li>               
+            <li><a href = "eu-safetygate-report-2024-summary-report.php"><b>2024 Annual Safety Alerts Report Summary</a></b></li>
+            <li><a href = "eu-safetygate-report-2024-visualisations-report.php"><b>2024 Comprehensive Data Visualisations</b></a></li>               
            </ul>
        </li>
        <li>

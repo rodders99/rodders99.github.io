@@ -46,7 +46,26 @@ function generateIDs() {
    // container.appendChild(toc);
 }
 
+function generateToC() {
+    const toc = document.createElement('ul');
+    const container = document.getElementById('tableOfContents');
+    container.innerHTML = ''; // Clear previous ToC content
+    document.querySelectorAll('h1, h2, h3').forEach((header, index) => {
+        const anchor = `header-${index}`;
+        header.id = anchor;
 
+        const listItem = document.createElement('li');
+        listItem.className = header.tagName.toLowerCase();
+        const link = document.createElement('a');
+        link.href = `#${anchor}`;
+        link.textContent = header.textContent;
+        listItem.appendChild(link);
+
+        toc.appendChild(listItem);
+    });
+
+   container.appendChild(toc);
+}
 
 
 function updateImageSources(country1) {
@@ -116,6 +135,7 @@ function capitalizeFirstLetter(string) {
   
 async function updateContent() {
     // var country1 = getUrlParameter('country1');
+    
     const country = capitalizeFirstLetter(country1);
     if (!document.body.classList.contains("exclude-page")) {
         await updateImageSources(country1);
@@ -125,19 +145,21 @@ async function updateContent() {
 
     }        
     await updateHeadingsWithPrefix(country);
+    //await generateToC();
     await generateIDs();
     // Await more updates if necessary
     
-    }
+}
 
 
 document.addEventListener("DOMContentLoaded", function() {
-        
+    
     
     updateContent();
     setTimeout(function() {
         generateIDs(); // Called after all updates are done
     }, 1000);
+        //generateToC();
     
     // function openNav() {
     //     document.getElementById("mySidenav").style.width = "400";

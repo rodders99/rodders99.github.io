@@ -25,12 +25,12 @@ echo '
           </ul>
       </li>
        <li>
-        <a href = "#"><b>Report Year</b></a>
+        <a href = "#"><b>Reports</b></a>
            <ul>
             <li><a href = "eu-safetygate-report-2023-summary-report.php"><b>2023 - Annual Safety Alerts Summary Report for 2023</b></a></li>
             <li><a href = "eu-safetygate-report-2023-visualisations-report.php"><b>2023 - Comprehensive Visualisation Report of Safety Alerts for 2005 - 2023</b></a></li>
             <li><a href = "/safetygate/docs-2024/eu-safetygate-report-2024-summary-report.php">2024 - Annual Safety Alerts Summary Report for 2024 YTD</a></li>
-            <li><a href = "/safetygate/docs-2024/eu-safetygate-report-2024-detail-2024.php">20224 - Comprehensive Visualisation Report of Safety Alerts for 2005 - 2024</a></li>
+            <li><a href = "/safetygate/docs-2024/eu-safetygate-report-2024-visualisations-report.php">2024 - Comprehensive Visualisation Report of Safety Alerts for 2005 - 2024</a></li>
                
            </ul>
        </li>
