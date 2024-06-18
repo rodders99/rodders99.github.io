@@ -38,27 +38,27 @@
 
 
 
-      <td style="text-align:right;">16</td>
+      <td style="text-align:right;">3</td>
 
-      <td style="text-align:right;">38</td>
+      <td style="text-align:right;">9</td>
 
-      <td style="text-align:right;">76</td>
+      <td style="text-align:right;">20</td>
 
-      <td style="text-align:right;">53</td>
+      <td style="text-align:right;">26</td>
 
-      <td style="text-align:right;">71</td>
+      <td style="text-align:right;">39</td>
 
-      <td style="text-align:right;">60</td>
+      <td style="text-align:right;">22</td>
 
-      <td style="text-align:right;">100</td>
+      <td style="text-align:right;">47</td>
 
-      <td style="text-align:right;">71</td>
+      <td style="text-align:right;">33</td>
 
-      <td style="text-align:right;">92</td>
+      <td style="text-align:right;">44</td>
 
-      <td style="text-align:right;">73</td>
+      <td style="text-align:right;">35</td>
 
-      <td style="text-align:right;">46</td>
+      <td style="text-align:right;">22</td>
 
     </tr>
 

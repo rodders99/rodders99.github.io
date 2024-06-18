@@ -164,18 +164,10 @@ function redirectToComparison() {
 
 
 updateContentCompare();
-setTimeout(function() {
-    //generateToC(); // Called after all updates are done
-    generateIDs(); // Called after all updates are done
-}, 1000);
+// setTimeout(function() {
+//     //generateToC(); // Called after all updates are done
+//     generateIDs(); // Called after all updates are done
+// }, 1000);
 
 
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "350px";
-    }
-    
-    /* Set the width of the side navigation to 0 */
-    function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    } 

@@ -146,7 +146,7 @@ async function updateContent() {
     }        
     await updateHeadingsWithPrefix(country);
     //await generateToC();
-    await generateIDs();
+    //await generateIDs();
     // Await more updates if necessary
     
 }
@@ -156,10 +156,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
     
     updateContent();
-    setTimeout(function() {
-        generateIDs(); // Called after all updates are done
-    }, 1000);
-        //generateToC();
+    // setTimeout(function() {
+    //     // Called after all updates are done
+    //     generateIDs(); 
+    // }, 1000);
+    //generateToC();
     
     // function openNav() {
     //     document.getElementById("mySidenav").style.width = "400";

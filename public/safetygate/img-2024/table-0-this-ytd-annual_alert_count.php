@@ -38,27 +38,27 @@
 
 
 
-      <td style="text-align:right;">161</td>
+      <td style="text-align:right;">233</td>
 
-      <td style="text-align:right;">209</td>
+      <td style="text-align:right;">317</td>
 
-      <td style="text-align:right;">333</td>
+      <td style="text-align:right;">504</td>
 
-      <td style="text-align:right;">343</td>
+      <td style="text-align:right;">589</td>
 
-      <td style="text-align:right;">520</td>
+      <td style="text-align:right;">760</td>
 
-      <td style="text-align:right;">478</td>
+      <td style="text-align:right;">863</td>
 
-      <td style="text-align:right;">342</td>
+      <td style="text-align:right;">517</td>
 
-      <td style="text-align:right;">507</td>
+      <td style="text-align:right;">820</td>
 
-      <td style="text-align:right;">436</td>
+      <td style="text-align:right;">661</td>
 
-      <td style="text-align:right;">605</td>
+      <td style="text-align:right;">910</td>
 
-      <td style="text-align:right;">498</td>
+      <td style="text-align:right;">804</td>
 
     </tr>
 

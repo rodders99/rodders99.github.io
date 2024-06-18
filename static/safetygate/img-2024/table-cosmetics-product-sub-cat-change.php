@@ -26,11 +26,11 @@
 
       <td style="text-align: right">Perfume/ Aftershave</td>
 
-      <td style="text-align: right">502</td>
+      <td style="text-align: right">147</td>
 
       <td style="text-align: right">111</td>
 
-      <td style="text-align: right">-77.9%</td>
+      <td style="text-align: right">-24.5%</td>
 
     </tr>
 
@@ -40,11 +40,11 @@
 
       <td style="text-align: right">Soap Products</td>
 
-      <td style="text-align: right">202</td>
+      <td style="text-align: right">46</td>
 
       <td style="text-align: right">130</td>
 
-      <td style="text-align: right">-35.6%</td>
+      <td style="text-align: right">182.6%</td>
 
     </tr>
 
@@ -54,11 +54,11 @@
 
       <td style="text-align: right">Hair-Care Products</td>
 
-      <td style="text-align: right">87</td>
+      <td style="text-align: right">26</td>
 
       <td style="text-align: right">84</td>
 
-      <td style="text-align: right">-3.4%</td>
+      <td style="text-align: right">223.1%</td>
 
     </tr>
 
@@ -68,11 +68,11 @@
 
       <td style="text-align: right">Moisturiser</td>
 
-      <td style="text-align: right">77</td>
+      <td style="text-align: right">30</td>
 
       <td style="text-align: right">42</td>
 
-      <td style="text-align: right">-45.5%</td>
+      <td style="text-align: right">40.0%</td>
 
     </tr>
 
@@ -82,39 +82,11 @@
 
       <td style="text-align: right">Deodorant Products</td>
 
-      <td style="text-align: right">89</td>
+      <td style="text-align: right">32</td>
 
       <td style="text-align: right">27</td>
 
-      <td style="text-align: right">-69.7%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Skin-Lightening Products</td>
-
-      <td style="text-align: right">28</td>
-
-      <td style="text-align: right">4</td>
-
-      <td style="text-align: right">-85.7%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Make-up Products</td>
-
-      <td style="text-align: right">18</td>
-
-      <td style="text-align: right">4</td>
-
-      <td style="text-align: right">-77.8%</td>
+      <td style="text-align: right">-15.6%</td>
 
     </tr>
 
@@ -136,13 +108,27 @@
 
 
 
-      <td style="text-align: right">Other</td>
+      <td style="text-align: right">Make-up Products</td>
 
-      <td style="text-align: right">17</td>
+      <td style="text-align: right">11</td>
 
-      <td style="text-align: right">3</td>
+      <td style="text-align: right">4</td>
 
-      <td style="text-align: right">-82.4%</td>
+      <td style="text-align: right">-63.6%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Skin-Lightening Products</td>
+
+      <td style="text-align: right">9</td>
+
+      <td style="text-align: right">4</td>
+
+      <td style="text-align: right">-55.6%</td>
 
     </tr>
 
@@ -152,11 +138,25 @@
 
       <td style="text-align: right">Skin-Care Products</td>
 
-      <td style="text-align: right">13</td>
+      <td style="text-align: right">5</td>
 
       <td style="text-align: right">6</td>
 
-      <td style="text-align: right">-53.8%</td>
+      <td style="text-align: right">20.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Wet Wipes</td>
+
+      <td style="text-align: right">0</td>
+
+      <td style="text-align: right">7</td>
+
+      <td style="text-align: right">-</td>
 
     </tr>
 

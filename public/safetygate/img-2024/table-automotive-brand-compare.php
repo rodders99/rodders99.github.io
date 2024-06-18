@@ -26,11 +26,11 @@
 
       <td style="text-align: right">Mercedes-Benz</td>
 
-      <td style="text-align: right">40</td>
+      <td style="text-align: right">22</td>
 
       <td style="text-align: right">24</td>
 
-      <td style="text-align: right">-40.0%</td>
+      <td style="text-align: right">9.1%</td>
 
     </tr>
 
@@ -40,163 +40,9 @@
 
       <td style="text-align: right">Bmw</td>
 
-      <td style="text-align: right">25</td>
-
-      <td style="text-align: right">14</td>
-
-      <td style="text-align: right">-44.0%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Citroen</td>
-
-      <td style="text-align: right">21</td>
-
-      <td style="text-align: right">7</td>
-
-      <td style="text-align: right">-66.7%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Ford</td>
-
-      <td style="text-align: right">18</td>
-
       <td style="text-align: right">10</td>
 
-      <td style="text-align: right">-44.4%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Lexus</td>
-
-      <td style="text-align: right">22</td>
-
-      <td style="text-align: right">4</td>
-
-      <td style="text-align: right">-81.8%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Opel</td>
-
-      <td style="text-align: right">17</td>
-
-      <td style="text-align: right">3</td>
-
-      <td style="text-align: right">-82.4%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Jaguar Land Rover</td>
-
-      <td style="text-align: right">16</td>
-
-      <td style="text-align: right">3</td>
-
-      <td style="text-align: right">-81.2%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Vw</td>
-
-      <td style="text-align: right">13</td>
-
-      <td style="text-align: right">6</td>
-
-      <td style="text-align: right">-53.8%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Renault</td>
-
-      <td style="text-align: right">8</td>
-
-      <td style="text-align: right">9</td>
-
-      <td style="text-align: right">12.5%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Peugeot</td>
-
-      <td style="text-align: right">13</td>
-
-      <td style="text-align: right">3</td>
-
-      <td style="text-align: right">-76.9%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Hyundai</td>
-
-      <td style="text-align: right">7</td>
-
-      <td style="text-align: right">7</td>
-
-      <td style="text-align: right">0.0%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Kia</td>
-
-      <td style="text-align: right">9</td>
-
-      <td style="text-align: right">3</td>
-
-      <td style="text-align: right">-66.7%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Porsche</td>
-
-      <td style="text-align: right">5</td>
-
-      <td style="text-align: right">7</td>
+      <td style="text-align: right">14</td>
 
       <td style="text-align: right">40.0%</td>
 
@@ -206,27 +52,13 @@
 
 
 
-      <td style="text-align: right">Honda</td>
-
-      <td style="text-align: right">6</td>
-
-      <td style="text-align: right">5</td>
-
-      <td style="text-align: right">-16.7%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Fiat</td>
+      <td style="text-align: right">Ford</td>
 
       <td style="text-align: right">8</td>
 
-      <td style="text-align: right">1</td>
+      <td style="text-align: right">10</td>
 
-      <td style="text-align: right">-87.5%</td>
+      <td style="text-align: right">25.0%</td>
 
     </tr>
 
@@ -234,13 +66,181 @@
 
 
 
-      <td style="text-align: right">Volvo</td>
+      <td style="text-align: right">Citroen</td>
+
+      <td style="text-align: right">11</td>
 
       <td style="text-align: right">7</td>
 
+      <td style="text-align: right">-36.4%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Lexus</td>
+
+      <td style="text-align: right">9</td>
+
+      <td style="text-align: right">4</td>
+
+      <td style="text-align: right">-55.6%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Vw</td>
+
+      <td style="text-align: right">7</td>
+
+      <td style="text-align: right">6</td>
+
+      <td style="text-align: right">-14.3%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Opel</td>
+
+      <td style="text-align: right">8</td>
+
+      <td style="text-align: right">3</td>
+
+      <td style="text-align: right">-62.5%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Hyundai</td>
+
+      <td style="text-align: right">3</td>
+
+      <td style="text-align: right">7</td>
+
+      <td style="text-align: right">133.3%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Renault</td>
+
       <td style="text-align: right">1</td>
 
-      <td style="text-align: right">-85.7%</td>
+      <td style="text-align: right">9</td>
+
+      <td style="text-align: right">800.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Peugeot</td>
+
+      <td style="text-align: right">6</td>
+
+      <td style="text-align: right">3</td>
+
+      <td style="text-align: right">-50.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Porsche</td>
+
+      <td style="text-align: right">2</td>
+
+      <td style="text-align: right">7</td>
+
+      <td style="text-align: right">250.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Kia</td>
+
+      <td style="text-align: right">5</td>
+
+      <td style="text-align: right">3</td>
+
+      <td style="text-align: right">-40.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Honda</td>
+
+      <td style="text-align: right">2</td>
+
+      <td style="text-align: right">5</td>
+
+      <td style="text-align: right">150.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Jaguar Land Rover</td>
+
+      <td style="text-align: right">4</td>
+
+      <td style="text-align: right">3</td>
+
+      <td style="text-align: right">-25.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Mazda</td>
+
+      <td style="text-align: right">1</td>
+
+      <td style="text-align: right">4</td>
+
+      <td style="text-align: right">300.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Audi</td>
+
+      <td style="text-align: right">3</td>
+
+      <td style="text-align: right">2</td>
+
+      <td style="text-align: right">-33.3%</td>
 
     </tr>
 
@@ -250,7 +250,7 @@
 
       <td style="text-align: right">Ds</td>
 
-      <td style="text-align: right">8</td>
+      <td style="text-align: right">4</td>
 
       <td style="text-align: right">0</td>
 
@@ -262,41 +262,41 @@
 
 
 
-      <td style="text-align: right">Audi</td>
+      <td style="text-align: right">Suzuki</td>
 
-      <td style="text-align: right">6</td>
+      <td style="text-align: right">1</td>
+
+      <td style="text-align: right">3</td>
+
+      <td style="text-align: right">200.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Triumph</td>
 
       <td style="text-align: right">2</td>
 
+      <td style="text-align: right">2</td>
+
+      <td style="text-align: right">0.0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Volvo</td>
+
+      <td style="text-align: right">3</td>
+
+      <td style="text-align: right">1</td>
+
       <td style="text-align: right">-66.7%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Jeep</td>
-
-      <td style="text-align: right">6</td>
-
-      <td style="text-align: right">1</td>
-
-      <td style="text-align: right">-83.3%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Nissan</td>
-
-      <td style="text-align: right">6</td>
-
-      <td style="text-align: right">1</td>
-
-      <td style="text-align: right">-83.3%</td>
 
     </tr>
 

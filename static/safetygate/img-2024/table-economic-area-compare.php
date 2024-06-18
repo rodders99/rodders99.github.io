@@ -26,11 +26,11 @@
 
       <td style="text-align: right">China</td>
 
-      <td style="text-align: right">1,166</td>
+      <td style="text-align: right">566</td>
 
       <td style="text-align: right">712</td>
 
-      <td style="text-align: right">-38.9%</td>
+      <td style="text-align: right">25.8%</td>
 
     </tr>
 
@@ -40,11 +40,11 @@
 
       <td style="text-align: right">EU Countries</td>
 
-      <td style="text-align: right">1,270</td>
+      <td style="text-align: right">485</td>
 
       <td style="text-align: right">576</td>
 
-      <td style="text-align: right">-54.6%</td>
+      <td style="text-align: right">18.8%</td>
 
     </tr>
 
@@ -54,11 +54,11 @@
 
       <td style="text-align: right">Outside EU</td>
 
-      <td style="text-align: right">809</td>
+      <td style="text-align: right">332</td>
 
       <td style="text-align: right">346</td>
 
-      <td style="text-align: right">-57.2%</td>
+      <td style="text-align: right">4.2%</td>
 
     </tr>
 

@@ -15,8 +15,7 @@
 
 </head>
 
-<div>
-   <!-- class="exclude-page"> -->
+<body class="exclude-page"> 
 
 <!-- NAVIGATION MENU-->
 
@@ -38,46 +37,45 @@
               <div class="country">
 
               <select onchange="window.location.hash=this.value" class="country">
-              <option value="header-2">Annual Alerts</a>
-<option value="header-5">Submitting Country</a>
-<option value="header-6">Map Plot Previous Year Vs Current Year</a>
-<option value="header-9">Which countries' products get the most alerts?</a>
-<option value="header-10">Economic Area of Product origin Previous Year Vs Current Year </a>
-<option value="header-11">Country of Product Origin</a>
-<option value="header-12">Annual Alerts</a>
-<option value="header-13">Product Categories</a>
-<option value="header-16">Risk Category</a>
-<option value="header-19">Counterfeit type</a>
-<option value="header-22">Action Required</a>
-<option value="header-25">Responsible Party</a>
-<option value="header-28">Top 15 Countries - Key Fact sheets</a>
-<option value="header-29">Cumulative, Annual and YoY change / Top3 Categories (Risk/Product)</a>
-<option value="header-30">Top 30 Worldwide brands for Safety Alerts</a>
-<option value="header-32">Top 3 Worldwide Product Categories</a>
-<option value="header-33">#1 - Top 3 Product Categories</a>
-<option value="header-34">#1 - Total, Annual and Cumulative Alerts</a>
-<option value="header-35">#1 - Submitting Country</a>
-<option value="header-36">#1 - Risk Category</a>
-<option value="header-37">#1 - Counterfeit </a>
-<option value="header-39">#1 - Compulsory / Voluntary Action Required</a>
-<option value="header-40">#1 - Compulsory / Voluntary Responsible Party</a>
-<option value="header-41">#1 - Top 30 Brands for Safety Alerts</a>
-<option value="header-42">#2 - Top 3 Product Categories</a>
-<option value="header-43">#2 - Total, Annual and Cumulative Alerts</a>
-<option value="header-44">#2 - Submitting Country</a>
-<option value="header-45">#2 - Risk Category</a>
-<option value="header-46">#2 - Counterfeit </a>
-<option value="header-47">#2 - Compulsory / Voluntary Action Required</a>
-<option value="header-48">#2 - Compulsory / Voluntary Responsible Party</a>
-<option value="header-49">#2 - Top Brands for Safety Alerts</a>
-<option value="header-50">#3 - Top 3 Product Categories</a>
-<option value="header-51">#3 - Total, Annual and Cumulative Alerts</a>
-<option value="header-52">#3 - Submitting Country</a>
-<option value="header-53">#3 - Risk Category</a>
-<option value="header-54">#3 - Counterfeit </a>
-<option value="header-55">#3 - Compulsory / Voluntary Action Required </a>
-<option value="header-56">#3 - Compulsory / Voluntary Responsible Party</a>
-<option value="header-57">#3 - Top Brands for Safety Alerts</a></li></ul>
+              <option value="Annual Alerts">Annual Alerts</option>
+              <option value="Submitting Country">Submitting Country</option>
+              <option value="Map Plot">Map Plot Previous Year Vs Current Year</option>
+              <option value="Which countries">Which countries' products get the most alerts?</option>
+              <option value="economic area">&nbsp;&nbsp;&nbsp;Economic Area of Product origin Previous Year Vs Current Year </option>
+              <option value="coo">&nbsp;&nbsp;&nbsp;Country of Product Origin</option>
+              <option value="coo_annual">&nbsp;&nbsp;&nbsp;Annual Alerts</option>
+              <option value="Product Categories">Product Categories</option>
+              <option value="risk">Risk Category</option>
+              <option value="counterfeit">Counterfeit type</option>
+              <option value="action">Action Required</option>
+              <option value="responsible">Responsible Party</option>
+              <option value="top_30_brands">Top 30 Worldwide brands for Safety Alerts</option>
+              <option value="all-top15-top3s">Top 15 Countries - Key Fact sheets</option>
+              <option value="top3">Top 3 Worldwide Product Categories</option>
+              <option value="top1_">#1 - Top 3 Product Categories</option>
+              <option value="top1_annual">&nbsp;&nbsp;&nbsp;#1 - Total, Annual and Cumulative Alerts</option>
+              <option value="top1_submitting">&nbsp;&nbsp;&nbsp;#1 - Submitting Country</option>
+              <option value="top1_risk">&nbsp;&nbsp;&nbsp;#1 - Risk Category</option>
+              <option value="top1_counterfeit">&nbsp;&nbsp;&nbsp;#1 - Counterfeit </option>
+              <option value="top1_action">&nbsp;&nbsp;&nbsp;#1 - Compulsory / Voluntary Action Required</option>
+              <option value="top1_responsible">&nbsp;&nbsp;&nbsp;#1 - Compulsory / Voluntary Responsible Party</option>
+              <option value="top1_brands">&nbsp;&nbsp;&nbsp;#1 - Top 30 Brands for Safety Alerts</option>
+              <option value="top2_">#2 - Top 3 Product Categories</option>
+              <option value="top2_annual">&nbsp;&nbsp;&nbsp;#2 - Total, Annual and Cumulative Alerts</option>
+              <option value="top2_submitting">&nbsp;&nbsp;&nbsp;#2 - Submitting Country</option>
+              <option value="top2_risk">&nbsp;&nbsp;&nbsp;#2 - Risk Category</option>
+              <option value="top2_counterfeit">&nbsp;&nbsp;&nbsp;#2 - Counterfeit </option>
+              <option value="top2_action">&nbsp;&nbsp;&nbsp;#2 - Compulsory / Voluntary Action Required</option>
+              <option value="top2_responsible">&nbsp;&nbsp;&nbsp;#2 - Compulsory / Voluntary Responsible Party</option>
+              <option value="top2_brands">&nbsp;&nbsp;&nbsp;#2 - Top Brands for Safety Alerts</option>
+              <option value="top3_">#3 - Top 3 Product Categories</option>
+              <option value="top3_annual">&nbsp;&nbsp;&nbsp;#3 - Total, Annual and Cumulative Alerts</option>
+              <option value="top3_submitting">&nbsp;&nbsp;&nbsp;#3 - Submitting Country</option>
+              <option value="top3_risk">&nbsp;&nbsp;&nbsp;#3 - Risk Category</option>
+              <option value="top3_counterfeit">&nbsp;&nbsp;&nbsp;#3 - Counterfeit </option>
+              <option value="top3_action">&nbsp;&nbsp;&nbsp;#3 - Compulsory / Voluntary Action Required </option>
+              <option value="top3_responsible">&nbsp;&nbsp;&nbsp;#3 - Compulsory / Voluntary Responsible Party</option>
+              <option value="top3_brands">&nbsp;&nbsp;&nbsp;#3 - Top Brands for Safety Alerts</option>
 
                 
               </select>
@@ -87,14 +85,37 @@
     <h1 class="nochange">EU Safety Gate Visualisations report</h1>
     <p><img src="https://rodders.me/safetygate/img-2023/icons/Safety_Gate_Logo.png" style="width:50%"></p>
 
-<p>The Visual Report [Year] compiles a detailed collection of visualisations depicting the safety alerts issued for non-food products by the 
+    <p>This report series compiles a detailed collection of visualisations depicting the safety alerts issued for non-food products by the 
   European Union. Featuring around 1,100 meticulously crafted matplotlib plots, this report offers an in-depth visual analysis of the total alerts, 
   allowing readers to easily interpret complex data trends, hazard types, and affected product categories. It serves as a valuable resource for those 
   seeking to understand the broader patterns and specifics of safety alerts through a graphical representation.</p>
 
+  <p>There are four reports in the series</p>
+
+  <div class="datatable-container">
+  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+  <tbody> 
+    <tr><td><a href = "/safetygate/docs-2023/eu-safetygate-report-2023-summary-report.php">Summary Report</a></td>
+        <td>A summary for the year to date (comparing up to the same week number for each year) or for the total year </td>
+      </tr>
+      <tr><td><a href = "/safetygate/docs-2023/eu-safetygate-report-2023-visualisations-report.php">Visualisations Report</a></td>
+        <td>A comprehensive suite of visualisation for the year to date (comparing up to the same week number for each year) or for the total year </td>
+      </tr>
+      <tr><td><a href = "/safetygate/docs-2023/eu-safetygate-report-2023-country.php?country1=china">Country Report</a></td>
+        <td>Covering the top 15 countries of product origin, this report details 94 visualisation for each country, covering the main topics 
+          of the Safety Gate data.</td>
+      </tr>
+      <tr><td><a href = "/safetygate/docs-2023/eu-safetygate-report-2023-comparison.php?country1=france&country2=germany">Country Comparison Report</a></td>
+        <td>This report compares two countries, covering the top 15 countries of product origin, this report visualisations 
+          cover the main topics of the Safety Gate data for each country.</td>
+      </tr>
+      </tbody>
+      </table>
+      </div>
+
     <!-- <div id="tableOfContents"></div> -->
     
-    <h2>Annual Alerts</h2>
+    <h2 id="Annual Alerts">Annual Alerts</h2>
 <div class="datatable-container">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -158,16 +179,16 @@ increase of 1,249 over the previous year.</p>
 </div>
 
 
-<h2>Submitting Country</h2>
+<h2 id="Submitting Country">Submitting Country</h2>
 
 <p>The country that submitted the safety alert.</p>
 
-<h3 >Map Plot Previous Year Vs Current Year</h3>
+<h3 id="Map Plot">Map Plot Previous Year Vs Current Year</h3>
 <div class="datatable-container" id="all-AnnualGeoplot">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
-      <tr><td>  <a href="https://rodders.me/safetygate/img-2023/submitting-country-geo-plot.png">
-  <img src="https://rodders.me/safetygate/img-2023/submitting-country-geo-plot.png">
+      <tr><td>  <a href="https://rodders.me/safetygate/img-2023/all-countries-alert-submitted-by-geo-plot.png">
+  <img src="https://rodders.me/safetygate/img-2023/all-countries-alert-submitted-by-geo-plot.png">
 </td>
 </tr>
 </tbody>
@@ -213,7 +234,7 @@ increase of 1,249 over the previous year.</p>
 </div>
 
 
-<h1>Which countries' products get the most alerts?</h1>
+<h1 id="Which countries">Which countries' products get the most alerts?</h1>
 
     <p>The following visualisations show the <code>Economic Area of Product Origin</code> with categories defined as: </p>
 
@@ -226,7 +247,7 @@ increase of 1,249 over the previous year.</p>
 
 </p>
 
-<h2>Economic Area of Product origin Previous Year Vs Current Year </h2>
+<h2 id="economic area">Economic Area of Product origin Previous Year Vs Current Year </h2>
 
 <div class="datatable-container" id="all-Economic-Area-2022-vs-2023">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -242,7 +263,7 @@ increase of 1,249 over the previous year.</p>
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h2 >Country of Product Origin</h2>
+<h2 id="coo">Country of Product Origin</h2>
 
 <p>Within the Top 15 countries are two entries :</p>
 <ul><code>other</code> Where the country isn't in the top 15, and represents 2,933 products or 8.4% of the total</ul>
@@ -264,7 +285,7 @@ increase of 1,249 over the previous year.</p>
 
 </div>
 
-<h3>Annual Alerts</h3>
+<h3 id="coo_annual">Annual Alerts</h3>
 
 
 <div class="datatable-container" id="all-Coo-Annual-Percentage">
@@ -290,7 +311,7 @@ increase of 1,249 over the previous year.</p>
 
 
 
-<h2>Product Categories</h2>
+<h2 id="Product Categories">Product Categories</h2>
 
   <h3 >Previous Year Vs Current Year</h3> 
   <div class="datatable-container" id="all-product-category-2022vs2023">
@@ -331,7 +352,7 @@ increase of 1,249 over the previous year.</p>
 
 
 
-<h2 >Risk Category</h2>
+<h2 id="risk">Risk Category</h2>
 
 <ul><li>The majority of Injury risks come from the automotive product category (9.7% of 2022/2023 total)</li>
   <li>The majority of risks from Toys are breathing obstruction (7% of total) and chemical (7% of total)</li>
@@ -369,7 +390,7 @@ increase of 1,249 over the previous year.</p>
 <a href="#" class="gototop">Go to Top</a></div>
 
 
-<h2 >Counterfeit type</h2>
+<h2 id="counterfeit">Counterfeit type</h2>
 
 
     <h3 >Previous Year Vs Current Year</h3>
@@ -401,7 +422,7 @@ increase of 1,249 over the previous year.</p>
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h2 >Action Required</h2>
+<h2 id="action">Action Required</h2>
 
 The increase in the percentage of alerts requiring a ban from sale in 2023 is due to the ban of the chemical BMHCA in cosmetics.
 
@@ -439,7 +460,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
-<h2 >Responsible Party</h2>
+<h2 id="responsible">Responsible Party</h2>
 
   
 <h3 >Previous Year Vs Current Year</h3>
@@ -481,9 +502,23 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
+<h1 id="top_30_brands">Top 30 Worldwide brands for Safety Alerts</h1>
+
+<h2>Top 30 Brands</h2>
+
+<div class="datatable-container" id="all-top30-brands">
+  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
+  <tbody> 
+    <tr><td>
+      <a href="https://rodders.me/safetygate/img-2023/all-countries-top-30-brands-for-safety-alerts.png">
+        <img src="https://rodders.me/safetygate/img-2023/all-countries-top-30-brands-for-safety-alerts.png"></a>
+      </td></tr>
+    </tbody></table>
+        <a href="#" class="gototop">Go to Top</a>
+      </div>
 
 
-<h2>Top 15 Countries - Key Fact sheets</h2>
+<h2 id="all-top15-top3s">Top 15 Countries - Key Fact sheets</h2>
 
 <p>Programmatically created reproductions of the Top 3 Risk and Product categories by country visualisation in the official Fact sheet. 
 <a href="https://www.mpo.cz/assets/en/consumer-protection/products-safety/2024/3/Safety-Gate-2023-factsheet.pdf">Safety_Gate_2023_Factsheet_EN.pdf</a></p>
@@ -651,29 +686,15 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 <a href="#" class="gototop">Go to Top</a>
 </div>
 
-<h1>Top 30 Worldwide brands for Safety Alerts</h1>
-
-<h2>Top 30 Brands</h2>
-
-<div class="datatable-container" id="all-top30-brands">
-  <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
-  <tbody> 
-    <tr><td>
-      <a href="https://rodders.me/safetygate/img-2023/all-countries-top-30-brands-for-safety-alerts.png">
-        <img src="https://rodders.me/safetygate/img-2023/all-countries-top-30-brands-for-safety-alerts.png"></a>
-      </td></tr>
-    </tbody></table>
-        <a href="#" class="gototop">Go to Top</a>
-      </div>
 
 
 
-<H1 >Top 3 Worldwide Product Categories</H1>
+<H1 id="top3">Top 3 Worldwide Product Categories</H1>
 <!-- Product 0 -->
 
-<h2 class="product_cat0">#1 - Top 3 Product Categories</h2>
+<h2 class="product_cat0" id="top1_">#1 - Top 3 Product Categories</h2>
 
-<h3 class="product_cat0">#1 - Total, Annual and Cumulative Alerts</h3>
+<h4 class="product_cat0" id="top1_annual">#1 - Total, Annual and Cumulative Alerts</h4>
 
 
 <div class="datatable-container" id="all-product-cat-0-annual-cumulative" >
@@ -698,7 +719,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
     <a href="#" class="gototop">Go to Top</a>
     </div>
 
-<h3 class="product_cat0">#1 - Submitting Country</h3>
+<h3 class="product_cat0" id="top1_submitting">#1 - Submitting Country</h3>
 
 <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
@@ -732,7 +753,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         <a href="#" class="gototop">Go to Top</a>
         </div>
 
-<h3 class="product_cat0">#1 - Risk Category</h3>
+<h3 class="product_cat0" id="top1_risk">#1 - Risk Category</h3>
 <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
 <div class="datatable-container" id="all-product-cat-0-risk-category-2022vs2023">
@@ -768,7 +789,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
         <a href="#" class="gototop">Go to Top</a>
         </div>
         
-<h3 class="product_cat0">#1 - Counterfeit </h3>
+<h3 class="product_cat0" id="top1_counterfeit">#1 - Counterfeit </h3>
 <h4>Previous Year Vs Current Year</h4>
         <div class="datatable-container" id="all-product-cat-0-counterfeit-2022vs2023">
 
@@ -808,7 +829,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
     </div>   
     
 
-      <h3 class="product_cat0">#1 - Compulsory / Voluntary Action Required /Responsible Party </h3>
+      <h3 class="product_cat0" id="top1_action">#1 - Compulsory / Voluntary Action Required /Responsible Party </h3>
 
       <h3 class="product_cat0">#1 - Compulsory / Voluntary Action Required</h3>
       <h4 class="product_cat0">Previous Year Vs Current Year</h4>
@@ -851,7 +872,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>   
         
-        <h3 class="product_cat0">#1 - Compulsory / Voluntary Responsible Party</h3>
+        <h3 class="product_cat0" id="top1_responsible">#1 - Compulsory / Voluntary Responsible Party</h3>
           <h4 class="product_cat0">Previous Year Vs Current Year</h4>
         <div class="datatable-container" id="all-product-cat-0-responsible-2022vs2023">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -890,7 +911,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
 
 
-<h3 class="product_cat0">#1 - Top 30 Brands for Safety Alerts</h3>
+<h3 class="product_cat0"  id="top1_brands">#1 - Top 30 Brands for Safety Alerts</h3>
 <div class="datatable-container" id="all-product-cat-0-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -912,9 +933,9 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
 
 <!-- Product 1 -->
-<h2 class="product_cat1">#2 - Top 3 Product Categories</h2>
+<h2 class="product_cat1" id="top2_">#2 - Top 3 Product Categories</h2>
 
-<h3 class="product_cat1">#2 - Total, Annual and Cumulative Alerts</h3>
+<h3 class="product_cat1" id="top2_annual">#2 - Total, Annual and Cumulative Alerts</h3>
 
 
 <div class="datatable-container" id="all-product-cat-1-annual-cumulative">
@@ -955,7 +976,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
           <a href="#" class="gototop">Go to Top</a>
 </div>
     
-<h3 class="product_cat1">#2 - Submitting Country</h3>
+<h3 class="product_cat1" id="top2_submitting">#2 - Submitting Country</h3>
 
     <div class="datatable-container" id="all-product-cat-1-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -980,7 +1001,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>
 
-<h3 class="product_cat1">#2 - Risk Category</h3>
+<h3 class="product_cat1" id="top2_risk">#2 - Risk Category</h3>
 <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
 <div class="datatable-container" id="all-product-cat-1-risk-category-2022vs2023">
@@ -1018,7 +1039,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>
         
-<h3 class="product_cat1">#2 - Counterfeit </h3>
+<h3 class="product_cat1" id="top2_counterfeit">#2 - Counterfeit </h3>
 <h4 class="product_cat1">Previous Year Vs Current Year </h4>
 
         <div class="datatable-container" id="all-product-cat-1-counterfeit-2022vs2023">
@@ -1062,7 +1083,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
     </div>   
     
 
-    <h3 class="product_cat1">#2 - Compulsory / Voluntary Action Required</h3>
+    <h3 class="product_cat1" id="top2_action">#2 - Compulsory / Voluntary Action Required</h3>
 
     <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
@@ -1100,7 +1121,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>   
         
-        <h3 class="product_cat1">#2 - Compulsory / Voluntary Responsible Party</h3>
+        <h3 class="product_cat1" id="top2_responsible">#2 - Compulsory / Voluntary Responsible Party</h3>
         <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
         <div class="datatable-container" id="all-product-cat-1-responsible-2022vs2023">
@@ -1139,7 +1160,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
 
 
-<h3 class="product_cat1">#2 - Top Brands for Safety Alerts</h3>
+<h3 class="product_cat1" id="top2_brands">#2 - Top Brands for Safety Alerts</h3>
 <div class="datatable-container" id="all-product-cat-1-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -1162,8 +1183,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
 <!-- Product 2 -->
 
-<h2 class="product_cat2">#3 - Top 3 Product Categories</h2>
-<h3 class="product_cat2">#3 - Total, Annual and Cumulative Alerts</h3>
+<h2 class="product_cat2" id="top3_">#3 - Top 3 Product Categories</h2>
+<h3 class="product_cat2"id="top3_annual">#3 - Total, Annual and Cumulative Alerts</h3>
 
 <div class="datatable-container" id="all-product-cat-2-annual-cumulative">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1188,7 +1209,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
     </div>
 
-<h3 class="product_cat2">#3 - Submitting Country</h3>
+<h3 class="product_cat2"id="top3_submitting">#3 - Submitting Country</h3>
 <h4>Previous Year Vs Current Year</h4>
 
     <div class="datatable-container" id="all-product-cat-2-submitting-country-2022vs2023">
@@ -1222,7 +1243,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>
 
-<h3 class="product_cat2">#3 - Risk Category</h3>
+<h3 class="product_cat2"id="top3_risk">#3 - Risk Category</h3>
 <h4>Previous Year Vs Current Year</h4>
 
 
@@ -1256,7 +1277,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>
         
-        <h3 class="product_cat2">#3 - Counterfeit </h3>
+        <h3 class="product_cat2"id="top3_counterfeit">#3 - Counterfeit </h3>
         <h4>Previous Year Vs Current Year</h4>
 
 
@@ -1293,7 +1314,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
     </div>   
     
 
-<h3 class="product_cat2">#3 - Compulsory / Voluntary Action Required </h3>        
+<h3 class="product_cat2" id="top3_action">#3 - Compulsory / Voluntary Action Required </h3>        
 <h4>Previous Year Vs Current Year</h4>
 
     <div class="datatable-container" id="all-product-cat-2-action-required-2022vs2023">
@@ -1330,7 +1351,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
         </div>   
         
-<h3 class="product_cat2">#3 - Compulsory / Voluntary Responsible Party</h3>
+<h3 class="product_cat2" id="top3_responsible">#3 - Compulsory / Voluntary Responsible Party</h3>
 <h4>Previous Year Vs Current Year</h4>
 
 
@@ -1370,7 +1391,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 
 
 
-<h3 class="product_cat2">#3 - Top Brands for Safety Alerts</h3>
+<h3 class="product_cat2"  id="top3_brands">#3 - Top Brands for Safety Alerts</h3>
 <div class="datatable-container" id="all-product-cat-2-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
@@ -1391,10 +1412,10 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 <br>
 </div>
 
-</div>
+</b>
 
 
-<script src="projects-2023.js"> </script>
+<script src="projects-2024.js"> </script>
 
 
 

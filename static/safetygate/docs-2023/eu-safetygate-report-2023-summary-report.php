@@ -33,52 +33,50 @@
       <div class="country">
 
         <select onchange="window.location.hash=this.value" class="country">
-        <option value="header-2">Annual Alerts</option>
-        <option value="header-3">Total Annual Alerts Issued</option>
-        <option value="header-5">Submitting Country</option>
-        <option value="header-7">Map Plot Previous Year Vs Current Year</option>
-        <option value="header-8">Product Categories</option>
-        <option value="header-9">What happened between 2022-2023?</option>
-        <option value="header-10">Cosmetics</option>
-        <option value="header-14">The European Cosmetics Industry</option>
-        <option value="header-15">Cosmetics Sub Categories affected by the ban</option>
-        <option value="header-16">Cosmetic Products Safety Gate Alerts, Country of origin</option>
-        <option value="header-17">Italy and Cosmetics</option>
-        <option value="header-18">Cosmetic Products Safety Gate Alerts, Top 30 Brands</option>
-        <option value="header-19">Which countries' products get the most alerts?</option>
-        <option value="header-20">Country of Product Origin</option>
-        <option value="header-21">Risk Category</option>
-        <option value="header-22">Product Category mapped to Risk Category</option>
-        <option value="header-23">Action Required</option>
-        <option value="header-24">Responsible Party</option>
-        <option value="header-25">Top 30 Worldwide brands for Safety Alerts</option>
-        <option value="header-26">Top 15 Countries - Key Fact sheets</option>
-        <option value="header-27">Cumulative, Annual and YoY change / Top3 Categories (Risk/Product)</option>
-        <option value="header-28">Top 3 Worldwide Product Categories</option>
-        <option value="header-29">#1 - Top 3 Product Categories</option>
-        <option value="header-30">Total, Annual and Cumulative Alerts</option>
-        <option value="header-31">#1 - Submitting Country</option>
-        <option value="header-32">#1 - Risk Category</option>
-        <option value="header-33">#1 - Counterfeit </option>
-        <option value="header-35">#1 - Compulsory / Voluntary Action Required</option>
-        <option value="header-36">#1 - Compulsory / Voluntary Responsible Party</option>
-        <option value="header-37">#1 - Top Brands for Safety Alerts</option>
-        <option value="header-38">#2 - Top 3 Product Categories</option>
-        <option value="header-39">#2 - Total, Annual and Cumulative Alerts</option>
-        <option value="header-40">#2 - Submitting Country</option>
-        <option value="header-41">#2 - Risk Category</option>
-        <option value="header-42">#2 - Counterfeit </option>
-        <option value="header-43">#2 - Compulsory / Voluntary Action Required</option>
-        <option value="header-44">#2 - Compulsory / Voluntary Responsible Party</option>
-        <option value="header-45">#2 - Top Brands for Safety Alerts</option>
-        <option value="header-46">#3 - Top 3 Product Categories</option>
-        <option value="header-47">#3 - Total, Annual and Cumulative Alerts</option>
-        <option value="header-48">#3 - Submitting Country</option>
-        <option value="header-49">#3 - Risk Category</option>
-        <option value="header-50">#3 - Counterfeit </option>
-        <option value="header-51">#3 - Compulsory / Voluntary Action Required </option>
-        <option value="header-52">#3 - Compulsory / Voluntary Responsible Party</option>
-        <option value="header-53">#3 - Top Brands for Safety Alerts</option>
+        <option value="Annual Alerts">Annual Alerts</option>
+        <option value="Submitting Country">Submitting Country</option>
+        <option value="Map Plot">Map Plot Previous Year Vs Current Year</option>
+        <option value="Product Categories">Product Categories</option>
+        <option value="What happened">What happened between 2022-2023?</option>
+        <option value="Cosmetics">Cosmetics</option>
+        <option value="The-European-Cosmetics-Industry">The European Cosmetics Industry</option>
+        <option value="Cosmetics_subcats">Cosmetics Sub Categories affected by the ban</option>
+        <option value="cosmetics_country_origin">Cosmetic Products Safety Gate Alerts, Country of origin</option>
+        <option value="italy_cosmetics">Italy and Cosmetics</option>
+        <option value="cosmetics_brands">Cosmetic Products Safety Gate Alerts, Top 30 Brands</option>
+        <option value="coo_most">Which countries' products get the most alerts?</option>
+        <option value="coo">Country of Product Origin</option>
+        <option value="Risk">Risk Category</option>
+        <option value="prodcat_risk">Product Category mapped to Risk Category</option>
+        <option value="Action Required">Action Required</option>
+        <option value="Responsible Party">Responsible Party</option>
+        <option value="Top 30 Worldwide brands">Top 30 Worldwide brands for Safety Alerts</option>
+        <option value="all-top15-top3s">Top 15 Countries - Key Fact sheets</option>
+        <option value="top_3_categories">Top 3 Worldwide Product Categories</option>
+        <option value="top1_">#1 - Top 3 Product Categories</option>
+        <option value="top1_annual">&nbsp;&nbsp;&nbsp;#1 - Total, Annual and Cumulative Alerts</option>
+        <option value="top1_submitting">&nbsp;&nbsp;&nbsp;#1 - Submitting Country</option>
+        <option value="top1_risk">&nbsp;&nbsp;&nbsp;#1 - Risk Category</option>
+        <option value="top1_counterfeit">&nbsp;&nbsp;&nbsp;#1 - Counterfeit </option>
+        <option value="top1_action">&nbsp;&nbsp;&nbsp;#1 - Compulsory / Voluntary Action Required</option>
+        <option value="top1_responsible">&nbsp;&nbsp;&nbsp;#1 - Compulsory / Voluntary Responsible Party</option>
+        <option value="top1_brands">&nbsp;&nbsp;&nbsp;#1 - Top Brands for Safety Alerts</option>
+        <option value="top2_">#2 - Top 3 Product Categories</option>
+        <option value="top2_annual">&nbsp;&nbsp;&nbsp;#2 - Total, Annual and Cumulative Alerts</option>
+        <option value="top2_submitting">&nbsp;&nbsp;&nbsp;#2 - Submitting Country</option>
+        <option value="top2_risk">&nbsp;&nbsp;&nbsp;#2 - Risk Category</option>
+        <option value="top2_counterfeit">&nbsp;&nbsp;&nbsp;#2 - Counterfeit </option>
+        <option value="top2_action">&nbsp;&nbsp;&nbsp;#2 - Compulsory / Voluntary Action Required</option>
+        <option value="top2_responsible">&nbsp;&nbsp;&nbsp;#2 - Compulsory / Voluntary Responsible Party</option>
+        <option value="top2_brands">&nbsp;&nbsp;&nbsp;#2 - Top Brands for Safety Alerts</option>
+        <option value="top3_">#3 - Top 3 Product Categories</option>
+        <option value="top3_annual">&nbsp;&nbsp;&nbsp;#3 - Total, Annual and Cumulative Alerts</option>
+        <option value="top3_submitting">&nbsp;&nbsp;&nbsp;#3 - Submitting Country</option>
+        <option value="top3_risk">&nbsp;&nbsp;&nbsp;#3 - Risk Category</option>
+        <option value="top3_counterfeit">&nbsp;&nbsp;&nbsp;#3 - Counterfeit </option>
+        <option value="top3_action">&nbsp;&nbsp;&nbsp;#3 - Compulsory / Voluntary Action Required </option>
+        <option value="top3_responsible">&nbsp;&nbsp;&nbsp;#3 - Compulsory / Voluntary Responsible Party</option>
+        <option value="top3_brands">&nbsp;&nbsp;&nbsp;#3 - Top Brands for Safety Alerts</option>
 
 
         </select>
@@ -111,7 +109,7 @@
     
       <!-- <div id="tableOfContents"></div> -->
 
-    <h2>Annual Alerts</h2>
+    <h2 id="Annual Alerts">Annual Alerts</h2>
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
@@ -181,7 +179,7 @@
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h2>Submitting Country</h2>
+    <h2 id="Submitting Country">Submitting Country</h2>
     <p>The Submitting Country category provides detailed information on which EU country has reported a safety alert to
       the EU Safety Gate team.
       This category highlights the active role each member state plays in monitoring and ensuring the safety of non-food
@@ -210,13 +208,13 @@
       substances, ensuring the safety and well-being of consumers
       across the European Union.</p>
 
-    <h3>Map Plot Previous Year Vs Current Year</h3>
+    <h3 id="Map Plot">Map Plot Previous Year Vs Current Year</h3>
     <div class="datatable-container" id="all-AnnualGeoplot">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
-            <td> <a href="https://rodders.me/safetygate/img-2023/all-countries-submitting-country-geo-plot.png">
-                <img src="https://rodders.me/safetygate/img-2023/all-countries-submitting-country-geo-plot.png">
+            <td> <a href="https://rodders.me/safetygate/img-2023/all-countries-alert-submitted-by-geo-plot.png">
+                <img src="https://rodders.me/safetygate/img-2023/all-countries-alert_submitted-by-geo-plot.png">
             </td>
           </tr>
         </tbody>
@@ -228,7 +226,7 @@
     <p></p>
     
     
-    <h2>Product Categories</h2>
+    <h2 id="Product Categories">Product Categories</h2>
     <div class="datatable-container" id="table-product-category-change.php"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../img-2023/table-product-category-change.php'; ?>
@@ -252,10 +250,11 @@
 
 
 
-    <h1 class="header-tools">What happened between 2022-2023?</h1>
+    <h1 id="What happened">What happened between 2022-2023?</h1>
 
 
-    <H2>Cosmetics</H2>
+    <H2 id="Cosmetics">Cosmetics</H2>
+
     <p>2023 was an exception with the introduction of the ban on the chemical <a
         href="https://en.wikipedia.org/wiki/Lilial">lilial / BMHCA</a> for use in cosmetics on 1st March 2022.</p>
     <ul>
@@ -352,7 +351,7 @@
     <a
       href="https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf">https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf</a>
 
-    <h3>The European Cosmetics Industry</h3>
+    <h3 id="The-European-Cosmetics-Industry">The European Cosmetics Industry</h3>
 
     <h4>Cosmetics Country of Product Origin</h4>
     <div class="datatable-container" id="all-Cosmetics-Coo">
@@ -371,7 +370,7 @@
     </div>
     <p></p>
 
-    <h3>Cosmetics Sub Categories affected by the ban</h3>
+    <h3 id="Cosmetics_subcats">Cosmetics Sub Categories affected by the ban</h3>
     <div class="datatable-container" id="table-cosmetics-product-sub-cat-change"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../img-2023/table-cosmetics-product-sub-cat-change.php' ?>
@@ -391,13 +390,13 @@
       jobs are generated in the wider economy as a result of employees spending their wages on goods and services.</p>
     <p>Source: <a href="https://cosmeticseurope.eu/cosmetics-industry/">https://cosmeticseurope.eu/cosmetics-industry/</a> </p>
 
-    <h3>Cosmetic Products Safety Gate Alerts, Country of origin</h3>
+    <h3 id="cosmetics_country_origin">Cosmetic Products Safety Gate Alerts, Country of origin</h3>
     <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../img-2023/table-cosmetics-country-of-origin-change.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h3>Italy and Cosmetics</h3>
+    <h3 id="italy_cosmetics">Italy and Cosmetics</h3>
     <p>Italy represents a significant portion of the European cosmetics and personal care products market, with a value
       of €11.5 billion. </p>
     <p>This places Italy among the largest national markets within Europe, following Germany (€14.3 billion) and France
@@ -406,13 +405,13 @@
 
 
 
-    <h3>Cosmetic Products Safety Gate Alerts, Top 30 Brands</h3>
+    <h3 id="cosmetics_brands">Cosmetic Products Safety Gate Alerts, Top 30 Brands</h3>
     <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../img-2023/table-cosmetics-brands-change.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h2>Which countries' products get the most alerts?</h2>
+    <h2 id="coo_most">Which countries' products get the most alerts?</h2>
 
     The following visualisations show the <code>Economic Area of Product Origin</code> with categories defined as:
 
@@ -437,7 +436,7 @@
 
 
 
-    <h2>Country of Product Origin</h2>
+    <h2 id="coo">Country of Product Origin</h2>
 
     <p>Within the Top 15 countries are two entries :</p>
     <ul><code>other</code> Where the country isn't in the top 15, and represents 2,933 products or 8.4% of the total
@@ -455,7 +454,7 @@
 
 
 
-    <h2>Risk Category</h2>
+    <h2 id="Risk">Risk Category</h2>
 
     <p>In the context of non-food product safety alerts on the European Safety Gate website, product categories are
       meticulously mapped to various risk types to enhance consumer protection and regulatory oversight. 
@@ -487,7 +486,8 @@
       <a href="#" class="gototop">Go to Top</a>
     </div>
     <p></p>
-    <h2>Product Category mapped to Risk Category</h2>
+
+    <h2 id="prodcat_risk">Product Category mapped to Risk Category</h2>
     <div class="datatable-container" id="table-risk-product-category-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../img-2023/table-risk-product-category-compare.php' ?>
@@ -498,7 +498,7 @@
 
 
 
-    <h2>Action Required</h2>
+    <h2 id="Action Required">Action Required</h2>
 
     The increase in the percentage of alerts requiring a ban from sale in 2023 is due to the ban of the chemical BMHCA
     in cosmetics.
@@ -523,7 +523,7 @@
     <p></p>
 
 
-    <h2>Responsible Party</h2>
+    <h2 id="Responsible Party">Responsible Party</h2>
     <p>The term "responsible party" refers to the entity accountable for the product safety issue. The identification of
       the responsible party can occur
       through two distinct pathways: voluntary or compulsory. A voluntary identification occurs when the responsible
@@ -542,7 +542,7 @@
     <p></p>
 
 
-    <h1>Top 30 Worldwide brands for Safety Alerts</h1>
+    <h1 id="Top 30 Worldwide brands">Top 30 Worldwide brands for Safety Alerts</h1>
 
 
     <p></p>
@@ -553,7 +553,7 @@
 
     <p></p>
 
-    <h1>Top 15 Countries - Key Fact sheets</h1>
+    <h1 id="all-top15-top3s">Top 15 Countries - Key Fact sheets</h1>
 
     <p>Programmatically created reproductions of the Top 3 Risk and Product categories by country visualisation in the
       official Fact sheet.
@@ -561,10 +561,7 @@
         href="https://www.mpo.cz/assets/en/consumer-protection/products-safety/2024/3/Safety-Gate-2023-factsheet.pdf">Safety_Gate_2023_Factsheet_EN.pdf</a>
     </p>
 
-
-    <h2>Cumulative, Annual and YoY change / Top3 Categories (Risk/Product)</h2>
-
-    <div class="datatable-container" id="all-top15-kfs">
+    <div class="datatable-container" >
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -797,12 +794,12 @@
 
 
 
-    <H1>Top 3 Worldwide Product Categories</H1>
+    <H1 id="top_3_categories">Top 3 Worldwide Product Categories</H1>
     <!-- Product 0 -->
 
-    <h2 class="product_cat0">#1 - Top 3 Product Categories</h2>
+    <h2 class="product_cat0" id="top1_">#1 - Top 3 Product Categories</h2>
 
-    <h3 class="product_cat0">Total, Annual and Cumulative Alerts</h3>
+    <h3 class="product_cat0" id="top1_annual">Total, Annual and Cumulative Alerts</h3>
 
 
     <div class="datatable-container" id="all-product-cat-0-annual-cumulative">
@@ -832,7 +829,7 @@
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h3 class="product_cat0">#1 - Submitting Country</h3>
+    <h3 class="product_cat0" id="top1_submitting">#1 - Submitting Country</h3>
 
     <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
@@ -877,7 +874,7 @@
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h3 class="product_cat0">#1 - Risk Category</h3>
+    <h3 class="product_cat0" id="top1_risk">#1 - Risk Category</h3>
     <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
     <div class="datatable-container" id="all-product-cat-0-risk-category-ly-vs-ty">
@@ -919,7 +916,7 @@
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h3 class="product_cat0">#1 - Counterfeit </h3>
+    <h3 class="product_cat0" id="top1_counterfeit">#1 - Counterfeit </h3>
     <h4>Previous Year Vs Current Year</h4>
     <div class="datatable-container" id="all-product-cat-0-counterfeit-ly-vs-ty">
 
@@ -967,7 +964,7 @@
 
     <h3 class="product_cat0">Compulsory / Voluntary Action Required /Responsible Party </h3>
 
-    <h3 class="product_cat0">#1 - Compulsory / Voluntary Action Required</h3>
+    <h3 class="product_cat0" id="top1_action">#1 - Compulsory / Voluntary Action Required</h3>
     <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
     <div class="datatable-container" id="all-product-cat-0-action-required-ly-vs-ty">
@@ -1013,7 +1010,7 @@
 
     </div>
 
-    <h3 class="product_cat0">#1 - Compulsory / Voluntary Responsible Party</h3>
+    <h3 class="product_cat0" id="top1_responsible">#1 - Compulsory / Voluntary Responsible Party</h3>
     <h4 class="product_cat0">Previous Year Vs Current Year</h4>
     <div class="datatable-container" id="all-product-cat-0-responsible-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1061,7 +1058,7 @@
 
 
 
-    <h3 class="product_cat0">#1 - Top 30 Brands for Safety Alerts</h3>
+    <h3 class="product_cat0" id="top1_brands">#1 - Top 30 Brands for Safety Alerts</h3>
     <div class="datatable-container" id="all-product-cat-0-top30-brands">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
@@ -1086,9 +1083,9 @@
 
 
     <!-- Product 1 -->
-    <h2 class="product_cat1">#2 - Top 3 Product Categories</h2>
+    <h2 class="product_cat1" id="top2_">#2 - Top 3 Product Categories</h2>
 
-    <h3 class="product_cat1">#2 - Total, Annual and Cumulative Alerts</h3>
+    <h3 class="product_cat1" id="top2_annual">#2 - Total, Annual and Cumulative Alerts</h3>
 
 
     <div class="datatable-container" id="all-product-cat-1-annual-cumulative">
@@ -1138,7 +1135,7 @@
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
-    <h3 class="product_cat1">#2 - Submitting Country</h3>
+    <h3 class="product_cat1" id="top2_submitting">#2 - Submitting Country</h3>
 
     <div class="datatable-container" id="all-product-cat-1-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -1168,7 +1165,7 @@
 
     </div>
 
-    <h3 class="product_cat1">#2 - Risk Category</h3>
+    <h3 class="product_cat1" id="top2_risk">#2 - Risk Category</h3>
     <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
     <div class="datatable-container" id="all-product-cat-1-risk-category-ly-vs-ty">
@@ -1215,7 +1212,7 @@
 
     </div>
 
-    <h3 class="product_cat1">#2 - Counterfeit </h3>
+    <h3 class="product_cat1" id="top2_counterfeit">#2 - Counterfeit </h3>
     <h4 class="product_cat1">Previous Year Vs Current Year </h4>
 
     <div class="datatable-container" id="all-product-cat-1-counterfeit-ly-vs-ty">
@@ -1263,7 +1260,7 @@
     </div>
 
 
-    <h3 class="product_cat1">#2 - Compulsory / Voluntary Action Required</h3>
+    <h3 class="product_cat1" id="top2_action">#2 - Compulsory / Voluntary Action Required</h3>
 
     <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
@@ -1310,7 +1307,7 @@
 
     </div>
 
-    <h3 class="product_cat1">#2 - Compulsory / Voluntary Responsible Party</h3>
+    <h3 class="product_cat1" id="top2_responsible">#2 - Compulsory / Voluntary Responsible Party</h3>
     <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
     <div class="datatable-container" id="all-product-cat-1-responsible-ly-vs-ty">
@@ -1358,7 +1355,7 @@
 
 
 
-    <h3 class="product_cat1">Top Brands for Safety Alerts</h3>
+    <h3 class="product_cat1" id="top2_brands">Top Brands for Safety Alerts</h3>
     <div class="datatable-container" id="all-product-cat-1-top30-brands">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
@@ -1381,7 +1378,7 @@
 
     <!-- Product 2 -->
 
-    <h2 class="product_cat2">#3 - Top 3 Product Categories</h2>
+    <h2 class="product_cat2" id="top3_">#3 - Top 3 Product Categories</h2>
     <h3 class="product_cat2">#3 - Total, Annual and Cumulative Alerts</h3>
 
     <div class="datatable-container" id="all-product-cat-2-annual-cumulative">
@@ -1412,7 +1409,7 @@
 
     </div>
 
-    <h3 class="product_cat2">#3 - Submitting Country</h3>
+    <h3 class="product_cat2" id="top3_submitting">#3 - Submitting Country</h3>
     <h4>Previous Year Vs Current Year</h4>
 
     <div class="datatable-container" id="all-product-cat-2-submitting-country-ly-vs-ty">
@@ -1457,7 +1454,7 @@
 
     </div>
 
-    <h3 class="product_cat2">#3 - Risk Category</h3>
+    <h3 class="product_cat2" id="top3_risk">#3 - Risk Category</h3>
     <h4>Previous Year Vs Current Year</h4>
 
 
@@ -1502,7 +1499,7 @@
 
     </div>
 
-    <h3 class="product_cat2">#3 - Counterfeit </h3>
+    <h3 class="product_cat2" id="top3_counterfeit">#3 - Counterfeit </h3>
     <h4>Previous Year Vs Current Year</h4>
 
 
@@ -1549,7 +1546,7 @@
     </div>
 
 
-    <h3 class="product_cat2">#3 - Compulsory / Voluntary Action Required </h3>
+    <h3 class="product_cat2" id="top3_action">#3 - Compulsory / Voluntary Action Required </h3>
     <h4>Previous Year Vs Current Year</h4>
 
     <div class="datatable-container" id="all-product-cat-2-action-required-ly-vs-ty">
@@ -1595,7 +1592,7 @@
 
     </div>
 
-    <h3 class="product_cat2">#3 - Compulsory / Voluntary Responsible Party</h3>
+    <h3 class="product_cat2" id="top3_responsible">#3 - Compulsory / Voluntary Responsible Party</h3>
     <h4>Previous Year Vs Current Year</h4>
 
 
@@ -1644,7 +1641,7 @@
 
 
 
-    <h3 class="product_cat2">#3 - Top Brands for Safety Alerts</h3>
+    <h3 class="product_cat2" id="top3_brands">#3 - Top Brands for Safety Alerts</h3>
     <div class="datatable-container" id="all-product-cat-2-top30-brands">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
@@ -1765,7 +1762,7 @@
     content: 'Compulsory and Voluntary Responsible Party Annual Total and Total Comparison.',
     theme: 'tomato'
   });
-  tippy('#all-top15-kfs', {
+  tippy('#all-top15-top3s', {
     content: 'Top 15 countries, fact sheet. Annual & Cumulative alerts, top 3 Product and Risk categories.',
     theme: 'tomato',
     placement: 'right-end'

@@ -144,7 +144,7 @@ async function updateContent() {
 
     }        
     await updateHeadingsWithPrefix(country);
-    await generateIDs();
+    //await generateIDs();
     
     // Await more updates if necessary
     
@@ -154,18 +154,9 @@ async function updateContent() {
     document.addEventListener("DOMContentLoaded", function() {
         
         updateContent();
-        setTimeout(function() {
-            generateIDs(); // Called after all updates are done
-        }, 1000);
-        generateToC();
+        // setTimeout(function() {
+        //    generateIDs(); // Called after all updates are done
+        //}, 1000);
+        //generateToC();
     });
 
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "350px";
-    }
-    
-    /* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    } 

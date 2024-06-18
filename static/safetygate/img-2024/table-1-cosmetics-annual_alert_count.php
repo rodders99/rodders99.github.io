@@ -38,21 +38,21 @@
 
 
 
-      <td style="text-align:right;">87</td>
+      <td style="text-align:right;">39</td>
+
+      <td style="text-align:right;">21</td>
+
+      <td style="text-align:right;">50</td>
+
+      <td style="text-align:right;">41</td>
+
+      <td style="text-align:right;">43</td>
+
+      <td style="text-align:right;">25</td>
 
       <td style="text-align:right;">63</td>
 
-      <td style="text-align:right;">106</td>
-
-      <td style="text-align:right;">90</td>
-
-      <td style="text-align:right;">94</td>
-
-      <td style="text-align:right;">52</td>
-
-      <td style="text-align:right;">207</td>
-
-      <td style="text-align:right;">1,072</td>
+      <td style="text-align:right;">320</td>
 
       <td style="text-align:right;">442</td>
 

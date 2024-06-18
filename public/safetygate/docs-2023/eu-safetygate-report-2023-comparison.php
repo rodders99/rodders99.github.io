@@ -34,41 +34,39 @@
             <?php include 'menu-2023.php'; ?></div>
             <div id="JumptoSection"><h2>Jump to section</h2></div>
           <div class="countries">
-                    <div id="JumptoSection" >
-                        <select onchange="window.location.hash=this.value" class="country">
-                        <option value="header-1">Compare Countries</option>
-                        <option value="header-2">EU Safetygate report - Compare Countries</option>
-                        <option value="header-3">Percentage of Total Worldwide Alerts</option>
-                        <option value="header-4">Country as percentage of Total Worldwide Alerts Previous Year Vs Current Year</option>
-                        <option value="header-5">Top 3 Product and Risk Categories</option>
-                        <option value="header-6">Product Category</option>
-                        <option value="header-7">Risk Category</option>
-                        <option value="header-8">Counterfeit</option>
-                        <option value="header-9">Compulsory / Voluntary - Action Required / Responsible Party</option>
-                        <option value="header-10">Submitting Country</option>
-                        <option value="header-11">Top 3 Product Categories</option>
-                        <option value="header-12">#1 - Product Category</option>
-                        <option value="header-13">#1 - Annual, Cumulative &amp; YoY Change</option>
-                        <option value="header-14">#1 - Risk Category</option>
-                        <option value="header-15">#1 - Counterfeit ?</option>
-                        <option value="header-16">#1 - Compulsory / Voluntary - Action Required / Responsible Party</option>
-                        <option value="header-17">#1 - Submitting Country</option>
-                        <option value="header-18">#1 - Top Brands for Safety Alerts</option>
-                        <option value="header-19">#2 - Product Category</option>
-                        <option value="header-20">Percentage of Total Alerts</option>
-                        <option value="header-21">#2 - Risk Category</option>
-                        <option value="header-22">#2 - Counterfeit</option>
-                        <option value="header-23">#2 - Compulsory / Voluntary - Action Required / Responsible Party</option>
-                        <option value="header-24">Total Compulsory / Voluntary - Action Required / Responsible Party</option>
-                        <option value="header-25">#2 - Submitting Country</option>
-                        <option value="header-26">#2 - Top Brands for Safety Alerts</option>
-                        <option value="header-27">#3 - Top 3 Product Categories</option>
-                        <option value="header-28">Risk Category</option>
-                        <option value="header-29">#3 - Counterfeit ?</option>
-                        <option value="header-30">#3 - Compulsory / Voluntary - Action Required / Responsible Party</option>
-                        <option value="header-31">#3 - Submitting Country</option>
-                        <option value="header-32">#3 - Top Brands for Safety Alerts</option>
-                    </select></div>
+            <div id="JumptoSection" >
+                <select onchange="window.location.hash=this.value" class="country">
+                <option value="country_percent_total">Percentage of Total Worldwide Alerts</option>
+                <option value="annual">Annual, Cumulative & YoY Change</option>
+                <option value="top3s">Top 3 Product and Risk Categories</option>
+                <option value="Product Category">Product Category</option>
+                <option value="risk">Risk Category</option>
+                <option value="counterfeit">Counterfeit</option>
+                <option value="responsible_action">Compulsory / Voluntary - Action Required / Responsible Party</option>
+                <option value="submitting">Submitting Country</option>
+                <option value="top3_categories">Top 3 Product Categories</option>
+                <option value="top1_">#1 - Product Category</option>
+                <option value="top1_annual">&nbsp;&nbsp;&nbsp;#1 - Annual, Cumulative &amp; YoY Change</option>
+                <option value="top1_risk">&nbsp;&nbsp;&nbsp;#1 - Risk Category</option>
+                <option value="top1_counterfeit">&nbsp;&nbsp;&nbsp;#1 - Counterfeit</option>
+                <option value="top1_action_responsible">&nbsp;&nbsp;&nbsp;#1 - Compulsory / Voluntary - Action Required / Responsible Party</option>
+                <option value="top1_submitting">&nbsp;&nbsp;&nbsp;#1 - Submitting Country</option>
+                <option value="top1_brands">&nbsp;&nbsp;&nbsp;#1 - Top Brands for Safety Alerts</option>
+                <option value="top2_">#2 - Product Category</option>
+                <option value="top2_annual">&nbsp;&nbsp;&nbsp;#2 - Annual, Cumulative &amp; YoY Change</option></option>
+                <option value="top2_risk">&nbsp;&nbsp;&nbsp;#2 - Risk Category</option>
+                <option value="top2_counterfeit">&nbsp;&nbsp;&nbsp;#2 - Counterfeit</option>
+                <option value="top2_action_responsible">&nbsp;&nbsp;&nbsp;#2 - Compulsory / Voluntary - Action Required / Responsible Party</option>
+                <option value="top2_submitting">&nbsp;&nbsp;&nbsp;#2 - Submitting Country</option>
+                <option value="top2_brands">&nbsp;&nbsp;&nbsp;#2 - Top Brands for Safety Alerts</option>
+                <option value="top3_">#3 - Top 3 Product Categories</option>
+                <option value="top3_annual">&nbsp;&nbsp;&nbsp;#3 - Annual, Cumulative &amp; YoY Change</option>
+                <option value="top3_risk">&nbsp;&nbsp;&nbsp;#3 - Risk Category</option>
+                <option value="top3_counterfeit">&nbsp;&nbsp;&nbsp;#3 - Counterfeit</option>
+                <option value="top3_action_responsible">&nbsp;&nbsp;&nbsp;#3 - Compulsory / Voluntary - Action Required / Responsible Party</option>
+                <option value="top3_submitting">&nbsp;&nbsp;&nbsp;#3 - Submitting Country</option>
+                <option value="top3_brands">&nbsp;&nbsp;&nbsp;#3 - Top Brands for Safety Alerts</option>
+            </select></div>
                     
                             <div id="CompareCountries"><h2>Compare Countries</h2></div>
                             <div id="CompareCountries" class="country"><select id="country1" >
@@ -124,7 +122,7 @@
 
 
 <h4>Compare Countries</h4>
-<h4 id="#country-annual-total">Countries - 2005-2024 Alerts Percentage of Worldwide Total</h4>
+<h4 id="country_percent_total">Countries - 2005-2024 Alerts Percentage of Worldwide Total</h4>
 <h3>Percentage of Total Worldwide Alerts</h3>
     <div class="datatable-container" >
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="country-total-alerts-vs-row">
@@ -167,7 +165,7 @@
       </div>
       <br><a href="#" class="gototop">Go to Top</a>
 
-      <h4>Annual, Cumulative Total</h4>
+      <h4 id="annual">Annual, Cumulative Total</h4>
       <div class="datatable-container" id="country-annual-cumulative">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" >
         <tbody> 
@@ -188,7 +186,7 @@
         </div>
         <br><a href="#" class="gototop">Go to Top</a>
         
-        <h4 >Annual, Cumulative & YoY Change</h4>
+        <h4 id="annual">Annual, Cumulative & YoY Change</h4>
          
         <div class="datatable-container" id="country-annual-yoy-change">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" >
@@ -211,7 +209,7 @@
       <br><a href="#" class="gototop">Go to Top</a>
 
 
-      <h2>Top 3 Product and Risk Categories</h2>
+      <h2 id="top3s">Top 3 Product and Risk Categories</h2>
          
       <div class="datatable-container" id="country-top3">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" >
@@ -232,7 +230,8 @@
       </table>
     </div>
     <br><a href="#" class="gototop">Go to Top</a>
-<h2>Product Category</h2>
+
+    <h2 id="Product Category">Product Category</h2>
       <h4>Percentage of Total</h4>
 
       <div class="datatable-container" id="product-category-percentage">
@@ -319,7 +318,7 @@
       <br><a href="#" class="gototop">Go to Top</a>
 
 
-      <h2>Risk Category</h2>
+      <h2 id="risk">Risk Category</h2>
       <h4>Percentage by Type</h4>
 
       <div class="datatable-container" id="risk-category-percentage">
@@ -408,7 +407,7 @@
       </div>
       <br><a href="#" class="gototop">Go to Top</a>
 
-      <h2>Counterfeit</h2>
+      <h2 id="counterfeit">Counterfeit</h2>
       <h4>Percentage by Type</h4>
 
       <div class="datatable-container" id="counterfeit-category-percentage">
@@ -501,7 +500,7 @@
 
 
 
-      <h2>Compulsory / Voluntary - Action Required / Responsible Party</h2>
+      <h2 id="responsible_action">Compulsory / Voluntary - Action Required / Responsible Party</h2>
 <h4>Previous Year Vs Current Year</h4>
       <div class="datatable-container" id="action-required-responsible-party-2022vs2023">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
@@ -595,7 +594,7 @@
       </div>
       <br><a href="#" class="gototop">Go to Top</a>
 
-<h2>Submitting Country</h2>
+<h2 id="submitting">Submitting Country</h2>
       <h4>Percentage by Country</h4>
 
       <div class="datatable-container" id="submitting-country-percentage">
@@ -683,10 +682,10 @@
       <!-- Product 0 -->
 <H1 >Top 3 Product Categories</H1>
 
-<h1 >#1 - Product Category</h1>
+<h1 id="top1_">#1 - Product Category</h1>
 
 
-<h4>Category Percentage of Total Alerts for Country</h4>
+<h4">Category Percentage of Total Alerts for Country</h4>
 
     <div class="datatable-container">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-0-percentage">
@@ -715,7 +714,7 @@
 </div>
 <br><a href="#" class="gototop">Go to Top</a>
 
-<h2>#1 - Annual, Cumulative & YoY Change</h2>
+<h2 id="top1_annual">#1 - Annual, Cumulative & YoY Change</h2>
 <h4>Annual Total</h4>
   <div class="datatable-container">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-0-annual-cumulative">
@@ -760,7 +759,7 @@
   <br><a href="#" class="gototop">Go to Top</a>
 
 
-  <h2>#1 - Risk Category</h2>
+  <h2 id="top1_risk">#1 - Risk Category</h2>
   <h4>Percentage by Type</h4>
     
     <div class="datatable-container">
@@ -839,7 +838,7 @@
         </div>
         <br><a href="#" class="gototop">Go to Top</a>
 
-<h2>#1 - Counterfeit ?</h2>
+<h2 id="top1_counterfeit">#1 - Counterfeit ?</h2>
         <h4>Percentage by Type</h4>
 
 
@@ -922,7 +921,7 @@
         <br><a href="#" class="gototop">Go to Top</a>
 
 
-<h2>#1 - Compulsory / Voluntary - Action Required / Responsible Party</h2>
+<h2 id="top1_action_responsible">#1 - Compulsory / Voluntary - Action Required / Responsible Party</h2>
         <h4>Previous Year Vs Current Year Required Action / Responsible Party</h4>
 
         <div class="datatable-container">
@@ -1013,7 +1012,7 @@
         </div>
         <br><a href="#" class="gototop">Go to Top</a>
 
-        <h2>#1 - Submitting Country</h2>
+        <h2 id="top1_submitting">#1 - Submitting Country</h2>
 
         <h4>Percentage by Country</h4>
 
@@ -1099,7 +1098,7 @@
     
     
     
-    <h2>#1 - Top Brands for Safety Alerts</h2>
+    <h2 id="top1_brands">#1 - Top Brands for Safety Alerts</h2>
         <div class="datatable-container">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody> 
@@ -1124,7 +1123,7 @@
 
     <!-- Product 1 -->
 
-<h1>#2 - Product Category</h1>
+<h1 id="top2_">#2 - Product Category</h1>
 
 <h3>Percentage of Total Alerts</h3>
 
@@ -1152,7 +1151,7 @@
 <br><a href="#" class="gototop">Go to Top</a>
 
 
-<h4>Annual & Cumulative Total</h4>
+<h4 id="top2_annual">Annual & Cumulative Total</h4>
   <div class="datatable-container">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-1-annual-cumulative">
       <tbody> 
@@ -1196,7 +1195,7 @@
   </div>
   <br><a href="#" class="gototop">Go to Top</a>
 
-  <h2>#2 - Risk Category</h2>
+  <h2 id="top2_risk">#2 - Risk Category</h2>
 
   <h4>Percentage of Alerts by Type</h4>
     
@@ -1281,7 +1280,7 @@
         <br><a href="#" class="gototop">Go to Top</a>
 
 
-<h2>#2 - Counterfeit</h2>
+<h2 id="top2_counterfeit">#2 - Counterfeit</h2>
         <h4>Percentage of Total</h4>
 
 
@@ -1376,7 +1375,7 @@
 
 
 
-    <h2>#2 - Compulsory / Voluntary - Action Required / Responsible Party</h2>
+    <h2 id="top2_action_responsible">#2 - Compulsory / Voluntary - Action Required / Responsible Party</h2>
         <h4>Previous Year Vs Current Year</h4>
 
         <div class="datatable-container">
@@ -1465,7 +1464,7 @@
         </div>
         <br><a href="#" class="gototop">Go to Top</a>
 
-    <h2>#2 - Submitting Country</h2>
+    <h2 id="top2_submitting">#2 - Submitting Country</h2>
         <h4>Percentage by Country</h4>
 
         <div class="datatable-container">
@@ -1564,7 +1563,7 @@
     
     
     
-    <h2>#2 - Top Brands for Safety Alerts</h2>
+    <h2 id="top2_brands">#2 - Top Brands for Safety Alerts</h2>
         <div class="datatable-container">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-1-top-brands">
         <tbody> 
@@ -1589,7 +1588,7 @@
 
 
 <!-- Product 2 -->
-<h1>#3 - Top 3 Product Categories</h1>
+<h1 id="top3_categories">#3 - Top 3 Product Categories</h1>
 
 
 <h4>Percentage of Total</h4>
@@ -1618,7 +1617,7 @@
 <br><a href="#" class="gototop">Go to Top</a>
 
 
-<h4>Annual & Cumulative Total</h4>
+<h4 id="top3_annual">Annual & Cumulative Total</h4>
   <div class="datatable-container">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-2-annual-cumulative">
       <tbody> 
@@ -1663,7 +1662,7 @@
   <br><a href="#" class="gototop">Go to Top</a>
 
 
-  <h2>Risk Category</h2>
+  <h2 id="top3_risk">Risk Category</h2>
 
   <h4>Percentage by Type</h4>
     
@@ -1748,7 +1747,7 @@
         </div>
         <br><a href="#" class="gototop">Go to Top</a>
 
-<h2>#3 - Counterfeit ?</h2>
+<h2 id="top3_counterfeit">#3 - Counterfeit ?</h2>
 
         <h4>Percentage by Type</h4>
 
@@ -1838,7 +1837,7 @@
 
 
 
-<h2>#3 - Compulsory / Voluntary - Action Required / Responsible Party</h2><br>
+<h2 id="top3_action_responsible">#3 - Compulsory / Voluntary - Action Required / Responsible Party</h2><br>
         <h4>Previous Year Vs Current Year</h4>
 
         <div class="datatable-container">
@@ -1931,7 +1930,7 @@
         </div>
         <a href="#" class="gototop">Go to Top</a>
 
-        <h2>#3 - Submitting Country</h2>
+        <h2 id="top3_submitting">#3 - Submitting Country</h2>
         <h4>Percentage by Country</h4>
 
         <div class="datatable-container">
@@ -2026,7 +2025,7 @@
     
     
     
-    <h2>#3 - Top Brands for Safety Alerts</h2>
+    <h2 id="top3_brands">#3 - Top Brands for Safety Alerts</h2>
         <div class="datatable-container">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-2-top-brands">
         <tbody> 

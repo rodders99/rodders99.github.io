@@ -26,11 +26,11 @@
 
       <td style="text-align: right">Italy</td>
 
-      <td style="text-align: right">788</td>
+      <td style="text-align: right">281</td>
 
       <td style="text-align: right">284</td>
 
-      <td style="text-align: right">-64.0%</td>
+      <td style="text-align: right">1.1%</td>
 
     </tr>
 
@@ -40,11 +40,11 @@
 
       <td style="text-align: right">Germany</td>
 
-      <td style="text-align: right">433</td>
+      <td style="text-align: right">234</td>
 
       <td style="text-align: right">186</td>
 
-      <td style="text-align: right">-57.0%</td>
+      <td style="text-align: right">-20.5%</td>
 
     </tr>
 
@@ -54,39 +54,11 @@
 
       <td style="text-align: right">Sweden</td>
 
-      <td style="text-align: right">376</td>
+      <td style="text-align: right">175</td>
 
       <td style="text-align: right">210</td>
 
-      <td style="text-align: right">-44.1%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">France</td>
-
-      <td style="text-align: right">291</td>
-
-      <td style="text-align: right">139</td>
-
-      <td style="text-align: right">-52.2%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align: right">Hungary</td>
-
-      <td style="text-align: right">301</td>
-
-      <td style="text-align: right">76</td>
-
-      <td style="text-align: right">-74.8%</td>
+      <td style="text-align: right">20.0%</td>
 
     </tr>
 
@@ -96,11 +68,11 @@
 
       <td style="text-align: right">Czechia</td>
 
-      <td style="text-align: right">100</td>
+      <td style="text-align: right">67</td>
 
       <td style="text-align: right">206</td>
 
-      <td style="text-align: right">106.0%</td>
+      <td style="text-align: right">207.5%</td>
 
     </tr>
 
@@ -108,13 +80,13 @@
 
 
 
-      <td style="text-align: right">Poland</td>
+      <td style="text-align: right">France</td>
 
-      <td style="text-align: right">136</td>
+      <td style="text-align: right">109</td>
 
-      <td style="text-align: right">78</td>
+      <td style="text-align: right">139</td>
 
-      <td style="text-align: right">-42.6%</td>
+      <td style="text-align: right">27.5%</td>
 
     </tr>
 
@@ -124,11 +96,39 @@
 
       <td style="text-align: right">Romania</td>
 
-      <td style="text-align: right">128</td>
+      <td style="text-align: right">117</td>
 
       <td style="text-align: right">54</td>
 
-      <td style="text-align: right">-57.8%</td>
+      <td style="text-align: right">-53.8%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Poland</td>
+
+      <td style="text-align: right">62</td>
+
+      <td style="text-align: right">78</td>
+
+      <td style="text-align: right">25.8%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Hungary</td>
+
+      <td style="text-align: right">35</td>
+
+      <td style="text-align: right">76</td>
+
+      <td style="text-align: right">117.1%</td>
 
     </tr>
 
@@ -138,11 +138,11 @@
 
       <td style="text-align: right">Lithuania</td>
 
-      <td style="text-align: right">102</td>
+      <td style="text-align: right">33</td>
 
       <td style="text-align: right">77</td>
 
-      <td style="text-align: right">-24.5%</td>
+      <td style="text-align: right">133.3%</td>
 
     </tr>
 
@@ -152,11 +152,11 @@
 
       <td style="text-align: right">Ireland</td>
 
-      <td style="text-align: right">97</td>
+      <td style="text-align: right">41</td>
 
       <td style="text-align: right">51</td>
 
-      <td style="text-align: right">-47.4%</td>
+      <td style="text-align: right">24.4%</td>
 
     </tr>
 

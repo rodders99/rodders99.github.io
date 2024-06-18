@@ -160,6 +160,62 @@
 
     </tr>
 
+    <tr>
+
+
+
+      <td style="text-align: right">Protective Equipment</td>
+
+      <td style="text-align: right">79</td>
+
+      <td style="text-align: right">54</td>
+
+      <td style="text-align: right">-31.6%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Machinery</td>
+
+      <td style="text-align: right">44</td>
+
+      <td style="text-align: right">62</td>
+
+      <td style="text-align: right">40.9%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">E-Cig</td>
+
+      <td style="text-align: right">56</td>
+
+      <td style="text-align: right">23</td>
+
+      <td style="text-align: right">-58.9%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align: right">Hobby \ Sports</td>
+
+      <td style="text-align: right">28</td>
+
+      <td style="text-align: right">35</td>
+
+      <td style="text-align: right">25.0%</td>
+
+    </tr>
+
   </tbody>
 
 </table>

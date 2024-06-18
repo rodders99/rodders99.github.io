@@ -26,11 +26,11 @@
 
       <td style="text-align: right">Unknown</td>
 
-      <td style="text-align: right">3,125</td>
+      <td style="text-align: right">1,333</td>
 
       <td style="text-align: right">1,583</td>
 
-      <td style="text-align: right">-49.3%</td>
+      <td style="text-align: right">18.8%</td>
 
     </tr>
 
@@ -40,11 +40,11 @@
 
       <td style="text-align: right">Disti</td>
 
-      <td style="text-align: right">1,291</td>
+      <td style="text-align: right">454</td>
 
       <td style="text-align: right">650</td>
 
-      <td style="text-align: right">-49.7%</td>
+      <td style="text-align: right">43.2%</td>
 
     </tr>
 
@@ -54,11 +54,11 @@
 
       <td style="text-align: right">Importer</td>
 
-      <td style="text-align: right">625</td>
+      <td style="text-align: right">286</td>
 
       <td style="text-align: right">356</td>
 
-      <td style="text-align: right">-43.0%</td>
+      <td style="text-align: right">24.5%</td>
 
     </tr>
 
@@ -68,11 +68,11 @@
 
       <td style="text-align: right">Retail</td>
 
-      <td style="text-align: right">653</td>
+      <td style="text-align: right">302</td>
 
       <td style="text-align: right">310</td>
 
-      <td style="text-align: right">-52.5%</td>
+      <td style="text-align: right">2.6%</td>
 
     </tr>
 
@@ -82,11 +82,11 @@
 
       <td style="text-align: right">Manufacturer</td>
 
-      <td style="text-align: right">601</td>
+      <td style="text-align: right">269</td>
 
       <td style="text-align: right">279</td>
 
-      <td style="text-align: right">-53.6%</td>
+      <td style="text-align: right">3.7%</td>
 
     </tr>
 
