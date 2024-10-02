@@ -11,11 +11,11 @@ keywords:
 slug: Salifort Motors
 draft: false
 
-featuredImage: /salifort_project/Salifort-Logo.png
+featuredImage: https://rodders.me/salifort_project/Salifort-Logo.png
 
 ---
 
-![Salifort Logo](https://rodders.me//salifort_project/salifort_logo.png)
+![Salifort Logo](https://rodders.me/salifort_project/salifort_logo.png)
 
 ## Google Advanced Data Analytics Capstone Project - Salifort Motors
 
