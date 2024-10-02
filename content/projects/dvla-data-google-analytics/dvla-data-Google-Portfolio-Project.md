@@ -4,7 +4,7 @@ description: Details of my portfolio project for the Google Data Analytics Certi
 slug: google-data-analytics-portfolio-project-dvla-data
 date: "2023-08-14"
 lastmod: "2023-08-14"
-banner: "/img/tableau-df_veh0220.png"
+banner: "img/dvla_logo-white.png"
 draft: false
 tags:
   - data analytics
@@ -26,9 +26,10 @@ keywords:
   - R Language
   - Python Language
   - SQL
+featuredImage: img/dvla_logo-white.png
 ---
 
-![Alt text](/img/Google_Coursera_Logo.png)
+![Alt text](img/dvla_logo-white.png)
 
 ## Course Portfolio Project
 

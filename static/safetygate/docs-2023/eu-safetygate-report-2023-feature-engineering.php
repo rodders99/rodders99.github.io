@@ -18,9 +18,7 @@
 <body>
 <!-- NAVIGATION MENU-->
 
-<!-- <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-    
+
     
     <div class="page-container">
         
@@ -841,7 +839,7 @@ the creative commons license applies this work hosted on <a href="https://rodder
 <!-- <script src="../../scripts/comparison.js"> </script> -->
 
 <script>
-    // Hovertips
+    // Hover tips
     tippy('#CompareCountries', {content: 'Select any two countries and click compare to view the visualisations side by side.', theme: 'tomato'});
     tippy('#JumptoSection', {content: 'Select a section to jump to.', theme: 'tomato'});
     tippy('#CountryReport', {content: 'Select a Country to view a detailed report or compare countries.', theme: 'tomato', placement: 'left',});

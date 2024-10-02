@@ -10,11 +10,12 @@ keywords:
     - Machine Learning
 slug: Salifort Motors
 draft: false
-preview: /img/salifort_project/salifort_logo.png
-banner: /img/salifort_project/salifort_logo.png
+
+featuredImage: /salifort_project/Salifort-Logo.png
+
 ---
 
-![Salifort Logo](/salifort_project/img/salifort_logo.png)
+![Salifort Logo](/salifort_project/salifort_logo.png)
 
 ## Google Advanced Data Analytics Capstone Project - Salifort Motors
 

@@ -1,16 +1,96 @@
-/* 
-  .toolbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 100;
-  } */
-  
+.last-updated {
+  font-size: small;
+  /*text-transform: uppercase;*/
+  background-color: #fffdd4;
+  color: black;
+  display: inline-block;
+  width: auto;
+} 
+
+
+/* center the blockquote in the page */
+.blockquote-wrapper {
+  display: flex;
+  height: 25vh;
+  padding: 0 20px;
+}
+
+/* Blockquote main style */
+.blockquote {
+   position: relative;
+   font-family: 'Barlow Condensed', sans-serif;
+   max-width: 620px;
+   margin: 80px auto;
+   align-self: center;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+   font-family: 'Abril Fatface', cursive;
+   position: relative; /* for pseudos */
+   color: #e74848;
+   font-size: 1.6rem;
+   font-weight: normal;
+   line-height: 1;
+   margin: 0;
+   border: 2px solid #fff;
+   border: solid 2px;
+   border-radius:20px;
+   padding: 25px;
+}
+
+/* Blockquote right double quotes */
+.blockquote h1:after {
+   content:"";
+   position: absolute;
+   border: 2px solid #e74848;
+   border-radius: 0 50px 0 0;
+   width: 60px;
+   height: 60px;
+   bottom: -62px;
+   left: 50px;
+   border-bottom: none;
+   border-left: none;
+   z-index: 3; 
+}
+
+.blockquote h1:before {
+   content:"";
+   position: absolute;
+   width: 80px;
+   border: 6px solid #292a2b;
+   bottom: -3px;
+   left: 50px;
+   z-index: 2;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+   .blockquote h1 {
+       font-size: 1.4rem;
+       line-height: 1.2;
+  }
+
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+   position: relative;
+   color: #ffffff;
+   font-size: 1.0rem;
+   font-weight: 400;
+   line-height: 1.2;
+   margin: 0;
+   padding-top: 15px;
+   z-index: 1;
+   margin-left:150px;
+   padding-left:12px;
+}
+
+
+.blockquote h4:first-letter {
+ margin-left:-12px;
+}
 
 
 
@@ -317,20 +397,42 @@ body {
   width: 100%;
   background-color: #333;
   color: white;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
   z-index: 100;
-
-  /* tests */
-  max-width: 1140px;
+  max-width: 1200px;
   min-width: auto;
   margin: auto;
 }
 
+/* li {
+  margin-bottom: 5px;
+} */
 
+.list ul {
+  margin-bottom: 5px;
+}
 
 
 .tippy-box[data-theme~='tomato'] {
   background-color: tomato;
   color: yellow;
   }
+  
+/* .table-format {
+   /* width: 100%;*/
+    /*border-collapse: collapse; /* Optional: to remove space between table borders }*/ 
+
+/* Style for the first column (left aligned) */
+.table-format td:first-child,
+.table-format th:first-child {
+    text-align: left;
+}
+
+/* Style for the second and subsequent columns (center aligned) */
+.table-format td:not(:first-child),
+.table-format th:not(:first-child) {
+    text-align: center;
+}
+
+

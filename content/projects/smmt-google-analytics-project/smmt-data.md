@@ -10,9 +10,11 @@ type: default
 slug: "UK Vehicle Registration Analysis"
 keywords:
     - European Safety Gate for Non Food Products
+featuredImage: /smmt_project/img/tableau-dashboard-fp.png
+
 ---
 
-![Resize](/img/tableau-dashboard-fp.png?height=480)
+![Resize](/smmt_project/img/tableau-dashboard-fp.png?height=480)
 
 ## Project Goal
 
@@ -22,7 +24,7 @@ To obtain additional monthly car registration data to add to my DVLA Registratio
 
 This is additional data being added to the DVLA Registered Vehicles dashboard I maintain on Tableau. The DVLA data is issued annually and only gives annual totals for registered vehicles. SMMT publish data monthly in an image format and this project, grabs that data from the images and processes it into a CSV file suitable for import into Tableau.
 
-[![img](/img/tableau-dashboard-fp.png)](https://public.tableau.com/app/profile/rod.slater/viz/VehiclesRegisteredforUKdf_VEH0220/FrontPage)
+[![img](/smmt_project/img/tableau-dashboard-fp.png)](https://public.tableau.com/app/profile/rod.slater/viz/VehiclesRegisteredforUKdf_VEH0220/FrontPage)
 
 ## Intent
 

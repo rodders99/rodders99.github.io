@@ -10,9 +10,15 @@ categories = [ ]
 externalLink = ""
 series = [ ]
 preview = "/img/Safety_Gate_Logo.png"
+featuredImage = "/safetygate/img-2023/icons/Safety_Gate_Logo.png"
+
 +++
 
 ![Safety Gate Logo](/safetygate/img-2023/icons/Safety_Gate_Logo.png)
+
+| Last Updated | Latest Week |
+| :-: | :-: |
+| 26/08/2024 | week 34 |
 
 ## The EU Safety Gate project
 
@@ -63,11 +69,11 @@ This Report compiles a detailed collection of visualisations depicting the safet
 
 ### Safety Gate Compare Countries 2023
 
-- [Compare Countries](https://rodders.me/safetygate/docs-2023/eu-safetygate-report-2023-comparison.php?country1=france&country2=germany)
+- [Compare Countries for 2023](https://rodders.me/safetygate/docs-2023/eu-safetygate-report-2023-comparison.php?country1=france&country2=germany)
 
 ### Safety Gate Compare Countries 2024
 
-- [Compare Countries](https://rodders.me/safetygate/docs-2024/eu-safetygate-report-2024-comparison.php?country1=france&country2=germany)
+- [Compare Countries for 2024](https://rodders.me/safetygate/docs-2024/eu-safetygate-report-2024-comparison.php?country1=france&country2=germany)
 
 ### Country of Origin Report 2023
 

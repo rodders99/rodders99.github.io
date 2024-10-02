@@ -6,14 +6,33 @@
     <description>Recent content in Python on Rodders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 02 Mar 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Food Standards Agency Alerts Analysis</title>
+      <link>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</link>
+      <pubDate>Mon, 12 Aug 2024 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</guid>
+      <description>Analysis of Food Standards Agency Alerts Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Meta Data Feature Engineering Abstract Link to heading This report presents a comprehensive review of the food safety alerts issued by the UK Food Standards Agency. The analysis provides insights into the frequency, types, and relevant information about each alert, covering an eight year period.</description>
+    </item>
+    
+    <item>
+      <title>UK Mainstream Media -  Investigating Mainstream Media Sentiment towards Electric Vehicles</title>
+      <link>https://rodders.me/projects/ev-headlines/project-uk-mainstream-media-ev-bias/</link>
+      <pubDate>Thu, 27 Jun 2024 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/ev-headlines/project-uk-mainstream-media-ev-bias/</guid>
+      <description>Analysis of bias in headlines against Electric Vehicles by UK Mainstream Media Link to heading Abstract Link to heading This study analysed the sentiment of mainstream media headlines towards electric vehicles (EVs) from August to January, capturing a dataset of 1,976,938 datapoints across ten prominent UK publications, including
+The Sun The Express The Times The Telegraph Daily Mail Economist The BBC The Independent The Spectator The Daily Star Notably, The Telegraph, The Spectator, The Independent, and the Daily Mail were responsible for over 73% of all EV-related headlines, highlighting their disproportionate influence on public discourse.</description>
+    </item>
+    
     <item>
       <title>EU SafetyGate Report 2023</title>
       <link>https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/</link>
       <pubDate>Sat, 02 Mar 2024 09:15:27 +0000</pubDate>
       
       <guid>https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/</guid>
-      <description>The EU Safety Gate project Link to heading About this Project Link to heading I first encountered the EU Safety Gate in my previous role.
+      <description>Last Updated Latest Week 26/08/2024 week 34 The EU Safety Gate project Link to heading About this Project Link to heading I first encountered the EU Safety Gate in my previous role.
 Since 2003, the Safety Gate has enabled a quick exchange of information among EU/EEA Member States and the European Commission about dangerous non-food products posing a risk to the health and safety of consumers. Appropriate follow-up has to be taken by the national authorities so that the notified dangerous products are removed from the market.</description>
     </item>
     

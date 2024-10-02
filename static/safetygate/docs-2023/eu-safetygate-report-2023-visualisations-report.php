@@ -19,11 +19,6 @@
 
 <!-- NAVIGATION MENU-->
 
-<!-- <div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-
-
-
 
       <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
@@ -84,6 +79,7 @@
 
     <h1 class="nochange">EU Safety Gate Visualisations report</h1>
     <p><img src="https://rodders.me/safetygate/img-2023/icons/Safety_Gate_Logo.png" style="width:50%"></p>
+    <p class='last-updated'><?php include '../tables-2024/last-updated.php' ?></p>
 
     <p>This report series compiles a detailed collection of visualisations depicting the safety alerts issued for non-food products by the 
   European Union. Featuring around 1,100 meticulously crafted matplotlib plots, this report offers an in-depth visual analysis of the total alerts, 
@@ -142,12 +138,12 @@
     
     
     <div class="datatable-container" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-0-annual_alert_count.php' ?>
+      <?php include '../tables-2023/table-0-annual_alert_count.php' ?>
     </div>
 
 
     <div class="datatable-container" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-1-annual_alert_count.php' ?>
+      <?php include '../tables-2023/table-1-annual_alert_count.php' ?>
     </div>
 
 
@@ -1425,7 +1421,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2023 is du
 <!-- <script src="../../scripts/comparison.js"> </script> -->
 
 <script>
-    // Hovertips
+    // Hover tips
 
     tippy('#PresentAnnual', {content: 'Programmatic Recreation of "official" visualisations', theme: 'tomato', placement: 'right-end'});
     tippy('#AnnualTable', {content: 'Annual Alerts issued per year', theme: 'tomato', placement: 'right-end'});

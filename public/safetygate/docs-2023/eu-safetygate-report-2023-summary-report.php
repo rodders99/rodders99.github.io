@@ -85,7 +85,10 @@
     <!-- </div> -->
 
     <h1 class="nochange">EU Safety Gate report</h1>
-    <p><img src="https://rodders.me/safetygate/img-2023/icons/Safety_Gate_Logo.png" style="width:50%"></p>
+    <p><img src="../img-2023/icons/Safety_Gate_Logo.png" style="width:50%"></p>
+
+    <p class='last-updated'><?php include '../tables-2024/last-updated.php' ?></p>
+
 
     <p>The Annual Summary Report provides a comprehensive overview of safety alerts issued by the European Union for
       non-food products throughout the year. This report highlights the most notable data and trends, including
@@ -140,12 +143,12 @@
 
 
     <div class="datatable-container" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-0-annual_alert_count.php' ?>
+      <?php include '../tables-2023/table-0-annual_alert_count.php' ?>
     </div>
 
 
     <div class="datatable-container" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-1-annual_alert_count.php' ?>
+      <?php include '../tables-2023/table-1-annual_alert_count.php' ?>
     </div>
 
     <h2>Annual Alerts Issued - YoY Change </h2>
@@ -192,7 +195,7 @@
 
     <div class="datatable-container" id="table-alert-submitted-by"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-alert-submitted-by.php'; ?>
+      <?php include '../tables-2023/table-alert-submitted-by.php'; ?>
       <a href="#" class="gototop">Go to Top</a>
 
     </div>
@@ -229,7 +232,7 @@
     <h2 id="Product Categories">Product Categories</h2>
     <div class="datatable-container" id="table-product-category-change.php"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-product-category-change.php'; ?>
+      <?php include '../tables-2023/table-product-category-change.php'; ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
     <p></p>
@@ -373,7 +376,7 @@
     <h3 id="Cosmetics_subcats">Cosmetics Sub Categories affected by the ban</h3>
     <div class="datatable-container" id="table-cosmetics-product-sub-cat-change"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-cosmetics-product-sub-cat-change.php' ?>
+      <?php include '../tables-2023/table-cosmetics-product-sub-cat-change.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
@@ -392,7 +395,7 @@
 
     <h3 id="cosmetics_country_origin">Cosmetic Products Safety Gate Alerts, Country of origin</h3>
     <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-cosmetics-country-of-origin-change.php' ?>
+      <?php include '../tables-2023/table-cosmetics-country-of-origin-change.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
@@ -407,7 +410,7 @@
 
     <h3 id="cosmetics_brands">Cosmetic Products Safety Gate Alerts, Top 30 Brands</h3>
     <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-cosmetics-brands-change.php' ?>
+      <?php include '../tables-2023/table-cosmetics-brands-change.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
@@ -428,7 +431,7 @@
     </p>
     <div class="datatable-container" id="table-economic-area-compare.php"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-economic-area-compare.php' ?>
+      <?php include '../tables-2023/table-economic-area-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
@@ -446,7 +449,7 @@
 
     <div class="datatable-container" id="table-country-top15-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-country-top15-compare.php' ?>
+      <?php include '../tables-2023/table-country-top15-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
     <p></p>
@@ -482,7 +485,7 @@
     <p></p>
     <div class="datatable-container" id="table-risk-category-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-risk-category-compare.php' ?>
+      <?php include '../tables-2023/table-risk-category-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
     <p></p>
@@ -490,7 +493,7 @@
     <h2 id="prodcat_risk">Product Category mapped to Risk Category</h2>
     <div class="datatable-container" id="table-risk-product-category-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-risk-product-category-compare.php' ?>
+      <?php include '../tables-2023/table-risk-product-category-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
@@ -516,7 +519,7 @@
       or consumer complaints. </p>
     <div class="datatable-container" id="table-risk-product-category-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-action-required.php' ?>
+      <?php include '../tables-2023/table-action-required.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
@@ -535,7 +538,7 @@
       during routine inspections or investigations, identify the responsible party and mandate corrective measures.</p>
     <div class="datatable-container" id="table-risk-product-category-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-responsible-party.php' ?>
+      <?php include '../tables-2023/table-responsible-party.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
@@ -547,7 +550,7 @@
 
     <p></p>
     <div class="datatable-container" id="table-brand-compare" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2023/table-top30-brand-compare.php' ?>
+      <?php include '../tables-2023/table-top30-brand-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
 
@@ -1670,7 +1673,7 @@
 <script src="projects-2023.js"> </script>
 
 <script>
-  // Hovertips
+  // Hover tips
 
   tippy('#PresentAnnual', {
     content: 'Programmatic Recreation of "official" visualisations',

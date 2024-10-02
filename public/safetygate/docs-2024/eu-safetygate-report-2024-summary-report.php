@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" type="text/css" href="/css/project-style.css">
 
-  <title>eu-safetygate-report-2023</title>
+  <title>eu-safetygate-report-2024</title>
 
 </head>
 
@@ -95,11 +95,14 @@
     <!-- </div> -->
 
     <h1 class="nochange">EU Safetygate report - 2024 Year to Date</h1>
-    <p><img src="https://rodders.me/safetygate/img-2024/icons/Safety_Gate_Logo.png" style="width:50%"></p>
-    <p>The Annual Summary Report provides a comprehensive overview of safety alerts issued by the European Union for
-      non-food products throughout the year. This report highlights the most notable data and trends, including
-      significant
-      increases or decreases in alerts. </p>
+    <p><img src="/safetygate/img-2024/icons/Safety_Gate_Logo.png" style="width:50%"></p>
+    
+    <p class='last-updated'><?php include '../tables-2024/last-updated.php' ?></p>
+
+
+    <p>The YEAR TO DATE Annual Summary Report provides a comprehensive overview of safety alerts issued by the European Union for
+      non-food products throughout the year. The data set compares the same time period up to the noted week for each year. This report 
+      highlights the most notable data and trends, including significant increases or decreases in alerts. </p>
 
     <p>Data Includes: </p>
     <ul>
@@ -111,8 +114,7 @@
       <li>Regulatory identification of responsible party</li>
       <li>Brand Owners </li>
 </ul>
-      <p>And more.
-      <p>
+      <p>And more.</p>
       <p> It aims to give readers a clear and concise understanding of the key safety concerns and regulatory actions
         taken within the year.</p>
 
@@ -127,8 +129,8 @@
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/number-of-alerts-validated-on-safetygate-from-2005-to-2024.png" id="PresentAnnual">
-                  <img src="https://rodders.me/safetygate/img-2024/number-of-alerts-validated-on-safetygate-from-2005-to-2024.png" /></a>
+                <a href="/safetygate/img-2024/number-of-alerts-validated-on-safetygate-from-2005-to-2024.png" id="PresentAnnual">
+                  <img src="/safetygate/img-2024/number-of-alerts-validated-on-safetygate-from-2005-to-2024.png" /></a>
               </td>
             </tr>
           </tbody>
@@ -144,35 +146,35 @@
 
       <ul>
         <li>Around 25% of all alerts issued are for products where the Country of Origin is unknown.</li>
-        <li>On average China represents around 50% of Alerts issued</li>
+        <li>On average China represents around 50% of Alerts issued.</li>
         <li>2023 was exceptional with 1,072 alerts to cosmetic products containing the chemical BMHCA / Lilial which was
           banned in 2022 for use in cosmetics.</li>
       
-      <li>2024 continues the exceptions with 442 new alerts issued for non compliant cosmetic products.</li>
+      <li>2024 continues the exceptions with 929 new alerts issued for non compliant cosmetic products. 37% of all alerts issued are for Cosmetics.</li>
     </ul>
 
-    <p>So far, over 1,500 cosmetic products have been withdrawn or banned fo sale in the EU</p>
+    <p>So far, over 2,200 cosmetic products have been withdrawn or banned from sale in the EU.</p>
 
 
     <h4>Comparing annual totals up to YTD 2024</h4>
     <div class="datatable-container" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2024/table-0-annual_alert_count.php' ?>
+      <?php include '../tables-2024/table-0-annual_alert_count.php' ?>
     </div>
 
 
     <div class="datatable-container" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2024/table-1-annual_alert_count.php' ?>
+      <?php include '../tables-2024/table-1-annual_alert_count.php' ?>
     </div>
 
-
+<br>
     <h4>Comparing up to the same week for each year</h4>
     <div class="datatable-container" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2024/table-0-this-ytd-annual_alert_count.php' ?>
+      <?php include '../tables-2024/table-0-this-ytd-annual_alert_count.php' ?>
     </div>
 
 
     <div class="datatable-container" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
-      <?php include '../img-2024/table-1-this-ytd-annual_alert_count.php' ?>
+      <?php include '../tables-2024/table-1-this-ytd-annual_alert_count.php' ?>
     </div>
 
 
@@ -182,8 +184,7 @@
     <p>2023 saw a 59% increase in the average number of alerts issued in a year, with the total alerts
       issued increasing from 2,100 alerts in 2022 to 3,349 in 2023, an
       increase of 1,249 over the previous year.</p>
-    <p>2024 Year to date, there has been a 19% increase in the number of alerts issued compared to the previous year.
-    </p>
+    <p>2024 Year to date, there has been a 29% increase in the number of alerts issued compared to the same time period the previous year.</p>
     <div class="datatable-container" id="all-AnnualCumulative">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
@@ -193,15 +194,15 @@
           </tr>
           <tr>
             <td style="text-align:center;">
-              <A href="https://rodders.me/safetygate/img-2024/all-countries-annual-and-cumulative-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-annual-and-cumulative-alerts.png" />
+              <A href="/safetygate/img-2024/all-countries-annual-and-cumulative-alerts.png">
+                <img src="/safetygate/img-2024/all-countries-annual-and-cumulative-alerts.png" />
               </a>
 
             <td style="text-align:center;">
               <a
-                href="https://rodders.me/safetygate/img-2024/all-countries-annual-cumulative-alerts-and-yoy-change.png">
+                href="/safetygate/img-2024/all-countries-annual-cumulative-alerts-and-yoy-change.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-annual-cumulative-alerts-and-yoy-change.png"></a>
+                  src="/safetygate/img-2024/all-countries-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
 
           </tr>
@@ -216,13 +217,13 @@
 
     <h4>Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-submitting-country-2022vs2023">
+    <div class="datatable-container" id="all-submitting-country-2023vs2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-submitting-country-ly-vs-ty.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-submitting-country-ly-vs-ty.png"></a>
+              <a href="/safetygate/img-2024/all-countries-submitting-country-ly-vs-ty.png">
+                <img src="/safetygate/img-2024/all-countries-submitting-country-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -242,14 +243,14 @@
           </tr>
           <tr>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/all-countries-submitting-country-annual-alerts.png">
+                href="/safetygate/img-2024/all-countries-submitting-country-annual-alerts.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-submitting-country-annual-alerts.png"></a>
+                  src="/safetygate/img-2024/all-countries-submitting-country-annual-alerts.png"></a>
             </td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/all-countries-submitting-country-annual-alerts-percentage.png">
+                href="/safetygate/img-2024/all-countries-submitting-country-annual-alerts-percentage.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-submitting-country-annual-alerts-percentage.png"></a>
+                  src="/safetygate/img-2024/all-countries-submitting-country-annual-alerts-percentage.png"></a>
             </td>
           </tr>
         </tbody>
@@ -279,7 +280,7 @@
     </p>
 
     <div style="background-color: white; display: inline-block; ">
-      <img src="https://rodders.me/safetygate/img-2024/icons/bmhca-molecule.png"><br> BMHCA "Lilial" Molecule
+      <img src="/safetygate/img-2024/icons/bmhca-molecule.png"><br> BMHCA "Lilial" Molecule
     </div>
 
 
@@ -294,12 +295,12 @@
 
       <h3 id="cosmetics_alerts">Safety Gate alerts issued for Cosmetics (Total)</h3>
         <div class="datatable-container" id="Cosmetics-AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
-          <?php include '../img-2024/table-0-cosmetics-annual_alert_count.php' ?>
+          <?php include '../tables-2024/table-0-cosmetics-annual_alert_count.php' ?>
           </div>
           
           
           <div class="datatable-container" id="Cosmetics-AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
-            <?php include '../img-2024/table-1-cosmetics-annual_alert_count.php' ?>
+            <?php include '../tables-2024/table-1-cosmetics-annual_alert_count.php' ?>
             </div>
     <h4>UK and BMHCA</h4>
     <p>
@@ -338,7 +339,7 @@
       different cosmetic leave-on and rinse-off type products. However, considering the first-tier
       deterministic aggregate exposure, arising from the use of different product types together,
       Butylphenyl methylpropional at the proposed concentrations cannot be considered as safe.</p>
-    <p>
+    <>
 
     <h4> "first-tier deterministic aggregate exposure" refers to an initial, simplified assessment of total exposure to
       a particular substance from all sources and routes, using fixed input values for variables.
@@ -394,9 +395,9 @@
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-annual-alerts-cosmetics-sub-category.png">
+              <a href="/safetygate/img-2024/all-countries-annual-alerts-cosmetics-sub-category.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-annual-alerts-cosmetics-sub-category.png"></a>
+                  src="/safetygate/img-2024/all-countries-annual-alerts-cosmetics-sub-category.png"></a>
 
             </td>
           </tr>
@@ -406,23 +407,27 @@
     </div>
 
     <h3 id="cosmetics_brands">Top 30 Cosmetics Brands for Safety Alerts </h3>
-
-
+    
     <div class="datatable-container" id="all-Cosmetics-Brands">
+      <!-- <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto"></table> -->
+    <?php include '../tables-2024/cosmetics-top30-annual-alerts.php' ?>
+  </div>
+
+    <!-- <div class="datatable-container" id="all-Cosmetics-Brands">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
               <a
-                href="https://rodders.me/safetygate/img-2024/top-30-cosmetics-brands.png">
+                href="/safetygate/img-2024/top-30-cosmetics-brands.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/top-30-cosmetics-brands.png"></a>
+                  src="/safetygate/img-2024/top-30-cosmetics-brands.png"></a>
             </td>
           </tr>
         </tbody>
       </table>
       <a href="#" class="gototop">Go to Top</a>
-    </div>
+    </div> -->
 
     <h1 id="country_alerts">Which countries' products get the most alerts?</h1>
 
@@ -442,15 +447,15 @@
 
     <h2 id="economic_alerts">Economic Area of Product origin Annual Alerts </h2>
 
-    <div class="datatable-container" id="all-Economic-Area-2022-vs-2023">
+    <div class="datatable-container" id="all-Economic-Area-2023-vs-2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
               <a
-                href="https://rodders.me/safetygate/img-2024/all-countries-economic-area-of-product-origin-annual-alerts.png">
+                href="/safetygate/img-2024/all-countries-economic-area-of-product-origin-annual-alerts.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-economic-area-of-product-origin-annual-alerts.png"></a>
+                  src="/safetygate/img-2024/all-countries-economic-area-of-product-origin-annual-alerts.png"></a>
 
             </td>
           </tr>
@@ -463,15 +468,15 @@
     <p>Italy has been highlighted to show the significant number of alerts issued against cosmetics manufactured in
       Italy.</p>
 
-    <div class="datatable-container" id="all-Economic-Area-2022-vs-2023">
+    <div class="datatable-container" id="all-Economic-Area-2023-vs-2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
               <a
-                href="https://rodders.me/safetygate/img-2024/all-countries-economic-area-of-product-origin-total-alerts-ly-vs-ty.png">
+                href="/safetygate/img-2024/all-countries-economic-area-of-product-origin-total-alerts-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-economic-area-of-product-origin-total-alerts-ly-vs-ty.png"></a>
+                  src="/safetygate/img-2024/all-countries-economic-area-of-product-origin-total-alerts-ly-vs-ty.png"></a>
 
             </td>
           </tr>
@@ -490,21 +495,21 @@
       products, or 25.8% of the total Alerts issued</ul>
 
     <h4>Previous Year Vs Current Year</h4>
-    <div class="datatable-container" id="all-Coo-2022-vs-2023">
+    <div class="datatable-container" id="all-Coo-2023-vs-2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
               <a
-                href="https://rodders.me/safetygate/img-2024/all-countries-country-of-origin-total-alerts-percentage.png">
+                href="/safetygate/img-2024/all-countries-country-of-origin-total-alerts-percentage.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-country-of-origin-total-alerts-percentage.png"></a>
+                  src="/safetygate/img-2024/all-countries-country-of-origin-total-alerts-percentage.png"></a>
             </td>
             <td>
               <a
-                href="https://rodders.me/safetygate/img-2024/all-countries-country-of-origin-total-alerts-ly-vs-ty.png">
+                href="/safetygate/img-2024/all-countries-country-of-origin-total-alerts-ly-vs-ty.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-country-of-origin-total-alerts-ly-vs-ty.png"></a>
+                  src="/safetygate/img-2024/all-countries-country-of-origin-total-alerts-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -525,13 +530,13 @@
           </tr>
           <tr>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/all-countries-country-of-origin-annual-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-country-of-origin-annual-alerts.png"></a>
+                href="/safetygate/img-2024/all-countries-country-of-origin-annual-alerts.png">
+                <img src="/safetygate/img-2024/all-countries-country-of-origin-annual-alerts.png"></a>
             </td>
             <td style="text-align:center;">
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-country-of-origin-annual-alerts-percentage.png">
+              <a href="/safetygate/img-2024/all-countries-country-of-origin-annual-alerts-percentage.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-country-of-origin-annual-alerts-percentage.png"></a>
+                  src="/safetygate/img-2024/all-countries-country-of-origin-annual-alerts-percentage.png"></a>
             </td>
           </tr>
         </tbody>
@@ -546,13 +551,13 @@
     <h2 id="category">Product Categories</h2>
 
     <h4>Previous Year Vs Current Year</h4>
-    <div class="datatable-container" id="all-product-category-2022vs2023">
+    <div class="datatable-container" id="all-product-category-2023vs2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-product-category-ly-vs-ty.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-product-category-ly-vs-ty.png"></a>
+              <a href="/safetygate/img-2024/all-countries-product-category-ly-vs-ty.png">
+                <img src="/safetygate/img-2024/all-countries-product-category-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -576,14 +581,14 @@
           </tr>
           <tr>
             <td style="text-align:center;">
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-product-category-annual-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-product-category-annual-alerts.png"></a>
+              <a href="/safetygate/img-2024/all-countries-product-category-annual-alerts.png">
+                <img src="/safetygate/img-2024/all-countries-product-category-annual-alerts.png"></a>
             </td>
             <td style="text-align:center;">
               <a
-                href="https://rodders.me/safetygate/img-2024/all-countries-product-category-annual-alerts-percentage.png">
+                href="/safetygate/img-2024/all-countries-product-category-annual-alerts-percentage.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-product-category-annual-alerts-percentage.png"></a>
+                  src="/safetygate/img-2024/all-countries-product-category-annual-alerts-percentage.png"></a>
             </td>
           </tr>
         </tbody>
@@ -603,13 +608,13 @@
     </ul>
 
     <h4>Previous Year Vs Current Year</h4>
-    <div class="datatable-container" id="all-risk-category-2022vs2023">
+    <div class="datatable-container" id="all-risk-category-2023-vs-2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-risk-category-ly-vs-ty.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-risk-category-ly-vs-ty.png"></a>
+              <a href="/safetygate/img-2024/all-countries-risk-category-ly-vs-ty.png">
+                <img src="/safetygate/img-2024/all-countries-risk-category-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -630,11 +635,11 @@
           </tr>
           <tr>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts.png"></a></td>
+                href="/safetygate/img-2024/all-countries-risk-category-annual-alerts.png"><img
+                  src="/safetygate/img-2024/all-countries-risk-category-annual-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts-percentage.png"><img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-risk-category-annual-alerts-percentage.png"></a>
+                href="/safetygate/img-2024/all-countries-risk-category-annual-alerts-percentage.png"><img
+                  src="/safetygate/img-2024/all-countries-risk-category-annual-alerts-percentage.png"></a>
             </td>
           </tr>
         </tbody>
@@ -647,13 +652,13 @@
 
 
     <h4>Previous Year Vs Current Year</h4>
-    <div class="datatable-container" id="all-counterfeit-2022vs2023">
+    <div class="datatable-container" id="all-counterfeit-2023-vs-2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-counterfeit-ly-vs-ty.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-counterfeit-ly-vs-ty.png"></a>
+              <a href="/safetygate/img-2024/all-countries-counterfeit-ly-vs-ty.png">
+                <img src="/safetygate/img-2024/all-countries-counterfeit-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -674,13 +679,13 @@
           </tr>
           <tr>
             <td style="text-align:center;">
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-counterfeit-annual-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-counterfeit-annual-alerts.png"></a>
+              <a href="/safetygate/img-2024/all-countries-counterfeit-annual-alerts.png">
+                <img src="/safetygate/img-2024/all-countries-counterfeit-annual-alerts.png"></a>
             </td>
             <td style="text-align:center;">
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-counterfeit-annual-alerts-percentage.png">
+              <a href="/safetygate/img-2024/all-countries-counterfeit-annual-alerts-percentage.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-counterfeit-annual-alerts-percentage.png"></a>
+                  src="/safetygate/img-2024/all-countries-counterfeit-annual-alerts-percentage.png"></a>
             </td>
           </tr>
         </tbody>
@@ -694,13 +699,13 @@
     in cosmetics.
 
     <h4>Previous Year Vs Current Year</h4>
-    <div class="datatable-container" id="all-action-required-2022vs2023">
+    <div class="datatable-container" id="all-action-required-2023-vs-2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-action-required-ly-vs-ty.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-action-required-ly-vs-ty.png"></a>
+              <a href="/safetygate/img-2024/all-countries-action-required-ly-vs-ty.png">
+                <img src="/safetygate/img-2024/all-countries-action-required-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -719,13 +724,13 @@
           </tr>
           <tr>
             <td style="text-align:center; width:49%">
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-action-required-annual-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-action-required-annual-alerts.png"></a>
+              <a href="/safetygate/img-2024/all-countries-action-required-annual-alerts.png">
+                <img src="/safetygate/img-2024/all-countries-action-required-annual-alerts.png"></a>
             </td>
 
             <td style="text-align:center; width:49%">
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-action-required-total-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-action-required-total-alerts.png">
+              <a href="/safetygate/img-2024/all-countries-action-required-total-alerts.png">
+                <img src="/safetygate/img-2024/all-countries-action-required-total-alerts.png">
               </a>
             </td>
 
@@ -740,13 +745,13 @@
 
     <h4>Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-responsible-2022vs2023">
+    <div class="datatable-container" id="all-responsible-2023-vs-2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-responsible-partry-ly-vs-ty.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-responsible-partry-ly-vs-ty.png"></a>
+              <a href="/safetygate/img-2024/all-countries-responsible-party-ly-vs-ty.png">
+                <img src="/safetygate/img-2024/all-countries-responsible-party-ly-vs-ty.png"></a>
             </td>
           </tr>
         </tbody>
@@ -765,14 +770,14 @@
           </tr>
           <tr>
             <td style="text-align:center; width:49%">
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-responsible-party-annual-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-responsible-party-annual-alerts.png"></a>
+              <a href="/safetygate/img-2024/all-countries-responsible-party-annual-alerts.png">
+                <img src="/safetygate/img-2024/all-countries-responsible-party-annual-alerts.png"></a>
             </td>
 
 
             <td style="text-align:center; width:49%">
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-responsible-party-total-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-responsible-party-total-alerts.png">
+              <a href="/safetygate/img-2024/all-countries-responsible-party-total-alerts.png">
+                <img src="/safetygate/img-2024/all-countries-responsible-party-total-alerts.png">
               </a>
             </td>
 
@@ -804,243 +809,242 @@
             <th style="text-align:center;">Cumulative Total and YoY Change</th>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=china">China</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=china">China</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/china-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/china-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/china-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/china-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;">
-              <a href="https://rodders.me/safetygate/img-2024/china-annual-cumulative-alerts-and-yoy-change.png">
-                <img src="https://rodders.me/safetygate/img-2024/china-annual-cumulative-alerts-and-yoy-change.png"></a>
+              <a href="/safetygate/img-2024/china-annual-cumulative-alerts-and-yoy-change.png">
+                <img src="/safetygate/img-2024/china-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=china">China</A></th>
-            <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/china-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/china-top3s"></a></td>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=china">China</A></th>
+            <td colspan="2" style="text-align:center;">
+              <a href="/safetygate/img-2024/china-top3s.png"><img src="/safetygate/img-2024/china-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=france">France</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=france">France</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/france-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/france-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/france-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/france-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/france-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/france-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/france-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/france-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=france">France</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=france">France</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/france-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/france-top3s"></a></td>
+                href="/safetygate/img-2024/france-top3s.png"><img
+                  src="/safetygate/img-2024/france-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=germany">Germany</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=germany">Germany</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/germany-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/germany-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/germany-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/germany-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/germany-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/germany-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/germany-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/germany-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=germany">Germany</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=germany">Germany</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/germany-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/germany-top3s"></a></td>
+                href="/safetygate/img-2024/germany-top3s.png"><img
+                  src="/safetygate/img-2024/germany-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=india">India</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=india">India</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/india-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/india-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/india-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/india-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/india-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/india-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/india-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/india-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=india">India</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=india">India</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/india-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/india-top3s"></a></td>
+                href="/safetygate/img-2024/india-top3s.png"><img
+                  src="/safetygate/img-2024/india-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=italy">Italy</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=italy">Italy</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/italy-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/italy-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/italy-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/italy-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/italy-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/italy-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/italy-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/italy-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=italy">Italy</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=italy">Italy</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/italy-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/italy-top3s"></a></td>
+                href="/safetygate/img-2024/italy-top3s.png"><img
+                  src="/safetygate/img-2024/italy-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=japan">Japan</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=japan">Japan</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/japan-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/japan-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/japan-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/japan-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/japan-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/japan-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/japan-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/japan-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=japan">Japan</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=japan">Japan</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/japan-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/japan-top3s"></a></td>
+                href="/safetygate/img-2024/japan-top3s.png"><img
+                  src="/safetygate/img-2024/japan-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland">Poland</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=poland">Poland</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/poland-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/poland-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/poland-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/poland-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/poland-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/poland-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/poland-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/poland-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland">Poland</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=poland">Poland</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/poland-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/poland-top3s"></a></td>
+                href="/safetygate/img-2024/poland-top3s.png"><img
+                  src="/safetygate/img-2024/poland-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=poland">Spain</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=poland">Spain</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/spain-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/spain-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/spain-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/spain-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/spain-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/spain-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/spain-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/spain-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=spain">Spain</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=spain">Spain</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/spain-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/spain-top3s"></a></td>
+                href="/safetygate/img-2024/spain-top3s.png"><img
+                  src="/safetygate/img-2024/spain-top3s.png"></a></td>
           </tr>
 
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=sweden">Sweden</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=sweden">Sweden</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/sweden-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/sweden-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/sweden-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/sweden-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/sweden-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/sweden-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/sweden-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/sweden-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=sweden">Sweden</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=sweden">Sweden</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/sweden-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/sweden-top3s"></a></td>
+                href="/safetygate/img-2024/sweden-top3s.png"><img
+                  src="/safetygate/img-2024/sweden-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=taiwan">Taiwan</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=taiwan">Taiwan</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/taiwan-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/taiwan-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/taiwan-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/taiwan-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/taiwan-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/taiwan-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/taiwan-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/taiwan-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=taiwan">Taiwan</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=taiwan">Taiwan</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/taiwan-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/taiwan-top3s"></a></td>
+                href="/safetygate/img-2024/taiwan-top3s.png"><img
+                  src="/safetygate/img-2024/taiwan-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=uk">UK</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=uk">UK</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/uk-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/uk-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/uk-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/uk-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/uk-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/uk-annual-cumulative-alerts-and-yoy-change.png"></a></td>
+                href="/safetygate/img-2024/uk-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/uk-annual-cumulative-alerts-and-yoy-change.png"></a></td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=uk">UK</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=uk">UK</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/uk-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/uk-top3s"></a></td>
+                href="/safetygate/img-2024/uk-top3s.png"><img
+                  src="/safetygate/img-2024/uk-top3s.png"></a></td>
           </tr>
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=usa">USA</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=usa">USA</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/usa-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/usa-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/usa-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/usa-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/usa-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/usa-annual-cumulative-alerts-and-yoy-change.png"></a></td>
+                href="/safetygate/img-2024/usa-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/usa-annual-cumulative-alerts-and-yoy-change.png"></a></td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=usa">USA</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=usa">USA</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/usa-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/usa-top3s"></a></td>
+                href="/safetygate/img-2024/usa-top3s.png"><img
+                  src="/safetygate/img-2024/usa-top3s.png"></a></td>
           </tr>
 
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=other">Other</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=other">Other</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/other-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/other-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/other-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/other-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/other-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/other-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/other-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/other-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=other">Other</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=other">Other</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/other-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/other-top3s"></a></td>
+                href="/safetygate/img-2024/other-top3s.png"><img
+                  src="/safetygate/img-2024/other-top3s.png"></a></td>
           </tr>
 
 
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=unknown">Unknown</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=unknown">Unknown</A></th>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/unknown-annual-and-cumulative-alerts.png"><img
-                  src="https://rodders.me/safetygate/img-2024/unknown-annual-and-cumulative-alerts.png"></a></td>
+                href="/safetygate/img-2024/unknown-annual-and-cumulative-alerts.png"><img
+                  src="/safetygate/img-2024/unknown-annual-and-cumulative-alerts.png"></a></td>
             <td style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/unknown-annual-cumulative-alerts-and-yoy-change.png"><img
-                  src="https://rodders.me/safetygate/img-2024/unknown-annual-cumulative-alerts-and-yoy-change.png"></a>
+                href="/safetygate/img-2024/unknown-annual-cumulative-alerts-and-yoy-change.png"><img
+                  src="/safetygate/img-2024/unknown-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
-            <td><A href="/safetygate/docs/eu-safetygate-report-2023-country.html?country1=unknown">Unknown</A></th>
+            <td><A href="/safetygate/docs-2024/eu-safetygate-report-2024-country.html?country1=unknown">Unknown</A></th>
             <td colspan="2" style="text-align:center;"><a
-                href="https://rodders.me/safetygate/img-2024/unknown-top3s.png"><img
-                  src="https://rodders.me/safetygate/img-2024/unknown-top3s"></a></td>
+                href="/safetygate/img-2024/unknown-top3s.png"><img
+                  src="/safetygate/img-2024/unknown-top3s.png"></a></td>
           </tr>
 
         </tbody>
@@ -1056,8 +1060,8 @@
         <tbody>
           <tr>
             <td>
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-top-30-brands-for-safety-alerts.png">
-                <img src="https://rodders.me/safetygate/img-2024/all-countries-top-30-brands-for-safety-alerts.png"></a>
+              <a href="/safetygate/img-2024/all-countries-top-30-brands-for-safety-alerts.png">
+                <img src="/safetygate/img-2024/all-countries-top-30-brands-for-safety-alerts.png"></a>
             </td>
           </tr>
         </tbody>
@@ -1085,15 +1089,15 @@
           </tr>
           <tr>
             <td style="text-align:center; width:49%">
-              <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-annual-and-cumulative-alerts.png">
+              <a href="/safetygate/img-2024/all-countries-product-0-annual-and-cumulative-alerts.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-product-0-annual-and-cumulative-alerts.png"></a>
+                  src="/safetygate/img-2024/all-countries-product-0-annual-and-cumulative-alerts.png"></a>
             </td>
             <td style="text-align:center; width:49%">
               <a
-                href="https://rodders.me/safetygate/img-2024/all-countries-product-0-annual-cumulative-alerts-and-yoy-change.png">
+                href="/safetygate/img-2024/all-countries-product-0-annual-cumulative-alerts-and-yoy-change.png">
                 <img
-                  src="https://rodders.me/safetygate/img-2024/all-countries-product-0-annual-cumulative-alerts-and-yoy-change.png"></a>
+                  src="/safetygate/img-2024/all-countries-product-0-annual-cumulative-alerts-and-yoy-change.png"></a>
             </td>
           </tr>
           <tr>
@@ -1106,15 +1110,15 @@
 
     <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
-      <div class="datatable-container" id="all-product-cat-0-submitting-country-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-0-submitting-country-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-submitting-country-ly-vs-ty.png">
+                  href="/safetygate/img-2024/all-countries-product-0-submitting-country-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-submitting-country-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-submitting-country-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1135,15 +1139,15 @@
             <tr>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-submitting-country-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-0-submitting-country-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-submitting-country-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-submitting-country-annual-alerts.png"></a>
               </td>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-submitting-country-annual-percentage.png">
+                  href="/safetygate/img-2024/all-countries-product-0-submitting-country-annual-percentage.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-submitting-country-annual-percentage.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-submitting-country-annual-percentage.png"></a>
               </td>
             </tr>
 
@@ -1155,14 +1159,14 @@
       <h2 class="product_cat0"  id="top1_risk">#1 - Risk Category</h2>
       <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
-      <div class="datatable-container" id="all-product-cat-0-risk-category-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-0-risk-category-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-risk-category-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-0-risk-category-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-risk-category-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-risk-category-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1182,15 +1186,15 @@
             <tr>
               <td style="text-align:center;">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-risk-category-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-0-risk-category-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-risk-category-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-risk-category-annual-alerts.png"></a>
               </td>
               <td style="text-align:center;">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-risk-category-annual-alerts-percentage.png">
+                  href="/safetygate/img-2024/all-countries-product-0-risk-category-annual-alerts-percentage.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-risk-category-annual-alerts-percentage.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-risk-category-annual-alerts-percentage.png"></a>
               </td>
             </tr>
 
@@ -1201,15 +1205,15 @@
 
       <h2 class="product_cat0"  id="top1_counterfeit">#1 - Counterfeit </h2>
       <h4>Previous Year Vs Current Year</h4>
-      <div class="datatable-container" id="all-product-cat-0-counterfeit-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-0-counterfeit-2023-vs-2024">
 
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-0-counterfeit-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-counterfeit-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1231,15 +1235,15 @@
             </tr>
             <tr>
               <td style="text-align:center; width:49%">
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts.png">
+                <a href="/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts.png"></a>
               </td>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts-percentage.png">
+                  href="/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts-percentage.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts-percentage.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-counterfeit-annual-alerts-percentage.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1254,14 +1258,14 @@
       <h3 class="product_cat0"  id="top1_action">#1 - Compulsory / Voluntary Action Required</h3>
       <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
-      <div class="datatable-container" id="all-product-cat-0-action-required-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-0-action-required-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-0-action-required-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-action-required-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1282,15 +1286,15 @@
             <tr>
               <td style="width:48%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-0-action-required-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-action-required-annual-alerts.png"></a>
               </td>
               <td style="width:48%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-total-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-0-action-required-total-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-action-required-total-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-action-required-total-alerts.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1301,14 +1305,14 @@
 
       <h2 class="product_cat0"  id="top1_responsible">#1 - Compulsory / Voluntary Responsible Party</h2>
       <h4 class="product_cat0">Previous Year Vs Current Year</h4>
-      <div class="datatable-container" id="all-product-cat-0-responsible-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-0-responsible-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-0-responsible-party-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-0-responsible-party-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-responsible-party-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-responsible-party-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1330,15 +1334,15 @@
             <tr>
               <td style="width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-responsible-party-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-0-responsible-party-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-responsible-party-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-responsible-party-annual-alerts.png"></a>
               </td>
               <td style="width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-responsible-party-total-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-0-responsible-party-total-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-responsible-party-total-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-0-responsible-party-total-alerts.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1361,9 +1365,9 @@
             <tr>
               <td style="text-align: center;">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-0-top-30-brands-for-safety-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-0-top-30-brands-for-safety-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-0-top-30-brands-for-safety-alerts.png">
+                    src="/safetygate/img-2024/all-countries-product-0-top-30-brands-for-safety-alerts.png">
               </td>
             </tr>
           </tbody>
@@ -1389,15 +1393,15 @@
             </tr>
             <tr>
               <td style="text-align:center; width:49%"><a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-annual-and-cumulative-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-1-annual-and-cumulative-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-annual-and-cumulative-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-annual-and-cumulative-alerts.png"></a>
               </td>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-annual-cumulative-alerts-and-yoy-change.png">
+                  href="/safetygate/img-2024/all-countries-product-1-annual-cumulative-alerts-and-yoy-change.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-annual-cumulative-alerts-and-yoy-change.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-annual-cumulative-alerts-and-yoy-change.png"></a>
               </td>
             </tr>
             <tr>
@@ -1412,15 +1416,15 @@
 
 
 
-      <div class="datatable-container" id="all-product-cat-1-submitting-country-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-1-submitting-country-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-ly-vs-ty.png">
+                  href="/safetygate/img-2024/all-countries-product-1-submitting-country-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-submitting-country-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1441,15 +1445,15 @@
             <tr>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-1-submitting-country-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-submitting-country-annual-alerts.png"></a>
               </td>
               <td style="text-align:center;  width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-annual-percentage.png">
+                  href="/safetygate/img-2024/all-countries-product-1-submitting-country-annual-percentage.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-submitting-country-annual-percentage.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-submitting-country-annual-percentage.png"></a>
               </td>
             </tr>
 
@@ -1462,14 +1466,14 @@
       <h2 class="product_cat1" id="top2_risk">#2 - Risk Category</h2>
       <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
-      <div class="datatable-container" id="all-product-cat-1-risk-category-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-1-risk-category-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-1-risk-category-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-risk-category-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1490,15 +1494,15 @@
             <tr>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts.png"></a>
               </td>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts-percentage.png">
+                  href="/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts-percentage.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts-percentage.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-risk-category-annual-alerts-percentage.png"></a>
               </td>
             </tr>
 
@@ -1511,13 +1515,13 @@
       <h2 class="product_cat1" id="top2_counterfeit">#2 - Counterfeit </h2>
       <h4 class="product_cat1">Previous Year Vs Current Year </h4>
 
-      <div class="datatable-container" id="all-product-cat-1-counterfeit-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-1-counterfeit-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-ly-vs-ty.png">
-                  <img src="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-1-counterfeit-ly-vs-ty.png">
+                  <img src="/safetygate/img-2024/all-countries-product-1-counterfeit-ly-vs-ty.png">
                 </a>
               </td>
             </tr>
@@ -1539,15 +1543,15 @@
             </tr>
             <tr>
               <td style="text-align:center; width:49%">
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts.png">
+                <a href="/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts.png"></a>
               </td>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts-percentage.png">
+                  href="/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts-percentage.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts-percentage.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-counterfeit-annual-alerts-percentage.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1562,14 +1566,14 @@
 
       <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
-      <div class="datatable-container" id="all-product-cat-1-action-required-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-1-action-required-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-1-action-required-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-action-required-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1589,15 +1593,15 @@
             <tr>
               <td style="width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-1-action-required-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-action-required-annual-alerts.png"></a>
               </td>
               <td style="width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-total-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-1-action-required-total-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-action-required-total-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-action-required-total-alerts.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1609,14 +1613,14 @@
       <h2 class="product_cat1" id="top2_responsible">#2 - Compulsory / Voluntary Responsible Party</h2>
       <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
-      <div class="datatable-container" id="all-product-cat-1-responsible-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-1-responsible-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-1-responsible-party-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-responsible-party-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1637,15 +1641,15 @@
             <tr>
               <td style="width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-1-responsible-party-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-responsible-party-annual-alerts.png"></a>
               </td>
               <td style="width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-total-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-1-responsible-party-total-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-responsible-party-total-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-1-responsible-party-total-alerts.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1668,9 +1672,9 @@
             <tr>
               <td style="text-align: center;">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-1-top-30-brands-for-safety-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-1-top-30-brands-for-safety-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-1-top-30-brands-for-safety-alerts.png">
+                    src="/safetygate/img-2024/all-countries-product-1-top-30-brands-for-safety-alerts.png">
               </td>
             </tr>
           </tbody>
@@ -1696,15 +1700,15 @@
             <tr>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-annual-and-cumulative-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-2-annual-and-cumulative-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-annual-and-cumulative-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-annual-and-cumulative-alerts.png"></a>
               </td>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-annual-cumulative-alerts-and-yoy-change.png">
+                  href="/safetygate/img-2024/all-countries-product-2-annual-cumulative-alerts-and-yoy-change.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-annual-cumulative-alerts-and-yoy-change.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-annual-cumulative-alerts-and-yoy-change.png"></a>
               </td>
             </tr>
             <tr>
@@ -1717,15 +1721,15 @@
       <h2 class="product_cat2" id="top3_submitting">#3 - Submitting Country</h2>
       <h4>Previous Year Vs Current Year</h4>
 
-      <div class="datatable-container" id="all-product-cat-2-submitting-country-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-2-submitting-country-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-ly-vs-ty.png">
+                  href="/safetygate/img-2024/all-countries-product-2-submitting-country-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-submitting-country-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1746,15 +1750,15 @@
             <tr>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-2-submitting-country-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-submitting-country-annual-alerts.png"></a>
               </td>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-annual-percentage.png">
+                  href="/safetygate/img-2024/all-countries-product-2-submitting-country-annual-percentage.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-submitting-country-annual-percentage.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-submitting-country-annual-percentage.png"></a>
               </td>
             </tr>
 
@@ -1768,13 +1772,13 @@
       <h4>Previous Year Vs Current Year</h4>
 
 
-      <div class="datatable-container" id="all-product-cat-2-risk-category-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-2-risk-category-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-ly-vs-ty.png">
-                  <img src="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-2-risk-category-ly-vs-ty.png">
+                  <img src="/safetygate/img-2024/all-countries-product-2-risk-category-ly-vs-ty.png">
                   </p></a>
               </td>
             </tr>
@@ -1796,15 +1800,15 @@
             <tr>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts.png"></a>
               </td>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts-percentage.png">
+                  href="/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts-percentage.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts-percentage.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-risk-category-annual-alerts-percentage.png"></a>
               </td>
             </tr>
 
@@ -1818,14 +1822,14 @@
       <h4>Previous Year Vs Current Year</h4>
 
 
-      <div class="datatable-container" id="all-product-cat-2-counterfeit-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-2-counterfeit-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-2-counterfeit-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-counterfeit-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1847,15 +1851,15 @@
             </tr>
             <tr>
               <td style="text-align:center; width:49%">
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts.png">
+                <a href="/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts.png"></a>
               </td>
               <td style="text-align:center; width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts-percentage.png">
+                  href="/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts-percentage.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts-percentage.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-counterfeit-annual-alerts-percentage.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1869,14 +1873,14 @@
       <h2 class="product_cat2" id="top3_action">#3 - Compulsory / Voluntary Action Required </h2>
       <h4>Previous Year Vs Current Year</h4>
 
-      <div class="datatable-container" id="all-product-cat-2-action-required-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-2-action-required-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-2-action-required-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-action-required-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1896,15 +1900,15 @@
             <tr>
               <td style=" width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-2-action-required-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-action-required-annual-alerts.png"></a>
               </td>
               <td style=" width:49%">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-total-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-2-action-required-total-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-action-required-total-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-action-required-total-alerts.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1917,14 +1921,14 @@
       <h4>Previous Year Vs Current Year</h4>
 
 
-      <div class="datatable-container" id="all-product-cat-2-responsible-2022vs2023">
+      <div class="datatable-container" id="all-product-cat-2-responsible-2023-vs-2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody>
             <tr>
               <td>
-                <a href="https://rodders.me/safetygate/img-2024/all-countries-product-2-responsible-party-ly-vs-ty.png">
+                <a href="/safetygate/img-2024/all-countries-product-2-responsible-party-ly-vs-ty.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-responsible-party-ly-vs-ty.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-responsible-party-ly-vs-ty.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1945,15 +1949,15 @@
             <tr>
               <td>
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-responsible-party-annual-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-2-responsible-party-annual-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-responsible-party-annual-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-responsible-party-annual-alerts.png"></a>
               </td>
               <td>
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-responsible-party-total-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-2-responsible-party-total-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-responsible-party-total-alerts.png"></a>
+                    src="/safetygate/img-2024/all-countries-product-2-responsible-party-total-alerts.png"></a>
               </td>
             </tr>
           </tbody>
@@ -1976,9 +1980,9 @@
             <tr>
               <td style="text-align: center;">
                 <a
-                  href="https://rodders.me/safetygate/img-2024/all-countries-product-2-top-30-brands-for-safety-alerts.png">
+                  href="/safetygate/img-2024/all-countries-product-2-top-30-brands-for-safety-alerts.png">
                   <img
-                    src="https://rodders.me/safetygate/img-2024/all-countries-product-2-top-30-brands-for-safety-alerts.png">
+                    src="/safetygate/img-2024/all-countries-product-2-top-30-brands-for-safety-alerts.png">
               </td>
             </tr>
           </tbody>
@@ -1994,29 +1998,29 @@
       <script src="projects-2024.js"> </script>
 
       <script>
-        // Hovertips
+        // Hover tips
 
         tippy('#PresentAnnual', { content: 'Programmatic Recreation of "official" visualisations', theme: 'tomato', placement: 'right-end' });
         tippy('#AnnualTable', { content: 'Annual Alerts issued per year', theme: 'tomato', placement: 'right-end' });
         tippy('#all-AnnualCumulative', { content: 'Cumulative and annual safety alerts issued Worldwide.', theme: 'tomato' });
         tippy('#all-AnnualYoY', { content: 'Cumulative and annual YoY change safety alerts issued Worldwide.', theme: 'tomato' });
         tippy('#all-AnnualGeoplot', { content: 'Submitting Country Previous Year Vs Current Year.', theme: 'tomato' });
-        tippy('#all-submitting-country-2022vs2023', { content: 'Submitting Country Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
+        tippy('#all-submitting-country-2023-vs-2024', { content: 'Submitting Country Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
         tippy('#all-submitting-country-Annual-and-Percentage', { content: 'Submitting Country Annual Total and Annual Percentage of Total.', theme: 'tomato' });
         tippy('#all-Cosmetics-Coo', { content: 'Cosmetics - Country of Product Origin Previous Year Vs Current Year.', theme: 'tomato' });
         tippy('#all-Cosmetics-Brands', { content: 'Cosmetics - Top 30 brands for Safety Alerts.', theme: 'tomato' });
-        tippy('#all-Economic-Area-2022-vs-2023', { content: 'Previous Year Vs Current Year comparison of Economic Area of Product Origin (Feature Engineered) by Percentage of total for top 15.', theme: 'tomato' });
-        tippy('#all-Coo-2022-vs-2023', { content: 'Previous Year Vs Current Year comparison of percentage of safety alerts issued to Country of Product Origin.', theme: 'tomato' });
+        tippy('#all-Economic-Area-2023-vs-2024', { content: 'Previous Year Vs Current Year comparison of Economic Area of Product Origin (Feature Engineered) by Percentage of total for top 15.', theme: 'tomato' });
+        tippy('#all-Coo-2023-vs-2024', { content: 'Previous Year Vs Current Year comparison of percentage of safety alerts issued to Country of Product Origin.', theme: 'tomato' });
         tippy('#all-Coo-Annual-Percentage', { content: 'Country of product origin, Annual Total and Annual Percentage of Total..', theme: 'tomato' });
-        tippy('#all-product-category-2022vs2023', { content: 'Product Category Previous Year Vs Current Year percentage of Total safety alerts.', theme: 'tomato' });
+        tippy('#all-product-category-2023-vs-2024', { content: 'Product Category Previous Year Vs Current Year percentage of Total safety alerts.', theme: 'tomato' });
         tippy('#all-product-category-Annual-Percentage', { content: 'Product Category , Annual Total and Annual Percentage of Total..', theme: 'tomato' });
-        tippy('#all-risk-category-2022vs2023', { content: 'Risk Category type Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
+        tippy('#all-risk-category-2023-vs-2024', { content: 'Risk Category type Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
         tippy('#all-risk-category-Annual-Percentage', { content: 'Risk Category, Annual Total and Annual Percentage of Total..', theme: 'tomato' });
-        tippy('#all-counterfeit-2022vs2023', { content: 'Counterfeit type Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
+        tippy('#all-counterfeit-2023-vs-2024', { content: 'Counterfeit type Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
         tippy('#all-counterfeit-Annual-Percentage', { content: 'Counterfeit, Annual Total and Annual Percentage of Total.', theme: 'tomato' });
-        tippy('#all-action-required-2022vs2023', { content: 'Compulsory and Voluntary action required Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
+        tippy('#all-action-required-2023-vs-2024', { content: 'Compulsory and Voluntary action required Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
         tippy('#all-action-required-Annual-CvsV', { content: 'Compulsory and Voluntary action required Annual Total and Total Comparison.', theme: 'tomato' });
-        tippy('#all-responsible-2022vs2023', { content: 'Compulsory and Voluntary Responsible Party Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
+        tippy('#all-responsible-2023-vs-2024', { content: 'Compulsory and Voluntary Responsible Party Previous Year Vs Current Year percentage of safety alerts.', theme: 'tomato' });
         tippy('#all-responsible-Annual-CvsV', { content: 'Compulsory and Voluntary Responsible Party Annual Total and Total Comparison.', theme: 'tomato' });
         tippy('#all-top15-kfs', { content: 'Top 15 countries, fact sheet. Annual & Cumulative alerts, top 3 Product and Risk categories.', theme: 'tomato', placement: 'right-end' });
         tippy('#all-top30-brands', { content: 'Top 30 Brands For safety alerts.', theme: 'tomato' });
@@ -2030,7 +2034,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-0-submitting-country-2022vs2023',
+        tippy('#all-product-cat-0-submitting-country-2023-vs-2024',
           {
             content: '<b><u>#1 Product Category</u></b><br>Previous Year Vs Current Year2 Submitting Country as percentage of total safety alerts issued.',
             theme: 'tomato', allowHTML: true,
@@ -2042,7 +2046,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-0-risk-category-2022vs2023',
+        tippy('#all-product-cat-0-risk-category-2023-vs-2024',
           {
             content: '<b><u>#1 Product Category</u></b><br>Previous Year Vs Current Year2 Risk Category as percentage of total safety alerts issued.',
             theme: 'tomato', allowHTML: true,
@@ -2054,7 +2058,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-0-counterfeit-2022vs2023',
+        tippy('#all-product-cat-0-counterfeit-2023-vs-2024',
           {
             content: '<b><u>#1 Product Category</u></b><br>Counterfeit Type Previous Year Vs Current Year percentage of safety alerts issued.',
             theme: 'tomato', allowHTML: true,
@@ -2066,7 +2070,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-0-action-required-2022vs2023',
+        tippy('#all-product-cat-0-action-required-2023-vs-2024',
           {
             content: '<b><u>#1 Product Category</u></b><br>Compulsory and Voluntary action required Previous Year Vs Current Year percentage of safety alerts.',
             theme: 'tomato', allowHTML: true,
@@ -2078,7 +2082,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-0-responsible-2022vs2023',
+        tippy('#all-product-cat-0-responsible-2023-vs-2024',
           {
             content: '<b><u>#1 Product Category</u></b><br>Compulsory and Voluntary Responsible Party Previous Year Vs Current Year percentage of safety alerts.',
             theme: 'tomato', allowHTML: true,
@@ -2103,7 +2107,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-1-submitting-country-2022vs2023',
+        tippy('#all-product-cat-1-submitting-country-2023-vs-2024',
           {
             content: '<b><u>#2 Product Category</u></b><br>Previous Year Vs Current Year2 Submitting Country as percentage of total safety alerts issued.',
             theme: 'tomato', allowHTML: true,
@@ -2115,7 +2119,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-1-risk-category-2022vs2023',
+        tippy('#all-product-cat-1-risk-category-2023-vs-2024',
           {
             content: '<b><u>#2 Product Category</u></b><br>Previous Year Vs Current Year2 Risk Category as percentage of total safety alerts issued.',
             theme: 'tomato', allowHTML: true,
@@ -2127,7 +2131,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-1-counterfeit-2022vs2023',
+        tippy('#all-product-cat-1-counterfeit-2023-vs-2024',
           {
             content: '<b><u>#2 Product Category</u></b><br>Counterfeit Type Previous Year Vs Current Year percentage of safety alerts issued.',
             theme: 'tomato', allowHTML: true,
@@ -2139,7 +2143,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-1-action-required-2022vs2023',
+        tippy('#all-product-cat-1-action-required-2023-vs-2024',
           {
             content: '<b><u>#2 Product Category</u></b><br>Compulsory and Voluntary action required Previous Year Vs Current Year percentage of safety alerts.',
             theme: 'tomato', allowHTML: true,
@@ -2151,7 +2155,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-1-responsible-2022vs2023',
+        tippy('#all-product-cat-1-responsible-2023-vs-2024',
           {
             content: '<b><u>#2 Product Category</u></b><br>Compulsory and Voluntary Responsible Party Previous Year Vs Current Year percentage of safety alerts.',
             theme: 'tomato', allowHTML: true,
@@ -2177,7 +2181,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-2-submitting-country-2022vs2023',
+        tippy('#all-product-cat-2-submitting-country-2023-vs-2024',
           {
             content: '<b><u>#3 Product Category</u></b><br>Previous Year Vs Current Year2 Submitting Country as percentage of total safety alerts issued.',
             theme: 'tomato', allowHTML: true,
@@ -2189,7 +2193,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-2-risk-category-2022vs2023',
+        tippy('#all-product-cat-2-risk-category-2023-vs-2024',
           {
             content: '<b><u>#3 Product Category</u></b><br>Previous Year Vs Current Year2 Risk Category as percentage of total safety alerts issued.',
             theme: 'tomato', allowHTML: true,
@@ -2201,7 +2205,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-2-counterfeit-2022vs2023',
+        tippy('#all-product-cat-2-counterfeit-2023-vs-2024',
           {
             content: '<b><u>#3 Product Category</u></b><br>Counterfeit Type Previous Year Vs Current Year percentage of safety alerts issued.',
             theme: 'tomato', allowHTML: true,
@@ -2213,7 +2217,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-2-action-required-2022vs2023',
+        tippy('#all-product-cat-2-action-required-2023-vs-2024',
           {
             content: '<b><u>#3 Product Category</u></b><br>Compulsory and Voluntary action required Previous Year Vs Current Year percentage of safety alerts.',
             theme: 'tomato', allowHTML: true,
@@ -2225,7 +2229,7 @@
             theme: 'tomato', allowHTML: true,
           });
 
-        tippy('#all-product-cat-2-responsible-2022vs2023',
+        tippy('#all-product-cat-2-responsible-2023-vs-2024',
           {
             content: '<b><u>#3 Product Category</u></b><br>Compulsory and Voluntary Responsible Party Previous Year Vs Current Year percentage of safety alerts.',
             theme: 'tomato', allowHTML: true,

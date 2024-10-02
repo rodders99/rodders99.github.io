@@ -14,7 +14,7 @@ style = "github-dark"
 [params]
   author = "Rodders"
   info = "Data Analyst / Wrangler "
-  description = "Rodders's personal website"
+  description = "Ex Datis ad Veritatem / From Data to Truth"
   keywords = "blog,developer,personal, analyst, pandas, python, homeassistant,smart-home,oh-my"
   avatarurl = "img/avatars/avatar.png"
   #gravatar = "john.doe@example.com"

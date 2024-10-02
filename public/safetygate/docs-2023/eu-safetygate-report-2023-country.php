@@ -19,9 +19,6 @@
 
 <!-- NAVIGATION MENU-->
 
-<!-- <div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-
 
   
               <div class="page-container">
@@ -67,7 +64,7 @@
                 
                 <option value="top3_">#3 - Top Product Category</option>
                 <option value="top3_percent">&nbsp;&nbsp;&nbsp;#2 - Percentage of Country Alerts</option>
-                <option value="top3_annuak">&nbsp;&nbsp;&nbsp;#2 - Annual, Cumulative and Year on Year change</option>
+                <option value="top3_annual">&nbsp;&nbsp;&nbsp;#2 - Annual, Cumulative and Year on Year change</option>
                 <option value="top3_risk">&nbsp;&nbsp;&nbsp;#3 - Risk Category</option>
                 <option value="top3_counterfeit">&nbsp;&nbsp;&nbsp;#3 - Counterfeit</option>
                 <option value="top3_action_responsible">&nbsp;&nbsp;&nbsp;#3 - Voluntary/Compulsory Action Required / Responsible Party</option>
@@ -80,7 +77,7 @@
 
     <h1 class="ChangeCountry">EU Safetygate report</h1>
     <p><img src="https://rodders.me/safetygate/img-2023/icons/Safety_Gate_Logo.png" alt="Safety Gate Logo" style="width:49%"></p>
-
+    <p class='last-updated'><?php include '../tables-2024/last-updated.php' ?></p>
 <!-- <div id="tableOfContents"></div> -->
 
 
@@ -1159,7 +1156,7 @@
 <script src="projects-2023.js"> </script>
 
 <script>
-  // Hovertips
+  // Hover tips
   tippy('#CompareCountries', {content: 'Select any two countries and click compare to view the visualisations side by side.', theme: 'tomato'});
   tippy('#JumptoSection', {content: 'Select a section to jump to.', theme: 'tomato'});
   tippy('#CountryReport', {content: 'Select a Country to view a detailed report or compare countries.', theme: 'tomato', placement: 'left',});

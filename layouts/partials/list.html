@@ -7,17 +7,22 @@
           {{- print ": " -}}
         {{- end -}}
         {{- i18n (lower .Title) | default .Title | title -}}
-      </a>
+      </a> 
     </h1>
   </header>
   {{ .Content }}
   <ul>
     {{ range .Paginator.Pages }}
+    
     <li>
-      <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+      <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">
+        <img class="card-img-top" src="{{ .Params.featuredImage }} " width="200px" style="display: inline-block; margin-bottom: 20px;"></a>
+      <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }} </span>
       <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+      
+    
     </li>
     {{ end }}
-  </ul>
+  </ul><br>
   {{ partial "pagination.html" . }}
 </section>

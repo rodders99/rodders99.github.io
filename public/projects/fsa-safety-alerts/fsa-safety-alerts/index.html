@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Food Standards Agency Alerts Analysis · Rodders
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Rodders">
+<meta name="description" content="Analysis of Food Standards Agency Alerts">
+<meta name="keywords" content="blog,developer,personal, analyst, pandas, python, homeassistant,smart-home,oh-my">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Food Standards Agency Alerts Analysis"/>
+<meta name="twitter:description" content="Analysis of Food Standards Agency Alerts"/>
+
+<meta property="og:title" content="Food Standards Agency Alerts Analysis" />
+<meta property="og:description" content="Analysis of Food Standards Agency Alerts" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2024-08-12T09:15:27+00:00" />
+<meta property="article:modified_time" content="2024-08-12T09:15:27+00:00" />
+
+
+
+
+<link rel="canonical" href="https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.577e3c5ead537873430da16f0964b754a120fd87c4e2203a00686e7c75b51378.css" integrity="sha256-V348Xq1TeHNDDaFvCWS3VKEg/YfE4iA6AGhufHW1E3g=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://rodders.me/">
+      Rodders
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/">
+          Food Standards Agency Alerts Analysis
+        </a>
+      </h1>
+    </header>
+
+    <p><img src="../img/cover.jpg" alt="FSA Logo"></p>
+<h2 id="analysis-of-food-standards-agency-alerts">
+  Analysis of Food Standards Agency Alerts
+  <a class="heading-link" href="#analysis-of-food-standards-agency-alerts">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h1 id="report-index">
+  Report Index
+  <a class="heading-link" href="#report-index">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li><a href="/fsa-alerts/docs/00-fsa-analysis-introduction.php" >Report Introduction</a></li>
+<li><a href="/fsa-alerts/docs/01-fsa-summary.php" >Summary</a></li>
+<li><a href="/fsa-alerts/docs/02-fsa-pathogens.php" >Pathogenic Contaminants</a></li>
+<li><a href="/fsa-alerts/docs/03-fsa-allergens.php" >Allergenic Contaminants</a></li>
+<li><a href="/fsa-alerts/docs/04-fsa-foreign-material.php" >Foreign Material Contaminants</a></li>
+<li><a href="/fsa-alerts/docs/05-fsa-other.php" >Other Contaminants / Issues</a></li>
+<li><a href="/fsa-alerts/docs/06-fsa-product-type.php" >Contaminants by Product Type</a></li>
+</ul>
+<h2 id="analysts-notes">
+  Analysts Notes
+  <a class="heading-link" href="#analysts-notes">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="/fsa-alerts/docs/a0-fsa-meta-data.php" >Meta Data</a></li>
+<li><a href="/fsa-alerts/docs/a1-fsa-feature-engineering.php" >Feature Engineering</a></li>
+</ul>
+<h3 id="abstract">
+  Abstract
+  <a class="heading-link" href="#abstract">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>This report presents a comprehensive review of the food safety alerts issued by the UK Food Standards Agency. The analysis provides insights into the frequency, types, and relevant information about each alert, covering an eight year period. The study aims to raise awareness about the importance of monitoring and responding to food safety incidents, highlighting the need for effective public health measures to prevent outbreaks and protect consumers. By analysing the characteristics and trends of these alerts, this report contributes to the understanding of food safety risks and informs policy decisions aimed at promoting a safer food environment.</p>
+<h2 id="infographic">
+  Infographic
+  <a class="heading-link" href="#infographic">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="/fsa-alerts/icons/INFOGRAPHIC.png" alt="Inforgraphic"></p>
+<h2 id="a-bit-about-the-uk-food--drink-sector">
+  A bit about the UK Food &amp; Drink Sector
+  <a class="heading-link" href="#a-bit-about-the-uk-food--drink-sector">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>UK consumers spent £245.5bn on food and drink in 2023.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+<li>The UK Food and Drinks sector (including agriculture) employees 4.378 million people <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+<li>There are 23,110 business in the Food and Drink sector with 98% of these Small / Medium size companies (&lt; 250 employees) <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+</ul>
+<h2 id="did-you-know-that-34-of-all-food-safety-alerts1-are-issued-to-grocery-retailers-for-own-brand-products-yet-the-origin-of-many-products-remains-largely-unknown">
+  Did you know that 34% of all food safety alerts<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> are issued to grocery retailers for own brand products, yet the origin of many products remains largely unknown?
+  <a class="heading-link" href="#did-you-know-that-34-of-all-food-safety-alerts1-are-issued-to-grocery-retailers-for-own-brand-products-yet-the-origin-of-many-products-remains-largely-unknown">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>As we explore the complexities of food safety in the UK, let&rsquo;s start by peeling back the layers and uncovering the truth behind our daily diets.</p>
+<p>Food safety is a critical issue in the UK. Millions of people are affected by foodborne illnesses every year. These illnesses can range from mild discomfort to life-threatening complications.</p>
+<h2 id="report-objective">
+  Report Objective
+  <a class="heading-link" href="#report-objective">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>In this report, I delve into the complexities of food safety in the UK. I examine the trends, patterns, and areas for improvement, to better understand the issues.</p>
+<p>The purpose of this report is to provide a comprehensive visual overview of food safety alerts issued by the UK Food Standards Agency, with a focus on major food categories and their corresponding contamination risks. By presenting a range of visualizations, including stacked bar plots, pie chart and time-series plots. The objective is to provide readers with valuable insights into the types of contaminants that pose the greatest threats to consumer health. By visualizing the data, I have improved accessibility, and in turn, I hope that this helps empower policymakers, industry professionals, and consumers with data-driven insights that inform their decisions on food safety management and risk mitigation strategies.</p>
+<p>The report&rsquo;s objective is threefold.</p>
+<ul>
+<li>Firstly, it aims to provide a broad overview of the distribution of food safety alerts across different categories, highlighting areas where contamination risks are particularly high.</li>
+<li>Secondly, it seeks to drill down into specific food categories, presenting detailed visualizations that illustrate the types and frequencies of contaminants associated with each category.</li>
+<li>Finally, the report aims to facilitate comparison and analysis between different food categories, enabling stakeholders to identify trends, patterns, and areas for improvement in food safety practices.</li>
+</ul>
+<p>By achieving these objectives, I hope to contribute to a safer and more informed food system in the UK, and assuage my intense curiosity about how safe UK food really is (Hint, we&rsquo;re good &hellip;.)</p>
+<p>The main goal of this analysis is to provide data-driven insights that inform policymakers, industry professionals, and consumers about effective strategies for managing food safety risks in the UK. By visualizing the data, I aim to improve accessibility and empower stakeholders with actionable recommendations that can help reduce foodborne illnesses and ensure a safer food system.</p>
+<h2 id="food-for-thought-click-here-to-spice-up-your-learning-and-move-on-to-the-detail-behind-this-analysis">
+  Food for thought? Click here to &ldquo;spice up&rdquo; your learning and move on to the detail behind this analysis!
+  <a class="heading-link" href="#food-for-thought-click-here-to-spice-up-your-learning-and-move-on-to-the-detail-behind-this-analysis">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h1 id="fsa-alerts-analysisfsa-alertsdocs00-fsa-analysis-introductionphp">
+  <a href="/fsa-alerts/docs/00-fsa-analysis-introduction.php" >fsa-alerts-analysis</a>
+  <a class="heading-link" href="#fsa-alerts-analysisfsa-alertsdocs00-fsa-analysis-introductionphp">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="data-sources">
+  Data Sources
+  <a class="heading-link" href="#data-sources">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Current Food Safety Alerts can be found at :</p>
+<ul>
+<li>
+<p><a href="https://food.gov.uk"  class="external-link" target="_blank" rel="noopener">https://food.gov.uk</a></p>
+</li>
+<li>
+<p><a href="https://webarchive.nationalarchives.gov.uk/ukgwa/20171207145542/https://www.food.gov.uk/news-updates/news/food-alerts"  class="external-link" target="_blank" rel="noopener">https://webarchive.nationalarchives.gov.uk/ukgwa/20171207145542/https://www.food.gov.uk/news-updates/news/food-alerts</a></p>
+</li>
+</ul>
+<h1 id="fun-and-entertaining-risks-found-in-our-food-supply-found-in-the-dataset">
+  Fun and Entertaining Risks found in our food supply (found in the dataset)
+  <a class="heading-link" href="#fun-and-entertaining-risks-found-in-our-food-supply-found-in-the-dataset">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>While carrying out EDA, a number of alerts caught my eye since they were so far outside the normal list of pathogens and contaminants. It is important to note, in nearly all instances the appearance of these contaminants in food products were one-offs and should not be cause for concern.</p>
+<h2 id="aflatoxins">
+  Aflatoxins
+  <a class="heading-link" href="#aflatoxins">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="what-are-aflatoxins">
+  What are Aflatoxins
+  <a class="heading-link" href="#what-are-aflatoxins">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Aflatoxins are a group of toxic compounds produced by certain moulds (Aspergillus species) that grow in soil, decaying vegetation, hay, and grains. These moulds, primarily
+Aspergillus flavus and Aspergillus parasiticus, can contaminate food crops and pose serious health risks to both humans and animals.</p>
+<h3 id="key-characteristics-and-facts-about-aflatoxins">
+  Key Characteristics and Facts about Aflatoxins:
+  <a class="heading-link" href="#key-characteristics-and-facts-about-aflatoxins">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>
+<p><strong>Toxicity and Carcinogenicity:</strong></p>
+<ul>
+<li>Aflatoxins are highly toxic and are considered one of the most potent naturally occurring carcinogens.</li>
+<li>They can cause liver damage and are associated with an increased risk of liver cancer.</li>
+<li>Chronic exposure to low levels of aflatoxins can also lead to immune suppression and other health issues.</li>
+</ul>
+</li>
+<li>
+<p><strong>Health Impacts:</strong></p>
+<ul>
+<li>Acute aflatoxin poisoning (aflatoxicosis) can lead to severe liver damage, acute hepatitis, jaundice, and, in extreme cases, death.</li>
+<li>Long-term exposure to low levels of aflatoxins is associated with a range of health problems, including liver cancer, stunted growth in children, and compromised immune function.</li>
+</ul>
+</li>
+</ul>
+<h2 id="aluminium-phosphide">
+  Aluminium phosphide
+  <a class="heading-link" href="#aluminium-phosphide">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="what-is-aluminium-phosphide">
+  What is Aluminium phosphide
+  <a class="heading-link" href="#what-is-aluminium-phosphide">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Aluminium phosphide (AlP) is a highly toxic chemical compound commonly used as a fumigant to control pests, such as insects and rodents, in various industries like agriculture, forestry, and construction.
+It&rsquo;s also known as aluminum phosphide or aluminum monophosphide.</p>
+<h3 id="uses">
+  Uses
+  <a class="heading-link" href="#uses">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Fumigation:</strong> AlP is used to kill pests by releasing toxic phosphine gas when it comes into contact with moisture.</li>
+<li><strong>Insecticide:</strong> It&rsquo;s used to control insects in stored products, such as grains and other agricultural commodities.</li>
+<li><strong>Rodenticide:</strong> AlP is used to kill rodents, like rats and mice, in various settings.</li>
+</ul>
+<h3 id="risks-if-found-in-food">
+  Risks if found in food
+  <a class="heading-link" href="#risks-if-found-in-food">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>
+<p><strong>Toxicity:</strong> Aluminium phosphide is extremely toxic. Ingestion of contaminated food can cause severe symptoms, including:</p>
+<ul>
+<li>Abdominal pain</li>
+<li>Vomiting</li>
+<li>Diarrhoea</li>
+<li>Nausea</li>
+<li>Headaches</li>
+<li>Muscle weakness</li>
+<li>Respiratory distress (in severe cases)</li>
+</ul>
+</li>
+<li>
+<p><strong>Risk of acute poisoning:</strong></p>
+<ul>
+<li>Consuming AlP contaminated food can lead to rapid onset of symptoms, potentially resulting in acute poisoning.</li>
+</ul>
+</li>
+<li>
+<p><strong>Long-term health effects:</strong> Prolonged exposure or repeated episodes of exposure may cause chronic health issues, such as:</p>
+<ul>
+<li>Neurological problems</li>
+<li>Kidney damage</li>
+<li>Liver damage</li>
+</ul>
+</li>
+</ul>
+<h3 id="residue-detection-testing-for-alp-residues-in-food-is-challenging-as-the-compound-is-highly-volatile-and-easily-degrades">
+  <strong>Residue detection:</strong> Testing for AlP residues in food is challenging, as the compound is highly volatile and easily degrades.
+  <a class="heading-link" href="#residue-detection-testing-for-alp-residues-in-food-is-challenging-as-the-compound-is-highly-volatile-and-easily-degrades">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h2 id="atropine--scopolamine">
+  Atropine &amp; Scopolamine
+  <a class="heading-link" href="#atropine--scopolamine">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="what-are-atropine-and-scopolamine">
+  What are Atropine and Scopolamine
+  <a class="heading-link" href="#what-are-atropine-and-scopolamine">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Atropine and Scopolamine are naturally occurring alkaloid compounds extracted from the plant Atropa belladonna (deadly nightshade).
+It&rsquo;s a powerful anticholinergic agent, commonly used in medicine for various purposes.</p>
+<h3 id="atropine-medical-uses">
+  Atropine medical uses
+  <a class="heading-link" href="#atropine-medical-uses">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Anaesthesia:</strong> Atropine is used as an adjunct to anaesthesia to relax the muscles and reduce secretions.</li>
+<li><strong>Emergency medicine:</strong> It&rsquo;s used to treat poisoning from certain substances, such as organophosphate pesticides or nerve agents.</li>
+<li><strong>Eye care:</strong> Atropine eye drops are used to dilate pupils and treat certain eye conditions.</li>
+</ul>
+<h3 id="scopolamine-medical-uses">
+  Scopolamine Medical uses
+  <a class="heading-link" href="#scopolamine-medical-uses">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Anaesthesia:</strong> Scopolamine is used as an adjunct to anaesthesia to relax the muscles and reduce secretions.</li>
+<li><strong>Motion sickness:</strong> It&rsquo;s used to prevent or treat motion sickness, nausea, and vomiting associated with travel, seasickness, or air travel.</li>
+<li><strong>Irritable bowel syndrome (IBS):</strong> Scopolamine is sometimes used to treat IBS symptoms, such as abdominal pain, diarrhoea, and constipation.</li>
+</ul>
+<h3 id="risks-if-found-in-food-1">
+  <strong>Risks if found in food:</strong>
+  <a class="heading-link" href="#risks-if-found-in-food-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>
+<p><strong>Toxicity:</strong>
+Scopolamine &amp; Atropine are highly toxic. Ingestion of contaminated food can cause:</p>
+<ul>
+<li>Nausea</li>
+<li>Vomiting</li>
+<li>Abdominal cramps</li>
+<li>Diarrhoea</li>
+<li>Headaches</li>
+<li>Dizziness</li>
+<li>Confusion</li>
+<li>Seizures (in severe cases)</li>
+</ul>
+</li>
+<li>
+<p><strong>Risk of anticholinergic syndrome:</strong>
+Consuming Scopolamine or Atropine contaminated food can lead to the development of anticholinergic syndrome, characterized by:</p>
+<ul>
+<li>Dry mouth</li>
+<li>Blurred vision</li>
+<li>Difficulty speaking or swallowing</li>
+<li>Increased heart rate and blood pressure</li>
+<li>Decreased sweating and salivation</li>
+</ul>
+</li>
+<li>
+<p><strong>Long-term health effects:</strong>
+Prolonged exposure or repeated episodes of exposure may cause chronic health issues, such as:</p>
+<ul>
+<li>Cognitive impairment</li>
+<li>Memory problems</li>
+<li>Mood changes</li>
+</ul>
+</li>
+</ul>
+<h2 id="rhodamine-b">
+  Rhodamine B
+  <a class="heading-link" href="#rhodamine-b">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h2 id="what-is-rhodamine-b">
+  What is Rhodamine B
+  <a class="heading-link" href="#what-is-rhodamine-b">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Rhodamine B is a synthetic fluorescent dye widely used in various industries, including:</p>
+<ul>
+<li><strong>Biotechnology:</strong> As a labeling reagent for biomolecules, such as proteins, nucleic acids, and cells.</li>
+<li><strong>Chemical analysis:</strong> As a fluorescence probe for detecting specific compounds or molecules.</li>
+<li><strong>Food coloring:</strong> In some countries, Rhodamine B is used as a food dye, although its use is not widely approved due to concerns about toxicity.</li>
+</ul>
+<h3 id="risks-from-food-contamination">
+  Risks from food contamination:
+  <a class="heading-link" href="#risks-from-food-contamination">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Toxicity:</strong> Rhodamine B is considered toxic and can cause:
+<ul>
+<li>Nausea</li>
+<li>Vomiting</li>
+<li>Abdominal cramps</li>
+<li>Diarrhoea</li>
+<li>Headaches</li>
+<li>Dizziness</li>
+<li>Confusion</li>
+</ul>
+</li>
+<li><strong>Risk of cancer:</strong>
+Long-term exposure to Rhodamine B has been linked to an increased risk of certain types of cancer, such as:
+<ul>
+<li>Leukemia</li>
+<li>Lymphoma</li>
+</ul>
+</li>
+<li><strong>Reproductive risks:</strong>
+Exposure to Rhodamine B during pregnancy or breastfeeding may pose reproductive risks, including:
+<ul>
+<li>Birth defects</li>
+<li>Fetal damage</li>
+</ul>
+</li>
+<li><strong>Neurological concerns:</strong>
+Rhodamine B has been shown to cause neurological effects, such as:
+<ul>
+<li>Memory impairment</li>
+<li>Cognitive decline</li>
+</ul>
+</li>
+</ul>
+<h2 id="struvite-salts">
+  Struvite salts
+  <a class="heading-link" href="#struvite-salts">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Struvite salts, also known as magnesium ammonium phosphate (MAP), are naturally occurring minerals that can be found in food products. They&rsquo;re formed when magnesium, ammonia, and phosphate ions combine in
+a specific ratio.</p>
+<ul>
+<li><strong>What is Struvite?</strong>
+<ul>
+<li>Struvite is a type of mineral that can form in food products, particularly in dairy or meat products, when there&rsquo;s an imbalance of nutrients or pH levels.</li>
+<li>It&rsquo;s often associated with spoiled or rotten foods, as it can be a sign of bacterial growth or contamination.</li>
+</ul>
+</li>
+</ul>
+<h3 id="risks-from-contamination">
+  <strong>Risks from contamination:</strong>
+  <a class="heading-link" href="#risks-from-contamination">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>
+<p><strong>Food spoilage:</strong></p>
+<ul>
+<li>Struvite formation can indicate food spoilage, which can lead to food born illnesses if consumed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Toxicity:</strong></p>
+<ul>
+<li>Some struvite salts can be toxic if ingested in large quantities, causing:</li>
+<li>Nausea</li>
+<li>Vomiting</li>
+<li>Abdominal cramps</li>
+<li>Diarrhoea</li>
+<li>Headaches</li>
+</ul>
+</li>
+<li>
+<p><strong>Reproductive risks:</strong></p>
+<ul>
+<li>Exposure to certain struvite salts during pregnancy or breastfeeding may pose reproductive risks, including:</li>
+<li>Birth defects</li>
+<li>Fetal damage</li>
+</ul>
+</li>
+<li>
+<p><strong>Allergic reactions:</strong></p>
+<ul>
+<li>Some people may be allergic to struvite salts, which can cause skin rashes, itching, and other symptoms.</li>
+</ul>
+</li>
+</ul>
+<h1 id="report-index-1">
+  Report Index
+  <a class="heading-link" href="#report-index-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li><a href="/fsa-alerts/docs/00-fsa-analysis-introduction.php" >Report Introduction</a></li>
+<li><a href="/fsa-alerts/docs/01-fsa-summary.php" >Summary</a></li>
+<li><a href="/fsa-alerts/docs/02-fsa-pathogens.php" >Pathogenic Contaminants</a></li>
+<li><a href="/fsa-alerts/docs/03-fsa-allergens.php" >Allergenic Contaminants</a></li>
+<li><a href="/fsa-alerts/docs/04-fsa-foreign-material.php" >Foreign Material Contaminants</a></li>
+<li><a href="/fsa-alerts/docs/05-fsa-other.php" >Other Contaminants / Issues</a></li>
+<li><a href="/fsa-alerts/docs/06-fsa-product-type.php" >Contaminants by Product Type</a></li>
+</ul>
+<h2 id="analysts-notes-1">
+  Analysts Notes
+  <a class="heading-link" href="#analysts-notes-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="/fsa-alerts/docs/a0-fsa-meta-data.php" >Meta Data</a></li>
+<li><a href="/fsa-alerts/docs/a1-fsa-feature-engineering.php" >Feature Engineering</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.gov.uk/government/statistics/food-statistics-pocketbook]%28https://www.gov.uk/government/statistics/food-statistics-pocketbook/food-statistics-in-your-pocket%29"  class="external-link" target="_blank" rel="noopener">https://www.gov.uk/government/statistics/food-statistics-pocketbook](https://www.gov.uk/government/statistics/food-statistics-pocketbook/food-statistics-in-your-pocket)</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.gov.uk/government/statistics/food-statistics-pocketbook]%28https://www.gov.uk/government/statistics/food-statistics-pocketbook/food-statistics-in-your-pocket#agri-food-sector-employees-gb-2023%29"  class="external-link" target="_blank" rel="noopener">https://www.gov.uk/government/statistics/food-statistics-pocketbook](https://www.gov.uk/government/statistics/food-statistics-pocketbook/food-statistics-in-your-pocket#agri-food-sector-employees-gb-2023)</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://www.gov.uk/government/statistics/food-statistics-pocketbook]%28https://www.gov.uk/government/statistics/food-statistics-pocketbook/food-statistics-in-your-pocket#number-of-uk-food-and-drink-manufacturers-by-business-size-in-2023%29"  class="external-link" target="_blank" rel="noopener">https://www.gov.uk/government/statistics/food-statistics-pocketbook](https://www.gov.uk/government/statistics/food-statistics-pocketbook/food-statistics-in-your-pocket#number-of-uk-food-and-drink-manufacturers-by-business-size-in-2023)</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Since 2014. 2021 to 2024 ytd 30% of all safety alerts are issued to Grocers&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2024
+     Rodders 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

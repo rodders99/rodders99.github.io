@@ -20,10 +20,6 @@
 
 <!-- NAVIGATION MENU-->
 
-<!-- <div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-
-
                     
           
     <div class="page-container">
@@ -116,6 +112,8 @@
 
     <h1 >EU Safetygate report - Compare Countries</h1>
     <p><img src="https://rodders.me/safetygate/img-2023/icons/Safety_Gate_Logo.png" alt="Safety Gate Logo" style="width:50%"></p>
+    
+    <p class='last-updated'><?php include '../tables-2024/last-updated.php' ?></p>
 
 
 <!-- <div id="tableOfContents"></div> -->
@@ -2052,7 +2050,7 @@
     
 
     <script>
-        // Hovertips
+        // Hover tips
         tippy('#CompareCountries', {content: 'Select any two countries and click compare to view the visualisations side by side.', theme: 'tomato'});
         tippy('#JumptoSection', {content: 'Select a section to jump to.', theme: 'tomato'});
         tippy('#CountryReport', {content: 'Select a Country to view a detailed report or compare countries.', theme: 'tomato', placement: 'left',});
