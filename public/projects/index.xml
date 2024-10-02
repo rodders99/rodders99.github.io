@@ -6,7 +6,16 @@
     <description>Recent content in Projects on Rodders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 Jun 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Food Standards Agency Alerts Analysis</title>
+      <link>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</link>
+      <pubDate>Mon, 12 Aug 2024 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</guid>
+      <description>Analysis of Food Standards Agency Alerts Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Meta Data Feature Engineering Abstract Link to heading This report presents a comprehensive review of the food safety alerts issued by the UK Food Standards Agency. The analysis provides insights into the frequency, types, and relevant information about each alert, covering an eight year period.</description>
+    </item>
+    
     <item>
       <title>UK Mainstream Media -  Investigating Mainstream Media Sentiment towards Electric Vehicles</title>
       <link>https://rodders.me/projects/ev-headlines/project-uk-mainstream-media-ev-bias/</link>
@@ -54,17 +63,6 @@ Monthly Vehicle Registration by Fuel Type and Keepership Link to heading This is
       
       <guid>https://rodders.me/projects/dvla-data-google-analytics/google-data-analytics-portfolio-project-dvla-data/</guid>
       <description>Course Portfolio Project Link to heading For the completion stage of the Google Data Analytics Specialisation course we were asked to complete a data analysis project from start to finish. This allowed me to apply much of the lessons learned during the course to something I had some passion about: sustainable energy and transportation. Specifically looking at the adoption of Electric Vehicles in the UK, which in turn led me on to the broader issues of media messaging around this topic, which has become a separate topic, the bot is running as you read this.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</guid>
-      <description>/+++ title = &amp;ldquo;Food Standards Agency Alerts Analysis&amp;rdquo; date = 2024-08-12T09:15:27.561Z description = &amp;ldquo;Analysis of Food Standards Agency Alerts&amp;rdquo; draft = false slug = &amp;quot;&amp;quot; authors = [ &amp;ldquo;Rodders&amp;rdquo; ] tags = [ &amp;ldquo;Python&amp;rdquo;, &amp;ldquo;R&amp;rdquo;, &amp;ldquo;Pandas&amp;rdquo;, &amp;ldquo;Numpy&amp;rdquo;, &amp;ldquo;Matplotlib&amp;rdquo; ] categories = [ ] externalLink = &amp;quot;&amp;quot; series = [ ] featuredImage = &amp;ldquo;/fsa-alerts/cover.jpg&amp;rdquo;
-+++
-Analysis of Food Standards Agency Alerts Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Meta Data Feature Engineering Abstract Link to heading This report presents a comprehensive review of the food safety alerts issued by the UK Food Standards Agency.</description>
     </item>
     
   </channel>
