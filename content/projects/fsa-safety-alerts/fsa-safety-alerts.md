@@ -1,4 +1,4 @@
-+++
+/+++
 title = "Food Standards Agency Alerts Analysis"
 date = 2024-08-12T09:15:27.561Z
 description = "Analysis of Food Standards Agency Alerts"
@@ -9,26 +9,26 @@ tags = [ "Python", "R", "Pandas", "Numpy", "Matplotlib" ]
 categories = [ ]
 externalLink = ""
 series = [ ]
-featuredImage = "/projects/fsa-safety-alerts/cover.jpg"
+featuredImage = "/fsa-alerts/cover.jpg"
 
 +++
 
-![FSA Logo](../img/cover.jpg)
+![FSA Logo](https://rodders.me/projects/fsa-safety-alerts/cover.jpg)
 
 ## Analysis of Food Standards Agency Alerts
 
 # Report Index
-- [Report Introduction](/fsa-alerts/docs/00-fsa-analysis-introduction.php)
-- [Summary](/fsa-alerts/docs/01-fsa-summary.php)
-- [Pathogenic Contaminants](/fsa-alerts/docs/02-fsa-pathogens.php)
-- [Allergenic Contaminants](/fsa-alerts/docs/03-fsa-allergens.php)
-- [Foreign Material Contaminants](/fsa-alerts/docs/04-fsa-foreign-material.php)
-- [Other Contaminants / Issues](/fsa-alerts/docs/05-fsa-other.php)
-- [Contaminants by Product Type](/fsa-alerts/docs/06-fsa-product-type.php)
+- [Report Introduction](https://rodders.me/fsa-alerts/docs/00-fsa-analysis-introduction.php)
+- [Summary](https://rodders.me/fsa-alerts/docs/01-fsa-summary.php)
+- [Pathogenic Contaminants](https://rodders.me/fsa-alerts/docs/02-fsa-pathogens.php)
+- [Allergenic Contaminants](https://rodders.me/fsa-alerts/docs/03-fsa-allergens.php)
+- [Foreign Material Contaminants](https://rodders.me/fsa-alerts/docs/04-fsa-foreign-material.php)
+- [Other Contaminants / Issues](https://rodders.me/fsa-alerts/docs/05-fsa-other.php)
+- [Contaminants by Product Type](https://rodders.me/fsa-alerts/docs/06-fsa-product-type.php)
 
 ## Analysts Notes
-- [Meta Data](/fsa-alerts/docs/a0-fsa-meta-data.php)
-- [Feature Engineering](/fsa-alerts/docs/a1-fsa-feature-engineering.php)
+- [Meta Data](https://rodders.me/fsa-alerts/docs/a0-fsa-meta-data.php)
+- [Feature Engineering](https://rodders.me/fsa-alerts/docs/a1-fsa-feature-engineering.php)
 
 ### Abstract
 
@@ -36,7 +36,7 @@ This report presents a comprehensive review of the food safety alerts issued by 
 
 ## Infographic
 
-![Inforgraphic](/fsa-alerts/icons/INFOGRAPHIC.png)
+![Inforgraphic](https://rodders.me/fsa-alerts/icons/INFOGRAPHIC.png)
 
 ## A bit about the UK Food & Drink Sector
 
@@ -76,7 +76,7 @@ The main goal of this analysis is to provide data-driven insights that inform po
 
 ## Food for thought? Click here to "spice up" your learning and move on to the detail behind this analysis!
 
-# [fsa-alerts-analysis](/fsa-alerts/docs/00-fsa-analysis-introduction.php)
+# [fsa-alerts-analysis](https://rodders.me/projects/fsa-alerts/docs/00-fsa-analysis-introduction.php)
 
 ## Data Sources
 
@@ -252,14 +252,14 @@ a specific ratio.
     - Some people may be allergic to struvite salts, which can cause skin rashes, itching, and other symptoms.
 
 # Report Index
-- [Report Introduction](/fsa-alerts/docs/00-fsa-analysis-introduction.php)
-- [Summary](/fsa-alerts/docs/01-fsa-summary.php)
-- [Pathogenic Contaminants](/fsa-alerts/docs/02-fsa-pathogens.php)
-- [Allergenic Contaminants](/fsa-alerts/docs/03-fsa-allergens.php)
-- [Foreign Material Contaminants](/fsa-alerts/docs/04-fsa-foreign-material.php)
-- [Other Contaminants / Issues](/fsa-alerts/docs/05-fsa-other.php)
-- [Contaminants by Product Type](/fsa-alerts/docs/06-fsa-product-type.php)
+- [Report Introduction](https://rodders.me/fsa-alerts/docs/00-fsa-analysis-introduction.php)
+- [Summary](https://rodders.me/fsa-alerts/docs/01-fsa-summary.php)
+- [Pathogenic Contaminants](https://rodders.me/fsa-alerts/docs/02-fsa-pathogens.php)
+- [Allergenic Contaminants](https://rodders.me/fsa-alerts/docs/03-fsa-allergens.php)
+- [Foreign Material Contaminants](https://rodders.me/fsa-alerts/docs/04-fsa-foreign-material.php)
+- [Other Contaminants / Issues](https://rodders.me/fsa-alerts/docs/05-fsa-other.php)
+- [Contaminants by Product Type](https://rodders.me/fsa-alerts/docs/06-fsa-product-type.php)
 
 ## Analysts Notes
-- [Meta Data](/fsa-alerts/docs/a0-fsa-meta-data.php)
-- [Feature Engineering](/fsa-alerts/docs/a1-fsa-feature-engineering.php)
+- [Meta Data](https://rodders.me/fsa-alerts/docs/a0-fsa-meta-data.php)
+- [Feature Engineering](https://rodders.me/fsa-alerts/docs/a1-fsa-feature-engineering.php)

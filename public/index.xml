@@ -6,16 +6,7 @@
     <description>Recent content on Rodders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Aug 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Food Standards Agency Alerts Analysis</title>
-      <link>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</link>
-      <pubDate>Mon, 12 Aug 2024 09:15:27 +0000</pubDate>
-      
-      <guid>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</guid>
-      <description>Analysis of Food Standards Agency Alerts Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Meta Data Feature Engineering Abstract Link to heading This report presents a comprehensive review of the food safety alerts issued by the UK Food Standards Agency. The analysis provides insights into the frequency, types, and relevant information about each alert, covering an eight year period.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 27 Jun 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UK Mainstream Media -  Investigating Mainstream Media Sentiment towards Electric Vehicles</title>
       <link>https://rodders.me/projects/ev-headlines/project-uk-mainstream-media-ev-bias/</link>
@@ -85,6 +76,17 @@ The course covered a wide array of topics, from advanced data processing techniq
       <description>https://www.coursera.org/account/accomplishments/professional-cert/L4GS97QJ8KCZ
 A Milestone Achieved Link to heading Completing the Google Data Analytics Specialization on Coursera 📊
 A few months ago, I was unfortunately made redundant which gave me the opportunity to reflect and decide what I really wanted to do when I grew up. This little voyage of discovery led me to the world of data analytics and data science and I decided to re-enter education and develop some new skills in these fast growing and changing specialisations.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</guid>
+      <description>/+++ title = &amp;ldquo;Food Standards Agency Alerts Analysis&amp;rdquo; date = 2024-08-12T09:15:27.561Z description = &amp;ldquo;Analysis of Food Standards Agency Alerts&amp;rdquo; draft = false slug = &amp;quot;&amp;quot; authors = [ &amp;ldquo;Rodders&amp;rdquo; ] tags = [ &amp;ldquo;Python&amp;rdquo;, &amp;ldquo;R&amp;rdquo;, &amp;ldquo;Pandas&amp;rdquo;, &amp;ldquo;Numpy&amp;rdquo;, &amp;ldquo;Matplotlib&amp;rdquo; ] categories = [ ] externalLink = &amp;quot;&amp;quot; series = [ ] featuredImage = &amp;ldquo;/fsa-alerts/cover.jpg&amp;rdquo;
++++
+Analysis of Food Standards Agency Alerts Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Meta Data Feature Engineering Abstract Link to heading This report presents a comprehensive review of the food safety alerts issued by the UK Food Standards Agency.</description>
     </item>
     
     <item>
