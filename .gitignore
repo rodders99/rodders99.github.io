@@ -5,3 +5,7 @@ resources/_gen
 *.png
 deploy.sh
 deploy-local.sh
+.ipynb_checkpoints
+.vscode
+nohup
+Untitled.ipynb
