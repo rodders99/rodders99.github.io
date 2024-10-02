@@ -1,7 +1,7 @@
 ---
 title: Salifort Motors - Google Advanced Analytics Capstone Project
 description: Google Advanced Data Analytics Capstone Project
-date: 2024-02-10
+date: "2024-02-10"
 keywords:
     - Google
     - Data Analytics
