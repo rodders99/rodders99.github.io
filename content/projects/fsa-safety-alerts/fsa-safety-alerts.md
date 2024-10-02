@@ -9,7 +9,7 @@ tags = [ "Python", "R", "Pandas", "Numpy", "Matplotlib" ]
 categories = [ ]
 externalLink = ""
 series = [ ]
-featuredImage = "/fsa-alerts/cover.jpg"
+featuredImage = "https://rodders.me/projects/fsa-safety-alerts/cover.jpg"
 
 +++
 
