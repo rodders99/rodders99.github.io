@@ -16,12 +16,12 @@ style = "github-dark"
   info = "Data Analyst / Wrangler "
   description = "Ex Datis ad Veritatem / From Data to Truth"
   keywords = "blog,developer,personal, analyst, pandas, python, homeassistant,smart-home,oh-my"
-  avatarurl = "img/avatars/avatar.png"
+  avatarurl = "https://rodders.me/img/avatars/avatar.png"
   #gravatar = "john.doe@example.com"
 
-  faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  faviconSVG = "https://rodders.me/img/favicon.svg"
+  favicon_32 = "https://rodders.me/img/favicon-32x32.png"
+  favicon_16 = "https://rodders.me/img/favicon-16x16.png"
 
   since = 2019
 
