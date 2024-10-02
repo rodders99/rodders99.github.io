@@ -44,7 +44,7 @@ The UK Government (gov.uk) publish lots of datasets in the rather unhelpful wide
 ### Tableau Dashboard
 
 [link](https://public.tableau.com/views/VehiclesRegisteredforUKdf_VEH0220/FrontPage?:language=en-GB&:display_count=n&:origin=viz_share_link)
-[![img](/img/tableau-df_veh0220.png)](https://public.tableau.com/views/VehiclesRegisteredforUKdf_VEH0220/FrontPage?:language=en-GB&:display_count=n&:origin=viz_share_link)
+[![img](https://rodders.me/img/tableau-df_veh0220.png)](https://public.tableau.com/views/VehiclesRegisteredforUKdf_VEH0220/FrontPage?:language=en-GB&:display_count=n&:origin=viz_share_link)
 
 ### Kaggle Dataset, an exercise in R language for data manipulation
 
