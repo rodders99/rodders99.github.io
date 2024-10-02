@@ -4,7 +4,6 @@ description: Details of my portfolio project for the Google Data Analytics Certi
 slug: google-data-analytics-portfolio-project-dvla-data
 date: "2023-08-14"
 lastmod: "2023-08-14"
-banner: "https://rodders.me/projects/dvla-data-google-analytics/img/dvla_logo-white.png"
 draft: false
 tags:
   - data analytics
