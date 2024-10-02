@@ -10,10 +10,10 @@ categories = [ ]
 externalLink = ""
 series = [ ]
 preview = ""
-featuredImage = "/projects/ev-headlines/img/damn-lies.png"
+featuredImage = "https://rodders.me/projects/ev-headlines/img/damn-lies.png"
 
 +++
-![alt text](../img/damn-lies.png)
+![alt text](https://rodders.me/projects/ev-headlines/img/damn-lies.png)
 
 ## Analysis of bias in headlines against Electric Vehicles by UK Mainstream Media
 
@@ -39,15 +39,15 @@ The analysis reveals a concerning trend: as the peak new registration period for
 
 ### About this Project
 
-- [Analysis Introduction](/ev-headlines/docs/00-ev-headline-analysis-introduction.php)
-- [Analysis Summary](/ev-headlines/docs/0a-ev-headline-analysis-summary.php)
-- [Common Headline Themes](/ev-headlines/docs/04-ev-headline-analysis-common-themes.php)
-- [Headline Duration/Lifetime](/ev-headlines/docs/05-ev-headline-analysis-headline-duration.php)
-- [Headline Sentiment Analysis](/ev-headlines/docs/06-ev-headline-analysis-sentiment-analysis.php)
-- [Visualisations by publication](/ev-headlines/docs/51-ev-headline-analysis-title-visualisations.php)
-- [Media Bias Fact Check Comparison](/ev-headlines/docs/99-ev-headline-analysis-mediabiasfactcheck.php)
-- [Publication EV Headlines](/ev-headlines/docs/08-ev-headline-analysis-publication-headlines.php)
+- [Analysis Introduction](https://rodders.me/ev-headlines/docs/00-ev-headline-analysis-introduction.php)
+- [Analysis Summary](https://rodders.me/ev-headlines/docs/0a-ev-headline-analysis-summary.php)
+- [Common Headline Themes](https://rodders.me/ev-headlines/docs/04-ev-headline-analysis-common-themes.php)
+- [Headline Duration/Lifetime](https://rodders.me/ev-headlines/docs/05-ev-headline-analysis-headline-duration.php)
+- [Headline Sentiment Analysis](https://rodders.me/ev-headlines/docs/06-ev-headline-analysis-sentiment-analysis.php)
+- [Visualisations by publication](https://rodders.me/ev-headlines/docs/51-ev-headline-analysis-title-visualisations.php)
+- [Media Bias Fact Check Comparison](https://rodders.me/ev-headlines/docs/99-ev-headline-analysis-mediabiasfactcheck.php)
+- [Publication EV Headlines](https://rodders.me/ev-headlines/docs/08-ev-headline-analysis-publication-headlines.php)
 
 ### Analyst Notes
-- [Meta Data](/ev-headlines/docs/a1-ev-headline-analysis-meta-data.php)
-- [Feature Engineering](/ev-headlines/docs/a2-ev-headline-analysis-feature-engineering.php)
+- [Meta Data](https://rodders.me/ev-headlines/docs/a1-ev-headline-analysis-meta-data.php)
+- [Feature Engineering](https://rodders.me/ev-headlines/docs/a2-ev-headline-analysis-feature-engineering.php)
