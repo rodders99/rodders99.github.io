@@ -218,32 +218,6 @@
 
 
 
-      <td style="text-align:center;">High Iron Levels</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-    </tr>
-
-    <tr>
-
-
-
       <td style="text-align:center;">Stones</td>
 
       <td style="text-align:center;">0</td>
@@ -259,6 +233,32 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">High Iron Levels</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -313,6 +313,32 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Bits of Glue</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">1</td>
 

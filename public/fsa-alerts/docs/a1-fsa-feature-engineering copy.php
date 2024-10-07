@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<?php include 'html-inc/header.php'; ?>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
-
-    <title>Food Standards Agency - Alerts Analysis</title>
-</head>
-
-<body>
+<title>Food Standards Agency - Feature Engineering</title>
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -77,7 +58,7 @@
 
     <h4>Missing Data</h4>
 
-    <div class="datatable-container" id="html_table-source-meta-data">
+    <!-- <div class="datatable-container" id="html_table-source-meta-data"> -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
 <thead>
 <tr>
@@ -108,17 +89,18 @@
 </tr>
 </tbody>
 </table>
-</div>
+<!-- </div> -->
+<br><a href="#" class="gototop">Top</a>
 
 <h4>Observations per year</h4>
 
 <p>There is a lot of data missing, from mid 2017 to 2020.</p>
 
-<div class="datatable-container" id="html_table-source-meta-data">
+<!-- <div class="datatable-container" id="html_table-source-meta-data"> -->
 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
+      <th>Year</th>
       <th style="text-align:center; ">2014</th>
       <th style="text-align:center; ">2015</th>
       <th style="text-align:center; ">2016</th>
@@ -134,7 +116,7 @@
   </thead>
   <tbody>
     <tr>
-      <th>count</th>
+      <td>count</td>
       <td style="text-align:center; ">12</td>
       <td style="text-align:center; ">67</td>
       <td style="text-align:center; ">97</td>
@@ -149,77 +131,52 @@
       <td style="text-align:center; ">98</td>
     </tr>
   </tbody>
-</table></div>
-<a href="#" class="gototop">Top</a>
+</table>
+<!-- </div> -->
+<br><a href="#" class="gototop">Top</a>
 
 <h3>Original Source Data</h3>
-        <div class="datatable-container" id="html_table-source-meta-data">
+        <!-- <div class="datatable-container" id="html_table-source-meta-data"> -->
         <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
         
             <thead>
                 <tr style="text-align: center;">
                     <th>Column</th>
-                    <th>Non-Null</th>
-                    <th>Count</th>
-                    <th>Dtype</th>
+
                     <th>Notes</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                </tr>
+
                 <tr>
                     <td>Source</td>
-                    <td>748</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>Where data was sourced, food.gov.uk or nationalarchives.gov.uk</td>
                 </tr>
                 <tr>
                     <td>Date</td>
-                    <td>748</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>Date the notice was issued</td>
                 </tr>
                 <tr>
                     <td>Alert_Type</td>
-                    <td>748</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>Allergen or Safety Alert</td>
                 </tr>
                 <tr>
                     <td>Title</td>
-                    <td>748</td>
-                    <td>non-null
-                    </td>
-                    <td>object</td>
                     <td>Alert Title Text</td>
                 </tr>
                 <tr>
                     <td>BodyText</td>
-                    <td>748</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>Alert Body text (usually has more information)</td>
                 </tr>
 
-                <tr>
-                    <td>usage:</td>
-                    <td>44.0+</td>
-                    <td>KB</td>
-                    <td>None</td>
-                    <td></td>
-                </tr>
             </tbody>
-        </table></div>
-        <a href="#" class="gototop">Top</a>
+        </table>
+    <!-- </div> -->
+    <br><a href="#" class="gototop">Top</a>
         <h2>Data Cleansing</h2>
 
 <p>The layout of the nationalarchives and food.gov websites were different (food.gov has both food and allergy alerts on the 
@@ -238,180 +195,137 @@
         <h3>Engineered Features</h3>
 
 
+<p>Some automation is applied to alert notices :</p>
+<p>A typical Alert Notice is proceeded by the front page search results. Often these note the retail brand, but not always.</p>
+<p>Example :<br>
+<h3>Search Results Title : Update 11: FGS Ingredients Ltd recalls a number of products containing mustard powder because of undeclared peanuts</h3>
+<br>
+Search Results Title sometimes includes the supplier, in this instance <code>FGS Ingredients Ltd</code><br>
+Alert Notice Body Text contains the product info : <code>SPAR</code> Cheese and Onion Sandwich Filler - 220g<br>
+Brand is typically contained in either the search results title or alert notice body text. Both are presented to the user to edit into the captured data by hand.
+Supplier and Outlet are not assumed or automatically captured into a separate field, but the alert notice is presented to the user to edit into the captured data by hand.
 
 
-        <div class="datatable-container" id="html_table-source-meta-data">
+        <!-- <div class="datatable-container" id="html_table-source-meta-data"> -->
         <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
             <thead>
                 <tr style="text-align: right;">
                     <th>Column</th>
-                    <th>
-                        Non-Null</th>
-                    <th>Count</th>
-                    <th>Dtype</th>
+
                     <th>Engineered Feature Notes</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                </tr>
+
                 <tr>
                     <td>Date</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>datetime64[ns]</td>
+
                     <td>Datetime conversion</td>
                 </tr>
                 <tr>
                     <td>datetime</td>
-                    <td>
-                        751</td>
-                    <td>non-null</td>
-                    <td>datetime64[ns]</td>
+
                     <td>None</td>
                 </tr>
                 <tr>
                     <td>year</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>int64</td>
+
                     <td>Datetime conversion</td>
                 </tr>
                 <tr>
                     <td>month</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>Datetime conversion</td>
                 </tr>
                 <tr>
                     <td>Alert_Type</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>None</td>
                 </tr>
                 <tr>
                     <td>Product_category</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>Edited by hand</td>
                 </tr>
                 <tr>
                     <td>Product_Type</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>Edited by hand</td>
                 </tr>
                 <tr>
                     <td>Title</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>None</td>
                 </tr>
                 <tr>
                     <td>BodyText</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>None</td>
                 </tr>
+                <tr><td>Brand</td><td>Edited by hand - (if any) as noted on the alert notice</td></tr>
                 <tr>
                     <td>Supplier</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
-                    <td>Extract from Title or Body text</td>
+
+                    <td>Edited by hand or automatically captured from alert notice e.g. </td>
+                </tr>
+                    <td>Supplier_Type</td>
+                    <td>Hand edited - Manufacturer / Importer / Grocer / Wholesale / Unknown. </td>
                 </tr>
                 <tr>
+                    <td>Outlet</td>
+                    <td>Consumer outlet - Edited by hand - The name of the retail outlet (if noted)</td>
+                </tr>
+                <tr>
+                    <td>Outlet_Type</td>
+                    <td>Type of outlet : Grocer / Convenience / Restaurant / Takeaway / Retailer / Unknown</td>
+                </tr>
+
+                <tr>
                     <td>Product</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
-                    <td>Extract from Title or Body text</td>
+                    <td>Automatically extracted from Alert Notice Body text</td>
                 </tr>
                 <tr>
                     <td>Risk</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
-                    <td>Extract from Title or Body text</td>
+                    <td>Extract from Body text</td>
                 </tr>
                 <tr>
                     <td>Pathogen</td>
-                    <td>191</td>
-                    <td>non-null</td>
-                    <td>object</td>
-                    <td>Extract from Title or Body text</td>
+                    <td>Hand edited</td>
                 </tr>
                 <tr>
                     <td>Allergen</td>
-                    <td>269</td>
-                    <td>non-null</td>
-                    <td>object</td>
-                    <td>Extract from Title or Body text</td>
+                    <td>Hand edited</td>
                 </tr>
                 <tr>
                     <td>Foreign_Material</td>
-                    <td>159</td>
-                    <td>non-null</td>
-                    <td>object</td>
-                    <td>Extract from Title or Body text</td>
+                    
+                    <td>Hand edited</td>
                 </tr>
                 <tr>
                     <td>Other</td>
-                    <td>131</td>
-                    <td>non-null</td>
-                    <td>object</td>
-                    <td>Extract from Title or Body text</td>
+
+                    <td>Hand edited</td>
                 </tr>
                 <tr>
                     <td>month_num</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>int32</td>
+
                     <td>Datetime conversion</td>
                 </tr>
                 <tr>
                     <td>month_name</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>Datetime conversion</td>
                 </tr>
                 <tr>
                     <td>year_month</td>
-                    <td>751</td>
-                    <td>non-null</td>
-                    <td>object</td>
+
                     <td>Datetime conversion</td>
                 </tr>
-                <tr>
-                    <td>datetime64[ns](2),</td>
-                    <td>int32(1),</td>
-                    <td>int64(1),</td>
-                    <td>object(15)</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>usage:</td>
-                    <td>108.7+</td>
-                    <td>KB</td>
-                    <td>None</td>
-                    <td></td>
-                </tr>
+
             </tbody>
         </table>
-        </div>
-        <a href="#" class="gototop">Top</a>
+    <!-- </div> -->
+    <br><a href="#" class="gototop">Top</a>
         <h3 id="manually-applying-consistency">Manually applying consistency</h3>
         <p>The initial results of the web scrape were combined into a single excel file and reviewed by hand.</p>
         <p>The EDA and feature engineering revealed that the use of the words <code>recall</code> and <code>because</code> could be used as delimiters :</p>
@@ -451,17 +365,21 @@
 <h3>Product Breakout</h3>
 
 <p>Where there were multiple products in the Title or Body Text of the search results these were broken out into separate entries. 
-    In many instances, the actual full list of products was not available in the search results, requiring a click to get the full detail. 
+    For older alert notices, the actual full list of products was not available in the search results, requiring a click to get the full detail. 
     However, it should be noted that product names in titles were not applied consistently by the agency when the data was first entered 
-    into the web site database. Additional product details were noted if the search result was clicked to get more details, 
-    but the presentation of the data was not consistent, making subsequent scraping of the data impossible. Where product details were present in search 
-    detail, some were in html tables with no tagging, some were within paragraphs tags, some with <code>&lt;BR&gt;</code>.</p>
+    into the web site database requiring a lot of hand editing to get this data into a usable format.</p>
+    <p>Thankfully, more recent Alert Notices include additional product details within the body text identified by a &lt;caption&gt; tag, and it is possible to 
+        automatically capture this along with pack sizes.</p>
+    <p>For older Alert Notices,  the presentation of the data was not consistent, making subsequent scraping of the data impossible. Older Alert Notices had product details in the Body Text 
+    , some were in html tables with no tagging, some were within paragraphs tags, some with <code>&lt;BR&gt;</code>.</p>
 
 <p>Therefore extracting the full product detail from each page would be a significant endeavour.</p>
 
-<?php include 'footer.php'; ?>
+<?php include 'html-inc/footer.php'; ?>
 
     </div>
+    <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
+
 </body>
 </html>
 <script>

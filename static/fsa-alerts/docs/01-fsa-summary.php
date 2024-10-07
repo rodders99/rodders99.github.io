@@ -1,30 +1,12 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<?php include 'html-inc/header.php'; ?>
+<title>Food Standards Agency - Summary Alerts Analysis</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
-
-    <title>Food Standards Agency - Alerts Analysis</title>
-</head>
-
-<body>
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -109,8 +91,8 @@
         <h2 id="category-contamination">Product Categories most often contaminated</h2>
 
         <p>Which product categories are most often contaminated.</p>
-        <div class="datatable-container" id="html_table-source-meta-data" style="width:100%;" >
-        <table class="dataframe datatable" >
+        <div style="width:100%;" >
+        <table class="" >
             <tr>
                 <td><a href="../img/product_category-total.png">
                 <img src="../img/product_category-total-hbar.png" ></a></td>
@@ -118,11 +100,11 @@
                 <img src="../img/product_type-total-hbar.png" ></a></td>
             </tr></table></div>
     
-            <div class="datatable-container" id="html_table-source-meta-data" style="width:100%;" >
-            <table class="dataframe datatable" >
-            <tr><td style="width:50%" >Under Other: Vegetables / Salad 5, Milk / Alt Milks 6, Processed Fruit 6, Vegetarian Meat Alternatives 3</td>
-                <td>Under Other: Eggs 1, Bottled Water 1, Tofu 1, Honey 1, Salad 2, Duck Processed 2, Lamb Processed 2, Cooking Oil 3, Coffee / Tea 3, Rice 4, Milk / Alt Milks 6,
-                    Fruit Processed 6, Mixed Meat Processed 8, Other Processed 9, Cereal 13, Soft Drinks 13</td>
+            <div style="width:100%;" >
+            <table class="" >
+            <tr><td style="width:50%" ><p style="font-size:0.8em">Under Other: Vegetables / Salad 5, Milk / Alt Milks 6, Processed Fruit 6, Vegetarian Meat Alternatives 3</p></td>
+                <td><p  style="font-size:0.8em">Under Other: Eggs 1, Bottled Water 1, Tofu 1, Honey 1, Salad 2, Duck Processed 2, Lamb Processed 2, Cooking Oil 3, Coffee / Tea 3, Rice 4, Milk / Alt Milks 6,
+                    Fruit Processed 6, Mixed Meat Processed 8, Other Processed 9, Cereal 13, Soft Drinks 13</p></td>
                 </tr>
             
         </table>
@@ -145,8 +127,8 @@
 
         <p>Product Categories / Types</p>
 
-        <div class="datatable-container" id="html_table-source-meta-data" style="width:100%;" >
-            <table class="dataframe datatable" >            <thead>
+        <div style="width:100%;" >
+            <table  >            <thead>
             <tr>
                 <th style="text-align: left" >Product Category</th>
                 <th style="text-align: left">Product Types</th>
@@ -229,8 +211,8 @@
         <h2 id="ready-meal-contaminants">Confectionery and Ready Meals / Ready to eat foods : Most common  Contaminants</h2>
         
         <p>Which are the top contaminants by contaminant category.</p>
-        <div class="datatable-container" id="html_table-source-meta-data" style="width:100%;" >
-            <table class="dataframe datatable" >
+        <div  style="width:100%;" >
+            <table class="" >
                 <thead><th style="width:50%">Ready Meals / Ready to Eat</th>
             <th>Confectionery</th></thead>
             <tbody>
@@ -289,7 +271,7 @@
        <li>For example it should come as no surprise to find that own brand products from major retailers (supermarkets) make up more than 34% of the alerts issues.</li>
        </ul>
        
-       <div class="datatable-container" id="html_table-source-meta-data">
+       <div >
 
        <?php include "../tables/supplier_type-annual-alert-count.php" ?>
        </div>
@@ -299,8 +281,8 @@
        <h2 id="time-series-alert-category">Temporal Analysis</h2>
        <p>Time Series visualisation by alert category.</p>
 
-       <div class="datatable-container" id="html_table-source-meta-data">
-            <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+       <div >
+            <table  style="width:100%; margin: 0 auto;">
                 <tr>
                     <td><a  href="../img/fsa-alerts-by-category-yyyy-mm.png"><img src="../img/fsa-alerts-by-category-yyyy-mm.png"></a></td>
                     <td></td>
@@ -320,10 +302,11 @@
         (March, June, September, December), these correlations are weak and should not be interpreted as indicating a meaningful trend. It appears that the timing
          of alerts is not driven by specific business cycles or calendar events, but rather reflects the stochastic nature of food safety incidents. 
          As such, I caution against drawing conclusions based on these correlations, and instead recommend focusing on other factors that may influence alert rates.</p>
-         <?php include 'footer.php'; ?>
+         <?php include 'html-inc/footer.php'; ?>
 
         
     </div>
+    <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 </body>
 </html>
 <script>

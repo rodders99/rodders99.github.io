@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<?php include 'html-inc/header.php'; ?>
+<title>Food Standards Agency - Meta Data Overview</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
-
-    <title>Food Standards Agency - Alerts Analysis</title>
-</head>
-
-<body>
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -75,7 +56,7 @@
     products are presented, some had product content in paragraphs with <br> breaks, some has product content in html tables. 
     This means alerts with multiple products will have to edited by hand.</p>
 
-        <div class="datatable-container" id="html_table-source-meta-data">
+        <!-- <div class="datatable-container" id="html_table-source-meta-data"> -->
         <table class="dataframe datatable table-format" style="width:100%; margin: 0 auto;">
         
             <thead>
@@ -88,13 +69,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                </tr>
+
                 <tr>
                     <td>Source</td>
                     <td>748</td>
@@ -140,15 +115,16 @@
                     <td></td>
                 </tr>
             </tbody>
-        </table></div>
+        </table>
+    <!-- </div> -->
 
         <h3>Engineered Features</h3>
 
         <p>Following on from Exploratory Data Analysis, Data Cleansing and Feature Engineering the data structure has been supplemented with 
             additional fields for analysis.</p>
 
-        <div class="datatable-container" id="html_table-source-meta-data">
-        <table class="dataframe datatable table-format" style="width:100%; margin: 0 auto;">
+        <!-- <div class="datatable-container" id="html_table-source-meta-data"> -->
+        <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
             <thead>
                 <tr style="text-align: right;">
                     <th>Column</th>
@@ -160,13 +136,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                </tr>
+               
                 <tr>
                     <td>Date</td>
                     <td>751</td>
@@ -317,11 +287,12 @@
                 </tr>
             </tbody>
         </table>
-        </div>
-        <?php include 'footer.php'; ?>
+        <!-- </div> -->
+        <?php include 'html-inc/footer.php'; ?>
 
         </div>
 
+        <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 
 </body>
 </html>

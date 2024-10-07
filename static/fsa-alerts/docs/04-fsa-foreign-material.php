@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<?php include 'html-inc/header.php'; ?>
+<title>Food Standards Agency - Alerts Analysis - Contamination Type : Foreign Material</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
-
-    <title>Food Standards Agency - Alerts Analysis</title>
-</head>
-
-<body>
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -163,9 +144,9 @@
             </ul>
             </p>
             <h2 id="foreign_material_types-annual-table">Foreign Material Safety Alerts - Types by year</h2>
-            <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
+            <!-- <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%"> -->
                 <?php include "../tables/foreign_material-annual-alert-count.php" ?>
-            </div>
+            <!-- </div> -->
                 
                 
                 
@@ -174,7 +155,7 @@
 
             <h3 id="foreign_material-total-distribution">Time Series Cross-Sectional Visualisations of Foreign Material Contamination Types</h3>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/foreign_material-contaminant_type-yyyy-mm.png"><img
@@ -190,12 +171,12 @@
                     </tr>
 
                 </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
             <h2 id="foreign_material-type-totals">Safety Alerts Distribution by Foreign Material Type</h2>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/foreign_material-pie-total.png"><img src="../img/foreign_material-pie-total.png" style="width:100%"></a></td>
@@ -204,13 +185,13 @@
                     </tr>
 
                 </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
 
             <h2 id="product-type-totals">Safety Alerts Distribution by Product Category</h2>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/foreign_material-product_categories-pie-total.png"><img src="../img/foreign_material-product_categories-pie-total.png" style="width:100%"></a>
@@ -219,13 +200,13 @@
                     </tr>
 
                 </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
             <p></p>
             <h2 id="foreign_material-time-series-total">Time Series Visualisations of Foreign Material Safety Alerts</h2>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/foreign_material-yyyy-mm.png"><img src="../img/foreign_material-yyyy-mm.png"
@@ -240,7 +221,7 @@
                     </tr>
 
                 </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
             <h2 id="">Safety Alerts by Foreign Material Contaminant</h2>
@@ -254,7 +235,7 @@
 
             <h3>Temporal Visualisations</h3>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/contaminant-metal-yyyy-mm.png"><img src="../img/contaminant-metal-yyyy-mm.png"
@@ -267,7 +248,7 @@
                         <td><a href="../img/contaminant-metal-yyyy.png"><img src="../img/contaminant-metal-yyyy.png"></a></td>
                     </tr>
                 </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
             <h2 id="foreign_Material-visualisations-2">Plastic</h2>
@@ -279,7 +260,7 @@
             <p><a href="#" class="gototop">Top</a> </p>
 
             <h3>Temporal Visualisations</h3>
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/contaminant-plastic-yyyy-mm.png"><img
@@ -294,7 +275,7 @@
                         </td>
                     </tr>
                 </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
             <h2 id="foreign_Material-visualisations-3">Glass</h2>
             <p></p>
@@ -308,7 +289,7 @@
             <p><a href="#" class="gototop">Top</a> </p>
 
             <h3>Temporal Visualisations</h3>
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/contaminant-glass-yyyy-mm.png"><img
@@ -321,7 +302,7 @@
                         <td><a href="../img/contaminant-glass-yyyy.png"><img src="../img/contaminant-glass-yyyy.png"></a></td>
                     </tr>
                 </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a> </p>
 
             <h2 id="foreign_Material-visualisations-4">Rubber</h2>
@@ -334,7 +315,7 @@
 
 
             <h3>Temporal Visualisations</h3>
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/contaminant-rubber-yyyy-mm.png"><img
@@ -348,10 +329,10 @@
                         </td>
                     </tr>
                 </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
-            < id="foreign_Material-visualisations-5">Insects</h3>
+            <h3 id="foreign_Material-visualisations-5">Insects</h3>
                 <p></p>
 
                 <h3>The Most Common Foods Contaminated with Insects</h3>
@@ -360,7 +341,7 @@
                 <p><a href="#" class="gototop">Top</a> </p>
 
                 <h3>Temporal Visualisations</h3>
-                <div class="datatable-container" >
+                <!-- <div class="datatable-container" > -->
                     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                         <tr>
                             <td><a href="../img/contaminant-insects-yyyy-mm.png"><img
@@ -377,7 +358,7 @@
                             </td>
                         </tr>
                     </table>
-                </div>
+                <!-- </div> -->
                 <p><a href="#" class="gototop">Top</a></p>
 
                 <h2 id="food-by-foreign_material-type">A Slice Above the Rest: Foreign Material Distribution Across Food
@@ -388,7 +369,7 @@
 
                 <p id="ready"></p>
 
-                <div class="datatable-container" >
+                <!-- <div class="datatable-container" > -->
                     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Ready Meal / Ready to Eat</h3></td><td><h3>Confectionery</h3></td></tr></thead>
 
@@ -399,12 +380,13 @@
                                 <img src="../img/foreign_material-type-confectionery-pie-total.png"></a></td>
 
                         </tr>
-                        </table></div>
+                        </table>
+                    <!-- </div> -->
                         <p><a href="#" class="gototop">Top</a></p>
 
                         <p id="baked"></p>
 
-                        <div class="datatable-container" >
+                        <!-- <div class="datatable-container" > -->
                             <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                             <thead><tr><td style="width:50%"><h3>Ready Meal / Ready to Eat</h3></td><td><h3>Confectionery</h3></td></tr></thead>
 
@@ -415,12 +397,13 @@
                                 <img src="../img/foreign_material-type-vegetables-processed-pie-total.png"></a></td>
 
                         </tr>
-                        </table></div>
+                        </table>
+                    <!-- </div> -->
                         <p><a href="#" class="gototop">Top</a></p>
 
                         <p id="dairy"></p>
 
-                        <div class="datatable-container" >
+                        <!-- <div class="datatable-container" > -->
                             <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                             <thead><tr><td style="width:50%"><h3>Dairy</h3></td><td><h3>Cereal</h3></td></tr></thead>
                         <tr>
@@ -430,12 +413,13 @@
                                 <img src="../img/foreign_material-type-cereal-pie-total.png"></a></td>
 
                         </tr>
-                        </table></div>
+                        </table>
+                    <!-- </div> -->
                         <p><a href="#" class="gototop">Top</a></p>
 
                         <p id="sauces"></p>
 
-                        <div class="datatable-container" >
+                        <!-- <div class="datatable-container" > -->
                             <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                             <thead><tr><td style="width:50%"><h3>Sauces / Condiments</h3></td><td><h3>Baby Foods / Formula</h3></td></tr></thead>
                         <tr>
@@ -445,12 +429,13 @@
                                 <img src="../img/foreign_material-type-baby-foods-formula-pie-total.png"></a></td>
 
                         </tr>
-                        </table></div>
+                        </table>
+                    <!-- </div> -->
                         <p><a href="#" class="gototop">Top</a></p>
 
                     <p id="fish"></p>
 
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
                         <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                         <thead><tr><td style="width:50%"><h3>Fish Processed</h3></td><td><h3>Herbs / Spices</h3></td></tr></thead>
                         <tr>
@@ -460,7 +445,7 @@
                                 <img src="../img/foreign_material-type-herbs-spices-pie-total.png"></a></td>
                         </tr>
                     </table>
-                </div>
+                <!-- </div> -->
                 <p><a href="#" class="gototop">Top</a></p>
 
 
@@ -468,7 +453,7 @@
 
                 <p id="beef"></p>
 
-                <div class="datatable-container" >
+                <!-- <div class="datatable-container" > -->
                     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Beef Processed</h3></td><td><h3>Cheese</h3></td></tr></thead>
                     <tr>
@@ -478,12 +463,12 @@
                             <img src="../img/foreign_material-type-cheese-pie-total.png"></a></td>
                     </tr>
                 </table>
-                </div>
+                <!-- </div> -->
                 <p><a href="#" class="gototop">Top</a></p>
 
                 <p id="chicken"></p>
 
-                <div class="datatable-container" >
+                <!-- <div class="datatable-container" > -->
                     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Chicken Processed</h3></td><td><h3>Coffee / Tea</h3></td></tr></thead>
                     <tr>
@@ -493,13 +478,13 @@
                             <img src="../img/foreign_material-type-coffee-tea-pie-total.png"></a></td>
                     </tr>
                 </table>
-                </div>
+                <!-- </div> -->
                 <p><a href="#" class="gototop">Top</a></p>
 
 
                 <p id="honey"></p>
 
-                <div class="datatable-container" >
+                <!-- <div class="datatable-container" > -->
                     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Honey</h3></td><td><h3>Milk / Alt Milks</h3></td></tr></thead>
                     <tr>
@@ -509,13 +494,13 @@
                             <img src="../img/foreign_material-type-milk-alt-milks-pie-total.png"></a></td>
                     </tr>
                 </table>
-                </div>
+                <!-- </div> -->
                 <p><a href="#" class="gototop">Top</a></p>
 
 
                 <p id="meats"></p>
 
-                <div class="datatable-container" >
+                <!-- <div class="datatable-container" > -->
                     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Mixed Meats Processed</h3></td><td><h3>Nuts / Seeds</h3></td></tr></thead>
                     <tr>
@@ -525,13 +510,13 @@
                             <img src="../img/foreign_material-type-nuts-seeds-pie-total.png"></a></td>
                     </tr>
                 </table>
-                </div>
+                <!-- </div> -->
                 <p><a href="#" class="gototop">Top</a></p>
 
 
                 <p id="other"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Other Processed</h3></td><td><h3>Pet Foods</h3></td></tr></thead>
                 <tr>
@@ -541,12 +526,12 @@
                         <img src="../img/foreign_material-type-pet-food-pie-total.png"></a></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
             <p id="pork"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Pork Processed</h3></td><td><h3>Rice</h3></td></tr></thead>
                 <tr>
@@ -556,13 +541,13 @@
                         <img src="../img/foreign_material-type-rice-pie-total.png"></a></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
 
             <p id="sandwiches"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Sandwiches / Wraps</h3></td><td><h3>Soft Drinks</h3></td></tr></thead>
                 <tr>
@@ -572,7 +557,7 @@
                         <img src="../img/foreign_material-type-soft-drinks-pie-total.png"></a></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
     <h2>A Taste of Trouble: Common Food Contaminants by Product Category</h2>
@@ -580,7 +565,7 @@
 
             <p id="cat-baby"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Baby Foods / Formula</h3></td><td><h3>Beverages</h3></td></tr></thead>
                 <tr>
@@ -590,13 +575,13 @@
                         <img src="../img/foreign_material-category-beverages-pie-total.png"></a></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
 
             <p id="cat-bread"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Bread / Baked Goods</h3></td><td><h3>Cereals</h3></td></tr></thead>
                 <tr>
@@ -606,13 +591,13 @@
                         <img src="../img/foreign_material-category-cereal-pie-total.png"></a></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
 
             <p id="cat-confectionery"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Confectionery</h3></td><td><h3>Dairy</h3></td></tr></thead>
                 <tr>
@@ -622,14 +607,14 @@
                         <img src="../img/foreign_material-category-dairy-pie-total.png"></a></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
 
 
             <p id="cat-frozen"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Frozen / Chilled Foods</h3></td><td><h3>Herbs / Spices</h3></td></tr></thead>
                 <tr>
@@ -639,13 +624,13 @@
                         <img src="../img/foreign_material-category-herbs-spices-pie-total.png"></a></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
 
             <p id="cat-other"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Other Processed</h3></td><td><h3>Fish Processed</h3></td></tr></thead>
                 <tr>
@@ -655,12 +640,12 @@
                         <img src="../img/foreign_material-category-processed-fish-pie-total.png"></a></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
             <p id="cat-meats"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Meats Processed</h3></td><td><h3>Ready Meals / Ready to Eat</h3></td></tr></thead>
                 <tr>
@@ -670,12 +655,12 @@
                         <img src="../img/foreign_material-category-ready-meal-ready-to-eat-pie-total.png"></a></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
             <p id="cat-sauces"></p>
 
-            <div class="datatable-container" >
+            <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <thead><tr><td style="width:50%"><h3>Sauces / Condiments</h3></td><td><h3></h3></td></tr></thead>
                 <tr>
@@ -684,7 +669,7 @@
                     <td></td>
                 </tr>
             </table>
-            </div>
+            <!-- </div> -->
             <p><a href="#" class="gototop">Top</a></p>
 
 
@@ -695,14 +680,16 @@
             <p>Plastic follows on with  26% of all safety alerts for foreign material contamination</p>
             <p>Glass is third second most common foreign material contaminant,  9% of foreign material contamination alerts are for glass</p>
             <p>
-            <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
+            <!-- <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%"> -->
                 <?php include "../tables/foreign_material-annual-alert-count.php" ?>
-            </div>
+            <!-- </div> -->
                 
 </p>
-<?php include 'footer.php'; ?>
+<?php include 'html-inc/footer.php'; ?>
 
 </div>
+<script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
+
 </body>
 
 </html>

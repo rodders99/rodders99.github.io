@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<?php include 'html-inc/header.php'; ?>
+<style>
+.no-border * {
+    border: none !important;
+}
+</style>
+<title>EU Safety Report 2023 - Summary Report</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="color-scheme" content="dark">
-  <!-- <link rel="stylesheet" href="/css/coder-dark.css" media="screen"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="/css/coder.css"> -->
-  <link rel="stylesheet" type="text/css" href="/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-  <title>EU Safety Gate Report-2023</title>
-
-</head>
-
-<body class="exclude-page"> 
+<body class="colorscheme-light exclude-page">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
 
   <div class="page-container">
     <div class="toolbar" style="width:100%; text-align:center; align-items: center;">
@@ -84,7 +78,7 @@
     </div>
     <!-- </div> -->
 
-    <h1 class="nochange">EU Safety Gate report</h1>
+    <h1 class="nochange">EU Safety Gate report 2023 Summary</h1>
     <p><img src="../img-2023/icons/Safety_Gate_Logo.png" style="width:50%"></p>
 
     <p class='last-updated'><?php include '../tables-2024/last-updated.php' ?></p>
@@ -113,7 +107,7 @@
       <!-- <div id="tableOfContents"></div> -->
 
     <h2 id="Annual Alerts">Annual Alerts</h2>
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -142,12 +136,12 @@
     </ul>
 
 
-    <div class="datatable-container" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
+    <div class="no-border" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-0-annual_alert_count.php' ?>
     </div>
 
 
-    <div class="datatable-container" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
+    <div class="no-border" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-1-annual_alert_count.php' ?>
     </div>
 
@@ -157,7 +151,7 @@
       increase of 1,249 over the previous year.</p>
 
 
-    <div class="datatable-container" id="all-AnnualYoY">
+    <div class="no-border" id="all-AnnualYoY">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -193,7 +187,7 @@
       EU countries in safeguarding consumer health
       and safety through prompt and effective reporting of hazardous products.</p>
 
-    <div class="datatable-container" id="table-alert-submitted-by"
+    <div class="no-border" id="table-alert-submitted-by"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-alert-submitted-by.php'; ?>
       <a href="#" class="gototop">Go to Top</a>
@@ -212,7 +206,7 @@
       across the European Union.</p>
 
     <h3 id="Map Plot">Map Plot Previous Year Vs Current Year</h3>
-    <div class="datatable-container" id="all-AnnualGeoplot">
+    <div class="no-border" id="all-AnnualGeoplot">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -230,7 +224,7 @@
     
     
     <h2 id="Product Categories">Product Categories</h2>
-    <div class="datatable-container" id="table-product-category-change.php"
+    <div class="no-border" id="table-product-category-change.php"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-product-category-change.php'; ?>
       <a href="#" class="gototop">Go to Top</a>
@@ -357,7 +351,7 @@
     <h3 id="The-European-Cosmetics-Industry">The European Cosmetics Industry</h3>
 
     <h4>Cosmetics Country of Product Origin</h4>
-    <div class="datatable-container" id="all-Cosmetics-Coo">
+    <div class="no-border" id="all-Cosmetics-Coo">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -374,7 +368,7 @@
     <p></p>
 
     <h3 id="Cosmetics_subcats">Cosmetics Sub Categories affected by the ban</h3>
-    <div class="datatable-container" id="table-cosmetics-product-sub-cat-change"
+    <div class="no-border" id="table-cosmetics-product-sub-cat-change"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-cosmetics-product-sub-cat-change.php' ?>
       <a href="#" class="gototop">Go to Top</a>
@@ -394,7 +388,7 @@
     <p>Source: <a href="https://cosmeticseurope.eu/cosmetics-industry/">https://cosmeticseurope.eu/cosmetics-industry/</a> </p>
 
     <h3 id="cosmetics_country_origin">Cosmetic Products Safety Gate Alerts, Country of origin</h3>
-    <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
+    <div class="no-border" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-cosmetics-country-of-origin-change.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
@@ -409,7 +403,7 @@
 
 
     <h3 id="cosmetics_brands">Cosmetic Products Safety Gate Alerts, Top 30 Brands</h3>
-    <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
+    <div class="no-border" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-cosmetics-brands-change.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
@@ -429,7 +423,7 @@
     </ul>
 
     </p>
-    <div class="datatable-container" id="table-economic-area-compare.php"
+    <div class="no-border" id="table-economic-area-compare.php"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-economic-area-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
@@ -447,7 +441,7 @@
     <ul><code>Unknown</code> Where the reporting member didn't record the country of origin, and represents 9,173
       products, or 25.8% of the total Alerts issued</ul>
 
-    <div class="datatable-container" id="table-country-top15-compare"
+    <div class="no-border" id="table-country-top15-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-country-top15-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
@@ -483,7 +477,7 @@
     </ul>
 
     <p></p>
-    <div class="datatable-container" id="table-risk-category-compare"
+    <div class="no-border" id="table-risk-category-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-risk-category-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
@@ -491,7 +485,7 @@
     <p></p>
 
     <h2 id="prodcat_risk">Product Category mapped to Risk Category</h2>
-    <div class="datatable-container" id="table-risk-product-category-compare"
+    <div class="no-border" id="table-risk-product-category-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-risk-product-category-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
@@ -517,7 +511,7 @@
       Voluntary actions reflect the responsible party's commitment to consumer safety and regulatory compliance. </p>
     <p>Conversely, compulsory actions are mandated by regulatory authorities following inspections, market surveillance,
       or consumer complaints. </p>
-    <div class="datatable-container" id="table-risk-product-category-compare"
+    <div class="no-border" id="table-risk-product-category-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-action-required.php' ?>
       <a href="#" class="gototop">Go to Top</a>
@@ -536,7 +530,7 @@
       allowing for swift action to mitigate potential risks. On the other hand, compulsory identification happens
       through regulatory action, where authorities,
       during routine inspections or investigations, identify the responsible party and mandate corrective measures.</p>
-    <div class="datatable-container" id="table-risk-product-category-compare"
+    <div class="no-border" id="table-risk-product-category-compare"
       style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-responsible-party.php' ?>
       <a href="#" class="gototop">Go to Top</a>
@@ -549,7 +543,7 @@
 
 
     <p></p>
-    <div class="datatable-container" id="table-brand-compare" style="margin-right:auto;margin-left:0px; width:100%">
+    <div class="no-border" id="table-brand-compare" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2023/table-top30-brand-compare.php' ?>
       <a href="#" class="gototop">Go to Top</a>
     </div>
@@ -564,7 +558,7 @@
         href="https://www.mpo.cz/assets/en/consumer-protection/products-safety/2024/3/Safety-Gate-2023-factsheet.pdf">Safety_Gate_2023_Factsheet_EN.pdf</a>
     </p>
 
-    <div class="datatable-container" >
+    <div class="no-border" >
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -805,7 +799,7 @@
     <h3 class="product_cat0" id="top1_annual">Total, Annual and Cumulative Alerts</h3>
 
 
-    <div class="datatable-container" id="all-product-cat-0-annual-cumulative">
+    <div class="no-border" id="all-product-cat-0-annual-cumulative">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -836,7 +830,7 @@
 
     <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-submitting-country-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-0-submitting-country-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -853,7 +847,7 @@
 
     <h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-submitting-country-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-0-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -880,7 +874,7 @@
     <h3 class="product_cat0" id="top1_risk">#1 - Risk Category</h3>
     <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-risk-category-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-0-risk-category-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -896,7 +890,7 @@
 
     <h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-risk-category-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-0-risk-category-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -921,7 +915,7 @@
 
     <h3 class="product_cat0" id="top1_counterfeit">#1 - Counterfeit </h3>
     <h4>Previous Year Vs Current Year</h4>
-    <div class="datatable-container" id="all-product-cat-0-counterfeit-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-0-counterfeit-ly-vs-ty">
 
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
@@ -939,7 +933,7 @@
 
     <h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-counterfeit-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-0-counterfeit-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -970,7 +964,7 @@
     <h3 class="product_cat0" id="top1_action">#1 - Compulsory / Voluntary Action Required</h3>
     <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-action-required-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-0-action-required-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -988,7 +982,7 @@
     <h4 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-0-action-required-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-0-action-required-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1015,7 +1009,7 @@
 
     <h3 class="product_cat0" id="top1_responsible">#1 - Compulsory / Voluntary Responsible Party</h3>
     <h4 class="product_cat0">Previous Year Vs Current Year</h4>
-    <div class="datatable-container" id="all-product-cat-0-responsible-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-0-responsible-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1033,7 +1027,7 @@
 
     <h4 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-responsible-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-0-responsible-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1062,7 +1056,7 @@
 
 
     <h3 class="product_cat0" id="top1_brands">#1 - Top 30 Brands for Safety Alerts</h3>
-    <div class="datatable-container" id="all-product-cat-0-top30-brands">
+    <div class="no-border" id="all-product-cat-0-top30-brands">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1091,7 +1085,7 @@
     <h3 class="product_cat1" id="top2_annual">#2 - Total, Annual and Cumulative Alerts</h3>
 
 
-    <div class="datatable-container" id="all-product-cat-1-annual-cumulative">
+    <div class="no-border" id="all-product-cat-1-annual-cumulative">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1123,7 +1117,7 @@
 
 
 
-    <div class="datatable-container" id="all-product-cat-1-submitting-country-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-1-submitting-country-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1140,7 +1134,7 @@
 
     <h3 class="product_cat1" id="top2_submitting">#2 - Submitting Country</h3>
 
-    <div class="datatable-container" id="all-product-cat-1-submitting-country-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-1-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1171,7 +1165,7 @@
     <h3 class="product_cat1" id="top2_risk">#2 - Risk Category</h3>
     <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-risk-category-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-1-risk-category-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1187,7 +1181,7 @@
 
     <h4 class="product_cat1">Annual Total / Annual Percentage of Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-risk-category-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-1-risk-category-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1218,7 +1212,7 @@
     <h3 class="product_cat1" id="top2_counterfeit">#2 - Counterfeit </h3>
     <h4 class="product_cat1">Previous Year Vs Current Year </h4>
 
-    <div class="datatable-container" id="all-product-cat-1-counterfeit-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-1-counterfeit-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1236,7 +1230,7 @@
     <h4 class="product_cat1">Annual Total and Annual Percentage of Total</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-1-counterfeit-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-1-counterfeit-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1267,7 +1261,7 @@
 
     <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-action-required-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-1-action-required-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1284,7 +1278,7 @@
 
     <h4 class="product_cat1">Annual Total / Compulsory Vs Voluntary Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-action-required-CvsV">
+    <div class="no-border" id="all-product-cat-1-action-required-CvsV">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1313,7 +1307,7 @@
     <h3 class="product_cat1" id="top2_responsible">#2 - Compulsory / Voluntary Responsible Party</h3>
     <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-responsible-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-1-responsible-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1330,7 +1324,7 @@
 
     <h4 class="product_cat1">Annual Total / Compulsory Vs Voluntary Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-responsible-CvsV">
+    <div class="no-border" id="all-product-cat-1-responsible-CvsV">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1359,7 +1353,7 @@
 
 
     <h3 class="product_cat1" id="top2_brands">Top Brands for Safety Alerts</h3>
-    <div class="datatable-container" id="all-product-cat-1-top30-brands">
+    <div class="no-border" id="all-product-cat-1-top30-brands">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1384,7 +1378,7 @@
     <h2 class="product_cat2" id="top3_">#3 - Top 3 Product Categories</h2>
     <h3 class="product_cat2">#3 - Total, Annual and Cumulative Alerts</h3>
 
-    <div class="datatable-container" id="all-product-cat-2-annual-cumulative">
+    <div class="no-border" id="all-product-cat-2-annual-cumulative">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1415,7 +1409,7 @@
     <h3 class="product_cat2" id="top3_submitting">#3 - Submitting Country</h3>
     <h4>Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-submitting-country-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-2-submitting-country-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1432,7 +1426,7 @@
     <h4>Annual Total and Annual Percentage of Total</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-submitting-country-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-2-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1461,7 +1455,7 @@
     <h4>Previous Year Vs Current Year</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-risk-category-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-2-risk-category-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1477,7 +1471,7 @@
     </div>
     <h4>Annual Total and Annual Percentage of Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-risk-category-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-2-risk-category-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1506,7 +1500,7 @@
     <h4>Previous Year Vs Current Year</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-counterfeit-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-2-counterfeit-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1523,7 +1517,7 @@
     <h4>Annual Total and Annual Percentage of Total</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-counterfeit-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-2-counterfeit-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1552,7 +1546,7 @@
     <h3 class="product_cat2" id="top3_action">#3 - Compulsory / Voluntary Action Required </h3>
     <h4>Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-action-required-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-2-action-required-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1569,7 +1563,7 @@
 
     <h4>Annual Total and Compulsory Vs Voluntary Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-action-required-CvsV">
+    <div class="no-border" id="all-product-cat-2-action-required-CvsV">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1599,7 +1593,7 @@
     <h4>Previous Year Vs Current Year</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-responsible-ly-vs-ty">
+    <div class="no-border" id="all-product-cat-2-responsible-ly-vs-ty">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1616,7 +1610,7 @@
 
     <h4>#3 - Annual Total Compulsory Vs Voluntary Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-responsible-CvsV">
+    <div class="no-border" id="all-product-cat-2-responsible-CvsV">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
 
@@ -1645,7 +1639,7 @@
 
 
     <h3 class="product_cat2" id="top3_brands">#3 - Top Brands for Safety Alerts</h3>
-    <div class="datatable-container" id="all-product-cat-2-top30-brands">
+    <div class="no-border" id="all-product-cat-2-top30-brands">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr>
@@ -1666,7 +1660,8 @@
     </div>
 
 
-
+    <?php include 'html-inc/footer.php'; ?>
+    <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 </body>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>

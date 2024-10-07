@@ -1,33 +1,19 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="color-scheme" content="dark">
+<?php include 'html-inc/header.php'; ?>
 
-<!-- <link rel="stylesheet" type="text/css" href="/css/custom.css"> -->
-<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" type="text/css" href="/css/project-style.css">
 <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css"
-/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-<!-- and it's easy to individually load additional languages -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-<script>hljs.highlightAll();</script>
 <script src="/scripts/ev-headlines.js"></script>
 
 
 
 <title>Media Bias and Misinformation: Analysing Mainstream Media Headlines on Electric Vehicles</title>
-</head>
-<body>
-<div class="page-container">
+
+<body class="colorscheme-light">
+    <div class="float-container">
+        <a id="dark-mode-toggle" class="colorscheme-toggle">
+            <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+    </div><div class="page-container">
   <div class="toolbar" style="width:100%; text-align:center; align-items:center">
                       
       <!-- JUMP TO MENU-->
@@ -91,7 +77,7 @@
 <h2 id="china-threat">Common Themes - China Says &quot;All your base belong to us&quot;</h2>
 
 
-<div class="datatable-container" id="country-2022vs2023">
+<!-- <div class="datatable-container" id="country-2022vs2023"> -->
   <table class="datatable sortable" style="margin-right:auto;margin-left:0px; width:100%" >
 <thead>
 <tr>
@@ -151,11 +137,12 @@
 threat on the scale of the crisis over Huawei</td>
 <td style="text-align:left; ">02/08/23</td>
 </tr>
-</tbody></table></div>
-<p><a href='#' class="gototop">Top</a></p>
+</tbody></table>
+<!-- </div> -->
+<br><a href='#' class="gototop">Top</a>
 
 <h2 id="fire">Common Themes - EV Fires</h2>
-<div class="datatable-container" id="country-2022vs2023">
+<!-- <div class="datatable-container" id="country-2022vs2023"> -->
   <table class="datatable sortable" style="margin-right:auto;margin-left:0px; width:100%" >
 <thead>
 <tr>
@@ -238,7 +225,9 @@ explosions and toxic water run-off<b>, report warns</b></td>
 <td style="text-align:left; ">The trailblazing British business tackling the growing problem of electric car fires</td>
 <td style="text-align:left; ">02/08/23</td>
 </tr>
-</tbody></table></div><p><a href='#' class="gototop">Top</a></p>
+</tbody></table>
+<!-- </div> -->
+<br><a href='#' class="gototop">Top</a>
 
 <h1 id="sme">The &quot;I&#39;m a ....&quot; series</h1>
 
@@ -247,7 +236,7 @@ explosions and toxic water run-off<b>, report warns</b></td>
   the perspectives of various stakeholders within the automotive and EV community. The headlines, starting with &quot;I&#39;m a ...&quot; 
   followed by titles such as &quot;EV Expert&quot;, &quot;Car Mechanic&quot;, and &quot;EV owner/driver&quot;, set the stage for a 
   narrative that aims to lend credibility and weight to the negative viewpoints presented.</p>
-<div class="datatable-container" id="country-2022vs2023">
+<!-- <div class="datatable-container" id="country-2022vs2023"> -->
   <table class="datatable sortable" style="margin-right:auto;margin-left:0px; width:100%" >
 <thead>
 <tr>
@@ -556,7 +545,10 @@ explosions and toxic water run-off<b>, report warns</b></td>
 <td style="text-align:left; ">I&#39;m an motors expert - you should NOT buy an EV... drivers hate them</td>
 <td style="text-align:left; ">23/08/23</td>
 </tr>
-</tbody></table></div><p><a href='#' class="gototop">Top</a></p>
+</tbody></table>
+<!-- </div> -->
+<br>
+<a href='#' class="gototop">Top</a>
 
 <h2 id="personal-experience">Personal Experience Series</h2>
 
@@ -566,7 +558,7 @@ explosions and toxic water run-off<b>, report warns</b></td>
 <p>These articles contribute to a narrative that electric vehicles may not be as reliable or convenient as advertised. By sharing 
   personal stories, the authors aim to resonate with readers who may be considering the transition to EVs, potentially influencing 
   their opinions and decisions.</p>
-<div class="datatable-container" id="country-2022vs2023">
+<!-- <div class="datatable-container" id="country-2022vs2023"> -->
   <table class="datatable sortable" style="margin-right:auto;margin-left:0px; width:100%" >
 <thead>
 <tr>
@@ -705,11 +697,14 @@ explosions and toxic water run-off<b>, report warns</b></td>
 <td style="text-align:left; ">My Tesla ran out of charge in the middle of the road - it was a nightmare</td>
 <td style="text-align:left; ">30/09/23</td>
 </tr>
-</tbody></table></div><p><a href='#' class="gototop">Top</a></p>
+</tbody></table>
+<!-- </div> -->
+<br>
+<a href='#' class="gototop">Top</a>
 
 <h2 id="planning">The &quot;Planning Permission Problem&quot; series..</h2>
 <p>Who would have thought EV chargers could be such a hot bed of crime and sexual deviancy!</p>
-<div class="datatable-container" id="country-2022vs2023">
+<!-- <div class="datatable-container" id="country-2022vs2023"> -->
   <table class="datatable sortable" style="margin-right:auto;margin-left:0px; width:100%" >
 <thead>
 <tr>
@@ -744,10 +739,12 @@ for residential on-street charging for drivers without driveways</td>
 <td style="text-align:left; ">Sex, mugging and other reasons to block a charging station</td>
 <td style="text-align:left; ">17/12/23</td>
 </tr>
-</tbody></table></div><p><a href='#' class="gototop">Top</a></p>
+</tbody></table>
+<!-- </div> -->
+<br><a href='#' class="gototop">Top</a>
 
 <h2 id="countryside">Problems in the countryside</h2>
-<div class="datatable-container" id="country-2022vs2023">
+<!-- <div class="datatable-container" id="country-2022vs2023"> -->
   <table class="datatable sortable" style="margin-right:auto;margin-left:0px; width:100%" >
 <thead>
 <tr>
@@ -771,13 +768,15 @@ for residential on-street charging for drivers without driveways</td>
 <td style="text-align:left; ">Rural drivers are hit by the lack of electric car chargers as they have to drive <br>13 times further than motorists in London to reach one, report finds</td>
 <td style="text-align:left; ">28/09/23</td>
 </tr>
-</tbody></table></div><p><a href='#' class="gototop">Top</a></p>
+</tbody></table>
+<!-- </div> -->
+<br><a href='#' class="gototop">Top</a>
 
 
 <h2 id="sales">The &quot;Oh no! Ma Sales ... anyway&quot; series</h2>
 <p>Predictions of doom and failure for Electric Vehicle because of a single data point indicating reduced sales, conveniently ignoring the key periods of end 
   of quarter when  EV deliveries typically peak</p>
-<div class="datatable-container" id="country-2022vs2023">
+<!-- <div class="datatable-container" id="country-2022vs2023"> -->
   <table class="datatable sortable" style="margin-right:auto;margin-left:0px; width:100%" >
 <thead>
 <tr>
@@ -922,11 +921,13 @@ sales - these are the models being discounted</td>
 <td style="text-align:left; ">One electric vehicle sold every minute in July as UK car sales record full year of growth</td>
 <td style="text-align:left; ">04/08/23</td>
 </tr>
-</tbody></table></div><p><a href='#' class="gototop">Top</a></p>
+</tbody></table>
+<!-- </div> -->
+<br><a href='#' class="gototop">Top</a>
 
 <h2 id="danger">&quot;Danger Will Robinson ...&quot; series</h2>
 
-<div class="datatable-container" id="country-2022vs2023">
+<!-- <div class="datatable-container" id="country-2022vs2023"> -->
 <table class="datatable sortable" style="margin-right:auto;margin-left:0px; width:100%" >
 <thead>
 <tr>
@@ -1025,12 +1026,15 @@ sales - these are the models being discounted</td>
 <td style="text-align:left; ">Urgent warning to EV drivers over problem which could cost you £15,000</td>
 <td style="text-align:left; ">05/09/23</td>
 </tr>
-</tbody></table></div><p><a href='#' class="gototop">Top</a></p>
+</tbody></table>
+<!-- </div> -->
+<br><a href='#' class="gototop">Top</a>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>Overall, the analysis reveals a pattern of media coverage that emphasises negative aspects and potential pitfalls of electric vehicles, 
   often at the expense of balanced and data-driven reporting. This skewed representation could influence public perception, making it crucial 
   to address misinformation and highlight the verified benefits and advancements in EV technology.</p>
-<?php include 'footer.php'; ?>
+  <?php include 'html-inc/footer.php'; ?>
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script> 
 
 </div></body></html>

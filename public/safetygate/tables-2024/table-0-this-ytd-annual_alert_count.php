@@ -1,4 +1,4 @@
-<table class="dataframe datatable None" style="width:80%; margin: 0 auto;">
+<table class="dataframe datatable None" style="width:100%; margin: 0 auto;">
 
 <thead>
 
@@ -8,27 +8,27 @@
 
       <th style="text-align:Center; min-width: 10%;">Metric</th>
 
-      <th style="text-align:Center; min-width: 5%;">2005</th>
+      <th style="text-align:Center; min-width: 8%;">2005</th>
 
-      <th style="text-align:Center; min-width: 5%;">2006</th>
+      <th style="text-align:Center; min-width: 8%;">2006</th>
 
-      <th style="text-align:Center; min-width: 5%;">2007</th>
+      <th style="text-align:Center; min-width: 8%;">2007</th>
 
-      <th style="text-align:Center; min-width: 5%;">2008</th>
+      <th style="text-align:Center; min-width: 8%;">2008</th>
 
-      <th style="text-align:Center; min-width: 5%;">2009</th>
+      <th style="text-align:Center; min-width: 8%;">2009</th>
 
-      <th style="text-align:Center; min-width: 5%;">2010</th>
+      <th style="text-align:Center; min-width: 8%;">2010</th>
 
-      <th style="text-align:Center; min-width: 5%;">2011</th>
+      <th style="text-align:Center; min-width: 8%;">2011</th>
 
-      <th style="text-align:Center; min-width: 5%;">2012</th>
+      <th style="text-align:Center; min-width: 8%;">2012</th>
 
-      <th style="text-align:Center; min-width: 5%;">2013</th>
+      <th style="text-align:Center; min-width: 8%;">2013</th>
 
-      <th style="text-align:Center; min-width: 5%;">2014</th>
+      <th style="text-align:Center; min-width: 8%;">2014</th>
 
-      <th style="text-align:Center; min-width: 5%;">2015</th>
+      <th style="text-align:Center; min-width: 8%;">2015</th>
 
     </tr>
 

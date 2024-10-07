@@ -25,10 +25,10 @@ keywords:
   - R Language
   - Python Language
   - SQL
-featuredImage: https://rodders.me/projects/dvla-data-google-analytics/img/dvla_logo-white.png
+featuredImage: /projects/dvla-data-google-analytics/img/dvla_logo-white.png
 ---
 
-![DVLA Logo](https://rodders.me/projects/dvla-data-google-analytics/img/dvla_logo-white.png)
+  ![DVLA Logo](/projects/dvla-data-google-analytics/img/dvla_logo-white.png)
 
 ## Course Portfolio Project
 

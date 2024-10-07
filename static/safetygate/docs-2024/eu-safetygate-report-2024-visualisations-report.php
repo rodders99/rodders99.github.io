@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-<meta charset="utf-8" /> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="color-scheme" content="dark">
-<!-- <link rel="stylesheet" href="/css/coder-dark.css" media="screen"> -->
-<!-- <link rel="stylesheet" type="text/css" href="/css/coder.css"> -->
-<link rel="stylesheet" type="text/css" href="/css/custom.css">
-<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" type="text/css" href="/css/project-style.css">
+<?php include 'html-inc/header.php'; ?>
+<style>
+.no-border * {
+    border: none !important;
+}
+</style>
 
-<title>EU Safety Gate Report-2024</title>
-
-</head>
-
-<body class="exclude-page"> 
+<title>EU Safety Gate Report 2024 - Detailed Visualisations</title>
+<body class="colorscheme-light exclude-page">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
 
 <!-- NAVIGATION MENU-->
 
@@ -94,7 +89,7 @@
 
   <p>There are four reports in the series</p>
 
-  <div class="datatable-container">
+  <div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td><a href = "/safetygate/docs-2024/eu-safetygate-report-2024-summary-report.php">Summary Report</a></td>
@@ -117,7 +112,7 @@
     <!-- <div id="tableOfContents"></div> -->
     
     <h2 id="annual">Annual Alerts</h2>
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -142,23 +137,24 @@
 </ul>
     </p>
    <p>
-    <div class="datatable-container" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
+    <div class="lft-align" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2024/table-0-annual_alert_count.php' ?>
     </div>
 
+    <hr>
 
-    <div class="datatable-container" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
+    <div class="lft-align" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2024/table-1-annual_alert_count.php' ?>
     </div>
     </p> 
 <h3>Comparing up to the same week number</h3>
 <p>
-<div class="datatable-container" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
+<div class="lft-align" id="AnnualTable1" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2024/table-0-this-ytd-annual_alert_count.php' ?>
     </div>
 
-
-    <div class="datatable-container" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
+<hr>
+    <div class="lft-align" id="AnnualTable0" style="margin-right:auto;margin-left:0px; width:100%">
       <?php include '../tables-2024/table-1-this-ytd-annual_alert_count.php' ?>
     </div>
 </p>
@@ -167,7 +163,7 @@
 issued increasing from 2,100 alerts in 2022 to 3,245 in 2024, an
 increase of 1,173 over the previous year.</p>
 
-<div class="datatable-container" id="all-AnnualCumulative" >
+<div class="no-border" id="all-AnnualCumulative" >
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -196,7 +192,7 @@ increase of 1,173 over the previous year.</p>
 
 <h3 >Previous Year Vs Current Year</h3>
 
-<div class="datatable-container" id="all-submitting-country-2022vs2024">
+<div class="no-border" id="all-submitting-country-2022vs2024">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td>
@@ -211,7 +207,7 @@ increase of 1,173 over the previous year.</p>
 
 
 <h3>Annual Alerts and Annual Percentage of Total</h3>
-<div class="datatable-container" id="all-submitting-country-Annual-and-Percentage">
+<div class="no-border" id="all-submitting-country-Annual-and-Percentage">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 
@@ -246,7 +242,7 @@ increase of 1,173 over the previous year.</p>
 
 <h2 id="economic_alerts">Economic Area of Product origin Previous Year Vs Current Year </h2>
 
-<div class="datatable-container" id="all-Economic-Area-2022-vs-2024">
+<div class="no-border" id="all-Economic-Area-2022-vs-2024">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
   <tr><td>
@@ -267,7 +263,7 @@ increase of 1,173 over the previous year.</p>
 <ul><code>Unknown</code> Where the reporting member didn't record the country of origin, and represents 9,173 products, or 25.8% of the total Alerts issued</ul>
 
 
-<div class="datatable-container" id="all-Coo-2022-vs-2024">
+<div class="no-border" id="all-Coo-2022-vs-2024">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
       <tr>
@@ -285,7 +281,7 @@ increase of 1,173 over the previous year.</p>
 <h3>Annual Alerts</h3>
 
 
-<div class="datatable-container" id="all-Coo-Annual-Percentage">
+<div class="no-border" id="all-Coo-Annual-Percentage">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -311,7 +307,7 @@ increase of 1,173 over the previous year.</p>
 <h2 id="category">Product Categories</h2>
 
   <h3 >Previous Year Vs Current Year</h3> 
-  <div class="datatable-container" id="all-product-category-2022vs2024">
+  <div class="no-border" id="all-product-category-2022vs2024">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
       <tr><td>
@@ -330,7 +326,7 @@ increase of 1,173 over the previous year.</p>
   
   <p>The exception being 2024 where cosmetics took the top spot with 32% of all alerts issued being for cosmetic products.</p>
 
-<div class="datatable-container" id="all-product-category-Annual-Percentage">
+<div class="no-border" id="all-product-category-Annual-Percentage">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -357,7 +353,7 @@ increase of 1,173 over the previous year.</p>
   </ul>
 
   <h3 >Previous Year Vs Current Year</h3>
-  <div class="datatable-container" id="all-risk-category-2022vs2024">
+  <div class="no-border" id="all-risk-category-2022vs2024">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody> 
       <tr><td>
@@ -370,7 +366,7 @@ increase of 1,173 over the previous year.</p>
 
 <h3 >Total & Annual Alerts</h3>
 
-<div class="datatable-container" id="all-risk-category-Annual-Percentage">
+<div class="no-border" id="all-risk-category-Annual-Percentage">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
    
@@ -391,7 +387,7 @@ increase of 1,173 over the previous year.</p>
 
 
     <h3 >Previous Year Vs Current Year</h3>
-    <div class="datatable-container" id="all-counterfeit-2022vs2024">
+    <div class="no-border" id="all-counterfeit-2022vs2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr><td>
@@ -402,7 +398,7 @@ increase of 1,173 over the previous year.</p>
   
 <h3>Total & Annual Alerts </h3>
 
-<div class="datatable-container" id="all-counterfeit-Annual-Percentage">
+<div class="no-border" id="all-counterfeit-Annual-Percentage">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 
@@ -424,7 +420,7 @@ increase of 1,173 over the previous year.</p>
 The increase in the percentage of alerts requiring a ban from sale in 2024 is due to the ban of the chemical BMHCA in cosmetics.
 
 <h3 >Previous Year Vs Current Year</h3>
-<div class="datatable-container" id="all-action-required-2022vs2024">
+<div class="no-border" id="all-action-required-2022vs2024">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td>
@@ -434,7 +430,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 
 <h3>Total & Annual Alerts</h3>
-<div class="datatable-container" id="all-action-required-Annual-CvsV">
+<div class="no-border" id="all-action-required-Annual-CvsV">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -462,7 +458,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
   
 <h3 >Previous Year Vs Current Year</h3>
       
-      <div class="datatable-container" id="all-responsible-2022vs2024">
+      <div class="no-border" id="all-responsible-2022vs2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody> 
           <tr><td>
@@ -474,7 +470,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h3 >Annual Alerts</h3>
 
-      <div class="datatable-container" id="all-responsible-Annual-CvsV">
+      <div class="no-border" id="all-responsible-Annual-CvsV">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>   
     <tr>
@@ -509,7 +505,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h3>Cumulative, Annual and YoY change / Top3 Categories (Risk/Product)</h3>
 
-<div class="datatable-container" id="all-top15-kfs">
+<div class="no-border" id="all-top15-kfs">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -673,7 +669,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h2>Top 30 Brands</h2>
 
-<div class="datatable-container" id="all-top30-brands">
+<div class="no-border" id="all-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td>
@@ -694,7 +690,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h3 class="product_cat0" id="top1_annual">#1 - Total, Annual and Cumulative Alerts</h3>
 
 
-<div class="datatable-container" id="all-product-cat-0-annual-cumulative" >
+<div class="no-border" id="all-product-cat-0-annual-cumulative" >
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 
@@ -720,7 +716,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-submitting-country-2022vs2024">
+    <div class="no-border" id="all-product-cat-0-submitting-country-2022vs2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr><td>
@@ -732,7 +728,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
     
 <h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-submitting-country-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-0-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
     
@@ -753,7 +749,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h3 class="product_cat0" id="top1_risk">#1 - Risk Category</h3>
 <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
-<div class="datatable-container" id="all-product-cat-0-risk-category-2022vs2024">
+<div class="no-border" id="all-product-cat-0-risk-category-2022vs2024">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><td>
@@ -765,7 +761,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
 
-<div class="datatable-container" id="all-product-cat-0-risk-category-Annual-Percentage">
+<div class="no-border" id="all-product-cat-0-risk-category-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
 
@@ -788,7 +784,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
         
 <h3 class="product_cat0" id="top1_counterfeit">#1 - Counterfeit </h3>
 <h4>Previous Year Vs Current Year</h4>
-        <div class="datatable-container" id="all-product-cat-0-counterfeit-2022vs2024">
+        <div class="no-border" id="all-product-cat-0-counterfeit-2022vs2024">
 
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody> 
@@ -802,7 +798,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h4 class="product_cat0">Annual Total and Annual Percentage of Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-0-counterfeit-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-0-counterfeit-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
 
@@ -831,7 +827,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
       <h3 class="product_cat0"  id="top1_action">#1 - Compulsory / Voluntary Action Required</h3>
       <h4 class="product_cat0">Previous Year Vs Current Year</h4>
 
-      <div class="datatable-container" id="all-product-cat-0-action-required-2022vs2024">
+      <div class="no-border" id="all-product-cat-0-action-required-2022vs2024">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody> 
             <tr>
@@ -848,7 +844,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
       <h4 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h4>
 
 
-      <div class="datatable-container" id="all-product-cat-0-action-required-Annual-Percentage">
+      <div class="no-border" id="all-product-cat-0-action-required-Annual-Percentage">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr>
@@ -871,7 +867,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
         
         <h3 class="product_cat0" id="top1_responsible">#1 - Compulsory / Voluntary Responsible Party</h3>
           <h4 class="product_cat0">Previous Year Vs Current Year</h4>
-        <div class="datatable-container" id="all-product-cat-0-responsible-2022vs2024">
+        <div class="no-border" id="all-product-cat-0-responsible-2022vs2024">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr><td>
@@ -884,7 +880,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
         <h4 class="product_cat0">Annual Total / Compulsory Vs Voluntary</h4>
 
-            <div class="datatable-container" id="all-product-cat-0-responsible-Annual-Percentage">
+            <div class="no-border" id="all-product-cat-0-responsible-Annual-Percentage">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
               <tbody> 
     
@@ -909,7 +905,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 
 <h3 class="product_cat0" id="top1_brands">#1 - Top 30 Brands for Safety Alerts</h3>
-<div class="datatable-container" id="all-product-cat-0-top30-brands">
+<div class="no-border" id="all-product-cat-0-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 <tr >
@@ -935,7 +931,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h3 class="product_cat1" id="top2_annual">#2 - Total, Annual and Cumulative Alerts</h3>
 
 
-<div class="datatable-container" id="all-product-cat-1-annual-cumulative">
+<div class="no-border" id="all-product-cat-1-annual-cumulative">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 
@@ -961,7 +957,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
     
     
-    <div class="datatable-container" id="all-product-cat-1-submitting-country-2022vs2024">
+    <div class="no-border" id="all-product-cat-1-submitting-country-2022vs2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr><td>
@@ -975,7 +971,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
     
 <h3 class="product_cat1" id="top2_submitting">#2 - Submitting Country</h3>
 
-    <div class="datatable-container" id="all-product-cat-1-submitting-country-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-1-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
     
@@ -1001,7 +997,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h3 class="product_cat1" id="top2_risk">#2 - Risk Category</h3>
 <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
-<div class="datatable-container" id="all-product-cat-1-risk-category-2022vs2024">
+<div class="no-border" id="all-product-cat-1-risk-category-2022vs2024">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody>
       <tr><td>
@@ -1013,7 +1009,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h4 class="product_cat1">Annual Total / Annual Percentage of Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-risk-category-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-1-risk-category-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
 
@@ -1039,7 +1035,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h3 class="product_cat1" id="top2_counterfeit">#2 - Counterfeit </h3>
 <h4 class="product_cat1">Previous Year Vs Current Year </h4>
 
-        <div class="datatable-container" id="all-product-cat-1-counterfeit-2022vs2024">
+        <div class="no-border" id="all-product-cat-1-counterfeit-2022vs2024">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr>
@@ -1057,7 +1053,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
         <h4 class="product_cat1">Annual Total and Annual Percentage of Total</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-1-counterfeit-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-1-counterfeit-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
  
@@ -1084,7 +1080,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
     <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-1-action-required-2022vs2024">
+    <div class="no-border" id="all-product-cat-1-action-required-2022vs2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr><td>
@@ -1096,7 +1092,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h4 class="product_cat1">Annual Total / Compulsory Vs Voluntary Total</h4>
 
-        <div class="datatable-container" id="all-product-cat-1-action-required-CvsV">
+        <div class="no-border" id="all-product-cat-1-action-required-CvsV">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody> 
 
@@ -1121,7 +1117,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
         <h3 class="product_cat1" id="top2_responsible">#2 - Compulsory / Voluntary Responsible Party</h3>
         <h4 class="product_cat1">Previous Year Vs Current Year</h4>
 
-        <div class="datatable-container" id="all-product-cat-1-responsible-2022vs2024">
+        <div class="no-border" id="all-product-cat-1-responsible-2022vs2024">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr><td>
@@ -1133,7 +1129,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h4 class="product_cat1">Annual Total / Compulsory Vs Voluntary Total</h4>
 
-            <div class="datatable-container" id="all-product-cat-1-responsible-CvsV">
+            <div class="no-border" id="all-product-cat-1-responsible-CvsV">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
               <tbody> 
     
@@ -1158,7 +1154,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 
 <h3 class="product_cat1" id="top2_brands">#2 - Top Brands for Safety Alerts</h3>
-<div class="datatable-container" id="all-product-cat-1-top30-brands">
+<div class="no-border" id="all-product-cat-1-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 <tr >
@@ -1183,7 +1179,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h2 class="product_cat2" id="top3_">#3 - Top 3 Product Categories</h2>
 <h3 class="product_cat2"id="top3_annual">#3 - Total, Annual and Cumulative Alerts</h3>
 
-<div class="datatable-container" id="all-product-cat-2-annual-cumulative">
+<div class="no-border" id="all-product-cat-2-annual-cumulative">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 
@@ -1209,7 +1205,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h3 class="product_cat2"id="top3_submitting">#3 - Submitting Country</h3>
 <h4>Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-submitting-country-2022vs2024">
+    <div class="no-border" id="all-product-cat-2-submitting-country-2022vs2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr><td>
@@ -1221,7 +1217,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h4>Annual Total and Annual Percentage of Total</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-submitting-country-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-2-submitting-country-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
     
@@ -1244,7 +1240,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h4>Previous Year Vs Current Year</h4>
 
 
-<div class="datatable-container" id="all-product-cat-2-risk-category-2022vs2024">
+<div class="no-border" id="all-product-cat-2-risk-category-2022vs2024">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tbody>
       <tr><td>
@@ -1255,7 +1251,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 </div>
 <h4>Annual Total and Annual Percentage of Total</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-risk-category-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-2-risk-category-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
 
@@ -1278,7 +1274,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
         <h4>Previous Year Vs Current Year</h4>
 
 
-        <div class="datatable-container" id="all-product-cat-2-counterfeit-2022vs2024">
+        <div class="no-border" id="all-product-cat-2-counterfeit-2022vs2024">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr><td>
@@ -1291,7 +1287,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h4>Annual Total and Annual Percentage of Total</h4>
 
 
-    <div class="datatable-container" id="all-product-cat-2-counterfeit-Annual-Percentage">
+    <div class="no-border" id="all-product-cat-2-counterfeit-Annual-Percentage">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
 
@@ -1314,7 +1310,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h3 class="product_cat2"id="top3_action">#3 - Compulsory / Voluntary Action Required </h3>        
 <h4>Previous Year Vs Current Year</h4>
 
-    <div class="datatable-container" id="all-product-cat-2-action-required-2022vs2024">
+    <div class="no-border" id="all-product-cat-2-action-required-2022vs2024">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody>
           <tr><td>
@@ -1326,7 +1322,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h4>Annual Total and Compulsory Vs Voluntary Total</h4>
 
-        <div class="datatable-container" id="all-product-cat-2-action-required-CvsV">
+        <div class="no-border" id="all-product-cat-2-action-required-CvsV">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
           <tbody> 
 
@@ -1352,7 +1348,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <h4>Previous Year Vs Current Year</h4>
 
 
-        <div class="datatable-container" id="all-product-cat-2-responsible-2022vs2024">
+        <div class="no-border" id="all-product-cat-2-responsible-2022vs2024">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
             <tbody>
               <tr><td>
@@ -1364,7 +1360,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 <h4>Annual Total Compulsory Vs Voluntary Total</h4>
 
-        <div class="datatable-container" id="all-product-cat-2-responsible-CvsV">
+        <div class="no-border" id="all-product-cat-2-responsible-CvsV">
               <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
               <tbody> 
     
@@ -1389,7 +1385,7 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 
 
 <h3 class="product_cat2"id="top3_brands">#3 - Top Brands for Safety Alerts</h3>
-<div class="datatable-container" id="all-product-cat-2-top30-brands">
+<div class="no-border" id="all-product-cat-2-top30-brands">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
 <tr >
@@ -1408,6 +1404,8 @@ The increase in the percentage of alerts requiring a ban from sale in 2024 is du
 <br>
 <br>
 </div>
+<?php include 'html-inc/footer.php'; ?>
+    <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 
 </div>
 

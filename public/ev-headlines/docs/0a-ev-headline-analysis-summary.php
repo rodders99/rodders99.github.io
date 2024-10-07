@@ -1,32 +1,14 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
+<?php include 'html-inc/header.php'; ?>
 
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<title>Media Bias and Misinformation: Analysing Mainstream Media Headlines on Electric Vehicles</title>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
-    <script src="/scripts/ev-headlines.js"></script>
-
-
-    <title>Media Bias and Misinformation: Analysing Mainstream Media Headlines on Electric Vehicles</title>
-</head>
-
-<body>
+<body class="colorscheme-light">
+    <div class="float-container">
+        <a id="dark-mode-toggle" class="colorscheme-toggle">
+            <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>    
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align: center; align-items:center">
 
@@ -140,42 +122,42 @@ border: 1px solid #ddd;
     </thead>
     <tbody>
     <tr>
-        <td style="background-color: grey">The Sun</td>
+        <td >The Sun</td>
         <td>306</td>
-        <td style="background-color: grey">25</td>
+        <td >25</td>
         <td >135</td>
-        <td style="background-color: grey">466</td>
-        <td style="background-color: grey">36%</td>
+        <td >466</td>
+        <td >36%</td>
         <td >66%</td>
         <td >29%</td>
     </tr>
     <tr>
-        <td style="background-color: grey">The Daily Mail</td>
+        <td >The Daily Mail</td>
         <td >143</td>
-        <td style="background-color: grey">22</td>
+        <td >22</td>
         <td >142</td>
-        <td style="background-color: grey">307</td>
-        <td style="background-color: grey">24%</td>
+        <td >307</td>
+        <td >24%</td>
         <td >47%</td>
         <td >46%</td>
     </tr>
     <tr>
-        <td style="background-color: grey">The Telegraph</td>
+        <td >The Telegraph</td>
         <td >112</td>
-        <td style="background-color: grey">27</td>
+        <td >27</td>
         <td >49</td>
-        <td style="background-color: grey">188</td>
-        <td style="background-color: grey">14%</td>
+        <td >188</td>
+        <td >14%</td>
         <td >60%</td>
         <td >26%</td>
     </tr>
     <tr>
-        <td style="background-color: grey">Express</td>
+        <td >Express</td>
         <td >66</td>
-        <td style="background-color: grey">8</td>
+        <td >8</td>
         <td >40</td>
-        <td style="background-color: grey">114</td>
-        <td style="background-color: grey">9%</td>
+        <td >114</td>
+        <td >9%</td>
         <td >58%</td>
         <td >35%</td>
     </tr>
@@ -301,14 +283,14 @@ border: 1px solid #ddd;
             <p>A very noticeable increase in headlines during peak sales period.</p> 
                 <div class="blockquote-wrapper">
                 <div class="blockquote">
-                    <h1>Overall, we rate the <span style="color:#ffffff">Daily Star UK as - Questionable</span>, based on frequent use of  
-                    <span style="color:#ffffff">conspiracy theories</span>
+                    <h1>Overall, we rate the <span style="color:#ff0000">Daily Star UK as - Questionable</span>, based on frequent use of  
+                    <span style="color:#ff0000">conspiracy theories</span>
                     and 
-                    <span style="color:#ffffff">pseudoscience</span>
+                    <span style="color:#ff0000">pseudoscience</span>
                     , and a long track record with 
-                    <span style="color:#ffffff">failed fact checks</span> 
+                    <span style="color:#ff0000">failed fact checks</span> 
                     and 
-                    <span style="color:#ffffff">fake news.</span>
+                    <span style="color:#ff0000">fake news.</span>
                     </h1>
                     <h4>&mdash;Media Bias Fact Check<br><em>Last Updated on July 1, 2023.</em></h4>
                 </div>
@@ -317,18 +299,18 @@ border: 1px solid #ddd;
             <div class="datatable-container" >
             <table class="dataframe datatable" style="width:auto; margin: 0 auto; padding-left: 1px">
             <tr >
-                <td style="background-color:#ffffff; text-align: center; width: 32% ">
+                <td  text-align: center; width: 32% ">
                 <a href="../img/the-daily-star-monthly-headline-sentiment-percentage-vs-registrations.png">
-                <img style="background-color:#ffffff" src="../img/the-daily-star-monthly-headline-sentiment-percentage-vs-registrations.png" ></a>
+                <img style="background-color:#ff0000" src="../img/the-daily-star-monthly-headline-sentiment-percentage-vs-registrations.png" ></a>
                 </td>
                 <td></td>
-                <td style="background-color:#ffffff; text-align: center;">
+                <td  text-align: center;">
                     <a href="../img/the-daily-star-monthly-headline-sentiment-count-vs-registrations.png">
                         <img src="../img/the-daily-star-monthly-headline-sentiment-count-vs-registrations.png"></a>
                     </td>
                     <td></td>
                   
-                    <td style="background-color:#ffffff; text-align: center;">
+                    <td  text-align: center;">
                         <a href="../img/the-daily-star-sentiment-pieplot.png">
                         <img src="../img/the-daily-star-sentiment-pieplot.png" ></a>
                     </td>
@@ -344,13 +326,13 @@ border: 1px solid #ddd;
                 <div class="blockquote-wrapper">
                 <div class="blockquote">
                     <h1>
-                    Overall, we rate <span style="color:#ffffff">The Telegraph as - Right-Biased,</span> 
+                    Overall, we rate <span style="color:#ff0000">The Telegraph as - Right-Biased,</span> 
                     based on story selection that  strongly favours the 
-                    <span style="color:#ffffff">right.</span>
+                    <span style="color:#ff0000">right.</span>
                     We also rate them
-                    <span style="color:#ffffff">Mixed</span> for factual reporting due to 
-                    <span style="color:#ffffff">poor sourcing of information</span> and 
-                    <span style="color:#ffffff">some failed fact checks. </span>
+                    <span style="color:#ff0000">Mixed</span> for factual reporting due to 
+                    <span style="color:#ff0000">poor sourcing of information</span> and 
+                    <span style="color:#ff0000">some failed fact checks. </span>
                     </h1>
                     <h4>&mdash;Media Bias Fact Check<br><em>Last Updated on August 17, 2024.</em></h4>
                 </div>
@@ -359,19 +341,19 @@ border: 1px solid #ddd;
             <div class="datatable-container" >
             <table class="dataframe datatable" style="width:auto; margin: 0 auto; padding-left:1px">
             <tr>
-                <td style="background-color:#ffffff; text-align: center; width: 32%">
+                <td  text-align: center; width: 32%">
                 <a href="../img/the-telegraph-monthly-headline-sentiment-percentage-vs-registrations.png">
                 <img  src="../img/the-telegraph-monthly-headline-sentiment-percentage-vs-registrations.png" ></a>
                 </td>
                 <td></td>
-                <td style="background-color:#ffffff; text-align: center;">
+                <td  text-align: center;">
                     <a href="../img/the-telegraph-monthly-headline-sentiment-count-vs-registrations.png">
                         <img  src="../img/the-telegraph-monthly-headline-sentiment-count-vs-registrations.png"></a>
                     </td>
                     
                         <td ></td>
                     
-                        <td style="background-color:#ffffff; text-align: center;">
+                        <td  text-align: center;">
                             <a href="../img/the-telegraph-sentiment-pieplot.png">
                             <img  src="../img/the-telegraph-sentiment-pieplot.png" ></a>
                         </td>
@@ -385,15 +367,15 @@ border: 1px solid #ddd;
             <div class="blockquote-wrapper">
             <div class="blockquote">
                 <h1>
-                Overall, we rate <span style="color:#ffffff">The Sun as - Right-Biased</span>,  
+                Overall, we rate <span style="color:#ff0000">The Sun as - Right-Biased</span>,  
                 based on political affiliation that  
-                <span style="color:#ffffff">favours the right.</span> 
+                <span style="color:#ff0000">favours the right.</span> 
                 We also rate them 
-                <span style="color:#ffffff">Mixed</span> 
+                <span style="color:#ff0000">Mixed</span> 
                 for factual reporting due to 
-                <span style="color:#ffffff">overly sensationalized headlines</span> 
+                <span style="color:#ff0000">overly sensationalized headlines</span> 
                 and 
-                <span style="color:#ffffff">numerous failed fact checks. </span>
+                <span style="color:#ff0000">numerous failed fact checks. </span>
                 </h1>
                 <h4>&mdash;Media Bias Fact Check<br><em>Last Updated on July 1, 2023.</em></h4>
             </div>
@@ -402,17 +384,17 @@ border: 1px solid #ddd;
             <div class="datatable-container" >
             <table class="dataframe datatable" style="width:auto; margin: 0 auto; padding-left: 1px">
             <tr>
-                <td style="background-color:#ffffff; text-align: center; width: 32%">
+                <td  text-align: center; width: 32%">
                 <a href="../img/the-sun-monthly-headline-sentiment-percentage-vs-registrations.png">
                 <img  src="../img/the-sun-monthly-headline-sentiment-percentage-vs-registrations.png" ></a>
                 </td>
                 <td></td>
-                <td style="background-color:#ffffff; text-align: center;">
+                <td  text-align: center;">
                     <a href="../img/the-sun-monthly-headline-sentiment-count-vs-registrations.png">
                         <img  src="../img/the-sun-monthly-headline-sentiment-count-vs-registrations.png"></a>
                     </td>
                     <td></td>
-                        <td style="background-color:#ffffff; text-align: center;">
+                        <td  text-align: center;">
                             <a href="../img/the-sun-sentiment-pieplot.png">
                             <img  src="../img/the-sun-sentiment-pieplot.png" ></a>
                         </td>
@@ -426,16 +408,16 @@ border: 1px solid #ddd;
             <div class="blockquote-wrapper">
             <div class="blockquote">
                 <h1>
-                Overall, we rate <span style="color:#ffffff">The Spectator as - Right-Center-Biased</span>, 
+                Overall, we rate <span style="color:#ff0000">The Spectator as - Right-Center-Biased</span>, 
                  based on story selection and editorial positions that moderately favours
              
-                <span style="color:#ffffff">the right.</span> 
+                <span style="color:#ff0000">the right.</span> 
                 We also rate them 
-                <span style="color:#ffffff">Mostly Factual</span> 
+                <span style="color:#ff0000">Mostly Factual</span> 
                 for factual reporting rather than High, due to  
-                <span style="color:#ffffff">misleading articles</span> 
+                <span style="color:#ff0000">misleading articles</span> 
                 and a few
-                <span style="color:#ffffff">failed fact checks regarding climate change.</span>
+                <span style="color:#ff0000">failed fact checks regarding climate change.</span>
                 </h1>
                 <h4>&mdash;Media Bias Fact Check<br><em>Last Updated on July 1, 2023.</em></h4>
             </div>
@@ -444,17 +426,17 @@ border: 1px solid #ddd;
             <div class="datatable-container" >
             <table class="dataframe datatable" style="width:auto; margin: 0 auto; padding-left:1px">
             <tr>
-                <td style="background-color:#ffffff; text-align: center; width: 32%">
+                <td  text-align: center; width: 32%">
                 <a href="../img/the-spectator-monthly-headline-sentiment-percentage-vs-registrations.png">
                 <img  src="../img/the-spectator-monthly-headline-sentiment-percentage-vs-registrations.png" ></a>
                 </td>
                 <td></td>
-                <td style="background-color:#ffffff; text-align: center;">
+                <td  text-align: center;">
                     <a href="../img/the-spectator-monthly-headline-sentiment-count-vs-registrations.png">
                         <img  src="../img/the-spectator-monthly-headline-sentiment-count-vs-registrations.png"></a>
                     </td>
                     <td></td>
-                        <td style="background-color:#ffffff; text-align: center;">
+                        <td  text-align: center;">
                             <a href="../img/the-spectator-sentiment-pieplot.png">
                             <img src="../img/the-spectator-sentiment-pieplot.png" ></a>
                         </td>
@@ -469,14 +451,14 @@ border: 1px solid #ddd;
             <div class="blockquote-wrapper">
             <div class="blockquote">
                 <h1>
-                Overall, we rate <span style="color:#ffffff">The BBC as - Left-Center-Biased</span> 
+                Overall, we rate <span style="color:#ff0000">The BBC as - Left-Center-Biased</span> 
                 based on story selection that slightly favours the 
              
-                <span style="color:#ffffff">the left.</span> 
+                <span style="color:#ff0000">the left.</span> 
                 We also rate them 
-                <span style="color:#ffffff">High</span> 
+                <span style="color:#ff0000">High</span> 
                 for factual reporting, due to proper sourcing of information. Although they have failed  
-                <span style="color:#ffffff">a fact-check</span> 
+                <span style="color:#ff0000">a fact-check</span> 
                 , they appropriately issued a correction.
                 </h1>
                 <h4>&mdash;Media Bias Fact Check<br><em>Last Updated on July 1, 2023.</em></h4>
@@ -486,17 +468,17 @@ border: 1px solid #ddd;
             <div class="datatable-container" >
             <table class="dataframe datatable" style="width:auto; margin: 0 auto; padding-left:1px">
             <tr>
-                <td style="background-color:#ffffff; text-align: center; width: 32%">
+                <td  text-align: center; width: 32%">
                 <a href="../img/bbc-monthly-headline-sentiment-percentage-vs-registrations.png">
                 <img  src="../img/bbc-monthly-headline-sentiment-percentage-vs-registrations.png" ></a>
                 </td>
                 <td></td>
-                <td style="background-color:#ffffff; text-align: center;">
+                <td  text-align: center;">
                     <a href="../img/bbc-monthly-headline-sentiment-count-vs-registrations.png">
                         <img src="../img/bbc-monthly-headline-sentiment-count-vs-registrations.png"></a>
                     </td>
                     <td></td>
-                        <td style="background-color:#ffffff; text-align: center;">
+                        <td  text-align: center;">
                             <a href="../img/bbc-sentiment-pieplot.png">
                             <img  src="../img/bbc-sentiment-pieplot.png" ></a>
                         </td>
@@ -512,14 +494,14 @@ border: 1px solid #ddd;
             <div class="blockquote-wrapper">
             <div class="blockquote">
                 <h1>
-                Overall, we rate <span style="color:#ffffff">The Times as - Right-Center-Biased</span> 
+                Overall, we rate <span style="color:#ff0000">The Times as - Right-Center-Biased</span> 
                 , based on story selection and editorial positions that favours the 
              
-                <span style="color:#ffffff">Right.</span> 
+                <span style="color:#ff0000">Right.</span> 
                 We also rate them 
-                <span style="color:#ffffff">High</span> 
+                <span style="color:#ff0000">High</span> 
                 for factual reporting, due clean  
-                <span style="color:#ffffff">fact-check</span> 
+                <span style="color:#ff0000">fact-check</span> 
                  record.
                 </h1>
                 <h4>&mdash;Media Bias Fact Check<br><em>Last Updated on July 1, 2023.</em></h4>
@@ -529,18 +511,18 @@ border: 1px solid #ddd;
             <div class="datatable-container" >
             <table class="dataframe datatable" style="width:auto; margin: 0 auto; padding-left:1px">
             <tr>
-                <td style="background-color:#ffffff; text-align: center; width: 32%">
+                <td  text-align: center; width: 32%">
                 <a href="../img/the-times-monthly-headline-sentiment-percentage-vs-registrations.png">
                 <img  src="../img/the-times-monthly-headline-sentiment-percentage-vs-registrations.png" ></a>
                 </td>
                 <td></td>
-                <td style="background-color:#ffffff; text-align: center;">
+                <td  text-align: center;">
                     <a href="../img/the-times-monthly-headline-sentiment-count-vs-registrations.png">
                         <img  src="../img/the-times-monthly-headline-sentiment-count-vs-registrations.png"></a>
                     </td>
                     <td></td>
 
-                        <td style="background-color:#ffffff; text-align: center;">
+                        <td  text-align: center;">
                             <a href="../img/the-times-sentiment-pieplot.png">
                             <img  src="../img/the-times-sentiment-pieplot.png" ></a>
                         </td>
@@ -556,14 +538,14 @@ border: 1px solid #ddd;
             <div class="blockquote-wrapper">
             <div class="blockquote">
                 <h1>
-                Overall, we rate <span style="color:#ffffff">The Economist as -  Least Biased</span> 
+                Overall, we rate <span style="color:#ff0000">The Economist as -  Least Biased</span> 
                 based on 
              
-                <span style="color:#ffffff">Balanced Reporting.</span> 
+                <span style="color:#ff0000">Balanced Reporting.</span> 
                 We also rate them 
-                <span style="color:#ffffff">High</span> 
+                <span style="color:#ff0000">High</span> 
                 for factual reporting, due clean  
-                <span style="color:#ffffff">fact-check</span> 
+                <span style="color:#ff0000">fact-check</span> 
                  record.
                 </h1>
                 <h4>&mdash;Media Bias Fact Check<br><em>Last Updated on July 1, 2023.</em></h4>
@@ -573,18 +555,18 @@ border: 1px solid #ddd;
             <div class="datatable-container" >
             <table class="dataframe datatable" style="width:auto; margin: 0 auto; padding-left:1px">
             <tr>
-                <td style="background-color:#ffffff; text-align: center; width: 32%">
+                <td  text-align: center; width: 32%">
                 <a href="../img/the-economist-monthly-headline-sentiment-percentage-vs-registrations.png">
                 <img  src="../img/the-economist-monthly-headline-sentiment-percentage-vs-registrations.png" ></a>
                 </td>
                 <td></td>
-                <td style="background-color:#ffffff; text-align: center;">
+                <td  text-align: center;">
                     <a href="../img/the-economist-monthly-headline-sentiment-count-vs-registrations.png">
                         <img  src="../img/the-economist-monthly-headline-sentiment-count-vs-registrations.png"></a>
                     </td>
                     <td></td>
 
-                        <td style="background-color:#ffffff; text-align: center;">
+                        <td  text-align: center;">
                             <a href="../img/the-economist-sentiment-pieplot.png">
                             <img  src="../img/the-economist-sentiment-pieplot.png" ></a>
                         </td>
@@ -599,36 +581,36 @@ border: 1px solid #ddd;
             <div class="blockquote-wrapper">
             <div class="blockquote">
                 <h1>
-                Overall, we rate <span style="color:#ffffff">The Express as Right-Biased</span> 
+                Overall, we rate <span style="color:#ff0000">The Express as Right-Biased</span> 
                 based on 
              
-                <span style="color:#ffffff">editorial content.</span> 
+                <span style="color:#ff0000">editorial content.</span> 
                 We also rate them 
-                <span style="color:#ffffff">Mixed</span> 
+                <span style="color:#ff0000">Mixed</span> 
                 for factual reporting due publishing   
-                <span style="color:#ffffff">conspiracies & pseudoscience</span> 
+                <span style="color:#ff0000">conspiracies & pseudoscience</span> 
                 and
-                <span style="color:#ffffff">several failed fact checks.</span> 
+                <span style="color:#ff0000">several failed fact checks.</span> 
                 </h1>
                 <h4>&mdash;Media Bias Fact Check<br><em>Last Updated on June 12, 2024.</em></h4>
             </div>
             </div><br>
 
-            <div class="datatable-container" >
-            <table class="dataframe datatable" style="width:auto; margin: 0 auto; padding-left:1px">
+            <div class="" >
+            <table class="" style="width:auto; margin: 0 auto; padding-left:1px">
             <tr>
-                <td style="background-color:#ffffff; text-align: center; width: 32%">
+                <td  text-align: center; width: 32%">
                 <a href="../img/express-monthly-headline-sentiment-percentage-vs-registrations.png">
                 <img  src="../img/express-monthly-headline-sentiment-percentage-vs-registrations.png" ></a>
                 </td>
                 <td></td>
-                <td style="background-color:#ffffff; text-align: center;">
+                <td  text-align: center;">
                     <a href="../img/express-monthly-headline-sentiment-count-vs-registrations.png">
                         <img  src="../img/express-monthly-headline-sentiment-count-vs-registrations.png"></a>
                     </td>
                    
                     <td></td>
-                        <td style="background-color:#ffffff; text-align: center; ">
+                        <td  text-align: center; ">
                             <a href="../img/express-sentiment-pieplot.png">
                             <img src="../img/express-sentiment-pieplot.png" ></a>
                         </td>
@@ -656,8 +638,8 @@ border: 1px solid #ddd;
                     </ul>
 
 
-                    <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">    
+                    <div class="" >
+                <table class="" style="width:100%; margin: 0 auto;">    
                     <thead>
                     <tr style="text-align: center">
         <th  style="text-align: center">Publication</th>
@@ -861,8 +843,8 @@ border: 1px solid #ddd;
                 <p>You can find examples of the anti-ev headlines by publication : </p>
 
 
-                <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">                        
+                <div >
+                <table  style="width:100%; margin: 0 auto; border: 0 0 0 0">                        
                     <thead><tr>
                     <td style="width:160px; "></td>
                     <td style="padding-left:20px"></td>
@@ -870,7 +852,7 @@ border: 1px solid #ddd;
 
                     <td></td>
                     </tr></thead>
-                    <tr><td style="background-color: #ffffff">
+                    <tr><td >
                         <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=bbc"><img src=../icons/bbc-150.png></a></p>
                     </td>
                     <td></td>
@@ -879,7 +861,7 @@ border: 1px solid #ddd;
                     </tr>
                     
                     <tr>
-                        <td style="background-color: #ffffff">
+                        <td >
                         <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=express"><img src=../icons/express-150.png></a></p>
                         </td>
                         <td>
@@ -889,7 +871,7 @@ border: 1px solid #ddd;
                     </tr>
                         
                     <tr>
-                        <td style="background-color: #ffffff">
+                        <td >
                         <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=the-daily-mail"><img src=../icons/the-daily-mail-150.png></a></p>
                         </td>
                         <td></td>
@@ -898,7 +880,7 @@ border: 1px solid #ddd;
                     </tr>
                     
                     <tr>
-                        <td style="background-color: #ffffff">
+                        <td >
                         <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=the-daily-star"><img src=../icons/the-daily-star-150.png></a></p>
                         </td>
                         <td></td>
@@ -907,7 +889,7 @@ border: 1px solid #ddd;
                     </tr>
                     
                     <tr>
-                        <td style="background-color: #ffffff">
+                        <td >
                         <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=the-economist"><img src=../icons/the-economist-150.png></a></p>
                     </td>
                     <td></td>
@@ -916,7 +898,7 @@ border: 1px solid #ddd;
                     </tr>
 
                     <tr>
-                        <td style="background-color: #ffffff">
+                        <td >
                         <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=the-independent"><img src=../icons/the-independent-150.png></a></p>
                         </td>
                         <td></td>
@@ -924,7 +906,7 @@ border: 1px solid #ddd;
                         <td><a href="99-ev-headline-analysis-mediabiasfactcheck.php#the-independent">Media Bias Fact Check Comparison</a></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #ffffff">
+                        <td >
                         <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=the-spectator"><img src=../icons/the-spectator-150.png></a></p>
                     </td>
                     <td></td>
@@ -933,7 +915,7 @@ border: 1px solid #ddd;
                         <td><a href="99-ev-headline-analysis-mediabiasfactcheck.php#the-spectator">Media Bias Fact Check Comparison</a></td>
                 </tr>
                     <tr>
-                        <td style="background-color: #ffffff">
+                        <td >
                         <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=the-sun"><img src=../icons/the-sun-150.png></a></p>
                     </td>
                     <td></td>
@@ -942,7 +924,7 @@ border: 1px solid #ddd;
                         <td><a href="99-ev-headline-analysis-mediabiasfactcheck.php#the-sun">Media Bias Fact Check Comparison</a></td>
                 </tr>
                     <tr>
-                        <td style="background-color: #ffffff">
+                        <td >
                         <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=the-telegraph"><img src=../icons/the-telegraph-150.png></a></p>
                         </td>
                         <td></td>
@@ -950,7 +932,7 @@ border: 1px solid #ddd;
                         <a href="08-ev-headline-analysis-publication-headlines.php?publication=the-telegraph">Scraped Headlines</a></td>
                         <td><a href="99-ev-headline-analysis-mediabiasfactcheck.php#the-telegraph">Media Bias Fact Check Comparison</a></td>
                     </tr>
-                    <tr><td style="background-color: #ffffff">
+                    <tr><td >
                     <p><a href="08-ev-headline-analysis-publication-headlines.php?publication=the-times"><img src=../icons/the-times-150.png></a></p>
                     <td></td>
                     <td>
@@ -964,7 +946,8 @@ border: 1px solid #ddd;
 
 
 
-                <?php include 'footer.php'; ?>
+                <?php include 'html-inc/footer.php'; ?>
+                <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script> 
 
    </div>
 </body>

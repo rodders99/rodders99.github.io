@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-<meta charset="utf-8" /> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="color-scheme" content="dark">
+<?php include 'html-inc/header.php'; ?>
+<style>
+.no-border * {
+    border: none !important;
+}
+</style>
+<title>EU Safety Report - Visualisation Plan</title>
+
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
 
 
-<link rel="stylesheet" type="text/css" href="/css/custom.css">
-<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-<title>eu-safetygate-report-2023</title>
-
-</head>
-
-<body>
 <!-- NAVIGATION MENU-->
 
 
@@ -47,7 +44,7 @@
 <p>Data was sourced from the EU Safety Gate Website : <a href="https://ec.europa.eu/safety-gate-alerts/screen/webReport#recentAlerts">https://ec.europa.eu/safety-gate-alerts/screen/webReport#recentAlerts</a></p>
 
 <h2>Plot Calculations</h2>
-<div class="datatable-container" style="width:100%; ">
+<div class="no-border" style="width:100%; ">
   <table class="datatable" >
   <thead>
     <tr>
@@ -86,7 +83,7 @@
 </div>
 <br>
 <h2>Visualisations</h2>
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" >
     <thead>
     <th style="width:15%">Type</th>
@@ -668,7 +665,8 @@
   this means that reuse of this analysis and it's visualisations is allowed provided appropriate credit is given and any changes are indicated.</p>
   
 
-  
+  <?php include 'html-inc/footer.php'; ?>
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
   
   
 </body>

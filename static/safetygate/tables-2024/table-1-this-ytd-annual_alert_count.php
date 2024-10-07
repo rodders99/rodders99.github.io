@@ -1,4 +1,4 @@
-<table class="dataframe datatable None" style="width:80%; margin: 0 auto;">
+<table class="dataframe datatable None" style="width:100%; margin: 0 auto;">
 
 <thead>
 
@@ -8,27 +8,27 @@
 
       <th style="text-align:Center; min-width: 10%;">Metric</th>
 
-      <th style="text-align:Center; min-width: 5%;">2016</th>
+      <th style="text-align:Center; min-width: 8%;">2016</th>
 
-      <th style="text-align:Center; min-width: 5%;">2017</th>
+      <th style="text-align:Center; min-width: 8%;">2017</th>
 
-      <th style="text-align:Center; min-width: 5%;">2018</th>
+      <th style="text-align:Center; min-width: 8%;">2018</th>
 
-      <th style="text-align:Center; min-width: 5%;">2019</th>
+      <th style="text-align:Center; min-width: 8%;">2019</th>
 
-      <th style="text-align:Center; min-width: 5%;">2020</th>
+      <th style="text-align:Center; min-width: 8%;">2020</th>
 
-      <th style="text-align:Center; min-width: 5%;">2021</th>
+      <th style="text-align:Center; min-width: 8%;">2021</th>
 
-      <th style="text-align:Center; min-width: 5%;">2022</th>
+      <th style="text-align:Center; min-width: 8%;">2022</th>
 
-      <th style="text-align:Center; min-width: 5%;">2023</th>
+      <th style="text-align:Center; min-width: 8%;">2023</th>
 
-      <th style="text-align:Center; min-width: 5%;">2024</th>
+      <th style="text-align:Center; min-width: 8%;">2024</th>
 
-      <th style="text-align:Center; min-width: 5%;"></th>
+      <th style="text-align:Center; min-width: 8%;">2025</th>
 
-      <th style="text-align:Center; min-width: 5%;"></th>
+      <th style="text-align:Center; min-width: 8%;">2026</th>
 
     </tr>
 

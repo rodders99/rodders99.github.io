@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
+<?php include 'html-inc/header.php'; ?>
 
     <style>
 /* .table-format {
@@ -40,10 +19,14 @@
 
 </style>
 
-    <title>Food Standards Agency - Alerts Analysis</title>
-</head>
+    <title>Food Standards Agency - Alerts Analysis - Contamination Type : Pathogens</title>
 
-<body>
+    <body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -139,15 +122,15 @@
 
     <h2 id="Pathogen-table-annual-totals">Pathogen Safety Alerts - Types by year</h2>
     <p>Note, data missing from 2017 to 2020.</p>
-    <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
+    <div style="margin-right:auto;margin-left:0px; width:100%">
                 <?php include "../tables/pathogen-annual-alert-count.php" ?>
             </div>
-<p><a href="#" class="gototop">Top</a> </p>
+<br><a href="#" class="gototop">Top</a>
 
 
     <h2 id="pathogen-type-total-time-series">Time Series Cross-Sectional Visualisations of Pathogen Types</h2>
-        <div class="datatable-container" >
-        <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+        <div>
+        <table style="width:100%; margin: 0 auto;">
             <tr>
                 <td><a href="../img/pathogen-contaminant_type-yyyy-mm.png"><img src="../img/pathogen-contaminant_type-yyyy-mm.png" style="width:100%"></a></td>
                 
@@ -158,23 +141,23 @@
             </tr>
             
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
         
         <h2 id="pathogen-type-distribution">Safety Alert Distribution by Pathogen Types</h2>
         
-            <div class="datatable-container" >
-            <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div>
+            <table style="width:100%; margin: 0 auto;">
                 <tr>
                     <td><a href="../img/pathogen-pie-total.png"><img src="../img/pathogen-pie-total.png" style="width:100%"></a></td>
                 </tr>
              </table></div>
-             <p><a href="#" class="gototop">Top</a> </p>
+             <br><a href="#" class="gototop">Top</a>
             
         <h2 id="product-type-distribution">Safety Alert Distribution by Product Types</h2>
         
-            <div class="datatable-container" >
-            <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div>
+            <table style="width:100%; margin: 0 auto;">
                 <tr>
                     
                     <td><a href="../img/pathogen-product_categories-pie-total.png"><img src="../img/pathogen-product_categories-pie-total.png" style="width:100%"></a></td>
@@ -183,13 +166,13 @@
                 
                 
              </table></div>
-        <p><a href="#" class="gototop">Top</a> </p>
+        <br><a href="#" class="gototop">Top</a>
 
         <p></p>
         <h2 id="pathogen-total-time-series">Time Series Visualisations of Pathogen Safety Alerts</h2>
 
-        <div class="datatable-container" >
-        <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+        <div>
+        <table style="width:100%; margin: 0 auto;">
             <tr>
                 <td><a href="../img/pathogen-yyyy-mm.png"><img src="../img/pathogen-yyyy-mm.png" style="width:100%"></a></td>
                 
@@ -200,7 +183,7 @@
             </tr>
             
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
         
         
         <h1>Time Series Visualizations of Pathogen Distribution and Common Affected Foods</h1>
@@ -226,12 +209,12 @@
         <h3>Most Common Foods Contaminated with Salmonella</h3>
             <div style=width:80%>
                 <a href="../img/pathogen-salmonella-by-product-type.png"><img src="../img/pathogen-salmonella-by-product-type.png"></a></div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
         
                 <h3>Temporal Visualisations</h3>
-        <div class="datatable-container" >
+        <div>
         
-        <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+        <table style="width:100%; margin: 0 auto;">
             <tr>
                 <td><a  href="../img/contaminant-salmonella-yyyy-mm.png"><img src="../img/contaminant-salmonella-yyyy-mm.png"></a></td>
                 <td></td>
@@ -242,7 +225,7 @@
                 <td><a  href="../img/contaminant-salmonella-yyyy.png"><img src="../img/contaminant-salmonella-yyyy.png"></a></td>               
             </tr>
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
         <h2 id="pathogen-visualisations-2">Listeria</h2>
             <p>Listeria is a genus of bacteria that acts as an intracellular parasite in mammals. Until 1992, 10 species were known, each containing two subspecies. 
@@ -254,10 +237,10 @@
             
             <h3>Most Common Foods Contaminated with Listeria</h3>
             <div style=width:80%><a  href="../img/pathogen-listeria-by-product-type.png"><img src="../img/pathogen-listeria-by-product-type.png"></a></div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
             <h3>Temporal Visualisations</h3>
-                <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div>
+                <table style="width:100%; margin: 0 auto;">
             <tr>
                 <td><a  href="../img/contaminant-listeria-yyyy-mm.png"><img src="../img/contaminant-listeria-yyyy-mm.png"></a></td>
                 <td></td>
@@ -268,7 +251,7 @@
                 <td><a href="../img/contaminant-listeria-yyyy.png"><img src="../img/contaminant-listeria-yyyy.png"></a></td>               
             </tr>
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
 
         <h2 id="pathogen-visualisations-3">Clostridium Botulinum</h2>
@@ -282,11 +265,11 @@
 
             <h3>Most common foods contaminated with Clostridium botulinum</h3>
             <div style=width:80%><a href="../img/pathogen-clostridium-botulinum-by-product-type.png"><img src="../img/pathogen-clostridium-botulinum-by-product-type.png"></a></div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
             <h3>Temporal Visualisations</h3>
-        <div class="datatable-container" >
+        <div>
         
-        <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+        <table style="width:100%; margin: 0 auto;">
             <tr>
                 <td><a  href="../img/contaminant-clostridium-botulinum-yyyy-mm.png"><img src="../img/contaminant-clostridium-botulinum-yyyy-mm.png"></a></td>
                 <td></td>
@@ -297,7 +280,7 @@
                 <td><a  href="../img/contaminant-clostridium-botulinum-yyyy.png"><img src="../img/contaminant-clostridium-botulinum-yyyy.png"></a></td>               
             </tr>
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
         <h2 id="pathogen-visualisations-4">E.coli</h2>
         <p>Escherichia coli is a gram-negative, facultative anaerobic, rod-shaped, coliform bacterium of the genus Escherichia that is commonly found in the lower intestine of warm-blooded 
@@ -310,11 +293,11 @@
             
             <h3>Most Common Foods Contaminated with E.coli</h3>
             <div style=width:80%><a  href="../img/pathogen-e.coli-by-product-type.png"><img src="../img/pathogen-e.coli-by-product-type.png"></a></div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
             
             <h3>Temporal Visualisations</h3>
-        <div class="datatable-container" >
-            <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+        <div>
+            <table style="width:100%; margin: 0 auto;">
                 <tr>
                     <td><a  href="../img/contaminant-e.coli-yyyy-mm.png"><img src="../img/contaminant-e.coli-yyyy-mm.png"></a></td>
                     <td></td>
@@ -327,7 +310,7 @@
                         <img src="../img/contaminant-e.coli-yyyy.png"></a></td>               
                 </tr>
              </table></div>
-             <p><a href="#" class="gototop">Top</a> </p>
+             <br><a href="#" class="gototop">Top</a>
             
 
 
@@ -337,8 +320,8 @@
 
 <p id="cheese"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Cheese</h3></td><td><h3>Fish Processed</h3></td></tr></thead>
             <tr>
                 <td><a  href="../img/pathogen-type-cheese-pie-total.png">
@@ -349,12 +332,12 @@
             </tr>
             </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 <p id="pork"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Pork Processed</h3></td><td><h3>Ready Meal / Ready to Eat</h3></td></tr></thead>
             <tr>
                 <td><a  href="../img/pathogen-type-pork-processed-pie-total.png">
@@ -364,12 +347,12 @@
             </tr>
             </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 <p id="confectionery"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Confectionery</h3></td><td><h3>Nuts / Seeds</h3></td></tr></thead>
 
                 <tr>
@@ -380,12 +363,12 @@
             </tr>
             </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 <p id="sandwiches"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Sandwiches / Wraps</h3></td><td><h3>Chicken Processed</h3></td></tr></thead>
 
             <tr>
@@ -396,13 +379,17 @@
             </tr>
             </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 <p id="pets"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
-        <thead><tr><td style="width:50%"><h3>Pet Food</h3></td><td><h3>Herbs / Spices</h3></td></tr></thead>
+<div>
+    <table style="width:100%; margin: 0 auto;">
+        <thead>
+            <tr>
+                <td style="width:50%">
+                    <h3>Pet Food</h3></td>
+                    <td><h3>Herbs / Spices</h3></td></tr></thead>
 
             <tr>
                 <td><a  href="../img/pathogen-type-pet-food-pie-total.png">
@@ -412,12 +399,12 @@
             </tr>
             </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 <p id="vegetables"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Vegetables</h3></td><td><h3>Baby Foods / Formula</h3></td></tr></thead>
 
             <tr>
@@ -430,11 +417,11 @@
             </table>
             </div>
 
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 <p id="sauces"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Sauces / Condiments</h3></td><td><h3>Dairy</h3></td></tr></thead>
 
             <tr>
@@ -446,12 +433,12 @@
             </tr>
             </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 <p id="fruit"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Fruit Processed</h3></td><td><h3>Nutrition / Supplements</h3></td></tr></thead>
 
             <tr>
@@ -463,12 +450,12 @@
             </tr>
             </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 <p id="beef"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Beef Processed</h3></td><td><h3>Other Processed</h3></td></tr></thead>
 
             <tr>
@@ -478,14 +465,14 @@
                     <img src="../img/pathogen-type-other-processed-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
  
 
          <p id="baked"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Beef Processed</h3></td><td><h3>Other Processed</h3></td></tr></thead>
 
             <tr>
@@ -495,12 +482,12 @@
                     <img src="../img/pathogen-type-cooking-oil-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
          <p id="duck"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Duck Processed</h3></td><td><h3>Eggs</h3></td></tr></thead>
 
             <tr>
@@ -510,12 +497,12 @@
                     <img src="../img/pathogen-type-eggs-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
 <p id="alt-milk"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Alternative Milks</h3></td><td><h3>Mixed Meats Processed</h3></td></tr></thead>
 
             <tr>
@@ -525,13 +512,13 @@
                     <img src="../img/pathogen-type-mixed-meat-processed-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
 
          <p id="salad"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Salad</h3></td><td><h3>Soft Drinks</h3></td></tr></thead>
 
             <tr>
@@ -541,14 +528,14 @@
                     <img src="../img/pathogen-type-soft-drinks-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
 <h2>A Taste of Trouble: Common Food Contaminants by Product Category</h2>
 
 <p id="cat-cheese"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Baby Foods / Formula</h3></td><td><h3>Cheese</h3></td></tr></thead>
 
             <tr>
@@ -558,12 +545,12 @@
                     <img src="../img/pathogen-category-cheese-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
          <p id="cat-confectionery"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Confectionery</h3></td><td><h3>Herbs /Spices</h3></td></tr></thead>
 
             <tr>
@@ -573,13 +560,13 @@
                     <img src="../img/pathogen-category-herbs-spices-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
 
          <p id="cat-nuts"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Nuts / Seeds</h3></td><td><h3>Other</h3></td></tr></thead>
 
             <tr>
@@ -589,14 +576,14 @@
                     <img src="../img/pathogen-category-other-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
 
 
          <p id="cat-pets"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Pet Food</h3></td><td><h3>Processed Fish</h3></td></tr></thead>
 
             <tr>
@@ -606,13 +593,13 @@
                     <img src="../img/pathogen-category-processed-fish-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
 
          <p id="cat-pets"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Pet Food</h3></td><td><h3>Processed Fish</h3></td></tr></thead>
 
             <tr>
@@ -622,13 +609,13 @@
                     <img src="../img/pathogen-category-processed-fish-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
 
          <p id="cat-ready"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Ready Meals / Ready to Eat</h3></td><td><h3>Sandwiches / Wraps</h3></td></tr></thead>
 
             <tr>
@@ -638,13 +625,13 @@
                     <img src="../img/pathogen-category-sandwiches-wraps-pie-total.png"></a></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
 
          <p id="cat-sauces"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div>
+    <table style="width:100%; margin: 0 auto;">
         <thead><tr><td style="width:50%"><h3>Ready Meals / Ready to Eat</h3></td><td><h3></h3></td></tr></thead>
 
             <tr>
@@ -653,7 +640,7 @@
                 <td></td>
             </tr>     
          </table></div>
-         <p><a href="#" class="gototop">Top</a> </p>
+         <br><a href="#" class="gototop">Top</a>
 
          
 <h2 id="summary">Summary</h2>
@@ -663,8 +650,8 @@
 <p>Salmonella, Listeria, Clostridium botulinum, E.Coli are the most common pathogenic food contaminants accounting for 88% of all pathogen safety alerts</p>
 <p>
 
-<div class="datatable-container format-table" >
-        <table class="dataframe datatable table-format" style="width:70%; margin: 0 auto;">
+<div class="format-table" >
+        <table class="table-format" style="width:70%; margin: 0 auto;">
   <thead>
     <tr >
       <th>Pathogen</th>
@@ -733,10 +720,11 @@
 </div>
 
 </p>
-<p><a href="#" class="gototop">Top</a> </p>
-<?php include 'footer.php'; ?>
+<br><a href="#" class="gototop">Top</a>
+<?php include 'html-inc/footer.php'; ?>
 
 </div>
+<script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 </body>
 </html>
 <script>

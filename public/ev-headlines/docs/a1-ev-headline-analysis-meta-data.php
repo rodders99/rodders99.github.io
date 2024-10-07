@@ -1,32 +1,16 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="color-scheme" content="dark">
+<?php include 'html-inc/header.php'; ?>
 
-<!-- <link rel="stylesheet" type="text/css" href="/css/custom.css"> -->
-<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css"
-/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-<!-- and it's easy to individually load additional languages -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-<script>hljs.highlightAll();</script>
 <script src="/scripts/ev-headlines.js"></script>
 
 
 <title>Media Bias and Misinformation: Analysing Mainstream Media Headlines on Electric Vehicles</title>
-</head>
-<body>
-<div class="page-container">
+<body class="colorscheme-light">
+    <div class="float-container">
+        <a id="dark-mode-toggle" class="colorscheme-toggle">
+            <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="page-container">
   <div class="toolbar" style="width:100%; text-align:center; align-items:center">
                       
       <!-- JUMP TO MENU-->
@@ -54,43 +38,34 @@
 <p>See the report section on <a href="a2-ev-headline-analysis-feature-engineering.php">feature engineering</a> to gain an understanding of the data engineering that was carried out with this data set. </p>
 
 <h2 id="meta-data">Source Meta Data</h2>
-<div class="datatable-container" id="html_table-source-meta-data-feature-engineering">
+<!-- <div class="datatable-container" id="html_table-source-meta-data-feature-engineering"> -->
 
 <table class="dataframe datatable" style="width:80%; margin: 0 auto;">
   <thead>
-    <tr>
-        <td colspan=3>
-            <p>&lt;class 'pandas.core.frame.DataFrame'&gt;<br>
-                RangeIndex: 1,976,938 entries, 0 to 1976937<br>
-                Data columns (total 10 columns):</p>
-        </td>
-    </tr>
+
     <tr style="text-align: right;">
       <th></th>
       <th>Column</th>
       <th>Dtype</th>
+      <th>Meta</th>
     </tr>
   </thead>
   <tbody>
+
     <tr>
-      <th>0</th>
-      <td>------</td>
-      <td>-----</td>
-    </tr>
-    <tr>
-      <th>1</th>
+      <td>1</td>
       <td>Date</td>
       <td>datetime64[ns]</td>
       <td>Date / Time the scrape operation took place</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>Publication</td>
       <td>object</td>
       <td>The web site / newspaper</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>Headline</td>
       <td>object</td>
       <td>The Text of the headline</td>
@@ -98,7 +73,8 @@
     
   </tbody>
 </table>
-</div>
-<?php include 'footer.php'; ?>
+<!-- </div> -->
+<?php include 'html-inc/footer.php'; ?>
+<script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script> 
 
 </div></body></html>

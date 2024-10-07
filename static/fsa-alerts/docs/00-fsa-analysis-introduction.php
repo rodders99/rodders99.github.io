@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
 
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<?php include 'html-inc/header.php'; ?>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
 
-    <script>hljs.highlightAll();</script>
 
-    <title>Food Standards Agency - Alerts Analysis</title>
-</head>
-
-<body>
+<title>Food Standards Agency - Introduction to Alerts Analysis</title>
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -83,9 +69,9 @@
 
             <h2 id="project-overview">Project Overview: Analysing Food Safety Alerts from food.gov.uk</h2>
 
-<h3>Did you know that 34% of all food safety alerts are issued to grocery retailers for own brand products, yet the origin of many products remains unknown? </h3>
+<h3>Did you know that 37% of all food safety alerts are issued to grocery retailers for own brand products, yet the origin of many of these products remains unknown? </h3>
 
-<p>As we explore the complexities of food safety in the UK, let's start by peeling back the layers and uncovering the truth behind our daily diets.</h>
+<p>As we explore the complexities of food safety in the UK, let's start by peeling back the layers and uncovering the truth behind the safety of our daily diets.</h>
 <p>Food safety is a critical issue in the UK. Millions of people are affected by foodborne illnesses every year. These illnesses can range from mild discomfort to life-threatening complications.</p>
     <p>In this report, I delve into the complexities of food safety in the UK. I examine the trends, patterns, and areas for improvement, to better understand the issues.</p>
 
@@ -126,14 +112,16 @@
             and food categories. This methodology enabled me to uncover key findings that inform understanding of the FSA's alert data and its implications for the food industry.</p>
 
         <h3 id="data-collection">Data Collection:</h3>
-        <p>Web Scraping: I developed a web scraping script with <a href="https://www.selenium.dev/">selenium</a> that collected the search results from food.gov.uk and 
-        archived alerts from nationalarchive.gov.uk. During the data collection process, it was noted that a lot of data was missing from 2017 with no data 
-        available for 2018 to 2020.</p>
+        <p>Web Scraping: I developed a web scraping script with <a href="https://www.selenium.dev/">selenium and <a href = "https://streamlit.io/">Streamlit</a> that collects the search results 
+        from food.gov.uk and archived alerts from nationalarchive.gov.uk. During the data collection process, it was noted that a lot of data was missing from 2017 to 2020.</p>
+
+        The web scrape app compares these search results with the data already collected and highlights any missing alert notices allowing a single click to scrape, assemble and present
+        the alert notice data for editing and validation.
         
         <p>There were two types of alerts that are issued and have been scraped from the websites: Allergen Alerts and Safety Alerts.</p>
         
-        <p><ul class="list"><li>Allergens detailed mainly foods that had been either contaminated with an allergen or had an undeclared allergen.</li> 
-            <li>Safety alerts included pathological, foreign body contamination or other alerts, for example: dangerous packaging (exploding bottles for example), 
+        <p><ul class="list"><li>Allergens : which details mainly foods that had been either contaminated with an allergen or had an undeclared allergen.</li> 
+            <li>Safety alerts : Which includes pathological, foreign body contamination or other alerts, for example: dangerous packaging (exploding bottles for example), 
                 mislabelled packaging.</li></ul>
     </p>
     <br><a href="#" class="gototop">Top</a>
@@ -148,6 +136,10 @@
         <li>Allergen - Extracted through splitting the Title where possible. Manually edited into the title from the Body Text where it was missing from the title</li>
         <li>Foreign Material - Extracted through splitting the Title where possible. Manually edited into the title from the Body Text where it was missing from the title</li>
         <li>Other - Extracted through splitting the Title where possible. Manually edited into the title from the Body Text where it was missing from the title</li>
+        <li>Supplier_Type and Supplier (name) are hand curated from the data. Supplier_Type being one of Importer / Manufacturer, and </li>
+        <li>Brand is hand curated from the data and captures any Brand mentioned in the notice. </li>
+        <li>Outlet_Type and Outlet (name) is hand curated from the data. and captures the outlet type (Grocer, Wholesaler, Retail, Restaurant) mentioned in the notice. </li>
+
         </ul>
     <h3 id="data-analysis">Data Analysis:</h3>
         
@@ -163,6 +155,10 @@
         </ul>
        
         <br><a href="#" class="gototop">Top</a>
+
+
+
+
 <h2 id="recommendations">Recommendations</h2>
 <p>There were a number of issues identified when working with the data and I would like to recommend improvements to the data captured by the Food Standards Agency Team:</p>
 
@@ -176,8 +172,8 @@
 </ul>
 <li><b>Data structure</b> : There may be more data in the dataset held at the FSA, but the dataset released to the public is very limited. I would like to see a list of affected 
 products in a consistent format with a separate entry for each product with it's own database row. This should be linked back to the original alert data capture. 
-(currently the product data is in the free form body text field of the alert, with inconsistent formatting. Product data is currently either formatted as an untagged html table, or 
-as paragraphs, both types embedded in the alert body text).</li>
+The product data is currently in the free form body text field of the alert notice. More recently, alert notices include Product data that can be scraped from 
+the tables included in the alert notice (noted with a &lt;caption&gt; tag).  Older data has product data formatted as paragraphs, which is a lot more difficult to correctly scrape.</li>
 <li><b>Breakout Data into separate fields</b> : All data useful for analytics is within the title or body text of the data requiring extensive feature engineering and manual editing 
 prior to any analysis, as was the case for this analysis. Feature Engineering adds the potential for the quality of data to be impacted negatively and manual editing risks 
 introducing errors.</li>
@@ -203,11 +199,12 @@ introducing errors.</li>
     you better understand the complex landscape of food safety in the UK and identify opportunities for improvement."</p>
     <br><a href="#" class="gototop">Top</a></p>
 
-    <?php include 'footer.php'; ?>
-
+    <?php include 'html-inc/footer.php'; ?>
+    
 
     
 </div>
+<script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 </body>
 </html>
 <script>
@@ -223,4 +220,6 @@ introducing errors.</li>
     });
   }
 }
+
+
 </script>

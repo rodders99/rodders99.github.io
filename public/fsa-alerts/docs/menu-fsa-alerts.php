@@ -13,6 +13,7 @@ echo '
            <ul>
                <li><a href = "./a0-fsa-meta-data.php">Meta Data Overview</a></li>
                <li><a href = "./a1-fsa-feature-engineering.php">Feature Engineering</a></li>
+               <li><a href = "./a2-fsa-front-end.php">Web Scrape Front End</a></li>
            </ul>
        </li>
        <li>

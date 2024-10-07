@@ -1,6 +1,6 @@
 +++
 title = "Food Standards Agency Alerts Analysis"
-date = 2024-09-29T09:15:27.561Z
+date = 2024-08-12T09:15:27.561Z
 description = "Analysis of Food Standards Agency Alerts"
 draft = false
 slug = ""
@@ -9,11 +9,11 @@ tags = [ "Python", "R", "Pandas", "Numpy", "Matplotlib" ]
 categories = [ ]
 externalLink = ""
 series = [ ]
-featuredImage = "https://rodders.me/projects/fsa-safety-alerts/cover.jpg"
+featuredImage = "https://rodders.me/fsa-alerts/food-standards-agency-logo.jpg"
 
 +++
 
-![FSA Logo](https://rodders.me/projects/fsa-safety-alerts/cover.jpg)
+![FSA Logo](https://rodders.me/fsa-alerts/food-standards-agency-logo.jpg)
 
 ## Analysis of Food Standards Agency Alerts
 
@@ -76,7 +76,9 @@ The main goal of this analysis is to provide data-driven insights that inform po
 
 ## Food for thought? Click here to "spice up" your learning and move on to the detail behind this analysis!
 
-# [fsa-alerts-analysis](https://rodders.me/projects/fsa-alerts/docs/00-fsa-analysis-introduction.php)
+# [fsa-alerts-analysis](https://rodders.me/fsa-alerts/docs/00-fsa-analysis-introduction.php)
+
+
 
 ## Data Sources
 

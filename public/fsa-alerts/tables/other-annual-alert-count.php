@@ -52,9 +52,9 @@
 
       <td style="text-align:center;">4</td>
 
-      <td style="text-align:center;">5</td>
+      <td style="text-align:center;">6</td>
 
-      <td style="text-align:center;">43</td>
+      <td style="text-align:center;">44</td>
 
     </tr>
 
@@ -166,32 +166,6 @@
 
 
 
-      <td style="text-align:center;">Undercooked</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">4</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">11</td>
-
-    </tr>
-
-    <tr>
-
-
-
       <td style="text-align:center;">Choking Hazard</td>
 
       <td style="text-align:center;">0</td>
@@ -207,6 +181,32 @@
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">4</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">11</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Undercooked</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">4</td>
+
+      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
 
@@ -244,21 +244,21 @@
 
 
 
-      <td style="text-align:center;">High Caffeine Levels</td>
+      <td style="text-align:center;">Product Tampered</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
 
       <td style="text-align:center;">0</td>
 
@@ -296,6 +296,32 @@
 
 
 
+      <td style="text-align:center;">High Caffeine Levels</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+    </tr>
+
+    <tr>
+
+
+
       <td style="text-align:center;">Fermentation in bottle</td>
 
       <td style="text-align:center;">0</td>
@@ -305,58 +331,6 @@
       <td style="text-align:center;">2</td>
 
       <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Product Tampered</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Sterilisation Insufficient</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
 
@@ -400,43 +374,7 @@
 
 
 
-      <td style="text-align:center;">Foul Odour</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Counterfeit Alcohol</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">Sterilisation Insufficient</td>
 
       <td style="text-align:center;">0</td>
 
@@ -446,18 +384,6 @@
 
       <td style="text-align:center;">1</td>
 
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Curdling</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
@@ -466,63 +392,7 @@
 
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Burn Risk</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Food Safety</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
+      <td style="text-align:center;">2</td>
 
     </tr>
 
@@ -582,6 +452,110 @@
 
 
 
+      <td style="text-align:center;">Foul Odour</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Food Safety</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Burn Risk</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Curdling</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
       <td style="text-align:center;">High pH Levels</td>
 
       <td style="text-align:center;">0</td>
@@ -608,7 +582,59 @@
 
 
 
+      <td style="text-align:center;">High Selenium Levels</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
       <td style="text-align:center;">Hydrogen Cyanide</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Isopropyl alcohol</td>
 
       <td style="text-align:center;">0</td>
 
@@ -660,23 +686,23 @@
 
 
 
-      <td style="text-align:center;">High Selenium Levels</td>
+      <td style="text-align:center;">Metal</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
 

@@ -10,15 +10,15 @@ categories = [ ]
 externalLink = ""
 series = [ ]
 preview = "/img/Safety_Gate_Logo.png"
-featuredImage = "https://rodders.me/safetygate/img-2023/icons/Safety_Gate_Logo.png"
+featuredImage = "/safetygate/img-2023/icons/Safety_Gate_Logo.png"
 
 +++
 
-![Safety Gate Logo](https://rodders.me/safetygate/img-2023/icons/Safety_Gate_Logo.png)
+![Safety Gate Logo](/safetygate/img-2023/icons/Safety_Gate_Logo.png)
 
 | Last Updated | Latest Week |
 | :-: | :-: |
-| 26/09/2024 | week 39 |
+| 26/08/2024 | week 34 |
 
 ## The EU Safety Gate project
 

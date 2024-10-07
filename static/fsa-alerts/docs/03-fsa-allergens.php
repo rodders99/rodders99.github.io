@@ -1,30 +1,14 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
+<?php include 'html-inc/header.php'; ?>
 
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<title>Food Standards Agency - Alerts Analysis - Contamination Type : Allergens</title>
 
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
-
-    <title>Food Standards Agency - Alerts Analysis</title>
-</head>
-
-<body>
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -149,16 +133,16 @@
         <p>Note, data missing from 2017 to 2002. It appears that prior to 2017 Allergen Alerts were not being issued and with the 
             missing data from 2017 to 2020, there are a lot less data points to visualise for Allergens compared to other Food Safety Alerts.</p>
 
-            <div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
+            <div  style="margin-right:auto;margin-left:0px; width:100%">
                 <?php include "../tables/allergen-annual-alert-count.php" ?>
             </div>
-    <p><a href="#" class="gototop">Top</a> </p>
+    <br><a href="#" class="gototop">Top</a>
 
 
             <h2 id="allergen-type-total-time-series">Time Series Cross-Sectional Visualisations of Allergen Types</h2>
 
-            <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/allergen-contaminant_type-yyyy-mm.png"><img
                                     src="../img/allergen-contaminant_type-yyyy-mm.png" style="width:100%"></a></td>
@@ -172,13 +156,13 @@
                     </tr>
                 </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             <p></p>
             <h2 id="allergen-type-totals">Safety Alert Distribution by Allergen Type</h2>
 
-            <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/allergen-pie-total.png"><img src="../img/allergen-pie-total.png" style="width:100%"></a></td>
 
@@ -186,15 +170,15 @@
 
                 </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             
 
 <p></p>
 <h2 id="product-type-totals">Safety Alert Distribution by Product Category</h2>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
         <tr>
             
             <td><a href="../img/allergen-product_categories-pie-total.png"><img src="../img/allergen-product_categories-pie-total.png" style="width:100%"></a></td>
@@ -202,14 +186,14 @@
 
     </table>
 </div>
-<p><a href="#" class="gototop">Top</a> </p>
+<br><a href="#" class="gototop">Top</a>
 
             <p></p>
 
             <h2 id="allergen-time-series-distribution">Time Series Visualisations of Allergen Safety Alerts</h2>
 
-            <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/allergen-yyyy-mm.png"><img src="../img/allergen-yyyy-mm.png"
                                     style="width:100%"></a></td>
@@ -223,7 +207,7 @@
 
                 </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 
             <h1 id="Allergen-visualisations-title">Time Series Visualisations of Allergens and Common Affected Foods</h1>
@@ -254,12 +238,12 @@
             <h3>Most Common Foods Contaminated with Milk</h3>
             <div style=width:80%><a href="../img/allergen-milk-by-product-type.png"><img
                         src="../img/allergen-milk-by-product-type.png"></a></div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             <h3>Temporal Visualisations</h3>
 
-            <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     
                     <tr>
                         <td><a href="../img/allergen-milk-yyyy-mm.png"><img src="../img/allergen-milk-yyyy-mm.png"
@@ -271,7 +255,7 @@
                     </tr>
                 </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             <h2 id="Allergen-visualisations-2">Undeclared Allergens</h2>
             <p>Undeclared allergens can cause severe reactions, including anaphylaxis, in individuals with food
@@ -314,11 +298,11 @@
             <h3>Most Common Foods Contaminated with Undeclared Allergens</h3>
             <div style=width:80%><a href="../img/allergen-undeclared-allergens-by-product-type.png"><img
                         src="../img/allergen-undeclared-allergens-by-product-type.png"></a></div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             <h3>Temporal Visualisations</h3>
-            <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/allergen-undeclared-allergens-yyyy-mm.png"><img
                                     src="../img/allergen-undeclared-allergens-yyyy-mm.png"></a></td>
@@ -333,7 +317,7 @@
                     </tr>
                 </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             <h2 id="Allergen-visualisations-3">Nuts</h2>
             <p><b>Risks of Nut Allergies</b></p>
@@ -362,11 +346,11 @@
             <h3>Most Common Foods Contaminated with Nuts</h3>
             <div style=width:80%><a href="../img/allergen-nuts-by-product-type.png"><img
                         src="../img/allergen-nuts-by-product-type.png"></a></div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             <h3>Temporal Visualisations</h3>
-            <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/allergen-nuts-yyyy-mm.png"><img src="../img/allergen-nuts-yyyy-mm.png"></a></td>
                     </tr>
@@ -376,7 +360,7 @@
                     </tr>
                 </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             <h2 id="Allergen-visualisations-4">Gluten</h2>
             <p>Gluten allergy, also known as Coeliac disease or non-Coeliac gluten sensitivity (NCGS), is a medical
@@ -407,11 +391,11 @@
             <h3>The Most Common Foods Alerts for Products Contaminated with Gluten</h3>
             <div style=width:80%><a href="../img/allergen-gluten-by-product-type.png"><img
                         src="../img/allergen-gluten-by-product-type.png"></a></div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             <h3>Temporal Analysis</h3>
-            <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/allergen-gluten-yyyy-mm.png"><img src="../img/allergen-gluten-yyyy-mm.png"></a>
                         </td>
@@ -424,7 +408,7 @@
                     </tr>
                 </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 
             <h2 id="Allergen-visualisations-5">Soya</h2>
@@ -444,10 +428,10 @@
             <h3>The Most Common Foods Alerts for Products Contaminated with Soya</h3>
             <div style=width:80%><a href="../img/allergen-soya-by-product-type.png"><img
                         src="../img/allergen-soya-by-product-type.png"></a></div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
             <h3>Temporal Visualisations</h3>
-            <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/allergen-soya-yyyy-mm.png"><img src="../img/allergen-soya-yyyy-mm.png"></a></td>
                     </tr>
@@ -457,7 +441,7 @@
                     </tr>
                 </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 
             <h2 id="Allergen-visualisations-6">Egg</h2>
@@ -480,11 +464,11 @@
             <h3>The Most Common Foods Alerts for Products Contaminated with Egg</h3>
             <div style=width:80%><a href="../img/allergen-egg-by-product-type.png"><img
                         src="../img/allergen-egg-by-product-type.png"></a></div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
             <h3>Temporal Visualisations</h3>
-            <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+            <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <tr>
                         <td><a href="../img/allergen-egg-yyyy-mm.png"><img src="../img/allergen-egg-yyyy-mm.png"></a></td>
 
@@ -496,7 +480,7 @@
                     </tr>
                 </table>
             </div>
-            <p><a href="#" class="gototop">Top</a> </p>
+            <br><a href="#" class="gototop">Top</a>
 
 
             <h2 id="Allergen-visualisations-7">Mustard</h3>
@@ -525,11 +509,11 @@
 
                 <div style=width:80%><a href="../img/allergen-mustard-by-product-type.png"><img
                             src="../img/allergen-mustard-by-product-type.png"></a></div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <h3>Temporal Visualisations</h3>
-                <div class="datatable-container" >
-                    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                    <table class="" style="width:100%; margin: 0 auto;">
                         <tr>
                             <td><a href="../img/allergen-mustard-yyyy-mm.png"><img
                                         src="../img/allergen-mustard-yyyy-mm.png"></a></td>
@@ -543,7 +527,7 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
                 <h2 id="Allergen-visualisations-8">Sulphites</h2>
@@ -575,11 +559,11 @@
                 <h3>The Most Common Foods Alerts for Products Contaminated with Sulphites</h3>
                 <div style=width:80%><a href="../img/allergen-sulphites-by-product-type.png"><img
                             src="../img/allergen-sulphites-by-product-type.png"></a></div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <h3>Temporal Visualisations</h3>
-                <div class="datatable-container" >
-                    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                    <table class="" style="width:100%; margin: 0 auto;">
                         <tr>
                             <td><a href="../img/allergen-sulphites-yyyy-mm.png"><img
                                         src="../img/allergen-sulphites-yyyy-mm.png"></a></td>
@@ -592,7 +576,7 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
                 <h2 id="Allergen-visualisations-9">Fish / Crustaceans</h2>
@@ -611,11 +595,11 @@
                 <h3>The Most Common Foods Alerts for Products Contaminated with Sulphites</h3>
                 <div style=width:80%><a href="../img/allergen-fish-crustacean-by-product-type.png"><img
                             src="../img/allergen-fish-crustacean-by-product-type.png"></a></div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <h3>Temporal Visualisations</h3>
-                <div class="datatable-container" >
-                    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                    <table class="" style="width:100%; margin: 0 auto;">
                         <tr>
                             <td><a href="../img/allergen-fish-crustacean-yyyy-mm.png"><img
                                         src="../img/allergen-fish-crustacean-yyyy-mm.png"></a></td>
@@ -628,7 +612,7 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <h2 id="Allergen-visualisations-10">Sesame</h2>
                 <p>Sesame seed allergy is not new (it was first reported in the 1950s), but it has become increasingly
@@ -672,10 +656,10 @@
                 <h3>The Most Common Foods Alerts for Products Contaminated with Sesame</h3>
                 <div style=width:80%><a href="../img/allergen-sesame-by-product-type.png"><img
                             src="../img/allergen-sesame-by-product-type.png"></a></div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
                 <h3>Temporal Visualisations</h3>
-                <div class="datatable-container" >
-                    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                    <table class="" style="width:100%; margin: 0 auto;">
                         <tr>
                             <td><a href="../img/allergen-sesame-yyyy-mm.png"><img
                                         src="../img/allergen-sesame-yyyy-mm.png"></a></td>
@@ -686,14 +670,14 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <h2 id="food-by-allergen-type">A Slice Above the Rest: Allergen Distribution Across Food Types</h2>
                 
                 <p id="sauces"></p>
 
-                <div class="datatable-container" >
-                    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                    <table class="" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Confectionery</h3></td><td><h3>Ready Meal / Ready to Eat</h3></td></tr></thead>
 
                         <tr>
@@ -705,8 +689,8 @@
 
                 <p id="sauces"></p>
 
-                <div class="datatable-container" >
-                    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                    <table class="" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Confectionery</h3></td><td><h3>Ready Meal / Ready to Eat</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-sauces-condiments-pie-total.png"><img src="../img/allergen-type-sauces-condiments-pie-total.png"></a></td>
@@ -717,8 +701,8 @@
 
 <p id="vegetables"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Confectionery</h3></td><td><h3>Ready Meal / Ready to Eat</h3></td></tr></thead>
 
                         <tr>
@@ -730,8 +714,8 @@
 
 <p id="fish"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Confectionery</h3></td><td><h3>Ready Meal / Ready to Eat</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-fish-processed-pie-total.png"><img src="../img/allergen-type-fish-processed-pie-total.png"></a></td>
@@ -743,8 +727,8 @@
 
 <p id="pork"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Confectionery</h3></td><td><h3>Ready Meal / Ready to Eat</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-pork-processed-pie-total.png"><img src="../img/allergen-type-pork-processed-pie-total.png"></a></td>
@@ -753,12 +737,12 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <p id="baby"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Baby Foods / Formula</h3></td><td><h3>Beef Processed</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-baby-foods-formula-pie-total.png"><img src="../img/allergen-type-baby-foods-formula-pie-total.png"></a></td>
@@ -767,12 +751,12 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
                 <p id="baked"></p>
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Baked Goods</h3></td><td><h3>Beef Processed</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-bread-baked-goods-pie-total.png"><img src="../img/allergen-type-bread-baked-goods-pie-total.png"></a></td>
@@ -781,13 +765,13 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
 
                 <p id="chicken"></p>
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Baked Goods</h3></td><td><h3>Beef Processed</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-chicken-processed-pie-total.png"><img src="../img/allergen-type-chicken-processed-pie-total.png"></a></td>
@@ -796,12 +780,12 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <p id="dairy"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Baked Goods</h3></td><td><h3>Beef Processed</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-dairy-pie-total.png"><img src="../img/allergen-type-dairy-pie-total.png"></a></td>
@@ -810,12 +794,12 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <p id="herbs"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Herbs / Spices</h3></td><td><h3>Lamb Processed</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-herbs-spices-pie-total.png"><img src="../img/allergen-type-herbs-spices-pie-total.png"></a></td>
@@ -824,14 +808,14 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
 
                 <p id="milk"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Milk / Alt Milks</h3></td><td><h3>Mixed Meat Processed</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-milk-alt-milks-pie-total.png"><img src="../img/allergen-type-milk-alt-milks-pie-total.png"></a></td>
@@ -840,13 +824,13 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
                 <p id="nuts"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Nuts / Seeds</h3></td><td><h3>Other Processed</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-nuts-seeds-pie-total.png"><img src="../img/allergen-type-nuts-seeds-pie-total.png"></a></td>
@@ -855,13 +839,13 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
                 <p id="rice"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Rice</h3></td><td><h3>Sandwiches / Wraps</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-rice-pie-total.png"><img src="../img/allergen-type-rice-pie-total.png"></a></td>
@@ -870,14 +854,14 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
 
                 <p id="soft"></p>
 
-<div class="datatable-container" >
-    <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+<div  >
+    <table class="" style="width:100%; margin: 0 auto;">
     <thead><tr><td style="width:50%"><h3>Soft Drinks</h3></td><td><h3></h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-type-soft-drinks-pie-total.png"><img src="../img/allergen-type-soft-drinks-pie-total.png"></a></td>
@@ -886,15 +870,15 @@
                         </tr>
                     </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <h2>A Taste of Trouble: Common Food Contaminants by Product Category</h2>
 
 
                 <p id="cat-beverages"></p>
 
-                <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Beverages</h3></td><td><h3>Bread / Baked Goods</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-category-beverages-pie-total.png"><img src="../img/allergen-category-beverages-pie-total.png"></a></td>
@@ -902,13 +886,13 @@
                         </tr>
                 </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
                 <p id="cat-confectionery"></p>
 
-                <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Confectionery</h3></td><td><h3>Frozen / Chilled Foods</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-category-confectionery-pie-total.png"><img src="../img/allergen-category-confectionery-pie-total.png"></a></td>
@@ -916,13 +900,13 @@
                         </tr>
                 </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
 
                 <p id="cat-nutrition"></p>
 
-                <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Nutrition / Supplements</h3></td><td><h3>Fish Processed</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-category-nutrition-supplements-pie-total.png"><img src="../img/allergen-category-nutrition-supplements-pie-total.png"></a></td>
@@ -930,13 +914,13 @@
                         </tr>
                 </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 
                 <p id="cat-meat"></p>
 
-                <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Meats Processed</h3></td><td><h3>Ready Meal / Ready to Eat</h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-category-processed-meats-pie-total.png"><img src="../img/allergen-category-processed-meats-pie-total.png"></a></td>
@@ -944,12 +928,12 @@
                         </tr>
                 </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
 
                 <p id="cat-sauces"></p>
 
-                <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
+                <div  >
+                <table class="" style="width:100%; margin: 0 auto;">
                     <thead><tr><td style="width:50%"><h3>Sauces / Condiments</h3></td><td><h3></h3></td></tr></thead>
                         <tr>
                             <td><a href="../img/allergen-category-sauces-condiments-pie-total.png"><img src="../img/allergen-category-sauces-condiments-pie-total.png"></a></td>
@@ -957,18 +941,19 @@
                         </tr>
                 </table>
                 </div>
-                <p><a href="#" class="gototop">Top</a> </p>
+                <br><a href="#" class="gototop">Top</a>
                 
 <h2 id="summary">Summary</h2>
 <p>Safety alerts for Allergenic contaminations account for 33% of all safety alerts issued by the FSA</p>
 <p>The most common allergens : Milk, Undeclared Allergens, Nuts, Gluten, Soya, Egg, Mustard account for 89% of all safety alerts issued for allergens.</p>
-<div class="datatable-container" style="margin-right:auto;margin-left:0px; width:100%">
+<div  style="margin-right:auto;margin-left:0px; width:100%">
                 <?php include "../tables/allergen-annual-alert-count.php" ?>
             </div>
-<?php include 'footer.php'; ?>
+<?php include 'html-inc/footer.php'; ?>
 
 
         </div>
+        <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 </body>
 <script>
     function scrollToAnchor(hash, padding) {

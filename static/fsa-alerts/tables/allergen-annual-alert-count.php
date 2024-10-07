@@ -44,9 +44,9 @@
 
       <td style="text-align:center;">7</td>
 
-      <td style="text-align:center;">142</td>
+      <td style="text-align:center;">205</td>
 
-      <td style="text-align:center;">180</td>
+      <td style="text-align:center;">243</td>
 
     </tr>
 
@@ -66,9 +66,9 @@
 
       <td style="text-align:center;">24</td>
 
-      <td style="text-align:center;">11</td>
+      <td style="text-align:center;">10</td>
 
-      <td style="text-align:center;">80</td>
+      <td style="text-align:center;">79</td>
 
     </tr>
 
@@ -132,9 +132,9 @@
 
       <td style="text-align:center;">14</td>
 
-      <td style="text-align:center;">6</td>
+      <td style="text-align:center;">4</td>
 
-      <td style="text-align:center;">38</td>
+      <td style="text-align:center;">36</td>
 
     </tr>
 
@@ -265,6 +265,28 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Multiple</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
 
       <td style="text-align:center;">2</td>
 

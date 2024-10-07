@@ -1,47 +1,26 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<?php include 'html-inc/header.php'; ?>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
     <script src="/scripts/ev-headlines.js"></script>
 
     <script>hljs.highlightAll();</script>
     <style>
-        table,
-        th,
-        td {
-            border: none;
-            border-collapse: collapse;
+        .dataframe * {
+            border: none !important;
+            border-collapse: collapse !important;
         }
 
-        th,
-        td {
-            padding: 10px;
-            /* Apply padding to all table cells */
-        }
     </style>
 
 <title>Media Bias and Misinformation: Analysing Mainstream Media Headlines on Electric Vehicles</title>
-</head>
 
-<body>
-    <div class="page-container">
-        <div class="toolbar" style="width:100%; text-align:center; align-items:center">
+<body class="colorscheme-light">
+    <div class="float-container">
+        <a id="dark-mode-toggle" class="colorscheme-toggle">
+            <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+<div class="page-container">
+    <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
             <!-- JUMP TO MENU-->
             <!-- <span class="menu dropbtn" style="align-items:center;" onclick="openNav()"><i style="align-items:center" class="material-icons" style="font-size:24px; color: white">menu</i>&nbsp;Menu</span> -->
@@ -125,13 +104,16 @@
 
                 <h2>Top Ten UK Newspapers</h2>
 
-                <div class="datatable-container" >
-                <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
+<div class="dataframe" >
+<table class="dataframe" style="width:100%; margin: 0 auto; padding: 5px">
+    <thead>
     <tr>
-        <td>Publication</td>
-        <td>Print Run</td>
-        <td>Web Site Visitors</td>
+        <th>Publication</th>
+        <th>Print Run</th>
+        <th>Web Site Visitors</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td>The Sun</td>
         <td>Approximately 925,000</td>
@@ -186,10 +168,10 @@
         <td>The Spectator</td>
         <td>Around 120,000</td>
         <td>3.5 million </td>
-    </tr>
-</table></div>
-<br>
-<a href="#" class="gototop">Top</a>
+    </tr></tbody>
+</table>
+</div>
+<br><a href="#" class="gototop">Top</a>
 
 <p>These figures highlight both the print and digital influence of these newspapers, showing the evolving landscape 
     of media consumption in the UK. The data reflects a snapshot from mid-2024.</p>
@@ -202,8 +184,11 @@
     </p>
     <!-- ========================================================================================================================================= -->
     <p id="the-spectator"></p>
-        <div class="datatable-container" >
-            <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
+
+    <div class="dataframe" >
+
+
+            <table style="width:100%; margin: 0 auto; padding: 2px; ">
                 <thead>
                     <tr>
                         <th style="width:10%"><h3>Publication</h3></th>
@@ -249,11 +234,13 @@
                         <td style="background-color: #ffffff"><a href="../img/the-spectator-rating.png"><img src="../img/the-spectator-rating.png"></a>
                         </td>
                     </tr>
-                    </tbody></table></div><br><a href="#" class="gototop">Top</a>
+                    </tbody></table>
+                </div>
+                <br><a href="#" class="gototop">Top</a>
 
                     <!-- ========================================================================================================================================= -->
                     <p id="the-sun"></p>
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
             <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
                 <thead>
                     <tr>
@@ -296,11 +283,13 @@
                         <!-- EV Headlines Rating -->
                         <td style="background-color: #ffffff"><a href="../img/the-sun-rating.png"><img src="../img/the-sun-rating.png"></a></td>
                     </tr>
-                    </tbody></table></div><br><a href="#" class="gototop">Top</a>
+                    </tbody></table>
+                <!-- </div> -->
+                <br><a href="#" class="gototop">Top</a>
 
                     <!-- ========================================================================================================================================= -->
                     <p id="the-telegraph"></p>
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
             <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
                 <thead>
                     <tr>
@@ -344,11 +333,13 @@
                         </td>
                     </tr>
 
-                    </tbody></table></div><br><a href="#" class="gototop">Top</a>
+                    </tbody></table>
+                <!-- </div> -->
+                <br><a href="#" class="gototop">Top</a>
 
                     <!-- ========================================================================================================================================= -->
                     <p id="the-daily-star"></p>
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
             <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
                 <thead>
                     <tr>
@@ -392,11 +383,13 @@
                         <td style="background-color: #ffffff"><a href="../img/the-daily-star-rating.png"><img src="../img/the-daily-star-rating.png"></a>
                         </td>
                     </tr>                    
-                    </tbody></table></div><br><a href="#" class="gototop">Top</a>
+                    </tbody></table>
+                <!-- </div> -->
+                <br><a href="#" class="gototop">Top</a>
 
                     <!-- ========================================================================================================================================= -->
                     <p id="the-express"></p>
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
             <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
                 <thead>
                     <tr>
@@ -441,11 +434,13 @@
                         <td style="background-color: #ffffff"><a href="../img/express-rating.png"><img
                                     src="../img/express-rating.png"></a></td>
                     </tr>
-                    </tbody></table></div><br><a href="#" class="gototop">Top</a>
+                    </tbody></table>
+                <!-- </div> -->
+                <br><a href="#" class="gototop">Top</a>
 
                     <!-- ========================================================================================================================================= -->
                     <p id="the-times"></p>
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
             <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
                 <thead>
                     <tr>
@@ -490,11 +485,13 @@
                         <!-- EV Headlines Rating -->
                         <td><a href="../img/the-times-rating.png"><img src="../img/the-times-rating.png"></a></td>
                     </tr>
-                    </tbody></table></div><br><a href="#" class="gototop">Top</a>
+                    </tbody></table>
+                <!-- </div> -->
+                <br><a href="#" class="gototop">Top</a>
 
                     <!-- ========================================================================================================================================= -->
                     <p id="bbc"></p>
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
             <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
                 <thead>
                     <tr>
@@ -542,11 +539,13 @@
                         </td>
                     </tr>
                     <tr>
-                    </tbody></table></div><br><a href="#" class="gototop">Top</a>
+                    </tbody></table>
+                <!-- </div> -->
+                <br><a href="#" class="gototop">Top</a>
                     
                     <!-- ========================================================================================================================================= -->
                     <p id="the-daily-mail"></p>
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
             <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
                 <thead>
                     <tr>
@@ -594,11 +593,13 @@
                         </td>
                     </tr>
                   
-                    </tbody></table></div><br><a href="#" class="gototop">Top</a>
+                    </tbody></table>
+                <!-- </div> -->
+                <br><a href="#" class="gototop">Top</a>
 
                     <!-- ========================================================================================================================================= -->
                      <p id="the-economist"></p>
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
             <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
                 <thead>
                     <tr>
@@ -648,11 +649,13 @@
                             <a href="../img/the-economist-rating.png"><img src="../img/the-economist-rating.png"></a>
                         </td>
                     </tr>
-                    </tbody></table></div><br><a href="#" class="gototop">Top</a>
+                    </tbody></table>
+                <!-- </div> -->
+                <br><a href="#" class="gototop">Top</a>
 
                     <!-- ========================================================================================================================================= -->
                     <p id="the-independent"></p>
-                    <div class="datatable-container" >
+                    <!-- <div class="datatable-container" > -->
             <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
                 <thead>
                     <tr>
@@ -701,7 +704,9 @@
                             <img src="../img/the-independent-rating.png"></a></td>
                     </tr>
 
-</tbody></table></div><br><a href="#" class="gototop">Top</a>
+</tbody></table>
+<!-- </div> -->
+<br><a href="#" class="gototop">Top</a>
 
                     
 
@@ -711,7 +716,8 @@
         </div>
 
 
-        <?php include 'footer.php'; ?>
+        <?php include 'html-inc/footer.php'; ?>
+        <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script> 
 
     </div>
 </body>

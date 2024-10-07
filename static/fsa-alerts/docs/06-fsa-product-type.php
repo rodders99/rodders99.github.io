@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<?php include 'html-inc/header.php'; ?>
+<title>Food Standards Agency - Alerts Analysis - Product Type</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
-
-    <title>Food Standards Agency - Alerts Analysis</title>
-</head>
-
-<body>
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -188,7 +169,7 @@
 
 
     <h3 id="ready-meal-ready-to-eat-alert-types">Ready Meal / Ready to Eat - Safety Alert Contaminant Category Distribution</h3>
-        <div class="datatable-container" >
+        <!-- <div class="datatable-container" > -->
         <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
 
         <tr>
@@ -200,7 +181,8 @@
                 <td><a href="../img/foreign_material-type-ready-meal-ready-to-eat-pie-total.png"><img src="../img/foreign_material-type-ready-meal-ready-to-eat-pie-total.png" style="width:100%"></a></td>
              </tr>
             
-        </table></div>
+        </table>
+    <!-- </div> -->
 <br><a href="#" class="gototop">Top</a>
 
         <h2>Confectionery</h2>
@@ -214,7 +196,7 @@
                 <br><a href="#" class="gototop">Top</a>
 
             <h3 id="confectionery-alert-types">Confectionery - Safety Alert Contaminant Type Distribution</h3>
-                <div class="datatable-container" >
+                <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
                 <tr>
                     <td><a href="../img/allergen-type-confectionery-pie-total.png"><img src="../img/allergen-type-confectionery-pie-total.png" style="width:100%"></a></td>
@@ -225,7 +207,8 @@
                     <td><a href="../img/foreign_material-type-confectionery-pie-total.png"><img src="../img/foreign_material-type-confectionery-pie-total.png" style="width:100%"></a></td>
                 </tr>
                     
-                </table></div>
+                </table>
+            <!-- </div> -->
                 <br><a href="#" class="gototop">Top</a>
 
                 <h2>Sauces / Condiments</h2>
@@ -237,7 +220,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="sauces-condiments-alert-types">Sauces / Condiments - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-sauces-condiments-pie-total.png"><img src="../img/allergen-type-sauces-condiments-pie-total.png" style="width:100%"></a></td>
@@ -248,7 +231,8 @@
         <td><a href="../img/foreign_material-type-sauces-condiments-pie-total.png"><img src="../img/foreign_material-type-sauces-condiments-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
     <h2>Vegetables Processed</h2>
@@ -261,7 +245,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="vegetables-processed-alert-types">Vegetables Processed - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-vegetables-processed-pie-total.png"><img src="../img/allergen-type-vegetables-processed-pie-total.png" style="width:100%"></a></td>
@@ -272,7 +256,8 @@
         <td><a href="../img/foreign_material-type-vegetables-processed-pie-total.png"><img src="../img/foreign_material-type-vegetables-processed-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
   
     <h2>Bread / Baked Goods</h2>
@@ -285,7 +270,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="bread-baked-goods-alert-types">Bread / Baked Goods - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-bread-baked-goods-pie-total.png"><img src="../img/allergen-type-bread-baked-goods-pie-total.png" style="width:100%"></a></td>
@@ -296,7 +281,8 @@
       <!--  <td style="text-align:center">None <a href="../img/other-type-bread-baked-goods-pie-total.png"><img src="../img/other-type-bread-baked-goods-pie-total.png" style="width:100%"></a></td> -->
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -311,7 +297,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="cheese-alert-types">Cheese - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-cheese-pie-total.png"><img src="../img/allergen-type-cheese-pie-total.png" style="width:100%"></a></td>
@@ -322,7 +308,8 @@
         <td><a href="../img/foreign_material-type-cheese-pie-total.png"><img src="../img/foreign_material-type-cheese-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -335,7 +322,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="fish-processed-alert-types">Processed Fish - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-fish-processed-pie-total.png"><img src="../img/allergen-type-fish-processed-pie-total.png" style="width:100%"></a></td>
@@ -346,7 +333,8 @@
         <td><a href="../img/foreign_material-type-fish-processed-pie-total.png"><img src="../img/foreign_material-type-fish-processed-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -360,7 +348,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="pork-processed-alert-types">Processed Pork - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-pork-processed-pie-total.png"><img src="../img/allergen-type-pork-processed-pie-total.png" style="width:100%"></a></td>
@@ -371,7 +359,8 @@
         <td><a href="../img/foreign_material-type-pork-processed-pie-total.png"><img src="../img/foreign_material-type-pork-processed-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -384,7 +373,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="chicken-processed-alert-types">Processed Chicken - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-chicken-processed-pie-total.png"><img src="../img/allergen-type-chicken-processed-pie-total.png" style="width:100%"></a></td>
@@ -395,7 +384,8 @@
         <td><a href="../img/foreign_material-type-chicken-processed-pie-total.png"><img src="../img/foreign_material-type-chicken-processed-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
     <h2>Dairy</h2>
@@ -406,7 +396,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="dairy-alert-types">Dairy - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-dairy-pie-total.png"><img src="../img/allergen-type-dairy-pie-total.png" style="width:100%"></a></td>
@@ -417,7 +407,8 @@
         <td><a href="../img/foreign_material-type-dairy-pie-total.png"><img src="../img/foreign_material-type-dairy-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -430,7 +421,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="nutrition-supplements-alert-types">Nutrition Supplements - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-nutrition-supplements-pie-total.png"><img src="../img/allergen-type-nutrition-supplements-pie-total.png" style="width:100%"></a></td>
@@ -441,7 +432,8 @@
         <td><a href="../img/foreign_material-type-nutrition-supplements-pie-total.png"><img src="../img/foreign_material-type-nutrition-supplements-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -453,7 +445,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="alcohol-alert-types">Alcohol - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-alcohol-pie-total.png"><img src="../img/allergen-type-alcohol-pie-total.png" style="width:100%"></a></td>
@@ -464,7 +456,8 @@
         <td><a href="../img/foreign_material-type-alcohol-pie-total.png"><img src="../img/foreign_material-type-alcohol-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
     <h2>Sandwiches / Wraps</h2>
@@ -476,7 +469,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="sandwiches-wraps-alert-types">Sandwiches / Wraps - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-sandwiches-wraps-pie-total.png"><img src="../img/allergen-type-sandwiches-wraps-pie-total.png" style="width:100%"></a></td>
@@ -487,7 +480,8 @@
         <td><a href="../img/foreign_material-type-sandwiches-wraps-pie-total.png"><img src="../img/foreign_material-type-sandwiches-wraps-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -498,7 +492,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="nuts-seeds-alert-types">Nuts / Seeds - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-nuts-seeds-pie-total.png"><img src="../img/allergen-type-nuts-seeds-pie-total.png" style="width:100%"></a></td>
@@ -509,7 +503,8 @@
         <td><a href="../img/foreign_material-type-nuts-seeds-pie-total.png"><img src="../img/foreign_material-type-nuts-seeds-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -523,7 +518,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="baby-foods-formula-alert-types">Baby Foods / Formula - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-baby-foods-formula-pie-total.png"><img src="../img/allergen-type-baby-foods-formula-pie-total.png" style="width:100%"></a></td>
@@ -534,7 +529,8 @@
         <td><a href="../img/foreign_material-type-baby-foods-formula-pie-total.png"><img src="../img/foreign_material-type-baby-foods-formula-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -545,7 +541,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="pet-food-alert-types">Pet Foods - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/pathogen-type-pet-food-pie-total.png"><img src="../img/pathogen-type-pet-food-pie-total.png" style="width:100%"></a></td>
@@ -556,7 +552,8 @@
         <td><a href="../img/foreign_material-type-pet-food-pie-total.png"><img src="../img/foreign_material-type-pet-food-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -569,7 +566,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="herbs-spices-alert-types">Herbs / Spices - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-herbs-spices-pie-total.png"><img src="../img/allergen-type-herbs-spices-pie-total.png" style="width:100%"></a></td>
@@ -580,7 +577,8 @@
         <td><a href="../img/foreign_material-type-herbs-spices-pie-total.png"><img src="../img/foreign_material-type-herbs-spices-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
 
@@ -593,7 +591,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="beef-processed-alert-types">Processed Beef - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-beef-processed-pie-total.png"><img src="../img/allergen-type-beef-processed-pie-total.png" style="width:100%"></a></td>
@@ -604,7 +602,8 @@
         <td><a href="../img/foreign_material-type-beef-processed-pie-total.png"><img src="../img/foreign_material-type-beef-processed-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
     <h2>Cereals</h2>
@@ -617,7 +616,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="cereal-alert-types">Cereals - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-cereal-pie-total.png"><img src="../img/allergen-type-cereal-pie-total.png" style="width:100%"></a></td>
@@ -628,7 +627,8 @@
         <td><a href="../img/other-type-cereal-pie-total.png"><img src="../img/other-type-cereal-pie-total.png" style="width:100%"></a></td>
     </tr>-->
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
     <h2>Soft Drinks</h2>
@@ -639,7 +639,7 @@
     <br><a href="#" class="gototop">Top</a>
 
 <h3 id="soft-drinks-alert-types">Soft Drinks - Safety Alert Contaminant Type Distribution</h3>
-    <div class="datatable-container" >
+    <!-- <div class="datatable-container" > -->
     <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
     <tr>
         <td><a href="../img/allergen-type-soft-drinks-pie-total.png"><img src="../img/allergen-type-soft-drinks-pie-total.png" style="width:100%"></a></td>
@@ -650,13 +650,15 @@
         <td><a href="../img/foreign_material-type-soft-drinks-pie-total.png"><img src="../img/foreign_material-type-soft-drinks-pie-total.png" style="width:100%"></a></td>
     </tr>
         
-    </table></div>
+    </table>
+<!-- </div> -->
     <br><a href="#" class="gototop">Top</a>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'html-inc/footer.php'; ?>
 
 </div>
 
+<script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 
 </body>
 </html>

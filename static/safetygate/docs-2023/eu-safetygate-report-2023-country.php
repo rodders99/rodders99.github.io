@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-<meta charset="utf-8" /> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="color-scheme" content="dark">
-<!-- <link rel="stylesheet" href="/css/coder-dark.css" media="screen"> -->
-<!-- <link rel="stylesheet" type="text/css" href="/css/coder.css"> -->
-<link rel="stylesheet" type="text/css" href="/css/custom.css">
-<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" type="text/css" href="/css/project-style.css">
+<?php include 'html-inc/header.php'; ?>
+<title>EU Safety Report 2023 - Compare Countries</title>
 
-<title>eu-safetygate-report-2023</title>
+<style>
+.no-border * {
+    border: none !important;
+}
+</style>
 
-</head>
-
-<body>
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
 
 <!-- NAVIGATION MENU-->
 
@@ -85,7 +81,7 @@
 
 <h3 id="percent">Total Safety Alerts Vs RoW</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" >
   <tbody> 
     <tr>
@@ -110,7 +106,7 @@
 
 <h3 id="annual">Annual, Cumulative and Year on Year change</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr><th style="text-align:center;">Annual and Cumulative</th>
@@ -132,7 +128,7 @@
 
 <h3 class="ChangeCountry" id="top3s">Top3 Product Category and Risk</h3>
 
-<div class="datatable-container" id="Countrytop3">
+<div class="no-border" id="Countrytop3">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -151,7 +147,7 @@
 <h2 id="category">Product Category</h2>
 <h3 class="ChangeCountry" >Product Category - Percentage of Total</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -173,7 +169,7 @@
 
 <h3 >Product Category - Annual, Cumulative and Year on Year change</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
 
     <tr>
@@ -196,7 +192,7 @@
 <h2 id="risk">Risk Category</h2>
 <h3 >Risk Category - Percentage by Type</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -218,7 +214,7 @@
 
 <h3 >Risk Category - Annual, Cumulative and Year on Year change</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
 
     <tr>
@@ -241,7 +237,7 @@
 <h2 id="counterfeit">Counterfeit</h2>
 <h3 >Counterfeit - Percentage by Type</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -263,7 +259,7 @@
 
 <h3 >Counterfeit - Annual, Cumulative and Year on Year change</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
 
     <tr>
@@ -286,7 +282,7 @@
 <h2 id="action_responsible">Action Required / Responsible Party</h2>
 <h3 >Compulsory / Voluntary - Action Required / Responsible Party</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -333,7 +329,7 @@
 <h2 id="submitting">Submitting Country</h2>
 <h3 >Submitting Country - Percentage by Country</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
   <tbody> 
     <tr>
@@ -359,7 +355,7 @@
 
 <h3 >Submitting Country - Annual, Cumulative and Year on Year change</h3>
 
-<div class="datatable-container">
+<div class="no-border">
   <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
     <tr>
       <th style="text-align:center;">Annual Count</th>
@@ -385,7 +381,7 @@
 <h2 class="product_cat0" id="top1_">#1 - Product Category</h1>
 <h3 class="product_cat0" id="top1_percent">Product Category - Percentage of Total</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-0-percentage">
         <tbody> 
         <tr>
@@ -405,7 +401,7 @@
 <br><a href="#" class="gototop">Go to Top</a>
 
 <h3 class="product_cat0" id="top1_annual">Product Category - Annual, Cumulative and Year on Year change </h3>
-  <div class="datatable-container">
+  <div class="no-border">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
       <tr>
@@ -430,7 +426,7 @@
 
 <h3  class="product_cat0">Risk Category - Percentage by Type</h3>
     
-    <div class="datatable-container">
+    <div class="no-border">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody> 
         <tr>
@@ -451,7 +447,7 @@
     <br><a href="#" class="gototop">Go to Top</a>
 
 <h3 class="product_cat0">Risk Category - Annual, Cumulative and Year on Year change</h3>
-  <div class="datatable-container">
+  <div class="no-border">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tr>
             <th style="text-align:center;">Annual Total</th>
@@ -475,7 +471,7 @@
 <h3 class="product_cat0">Counterfeit - Percentage by Type</h3>
 
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr>
@@ -498,7 +494,7 @@
 
 <h3  class="product_cat0">Counterfeit - Annual, Cumulative and Year on Year change</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tr>
           <th style="text-align:center;">Annual Total</th>
@@ -520,7 +516,7 @@
     <h2  id="top1_action_responsible">#1 - Action Required / Responsible Party</h2>
 <h3  class="product_cat0" >Compulsory / Voluntary - Action Required / Responsible Party</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr>
@@ -569,7 +565,7 @@
 
 <h3  class="product_cat0">Submitting Country - Percentage by Country</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody> 
         <tr>
@@ -592,7 +588,7 @@
     
     <h3  class="product_cat0" >Submitting Country - Annual, Cumulative and Year on Year change</h3>
     
-        <div class="datatable-container">
+        <div class="no-border">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
                 
         <tr>
@@ -617,7 +613,7 @@
         <h2  id="top1_brands">#1 - Top Brands</h2>
 
 <h3  class="product_cat0" >Top Brands for Safety Alerts</h3>
-    <div class="datatable-container">
+    <div class="no-border">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-0-top-brands">
     <tbody> 
     <tr >
@@ -639,7 +635,7 @@
 
 <h3 class="product_cat1" id="top2_percent">Product Category - Percentage of Total</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-1-percentage">
         <tbody> 
         <tr>
@@ -659,7 +655,7 @@
 </div>
 
 <h3 class="product_cat1" id="top2_annual">Product Category - Annual, Cumulative and Year on Year change </h3>
-  <div class="datatable-container">
+  <div class="no-border">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
       <tr>
@@ -684,7 +680,7 @@
 
 <h3  class="product_cat1">Risk Category - Percentage by Type</h3>
     
-    <div class="datatable-container">
+    <div class="no-border">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody> 
         <tr>
@@ -705,7 +701,7 @@
     </div>
 
 <h3 class="product_cat1">Risk Category - Annual, Cumulative and Year on Year change</h3>
-  <div class="datatable-container">
+  <div class="no-border">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tr>
             <th style="text-align:center;">Annual Total</th>
@@ -730,7 +726,7 @@
 <h3 class="product_cat1">Counterfeit - Percentage by Type</h3>
 
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr>
@@ -752,7 +748,7 @@
 
 <h3  class="product_cat1">Counterfeit - Annual, Cumulative and Year on Year change</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tr>
           <th style="text-align:center;">Annual Total</th>
@@ -775,7 +771,7 @@
 
 <h3  class="product_cat1" >Voluntary / Compulsory Action Required / Responsible Party</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr id="product-cat-1-action-required-responsible-party-2022vs2023">
@@ -824,7 +820,7 @@
 
 <h3  class="product_cat1">Submitting Country - Percentage by Country</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody> 
         <tr>
@@ -847,7 +843,7 @@
     
     <h3  class="product_cat1" >Submitting Country - Annual, Cumulative and Year on Year change</h3>
     
-        <div class="datatable-container">
+        <div class="no-border">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
                 
         <tr>
@@ -873,7 +869,7 @@
 
 
 <h3  class="product_cat1" >Top Brands for Safety Alerts</h3>
-    <div class="datatable-container">
+    <div class="no-border">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-1-top-brands">
     <tbody> 
     <tr >
@@ -899,7 +895,7 @@
 
 <h3 class="product_cat2" id="top3_percent">Product Category - Percentage of Total</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-2-percentage">
         <tbody> 
         <tr>
@@ -919,7 +915,7 @@
 </div>
 
 <h3 class="product_cat2" id="top3_annual">Product Category - Annual, Cumulative and Year on Year change </h3>
-  <div class="datatable-container">
+  <div class="no-border">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
       <tr>
@@ -943,7 +939,7 @@
     <h2  id="top3_risk">#3 - Risk Category</h2>
 <h3  class="product_cat2">Risk Category - Percentage by Type</h3>
     
-    <div class="datatable-container">
+    <div class="no-border">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody> 
         <tr>
@@ -965,7 +961,7 @@
 
 
 <h3 class="product_cat2">Risk Category - Annual, Cumulative and Year on Year change</h3>
-  <div class="datatable-container">
+  <div class="no-border">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tr>
             <th style="text-align:center;">Annual Total</th>
@@ -991,7 +987,7 @@
 <h3 class="product_cat2">Counterfeit - Percentage by Type</h3>
 
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr>
@@ -1013,7 +1009,7 @@
 
 <h3  class="product_cat2">Counterfeit - Annual, Cumulative and Year on Year change</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tr>
           <th style="text-align:center;">Annual Total</th>
@@ -1036,7 +1032,7 @@
 
 <h3  class="product_cat2" >Voluntary / Compulsory Action Required / Responsible Party</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
       <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
       <tbody> 
         <tr id="product-cat-2-action-required-responsible-party-2022vs2023">
@@ -1085,7 +1081,7 @@
 
 <h3 class="product_cat2">#3 - Submitting Country - Percentage by Country</h3>
 
-    <div class="datatable-container">
+    <div class="no-border">
         <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
         <tbody> 
         <tr>
@@ -1108,7 +1104,7 @@
     
     <h3  class="product_cat2" >#3 - Submitting Country - Annual, Cumulative and Year on Year change</h3>
     
-        <div class="datatable-container">
+        <div class="no-border">
           <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto">
                 
         <tr>
@@ -1130,7 +1126,7 @@
         </div>
 
 <h3  class="product_cat2"  id="top3_brands">#3 - Top Brands for Safety Alerts</h3>
-    <div class="datatable-container">
+    <div class="no-border">
     <table class="datatable" style="margin-right:auto;margin-left:0px; width:auto" id="product-cat-2-top-brands">
     <tbody> 
     <tr >
@@ -1460,7 +1456,8 @@
 
 </script>
 
-
+<?php include 'html-inc/footer.php'; ?>
+    <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 
 </body>
 

@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
+<?php include 'html-inc/header.php'; ?>
+   
 
     <script src="/scripts/ev-headlines.js"></script>
 
@@ -28,7 +8,13 @@
     <title>Media Bias and Misinformation: Analysing Mainstream Media Headlines on Electric Vehicles</title>
 </head>
 
-<body>
+<body class="colorscheme-light">
+    <div class="float-container">
+        <a id="dark-mode-toggle" class="colorscheme-toggle">
+            <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>
+
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -88,17 +74,11 @@
 <h2 id="source-meta">Source Meta Data</h2>
 
 The Web scrape operation stored results as a CSV, with each row as an observation.
-<div class="datatable-container" id="html_table-source-meta-data-feature-engineering">
+<!-- <div class="datatable-container" id="html_table-source-meta-data-feature-engineering"> -->
 
 <table class="dataframe datatable" style="width:80%; margin: 0 auto;">
   <thead>
-    <th>
-        <td colspan=3>
-            <p>&lt;class 'pandas.core.frame.DataFrame'&gt;<br>
-                RangeIndex: 1,976,938 entries, 0 to 1,976,937<br>
-                Data columns (total 10 columns):</p>
-        </td>
-    </th>
+
     <tr style="text-align: right;">
       <th></th>
       <th>Column</th>
@@ -108,27 +88,19 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
   </thead>
   <tbody>
     <tr>
-    <tr>
-        <td><hr></td>
-        <td><hr></td>
-        <td><hr></td>
-        <td><hr></td>
-    </tr>
-    </tr>
-    <tr>
-      <th>1</th>
+      <td>1</td>
       <td>Date</td>
       <td>datetime64[ns]</td>
       <td>Date / Time the scrape operation took place</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>Publication</td>
       <td>object</td>
       <td>The web site / newspaper</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>Headline</td>
       <td>object</td>
       <td>The Text of the headline</td>
@@ -136,7 +108,7 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
     
   </tbody>
 </table>
-</div>
+<!-- </div> -->
 <br><a href="#" class="gototop">Top</a>
 <h3 id="duplicates">Duplicates</h3>
 
@@ -152,17 +124,10 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
     engineered fields are snake case.</p>
 
 
-<div class="datatable-container" id="html_table-source-meta-data-feature-engineering">
+<!-- <div class="datatable-container" id="html_table-source-meta-data-feature-engineering"> -->
 
 <table class="dataframe datatable" style="width:80%; margin: 0 auto;">
   <thead>
-    <th>
-        <td colspan=3>
-            <p>&lt;class 'pandas.core.frame.DataFrame'&gt;<br>
-                RangeIndex: 1,976,938 entries, 0 to 1,976,937<br>
-                Data columns (total 11 columns):</p>
-        </td>
-    </th>
     <tr style="text-align: right;">
       <th></th>
       <th>Column</th>
@@ -171,92 +136,85 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
     </tr>
   </thead>
   <tbody>
+
     <tr>
-    <tr>
-        <td><hr></td>
-        <td><hr></td>
-        <td><hr></td>
-        <td><hr></td>
-    </tr>
-    </tr>
-    <tr>
-      <th>1</th>
+      <td>1</td>
       <th>Date</th>
       <th>datetime64[ns]</th>
       <th>Date / Time the scrape operation took place</th>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>Publication</td>
       <td>object</td>
       <td>The web site / newspaper</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>Headline</td>
       <td>object</td>
       <td>The Text of the headline</td>
     </tr>
 <tr>
-      <th>4</th>
+      <td>4</td>
       <td>time</td>
       <td>object</td>
       <td>Engineered field from Date field</td>
     </tr>
     <tr>
-      <th>5</th>
+      <td>5</td>
       <td>month</td>
       <td>object</td>
       <td>Engineered field from Date field</td>
     </tr>
     <tr>
-      <th>6</th>
+      <td>6</td>
       <td>month_num</td>
       <td>int32</td>
       <td>Engineered field from Date field</td>
     </tr>
     <tr>
-      <th>7</th>
+      <td>7</td>
       <td>day_of_week</td>
       <td>object</td>
       <td>Engineered field from Date field</td>
     </tr>
     <tr>
-      <th>8</th>
+      <td>8</td>
       <td>day_num</td>
       <td>int32</td>
       <td>Engineered field from Date field</td>
     </tr>
     <tr>
-      <th>9</th>
+      <td>9</td>
       <td>date_str</td>
       <td>object</td>
       <td>Engineered field from Date field</td>
     </tr>
     <tr>
-      <th>10</th>
+      <td>10</td>
       <td>combi</td>
       <td>object</td>
       <td>Combined publication field and title field</td>
     </tr>
     <tr>
-      <th>11</th>
+      <td>11</td>
       <td>datetime64[ns](1),</td>
       <td>int32(2),</td>
       <td>Engineered field from Data field</td>
     </tr>
     <tr>
-      <th>12</th>
+      <td>12</td>
       <td>usage:</td>
       <td>135.7+ MB</td>
     </tr>
   </tbody>
 </table>
-</div>
+<!-- </div> -->
 <br><a href="#" class="gototop">Top</a>
 <h3 id="additional-engineering">Additional engineering</h3>
 <p>The publication field was a short form field added during the web scrape operation. This was expanded to the full Publication/Web Site title.</p>
-<div class="datatable-container" id="html_table-source-meta-data-feature-engineering">
+<!-- <div class="datatable-container" id="html_table-source-meta-data-feature-engineering"> -->
 
 <table class="dataframe datatable" style="width:80%; margin: 0 auto;">
 <thead>
@@ -264,11 +222,7 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
         <th>Short Code</th>
         <th>Full Publication Title</th>
     </tr>
-    <tr>
-        <td><hr></td>
-        <td><hr></td>
-        
-    </tr>
+
 </thead>
 <tbody>
 <tr>
@@ -312,13 +266,14 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
 <td>"Express"</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<!-- </div> -->
 <br><a href="#" class="gototop">Top</a>
 <h2 id="filtered-datasets">Filtered Data Sets</h2>
 
 <p>Additional datasets were created and filtered to create datasets for further analysis.</p>
 
-<div class="datatable-container" id="html_table-source-meta-data-feature-engineering">
+<!-- <div class="datatable-container" id="html_table-source-meta-data-feature-engineering"> -->
 
 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">    
     <thead>
@@ -327,11 +282,7 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
         <th>Contents</th>
         <th style="width:10%; text-align:right"># Rows</th>
     </tr>
-    <tr>
-        <td><hr></td>
-        <td><hr></td>
-        <td><hr></td>
-    </tr>
+
     </thead>
     <tbody>
     <tr>
@@ -376,7 +327,7 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
     </tr>
     </tbody> 
 </table>
-</div>
+<!-- </div> -->
 <br><a href="#" class="gototop">Top</a>
 
 <h2 id="sentiment-dataset">Sentiment Analysis Data Set</h2>
@@ -392,7 +343,7 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
 
 
 
-<div class="datatable-container" id="html_table-source-meta-data-feature-engineering">
+<!-- <div class="datatable-container" id="html_table-source-meta-data-feature-engineering"> -->
 <table class="dataframe datatable" style="width:100%; margin: 0 auto; padding: 5px">
   <tr><td style="background-color: blue; width: 20%; text-align: center"><b>Positive</b></td>
   <td style="background-color: blue; vertical-align: middle"><p><br>The headline was viewed as positive towards Electric Vehicles.</p><br></td>
@@ -407,14 +358,15 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
             Electric Vehicles, then it is classified as negative</td>
 </tr>
 
-</table></div>
+</table>
+<!-- </div> -->
 
 
 <h3 id="example-sentiment-analysis">Examples of the Sentiment Analysis results</h3>
 
 
 
-<div class="datatable-container" id="html_table-source-meta-data-feature-engineering">
+<!-- <div class="datatable-container" id="html_table-source-meta-data-feature-engineering"> -->
 <table class="dataframe datatable" style="width:100%; margin: 0 auto;">
 <thead>
 <tr>
@@ -460,8 +412,9 @@ The Web scrape operation stored results as a CSV, with each row as an observatio
 </tr>
 </tbody>
 </table>
-</div>
+<!-- </div> -->
 <br><a href="#" class="gototop">Top</a>
-<?php include 'footer.php'; ?>
+<?php include 'html-inc/footer.php'; ?>
+<script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script> 
 
 </div></body></html>

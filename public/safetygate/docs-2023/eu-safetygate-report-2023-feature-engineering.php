@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-<meta charset="utf-8" /> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="color-scheme" content="dark">
+<?php include 'html-inc/header.php'; ?>
+
+<style>
+.no-border * {
+    border: none !important;
+}
+</style>
+<title>EU Safety Report Feature Engineering</title>
+
+<body class="colorscheme-light">
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a></div>
 
 
-<link rel="stylesheet" type="text/css" href="/css/custom.css">
-<link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-<title>eu-safetygate-report-2023</title>
-
-</head>
-
-<body>
 <!-- NAVIGATION MENU-->
 
 
@@ -41,7 +39,7 @@
   
   <p>Clean up mistyped accent characters, inconsistent punctuation, rename single use of country names, rename long country names to shorter versions to improve visualisation readability. </p>
 
-  <div class="datatable-container">
+  <div class="no-border">
     <table class="datatable" style="margin-right: auto; margin-left:0px">        <thead>
     <thead>
     <tr>
@@ -104,7 +102,7 @@
   
   <h3>Feature Engineer - <code>Economic Area</code></h3>
   
-<div class="datatable-container">
+<div class="no-border">
 <table class="datatable" style="margin-right: auto; margin-left:0px">        <thead>
 <tr>
 <th style="text-align:left; width:15%"></th>
@@ -270,7 +268,7 @@
 
 After  <code>Risk type</code> field is feature engineered to <code>risk_category</code>, the result is 14 risk categories
 
-<div class="datatable-container">
+<div class="no-border">
     <table class="datatable" style="margin-left:0px">
     <thead>
     <tr>
@@ -357,7 +355,7 @@ There are two product category fields:
 <ul><li>13 <code>product_category</code> values (12 x named + other)</li></ul>
 
 <h3>After mapping:</h3>
-<div class="datatable-container">
+<div class="no-border">
     <table class="datatable" style="margin-left:0px">
     <thead>
     <tr>
@@ -432,7 +430,7 @@ There are two product category fields:
 
 There are 111 countries of origin, the top 15 of these represent > 90% of the total alerts. Countries outside of the top 15 were aggregated under <b>'other'</b>.
 
-<div class="datatable-container">
+<div class="no-border">
     <table class="datatable" style="margin-left:0px">
     <thead>
     <tr>
@@ -565,7 +563,7 @@ There are 111 countries of origin, the top 15 of these represent > 90% of the to
 
     <h2>{compulsory_xxxx} or {voluntary_xxxxx} mapping</h2>
     <br>
-    <div class="datatable-container">
+    <div class="no-border">
         <table class="datatable" style="margin-left:0px">
         <thead>
         <tr>
@@ -628,7 +626,7 @@ There are 111 countries of origin, the top 15 of these represent > 90% of the to
 <p>Since multiple values can exist in each field, the order is relevant, we want to indicate severity and the simple contains search will match any instance, therefore, 
 most import is the last search since it will overwrite previous matches</p>
 
-<div class="datatable-container">
+<div class="no-border">
     <table class="datatable" style="margin-left:0px">
 <thead>
 <tr>
@@ -695,7 +693,7 @@ most import is the last search since it will overwrite previous matches</p>
 <br>
 <h3>Result of mappings action required</h3>
 
-<div class="datatable-container">
+<div class="no-border">
     <table class="datatable" style="margin-left:0px">
         <thead>
             <tr>
@@ -765,7 +763,7 @@ most import is the last search since it will overwrite previous matches</p>
 <h3>Result of mappings responsible party</h3>
 
 
-<div class="datatable-container">
+<div class="no-border">
     <table class="datatable" style="margin-left:0px">    
         <thead>
             <tr>
@@ -830,6 +828,8 @@ the creative commons license applies this work hosted on <a href="https://rodder
 
 </div>
 <script src="../../scripts/projects.js"> </script>
+<?php include 'html-inc/footer.php'; ?>
+<script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script>
 
 
 
@@ -1139,7 +1139,6 @@ the creative commons license applies this work hosted on <a href="https://rodder
         theme: 'tomato', allowHTML: true,});
 
   </script>
-
 
 
   

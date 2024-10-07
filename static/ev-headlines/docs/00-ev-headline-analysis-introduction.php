@@ -1,33 +1,18 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<?php include 'html-inc/header.php'; ?>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="color-scheme" content="dark">
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://rodders.me/css/custom.css"> -->
-    <link rel="stylesheet" type="text/css" href="/css/custom-menu2.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="/css/project-style.css">
-
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-    <script>hljs.highlightAll();</script>
-    <script src="/scripts/ev-headlines.js"></script>
-    <style>ol.c {list-style-type: decimal;}</style>
 
 
     <title>Media Bias and Misinformation: Analysing Mainstream Media Headlines on Electric Vehicles</title>
-</head>
 
-<body>
+
+    <body class="colorscheme-light">
+
+
+    <div class="float-container">
+        <a id="dark-mode-toggle" class="colorscheme-toggle">
+            <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+    </div>    
     <div class="page-container">
         <div class="toolbar" style="width:100%; text-align:center; align-items:center">
 
@@ -85,8 +70,8 @@
         <p>A study by Dr. Robert Cialdini (1993) found that using emotional headlines can significantly impact public perception. He demonstrated that emotionally charged 
             headlines can increase people's willingness to take action.</p>
 
-            <div class="blockquote-wrapper">
-            <div class="blockquote">
+            <div class="block_quote-wrapper">
+            <div class="block_quote">
                 <h1>
                 The most effective appeals are those that tap into the 
                 <span style="color:#ffffff">deep-seated emotions</span> of the audience.
@@ -111,8 +96,8 @@
     <p>A study by Dr. Philip E. Tetlock (1985) explored how connotative headlines can influence public perception. He found that using connotative language in 
         headlines can shape people's attitudes and beliefs.</p>
 
-        <div class="blockquote-wrapper">
-            <div class="blockquote">
+        <div class="block_quote-wrapper">
+            <div class="block_quote">
                 <h1>
                 The power of words is not just a metaphor; 
                 <span style="color:#ffffff">it's a reality</span>.
@@ -229,7 +214,7 @@
 
                 <p>Observations collected for each publication</p>
 
-                <div class="datatable-container" >
+                <!-- <div class="datatable-container" > -->
                 <table class="dataframe datatable" style="width:80%; margin: 0 auto;">
                 <thead>
                 <tr style="text-align: right;">
@@ -253,7 +238,7 @@
             </thead>
             <tbody>
                 <tr style="text-align:center">
-                <th>BBC</th>
+                <td>BBC</td>
                 <td style="text-align:center; ">6,386</td>
                 <td style="text-align:center; ">10,066</td>
                 <td style="text-align:center; ">10,416</td>
@@ -262,7 +247,7 @@
                 <td style="text-align:center; ">9,138</td>
                 </tr>
                 <tr style="text-align:center">
-                <th>Express</th>
+                <td>Express</td>
                 <td style="text-align:center; ">4,670</td>
                 <td style="text-align:center; ">7,200</td>
                 <td style="text-align:center; ">7,450</td>
@@ -271,7 +256,7 @@
                 <td style="text-align:center; ">0</td>
                 </tr>
                 <tr style="text-align:center">
-                <th>The Daily Mail</th>
+                <td>The Daily Mail</td>
                 <td style="text-align:center; ">115,460</td>
                 <td style="text-align:center; ">173,243</td>
                 <td style="text-align:center; ">174,171</td>
@@ -280,7 +265,7 @@
                 <td style="text-align:center; ">119,457</td>
                 </tr>
                 <tr style="text-align:center">
-                <th>The Daily Star</th>
+                <td>The Daily Star</td>
                 <td style="text-align:center; ">18,056</td>
                 <td style="text-align:center; ">27,862</td>
                 <td style="text-align:center; ">28,807</td>
@@ -289,7 +274,7 @@
                 <td style="text-align:center; ">25,218</td>
                 </tr>
                 <tr style="text-align:center">
-                <th>The Economist</th>
+                <td>The Economist</td>
                 <td style="text-align:center; ">4,848</td>
                 <td style="text-align:center; ">7,200</td>
                 <td style="text-align:center; ">7,450</td>
@@ -298,7 +283,7 @@
                 <td style="text-align:center; ">6,520</td>
                 </tr>
                 <tr style="text-align:center">
-                <th>The Independent</th>
+                <td>The Independent</td>
                 <td style="text-align:center; ">45,970</td>
                 <td style="text-align:center; ">73,236</td>
                 <td style="text-align:center; ">74,388</td>
@@ -307,7 +292,7 @@
                 <td style="text-align:center; ">72,372</td>
                 </tr>
                 <tr style="text-align:center">
-                <th>The Spectator</th>
+                <td>The Spectator</td>
                 <td style="text-align:center; ">18,660</td>
                 <td style="text-align:center; ">28,760</td>
                 <td style="text-align:center; ">29,780</td>
@@ -316,7 +301,7 @@
                 <td style="text-align:center; ">26,080</td>
                 </tr>
                 <tr style="text-align:center">
-                <th>The Sun</th>
+                <td>The Sun</td>
                 <td style="text-align:center; ">5,604</td>
                 <td style="text-align:center; ">8,730</td>
                 <td style="text-align:center; ">8,904</td>
@@ -325,7 +310,7 @@
                 <td style="text-align:center; ">7,812</td>
                 </tr>
                 <tr style="text-align:center">
-                <th>The Telegraph</th>
+                <td>The Telegraph</td>
                 <td style="text-align:center; ">18,174</td>
                 <td style="text-align:center; ">28,002</td>
                 <td style="text-align:center; ">29,016</td>
@@ -334,7 +319,7 @@
                 <td style="text-align:center; ">25,424</td>
                 </tr>
                 <tr style="text-align:center">
-                <th>The Times</th>
+                <td>The Times</td>
                 <td style="text-align:center; ">4,670</td>
                 <td style="text-align:center; ">7,200</td>
                 <td style="text-align:center; ">7,440</td>
@@ -343,7 +328,8 @@
                 <td style="text-align:center; ">6,530</td>
                 </tr>
             </tbody>
-            </table></div>
+            </table>
+        <!-- </div> -->
 
 
             <br><a href="#" class="gototop">Top</a>
@@ -404,7 +390,7 @@
 
     <h2 id=sentiment-results>Results of Sentiment Analysis</h2>                    
     <p>Unique Headlines were used as the source, this was filtered to the EV terms : "Charger", "Charging", "EV", "Electric Vehicle", "Electric Car", before processing. </p>
-    <div class="datatable-container" id="all-headlines-count-by-publication">
+    <!-- <div class="datatable-container" id="all-headlines-count-by-publication"> -->
     <table class="dataframe datatable" style="width:80%; margin: 0 auto;"> 
   <thead>
     <tr style="text-align: right;">
@@ -416,31 +402,32 @@
   </thead>
   <tbody>
     <tr>
-      <th>hand tuned</th>
+      <td>hand tuned</td>
       <td>57%</td>
       <td>9%</td>
       <td>34%</td>
     </tr>
     <tr>
-      <th>Llama</th>
+      <td>Llama</td>
       <td>51%</td>
       <td>28%</td>
       <td>21%</td>
     </tr>
     <tr>
-      <th>ChatGPT</th>
+      <td>ChatGPT</td>
       <td>18%</td>
       <td>75%</td>
       <td>7%</td>
     </tr>
     <tr>
-      <th>TextBlob</th>
+      <td>TextBlob</td>
       <td>28%</td>
       <td>34%</td>
       <td>38%</td>
     </tr>
   </tbody>
-</table></div>
+</table>
+<!-- </div> -->
 <br>
             <p>In using the "human judgement" approach, I've taken a closer look at each individual headline and provided a subjective rating 
                 (positive, neutral, or negative) based on my understanding and interpretation. This is a labour-intensive process that requires 
@@ -465,7 +452,10 @@
 
             <br><a href="#" class="gototop">Top</a>
 
-            <?php include 'footer.php'; ?>
+            <?php include 'html-inc/footer.php'; ?>
+            <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script> 
 
     </div>
+
+
 </body>

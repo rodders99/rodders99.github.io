@@ -6,11 +6,11 @@
     <description>Recent content in pandas on Rodders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Sep 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Aug 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Food Standards Agency Alerts Analysis</title>
       <link>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</link>
-      <pubDate>Sun, 29 Sep 2024 09:15:27 +0000</pubDate>
+      <pubDate>Mon, 12 Aug 2024 09:15:27 +0000</pubDate>
       
       <guid>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</guid>
       <description>Analysis of Food Standards Agency Alerts Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Meta Data Feature Engineering Abstract Link to heading This report presents a comprehensive review of the food safety alerts issued by the UK Food Standards Agency. The analysis provides insights into the frequency, types, and relevant information about each alert, covering an eight year period.</description>
@@ -32,7 +32,7 @@ The Sun The Express The Times The Telegraph Daily Mail Economist The BBC The Ind
       <pubDate>Sat, 02 Mar 2024 09:15:27 +0000</pubDate>
       
       <guid>https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/</guid>
-      <description>Last Updated Latest Week 26/09/2024 week 39 The EU Safety Gate project Link to heading About this Project Link to heading I first encountered the EU Safety Gate in my previous role.
+      <description>Last Updated Latest Week 26/08/2024 week 34 The EU Safety Gate project Link to heading About this Project Link to heading I first encountered the EU Safety Gate in my previous role.
 Since 2003, the Safety Gate has enabled a quick exchange of information among EU/EEA Member States and the European Commission about dangerous non-food products posing a risk to the health and safety of consumers. Appropriate follow-up has to be taken by the national authorities so that the notified dangerous products are removed from the market.</description>
     </item>
     
