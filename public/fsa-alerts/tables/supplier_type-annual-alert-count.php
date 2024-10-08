@@ -168,9 +168,9 @@
 
       <td style="text-align:center;">81</td>
 
-      <td style="text-align:center;">339</td>
+      <td style="text-align:center;">340</td>
 
-      <td style="text-align:center;">810</td>
+      <td style="text-align:center;">811</td>
 
     </tr>
 
@@ -224,9 +224,9 @@
 
       <td style="text-align:center;">79</td>
 
-      <td style="text-align:center;">38</td>
+      <td style="text-align:center;">39</td>
 
-      <td style="text-align:center;">301</td>
+      <td style="text-align:center;">302</td>
 
     </tr>
 

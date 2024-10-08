@@ -66,9 +66,9 @@
 
       <td style="text-align:center;">24</td>
 
-      <td style="text-align:center;">10</td>
+      <td style="text-align:center;">11</td>
 
-      <td style="text-align:center;">79</td>
+      <td style="text-align:center;">80</td>
 
     </tr>
 

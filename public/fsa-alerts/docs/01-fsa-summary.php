@@ -94,7 +94,7 @@
         <div style="width:100%;" >
         <table class="" >
             <tr>
-                <td><a href="../img/product_category-total.png">
+                <td><a href="../img/product_category-total-hbar.png">
                 <img src="../img/product_category-total-hbar.png" ></a></td>
                 <td><a href="../img/product_type-total-hbar.png">
                 <img src="../img/product_type-total-hbar.png" ></a></td>
@@ -116,7 +116,8 @@
         
         <p>Which contaminants are most often found in which product category.</p>
         
-        <a href="../img/product_category-contaminant_category.png"><img src="../img/product_category-contaminant_category.png" style="width:75%"></a>
+        <a href="../img/product_category-contaminant_category.png">
+            <img src="../img/product_category-contaminant_category.png" style="width:75%"></a>
         
         
         <h2 id="contaminant-food-type">Product TYPE Contaminants</h2>
@@ -153,7 +154,8 @@
         </table></div>
         <br><a href="#" class="gototop">Top</a><p></p>
         
-        <a href="../img/product_type-contaminant_category.png"><img src="../img/product_type-contaminant_category.png" style="width:75%"></a>
+        <a href="../img/product_type-contaminant_category.png">
+            <img src="../img/product_type-contaminant_category.png" style="width:75%"></a>
         <br><a href="#" class="gototop">Top</a>
         <h2 id="confectionery-ready-meals">Confectionery and Ready Meals / Ready to eat foods : Factors contributing to Food Safety alerts</h2>
         
