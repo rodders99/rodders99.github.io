@@ -52,9 +52,9 @@
 
       <td style="text-align:center;">4</td>
 
-      <td style="text-align:center;">5</td>
+      <td style="text-align:center;">6</td>
 
-      <td style="text-align:center;">81</td>
+      <td style="text-align:center;">82</td>
 
     </tr>
 

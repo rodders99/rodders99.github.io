@@ -270,32 +270,6 @@
 
 
 
-      <td style="text-align:center;">Aluminium Phosphide</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
       <td style="text-align:center;">Apple Stalks</td>
 
       <td style="text-align:center;">0</td>
@@ -322,7 +296,59 @@
 
 
 
+      <td style="text-align:center;">Hard Lumps</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
       <td style="text-align:center;">Bits of Glue</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Cloth</td>
 
       <td style="text-align:center;">0</td>
 
@@ -374,84 +400,6 @@
 
 
 
-      <td style="text-align:center;">Cloth</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Hard Lumps</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Silica Beads</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
       <td style="text-align:center;">Sharp Stick</td>
 
       <td style="text-align:center;">0</td>
@@ -478,19 +426,19 @@
 
 
 
-      <td style="text-align:center;">Undeclared levels of xxx</td>
+      <td style="text-align:center;">Silica Beads</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 

@@ -86,7 +86,7 @@
 
         <h2>Quick Note : </h2>
         <p>The number of products for which alerts are issued reported here, is a lot lower than reality. Prior to July 2024, 
-            only products mentioned in the search results alert title and sub text are included. Post July 2024, these are being manually added.</p>
+            only products mentioned in the search results alert title and sub text are included. Post July 2024, these are now being scraped.</p>
 
         <h2 id="category-contamination">Product Categories most often contaminated</h2>
 

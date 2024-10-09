@@ -296,6 +296,32 @@
 
 
 
+      <td style="text-align:center;">Fermentation in bottle</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+    </tr>
+
+    <tr>
+
+
+
       <td style="text-align:center;">High Caffeine Levels</td>
 
       <td style="text-align:center;">0</td>
@@ -322,15 +348,15 @@
 
 
 
-      <td style="text-align:center;">Fermentation in bottle</td>
+      <td style="text-align:center;">Sterilisation Insufficient</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">2</td>
+      <td style="text-align:center;">1</td>
 
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
 
@@ -374,7 +400,17 @@
 
 
 
-      <td style="text-align:center;">Sterilisation Insufficient</td>
+      <td style="text-align:center;">Hydrogen Cyanide</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -384,7 +420,17 @@
 
       <td style="text-align:center;">1</td>
 
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">High pH Levels</td>
+
       <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
 
@@ -392,7 +438,39 @@
 
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">2</td>
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">High Selenium Levels</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
 
     </tr>
 
@@ -504,32 +582,6 @@
 
 
 
-      <td style="text-align:center;">Burn Risk</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
       <td style="text-align:center;">Curdling</td>
 
       <td style="text-align:center;">0</td>
@@ -556,39 +608,13 @@
 
 
 
-      <td style="text-align:center;">High pH Levels</td>
-
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">Aluminium Phosphide</td>
 
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">High Selenium Levels</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
 
@@ -608,7 +634,7 @@
 
 
 
-      <td style="text-align:center;">Hydrogen Cyanide</td>
+      <td style="text-align:center;">Burn Risk</td>
 
       <td style="text-align:center;">0</td>
 
@@ -686,6 +712,32 @@
 
 
 
+      <td style="text-align:center;">Rhodamine B</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
       <td style="text-align:center;">Metal</td>
 
       <td style="text-align:center;">0</td>
@@ -712,13 +764,13 @@
 
 
 
-      <td style="text-align:center;">Rhodamine B</td>
+      <td style="text-align:center;">Undeclared levels of xxx</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
