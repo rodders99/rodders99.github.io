@@ -8,23 +8,15 @@
 
       <th style="text-align:center; min-width: 20%;">Foreign_Material</th>
 
-      <th style="text-align:center; min-width: 8%;">2014</th>
+      <th style="text-align:center; min-width: 16%;">2021</th>
 
-      <th style="text-align:center; min-width: 8%;">2015</th>
+      <th style="text-align:center; min-width: 16%;">2022</th>
 
-      <th style="text-align:center; min-width: 8%;">2016</th>
+      <th style="text-align:center; min-width: 16%;">2023</th>
 
-      <th style="text-align:center; min-width: 8%;">2017</th>
+      <th style="text-align:center; min-width: 16%;">2024</th>
 
-      <th style="text-align:center; min-width: 8%;">2021</th>
-
-      <th style="text-align:center; min-width: 8%;">2022</th>
-
-      <th style="text-align:center; min-width: 8%;">2023</th>
-
-      <th style="text-align:center; min-width: 8%;">2024</th>
-
-      <th style="text-align:center; min-width: 8%;">total</th>
+      <th style="text-align:center; min-width: 16%;">total</th>
 
     </tr>
 
@@ -38,23 +30,15 @@
 
       <td style="text-align:center;">Metal</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">9</td>
-
-      <td style="text-align:center;">8</td>
-
-      <td style="text-align:center;">13</td>
-
       <td style="text-align:center;">6</td>
 
       <td style="text-align:center;">12</td>
 
       <td style="text-align:center;">30</td>
 
-      <td style="text-align:center;">21</td>
+      <td style="text-align:center;">22</td>
 
-      <td style="text-align:center;">99</td>
+      <td style="text-align:center;">70</td>
 
     </tr>
 
@@ -64,14 +48,6 @@
 
       <td style="text-align:center;">Plastic</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">7</td>
-
-      <td style="text-align:center;">8</td>
-
-      <td style="text-align:center;">12</td>
-
       <td style="text-align:center;">10</td>
 
       <td style="text-align:center;">7</td>
@@ -80,7 +56,7 @@
 
       <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">59</td>
+      <td style="text-align:center;">32</td>
 
     </tr>
 
@@ -90,14 +66,6 @@
 
       <td style="text-align:center;">Glass</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">5</td>
-
-      <td style="text-align:center;">3</td>
-
-      <td style="text-align:center;">7</td>
-
       <td style="text-align:center;">3</td>
 
       <td style="text-align:center;">2</td>
@@ -106,33 +74,7 @@
 
       <td style="text-align:center;">4</td>
 
-      <td style="text-align:center;">25</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Rubber</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">5</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">9</td>
+      <td style="text-align:center;">10</td>
 
     </tr>
 
@@ -148,17 +90,9 @@
 
       <td style="text-align:center;">1</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">1</td>
-
       <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">7</td>
+      <td style="text-align:center;">5</td>
 
     </tr>
 
@@ -166,51 +100,17 @@
 
 
 
-      <td style="text-align:center;">Chemical</td>
+      <td style="text-align:center;">Rubber</td>
 
-      <td style="text-align:center;">3</td>
+      <td style="text-align:center;">2</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">2</td>
 
-      <td style="text-align:center;">1</td>
-
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">6</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Unknown</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">3</td>
+      <td style="text-align:center;">4</td>
 
     </tr>
 
@@ -224,41 +124,7 @@
 
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
       <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">High Iron Levels</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -272,14 +138,6 @@
 
       <td style="text-align:center;">Apple Stalks</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
@@ -287,32 +145,6 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Hard Lumps</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">1</td>
 
@@ -323,14 +155,6 @@
 
 
       <td style="text-align:center;">Bits of Glue</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -356,14 +180,6 @@
 
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">1</td>
@@ -374,11 +190,7 @@
 
 
 
-      <td style="text-align:center;">Histamine</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">Hard Lumps</td>
 
       <td style="text-align:center;">0</td>
 
@@ -387,10 +199,6 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
 
@@ -401,14 +209,6 @@
 
 
       <td style="text-align:center;">Sharp Stick</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -430,41 +230,7 @@
 
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
       <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Wood</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 

@@ -27,6 +27,7 @@ featuredImage = "https://rodders.me/fsa-alerts/food-standards-agency-logo.jpg"
 - [Contaminants by Product Type](https://rodders.me/fsa-alerts/docs/06-fsa-product-type.php)
 
 ## Analysts Notes
+- [Data Scraping & Management](https://rodders.me/fsa-alerts/docs/a2-fsa-front-end.php)
 - [Meta Data](https://rodders.me/fsa-alerts/docs/a0-fsa-meta-data.php)
 - [Feature Engineering](https://rodders.me/fsa-alerts/docs/a1-fsa-feature-engineering.php)
 
@@ -50,13 +51,13 @@ This report presents a comprehensive review of the food safety alerts issued by 
 
 [^4]: https://www.gov.uk/government/statistics/food-statistics-pocketbook](https://www.gov.uk/government/statistics/food-statistics-pocketbook/food-statistics-in-your-pocket#number-of-uk-food-and-drink-manufacturers-by-business-size-in-2023)
 
-## Did you know that 34% of all food safety alerts[^1] are issued to grocery retailers for own brand products, yet the origin of many products remains largely unknown?
+## Did you know that 36% of all food safety alerts[^1] are issued to grocery retailers for own brand products, yet the origin of many products remains largely unknown?
 
 As we explore the complexities of food safety in the UK, let's start by peeling back the layers and uncovering the truth behind our daily diets.
 
 Food safety is a critical issue in the UK. Millions of people are affected by foodborne illnesses every year. These illnesses can range from mild discomfort to life-threatening complications.
 
-[^1]: Since 2014. 2021 to 2024 ytd 30% of all safety alerts are issued to Grocers
+[^1]: Since 2014. 2021 to 2024 ytd 36% of all safety alerts are issued to Grocers
 
 ## Report Objective
 
@@ -199,7 +200,7 @@ Rhodamine B is a synthetic fluorescent dye widely used in various industries, in
 
 - **Biotechnology:** As a labeling reagent for biomolecules, such as proteins, nucleic acids, and cells.
 - **Chemical analysis:** As a fluorescence probe for detecting specific compounds or molecules.
-- **Food coloring:** In some countries, Rhodamine B is used as a food dye, although its use is not widely approved due to concerns about toxicity.
+- **Food colouring:** In some countries, Rhodamine B is used as a food dye, although its use is not widely approved due to concerns about toxicity.
 
 ### Risks from food contamination:
 

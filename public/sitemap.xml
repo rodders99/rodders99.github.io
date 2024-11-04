@@ -2,19 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rodders.me/categories/advanced-data-analytics/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/allergens/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/categories/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/categories/food-safety/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/oct-2024/fsa-monthly/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/food-safety-uk/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/food.gov.uk/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/foreign-material-contamination/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/lxml/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/matplotlib/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/microsoft-excel/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/numpy/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/pandas/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/pathogens/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/</loc>
+    <lastmod>2024-10-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://rodders.me/authors/</loc>
     <lastmod>2024-10-08T09:15:27+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</loc>
-    <lastmod>2024-10-08T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/matplotlib/</loc>
-    <lastmod>2024-10-08T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/numpy/</loc>
-    <lastmod>2024-10-08T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/pandas/</loc>
     <lastmod>2024-10-08T09:15:27+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/projects/</loc>
@@ -29,29 +71,47 @@
     <loc>https://rodders.me/authors/rodders/</loc>
     <lastmod>2024-10-08T09:15:27+00:00</lastmod>
   </url><url>
-    <loc>https://rodders.me/</loc>
-    <lastmod>2024-10-08T09:15:27+00:00</lastmod>
+    <loc>https://rodders.me/fsa-monthly/sep-2024/fsa-monthly/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rodders.me/tags/</loc>
-    <lastmod>2024-10-08T09:15:27+00:00</lastmod>
+    <loc>https://rodders.me/fsa-monthly/aug-2024/fsa-monthly/</loc>
+    <lastmod>2024-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/jul-2024/fsa-monthly/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/jun-2024/fsa-monthly/</loc>
+    <lastmod>2024-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/projects/ev-headlines/project-uk-mainstream-media-ev-bias/</loc>
     <lastmod>2024-06-27T09:15:27+00:00</lastmod>
   </url><url>
+    <loc>https://rodders.me/fsa-monthly/may-2024/fsa-monthly/</loc>
+    <lastmod>2024-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/apr-2024/fsa-monthly/</loc>
+    <lastmod>2024-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/mar-2024/fsa-monthly/</loc>
+    <lastmod>2024-03-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://rodders.me/projects/eu-safety-gate/project-eu-safety-gate/</loc>
     <lastmod>2024-03-02T09:15:27+00:00</lastmod>
   </url><url>
+    <loc>https://rodders.me/fsa-monthly/feb-2024/fsa-monthly/</loc>
+    <lastmod>2024-02-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://rodders.me/projects/salifort_project/salifort-motors/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/jan-2024/fsa-monthly/</loc>
+    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/tags/google-data-analytics/</loc>
     <lastmod>2023-12-02T09:15:27+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/projects/smmt-google-analytics-project/uk-vehicle-registration-analysis/</loc>
     <lastmod>2023-12-02T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/categories/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/tags/coursera/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
@@ -69,9 +129,6 @@
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/tags/learning/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/microsoft-excel/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/posts/</loc>

@@ -13,8 +13,8 @@ style = "github-dark"
 
 [params]
   author = "Rodders"
-  info = "Data Analyst / Wrangler "
-  description = "Ex Datis ad Veritatem / From Data to Truth"
+  info = "Ex Datis ad Veritatem / From Data to Truth"
+  description = "Data Analyst / Wrangler"
   keywords = "blog,developer,personal, analyst, pandas, python, homeassistant,smart-home,oh-my"
   avatarurl = "https://rodders.me/img/avatars/avatar.png"
   #gravatar = "john.doe@example.com"
@@ -66,6 +66,10 @@ style = "github-dark"
   name = "Projects"
   weight = 2
   url  = "projects/"
+[[menu.main]]
+  name = "UK Food Safety Infographics"
+  weight = 5
+  url  = "fsa-monthly/"
 [[menu.main]]
   name = "About"
   weight = 3

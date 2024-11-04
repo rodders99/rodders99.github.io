@@ -22,6 +22,7 @@ echo '
 
           <li><a href="./00-fsa-analysis-introduction.php">FSA - Analysis Introduction</a></li>
           <li><a href="./01-fsa-summary.php">FSA - Analysis Summary</a></li>
+          <li><a href="/fsa-monthly/">FSA - 2024 Monthly Infographic</a></li>
           <li><a href="./02-fsa-pathogens.php">FSA - Pathological Contaminants Analysis</a></li>
           <li><a href="./03-fsa-allergens.php">FSA - Allergen Contaminants Analysis</a></li>
           <li><a href="./04-fsa-foreign-material.php">FSA - Foreign Material Contaminants Analysis</a></li>

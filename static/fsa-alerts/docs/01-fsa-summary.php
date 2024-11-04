@@ -84,9 +84,21 @@
 <li>[2] European Food Safety Agency (EFSA). <a href="https://www.efsa.europa.eu/en">https://www.efsa.europa.eu/en</a> </li></ul>
 
 
-        <h2>Quick Note : </h2>
+        <h2>Note:</h2>
         <p>The number of products for which alerts are issued reported here, is a lot lower than reality. Prior to July 2024, 
             only products mentioned in the search results alert title and sub text are included. Post July 2024, these are now being scraped.</p>
+
+            <h2>Ingredient-Related Food Safety Alerts: A Review of the 2024 Recalls</h2>
+
+<p>This year has seen significant instances of food safety alerts related to ingredients. Two notable recalls have been issued against suppliers:</p>
+
+<ul>
+    <li>FGS Ingredients, where contamination with peanut was detected in their mustard spice, which subsequently affected multiple companies' final products.</li>
+    <li>Infinity Foods, where contamination with mustard occurred in over 40 spice/herb products, highlighting the potential for widespread impact on food safety.</li>
+</ul>
+
+<p>A comprehensive analysis of these two recalls reveals a staggering total of 232 product recalls affecting 30 brands across various sectors, including grocers, 
+    retailers, takeaways, and restaurants. This underscores the importance of vigilance in monitoring ingredient safety to ensure consumer protection.</p>
 
         <h2 id="category-contamination">Product Categories most often contaminated</h2>
 

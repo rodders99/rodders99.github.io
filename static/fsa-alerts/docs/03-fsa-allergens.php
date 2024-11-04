@@ -296,24 +296,24 @@
                 available in the data.</p>
 
             <h3>Most Common Foods Contaminated with Undeclared Allergens</h3>
-            <div style=width:80%><a href="../img/allergen-undeclared-allergens-by-product-type.png"><img
-                        src="../img/allergen-undeclared-allergens-by-product-type.png"></a></div>
+            <div style=width:80%><a href="../img/allergen-undeclared-by-product-type.png"><img
+                        src="../img/allergen-undeclared-by-product-type.png"></a></div>
             <br><a href="#" class="gototop">Top</a>
 
             <h3>Temporal Visualisations</h3>
             <div  >
                 <table class="" style="width:100%; margin: 0 auto;">
                     <tr>
-                        <td><a href="../img/allergen-undeclared-allergens-yyyy-mm.png"><img
-                                    src="../img/allergen-undeclared-allergens-yyyy-mm.png"></a></td>
+                        <td><a href="../img/allergen-undeclared-yyyy-mm.png"><img
+                                    src="../img/allergen-undeclared-yyyy-mm.png"></a></td>
 
 
                     </tr>
                     <tr>
-                        <td><a href="../img/allergen-undeclared-allergens-mmm.png"><img
-                                    src="../img/allergen-undeclared-allergens-mmm.png"></a></td>
-                        <td><a href="../img/allergen-undeclared-allergens-yyyy.png"><img
-                                    src="../img/allergen-undeclared-allergens-yyyy.png"></a></td>
+                        <td><a href="../img/allergen-undeclared-mmm.png"><img
+                                    src="../img/allergen-undeclared-mmm.png"></a></td>
+                        <td><a href="../img/allergen-undeclared-yyyy.png"><img
+                                    src="../img/allergen-undeclared-yyyy.png"></a></td>
                     </tr>
                 </table>
             </div>

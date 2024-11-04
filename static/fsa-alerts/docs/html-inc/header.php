@@ -15,7 +15,7 @@ echo "
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <link rel='stylesheet' type='text/css' href='/css/project-style.css'>
     
-    <link rel='stylesheet' type='text/css' href='/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css'>
+    <link rel='stylesheet' type='text/css' href='http://localhost/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css'>
 
     
     <link rel='stylesheet' type='text/css' href='/css/coder.min.577e3c5ead537873430da16f0964b754a120fd87c4e2203a00686e7c75b51378.css'>

@@ -76,6 +76,10 @@
     {
       "title": "posts",
       "path": "[[workspace]]/content/posts"
+    },
+    {
+      "title": "FSA Monthly Infographic",
+      "path": "[[workspace]]/content/fsa-monthly"
     }
   ],
   "frontMatter.content.publicFolder": "static",
