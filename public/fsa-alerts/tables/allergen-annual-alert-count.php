@@ -8,15 +8,17 @@
 
       <th style="text-align:center; min-width: 20%;">Allergen</th>
 
-      <th style="text-align:center; min-width: 16%;">2021</th>
+      <th style="text-align:center; min-width: 13%;">2021</th>
 
-      <th style="text-align:center; min-width: 16%;">2022</th>
+      <th style="text-align:center; min-width: 13%;">2022</th>
 
-      <th style="text-align:center; min-width: 16%;">2023</th>
+      <th style="text-align:center; min-width: 13%;">2023</th>
 
-      <th style="text-align:center; min-width: 16%;">2024</th>
+      <th style="text-align:center; min-width: 13%;">2024</th>
 
-      <th style="text-align:center; min-width: 16%;">total</th>
+      <th style="text-align:center; min-width: 13%;">2025</th>
+
+      <th style="text-align:center; min-width: 13%;">total</th>
 
     </tr>
 
@@ -36,9 +38,11 @@
 
       <td style="text-align:center;">9</td>
 
-      <td style="text-align:center;">381</td>
+      <td style="text-align:center;">425</td>
 
-      <td style="text-align:center;">421</td>
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">465</td>
 
     </tr>
 
@@ -56,7 +60,9 @@
 
       <td style="text-align:center;">15</td>
 
-      <td style="text-align:center;">84</td>
+      <td style="text-align:center;">14</td>
+
+      <td style="text-align:center;">98</td>
 
     </tr>
 
@@ -72,9 +78,11 @@
 
       <td style="text-align:center;">2</td>
 
-      <td style="text-align:center;">48</td>
+      <td style="text-align:center;">49</td>
 
-      <td style="text-align:center;">58</td>
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">59</td>
 
     </tr>
 
@@ -92,6 +100,8 @@
 
       <td style="text-align:center;">5</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">42</td>
 
     </tr>
@@ -108,9 +118,11 @@
 
       <td style="text-align:center;">13</td>
 
-      <td style="text-align:center;">7</td>
+      <td style="text-align:center;">8</td>
 
-      <td style="text-align:center;">38</td>
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">39</td>
 
     </tr>
 
@@ -126,9 +138,11 @@
 
       <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">16</td>
+      <td style="text-align:center;">17</td>
 
-      <td style="text-align:center;">24</td>
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">25</td>
 
     </tr>
 
@@ -146,6 +160,8 @@
 
       <td style="text-align:center;">4</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">21</td>
 
     </tr>
@@ -161,6 +177,8 @@
       <td style="text-align:center;">5</td>
 
       <td style="text-align:center;">7</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -182,7 +200,9 @@
 
       <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">9</td>
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">10</td>
 
     </tr>
 
@@ -198,9 +218,11 @@
 
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">1</td>
+      <td style="text-align:center;">2</td>
 
-      <td style="text-align:center;">7</td>
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">8</td>
 
     </tr>
 
@@ -213,6 +235,8 @@
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -236,6 +260,8 @@
 
       <td style="text-align:center;">2</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">2</td>
 
     </tr>
@@ -249,6 +275,8 @@
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 

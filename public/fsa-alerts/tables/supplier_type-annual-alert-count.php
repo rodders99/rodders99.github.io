@@ -8,13 +8,15 @@
 
       <th style="text-align:center; min-width: 20%;">Supplier_Type</th>
 
-      <th style="text-align:center; min-width: 20%;">2021</th>
+      <th style="text-align:center; min-width: 16%;">2021</th>
 
-      <th style="text-align:center; min-width: 20%;">2022</th>
+      <th style="text-align:center; min-width: 16%;">2022</th>
 
-      <th style="text-align:center; min-width: 20%;">2023</th>
+      <th style="text-align:center; min-width: 16%;">2023</th>
 
-      <th style="text-align:center; min-width: 20%;">2024</th>
+      <th style="text-align:center; min-width: 16%;">2024</th>
+
+      <th style="text-align:center; min-width: 16%;">2025</th>
 
     </tr>
 
@@ -36,6 +38,8 @@
 
       <td style="text-align:center;">4</td>
 
+      <td style="text-align:center;">13</td>
+
     </tr>
 
     <tr>
@@ -52,6 +56,26 @@
 
       <td style="text-align:center;">1%</td>
 
+      <td style="text-align:center;">27%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Let's Party</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
     </tr>
 
     <tr>
@@ -66,7 +90,9 @@
 
       <td style="text-align:center;">83</td>
 
-      <td style="text-align:center;">521</td>
+      <td style="text-align:center;">599</td>
+
+      <td style="text-align:center;">31</td>
 
     </tr>
 
@@ -84,6 +110,8 @@
 
       <td style="text-align:center;">92%</td>
 
+      <td style="text-align:center;">63%</td>
+
     </tr>
 
     <tr>
@@ -98,7 +126,9 @@
 
       <td style="text-align:center;">79</td>
 
-      <td style="text-align:center;">41</td>
+      <td style="text-align:center;">48</td>
+
+      <td style="text-align:center;">5</td>
 
     </tr>
 
@@ -116,6 +146,8 @@
 
       <td style="text-align:center;">7%</td>
 
+      <td style="text-align:center;">10%</td>
+
     </tr>
 
     <tr>
@@ -132,6 +164,8 @@
 
       <td style="text-align:center;">0</td>
 
+      <td style="text-align:center;">0</td>
+
     </tr>
 
     <tr>
@@ -143,6 +177,26 @@
       <td style="text-align:center;">0%</td>
 
       <td style="text-align:center;">1%</td>
+
+      <td style="text-align:center;">0%</td>
+
+      <td style="text-align:center;">0%</td>
+
+      <td style="text-align:center;">0%</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">NaN</td>
+
+      <td style="text-align:center;">0%</td>
+
+      <td style="text-align:center;">0%</td>
+
+      <td style="text-align:center;">0%</td>
 
       <td style="text-align:center;">0%</td>
 

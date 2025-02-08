@@ -8,15 +8,17 @@
 
       <th style="text-align:center; min-width: 20%;">Other</th>
 
-      <th style="text-align:center; min-width: 16%;">2021</th>
+      <th style="text-align:center; min-width: 13%;">2021</th>
 
-      <th style="text-align:center; min-width: 16%;">2022</th>
+      <th style="text-align:center; min-width: 13%;">2022</th>
 
-      <th style="text-align:center; min-width: 16%;">2023</th>
+      <th style="text-align:center; min-width: 13%;">2023</th>
 
-      <th style="text-align:center; min-width: 16%;">2024</th>
+      <th style="text-align:center; min-width: 13%;">2024</th>
 
-      <th style="text-align:center; min-width: 16%;">total</th>
+      <th style="text-align:center; min-width: 13%;">2025</th>
+
+      <th style="text-align:center; min-width: 13%;">total</th>
 
     </tr>
 
@@ -36,9 +38,11 @@
 
       <td style="text-align:center;">4</td>
 
-      <td style="text-align:center;">5</td>
+      <td style="text-align:center;">7</td>
 
-      <td style="text-align:center;">15</td>
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">17</td>
 
     </tr>
 
@@ -55,6 +59,8 @@
       <td style="text-align:center;">11</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">14</td>
 
@@ -74,6 +80,8 @@
 
       <td style="text-align:center;">1</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">14</td>
 
     </tr>
@@ -89,6 +97,8 @@
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">4</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -110,6 +120,8 @@
 
       <td style="text-align:center;">5</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">10</td>
 
     </tr>
@@ -128,7 +140,49 @@
 
       <td style="text-align:center;">0</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">7</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Chlorate</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">5</td>
+
+      <td style="text-align:center;">5</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Burning Sensations</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">4</td>
+
+      <td style="text-align:center;">4</td>
 
     </tr>
 
@@ -146,7 +200,49 @@
 
       <td style="text-align:center;">1</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">3</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Burning Sensation</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">2</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Excessive Vitamin D</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">2</td>
 
     </tr>
 
@@ -159,6 +255,8 @@
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -182,6 +280,8 @@
 
       <td style="text-align:center;">1</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">1</td>
 
     </tr>
@@ -200,6 +300,8 @@
 
       <td style="text-align:center;">0</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">1</td>
 
     </tr>
@@ -208,7 +310,49 @@
 
 
 
-      <td style="text-align:center;">High Levels – Caffeine</td>
+      <td style="text-align:center;">Histamine Levels</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Food Safety</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Missing Preservative</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -236,6 +380,8 @@
 
       <td style="text-align:center;">1</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">1</td>
 
     </tr>
@@ -251,6 +397,8 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -272,22 +420,6 @@
 
       <td style="text-align:center;">1</td>
 
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Histamine Levels</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
@@ -298,13 +430,15 @@
 
 
 
-      <td style="text-align:center;">Food Safety</td>
+      <td style="text-align:center;">High Levels – Caffeine</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -326,6 +460,8 @@
 
       <td style="text-align:center;">0</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">1</td>
 
     </tr>
@@ -344,6 +480,8 @@
 
       <td style="text-align:center;">0</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">1</td>
 
     </tr>
@@ -357,6 +495,8 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 

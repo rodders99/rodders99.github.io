@@ -44,7 +44,7 @@ code {
 }
   :root {
     --primary-color: white;
-    --secondary-color: rgb(245, 250, 221);
+    --secondary-color: rgb(50, 51, 47);
     --highlight-color: #3282b8;
   
     --dt-status-available-color: greenyellow;

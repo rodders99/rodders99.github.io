@@ -1,12 +1,5 @@
 <?php include 'html-inc/header.php'; ?>
 
-<!-- and it's easy to individually load additional languages -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-
-
-<script>hljs.highlightAll();</script>
-<script src="/scripts/ev-headlines.js"></script>
 
 <style>
 
@@ -77,6 +70,22 @@ align-items: center;
 
 </style>
 
+<?php
+$publication = "";
+error_reporting(E_ALL); // report all types of errors
+ini_set('display_errors', 1);
+
+$publication = $_GET['publication'];
+
+if (!isset($publication)) {
+  // handle the case when the param is not set
+  $publication = $_GET['publication'];
+} else {
+  // handle the case when the param is set
+  $publication = 'bbc';
+}
+
+?>
 
 <title>Media Bias and Misinformation: Analysing Mainstream Media Headlines on Electric Vehicles</title>
 
@@ -123,17 +132,14 @@ align-items: center;
 
 <p>Click titles to sort</p>
 
-<div class="datatable-container" style="width:100%">
-    <table><tr>
+<div class="" style="width:100%">
+    <table style="width:100%"><tr>
 <?php
 
 
+echo "<td><div class='imgbg' > ";
 
-$publication = $_GET['publication'];
-
-echo "<td><div class='imgbg' > 
-<img src='../icons/$publication-150.png'>
-</div></td>
+echo "<img src='../icons/" . $publication . "-150.png'></div></td>
 <td>
 <div class='ratingbg' > 
 <img src='../img/$publication-rating.png' style='height:100px'>
@@ -146,26 +152,19 @@ echo "<td><div class='imgbg' >
 
 </p>
 
-<div class="datatable-container" style="width:100%">
+<div class="sorted table-highlight datatable-container" style="width:100%"> 
+
 <?php
-
-error_reporting(E_ALL);
-
-$publication = $_GET['publication'];
-
 $filename = "../tables/$publication-headline-list.html";
-
-#echo $filename;
-
 include $filename;
-
 ?>
+
 </div>
 <br><a href ="#" class="gototop">Top</a>
 
 
 <?php include 'html-inc/footer.php'; ?>
-<script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script> 
+<script src="/scripts/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js"></script> 
 
 </div></body></html>
 

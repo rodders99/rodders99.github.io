@@ -8,15 +8,17 @@
 
       <th style="text-align:center; min-width: 20%;">Foreign_Material</th>
 
-      <th style="text-align:center; min-width: 16%;">2021</th>
+      <th style="text-align:center; min-width: 13%;">2021</th>
 
-      <th style="text-align:center; min-width: 16%;">2022</th>
+      <th style="text-align:center; min-width: 13%;">2022</th>
 
-      <th style="text-align:center; min-width: 16%;">2023</th>
+      <th style="text-align:center; min-width: 13%;">2023</th>
 
-      <th style="text-align:center; min-width: 16%;">2024</th>
+      <th style="text-align:center; min-width: 13%;">2024</th>
 
-      <th style="text-align:center; min-width: 16%;">total</th>
+      <th style="text-align:center; min-width: 13%;">2025</th>
+
+      <th style="text-align:center; min-width: 13%;">total</th>
 
     </tr>
 
@@ -36,9 +38,11 @@
 
       <td style="text-align:center;">30</td>
 
-      <td style="text-align:center;">22</td>
+      <td style="text-align:center;">30</td>
 
-      <td style="text-align:center;">70</td>
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">78</td>
 
     </tr>
 
@@ -56,7 +60,9 @@
 
       <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">32</td>
+      <td style="text-align:center;">8</td>
+
+      <td style="text-align:center;">40</td>
 
     </tr>
 
@@ -74,7 +80,29 @@
 
       <td style="text-align:center;">4</td>
 
-      <td style="text-align:center;">10</td>
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">11</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Animal Matter</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">5</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">5</td>
 
     </tr>
 
@@ -92,6 +120,8 @@
 
       <td style="text-align:center;">3</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">5</td>
 
     </tr>
@@ -107,6 +137,8 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -128,6 +160,8 @@
 
       <td style="text-align:center;">0</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">2</td>
 
     </tr>
@@ -139,6 +173,8 @@
       <td style="text-align:center;">Apple Stalks</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -164,6 +200,8 @@
 
       <td style="text-align:center;">1</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">1</td>
 
     </tr>
@@ -181,6 +219,8 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
 
@@ -200,6 +240,8 @@
 
       <td style="text-align:center;">1</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">1</td>
 
     </tr>
@@ -218,6 +260,8 @@
 
       <td style="text-align:center;">0</td>
 
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">1</td>
 
     </tr>
@@ -231,6 +275,8 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 

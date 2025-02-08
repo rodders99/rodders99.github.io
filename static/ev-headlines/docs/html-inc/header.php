@@ -2,7 +2,7 @@
 
 echo "
 <!DOCTYPE html>
-<html xmlns='https://www.w3.org/1999/xhtml' lang='' xml:lang='' style='color-scheme: dark;'>
+<html xmlns='https://www.w3.org/1999/xhtml' lang='en' xml:lang='' style='color-scheme: dark;'>
 
 <head>
     <meta charset='utf-8' />
@@ -35,7 +35,11 @@ echo "
     <script>hljs.highlightAll();</script>
     <link rel='stylesheet' type='text/css' href='/css/project-style.css'>
 
+    <script src='/scripts/sorttable.js'></script>
 
+
+
+    <script src='/scripts/ev-headlines.js'></script>
 </head>
 
 "; ?>
