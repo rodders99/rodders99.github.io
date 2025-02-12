@@ -30,6 +30,26 @@
 
 
 
+      <td style="text-align:center;">Listeria</td>
+
+      <td style="text-align:center;">5</td>
+
+      <td style="text-align:center;">7</td>
+
+      <td style="text-align:center;">13</td>
+
+      <td style="text-align:center;">21</td>
+
+      <td style="text-align:center;">4</td>
+
+      <td style="text-align:center;">50</td>
+
+    </tr>
+
+    <tr>
+
+
+
       <td style="text-align:center;">Salmonella</td>
 
       <td style="text-align:center;">14</td>
@@ -43,26 +63,6 @@
       <td style="text-align:center;">2</td>
 
       <td style="text-align:center;">50</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Listeria</td>
-
-      <td style="text-align:center;">5</td>
-
-      <td style="text-align:center;">7</td>
-
-      <td style="text-align:center;">13</td>
-
-      <td style="text-align:center;">21</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">47</td>
 
     </tr>
 

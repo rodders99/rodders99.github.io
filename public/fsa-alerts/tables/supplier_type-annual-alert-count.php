@@ -56,7 +56,7 @@
 
       <td style="text-align:center;">1%</td>
 
-      <td style="text-align:center;">27%</td>
+      <td style="text-align:center;">23%</td>
 
     </tr>
 
@@ -92,7 +92,7 @@
 
       <td style="text-align:center;">599</td>
 
-      <td style="text-align:center;">31</td>
+      <td style="text-align:center;">35</td>
 
     </tr>
 
@@ -110,7 +110,7 @@
 
       <td style="text-align:center;">92%</td>
 
-      <td style="text-align:center;">63%</td>
+      <td style="text-align:center;">62%</td>
 
     </tr>
 
@@ -128,7 +128,7 @@
 
       <td style="text-align:center;">48</td>
 
-      <td style="text-align:center;">5</td>
+      <td style="text-align:center;">8</td>
 
     </tr>
 
@@ -146,7 +146,7 @@
 
       <td style="text-align:center;">7%</td>
 
-      <td style="text-align:center;">10%</td>
+      <td style="text-align:center;">14%</td>
 
     </tr>
 

@@ -120,9 +120,9 @@
 
       <td style="text-align:center;">8</td>
 
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">2</td>
 
-      <td style="text-align:center;">39</td>
+      <td style="text-align:center;">41</td>
 
     </tr>
 
@@ -160,9 +160,9 @@
 
       <td style="text-align:center;">4</td>
 
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">1</td>
 
-      <td style="text-align:center;">21</td>
+      <td style="text-align:center;">22</td>
 
     </tr>
 
@@ -200,9 +200,9 @@
 
       <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">1</td>
+      <td style="text-align:center;">2</td>
 
-      <td style="text-align:center;">10</td>
+      <td style="text-align:center;">11</td>
 
     </tr>
 
