@@ -38,11 +38,11 @@
 
       <td style="text-align:center;">9</td>
 
-      <td style="text-align:center;">425</td>
+      <td style="text-align:center;">426</td>
 
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">9</td>
 
-      <td style="text-align:center;">465</td>
+      <td style="text-align:center;">475</td>
 
     </tr>
 
@@ -60,9 +60,9 @@
 
       <td style="text-align:center;">15</td>
 
-      <td style="text-align:center;">14</td>
+      <td style="text-align:center;">17</td>
 
-      <td style="text-align:center;">98</td>
+      <td style="text-align:center;">101</td>
 
     </tr>
 
@@ -80,9 +80,29 @@
 
       <td style="text-align:center;">49</td>
 
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">1</td>
 
-      <td style="text-align:center;">59</td>
+      <td style="text-align:center;">60</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Gluten</td>
+
+      <td style="text-align:center;">11</td>
+
+      <td style="text-align:center;">7</td>
+
+      <td style="text-align:center;">13</td>
+
+      <td style="text-align:center;">8</td>
+
+      <td style="text-align:center;">9</td>
+
+      <td style="text-align:center;">48</td>
 
     </tr>
 
@@ -103,26 +123,6 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">42</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Gluten</td>
-
-      <td style="text-align:center;">11</td>
-
-      <td style="text-align:center;">7</td>
-
-      <td style="text-align:center;">13</td>
-
-      <td style="text-align:center;">8</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">41</td>
 
     </tr>
 
@@ -160,9 +160,29 @@
 
       <td style="text-align:center;">4</td>
 
-      <td style="text-align:center;">1</td>
+      <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">22</td>
+      <td style="text-align:center;">24</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Sesame</td>
+
+      <td style="text-align:center;">3</td>
+
+      <td style="text-align:center;">3</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">8</td>
+
+      <td style="text-align:center;">16</td>
 
     </tr>
 
@@ -200,9 +220,9 @@
 
       <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">2</td>
+      <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">11</td>
+      <td style="text-align:center;">12</td>
 
     </tr>
 
@@ -210,19 +230,39 @@
 
 
 
-      <td style="text-align:center;">Sesame</td>
+      <td style="text-align:center;">Multiple</td>
 
-      <td style="text-align:center;">3</td>
+      <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">3</td>
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">2</td>
 
+      <td style="text-align:center;">4</td>
+
+      <td style="text-align:center;">6</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Sulphur Dioxide</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">1</td>
+
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">8</td>
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">3</td>
 
     </tr>
 
@@ -250,7 +290,7 @@
 
 
 
-      <td style="text-align:center;">Multiple</td>
+      <td style="text-align:center;">Crustaceans</td>
 
       <td style="text-align:center;">0</td>
 
@@ -258,31 +298,11 @@
 
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">2</td>
-
       <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Sulphur Dioxide</td>
 
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
 
     </tr>
 

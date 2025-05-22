@@ -6,7 +6,40 @@
     <description>Recent content in Advanced Data Analytics on Rodders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rodders.me/categories/advanced-data-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rodders.me/categories/advanced-data-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Food Safety Agency Monthly Infographic for May 2025</title>
+      <link>https://rodders.me/fsa-monthly/may-2025/fsa-monthly/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/fsa-monthly/may-2025/fsa-monthly/</guid>
+      <description>Infographic generated for UK Food Safety Alert data from the https://food.gov.uk website.
+This INFOGRAPHIC is programmatically generated from data that has been scraped, cleansed, categorised, feature engineered, analysed, visualised and managed through a self developed python app using the Streamlit library.
+Analysis of Food Standards Agency Alerts Analysis Report and Visualisations Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Data Scraping &amp;amp; Management Meta Data Feature Engineering Abstract Link to heading In this report, I delve into the complexities of food safety in the UK.</description>
+    </item>
+    
+    <item>
+      <title>Food Safety Agency Monthly Infographic for April 2025</title>
+      <link>https://rodders.me/fsa-monthly/apr-2025/fsa-monthly/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/fsa-monthly/apr-2025/fsa-monthly/</guid>
+      <description>Infographic generated for UK Food Safety Alert data from the https://food.gov.uk website.
+This INFOGRAPHIC is programmatically generated from data that has been scraped, cleansed, categorised, feature engineered, analysed, visualised and managed through a self developed python app using the Streamlit library.
+Analysis of Food Standards Agency Alerts Analysis Report and Visualisations Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Data Scraping &amp;amp; Management Meta Data Feature Engineering Abstract Link to heading In this report, I delve into the complexities of food safety in the UK.</description>
+    </item>
+    
+    <item>
+      <title>Food Safety Agency Monthly Infographic for March 2025</title>
+      <link>https://rodders.me/fsa-monthly/mar-2025/fsa-monthly/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/fsa-monthly/mar-2025/fsa-monthly/</guid>
+      <description>Infographic generated for UK Food Safety Alert data from the https://food.gov.uk website.
+This INFOGRAPHIC is programmatically generated from data that has been scraped, cleansed, categorised, feature engineered, analysed, visualised and managed through a self developed python app using the Streamlit library.
+Analysis of Food Standards Agency Alerts Analysis Report and Visualisations Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Data Scraping &amp;amp; Management Meta Data Feature Engineering Abstract Link to heading In this report, I delve into the complexities of food safety in the UK.</description>
+    </item>
+    
     <item>
       <title>Food Safety Agency Monthly Infographic for February 2025</title>
       <link>https://rodders.me/fsa-monthly/feb-2025/fsa-monthly/</link>

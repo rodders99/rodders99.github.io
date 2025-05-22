@@ -6,7 +6,17 @@
     <description>Recent content on Rodders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Oct 2024 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/authors/rodders/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Feb 2025 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/authors/rodders/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Assistant Dashboard - Health Metrics Tracking</title>
+      <link>https://rodders.me/projects/homeassistant-health/home-assistant-health/</link>
+      <pubDate>Wed, 12 Feb 2025 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/homeassistant-health/home-assistant-health/</guid>
+      <description>
+Some ideas on using Home Assistant to track health metrics Link to heading My Health Dashboard Link to heading </description>
+    </item>
+    
     <item>
       <title>Food Standards Agency Alerts Analysis</title>
       <link>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</link>

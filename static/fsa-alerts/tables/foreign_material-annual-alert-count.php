@@ -40,9 +40,9 @@
 
       <td style="text-align:center;">30</td>
 
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">2</td>
 
-      <td style="text-align:center;">78</td>
+      <td style="text-align:center;">80</td>
 
     </tr>
 
@@ -60,9 +60,9 @@
 
       <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">8</td>
+      <td style="text-align:center;">14</td>
 
-      <td style="text-align:center;">40</td>
+      <td style="text-align:center;">46</td>
 
     </tr>
 
@@ -80,9 +80,49 @@
 
       <td style="text-align:center;">4</td>
 
+      <td style="text-align:center;">3</td>
+
+      <td style="text-align:center;">13</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Stones</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">4</td>
+
+      <td style="text-align:center;">6</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Insects</td>
+
+      <td style="text-align:center;">0</td>
+
       <td style="text-align:center;">1</td>
 
-      <td style="text-align:center;">11</td>
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">3</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">6</td>
 
     </tr>
 
@@ -110,26 +150,6 @@
 
 
 
-      <td style="text-align:center;">Insects</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">3</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">5</td>
-
-    </tr>
-
-    <tr>
-
-
-
       <td style="text-align:center;">Rubber</td>
 
       <td style="text-align:center;">2</td>
@@ -143,26 +163,6 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">4</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Stones</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">2</td>
 
     </tr>
 
@@ -250,13 +250,13 @@
 
 
 
-      <td style="text-align:center;">Sharp Stick</td>
-
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">Silica Beads</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -270,13 +270,13 @@
 
 
 
-      <td style="text-align:center;">Silica Beads</td>
+      <td style="text-align:center;">Wood</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 

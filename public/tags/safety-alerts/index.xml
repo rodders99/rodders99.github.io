@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Safety Alerts on Rodders</title>
+    <link>https://rodders.me/tags/safety-alerts/</link>
+    <description>Recent content in Safety Alerts on Rodders</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 12 Feb 2025 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/safety-alerts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UK Food Standards Agency - Alerts Analysis</title>
+      <link>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</link>
+      <pubDate>Wed, 12 Feb 2025 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</guid>
+      <description>Analysis of Food Standards Agency Alerts Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Data Scraping &amp;amp; Management Meta Data Feature Engineering Abstract Link to heading This report presents a comprehensive review of the food safety alerts issued by the UK Food Standards Agency. The analysis provides insights into the frequency, types, and relevant information about each alert, covering an eight year period.</description>
+    </item>
+    
+  </channel>
+</rss>

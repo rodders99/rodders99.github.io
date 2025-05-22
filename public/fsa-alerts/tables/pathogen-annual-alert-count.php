@@ -38,11 +38,11 @@
 
       <td style="text-align:center;">13</td>
 
-      <td style="text-align:center;">21</td>
+      <td style="text-align:center;">30</td>
 
-      <td style="text-align:center;">4</td>
+      <td style="text-align:center;">31</td>
 
-      <td style="text-align:center;">50</td>
+      <td style="text-align:center;">86</td>
 
     </tr>
 
@@ -60,9 +60,9 @@
 
       <td style="text-align:center;">6</td>
 
-      <td style="text-align:center;">2</td>
+      <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">50</td>
+      <td style="text-align:center;">51</td>
 
     </tr>
 
@@ -70,7 +70,7 @@
 
 
 
-      <td style="text-align:center;">E.Coli</td>
+      <td style="text-align:center;">E. Coli</td>
 
       <td style="text-align:center;">0</td>
 
@@ -80,29 +80,9 @@
 
       <td style="text-align:center;">9</td>
 
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">13</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Lysteria</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">9</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">9</td>
+      <td style="text-align:center;">16</td>
 
     </tr>
 

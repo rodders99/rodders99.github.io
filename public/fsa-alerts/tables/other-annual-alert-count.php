@@ -40,9 +40,9 @@
 
       <td style="text-align:center;">7</td>
 
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">2</td>
 
-      <td style="text-align:center;">17</td>
+      <td style="text-align:center;">19</td>
 
     </tr>
 
@@ -90,15 +90,15 @@
 
 
 
-      <td style="text-align:center;">Choking Hazard</td>
+      <td style="text-align:center;">Unapproved Facilities</td>
 
-      <td style="text-align:center;">5</td>
+      <td style="text-align:center;">3</td>
 
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">4</td>
+      <td style="text-align:center;">2</td>
 
       <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">5</td>
 
       <td style="text-align:center;">0</td>
 
@@ -110,15 +110,15 @@
 
 
 
-      <td style="text-align:center;">Unapproved Facilities</td>
-
-      <td style="text-align:center;">3</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">Choking Hazard</td>
 
       <td style="text-align:center;">5</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">4</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -150,6 +150,26 @@
 
 
 
+      <td style="text-align:center;">Burning Sensation</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">6</td>
+
+      <td style="text-align:center;">6</td>
+
+    </tr>
+
+    <tr>
+
+
+
       <td style="text-align:center;">Chlorate</td>
 
       <td style="text-align:center;">0</td>
@@ -163,26 +183,6 @@
       <td style="text-align:center;">5</td>
 
       <td style="text-align:center;">5</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Burning Sensations</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">4</td>
-
-      <td style="text-align:center;">4</td>
 
     </tr>
 
@@ -210,17 +210,17 @@
 
 
 
-      <td style="text-align:center;">Burning Sensation</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">Caffeine - High Levels</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">2</td>
 
@@ -230,7 +230,7 @@
 
 
 
-      <td style="text-align:center;">Excessive Vitamin D</td>
+      <td style="text-align:center;">Sugar Lumps</td>
 
       <td style="text-align:center;">0</td>
 
@@ -270,6 +270,46 @@
 
 
 
+      <td style="text-align:center;">Illegal Additives</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Excessive Vitamin D</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">2</td>
+
+    </tr>
+
+    <tr>
+
+
+
       <td style="text-align:center;">Burn Risk</td>
 
       <td style="text-align:center;">0</td>
@@ -279,66 +319,6 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Caffeine Levels</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Histamine Levels</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Food Safety</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
@@ -370,33 +350,13 @@
 
 
 
-      <td style="text-align:center;">Isopropyl alcohol</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">Histamine Levels</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Illegal Additives</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
 
@@ -430,7 +390,7 @@
 
 
 
-      <td style="text-align:center;">High Levels – Caffeine</td>
+      <td style="text-align:center;">Food Safety</td>
 
       <td style="text-align:center;">0</td>
 
@@ -439,6 +399,26 @@
       <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Isopropyl alcohol</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">0</td>
 
@@ -457,26 +437,6 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Unauthorised Additives</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 

@@ -36,9 +36,9 @@
 
       <td style="text-align:center;">2</td>
 
-      <td style="text-align:center;">4</td>
+      <td style="text-align:center;">5</td>
 
-      <td style="text-align:center;">13</td>
+      <td style="text-align:center;">29</td>
 
     </tr>
 
@@ -56,25 +56,7 @@
 
       <td style="text-align:center;">1%</td>
 
-      <td style="text-align:center;">23%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Let's Party</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">20%</td>
 
     </tr>
 
@@ -92,7 +74,7 @@
 
       <td style="text-align:center;">599</td>
 
-      <td style="text-align:center;">35</td>
+      <td style="text-align:center;">95</td>
 
     </tr>
 
@@ -110,7 +92,7 @@
 
       <td style="text-align:center;">92%</td>
 
-      <td style="text-align:center;">62%</td>
+      <td style="text-align:center;">64%</td>
 
     </tr>
 
@@ -128,7 +110,7 @@
 
       <td style="text-align:center;">48</td>
 
-      <td style="text-align:center;">8</td>
+      <td style="text-align:center;">24</td>
 
     </tr>
 
@@ -146,7 +128,7 @@
 
       <td style="text-align:center;">7%</td>
 
-      <td style="text-align:center;">14%</td>
+      <td style="text-align:center;">16%</td>
 
     </tr>
 
@@ -177,24 +159,6 @@
       <td style="text-align:center;">0%</td>
 
       <td style="text-align:center;">1%</td>
-
-      <td style="text-align:center;">0%</td>
-
-      <td style="text-align:center;">0%</td>
-
-      <td style="text-align:center;">0%</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">NaN</td>
-
-      <td style="text-align:center;">0%</td>
-
-      <td style="text-align:center;">0%</td>
 
       <td style="text-align:center;">0%</td>
 
