@@ -21,7 +21,7 @@ categories:
   - Data Professional
   - Google Certified Advanced Data Analytics
 Author: Rodders
-banner: /img/Google_Coursera_Logo.png
+featuredImage: /img/Google_Coursera_Logo.png
 preview: /img/certifications/CERTIFICATE-Coursera-Google-Professional-Advanced-Data-Analytics.png
 ---
 

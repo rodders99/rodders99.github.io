@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home Assistant YAML on Rodders</title>
+    <link>https://rodders.me/tags/home-assistant-yaml/</link>
+    <description>Recent content in Home Assistant YAML on Rodders</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Jul 2025 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/home-assistant-yaml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Pt 3. Visualising the data for Food and Migraines</title>
+      <link>https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/</link>
+      <pubDate>Mon, 07 Jul 2025 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/</guid>
+      <description>If you experience any of the symptoms I list in the previous article on a regular basis, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life.
+Introduction Collecting the Data The Data Structure The initial collected data Adding Ingredients to Foods in the dataset The Visualisation Introduction Link to heading I used to suffer from migraines, amongst multiple less severe but nonetheless annoying symptoms.</description>
+    </item>
+    
+    <item>
+      <title>Pt 2. Using Home Assistant to Cure My Migraines</title>
+      <link>https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</link>
+      <pubDate>Fri, 27 Jun 2025 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</guid>
+      <description>Introduction It started with a click Building a data driven health tracker Over-engineering a simple data collection problem? NABU Casa subscription not required (but very worthwhile and helpful) A Look at the Home Assistant Dashboard Here&amp;rsquo;s how The Home Assistant Dashboard was made The Datafile The Lovelace Dashboard Food Button Example of another category for the Dashboard Button The Button Logging script What is written to to the file sensor Symptom Severity Logging Symptom Severity Logging - The input_number helper The Lovelace Dashboard Symptom Severity Logging Input and Button code Symptom Severity Logging - The script.</description>
+    </item>
+    
+    <item>
+      <title>Pt 1. No More Migraines: What I Stopped Eating</title>
+      <link>https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</link>
+      <pubDate>Thu, 26 Jun 2025 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</guid>
+      <description>If you regularly experience any of the symptoms I list later in the article, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life. This was my journey, I hope it brings relief to others.</description>
+    </item>
+    
+  </channel>
+</rss>

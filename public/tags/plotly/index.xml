@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plotly on Rodders</title>
+    <link>https://rodders.me/tags/plotly/</link>
+    <description>Recent content in plotly on Rodders</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Jul 2025 09:15:27 +0000</lastBuildDate><atom:link href="https://rodders.me/tags/plotly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Pt 3. Visualising the data for Food and Migraines</title>
+      <link>https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/</link>
+      <pubDate>Mon, 07 Jul 2025 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/</guid>
+      <description>If you experience any of the symptoms I list in the previous article on a regular basis, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life.
+Introduction Collecting the Data The Data Structure The initial collected data Adding Ingredients to Foods in the dataset The Visualisation Introduction Link to heading I used to suffer from migraines, amongst multiple less severe but nonetheless annoying symptoms.</description>
+    </item>
+    
+  </channel>
+</rss>

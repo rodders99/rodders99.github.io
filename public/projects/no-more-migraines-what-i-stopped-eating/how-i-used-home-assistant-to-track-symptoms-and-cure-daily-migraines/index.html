@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Pt 1. No More Migraines: What I Stopped Eating · Rodders
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Rodders">
+<meta name="description" content="Using Home Assistant&#39;s powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines">
+<meta name="keywords" content="blog,developer,personal, analyst, pandas, python, homeassistant,smart-home,oh-my">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pt 1. No More Migraines: What I Stopped Eating"/>
+<meta name="twitter:description" content="Using Home Assistant&#39;s powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines"/>
+
+<meta property="og:title" content="Pt 1. No More Migraines: What I Stopped Eating" />
+<meta property="og:description" content="Using Home Assistant&#39;s powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2025-06-26T09:15:27+00:00" />
+<meta property="article:modified_time" content="2025-06-26T09:15:27+00:00" />
+
+
+
+
+<link rel="canonical" href="https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.577e3c5ead537873430da16f0964b754a120fd87c4e2203a00686e7c75b51378.css" integrity="sha256-V348Xq1TeHNDDaFvCWS3VKEg/YfE4iA6AGhufHW1E3g=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://rodders.me/">
+      Rodders
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/fsa-monthly/">UK Food Safety Infographics</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/">
+          Pt 1. No More Migraines: What I Stopped Eating
+        </a>
+      </h1>
+    </header>
+
+    <p><img src="https://rodders.me/projects/homeassistant-health-dashboard/homeassistant_logo.jpg" alt="Home Assistant Logo"></p>
+<blockquote>
+<p>If you regularly experience any of the symptoms I list later in the article, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life. This was my journey, I hope it brings relief to others.</p>
+</blockquote>
+<h5 id="table-of-contents">
+  Table of Contents
+  <a class="heading-link" href="#table-of-contents">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h5>
+<ul>
+<li><a href="#introduction" >Introduction</a>
+<ul>
+<li><a href="#medical-dead-end---chatgpt-to-the-rescue" >Medical Dead End - ChatGPT to the rescue!</a></li>
+<li><a href="#why-paper-diaries-failed" >Why paper diaries failed</a></li>
+<li><a href="#biohacking-my-diet" >Biohacking My Diet</a></li>
+</ul>
+</li>
+<li><a href="#building-a-data-driven-health-tracker" >Building a data driven health tracker</a>
+<ul>
+<li><a href="#starting-the-analysis-of-the-collected-data" >Starting the Analysis of the collected data</a></li>
+<li><a href="#understanding-the-pattern-of-my-symptoms" >Understanding The Pattern of my Symptoms</a></li>
+<li><a href="#my-symptom-checklist" >My Symptom Checklist</a></li>
+<li><a href="#wrong-way" >Wrong way!</a></li>
+<li><a href="#the-aha-moment-ingredients-not-foods" >The &lsquo;Aha!!&rsquo; Moment: Ingredients, not Foods</a></li>
+</ul>
+</li>
+<li><a href="#discovering-my-triggers" >Discovering My Triggers</a>
+<ul>
+<li><a href="#symptom-similarities-in-trigger-foods" >Symptom Similarities in trigger foods</a></li>
+<li><a href="#elimination-salvation" >Elimination Salvation</a></li>
+<li><a href="#dairy" >Dairy</a></li>
+<li><a href="#gluten-and-wheat" >Gluten and Wheat</a></li>
+<li><a href="#celery" >Celery</a></li>
+</ul>
+</li>
+<li><a href="#home-assistant-cured-my-migraines" >Home Assistant Cured my Migraines</a></li>
+<li><a href="#the-reality-of-living-with-food-intolerances" >The Reality of Living With Food Intolerances</a>
+<ul>
+<li><a href="#wheat-derivatives-are-everywhere" >Wheat derivatives are everywhere:</a></li>
+</ul>
+</li>
+<li><a href="#cured" >CURED!!</a>
+<ul>
+<li><a href="#lets-call-it-what-it-is-food-allergies" >Let&rsquo;s call it what it is, food allergies</a></li>
+</ul>
+</li>
+<li><a href="#the-final-outcome" >The final outcome</a>
+<ul>
+<li><a href="#eating-out-with-food-allergies" >Eating out with Food Allergies</a></li>
+<li><a href="#this-is-a-tough-one-food-allergies-are-rarely-taken-seriously" >This is a tough one, food allergies are rarely taken seriously.</a></li>
+<li><a href="#prepared-in-a-facility-that-also-handles-allergen--does-not-mean-it-is-allergen-free" >&ldquo;Prepared in a facility that also handles <code>allergen </code>&rdquo; does not mean it is allergen free.</a></li>
+<li><a href="#get-tested" >Get Tested?</a></li>
+</ul>
+</li>
+<li><a href="#conclusion" >Conclusion</a></li>
+<li><a href="#stranger-danger" >Stranger Danger</a></li>
+</ul>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I used to suffer from migraines, amongst multiple less severe but nonetheless annoying symptoms.</p>
+<p>Practically every single day, for the last 15 years, I&rsquo;ve woken up with a migraine and gone to bed with one. It started 15 years ago at a friend&rsquo;s wedding. The evening before we&rsquo;re sharing a beer (Budweiser) chatting about the upcoming wedding, we go to bed, then at 3am in the morning I&rsquo;m woken by the worst headache I&rsquo;ve ever experienced. That headache lasted a week and was devastating, I cannot remember a single detail from that week, not the wedding, how I got from Devon to Hampshire after the wedding, none of the calls from work asking where I was, it&rsquo;s a blank.</p>
+<p>For 15 years I suffered these migraines, amongst multiple less severe but nonetheless annoying symptoms and more recently the severity of the other symptoms was getting noticeably worse. I was getting desperate, the impact on my sleep, my entire life was huge, I withdrew, I suffered in silence and had reached my breaking point.</p>
+<p>Read more about my journey here</p>
+<ul>
+<li>Part 1 - No More Migraines, what I stopped eating</li>
+<li><a href="https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/"  class="external-link" target="_blank" rel="noopener">Part 2 - Using Home Assistant to Track Symptoms &amp; Cure Migraines</a></li>
+<li><a href="https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/"  class="external-link" target="_blank" rel="noopener">Part 3 - Visualising the data for Food and Migraines</a></li>
+<li><a href="http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html"  class="external-link" target="_blank" rel="noopener">A Visualisation of My Migraines and Food / Ingredients Consumed</a></li>
+</ul>
+<h3 id="medical-dead-end---chatgpt-to-the-rescue">
+  Medical Dead End - ChatGPT to the rescue!
+  <a class="heading-link" href="#medical-dead-end---chatgpt-to-the-rescue">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Many visits to doctors followed this; MRI scans, blood tests, medications (Sumatriptan, Naproxen, Diclofenac, Fun painkillers that had no effect apart from making me a bit high for an hour or two) and of course many migraines later and I finally asked Chatgpt for help. Amongst the wide range of incorrect suggestions offered by ChatGPT, was the golden goose of a suggestion:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="why-paper-diaries-failed">
+  Why paper diaries failed
+  <a class="heading-link" href="#why-paper-diaries-failed">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I have to admit this was not a new suggestion, I&rsquo;d attempted this before, but me and paper diaries do not get along: can&rsquo;t find a pen then forget to record something, left the diary at home when out then forget to record something, headache too bad to concentrate and write down what was eaten then forget to update the diary later etc. leading to many many missed entries and an incomplete dataset.</p>
+<p>This led me to use my Home Assistant setup to record the information I needed in order to confirm, or not, that my diet was a factor in my migraine journey.</p>
+<p>A secondary reason for using Home Assistant was that I needed a clean and consistent machine readable data set.</p>
+<p>You see, it was my intention to flex my Data Analysis skills with python, pandas, visualisations and machine learning models to see if a predictive model or some way of visualising the data could give me some answers, and an incomplete dataset is not going to cut it if I want that.</p>
+<p>I built a <a href="https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/"  class="external-link" target="_blank" rel="noopener">Home Assistant dashboard</a> to make recording food quick and simple, give me a consistent data set and all it took was a couple of click/taps per meal or miserable start to the day.</p>
+<p>The third reason is quite simple, I&rsquo;m a hardcore nerd. So I developed a dashboard for Home Assistant to simplify collecting data allowing me to answer the question &ldquo;Is my food making me ill?&rdquo;.</p>
+<p>The Home Assistant dashboard allowed me to collect consistent, clean data in order to further analyse it using a Machine Learning Model or Visualisation.</p>
+<h3 id="biohacking-my-diet">
+  Biohacking My Diet
+  <a class="heading-link" href="#biohacking-my-diet">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>However, what I found was that having access to a very detailed food and symptom tracker actually made it pretty simple to see the problem foods directly in the data without going to the lengths of building a machine learning model or crafting a creative visualisation.</p>
+<p>I did end up developing the visualisation that demonstrates the improvement in migraine frequency.</p>
+<p>Update - Visualisation <a href="http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html"  class="external-link" target="_blank" rel="noopener">http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html</a></p>
+<h2 id="building-a-data-driven-health-tracker">
+  Building a data driven health tracker
+  <a class="heading-link" href="#building-a-data-driven-health-tracker">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Over the past seven months that I&rsquo;ve been using Home Assistant to log the data:</p>
+<ul>
+<li>Date</li>
+<li>Time</li>
+<li>Categories (Food, Symptom, Migraine etc.)</li>
+<li>Additional Information (Detailed food info etc.)</li>
+</ul>
+<p>I&rsquo;ve collected over 12,000 rows of data which is more than enough to use as a dataset for a predictive model and expect some reasonable results. What also helps is now knowing my what my triggers are, I&rsquo;ll be able to compare it to the output from the ML Model. About 80% of this data was readings from a <a href="https://en.wikipedia.org/wiki/Continuous_glucose_monitor"  class="external-link" target="_blank" rel="noopener">CGM</a>, which were later discounted as irrelevant to my migraines, this was one of ChatGPT&rsquo;s erroneous suggestions.</p>
+<h3 id="starting-the-analysis-of-the-collected-data">
+  Starting the Analysis of the collected data
+  <a class="heading-link" href="#starting-the-analysis-of-the-collected-data">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I started reviewing the collected data daily, nothing complex, just looking back at what I ate in previous days along with key symptoms, and before I even started developing the planned machine learning model and visualisations, obvious correlations for potentially problematic foods started to become more visible.</p>
+<h3 id="understanding-the-pattern-of-my-symptoms">
+  Understanding The Pattern of my Symptoms
+  <a class="heading-link" href="#understanding-the-pattern-of-my-symptoms">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>When I first approached this I was expecting to find a binary relationship. i.e <code>eat a = symptom y</code>, if this was the case, I am sure I would have diagnosed this a long time ago. At first, as I collected and reviewed more data, the connections between food and symptoms were showing a non binary relationship, i.e. not <code>eat a = symptom y</code>, rather <code>eat a,b,c over a series of days = symptoms y,z,w,x that last for up to a week</code>.</p>
+<p>So, eating <code>a,b,c = y symptom</code> doesn&rsquo;t begin to cover the duration and breadth of the symptoms. I ultimately called this  &ldquo;the &lsquo;cascade&rsquo; effect of my allergic response&rdquo;. I could eat a food with an ingredient of wheat/gluten some days and not appear to have any symptoms (more likely me discounting the initial stages of symptoms), but if I ate another trigger food the following  day I start to feel the beginnings of a migraine within a few hours.</p>
+<p>It took some months to figure out that my allergic response was cumulative. Eat a bit of celery one day, no immediate symptoms, eat a frozen burger (Wheat/Gluten) the following day I might be a bit snuffly with a barely registering headache, eat another trigger the following day and full blown symptoms started. Then not eating a trigger once the migraine started, I&rsquo;d still have symptoms, because symptoms last up to a week.</p>
+<h3 id="my-symptom-checklist">
+  My Symptom Checklist
+  <a class="heading-link" href="#my-symptom-checklist">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I would suffer all or some of these symptoms, alongside the migraine, every single time I triggered a migraine, the symptoms lasting anything up to a week.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Symptom</th>
+<th style="text-align:left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Migraines</td>
+<td style="text-align:left">These would last 2-5 days</td>
+</tr>
+<tr>
+<td style="text-align:left">Light headed</td>
+<td style="text-align:left">At times</td>
+</tr>
+<tr>
+<td style="text-align:left">Forgetful</td>
+<td style="text-align:left">I can&rsquo;t recall things: names, places, what I ate the previous day</td>
+</tr>
+<tr>
+<td style="text-align:left">Joint / Muscle Weakness and Pain</td>
+<td style="text-align:left">Easier to pull muscle, knee pain when walking upstairs</td>
+</tr>
+<tr>
+<td style="text-align:left">Fatigue</td>
+<td style="text-align:left">Waking feeling tired, needing afternoon naps, a walking talking zombie at the best of times</td>
+</tr>
+<tr>
+<td style="text-align:left">Irritability</td>
+<td style="text-align:left">Probably directly related to feeling tired and in pain</td>
+</tr>
+<tr>
+<td style="text-align:left">Inability to get to sleep</td>
+<td style="text-align:left">Brain running 100 miles an hour</td>
+</tr>
+<tr>
+<td style="text-align:left">Waking in the night</td>
+<td style="text-align:left">Hot, sweaty, uncomfortable, unable to return to sleep</td>
+</tr>
+<tr>
+<td style="text-align:left">Frequent Peeing</td>
+<td style="text-align:left">Waking 2-3 times during the night. Now I&rsquo;m migraine free, I sleep a solid 8 hours without waking</td>
+</tr>
+<tr>
+<td style="text-align:left">Brain Fog</td>
+<td style="text-align:left">Difficulty Concentrating</td>
+</tr>
+<tr>
+<td style="text-align:left">Constipation</td>
+<td style="text-align:left">In the early days (15 years years ago) this was a major symptom</td>
+</tr>
+<tr>
+<td style="text-align:left">Bloating</td>
+<td style="text-align:left">My entire body swells up a bit. I didn&rsquo;t realise this until much later after 2 weeks symptom free.</td>
+</tr>
+<tr>
+<td style="text-align:left">Sneezing, Runny Nose, Coughing</td>
+<td style="text-align:left">Really bad episodes would have me sounding like an asthmatic ex coal miner.</td>
+</tr>
+<tr>
+<td style="text-align:left">Dry Itchy Skin</td>
+<td style="text-align:left">One insanely itchy part of my body: Left foot, just above the heel, so bad it would prevent me sleeping. This takes two weeks to die down after consuming an allergen.</td>
+</tr>
+<tr>
+<td style="text-align:left">Pimples</td>
+<td style="text-align:left">Little red spots would appear across my body with a little white head that would eventually dry out and become almost like a psoriasis spot.</td>
+</tr>
+<tr>
+<td style="text-align:left">Anxiety / Depression</td>
+<td style="text-align:left">Driven by a lack of general motivation/energy to get anything done.</td>
+</tr>
+</tbody>
+</table>
+<p>Later in the entire process, during some research where I started cross referencing my symptoms with known symptoms for food allergies, the connection became obvious.</p>
+<h3 id="wrong-way">
+  Wrong way!
+  <a class="heading-link" href="#wrong-way">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>This led to me excluding suspect foods with some questionable results. For quite a while I had not realised that Celery was a trigger. Dropping Gluten/Wheat from my diet showed an immediate and significant improvement in frequency and intensity of my migraines a few days later. But I was still waking some mornings with a less intense migraine.  This  led to me mis-categorising many foods before I started connecting celery to my symptoms. Once Celery was on my radar, progress became swift: connecting the dots between ingredients and my cumulative allergic/intolerance response and I began the process to begin eliminating and testing those suspect ingredients.</p>
+<p>The first step was eliminating any suspect foods for at least a week until I became symptom free. The first time I finally woke one morning not in pain, I cried happy / relief tears, I was onto something and I could see a potential future without a daily migraine.</p>
+<p>After a week of no symptoms I&rsquo;d &rsquo;test&rsquo; a food, adding it to my diet for 3-4 days and recording any migraines and symptoms.</p>
+<h3 id="the-aha-moment-ingredients-not-foods">
+  The &lsquo;Aha!!&rsquo; Moment: Ingredients, not Foods
+  <a class="heading-link" href="#the-aha-moment-ingredients-not-foods">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Over the following months I refined my understanding of what the hell was going on and adjusted my analysis from <strong>foods</strong> to <strong>ingredients</strong>. Where I had suspected Bread as a <strong>food</strong>, now became the <strong>ingredients</strong> wheat/gluten and any foods containing that ingredient were eliminated. I cook a lot of Asian food, many asian sauces are derived from wheat : Soy, Black Bean, Szechuan Chili Bean, Oyster Sauce. My lazy foods were frozen pork and beef burgers, guess what they contain ? Yeah Wheat. Spice mixes? Wheat, Gluten Free Hob Knob Biscuits? yeah, dairy. I am sure you get the picture, as these problematic ingredients were eliminated I started to see more days without a migraine than with a migraine.</p>
+<p>This led me to begin putting a visualisation together that could perhaps better demonstrate the relationship between ingredients and my symptoms.</p>
+<h2 id="discovering-my-triggers">
+  Discovering My Triggers
+  <a class="heading-link" href="#discovering-my-triggers">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="symptom-similarities-in-trigger-foods">
+  Symptom Similarities in trigger foods
+  <a class="heading-link" href="#symptom-similarities-in-trigger-foods">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>With a little cross referencing, and the benefit of hindsight, there are similarities in symptoms between all of my main Allergic / Intolerant Foods and the obvious standout being Headache across all of them. What isn&rsquo;t discussed in any detail is the severity and duration of the headaches or migraines in my case.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Symptom</strong></th>
+<th style="text-align:center"><strong>Gluten</strong></th>
+<th style="text-align:center"><strong>Wheat</strong></th>
+<th style="text-align:center"><strong>Dairy</strong></th>
+<th style="text-align:center"><strong>Celery</strong></th>
+<th style="text-align:center"><strong>ME</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Headache</td>
+<td style="text-align:center"><strong>X</strong></td>
+<td style="text-align:center"><strong>X</strong></td>
+<td style="text-align:center"><strong>X</strong></td>
+<td style="text-align:center"><strong>X</strong></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Bloating / Inflammation</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Diarrhoea</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Constipation</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Fatigue</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Brain fog</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Skin rash (eczema, urticaria)</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Difficulty Sleeping</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Waking during the night</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Frequent Peeing</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Itching (mouth/skin)</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Sneezing / runny nose / Mucus</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Joint pain</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Depression/anxiety</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Abdominal pain/cramps</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td></td>
+</tr>
+<tr>
+<td>Nausea</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td></td>
+</tr>
+<tr>
+<td>Anaphylaxis (severe allergy)</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td></td>
+</tr>
+<tr>
+<td>Weight loss</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td>Gas/flatulence</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="elimination-salvation">
+  Elimination Salvation
+  <a class="heading-link" href="#elimination-salvation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Replacing traditional Bread, Pasta and Noodles with gluten free alternatives kept the migraines away which had the most immediate positive impact, but I was still getting symptoms, despite removing gluten from my diet which then led to me concluding I should eliminate any food products that have wheat.</p>
+<p>Eliminating all wheat containing foods from my diet demonstrated clear correlation, 72 hours later, the migraine has diminished or gone entirely. 48 hours later and a host of secondary symptoms are in decline, after a week I felt normal for the first time in years. After a week symptom free, I also realised that my entire body swells up a little bit (Bloat) after eating wheat containing products; rings on fingers become tighter and harder to remove when consuming allergens, after a week without gluten, my rings are slipping off my fingers, I&rsquo;ll probably need some rings resizing.</p>
+<h3 id="dairy">
+  Dairy
+  <a class="heading-link" href="#dairy">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The first food to standout in the dataset was Milk or more specifically dairy. I tested Milk, butter, cheese (sob) and Whey Protein. I eventually reached the conclusion that I cannot consume any amount of these ingredients without triggering symptoms.</p>
+<p>So that&rsquo;s one trigger : Dairy, I am <a href="https://www.nhs.uk/conditions/lactose-intolerance/"  class="external-link" target="_blank" rel="noopener">Lactose Intolerant</a>, <a href="https://www.healthcentre.org.uk/allergies/food-intolerance-casein-intolerance.html"  class="external-link" target="_blank" rel="noopener">Casein Intolerant</a> and <a href="https://intolerancelab.co.uk/whey-intolerance/"  class="external-link" target="_blank" rel="noopener">Whey Protein Intolerant</a>. For some reason, I can drink lactose free milk even though it has casein in it, thankfully. Pure Whey Protein is a thermonuclear bomb of migraine and feeling like shit for me.</p>
+<p>First identified during the dietary elimination phase when I ate some ice-cream, introduced a protein supplement to my diet and tried some yummy cheese. They all had a huge negative impact on my fatigue levels, migraines, sleep etc. I&rsquo;d previously never realised how quickly symptoms started showing after consuming tiny amounts of these potential allergens. Eliminating them from my diet was an education in how bad certain foods are for me.</p>
+<p>So dairy is off the diet for ever, it affects sleep, contributes to mild to bad migraines and a list of secondary symptoms too unpleasant and irritating to detail here.</p>
+<h3 id="gluten-and-wheat">
+  Gluten and Wheat
+  <a class="heading-link" href="#gluten-and-wheat">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The next discovery had me swearing, a lot : Bread, Pasta, Snacks, crisps etc.</p>
+<p>Yeah the stuff I eat practically every single day, this had the largest correlation to the worst migraines and drew the loudest and most incredulous</p>
+<blockquote>
+<h1 id="you-have-to-be-fking-kidding-me">
+  &ldquo;You have to be Fking kidding me&rdquo;
+  <a class="heading-link" href="#you-have-to-be-fking-kidding-me">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+</blockquote>
+<p>response from me.</p>
+<blockquote>
+<h1 id="im-glutenwheat-intolerantallergic-">
+  &ldquo;I&rsquo;m Gluten/Wheat Intolerant/allergic ???&rdquo;
+  <a class="heading-link" href="#im-glutenwheat-intolerantallergic-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+</blockquote>
+<p>This is also known as NCGS <a href="https://www.beyondceliac.org/celiac-disease/non-celiac-gluten-sensitivity/symptoms/"  class="external-link" target="_blank" rel="noopener">Non Coeliac Gluten Sensitivity</a> when I first read the list of symptoms for this it was surreal &ldquo;Oh FFS&rdquo; moment for me.</p>
+<p>I found eliminating Wheat/Gluten difficult to stomach and just as hard to eat &hellip; gluten free alternatives are &hellip;. different, texture is different, how it tastes is different, how it works when cooked is different. I got used to Gluten Free alternative baked items through a process of trial, error and toasting everything. I&rsquo;ll admit it was hard at first, but over time I&rsquo;ve found alternatives that work, I got used to, or just eliminated the item from my diet.</p>
+<h3 id="celery">
+  Celery
+  <a class="heading-link" href="#celery">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>After eliminating dairy and gluten/wheat &hellip;. things improved in a significant and measurable way, full blown migraines and secondary symptoms have practically disappeared, however, I was still waking some mornings with what I&rsquo;ll call a low grade headache. This started a secondary elimination cycle, this time identifying celery as a mild allergen.</p>
+<h2 id="home-assistant-cured-my-migraines">
+  Home Assistant Cured my Migraines
+  <a class="heading-link" href="#home-assistant-cured-my-migraines">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>OK, perhaps a more accurate title would be &ldquo;Home Assistant helped my on my journey to cure my migraines!&rdquo;. Today, and I&rsquo;m not kidding, thanks to Home Assistant enabling me to capture supremely detailed and consistent information on my diet and symptoms, I cured my migraines by eliminating trigger ingredients from my diet.</p>
+<p>But the journey isn&rsquo;t over.</p>
+<h2 id="the-reality-of-living-with-food-intolerances">
+  The Reality of Living With Food Intolerances
+  <a class="heading-link" href="#the-reality-of-living-with-food-intolerances">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I also began to realise that consuming a tiny amount of wheat or dairy means I&rsquo;m pretty much fkd for a week. What made it even worse was having to read the labels on any sort of processed food I bought and realising that everything seems to have wheat in it, or a derivative of wheat and the ingredients are printed in really small fonts!</p>
+<p>Soy Sauce ? Wheat, Vinegar? Wheat, Frozen Burgers? Wheat, Seasoning Spice Mixes? Wheat, Sausages? Wheat, Crisps and Snacky stuff ? Wheat, Pasta? Wheat, Noodles? Wheat, Biscuits and Sweet Snacks? You got it, Wheat, even oven chips all seem to be coated with wheat now.</p>
+<h3 id="wheat-derivatives-are-everywhere">
+  Wheat derivatives are everywhere:
+  <a class="heading-link" href="#wheat-derivatives-are-everywhere">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Primary Gluten-Containing Grains</th>
+<th style="text-align:left">These are the main sources and always contain gluten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Wheat</td>
+<td style="text-align:left">All forms: spelt, durum, einkorn, emmer, kamut, farro, Barley, Rye, Triticale (wheat-rye hybrid), Malt (usually from barley)</td>
+</tr>
+<tr>
+<td style="text-align:left">Ingredients That Often Contain Gluten, be cautious of these unless labelled gluten-free</td>
+<td style="text-align:left">Wheat starch (unless labelled “gluten-free”), Hydrolysed wheat protein, Modified food starch (from wheat), Soy sauce (unless gluten-free/tamari), Malt vinegar, Malt extract or flavouring,Seitan (wheat gluten used in vegan meat substitutes)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Processed Foods at Risk</th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">These often contain hidden gluten</td>
+<td style="text-align:left">Gravy and stock cubes, Sauces and marinades, Ready meals, Processed deli meats including chorizo (Noooooo!), Breading and coating mixes, Beer, ales, lagers (unless gluten-free), some wines.</td>
+</tr>
+<tr>
+<td style="text-align:left">Watch for These Words on Labels, they may signal gluten</td>
+<td style="text-align:left">Binders, Thickeners, Stabilizers, Natural flavors (can contain malt or wheat), Rusk, semolina, couscous, or bulgur.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cured">
+  CURED!!
+  <a class="heading-link" href="#cured">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>After eliminating Dairy, Gluten/Wheat and Celery from my diet,  I now wake every morning migraine and symptom free after a solid 8 hours uninterrupted sleep. I still maintain the food and symptom tracker, it&rsquo;s a good habit to keep when my allergies also seem to be developing, I&rsquo;m pretty sure I never used to be allergic to celery, so it&rsquo;s a new one.</p>
+<h3 id="lets-call-it-what-it-is-food-allergies">
+  Let&rsquo;s call it what it is, food allergies
+  <a class="heading-link" href="#lets-call-it-what-it-is-food-allergies">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Since the dots have been connected, corrective action taken, quality of life improvements revelled in, a final element was added, taking a prophylactic antihistamine. It appears to reduce the severity of symptoms I&rsquo;d usually if I am testing suspect foods or accidentally eat a trigger. This suggests my symptoms may be histamine related and at some point might we worth investigating further.</p>
+<h2 id="the-final-outcome">
+  The final outcome
+  <a class="heading-link" href="#the-final-outcome">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>All trigger foods/ingredients have been eliminated from my diet.</p>
+<p>I wake each day without a migraine, unless I am testing. Daily food and symptom logging continues, I suspect my allergies are developing, currently the capsicum family is sitting on the suspect list as well meaning no chillis or bell peppers!</p>
+<p>I put on weight rather rapidly after the first 2 weeks of ingredient elimination and converting to gluten free alternatives for bread, pasta and noodles. I&rsquo;m working on this!</p>
+<p>I eat a much healthier diet, lots of fibre, managed levels of carbs, measured proteins, loads of unsaturated fats.</p>
+<p>I rarely eat out, the few times I have, I&rsquo;ve suffered, despite declaring allergies which doesn&rsquo;t seem prevent accidental cross contamination.</p>
+<p>My diet is more controlled and managed, meals are planned and prepared and cooked fresh.</p>
+<p>For shitty days where I have accidentally <code>glutened</code>, <code>dairyed</code> or <code>celeryed</code> myself, I have a stack of sauces in the freezer I&rsquo;ve made that can be quickly turned into a stir fry or soup.</p>
+<p>I&rsquo;m borderline obsessive about checking ingredients in the tiny amount of processed food I now eat.</p>
+<p>And, yeah, I now realise I&rsquo;m highly allergic to common foods! FML eh? Fifteen bloody years, more visits to doctors and hospitals than I can remember, and it was food all along!</p>
+<h3 id="eating-out-with-food-allergies">
+  Eating out with Food Allergies
+  <a class="heading-link" href="#eating-out-with-food-allergies">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I have realised through bad experience that restaurant foods that are declared gluten/wheat or other allergens free, can still have enough of the allergen from cross contamination to cause me significant problems and the few instances I have eaten out have left me feeling bloody awful, so I don&rsquo;t really eat out much.</p>
+<p>On the plus side, I&rsquo;m becoming an awesome chef!</p>
+<h3 id="this-is-a-tough-one-food-allergies-are-rarely-taken-seriously">
+  This is a tough one, food allergies are rarely taken seriously.
+  <a class="heading-link" href="#this-is-a-tough-one-food-allergies-are-rarely-taken-seriously">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I&rsquo;ve seen the rolled eyes from servers, the scepticism from friends, it&rsquo;s frustrating because &ldquo;Gluten Free woo!&rdquo; is a health fad for many, for me it&rsquo;s a serious condition that has a significant negative impact on my health and well-being and now, being symptom free, I get anxious eating anything I haven&rsquo;t prepared myself.</p>
+<h3 id="prepared-in-a-facility-that-also-handles-allergen--does-not-mean-it-is-allergen-free">
+  &ldquo;Prepared in a facility that also handles <code>allergen </code>&rdquo; does not mean it is allergen free.
+  <a class="heading-link" href="#prepared-in-a-facility-that-also-handles-allergen--does-not-mean-it-is-allergen-free">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Again a lesson learned the hard way. I accept that unless a kitchen / facility is dedicated to allergen free food prep, cross contamination is a very real and common problem and expecting every restaurant to REALLY make an effort to ensure no cross contamination is unrealistic. Expecting factory processed foods that contain no gluten/dairy/celery and do not declare the product as allergen free is also a recipe for disaster for me.</p>
+<p>A good example of this is a favourite snack of mine Poppadums, made with lentil flour, absolutely no gluten or other allergens, but made in a facility that handles wheat flour and you&rsquo;ve guessed it, I can&rsquo;t eat them.</p>
+<h3 id="get-tested">
+  Get Tested?
+  <a class="heading-link" href="#get-tested">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Now, knowing what I know, shouldn&rsquo;t I get tested ?</p>
+<p>In order for testing to be effective I have to be consuming the allergen for at least four weeks before the allergen or DNA testing. However, now I am symptom free, the thought of going back to consuming these foods and suffering the pain and misery it will induce, just to get tested in order to confirm something I already know, simply does not appear to be worth it to me.</p>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>After 15 years, through the ever-so-simple process of adopting a elimination diet, recording everything I ate and how I felt, testing and eliminating trigger foods, I am migraine free, apart from days I test foods. Ignoring a recent test for celery last week, I&rsquo;ve been migraine and symptom free for the last 3 weeks (July 2025 at the time of writing).</p>
+<p>I set out to “solve” migraines by recording my diet and symptoms using Home Assistant. I wanted to get a clearer picture of what was happening to me every day. But over time, as the data built up and patterns began to emerge, I started to feel less like I was at the mercy of random symptoms and more like I had something I had control of.</p>
+<p>Tracking everything in one place — food, sleep, migraines, ingredients let me spot correlations I’d never have otherwise noticed.</p>
+<p>Visualising it made it real. It helped me adjust my habits, diet, confirm what was working, and slowly piece together a version of daily life where I wasn’t constantly firefighting unexplained migraines.</p>
+<p>This approach didn’t magically “cure” anything, but it gave me clarity. And in the mess of trial and error that is managing chronic symptoms, that clarity has been worth everything.</p>
+<p>I still log food, it takes a moment to do so using Home Assistant as I suspect my allergies are still developing, we&rsquo;ll see.</p>
+<h2 id="stranger-danger">
+  Stranger Danger
+  <a class="heading-link" href="#stranger-danger">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I am not a doctor, this is not medical advice, stranger danger!. Everyone is different, I think my experience might be a possible avenue for the daily migraine sufferers to pursue. The once-in-a-while &ldquo;kill me&rdquo; migraines are probably something else.</p>
+<p>I&rsquo;m guessing, wtf do I know? This is what worked for me, if you&rsquo;re at your breaking point, consider giving this a try?</p>
+<p>And there endeth the lesson / journey, may your allergies be insignificant and your diet varied and healthy.</p>
+<blockquote>
+<h1 id="live-long-and-may-the-force-be-with-you">
+  &ldquo;Live Long and May the Force be With You.
+  <a class="heading-link" href="#live-long-and-may-the-force-be-with-you">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+</blockquote>
+<p>Read more about my journey here</p>
+<ul>
+<li>Part 1 - No More Migraines, what I stopped eating</li>
+<li><a href="https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/"  class="external-link" target="_blank" rel="noopener">Part 2 - Using Home Assistant to Track Symptoms &amp; Cure Migraines</a></li>
+<li><a href="https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/"  class="external-link" target="_blank" rel="noopener">Part 3 - Visualising the data for Food and Migraines</a></li>
+<li><a href="http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html"  class="external-link" target="_blank" rel="noopener">A Visualisation of My Migraines and Food / Ingredients Consumed</a></li>
+</ul>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Rodders 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

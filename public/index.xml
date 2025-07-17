@@ -6,7 +6,67 @@
     <description>Recent content on Rodders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rodders.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rodders.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why 2025 Blew the Lid Off UK Food Safety Alerts</title>
+      <link>https://rodders.me/posts/2025-07-12-fsa-alerts-cons-vs-labs/fsa-monthly/</link>
+      <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/posts/2025-07-12-fsa-alerts-cons-vs-labs/fsa-monthly/</guid>
+      <description>Why Food Safety Alerts Nearly Doubled in 2025 Link to heading A Government Change Catalysed Better Reporting, Not Riskier Food Link to heading Number of alerts issued by quarter Link to heading As the Labour Government take over running the UK, it&amp;rsquo;s interesting to take a quick dive into the FSA data to see if anything is different
+Comparing the equivalent time period for the previous Conservative Government and Labour:</description>
+    </item>
+    
+    <item>
+      <title> Pt 3. Visualising the data for Food and Migraines</title>
+      <link>https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/</link>
+      <pubDate>Mon, 07 Jul 2025 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/</guid>
+      <description>If you experience any of the symptoms I list in the previous article on a regular basis, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life.
+Introduction Collecting the Data The Data Structure The initial collected data Adding Ingredients to Foods in the dataset The Visualisation Introduction Link to heading I used to suffer from migraines, amongst multiple less severe but nonetheless annoying symptoms.</description>
+    </item>
+    
+    <item>
+      <title>Food Safety Agency Monthly Infographic for July 2025</title>
+      <link>https://rodders.me/fsa-monthly/jul-2025/fsa-monthly/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/fsa-monthly/jul-2025/fsa-monthly/</guid>
+      <description>Infographic generated for UK Food Safety Alert data from the https://food.gov.uk website.
+This INFOGRAPHIC is programmatically generated from data that has been scraped, cleansed, categorised, feature engineered, analysed, visualised and managed through a self developed python app using the Streamlit library.
+Analysis of Food Standards Agency Alerts Analysis Report and Visualisations Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Data Scraping &amp;amp; Management Meta Data Feature Engineering Abstract Link to heading In this report, I delve into the complexities of food safety in the UK.</description>
+    </item>
+    
+    <item>
+      <title>Pt 2. Using Home Assistant to Cure My Migraines</title>
+      <link>https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</link>
+      <pubDate>Fri, 27 Jun 2025 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</guid>
+      <description>Introduction It started with a click Building a data driven health tracker Over-engineering a simple data collection problem? NABU Casa subscription not required (but very worthwhile and helpful) A Look at the Home Assistant Dashboard Here&amp;rsquo;s how The Home Assistant Dashboard was made The Datafile The Lovelace Dashboard Food Button Example of another category for the Dashboard Button The Button Logging script What is written to to the file sensor Symptom Severity Logging Symptom Severity Logging - The input_number helper The Lovelace Dashboard Symptom Severity Logging Input and Button code Symptom Severity Logging - The script.</description>
+    </item>
+    
+    <item>
+      <title>Pt 1. No More Migraines: What I Stopped Eating</title>
+      <link>https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</link>
+      <pubDate>Thu, 26 Jun 2025 09:15:27 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</guid>
+      <description>If you regularly experience any of the symptoms I list later in the article, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life. This was my journey, I hope it brings relief to others.</description>
+    </item>
+    
+    <item>
+      <title>Food Safety Agency Monthly Infographic for June 2025</title>
+      <link>https://rodders.me/fsa-monthly/jun-2025/fsa-monthly/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/fsa-monthly/jun-2025/fsa-monthly/</guid>
+      <description>Infographic generated for UK Food Safety Alert data from the https://food.gov.uk website.
+This INFOGRAPHIC is programmatically generated from data that has been scraped, cleansed, categorised, feature engineered, analysed, visualised and managed through a self developed python app using the Streamlit library.
+Analysis of Food Standards Agency Alerts Analysis Report and Visualisations Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Data Scraping &amp;amp; Management Meta Data Feature Engineering Abstract Link to heading In this report, I delve into the complexities of food safety in the UK.</description>
+    </item>
+    
     <item>
       <title>Food Safety Agency Monthly Infographic for May 2025</title>
       <link>https://rodders.me/fsa-monthly/may-2025/fsa-monthly/</link>
@@ -38,16 +98,6 @@ Analysis of Food Standards Agency Alerts Analysis Report and Visualisations Link
       <description>Infographic generated for UK Food Safety Alert data from the https://food.gov.uk website.
 This INFOGRAPHIC is programmatically generated from data that has been scraped, cleansed, categorised, feature engineered, analysed, visualised and managed through a self developed python app using the Streamlit library.
 Analysis of Food Standards Agency Alerts Analysis Report and Visualisations Link to heading Report Index Link to heading Report Introduction Summary Pathogenic Contaminants Allergenic Contaminants Foreign Material Contaminants Other Contaminants / Issues Contaminants by Product Type Analysts Notes Link to heading Data Scraping &amp;amp; Management Meta Data Feature Engineering Abstract Link to heading In this report, I delve into the complexities of food safety in the UK.</description>
-    </item>
-    
-    <item>
-      <title>Home Assistant Dashboard - Health Metrics Tracking</title>
-      <link>https://rodders.me/projects/homeassistant-health/home-assistant-health/</link>
-      <pubDate>Wed, 12 Feb 2025 09:15:27 +0000</pubDate>
-      
-      <guid>https://rodders.me/projects/homeassistant-health/home-assistant-health/</guid>
-      <description>
-Some ideas on using Home Assistant to track health metrics Link to heading My Health Dashboard Link to heading </description>
     </item>
     
     <item>
@@ -273,7 +323,7 @@ The course covered a wide array of topics, from advanced data processing techniq
     </item>
     
     <item>
-      <title>Google Data Analytics Course Passed!</title>
+      <title>Google Data Analytics Course Passed xx</title>
       <link>https://rodders.me/posts/2023-08-14-google-data-analytics-completed/google-data-analytics-completed/</link>
       <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
       
@@ -281,6 +331,24 @@ The course covered a wide array of topics, from advanced data processing techniq
       <description>https://www.coursera.org/account/accomplishments/professional-cert/L4GS97QJ8KCZ
 A Milestone Achieved Link to heading Completing the Google Data Analytics Specialization on Coursera 📊
 A few months ago, I was unfortunately made redundant which gave me the opportunity to reflect and decide what I really wanted to do when I grew up. This little voyage of discovery led me to the world of data analytics and data science and I decided to re-enter education and develop some new skills in these fast growing and changing specialisations.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://rodders.me/projects/homeassistant-health-dashboard-pt2/symptoms_comparison/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/homeassistant-health-dashboard-pt2/symptoms_comparison/</guid>
+      <description> Symptom Gluten Wheat Dairy Celery Headache X X X X Bloating X X X X Abdominal pain/cramps X X X X Diarrhea X X X X Constipation X X X Nausea X X X X Fatigue X X X X Brain fog X X X Skin rash (eczema, urticaria) X X X X Itching (mouth/skin) X X X Sneezing/runny nose X X X Anaphylaxis (severe allergy) X X X Joint pain X X X Weight loss X Depression/anxiety X X X Gas/flatulence X X X X </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/symptoms_comparison/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/symptoms_comparison/</guid>
+      <description> Symptom Gluten Wheat Dairy Celery Headache X X X X Bloating X X X X Abdominal pain/cramps X X X X Diarrhea X X X X Constipation X X X Nausea X X X X Fatigue X X X X Brain fog X X X Skin rash (eczema, urticaria) X X X X Itching (mouth/skin) X X X Sneezing/runny nose X X X Anaphylaxis (severe allergy) X X X Joint pain X X X Weight loss X Depression/anxiety X X X Gas/flatulence X X X X </description>
     </item>
     
     <item>

@@ -55,6 +55,31 @@
           "name": "series",
           "type": "fields",
           "fields": []
+        },
+        {
+          "title": "lastmod",
+          "name": "lastmod",
+          "type": "datetime"
+        },
+        {
+          "title": "menu",
+          "name": "menu",
+          "type": "string"
+        },
+        {
+          "title": "Author",
+          "name": "Author",
+          "type": "string"
+        },
+        {
+          "title": "banner",
+          "name": "banner",
+          "type": "string"
+        },
+        {
+          "title": "preview",
+          "name": "preview",
+          "type": "string"
         }
       ]
     }

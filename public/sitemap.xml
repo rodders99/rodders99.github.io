@@ -3,54 +3,123 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://rodders.me/categories/advanced-data-analytics/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/tags/allergens/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/categories/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/categories/food-safety/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/fsa-monthly/may-2025/fsa-monthly/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/tags/food-safety-uk/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/tags/food.gov.uk/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/tags/foreign-material-contamination/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/fsa-monthly/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/lxml/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/matplotlib/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/microsoft-excel/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/numpy/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/pandas/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/tags/pathogens/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/posts/</loc>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/</loc>
-    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/tags/</loc>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/posts/2025-07-12-fsa-alerts-cons-vs-labs/fsa-monthly/</loc>
+    <lastmod>2025-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/authors/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/biohacking/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/food-diary/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/health-tracking/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/home-assistant/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/categories/home-assistant/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/home-assistant-dashboard/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/home-assistant-helpers/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/home-assistant-scripts/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/home-assistant-yaml/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/machine-learning/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/microsoft-excel/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/pandas/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/plotly/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/projects/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/python/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/authors/rodders/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/yaml/</loc>
+    <lastmod>2025-07-07T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/jul-2025/fsa-monthly/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/lxml/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/matplotlib/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/numpy/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</loc>
+    <lastmod>2025-06-27T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/</loc>
+    <lastmod>2025-06-26T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/jun-2025/fsa-monthly/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/fsa-monthly/may-2025/fsa-monthly/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/fsa-monthly/apr-2025/fsa-monthly/</loc>
@@ -58,33 +127,6 @@
   </url><url>
     <loc>https://rodders.me/fsa-monthly/mar-2025/fsa-monthly/</loc>
     <lastmod>2025-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/authors/</loc>
-    <lastmod>2025-02-12T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/diabetes/</loc>
-    <lastmod>2025-02-12T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/food-diary-automation/</loc>
-    <lastmod>2025-02-12T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/home-assistant/</loc>
-    <lastmod>2025-02-12T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/projects/homeassistant-health/home-assistant-health/</loc>
-    <lastmod>2025-02-12T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/projects/</loc>
-    <lastmod>2025-02-12T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/python/</loc>
-    <lastmod>2025-02-12T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/tags/r/</loc>
-    <lastmod>2025-02-12T09:15:27+00:00</lastmod>
-  </url><url>
-    <loc>https://rodders.me/authors/rodders/</loc>
-    <lastmod>2025-02-12T09:15:27+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/fsa-monthly/feb-2025/fsa-monthly/</loc>
     <lastmod>2025-02-07T00:00:00+00:00</lastmod>
@@ -102,6 +144,9 @@
     <lastmod>2024-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/projects/fsa-safety-alerts/fsa-safety-alerts/</loc>
+    <lastmod>2024-10-08T09:15:27+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/tags/r/</loc>
     <lastmod>2024-10-08T09:15:27+00:00</lastmod>
   </url><url>
     <loc>https://rodders.me/fsa-monthly/sep-2024/fsa-monthly/</loc>
@@ -164,9 +209,6 @@
     <loc>https://rodders.me/tags/learning/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rodders.me/posts/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rodders.me/tags/r-language/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -193,6 +235,10 @@
   </url><url>
     <loc>https://rodders.me/tags/tableau/</loc>
     <lastmod>2023-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rodders.me/projects/homeassistant-health-dashboard-pt2/symptoms_comparison/</loc>
+  </url><url>
+    <loc>https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/symptoms_comparison/</loc>
   </url><url>
     <loc>https://rodders.me/contact/</loc>
   </url><url>

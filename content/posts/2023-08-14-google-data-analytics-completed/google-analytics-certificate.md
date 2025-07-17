@@ -1,5 +1,5 @@
 ---
-title: Google Data Analytics Course Passed!
+title: Google Data Analytics Course Passed xx
 description: I'm pleased to have completed the Google Data Analytics Specialisation course
 slug: google-data-analytics-completed
 date: "2023-08-14"
@@ -17,8 +17,9 @@ categories:
   - Data Professional
   - Google Certified Analytics
 Author: Rodders
-banner: /img/Google_Coursera_Logo.png
+featuredImage: /img/Google_Coursera_Logo.png
 ---
+
 
 [![a](/img/certifications/Google_Data_Analytics_Certification.png)](https://www.coursera.org/account/accomplishments/professional-cert/L4GS97QJ8KCZ)
 https://www.coursera.org/account/accomplishments/professional-cert/L4GS97QJ8KCZ

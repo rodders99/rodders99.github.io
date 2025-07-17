@@ -2,7 +2,7 @@
 title: Python, Matplotlib and Fonts, some useful-notes
 date: 2024-01-01
 description: "Adding Fonts to Matplotlib, how to guide and supporting code for discovery"
-draft: true
+draft: True
 authors: "Rodders"
 tags: []
 categories: []

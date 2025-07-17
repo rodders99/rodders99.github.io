@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Pt 1. Using Home Assistant to Track Symptoms &amp; Cure Migraines · Rodders
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Rodders">
+<meta name="description" content="Using Home Assistant&#39;s powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines">
+<meta name="keywords" content="blog,developer,personal, analyst, pandas, python, homeassistant,smart-home,oh-my">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pt 1. Using Home Assistant to Track Symptoms &amp; Cure Migraines"/>
+<meta name="twitter:description" content="Using Home Assistant&#39;s powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines"/>
+
+<meta property="og:title" content="Pt 1. Using Home Assistant to Track Symptoms &amp; Cure Migraines" />
+<meta property="og:description" content="Using Home Assistant&#39;s powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rodders.me/projects/homeassistant-health-dashboard/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2025-06-27T09:15:27+00:00" />
+<meta property="article:modified_time" content="2025-06-27T09:15:27+00:00" />
+
+
+
+
+<link rel="canonical" href="https://rodders.me/projects/homeassistant-health-dashboard/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.577e3c5ead537873430da16f0964b754a120fd87c4e2203a00686e7c75b51378.css" integrity="sha256-V348Xq1TeHNDDaFvCWS3VKEg/YfE4iA6AGhufHW1E3g=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://rodders.me/">
+      Rodders
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/fsa-monthly/">UK Food Safety Infographics</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://rodders.me/projects/homeassistant-health-dashboard/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/">
+          Pt 1. Using Home Assistant to Track Symptoms &amp; Cure Migraines
+        </a>
+      </h1>
+    </header>
+
+    <p><img src="https://rodders.me/projects/homeassistant-health-dashboard/homeassistant_logo.jpg" alt="Home Assistant Logo"></p>
+<blockquote>
+<p>Hint if you experience any of the symptoms, I list later in the article, on a regular basis, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life.</p>
+</blockquote>
+<h5 id="table-of-contents">
+  Table of Contents
+  <a class="heading-link" href="#table-of-contents">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h5>
+<ul>
+<li>
+<p><a href="#i-blame-budweiser" >How it started</a></p>
+</li>
+<li>
+<p><a href="#over-engineering-a-simple-problem" >Using Home Assistant as a data logging tool</a></p>
+</li>
+<li>
+<p><a href="#home-assistant-cured-my-migraines" >How I cure my Migraines using the data collected from Home Assistant</a></p>
+</li>
+<li>
+<p><a href="#building-a-data-driven-health-tracker" >Building a data driven health tracker</a></p>
+</li>
+<li>
+<p><a href="#a-look-at-the-home-assistant-dashboard" >A Look at the Home Assistant Dashboard</a></p>
+<ul>
+<li><a href="#the-datafile" >The datafile</a></li>
+<li><a href="#the-lovelace-dashboard-food-button" >The Lovelace Dashboard Food Logging Button</a></li>
+<li><a href="#example-of-another-category-for-the-dashboard-button" >Example of another category for the Dashboard Button</a></li>
+<li><a href="#the-button-logging-script" >The Button Logging script</a></li>
+<li><a href="#symptom-severity-logging" >Symptom Severity Logging</a></li>
+<li><a href="#recording-sleep-information" >Sleep Logging</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#my-symptom-checklist" >My Symptom Checklist</a></p>
+</li>
+<li>
+<p><a href="#symptom-similarities-in-trigger-foods" >Symptom Similarities in Trigger Foods</a></p>
+</li>
+<li>
+<p><a href="#discovering-my-triggers" >Discovering My Triggers</a></p>
+<ul>
+<li><a href="#dairy" >Dairy</a></li>
+<li><a href="#gluten-and-wheat" >Gluten/Wheat</a></li>
+<li><a href="#celery" >Celery</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#cured" >Cured!!</a></p>
+</li>
+</ul>
+<h1 id="i-blame-budweiser">
+  I Blame Budweiser
+  <a class="heading-link" href="#i-blame-budweiser">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>I used to suffer from migraines, amongst multiple less severe but nonetheless annoying symptoms.</p>
+<p>Practically every single day, for the last 15 years, I&rsquo;ve woken up with a migraine and gone to bed with one. It started 15 years ago at a friend&rsquo;s wedding. The evening before we&rsquo;re sharing a beer (Budweiser) chatting about the upcoming wedding, we go to bed, then at 3am in the morning I&rsquo;m woken by the worst headache I&rsquo;ve ever experienced. That headache lasted a week and was devastating, I cannot remember a single detail from that week, not the wedding, how I got from Devon to Hampshire after the wedding, none of the calls from work asking where I was, it&rsquo;s a blank.</p>
+<h3 id="medical-dead-end---chatgpt-to-the-rescue">
+  Medical Dead End - ChatGPT to the rescue!
+  <a class="heading-link" href="#medical-dead-end---chatgpt-to-the-rescue">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Cue 15 years of near daily migraines, not as devastating as the first migraine, but debilitating none the less.</p>
+<p>Many visits to doctors followed this; MRI scans, blood tests, medications (Sumatriptan, Naproxen, Diclofenac, Fun painkillers that had no effect (apart from being a bit high for an hour or two) and of course many migraines later and I finally asked Chatgpt for help. Amongst the wide range of suggestions offered by ChatGPT, was a golden nugget of a suggestion:</p>
+<blockquote>
+<h3 id="why-dont-you-keep-a-diary-of-symptoms-and-see-if-anything-stands-out">
+  &ldquo;Why don&rsquo;t you keep a diary of symptoms and see if anything stands out?&rdquo;.
+  <a class="heading-link" href="#why-dont-you-keep-a-diary-of-symptoms-and-see-if-anything-stands-out">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+</blockquote>
+<p>Good point, why don&rsquo;t I?</p>
+<h3 id="why-paper-diaries-failed">
+  Why paper diaries failed
+  <a class="heading-link" href="#why-paper-diaries-failed">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I have to admit this was not a new suggestion, I&rsquo;d attempted this before, but me and paper diaries do not get along: can&rsquo;t find a pen then forget to record something, left the diary at home when out then forget to record something, headache too bad to concentrate and write down what was eaten then forget to update the diary later etc. leading to many many missed entries and an incomplete dataset.</p>
+<p>A secondary reason for using Home Assistant was that I needed a clean and consistent machine readable data set.</p>
+<p>You see, it was my intention to flex my python, pandas, visualisation and machine learning skills to see if a predictive model or some way of visualising the data could give me some answers, and an incomplete dataset is not going to cut it if I want that.</p>
+<p>The dashboard made recording food quick and simple, a couple of click/taps per meal or miserable start to the day was all it took.</p>
+<h3 id="machine-learning-as-a-biohacking-tool">
+  Machine Learning as a Biohacking tool
+  <a class="heading-link" href="#machine-learning-as-a-biohacking-tool">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>What I found however was that having access to a very detailed food diary actually made it pretty simple to see the problem foods directly in the data without going to the lengths of building a machine learning model or crafting a creative visualisation.</p>
+<p>It is still my intention to implement the visualisation / machine learning predictive model and share it with the community in the hope that it may help someone else and if you are interested keep your eyes out for my next post on this subject.</p>
+<h3 id="building-a-data-driven-health-tracker">
+  Building a data driven health tracker
+  <a class="heading-link" href="#building-a-data-driven-health-tracker">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Over the past seven months that I&rsquo;ve been using Home Assistant to log the data:</p>
+<ul>
+<li>Date</li>
+<li>Time</li>
+<li>Categories (Food, Symptom etc.)</li>
+<li>Additional Information (Detailed food info etc.)</li>
+</ul>
+<p>I&rsquo;ve collected over 12,000 rows of data which is more than enough to use as a dataset for a predictive model and expect some reasonable results. What also helps is now knowing my what my triggers are, I&rsquo;ll be able to compare it to the output from the ML Model. About 80% of this data was readings from a <a href="CGM" >https://en.wikipedia.org/wiki/Continuous_glucose_monitor</a>, which were later discounted as irrelevant (this was one of ChatGPTs suggestions that proved pointless)</p>
+<h3 id="over-engineering-a-simple-problem">
+  Over-engineering a simple problem?
+  <a class="heading-link" href="#over-engineering-a-simple-problem">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>So I flexed my considerable experience with Home Assistant to develop a Home Assistant dashboard page specific to tracking food / fluid consumption, health indicators and symptoms.</p>
+<p>Here&rsquo;s where Home Assistant comes in, one thing that is a constant is my mobile phone which is rarely out of my hands, couple this with the Home Assistant app <a href="https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&amp;hl=en-GB&amp;gl=US"  class="external-link" target="_blank" rel="noopener">Android</a> or <a href="https://apps.apple.com/us/app/home-assistant/id1099568401"  class="external-link" target="_blank" rel="noopener">IOS</a>, a <a href="https://www.nabucasa.com/pricing/"  class="external-link" target="_blank" rel="noopener">Nabu Casa</a> subscription and that combination enabled me to update my food and symptom tracker regardless of where I was, at home or out with friends.</p>
+<p>I had a method of simply (and quickly) keeping a detailed diary of food and symptoms using a simple button click interface that simplified maintaining a food / symptoms Diary etc. which in turn enabled me to begin collecting the detailed data necessary to attempt to identify the causes of my migraines and fix them.</p>
+<p>Initially I also used a Continuous Glucose Monitor  (<a href="https://github.com/PTST/LibreView-HomeAssistant"  class="external-link" target="_blank" rel="noopener">Libre Freestyle integration</a> FTW!) to monitor blood glucose after eating (ChatGPT suggestion), and it was simple to integrate this into the overall solution I built. However as more data was collected, it became apparent that this was not a factor causing my migraines.</p>
+<h3 id="nabu-casa-subscription-not-required-but-very-worthwhile-and-helpful">
+  NABU Casa subscription not required (but very worthwhile and helpful)
+  <a class="heading-link" href="#nabu-casa-subscription-not-required-but-very-worthwhile-and-helpful">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>A <a href="https://www.nabucasa.com/"  class="external-link" target="_blank" rel="noopener">Nabu Casa Subscription</a> enables remote access to your Home Assistant instance, using the Home Assistant app <a href="https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&amp;hl=en-GB&amp;gl=US"  class="external-link" target="_blank" rel="noopener">Android</a> or <a href="https://apps.apple.com/us/app/home-assistant/id1099568401"  class="external-link" target="_blank" rel="noopener">IOS</a>, outside of your home wifi network, which means when you are not home you can access your Home Assistant server from anywhere.</p>
+<p>Please note that a Nabu Casa subscription is not required for my solution (but come on, support the Devs!) if:</p>
+<ul>
+<li>You have already setup your own remote access solution</li>
+<li>You intend on setting up your own <a href="https://www.home-assistant.io/docs/configuration/remote/"  class="external-link" target="_blank" rel="noopener">remote access solution</a></li>
+<li>You not require remote access to your Home Assistant Instance.</li>
+</ul>
+<p>However a subscription supports the developers and simplifies a lot of the more complex elements of setting up Home Assistant remote access and integrating with Alexa and Google voice control.</p>
+<blockquote>
+<h2 id="support-the-devs">
+  Support the Devs!
+  <a class="heading-link" href="#support-the-devs">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+</blockquote>
+<h2 id="home-assistant-cured-my-migraines">
+  Home Assistant Cured my Migraines
+  <a class="heading-link" href="#home-assistant-cured-my-migraines">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Today, and I&rsquo;m not kidding, thanks to Home Assistant enabling me to capture supremely detailed information on my diet and symptoms, I cured my migraines. You&rsquo;ll have to read to the end to find out <a href="#biohacking-my-diet-and-diagnosing-myself-with-data-collected-using-home-assistant" >how I cured my migraines</a>.</p>
+<p>The following details the methods I used to create the dashboard and begin collecting data.</p>
+<h3 id="a-look-at-the-home-assistant-dashboard">
+  A Look at the Home Assistant Dashboard
+  <a class="heading-link" href="#a-look-at-the-home-assistant-dashboard">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Here&rsquo;s what the dashboard looks like.</p>
+<p><img src="/img/homeassistant/homeassistant_health_dashboard-edit%20(resize).jpg" alt="Home Assistant Health Dashboard"></p>
+<h2 id="heres-how-it-was-made">
+  Here&rsquo;s how it was made
+  <a class="heading-link" href="#heres-how-it-was-made">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The overall solution is built around a number of Home Assistant components:</p>
+<ul>
+<li>A Datafile where the health indicators, symptom and food was saved as a CSV using the <a href="https://www.home-assistant.io/integrations/file/"  class="external-link" target="_blank" rel="noopener">FILE Integration</a></li>
+<li>A <a href="https://www.home-assistant.io/docs/configuration/templating/"  class="external-link" target="_blank" rel="noopener">Home Assistant Template</a> to structure the data as a CSV written to the file</li>
+<li><a href="https://www.home-assistant.io/dashboards/button/"  class="external-link" target="_blank" rel="noopener">Button Dashboard Cards</a> for the various foods I typically eat</li>
+<li>Buttons for the various symptoms I wanted to track</li>
+<li><a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">Home Assistant input_number Helpers</a> to track numeric values such as sleep and headache severity</li>
+<li><a href="https://www.home-assistant.io/integrations/input_text/"  class="external-link" target="_blank" rel="noopener">Home Assistant input_text Helper</a> to record notes, symptoms or foods not already setup with a button</li>
+<li><a href="https://www.home-assistant.io/integrations/script/"  class="external-link" target="_blank" rel="noopener">Home Assistant Scripts</a> that the buttons call to record the health, symptom and food information to the file integration.</li>
+</ul>
+<h2 id="the-datafile">
+  The datafile
+  <a class="heading-link" href="#the-datafile">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>To record the data into a CSV Data File that can be analysed with tools like python, pandas and Machine Learning models, a file sensor integration needs to be setup in Home Assistant.</p>
+<p><code>Settings -&gt; Add Integration -&gt; File -&gt; Setup file-based sensor.</code></p>
+<p>Give it a memorable name, this is used in the script to write the data associated with a button being clicked.</p>
+<h2 id="the-lovelace-dashboard-food-button">
+  The Lovelace Dashboard Food Button
+  <a class="heading-link" href="#the-lovelace-dashboard-food-button">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="/img/homeassistant/food_buttons.jpg" alt="food button"></p>
+<p>These are Buttons in a horizontal stack.</p>
+<p>A Button needs to be created for each commonly used food. When the button is clicked the information under the <code>data</code> heading is written to the Home Assistant file sensor.</p>
+<p>The key elements for data acquisition are under the <code>data:</code> heading :</p>
+<ul>
+<li>carbs</li>
+<li>fluids</li>
+<li>category</li>
+<li>item</li>
+</ul>
+<p>Hopefully it&rsquo;s obvious that you amend these for each food you wish to create a button for.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">show_name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">show_icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>entity-button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">tap_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>perform-action<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">category</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>FOOD<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">item</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Choccie Coffee (18g CHO &amp; 3 tsp &amp; 400ml fluids)<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">carbs</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>18<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">liquids</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>400<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>{}<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">perform_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_log_button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_log_button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>mdi:coffee<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">15</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">hold_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">16</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>none<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">17</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Choccie Coffee (18g CHO)<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">18</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">icon_height</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>20px<span style="color:#414559">
+</span></span></span></code></pre></div><h3 id="example-of-another-category-for-the-dashboard-button">
+  Example of another category for the Dashboard Button
+  <a class="heading-link" href="#example-of-another-category-for-the-dashboard-button">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The same script can be used to log other non food items by simply changing the category to whatever you want. In my case I started out recording secondary symptoms:</p>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">show_name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">show_icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>entity-button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Feeling Cold<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">tap_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>perform-action<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">category</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>SYMPTOM<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">item</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Feeling Cold<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>{}<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">perform_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_log_button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_log_button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">icon_height</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>20px<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>mdi:snowflake-alert<span style="color:#414559">
+</span></span></span></code></pre></div><h2 id="the-button-logging-script">
+  The Button Logging script
+  <a class="heading-link" href="#the-button-logging-script">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This script is called each time a relevant button is clicked. It stores the data in a consistent CSV format for later analysis.</p>
+<p>The notify.<em>file</em> where file is the name of the file sensor created earlier.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">health_log_button</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">alias</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#a6d189">&#34;food - Log Button&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">sequence</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">condition</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>template<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">value_template</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#a6d189">&#34;{{ carbs is defined and carbs | int != 0 }}&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">sequence</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#a6d189">                {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">15</span><span><span style="color:#a6d189">                 &#39;FOOD&#39;,&#39;{{item}}&#39;,&#39;{{carbs}}&#39;&#34;</span><span style="color:#414559">                
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">16</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">17</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">condition</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>template<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">18</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">value_template</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#a6d189">&#34;{{ liquids is defined and liquids | int != 0 }}&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">19</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">20</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">21</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">22</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">23</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">24</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">25</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">26</span><span><span style="color:#a6d189">                {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">27</span><span><span style="color:#a6d189">                 &#39;DRINK&#39;,&#39;{{item}}&#39;,&#39;{{liquids}}&#39;&#34;</span><span style="color:#414559">                
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">28</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>python_script.set_state<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">29</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">30</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>sensor.food_liquids_day_total<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">31</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">state</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">32</span><span><span style="color:#a6d189">              &#34;{{ states(&#39;sensor.food_liquids_day_total&#39;) | 
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">33</span><span><span style="color:#a6d189">              float(0) + liquids | float(0) }}&#34;</span><span style="color:#414559">              
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">34</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">35</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">condition</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>template<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">36</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">value_template</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">37</span><span><span style="color:#a6d189">                      &#34;{{ (carbs is not defined or carbs | int == 0) and 
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">38</span><span><span style="color:#a6d189">                      (liquids is not defined or liquids | int == 0) }}&#34;</span><span style="color:#414559">                      
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">39</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">40</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">41</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">42</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">43</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">44</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">45</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">46</span><span><span style="color:#a6d189">                {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">47</span><span><span style="color:#a6d189">                 &#39;{{category}}&#39;,&#39;{{item}}&#39;,&#39;0&#39;&#34;</span><span style="color:#414559">                
+</span></span></span></code></pre></div><p>Essentially this script runs through THEN conditions to determine what to write to the file.</p>
+<p>If <code>carbs</code> is defined and not zero, write the carbs, category and item detail contained in the card to the file sensor.</p>
+<h5 id="then">
+  THEN
+  <a class="heading-link" href="#then">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h5>
+<p>If <code>fluids</code> is defined and not zero, write the fluids, category and item detail contained in the card to the file sensor.</p>
+<h4 id="then-1">
+  THEN
+  <a class="heading-link" href="#then-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>If <code>fluids</code> and <code>carbs</code> is not defined, Write the category and item detail contained in the card to the file sensor.</p>
+<p>Obviously it&rsquo;s pretty simple to expand this and add additional information you need.</p>
+<h3 id="what-is-written-to-to-the-file-sensor">
+  What is written to to the file sensor
+  <a class="heading-link" href="#what-is-written-to-to-the-file-sensor">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>This will write an entry in the file you have setup that looks like this:</p>
+<p>2025-04-20,10:30,&lsquo;FOOD&rsquo;,&lsquo;Coffee (15g CHO &amp; 1 tsp Sugar &amp; 400ml Fluids)&rsquo;,&lsquo;15&rsquo;</p>
+<p>2025-04-20,10:30,&lsquo;DRINK&rsquo;,&lsquo;Coffee (15g CHO &amp; 1 tsp Sugar &amp; 400ml Fluids)&rsquo;,&lsquo;400&rsquo;</p>
+<p>And the data split :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Date</th>
+<th style="text-align:left">Time</th>
+<th style="text-align:left">Category</th>
+<th style="text-align:left">Food Info</th>
+<th style="text-align:left">Carbs / Fluids</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2025-04-20</td>
+<td style="text-align:left">10:30</td>
+<td style="text-align:left">&lsquo;FOOD&rsquo;</td>
+<td style="text-align:left">&lsquo;Coffee (15g CHO &amp;  1 tsp Sugar &amp;  400ml)&rsquo;</td>
+<td style="text-align:left">&lsquo;15&rsquo;</td>
+</tr>
+<tr>
+<td style="text-align:left">2025-04-20</td>
+<td style="text-align:left">10:30</td>
+<td style="text-align:left">&lsquo;DRINK&rsquo;</td>
+<td style="text-align:left">&lsquo;Coffee (15g CHO &amp;  1 tsp Sugar &amp;  400ml)&rsquo;</td>
+<td style="text-align:left">&lsquo;400&rsquo;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="symptom-severity-logging">
+  Symptom Severity Logging
+  <a class="heading-link" href="#symptom-severity-logging">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The Symptom Severity section consists of five main elements :</p>
+<ul>
+<li><a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">input_number Helper</a> required for the dashboard card to store the set value</li>
+<li>A Dashboard card to allow the values to be set</li>
+<li>A script to store severity values from the input_number helper to the  datafile</li>
+<li>An optional graph plotting historic data store in the input_number helper</li>
+</ul>
+<p><img src="/img/homeassistant/severity_logging.jpg" alt="severitylogging"></p>
+<h2 id="symptom-severity-logging---the-input_number-helper">
+  Symptom Severity Logging - The input_number helper
+  <a class="heading-link" href="#symptom-severity-logging---the-input_number-helper">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The <a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">input_number Helper</a> needs to be created in Home Assistant to allow this value to be set in the dashboard.</p>
+<p><code>Settings -&gt; Devices &amp; Services -&gt; Helpers -&gt; + Create Helper -&gt; Number</code></p>
+<p>Give your helper a name, and under advanced select whether you want to use a slider or input field (either works with the script).</p>
+<h3 id="the-lovelace-dashboard-symptom-severity-logging-input-and-button-code">
+  The Lovelace Dashboard Symptom Severity Logging Input and Button code
+  <a class="heading-link" href="#the-lovelace-dashboard-symptom-severity-logging-input-and-button-code">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>horizontal-stack<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">cards</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">features</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">      </span>- <span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>numeric-input<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">style</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>buttons<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>tile<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_headache_severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">vertical</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">false</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Headache Severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">features_position</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>bottom<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">show_name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">show_icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">tap_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">15</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>perform-action<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">16</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>{}<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">17</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">perform_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_headache_severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">18</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_headache_severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">19</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Update Headache<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">20</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>mdi:head-alert-outline<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">21</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">icon_height</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>20px<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">22</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">view_layout</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">23</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">position</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>sidebar<span style="color:#414559">
+</span></span></span></code></pre></div><p><img src="/img/homeassistant/input_helper_severity_v2.jpg" alt="input_helper"></p>
+<p>I&rsquo;m using the <a href="https://github.com/RomRider/apexcharts-card"  class="external-link" target="_blank" rel="noopener">Apex Charts addon</a> for plots, it has a lot more flexibility than the normal Home Assistant graph card.</p>
+<h3 id="symptom-severity-logging---the-script">
+  Symptom Severity Logging - The script.
+  <a class="heading-link" href="#symptom-severity-logging---the-script">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>This script adds the data from the input_number helper and stores the data in the datafile in the correct CSV format.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#a6d189">&#34;health_headache_severity&#34;</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">alias</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Health - Headache Severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">sequence</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#a6d189">                {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#a6d189">                 &#39;HEADACHE&#39;,&#39;Severity&#39;,
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#a6d189">                 &#39;{{ states(&#39;input_number.health_headache_severity&#39;) }}&#39;&#34;</span><span style="color:#414559">                
+</span></span></span></code></pre></div><h2 id="recording-sleep-information">
+  Recording Sleep Information
+  <a class="heading-link" href="#recording-sleep-information">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>(Recording multiple data items with a single button click)</p>
+<p>If you have a smart watch with an integration for Home Assistant, this could be automatic. My Galaxy smartwatch doesn&rsquo;t have an integration, so I logged sleep data manually.</p>
+<h3 id="the-dashboard-button-and-input-fields">
+  The Dashboard button and input fields
+  <a class="heading-link" href="#the-dashboard-button-and-input-fields">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">input_number Helpers</a> need to be created for each item you wish to record. For my example I was recording the sleep data from my smartwatch because there was no Home Assistant integration for it:</p>
+<ul>
+<li>Restless Sleep</li>
+<li>Light Sleep</li>
+<li>Motionless Sleep</li>
+</ul>
+<p><img src="/img/homeassistant/input_helpers_sleep.jpg" alt="sleep_record"></p>
+<p>Using the script below, the data from the <a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">input_number Helpers</a> helpers will be written to the file sensor.</p>
+<h3 id="the-lovelace-dashboard-card">
+  The Lovelace Dashboard Card
+  <a class="heading-link" href="#the-lovelace-dashboard-card">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>entities<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">entities</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_sleep_restless<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Restless (minutes)<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_sleep_light<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Light (minutes)<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_sleep_motionless<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Motionless (Minutes)<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_sleep_record<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>mdi:sleep<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">secondary_info</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>last-changed<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Save Record<span style="color:#414559">
+</span></span></span></code></pre></div><h3 id="the-script-for-sleep-data-capture">
+  The script for sleep data capture
+  <a class="heading-link" href="#the-script-for-sleep-data-capture">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#a6d189">&#34;health_sleep_record&#34;</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">alias</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Health - Sleep Record<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">sequence</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">    
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#a6d189">                {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#a6d189">                 &#39;SLEEP&#39;,&#39;RESTLESS&#39;, 
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#a6d189">                 &#39;{{ states(&#39;input_number.health_sleep_restless&#39;) }}&#39;&#34;</span><span style="color:#414559">                
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">15</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">16</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">17</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">18</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">19</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">20</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">21</span><span><span style="color:#a6d189">                {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">22</span><span><span style="color:#a6d189">                 &#39;SLEEP&#39;,&#39;LIGHT&#39;, 
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">23</span><span><span style="color:#a6d189">                 &#39;{{ states(&#39;input_number.health_sleep_light&#39;) }}&#39;&#34;</span><span style="color:#414559">                
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">24</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">25</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">26</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">27</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">28</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">29</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>&gt; <span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">30</span><span><span style="color:#414559">                </span><span style="color:#a6d189">&#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">31</span><span><span style="color:#a6d189">                {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">32</span><span><span style="color:#a6d189">                 &#39;SLEEP&#39;,&#39;MOTIONLESS&#39;, 
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">33</span><span><span style="color:#a6d189">                 &#39;{{ states(&#39;input_number.health_sleep_motionless&#39;) }}&#39;&#34;</span><span style="color:#414559">
+</span></span></span></code></pre></div><p>And that&rsquo;s it! 12,000 button clicks later and I&rsquo;m cured !</p>
+<p>If you want to find out more about my journey to cure my migraines, read on!</p>
+<h3 id="biohacking-my-diet-and-diagnosing-myself-with-data-collected-using-home-assistant">
+  Biohacking my diet and Diagnosing Myself with data collected using Home Assistant
+  <a class="heading-link" href="#biohacking-my-diet-and-diagnosing-myself-with-data-collected-using-home-assistant">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The journey began with accepting that something wasn&rsquo;t right, a growing suspicion that it had something to do with my diet, reinforced by a suggestion from ChatGPT. The list of symptoms were widespread and appeared unrelated, but reading on food allergy forums, most sufferers seem to experience at least one or more of these symptoms.</p>
+<blockquote>
+<p>Hint if you experience any of these symptoms on a regular basis, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life.</p>
+</blockquote>
+<h3 id="my-symptom-checklist">
+  My Symptom Checklist
+  <a class="heading-link" href="#my-symptom-checklist">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I would suffer every single one of these symptoms, every single time I consumed an allergen, the symptoms lasting anything up to a week.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Symptom</th>
+<th style="text-align:left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Migraines</td>
+<td style="text-align:left">These would last 2-5 days</td>
+</tr>
+<tr>
+<td style="text-align:left">Light headed</td>
+<td style="text-align:left">At times</td>
+</tr>
+<tr>
+<td style="text-align:left">Forgetful</td>
+<td style="text-align:left">I can&rsquo;t recall things: names, places, what I ate the previous day</td>
+</tr>
+<tr>
+<td style="text-align:left">Joint / Muscle Weakness and Pain</td>
+<td style="text-align:left">Easier to pull muscle, knee pain when walking upstairs</td>
+</tr>
+<tr>
+<td style="text-align:left">Fatigue</td>
+<td style="text-align:left">Waking feeling tired, needing afternoon naps, a walking talking zombie at the best of times</td>
+</tr>
+<tr>
+<td style="text-align:left">Irritability</td>
+<td style="text-align:left">Probably directly related to feeling tired and in pain</td>
+</tr>
+<tr>
+<td style="text-align:left">Inability to get to sleep</td>
+<td style="text-align:left">Brain running 100 miles an hour</td>
+</tr>
+<tr>
+<td style="text-align:left">Waking in the night</td>
+<td style="text-align:left">Hot, sweaty, uncomfortable, unable to return to sleep</td>
+</tr>
+<tr>
+<td style="text-align:left">Frequent Peeing</td>
+<td style="text-align:left">Waking 2-3 times during the night. Now I&rsquo;m migraine free, I sleep a solid 8 hours without waking</td>
+</tr>
+<tr>
+<td style="text-align:left">Brain Fog</td>
+<td style="text-align:left">Difficulty Concentrating</td>
+</tr>
+<tr>
+<td style="text-align:left">Constipation</td>
+<td style="text-align:left">In the early days (15 years years ago) this was a major symptom</td>
+</tr>
+<tr>
+<td style="text-align:left">Bloating</td>
+<td style="text-align:left">My entire body swells up a bit. I didn&rsquo;t realise this until much later after 2 weeks symptom free.</td>
+</tr>
+<tr>
+<td style="text-align:left">Sneezing, Runny Nose, Coughing</td>
+<td style="text-align:left">Really bad episodes would have me sounding like an asthmatic ex coal miner.</td>
+</tr>
+<tr>
+<td style="text-align:left">Dry Itchy Skin</td>
+<td style="text-align:left">One insanely itchy part of my body: Left foot, just above the heel, so bad it would prevent me sleeping. This takes two weeks to die down after consuming an allergen.</td>
+</tr>
+<tr>
+<td style="text-align:left">Pimples</td>
+<td style="text-align:left">Little red spots would appear across my body with a little white head that would eventually dry out and become almost like a psoriasis spot.</td>
+</tr>
+<tr>
+<td style="text-align:left">Anxiety / Depression</td>
+<td style="text-align:left">Driven by a lack of general motivation/energy to get anything done</td>
+</tr>
+</tbody>
+</table>
+<h3 id="discovering-my-triggers">
+  Discovering My Triggers
+  <a class="heading-link" href="#discovering-my-triggers">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>During the data capture phase, a number of foods were identified that &lsquo;appeared&rsquo; to correlate to my Migraines and another measurable symptom, my sleep quality. Using the data collected to identify missing foods from, initially rare, days when I didn&rsquo;t have a migraine, patterns began to emerge that prompted eliminating these foods from my diet and aggressively pursuing a restricted diet that did not contain possible triggers.</p>
+<p>The first trick was realising that symptoms lasted a week at least and I needed a full symptom free week to begin testing my allergen assumptions. Thus began my 3 month journey living on rice and chicken and reasonably safe vegetables : Salad, Capsicums, Carrots, Onions, Cucumber, Celery, chia seeds and removing the suspect problematic foods from my diet. Through this time migraines declined significantly. Reintroducing potential allergens started to show clear correlations.</p>
+<h4 id="dairy">
+  Dairy
+  <a class="heading-link" href="#dairy">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>The first food to standout in the dataset was Milk or more specifically dairy. I tested Milk, butter, cheese (sob), none of which I can consume in any amount without triggering symptoms. Further testing by elimination clearly identified Lactose and Casein protein, indicating I am <a href="https://www.nhs.uk/conditions/lactose-intolerance/"  class="external-link" target="_blank" rel="noopener">Lactose Intolerant</a> and <a href="https://www.healthcentre.org.uk/allergies/food-intolerance-casein-intolerance.html"  class="external-link" target="_blank" rel="noopener">Casein Intolerant</a> I can drink lactose free milk thankfully.</p>
+<p>First identified during the dietary elimination phase when I ate some ice-cream and introduced a protein supplement to my diet. Both had a huge negative impact on my fatigue levels. I&rsquo;d previously never realised how quickly symptoms started showing after consuming tiny amounts of these potential allergens. Eliminating both from my diet was an education in how bad certain foods are for me.</p>
+<p>So dairy is off the diet for ever, it affects sleep, contributes to mild to bad migraines and a list of secondary symptoms too unpleasant and irritating to detail here.</p>
+<h4 id="gluten-and-wheat">
+  Gluten and Wheat
+  <a class="heading-link" href="#gluten-and-wheat">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Bread, Pasta, Snacks, crisps etc.</p>
+<p>Yeah the stuff I eat practically every single day, this had the largest correlation to the worst migraines and drew the loudest and most incredulous</p>
+<blockquote>
+<h1 id="you-have-to-be-fking-kidding-me">
+  &ldquo;You have to be Fking kidding me&rdquo;
+  <a class="heading-link" href="#you-have-to-be-fking-kidding-me">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+</blockquote>
+<p>response from me.</p>
+<blockquote>
+<h1 id="im-glutenwheat-intolerantallergic-">
+  &ldquo;I&rsquo;m Gluten/Wheat Intolerant/allergic ???&rdquo;
+  <a class="heading-link" href="#im-glutenwheat-intolerantallergic-">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+</blockquote>
+<p>This is also known as NCGS <a href="https://www.beyondceliac.org/celiac-disease/non-celiac-gluten-sensitivity/symptoms/"  class="external-link" target="_blank" rel="noopener">Non Coeliac Gluten Sensitivity</a> when I first read the list of symptoms for this it was surreal &ldquo;Oh FFS&rdquo; moment for me.</p>
+<p>I found eliminating Wheat/Gluten difficult to stomach and just as hard to eat &hellip; gluten free alternatives are &hellip;. different, texture is different, how it tastes is different, how it works when cooked is different. I got used to Gluten Free alternative baked items through a process of trial, error and toasting everything. I&rsquo;ll admit it was hard at first, but over time I&rsquo;ve found alternatives that work, I got used to, or just eliminated the item from my diet.</p>
+<h3 id="elimination-salvation">
+  Elimination Salvation
+  <a class="heading-link" href="#elimination-salvation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Replacing traditional Bread, Pasta and Noodles with gluten free alternatives kept the migraines away which had the most immediate positive impact, but I was still getting symptoms, despite removing gluten from my diet which then led to me concluding I should eliminate any food products that have wheat.</p>
+<p>Eliminating all wheat containing foods from my diet demonstrated clear correlation, 24 hours later, no migraine. 48 hours later and a host of secondary symptoms are in decline, after a week I felt normal for the first time in years. After a week symptom free, I also realised that my entire body swells up a little bit (Bloat) after eating wheat containing products; rings on fingers become tighter and harder to remove when consuming allergens, after a week without gluten, my rings are slipping off my fingers, I&rsquo;ll probably need some rings resizing.</p>
+<h3 id="the-reality-of-living-with-food-intolerances">
+  The Reality of Living With Food Intolerances
+  <a class="heading-link" href="#the-reality-of-living-with-food-intolerances">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I also began to realise that consuming a tiny amount of wheat or dairy means I&rsquo;m pretty much fkd for a week. What made it even worse was having to read the labels on any sort of processed food I bought and realising that everything seems to have wheat in it, or a derivative of wheat.</p>
+<p>Soy Sauce ? Wheat, Vinegar? Wheat, Frozen Burgers? Wheat, Seasoning Spice Mixes? Wheat, Sausages? Wheat, Crisps and Snacky stuff ? Wheat, Pasta? Wheat, Noodles? Wheat, Biscuits and Sweet Snacks? You got it, Wheat, even oven chips all seem to be coated with wheat now. That&rsquo;s not all, wheat derivatives are everywhere:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Primary Gluten-Containing Grains</th>
+</tr>
+</thead>
+</table>
+<h4 id="these-are-the-main-sources-and-always-contain-gluten">
+  These are the main sources and always contain gluten:
+  <a class="heading-link" href="#these-are-the-main-sources-and-always-contain-gluten">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Wheat (all forms: spelt, durum, einkorn, emmer, kamut, farro), Barley, Rye, Triticale (wheat-rye hybrid), Malt (usually from barley)</p>
+<h4 id="ingredients-that-often-contain-gluten-be-cautious-of-these-unless-labelled-gluten-free">
+  Ingredients That Often Contain Gluten, be cautious of these unless labelled gluten-free:
+  <a class="heading-link" href="#ingredients-that-often-contain-gluten-be-cautious-of-these-unless-labelled-gluten-free">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Wheat starch (unless labelled “gluten-free”), Hydrolysed wheat protein, Modified food starch (from wheat), Soy sauce (unless gluten-free/tamari), Malt vinegar, Malt extract or flavouring,Seitan (wheat gluten used in vegan meat substitutes)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Processed Foods at Risk</th>
+</tr>
+</thead>
+</table>
+<h4 id="these-often-contain-hidden-gluten">
+  These often contain hidden gluten:
+  <a class="heading-link" href="#these-often-contain-hidden-gluten">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Gravy and stock cubes, Sauces and marinades, Ready meals, Processed deli meats including chorizo (Noooooo!), Breading and coating mixes, Beer, ales, lagers (unless gluten-free), some wines.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Watch for These Words on Labels, they may signal gluten:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Binders, Thickeners, Stabilizers, Natural flavors (can contain malt or wheat), Rusk, semolina, couscous, or bulgur.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>I found an excellent Gluten Free pasta brand called <a href="https://www.pastarummo.it/en/list/products/gluten-free/"  class="external-link" target="_blank" rel="noopener">RUMMO</a>, if you plan on going Gluten Free and like your pasta <a href="https://www.pastarummo.it/en/list/products/gluten-free/"  class="external-link" target="_blank" rel="noopener">RUMMO</a> is for you, I can&rsquo;t tell the difference between Gluten Free and Normal Pasta.</p>
+</blockquote>
+<h3 id="celery">
+  Celery
+  <a class="heading-link" href="#celery">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>After eliminating dairy and gluten/wheat &hellip;. things improved in a significant and measurable way, full blown migraines and secondary symptoms have practically disappeared, however, I was still waking some mornings with what I&rsquo;ll call a low grade headache. This started a secondary elimination cycle, this time identifying celery as a mild allergen.</p>
+<h3 id="symptom-similarities-in-trigger-foods">
+  Symptom Similarities in trigger foods
+  <a class="heading-link" href="#symptom-similarities-in-trigger-foods">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>With a little cross referencing, and the benefit of hindsight, there are similarities in symptoms between all of my main Allergic / Intolerant Foods and the obvious standout being Headache across all of them.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Symptom</strong></th>
+<th style="text-align:center"><strong>Gluten</strong></th>
+<th style="text-align:center"><strong>Wheat</strong></th>
+<th style="text-align:center"><strong>Dairy</strong></th>
+<th style="text-align:center"><strong>Celery</strong></th>
+<th style="text-align:center"><strong>ME</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Headache</td>
+<td style="text-align:center"><strong>X</strong></td>
+<td style="text-align:center"><strong>X</strong></td>
+<td style="text-align:center"><strong>X</strong></td>
+<td style="text-align:center"><strong>X</strong></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Bloating</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Inflammation</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Diarrhoea</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Constipation</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Fatigue</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Brain fog</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Skin rash (eczema, urticaria)</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Difficulty Sleeping</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Itching (mouth/skin)</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Sneezing / runny nose / Mucus</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Joint pain</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Depression/anxiety</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><strong>X</strong></td>
+</tr>
+<tr>
+<td>Abdominal pain/cramps</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td></td>
+</tr>
+<tr>
+<td>Nausea</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td></td>
+</tr>
+<tr>
+<td>Anaphylaxis (severe allergy)</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td></td>
+</tr>
+<tr>
+<td>Weight loss</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+<tr>
+<td>Gas/flatulence</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cured">
+  CURED!!
+  <a class="heading-link" href="#cured">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>After eliminating Dairy, Gluten/Wheat and Celery from my diet,  I now wake every morning migraine and symptom free after a solid 8 hours uninterrupted sleep. I still maintain the food and symptom tracker, it&rsquo;s a good habit to keep when my allergies also seem to be developing, I&rsquo;m pretty sure I never used to be allergic to celery, so it&rsquo;s a new one.</p>
+<h2 id="the-final-outcome">
+  The final outcome
+  <a class="heading-link" href="#the-final-outcome">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I eat a much healthier diet, lots of fibre, managed levels of carbs, measured proteins, loads of unsaturated fats.</p>
+<p>I rarely eat out, the few times I have, I&rsquo;ve suffered, despite declaring allergies which doesn&rsquo;t seem prevent accidental cross contamination.</p>
+<p>My diet is more controlled and managed, meals are planned and prepared and cooked fresh.</p>
+<p>For shitty days where I have accidentally <code>glutened</code>, <code>dairyed</code> or <code>celeryed</code> myself, I have a stack of sauces in the freezer I&rsquo;ve made that can be quickly turned into a stir fry or soup.</p>
+<p>I&rsquo;m borderline obsessive about checking ingredients in the tiny amount of processed food I now eat.</p>
+<p>And, yeah, I now realise I&rsquo;m highly allergic to common foods! FML eh? Fifteen bloody years, more visits to doctors and hospitals than I can remember, and it was food all along!</p>
+<h3 id="eating-out-with-food-allergies">
+  Eating out with Food Allergies
+  <a class="heading-link" href="#eating-out-with-food-allergies">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I have realised through bad experience that restaurant foods that are declared gluten/wheat or other allergens free, can still have enough of the allergen from cross contamination to cause me significant problems and the few instances I have eaten out have left me feeling bloody awful, so I don&rsquo;t really eat out much.</p>
+<p>On the plus side, I&rsquo;m becoming an awesome chef!</p>
+<h3 id="this-is-a-tough-one-food-allergies-are-rarely-taken-seriously">
+  This is a tough one, food allergies are rarely taken seriously.
+  <a class="heading-link" href="#this-is-a-tough-one-food-allergies-are-rarely-taken-seriously">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I&rsquo;ve seen the rolled eyes from servers, the scepticism from friends, it&rsquo;s frustrating because &ldquo;Gluten Free woo!&rdquo; is a health fad for many, for me it&rsquo;s a serious condition that has a significant negative impact on my health and well-being and now, being symptom free, I get anxious eating anything I haven&rsquo;t prepared myself.</p>
+<blockquote>
+<h3 id="prepared-in-a-facility-that-also-handles-insert-allergen-here-does-not-mean-it-is-allergen-free">
+  &ldquo;Prepared in a facility that also handles <code>insert allergen here</code>&rdquo; does not mean it is allergen free.
+  <a class="heading-link" href="#prepared-in-a-facility-that-also-handles-insert-allergen-here-does-not-mean-it-is-allergen-free">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+</blockquote>
+<p>Again a lesson learned the hard way. I accept that unless a kitchen / facility is dedicated to allergen free food prep, cross contamination is a very real and common problem and expecting every restaurant to REALLY make an effort to ensure no cross contamination is unrealistic. Expecting factory processed foods that contain no gluten/dairy/celery and do not declare the product as allergen free is also a recipe for disaster for me.</p>
+<p>A good example of this is a favourite snack of mine Poppadums, made with lentil flour, absolutely no gluten or other allergens, but made in a facility that handles wheat flour and you&rsquo;ve guessed it, I can&rsquo;t eat them.</p>
+<h3 id="get-tested">
+  Get Tested
+  <a class="heading-link" href="#get-tested">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Now, knowing what I know, shouldn&rsquo;t I get tested ?</p>
+<p>In order for testing to be effective I have to be consuming the allergen for at least four weeks before the allergen or DNA testing. However, now I am symptom free, the thought of going back to consuming these foods and suffering the pain and misery it will induce, just to get tested in order to confirm something I already know, simply does not appear to be worth it to me.</p>
+<p>And there endeth the lesson / journey, may your allergies be insignificant and your diet varied and healthy.</p>
+<blockquote>
+<h1 id="live-long-and-may-the-force-be-with-you">
+  &ldquo;Live Long and May the Force be With You.
+  <a class="heading-link" href="#live-long-and-may-the-force-be-with-you">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+</blockquote>
+<h2 id="read-part-2-visualising-the-datahttproddersmeprojectshomeassistant-health-dashboard-pt2how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-2-visualising-data">
+  <a href="http://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-2-visualising-data/"  class="external-link" target="_blank" rel="noopener">Read Part 2 &ldquo;Visualising the data&rdquo;</a>
+  <a class="heading-link" href="#read-part-2-visualising-the-datahttproddersmeprojectshomeassistant-health-dashboard-pt2how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-2-visualising-data">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Rodders 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
