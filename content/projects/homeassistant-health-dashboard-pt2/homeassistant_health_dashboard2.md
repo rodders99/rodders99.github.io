@@ -1,7 +1,7 @@
 +++
 title = "Pt 2. Using Home Assistant to Cure My Migraines"
 description = "Using Home Assistant's powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines"
-slug = "How I Used Home Assistant to Track Symptoms and Cure Daily Migraines"
+slug = "How I Used Home Assistant to Track Symptoms and Cure Daily Migraines - Part 2 -The Home Assistant Dashboard"
 date = 2025-06-27T09:15:27.561Z
 draft = false
 tags = ["Home Assistant", "Home Assistant Scripts","Home Assistant Dashboard","Home Assistant YAML","Home Assistant Helpers", "Food Diary","Health Tracking", "Biohacking", "YAML", "Microsoft Excel", "Python", "Pandas","Machine Learning"]
@@ -23,19 +23,19 @@ featuredImage = "/img/homeassistant_logo.jpg"
   - [The Datafile](#the-datafile)
   - [The Lovelace Dashboard Food Button](#the-lovelace-dashboard-food-button)
     - [Example of another category for the Dashboard Button](#example-of-another-category-for-the-dashboard-button)
-  - [The Button Logging script](#the-button-logging-script)
-  - [What is written to to the file sensor](#what-is-written-to-to-the-file-sensor)
+    - [The Button Logging script](#the-button-logging-script)
+    - [What is written to to the file sensor](#what-is-written-to-to-the-file-sensor)
   - [Symptom Severity Logging](#symptom-severity-logging)
     - [Symptom Severity Logging - The input\_number helper](#symptom-severity-logging---the-input_number-helper)
     - [The Lovelace Dashboard Symptom Severity Logging Input and Button code](#the-lovelace-dashboard-symptom-severity-logging-input-and-button-code)
-  - [Symptom Severity Logging - The script.](#symptom-severity-logging---the-script)
-- [Recording Sleep Information](#recording-sleep-information)
-  - [The Dashboard button and input fields](#the-dashboard-button-and-input-fields)
-  - [The Lovelace Dashboard Card](#the-lovelace-dashboard-card)
-  - [The script for sleep data capture](#the-script-for-sleep-data-capture)
+    - [Symptom Severity Logging - The script.](#symptom-severity-logging---the-script)
+  - [Recording Sleep Information](#recording-sleep-information)
+    - [The Dashboard button and input fields](#the-dashboard-button-and-input-fields)
+    - [The Lovelace Dashboard Card](#the-lovelace-dashboard-card)
+    - [The script for sleep data capture](#the-script-for-sleep-data-capture)
 
 
-> If you experience any of the symptoms, I list later in the article, on a regular basis, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life. 
+> If you regularly experience any of the symptoms  [I list in this article](/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-1-the-beginning/#discovering-my-triggers), it is entirely possible that like me your migraines may be triggered by something in your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life. This was my journey, I hope it brings relief to others.
 
 ## Introduction
 
@@ -45,17 +45,17 @@ Practically every single day, for the last 15 years, I've woken up with a migrai
 
 Then I started to track my diet and symptoms with the help of Home Assistant. The goal? Identifying if something in my diet was the trigger for my migraines (And other symptoms).
 
-Read more about my journey here
+<h3>Read more about my journey here</h3>
 
-- [Part 1 - No More Migraines, what I stopped eating](https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/)
+- [Part 1 - No More Migraines, what I stopped eating](/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-1-the-beginning/)
 - Part 2 - Using Home Assistant to Track Symptoms & Cure Migraines
-- [Part 3 - Visualising the data for Food and Migraines](https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/)
+- [Part 3 - Visualising the data for Food and Migraines](/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/)
 - [A Visualisation of My Migraines and Food / Ingredients Consumed](http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html)
 
 
 ## It started with a click
 
-However, what I found quite quickly was that having access to a very detailed food diary actually made it pretty simple to see the problem foods directly in the data without going to the lengths of building a machine learning model or crafting a creative visualisation. 
+Once I started collecting detailed diet and symptom information, I realised that having access to a very detailed food diary actually made it pretty simple to see the problem foods directly in the data, without going to the lengths of building a machine learning model or crafting a creative visualisation. 
 
 It is still my intention to implement the visualisation / machine learning predictive model and share it with the community in the hope that it may help someone else and if you are interested keep your eyes out for my next post on this subject. 
 
@@ -70,11 +70,11 @@ Over the past seven months that I've been using Home Assistant to log the data:
 - Categories (Food, Symptom etc.)
 - Additional Information (Detailed food info etc.)
 
-I've collected over 12,000 rows of data which is more than enough to use as a dataset for a predictive model and expect some reasonable results. What also helps is now knowing my what my triggers are, I'll be able to compare it to the output from the ML Model. About 80% of this data was readings from a [https://en.wikipedia.org/wiki/Continuous_glucose_monitor](CGM), which were later discounted as irrelevant (this was one of ChatGPTs suggestions that proved pointless)
+I've collected over 12,000 rows of data which is more than enough to use as a dataset for a predictive model and expect some reasonable results. What also helps is now knowing my what my triggers are, I'll be able to compare it to the output from the ML Model. About 80% of this data was readings from a [CMG](https://en.wikipedia.org/wiki/Continuous_glucose_monitor), which were later discounted as irrelevant (this was one of ChatGPTs suggestions that proved pointless)
 
 ### Over-engineering a simple data collection problem?
 
-I already knew a paper method of recording would not work for me, I've tried it before and while I'm a big fan of analog, as a recording methodology goes, it's a bit shit.
+I already knew a paper method of recording would not work for me, I've tried it before and while I'm a big fan of analog, but as a recording methodology for data analysis goes, it's a bit shit.
 
 So I flexed my considerable experience with Home Assistant to develop a Home Assistant dashboard page specific to tracking food / fluid consumption, health indicators and symptoms. 
 
@@ -86,13 +86,15 @@ Initially I also used a Continuous Glucose Monitor  ([Libre Freestyle integratio
 
 ### NABU Casa subscription not required (but very worthwhile and helpful)
 
-A [Nabu Casa Subscription](https://www.nabucasa.com/) enables remote access to your Home Assistant instance, using the Home Assistant app [Android](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en-GB&gl=US) or [IOS](https://apps.apple.com/us/app/home-assistant/id1099568401), outside of your home wifi network, which means when you are not home you can access your Home Assistant server from anywhere.
+A [Nabu Casa Subscription](https://www.nabucasa.com/) enables remote access to your Home Assistant instance, using the Home Assistant app [Android](https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&hl=en-GB&gl=US) or [IOS](https://apps.apple.com/us/app/home-assistant/id1099568401), outside of your home Wi-fi network, which means when you are not home you can access your Home Assistant server from anywhere.
 
 Please note that a Nabu Casa subscription is not required for my solution (but come on, support the Devs!) if: 
 
 - You have already setup your own remote access solution
 - You intend on setting up your own [remote access solution](https://www.home-assistant.io/docs/configuration/remote/) 
 - You not require remote access to your Home Assistant Instance. 
+
+You won't need it.
 
 However a subscription supports the developers and simplifies a lot of the more complex elements of setting up Home Assistant remote access and integrating with Alexa and Google voice control. 
 
@@ -105,7 +107,7 @@ Here's what the dashboard looks like.
 
 The following details the methods I used to create the dashboard and begin collecting data.
 
-![Home Assistant Health Dashboard](https://rodders.me/projects/homeassistant-health-dashboard/homeassistant_health_dashboard-edit%20(resize).jpg)
+![Home Assistant Health Dashboard](/health_data_tracker_visualisation/homeassistant_health_dashboard-edit%20(resize).jpg)
 
 ## Here's how The Home Assistant Dashboard was made
 
@@ -120,15 +122,18 @@ The overall solution is built around a number of Home Assistant components:
 
 ### The Datafile
 
-To record the data into a CSV Data File that can be analysed with tools like python, pandas and Machine Learning models, a file sensor integration needs to be setup in Home Assistant.
+To record the data into a CSV Data File that can be analysed with tools like python, pandas and Machine Learning models, a file notification integration needs to be setup in Home Assistant.
 
-``` Settings -> Add Integration -> File -> Setup file-based sensor. ```
+``` Settings -> Add Integration -> File -> Setup a notification service. ```
 
-Give it a memorable name, this is used in the script to write the data associated with a button being clicked. 
+![Setup File Notification](/health_data_tracker_visualisation/file-notification-service.jpg)
+
+- Give it a memorable name, this is used in the script to write the data associated with a button being clicked. 
+- Make sure you leave Timestamp OFF, date and time is added by the Home Assistant scripts.
 
 ### The Lovelace Dashboard Food Button
 
-![food button](./food_buttons.jpg)
+![food button](/health_data_tracker_visualisation/food_buttons.jpg)
 
 These are Buttons in a horizontal stack. 
 
@@ -190,25 +195,13 @@ icon: mdi:snowflake-alert
 
 ```
 
-```goat
-.---.
-| A |
-'-+-'
- |
- V
-.---.
-| B |
-'-+-'
-```
-
-
-### The Button Logging script
+#### The Button Logging script
 
 This script is called each time a relevant button is clicked. It stores the data in a consistent CSV format for later analysis.
 
 The notify.*file* where file is the name of the file sensor created earlier.
 
-```yaml {linenos=inline style=catppuccin-frappe hl_lines=["8-10", "20-22", "40-42"]}
+```yaml {linenos=inline style=catppuccin-frappe hl_lines=["14-18", "33-37", "50-54"]}
 health_log_button:
   alias: "Health - Log Button"
 
@@ -223,7 +216,10 @@ health_log_button:
               target:
                 entity_id: notify.file
               data:
-                message: "{{ now().strftime('%Y-%m-%d')}},{{ now().strftime('%H:%M')}},{{category}},{{item}},{{carbs}}"
+                message: > 
+                "{{ now().strftime('%Y-%m-%d')}},
+                 {{ now().strftime('%H:%M')}},
+                 {{category}},{{item}},{{carbs}}"
             - action: input_number.set_value
               target:
                 entity_id: input_number.food_carbs_consumed_event
@@ -239,7 +235,10 @@ health_log_button:
               target:
                 entity_id: notify.file
               data:
-                message: "{{ now().strftime('%Y-%m-%d')}},{{ now().strftime('%H:%M')}},DRINK,{{item}},{{liquids}}"
+                message: >
+                "{{ now().strftime('%Y-%m-%d')}}, 
+                 {{ now().strftime('%H:%M')}},
+                  DRINK,{{item}},{{liquids}}"
             - action: python_script.set_state
               data:
                 entity_id: sensor.food_liquids_day_total
@@ -253,69 +252,52 @@ health_log_button:
             target:
               entity_id: notify.file
             data:
-              message: "{{ now().strftime('%Y-%m-%d')}},{{ now().strftime('%H:%M')}},{{category}},{{item}},0"
+              message: >
+              "{{ now().strftime('%Y-%m-%d')}},
+               {{ now().strftime('%H:%M')}},
+                {{category}},{{item}},0"
 ```
 
 Essentially this script runs through THEN conditions to determine what to write to the file.
 
-<div style="text-align: center">
-<div style="border:1px solid #ccc; padding:16px; text-align:center; border-radius:8px; display:inline-block">
-  📦 If <code>carbs</code> is defined and not zero, write the <code>carbs, category and item detail</code> contained in the card to the file sensor.
-</div>
-</div>
 
-<div style="text-align: center">
-<div style="text-align:center;  display:inline-block; font-size: 24pt">
-  ↓
-</div>
-</div>
+```goat 
+.-------------------------------------------.
+| If carbs is defined and not zero,         |
+| write the carbs and item detail           |
+| contained in the card to the file sensor. |
+.-------------------------------------------.
+                  |
+                  v
+              .--------.
+              |  THEN  |
+              .--------.
+                  |
+                  v
+.--------------------------------------------.
+| If fluids is defined and not zero,         |
+| write the fluids and item detail           |
+| contained in the card to the file sensor.  |
+.--------------------------------------------.
+                  |
+                  v
+              .--------.
+              |  THEN  |
+              .--------.
+                  |
+                  v
+.--------------------------------------------.
+| If fluids is not defined and not zero AND  |
+| If carbs is not defined and not zero       |
+| write the category and item detail         |
+| contained in the card to the file sensor.  |
+.--------------------------------------------.
 
-<div style="text-align: center">
-<div style="border:1px solid #ccc; padding:16px; text-align:center; border-radius:8px; display:inline-block; background-color: #f9f9f9; color:#f00">
-THEN
-</div>
-</div>
-
-<div style="text-align: center">
-<div style="text-align:center;  display:inline-block; font-size: 24pt">
-  ↓
-</div>
-</div>
-
-<div style="text-align: center">
-<div style="border:1px solid #ccc; padding:16px; text-align:center; border-radius:8px; display:inline-block">
-  📦 If <code>fluids</code> is defined and not zero, write the <code>fluids, category and item detail</code> contained in the card to the file sensor.
-</div>
-</div>
-
-
-<div style="text-align: center">
-<div style="text-align:center;  display:inline-block; font-size: 24pt">
-  ↓
-</div>
-</div>
-
-<div style="text-align: center">
-<div style="border:1px solid #ccc; padding:16px; text-align:center; border-radius:8px; display:inline-block; background-color: #f9f9f9; color:#f00">
-THEN
-</div>
-</div>
-
-<div style="text-align: center">
-<div style="text-align:center;  display:inline-block; font-size: 24pt">
-  ↓
-</div>
-</div>
-
-<div style="text-align: center">
-<div style="border:1px solid #ccc; padding:16px; text-align:center; border-radius:8px; display:inline-block">
-  📦 If <code>carbs</code>> and <code>fluids</code> is NOT defined, write the <code>category and item detail</code> contained in the card to the file sensor.
-</div>
-</div>
+```
 
 
 
-### What is written to to the file sensor
+#### What is written to to the file sensor
 
 This will write an entry in the file you have setup that looks like this: 
 
@@ -340,7 +322,7 @@ The Symptom Severity section consists of five main elements :
   - A script to store severity values from the input_number helper to the  datafile
   - An optional graph plotting historic data store in the input_number helper
 
-![Severity Logging](./severity_logging.jpg)
+![Severity Logging](/health_data_tracker_visualisation/severity_logging.jpg)
 
 #### Symptom Severity Logging - The input_number helper
 
@@ -382,15 +364,15 @@ view_layout:
 
 ```
 
-![input_helper](./input_helper_severity_v2.jpg)
+![input_helper](/health_data_tracker_visualisation/input_helper_severity_v2.jpg)
 
 I'm using the [Apex Charts addon](https://github.com/RomRider/apexcharts-card) for plots, it has a lot more flexibility than the normal Home Assistant graph card. 
 
-### Symptom Severity Logging - The script.
+#### Symptom Severity Logging - The script.
 
 This script adds the data from the input_number helper and stores the data in the datafile in the correct CSV format.
 
-```yaml {linenos=inline style=catppuccin-frappe hl_lines=["4-6"]}
+```yaml {linenos=inline style=catppuccin-frappe hl_lines=["7-12"]}
 "health_headache_severity":
   alias: Health - Headache Severity
   sequence:
@@ -400,20 +382,20 @@ This script adds the data from the input_number helper and stores the data in th
       data:
         message: >
                 "{{ now().strftime('%Y-%m-%d')}},
-                {{ now().strftime('%H:%M')}},
+                 {{ now().strftime('%H:%M')}},
                  'HEADACHE','Severity',
                  '{{ states('input_number.health_headache_severity') }}'"
 ```
 
 
 
-## Recording Sleep Information 
+### Recording Sleep Information 
 
 (Recording multiple data items with a single button click)
 
 If you have a smart watch with an integration for Home Assistant, this could be automatic. My Galaxy smartwatch doesn't have an integration, so I logged sleep data manually.
 
-### The Dashboard button and input fields
+#### The Dashboard button and input fields
 
 [input_number Helpers](https://www.home-assistant.io/integrations/input_number/) need to be created for each item you wish to record. For my example I was recording the sleep data from my smartwatch because there was no Home Assistant integration for it:
 
@@ -421,11 +403,11 @@ If you have a smart watch with an integration for Home Assistant, this could be 
 - Light Sleep
 - Motionless Sleep
 
-![sleep_record](./input_helpers_sleep.jpg)
+![sleep_record](/health_data_tracker_visualisation/input_helpers_sleep.jpg)
 
 Using the script below, the data from the [input_number Helpers](https://www.home-assistant.io/integrations/input_number/) helpers will be written to the file sensor.
 
-### The Lovelace Dashboard Card
+#### The Lovelace Dashboard Card
 
 ```yaml {linenos=inline style=catppuccin-frappe}
 type: entities
@@ -442,9 +424,9 @@ entities:
     name: Save Record
 ```
 
-### The script for sleep data capture 
+#### The script for sleep data capture 
 
-```yaml {linenos=inline style=catppuccin-frappe hl_lines=["6-8", "15-18", "25-27"]}
+```yaml {linenos=inline style=catppuccin-frappe hl_lines=["8-13", "18-23", "28-33"]}
 "health_sleep_record":
   alias: Health - Sleep Record
   sequence:
@@ -455,7 +437,7 @@ entities:
       data:
         message: >
                 "{{ now().strftime('%Y-%m-%d')}},
-                {{ now().strftime('%H:%M')}},
+                 {{ now().strftime('%H:%M')}},
                  'SLEEP','RESTLESS', 
                  '{{ states('input_number.health_sleep_restless') }}'"
 
@@ -465,7 +447,7 @@ entities:
       data:
         message: >
                 "{{ now().strftime('%Y-%m-%d')}},
-                {{ now().strftime('%H:%M')}},
+                 {{ now().strftime('%H:%M')}},
                  'SLEEP','LIGHT', 
                  '{{ states('input_number.health_sleep_light') }}'"
 
@@ -475,7 +457,7 @@ entities:
       data:
         message: > 
                 "{{ now().strftime('%Y-%m-%d')}},
-                {{ now().strftime('%H:%M')}},
+                 {{ now().strftime('%H:%M')}},
                  'SLEEP','MOTIONLESS', 
                  '{{ states('input_number.health_sleep_motionless') }}'"
 ```
@@ -484,9 +466,9 @@ And that's it! 12,000 button clicks later and I'm cured !
 
 If you want to find out more about my journey to cure my migraines, read on!
 
-Read more about my journey here
+<h3>Read more about my journey here</h3>
 
-- [Part 1 - No More Migraines, what I stopped eating](https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/)
+- [Part 1 - No More Migraines, what I stopped eating](/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-1-the-beginning/)
 - Part 2 - Using Home Assistant to Track Symptoms & Cure Migraines
-- [Part 3 - Visualising the data for Food and Migraines](https://rodders.me/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/)
+- [Part 3 - Visualising the data for Food and Migraines](/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/)
 - [A Visualisation of My Migraines and Food / Ingredients Consumed](http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html)

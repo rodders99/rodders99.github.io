@@ -1,7 +1,7 @@
 +++
 title = " Pt 3. Visualising the data for Food and Migraines"
 description = "Using Home Assistant's powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines - Part 3 visualising data"
-slug = "How I Used Home Assistant to Track Symptoms and Cure Daily Migraines  - Part 3 visualising data"
+slug = "How I Used Home Assistant to Track Symptoms and Cure Daily Migraines  - Part 3 Visualising Data"
 date = 2025-07-07T09:15:27.561Z
 draft = false
 tags = ["Home Assistant", "Home Assistant Scripts","Home Assistant Dashboard","Home Assistant YAML","Home Assistant Helpers", "Food Diary","Health Tracking", "Biohacking", "YAML", 
@@ -15,7 +15,7 @@ featuredImage = "/img/homeassistant_logo.jpg"
 ![Home Assistant Logo](/img/homeassistant_logo.jpg)
 
 
-> If you experience any of the symptoms I list in the previous article on a regular basis, you might want to have a close look at your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life. 
+> If you regularly experience any of the symptoms I list in this article, it is entirely possible that like me your migraines may be triggered by something in your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life. This was my journey, I hope it brings relief to others.
 
 
 - [Introduction](#introduction)
@@ -28,22 +28,20 @@ featuredImage = "/img/homeassistant_logo.jpg"
 
 ## Introduction
 
-I used to suffer from migraines, amongst multiple less severe but nonetheless annoying symptoms.
+Practically every single day, for the last 15 years, I’ve woken up with a migraine and gone to bed with one. It started 15 years ago at a friend’s wedding. The evening before we’re sharing a beer (Budweiser) chatting about the upcoming wedding, we go to bed, then at 3am in the morning I’m woken by the worst headache I’ve ever experienced. Cue 15 years of near daily migraines, not as devastating as the first migraine, but debilitating none the less.
 
-Practically every single day, for the last 15 years, I've woken up with a migraine and gone to bed with one. It started 15 years ago at a friend's wedding. The evening before we're sharing a beer (Budweiser) chatting about the upcoming wedding, we go to bed, then at 3am in the morning I'm woken by the worst headache I've ever experienced. That headache lasted a week and was devastating, I cannot remember a single detail from that week, not the wedding, how I got from Devon to Hampshire after the wedding, none of the calls from work asking where I was, it's a blank.
+Then I started to track my diet and symptoms with the help of Home Assistant. The goal? Identifying if something in my diet was the trigger for my migraines (And other symptoms).
 
-For 15 years I suffered these migraines, amongst multiple less severe but nonetheless annoying symptoms and more recently the severity of the other symptoms was getting noticeably worse. I was getting desperate, the impact on my sleep, my entire life was huge, I withdrew, I suffered in silence and had reached my breaking point. 
+<h3>Read more about my journey here</h3>
 
-Read more about my journey here
-
-- [Part 1 - No More Migraines, what I stopped eating](https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/)
-- [Part 2 - Using Home Assistant to Track Symptoms & Cure Migraines](https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/)
+- [Part 1 - No More Migraines, what I stopped eating](/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-1-the-beginning/)
+- [Part 2 - Using Home Assistant to Track Symptoms & Cure Migraines](/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-2-the-home-assistant-dashboard/)
 - Part 3 - Visualising the data for Food and Migraines
 - [A Visualisation of My Migraines and Food / Ingredients Consumed](http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html)
 
 ## Collecting the Data
 
-Note that Home Assistant is not necessary to collect data, a paper and pen works just as well. While paper and pen didn't work for me, I wanted machine readable data. Paper and pen may work for you, don't get hung up on the data collection methodology, there are apps out there, use them or don't. 
+Note that Home Assistant is not necessary to collect data, a paper and pen works just as well. While paper and pen didn't work for me, I wanted machine readable data, Paper and pen may work for you. Don't get hung up on the data collection methodology, there are apps out there, use them or don't. 
 
 ## The Data Structure
 
@@ -68,7 +66,7 @@ Using Python, Pandas and Plotly, I developed a lookup to add suspect ingredients
 2025-01-17 | 12:35 | FOOD | Chipolata Sausages | 0
 
 ## Adding Ingredients to Foods in the dataset
-During my data collection and the initial discovery phase, I started to draw a conclusion that it wasn't a food item, i.e. bread or cheese, it was a component of that food item, an ingredient. To build a more comprehensive data set, I needed to add the ingredients to my data so I tarted a small lookup table and kept note of suspect ingredients that I could later add to the initial collected data.
+During my data collection and the initial discovery phase, I started to draw a conclusion that it wasn't a food item, i.e. bread or cheese, it was a component of that food item, an ingredient. To build a more comprehensive data set, I needed to add the ingredients to my data so I setup a small lookup table and kept note of suspect ingredients that I could later add to the initial collected data.
 
 Item | Ingredients | Ingredients_list
 | :--- | :--- | :--- 
@@ -97,9 +95,10 @@ http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html
 
 Click on the image or link to open the visualisation, hover over the dots for details of foods consumed (Blue) and Suspect ingredients of those foods (Green), click drag to select an area to zoom into, double click to zoom out. Additional controls are in the top right of the plot.
 
-Read more about my journey here
 
-- [Part 1 - No More Migraines, what I stopped eating](https://rodders.me/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/)
-- [Part 2 - Using Home Assistant to Track Symptoms & Cure Migraines](https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines/)
+<h3>Read more about my journey here</h3>
+
+- [Part 1 - No More Migraines, what I stopped eating](/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-1-the-beginning/)
+- [Part 2 - Using Home Assistant to Track Symptoms & Cure Migraines](/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-2-the-home-assistant-dashboard/)
 - Part 3 - Visualising the data for Food and Migraines
 - [A Visualisation of My Migraines and Food / Ingredients Consumed](http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html)

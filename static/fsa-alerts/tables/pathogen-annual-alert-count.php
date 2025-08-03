@@ -56,9 +56,9 @@
 
       <td style="text-align:center;">30</td>
 
-      <td style="text-align:center;">32</td>
+      <td style="text-align:center;">83</td>
 
-      <td style="text-align:center;">111</td>
+      <td style="text-align:center;">162</td>
 
     </tr>
 
@@ -84,9 +84,9 @@
 
       <td style="text-align:center;">6</td>
 
-      <td style="text-align:center;">8</td>
+      <td style="text-align:center;">12</td>
 
-      <td style="text-align:center;">90</td>
+      <td style="text-align:center;">94</td>
 
     </tr>
 

@@ -52,9 +52,9 @@
 
       <td style="text-align:center;">426</td>
 
-      <td style="text-align:center;">16</td>
+      <td style="text-align:center;">17</td>
 
-      <td style="text-align:center;">483</td>
+      <td style="text-align:center;">484</td>
 
     </tr>
 
@@ -78,9 +78,9 @@
 
       <td style="text-align:center;">15</td>
 
-      <td style="text-align:center;">23</td>
+      <td style="text-align:center;">24</td>
 
-      <td style="text-align:center;">109</td>
+      <td style="text-align:center;">110</td>
 
     </tr>
 
@@ -166,25 +166,25 @@
 
 
 
-      <td style="text-align:center;">Fish / Crustacean</td>
+      <td style="text-align:center;">Sulphites</td>
 
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">0</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">3</td>
+      <td style="text-align:center;">1</td>
 
       <td style="text-align:center;">2</td>
 
       <td style="text-align:center;">3</td>
 
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">3</td>
+
       <td style="text-align:center;">17</td>
 
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">25</td>
+      <td style="text-align:center;">27</td>
 
     </tr>
 
@@ -208,7 +208,33 @@
 
       <td style="text-align:center;">4</td>
 
-      <td style="text-align:center;">4</td>
+      <td style="text-align:center;">5</td>
+
+      <td style="text-align:center;">26</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Fish / Crustacean</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">3</td>
+
+      <td style="text-align:center;">2</td>
+
+      <td style="text-align:center;">3</td>
+
+      <td style="text-align:center;">17</td>
+
+      <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">25</td>
 
@@ -263,32 +289,6 @@
       <td style="text-align:center;">0</td>
 
       <td style="text-align:center;">16</td>
-
-    </tr>
-
-    <tr>
-
-
-
-      <td style="text-align:center;">Sulphites</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">0</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">2</td>
-
-      <td style="text-align:center;">3</td>
-
-      <td style="text-align:center;">1</td>
-
-      <td style="text-align:center;">3</td>
-
-      <td style="text-align:center;">3</td>
-
-      <td style="text-align:center;">13</td>
 
     </tr>
 
@@ -375,6 +375,32 @@
 
 
       <td style="text-align:center;">Crustaceans</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">0</td>
+
+      <td style="text-align:center;">1</td>
+
+      <td style="text-align:center;">1</td>
+
+    </tr>
+
+    <tr>
+
+
+
+      <td style="text-align:center;">Sessame</td>
 
       <td style="text-align:center;">0</td>
 

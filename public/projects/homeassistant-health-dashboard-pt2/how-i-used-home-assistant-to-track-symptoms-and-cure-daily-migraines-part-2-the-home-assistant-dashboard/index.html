@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Pt 2. Using Home Assistant to Cure My Migraines · Rodders
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Rodders">
+<meta name="description" content="Using Home Assistant&#39;s powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines">
+<meta name="keywords" content="blog,developer,personal, analyst, pandas, python, homeassistant,smart-home,oh-my">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pt 2. Using Home Assistant to Cure My Migraines"/>
+<meta name="twitter:description" content="Using Home Assistant&#39;s powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines"/>
+
+<meta property="og:title" content="Pt 2. Using Home Assistant to Cure My Migraines" />
+<meta property="og:description" content="Using Home Assistant&#39;s powerful dashboard, scripting and automations to track health, food and symptoms in order to cure my migraines" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-2-the-home-assistant-dashboard/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2025-06-27T09:15:27+00:00" />
+<meta property="article:modified_time" content="2025-06-27T09:15:27+00:00" />
+
+
+
+
+<link rel="canonical" href="https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-2-the-home-assistant-dashboard/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.577e3c5ead537873430da16f0964b754a120fd87c4e2203a00686e7c75b51378.css" integrity="sha256-V348Xq1TeHNDDaFvCWS3VKEg/YfE4iA6AGhufHW1E3g=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://rodders.me/">
+      Rodders
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/fsa-monthly/">UK Food Safety Infographics</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://rodders.me/projects/homeassistant-health-dashboard-pt2/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-2-the-home-assistant-dashboard/">
+          Pt 2. Using Home Assistant to Cure My Migraines
+        </a>
+      </h1>
+    </header>
+
+    <p><img src="/img/homeassistant_logo.jpg" alt="Home Assistant Logo"></p>
+<ul>
+<li><a href="#introduction" >Introduction</a></li>
+<li><a href="#it-started-with-a-click" >It started with a click</a>
+<ul>
+<li><a href="#building-a-data-driven-health-tracker" >Building a data driven health tracker</a></li>
+<li><a href="#over-engineering-a-simple-data-collection-problem" >Over-engineering a simple data collection problem?</a></li>
+<li><a href="#nabu-casa-subscription-not-required-but-very-worthwhile-and-helpful" >NABU Casa subscription not required (but very worthwhile and helpful)</a></li>
+<li><a href="#a-look-at-the-home-assistant-dashboard" >A Look at the Home Assistant Dashboard</a></li>
+</ul>
+</li>
+<li><a href="#heres-how-the-home-assistant-dashboard-was-made" >Here&rsquo;s how The Home Assistant Dashboard was made</a>
+<ul>
+<li><a href="#the-datafile" >The Datafile</a></li>
+<li><a href="#the-lovelace-dashboard-food-button" >The Lovelace Dashboard Food Button</a>
+<ul>
+<li><a href="#example-of-another-category-for-the-dashboard-button" >Example of another category for the Dashboard Button</a></li>
+<li><a href="#the-button-logging-script" >The Button Logging script</a></li>
+<li><a href="#what-is-written-to-to-the-file-sensor" >What is written to to the file sensor</a></li>
+</ul>
+</li>
+<li><a href="#symptom-severity-logging" >Symptom Severity Logging</a>
+<ul>
+<li><a href="#symptom-severity-logging---the-input_number-helper" >Symptom Severity Logging - The input_number helper</a></li>
+<li><a href="#the-lovelace-dashboard-symptom-severity-logging-input-and-button-code" >The Lovelace Dashboard Symptom Severity Logging Input and Button code</a></li>
+<li><a href="#symptom-severity-logging---the-script" >Symptom Severity Logging - The script.</a></li>
+</ul>
+</li>
+<li><a href="#recording-sleep-information" >Recording Sleep Information</a>
+<ul>
+<li><a href="#the-dashboard-button-and-input-fields" >The Dashboard button and input fields</a></li>
+<li><a href="#the-lovelace-dashboard-card" >The Lovelace Dashboard Card</a></li>
+<li><a href="#the-script-for-sleep-data-capture" >The script for sleep data capture</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>If you regularly experience any of the symptoms  <a href="/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-1-the-beginning/#discovering-my-triggers" >I list in this article</a>, it is entirely possible that like me your migraines may be triggered by something in your diet! This is not medical advice, I am not a Medical Professional, do not take medical advice from internet strangers. If you are suffering from similar symptoms, consider approaching a medical professional before biohacking your life. This was my journey, I hope it brings relief to others.</p>
+</blockquote>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I used to suffer from migraines, amongst multiple less severe but nonetheless annoying symptoms.</p>
+<p>Practically every single day, for the last 15 years, I&rsquo;ve woken up with a migraine and gone to bed with one. It started 15 years ago at a friend&rsquo;s wedding. The evening before we&rsquo;re sharing a beer (Budweiser) chatting about the upcoming wedding, we go to bed, then at 3am in the morning I&rsquo;m woken by the worst headache I&rsquo;ve ever experienced. Cue 15 years of near daily migraines, not as devastating as the first migraine, but debilitating none the less.</p>
+<p>Then I started to track my diet and symptoms with the help of Home Assistant. The goal? Identifying if something in my diet was the trigger for my migraines (And other symptoms).</p>
+<h3>Read more about my journey here</h3>
+<ul>
+<li><a href="/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-1-the-beginning/" >Part 1 - No More Migraines, what I stopped eating</a></li>
+<li>Part 2 - Using Home Assistant to Track Symptoms &amp; Cure Migraines</li>
+<li><a href="/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/" >Part 3 - Visualising the data for Food and Migraines</a></li>
+<li><a href="http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html"  class="external-link" target="_blank" rel="noopener">A Visualisation of My Migraines and Food / Ingredients Consumed</a></li>
+</ul>
+<h2 id="it-started-with-a-click">
+  It started with a click
+  <a class="heading-link" href="#it-started-with-a-click">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Once I started collecting detailed diet and symptom information, I realised that having access to a very detailed food diary actually made it pretty simple to see the problem foods directly in the data, without going to the lengths of building a machine learning model or crafting a creative visualisation.</p>
+<p>It is still my intention to implement the visualisation / machine learning predictive model and share it with the community in the hope that it may help someone else and if you are interested keep your eyes out for my next post on this subject.</p>
+<p>Update - Visualisation <a href="http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html"  class="external-link" target="_blank" rel="noopener">http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html</a></p>
+<h3 id="building-a-data-driven-health-tracker">
+  Building a data driven health tracker
+  <a class="heading-link" href="#building-a-data-driven-health-tracker">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Over the past seven months that I&rsquo;ve been using Home Assistant to log the data:</p>
+<ul>
+<li>Date</li>
+<li>Time</li>
+<li>Categories (Food, Symptom etc.)</li>
+<li>Additional Information (Detailed food info etc.)</li>
+</ul>
+<p>I&rsquo;ve collected over 12,000 rows of data which is more than enough to use as a dataset for a predictive model and expect some reasonable results. What also helps is now knowing my what my triggers are, I&rsquo;ll be able to compare it to the output from the ML Model. About 80% of this data was readings from a <a href="https://en.wikipedia.org/wiki/Continuous_glucose_monitor"  class="external-link" target="_blank" rel="noopener">CMG</a>, which were later discounted as irrelevant (this was one of ChatGPTs suggestions that proved pointless)</p>
+<h3 id="over-engineering-a-simple-data-collection-problem">
+  Over-engineering a simple data collection problem?
+  <a class="heading-link" href="#over-engineering-a-simple-data-collection-problem">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I already knew a paper method of recording would not work for me, I&rsquo;ve tried it before and while I&rsquo;m a big fan of analog, but as a recording methodology for data analysis goes, it&rsquo;s a bit shit.</p>
+<p>So I flexed my considerable experience with Home Assistant to develop a Home Assistant dashboard page specific to tracking food / fluid consumption, health indicators and symptoms.</p>
+<p>Here&rsquo;s where Home Assistant comes in, one thing that is a constant is my mobile phone which is rarely out of my hands, couple this with the Home Assistant app <a href="https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&amp;hl=en-GB&amp;gl=US"  class="external-link" target="_blank" rel="noopener">Android</a> or <a href="https://apps.apple.com/us/app/home-assistant/id1099568401"  class="external-link" target="_blank" rel="noopener">IOS</a>, a <a href="https://www.nabucasa.com/pricing/"  class="external-link" target="_blank" rel="noopener">Nabu Casa</a> subscription and that combination enabled me to update my food and symptom tracker regardless of where I was, at home or out with friends.</p>
+<p>I had a method of simply (and quickly) keeping a detailed diary of food and symptoms using a simple button click interface that simplified maintaining a food / symptoms Diary etc. which in turn enabled me to begin collecting the detailed data necessary to attempt to identify the causes of my migraines and fix them.</p>
+<p>Initially I also used a Continuous Glucose Monitor  (<a href="https://github.com/PTST/LibreView-HomeAssistant"  class="external-link" target="_blank" rel="noopener">Libre Freestyle integration</a> FTW!) to monitor blood glucose after eating (ChatGPT suggestion), and it was simple to integrate this into the overall solution I built. However as more data was collected, it became apparent that this was not a factor causing my migraines.</p>
+<h3 id="nabu-casa-subscription-not-required-but-very-worthwhile-and-helpful">
+  NABU Casa subscription not required (but very worthwhile and helpful)
+  <a class="heading-link" href="#nabu-casa-subscription-not-required-but-very-worthwhile-and-helpful">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>A <a href="https://www.nabucasa.com/"  class="external-link" target="_blank" rel="noopener">Nabu Casa Subscription</a> enables remote access to your Home Assistant instance, using the Home Assistant app <a href="https://play.google.com/store/apps/details?id=io.homeassistant.companion.android&amp;hl=en-GB&amp;gl=US"  class="external-link" target="_blank" rel="noopener">Android</a> or <a href="https://apps.apple.com/us/app/home-assistant/id1099568401"  class="external-link" target="_blank" rel="noopener">IOS</a>, outside of your home Wi-fi network, which means when you are not home you can access your Home Assistant server from anywhere.</p>
+<p>Please note that a Nabu Casa subscription is not required for my solution (but come on, support the Devs!) if:</p>
+<ul>
+<li>You have already setup your own remote access solution</li>
+<li>You intend on setting up your own <a href="https://www.home-assistant.io/docs/configuration/remote/"  class="external-link" target="_blank" rel="noopener">remote access solution</a></li>
+<li>You not require remote access to your Home Assistant Instance.</li>
+</ul>
+<p>You won&rsquo;t need it.</p>
+<p>However a subscription supports the developers and simplifies a lot of the more complex elements of setting up Home Assistant remote access and integrating with Alexa and Google voice control.</p>
+<blockquote>
+<p>Support the Devs!</p>
+</blockquote>
+<h3 id="a-look-at-the-home-assistant-dashboard">
+  A Look at the Home Assistant Dashboard
+  <a class="heading-link" href="#a-look-at-the-home-assistant-dashboard">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Here&rsquo;s what the dashboard looks like.</p>
+<p>The following details the methods I used to create the dashboard and begin collecting data.</p>
+<p><img src="/health_data_tracker_visualisation/homeassistant_health_dashboard-edit%20(resize).jpg" alt="Home Assistant Health Dashboard"></p>
+<h2 id="heres-how-the-home-assistant-dashboard-was-made">
+  Here&rsquo;s how The Home Assistant Dashboard was made
+  <a class="heading-link" href="#heres-how-the-home-assistant-dashboard-was-made">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The overall solution is built around a number of Home Assistant components:</p>
+<ul>
+<li>A Datafile where the health indicators, symptom and food was saved as a CSV using the <a href="https://www.home-assistant.io/integrations/file/"  class="external-link" target="_blank" rel="noopener">FILE Integration</a></li>
+<li>A <a href="https://www.home-assistant.io/docs/configuration/templating/"  class="external-link" target="_blank" rel="noopener">Home Assistant Template</a> to structure the data as a CSV written to the file</li>
+<li><a href="https://www.home-assistant.io/dashboards/button/"  class="external-link" target="_blank" rel="noopener">Button Dashboard Cards</a> for the various foods &amp; symptoms I want to track</li>
+<li><a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">Home Assistant input_number Helpers</a> to track numeric values such as sleep and headache severity</li>
+<li><a href="https://www.home-assistant.io/integrations/input_text/"  class="external-link" target="_blank" rel="noopener">Home Assistant input_text Helper</a> to record notes, symptoms or foods not already setup with a button</li>
+<li><a href="https://www.home-assistant.io/integrations/script/"  class="external-link" target="_blank" rel="noopener">Home Assistant Scripts</a> that the buttons call to record the health, symptom and food information to the file integration.</li>
+</ul>
+<h3 id="the-datafile">
+  The Datafile
+  <a class="heading-link" href="#the-datafile">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>To record the data into a CSV Data File that can be analysed with tools like python, pandas and Machine Learning models, a file notification integration needs to be setup in Home Assistant.</p>
+<p><code>Settings -&gt; Add Integration -&gt; File -&gt; Setup a notification service.</code></p>
+<p><img src="/health_data_tracker_visualisation/file-notification-service.jpg" alt="Setup File Notification"></p>
+<ul>
+<li>Give it a memorable name, this is used in the script to write the data associated with a button being clicked.</li>
+<li>Make sure you leave Timestamp OFF, date and time is added by the Home Assistant scripts.</li>
+</ul>
+<h3 id="the-lovelace-dashboard-food-button">
+  The Lovelace Dashboard Food Button
+  <a class="heading-link" href="#the-lovelace-dashboard-food-button">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><img src="/health_data_tracker_visualisation/food_buttons.jpg" alt="food button"></p>
+<p>These are Buttons in a horizontal stack.</p>
+<p>A Button needs to be created for each commonly used food. When the button is clicked the information under the <code>data</code> heading is written to the Home Assistant file sensor.</p>
+<p>The key elements for data acquisition are under the <code>data:</code> heading :</p>
+<ul>
+<li>carbs</li>
+<li>fluids</li>
+<li>category</li>
+<li>item</li>
+</ul>
+<p>Hopefully it&rsquo;s obvious that you amend these for each food you wish to create a button for.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">show_name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">show_icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>entity-button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">tap_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>perform-action<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">category</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>FOOD<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">item</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Choccie Coffee (18g CHO &amp; 3 tsp &amp; 400ml fluids)<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">carbs</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>18<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">liquids</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>400<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>{}<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">perform_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_log_button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_log_button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>mdi:coffee<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">15</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">hold_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">16</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>none<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">17</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Choccie Coffee (18g CHO)<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">18</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">icon_height</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>20px<span style="color:#414559">
+</span></span></span></code></pre></div><h4 id="example-of-another-category-for-the-dashboard-button">
+  Example of another category for the Dashboard Button
+  <a class="heading-link" href="#example-of-another-category-for-the-dashboard-button">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>The same script can be used to log other non food items by simply changing the category to whatever you want. In my case I started out recording secondary symptoms:</p>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">show_name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">show_icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>entity-button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Feeling Cold<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">tap_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>perform-action<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">category</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>SYMPTOM<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">item</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Feeling Cold<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>{}<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">perform_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_log_button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_log_button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">icon_height</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>20px<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>mdi:snowflake-alert<span style="color:#414559">
+</span></span></span></code></pre></div><h4 id="the-button-logging-script">
+  The Button Logging script
+  <a class="heading-link" href="#the-button-logging-script">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>This script is called each time a relevant button is clicked. It stores the data in a consistent CSV format for later analysis.</p>
+<p>The notify.<em>file</em> where file is the name of the file sensor created earlier.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">health_log_button</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">alias</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#a6d189">&#34;Health - Log Button&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">sequence</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">choose</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">        </span>- <span style="color:#ca9ee6">conditions</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">            </span>- <span style="color:#ca9ee6">condition</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>template<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">value_template</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#a6d189">&#34;{{ carbs is defined and carbs | int != 0 }}&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">          </span><span style="color:#ca9ee6">sequence</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">            </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">enabled</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">15</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>&gt; <span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">16</span><span><span style="color:#414559">                </span><span style="color:#a6d189">&#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">17</span><span><span style="color:#a6d189">                 {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">18</span><span><span style="color:#a6d189">                 {{category}},{{item}},{{carbs}}&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">19</span><span><span style="color:#414559">            </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.set_value<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">20</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">21</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.food_carbs_consumed_event<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">22</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">23</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">value</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#a6d189">&#34;{{carbs}}&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">24</span><span><span style="color:#414559">            </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>python_script.set_state<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">25</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">26</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>sensor.food_carbs_day_total<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">27</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">state</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#a6d189">&#34;{{ states(&#39;sensor.food_carbs_day_total&#39;) | float(0) + states(&#39;input_number.food_carbs_consumed_event&#39;) | float(0) }}&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">28</span><span><span style="color:#414559">            </span>- <span style="color:#ca9ee6">condition</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>template<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">29</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">value_template</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#a6d189">&#34;{{ liquids is defined and liquids | int != 0 }}&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">30</span><span><span style="color:#414559">            </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">31</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">32</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">33</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">34</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">35</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}}, 
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">36</span><span><span style="color:#a6d189">                 {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">37</span><span><span style="color:#a6d189">                  DRINK,{{item}},{{liquids}}&#34;</span><span style="color:#414559">                
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">38</span><span><span style="color:#414559">            </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>python_script.set_state<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">39</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">40</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>sensor.food_liquids_day_total<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">41</span><span><span style="color:#414559">                </span><span style="color:#ca9ee6">state</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#a6d189">&#34;{{ states(&#39;sensor.food_liquids_day_total&#39;) | float(0) + liquids | float(0) }}&#34;</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">42</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">43</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">44</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">default</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">45</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">sequence</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">46</span><span><span style="color:#414559">          </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">47</span><span><span style="color:#414559">            </span><span style="color:#ca9ee6">enabled</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">48</span><span><span style="color:#414559">            </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">49</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">50</span><span><span style="color:#414559">            </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">51</span><span><span style="color:#414559">              </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">52</span><span><span style="color:#a6d189">              &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">53</span><span><span style="color:#a6d189">               {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">54</span><span><span style="color:#a6d189">                {{category}},{{item}},0&#34;</span><span style="color:#414559">              
+</span></span></span></code></pre></div><p>Essentially this script runs through THEN conditions to determine what to write to the file.</p>
+
+
+
+<div class="goat svg-container ">
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      font-family="Menlo,Lucida Console,monospace"
+      
+        viewBox="0 0 376 489"
+      >
+      <g transform='translate(8,16)'>
+<path d='M 0,0 L 352,0' fill='none' stroke='currentColor'></path>
+<path d='M 0,64 L 352,64' fill='none' stroke='currentColor'></path>
+<path d='M 112,112 L 184,112' fill='none' stroke='currentColor'></path>
+<path d='M 112,144 L 184,144' fill='none' stroke='currentColor'></path>
+<path d='M 0,192 L 360,192' fill='none' stroke='currentColor'></path>
+<path d='M 0,256 L 360,256' fill='none' stroke='currentColor'></path>
+<path d='M 112,304 L 184,304' fill='none' stroke='currentColor'></path>
+<path d='M 112,336 L 184,336' fill='none' stroke='currentColor'></path>
+<path d='M 0,384 L 360,384' fill='none' stroke='currentColor'></path>
+<path d='M 0,464 L 360,464' fill='none' stroke='currentColor'></path>
+<path d='M 0,0 L 0,64' fill='none' stroke='currentColor'></path>
+<path d='M 0,192 L 0,256' fill='none' stroke='currentColor'></path>
+<path d='M 0,384 L 0,464' fill='none' stroke='currentColor'></path>
+<path d='M 112,112 L 112,144' fill='none' stroke='currentColor'></path>
+<path d='M 112,304 L 112,336' fill='none' stroke='currentColor'></path>
+<path d='M 144,80 L 144,96' fill='none' stroke='currentColor'></path>
+<path d='M 144,160 L 144,176' fill='none' stroke='currentColor'></path>
+<path d='M 144,272 L 144,288' fill='none' stroke='currentColor'></path>
+<path d='M 144,352 L 144,368' fill='none' stroke='currentColor'></path>
+<path d='M 184,112 L 184,144' fill='none' stroke='currentColor'></path>
+<path d='M 184,304 L 184,336' fill='none' stroke='currentColor'></path>
+<path d='M 352,0 L 352,64' fill='none' stroke='currentColor'></path>
+<path d='M 360,192 L 360,256' fill='none' stroke='currentColor'></path>
+<path d='M 360,384 L 360,464' fill='none' stroke='currentColor'></path>
+<path d='M 144,72 L 144,80' fill='none' stroke='currentColor'></path>
+<path d='M 144,152 L 144,160' fill='none' stroke='currentColor'></path>
+<path d='M 144,264 L 144,272' fill='none' stroke='currentColor'></path>
+<path d='M 144,344 L 144,352' fill='none' stroke='currentColor'></path>
+<path d='M 144,96 L 144,104' fill='none' stroke='currentColor'></path>
+<polygon points='160.000000,96.000000 148.000000,90.400002 148.000000,101.599998' fill='currentColor' transform='rotate(90.000000, 144.000000, 96.000000)'></polygon>
+<path d='M 144,176 L 144,184' fill='none' stroke='currentColor'></path>
+<polygon points='160.000000,176.000000 148.000000,170.399994 148.000000,181.600006' fill='currentColor' transform='rotate(90.000000, 144.000000, 176.000000)'></polygon>
+<path d='M 144,288 L 144,296' fill='none' stroke='currentColor'></path>
+<polygon points='160.000000,288.000000 148.000000,282.399994 148.000000,293.600006' fill='currentColor' transform='rotate(90.000000, 144.000000, 288.000000)'></polygon>
+<path d='M 144,368 L 144,376' fill='none' stroke='currentColor'></path>
+<polygon points='160.000000,368.000000 148.000000,362.399994 148.000000,373.600006' fill='currentColor' transform='rotate(90.000000, 144.000000, 368.000000)'></polygon>
+<text text-anchor='middle' x='16' y='20' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='16' y='36' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='16' y='52' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='16' y='212' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='16' y='228' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='16' y='244' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='16' y='404' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='16' y='420' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='16' y='436' fill='currentColor' style='font-size:1em'>w</text>
+<text text-anchor='middle' x='16' y='452' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='24' y='20' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='24' y='36' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='24' y='212' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='24' y='228' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='244' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='24' y='404' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='24' y='420' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='24' y='436' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='452' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='32' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='32' y='52' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='32' y='228' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='32' y='244' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='32' y='436' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='32' y='452' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='40' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='40' y='52' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='40' y='212' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='40' y='228' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='40' y='244' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='40' y='404' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='40' y='420' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='40' y='436' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='40' y='452' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='48' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='52' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='48' y='212' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='48' y='228' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='244' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='48' y='404' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='48' y='420' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='48' y='436' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='452' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='56' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='56' y='212' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='56' y='244' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='56' y='404' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='56' y='420' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='56' y='452' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='64' y='20' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='64' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='64' y='52' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='64' y='212' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='64' y='228' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='64' y='244' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='64' y='404' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='64' y='420' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='64' y='436' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='64' y='452' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='72' y='36' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='72' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='72' y='212' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='72' y='228' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='72' y='244' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='72' y='404' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='72' y='420' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='72' y='436' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='72' y='452' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='80' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='80' y='52' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='80' y='212' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='80' y='228' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='80' y='244' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='80' y='404' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='80' y='436' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='80' y='452' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='88' y='420' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='96' y='36' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='96' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='96' y='212' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='96' y='228' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='96' y='244' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='96' y='404' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='96' y='420' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='96' y='436' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='96' y='452' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='104' y='36' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='104' y='52' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='104' y='212' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='104' y='228' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='104' y='244' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='104' y='404' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='104' y='436' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='104' y='452' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='112' y='20' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='112' y='36' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='112' y='228' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='112' y='420' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='112' y='436' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='120' y='20' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='120' y='36' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='120' y='52' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='120' y='212' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='120' y='228' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='120' y='244' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='120' y='404' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='120' y='420' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='120' y='436' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='120' y='452' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='128' y='20' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='128' y='52' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='128' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='128' y='228' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='128' y='244' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='128' y='404' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='128' y='420' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='128' y='436' fill='currentColor' style='font-size:1em'>g</text>
+<text text-anchor='middle' x='128' y='452' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='136' y='20' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='136' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='136' y='132' fill='currentColor' style='font-size:1em'>T</text>
+<text text-anchor='middle' x='136' y='212' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='136' y='228' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='136' y='244' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='136' y='324' fill='currentColor' style='font-size:1em'>T</text>
+<text text-anchor='middle' x='136' y='404' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='136' y='436' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='136' y='452' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='144' y='20' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='144' y='132' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='144' y='212' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='144' y='324' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='144' y='420' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='144' y='436' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='152' y='20' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='152' y='52' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='152' y='132' fill='currentColor' style='font-size:1em'>E</text>
+<text text-anchor='middle' x='152' y='212' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='152' y='228' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='152' y='244' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='152' y='324' fill='currentColor' style='font-size:1em'>E</text>
+<text text-anchor='middle' x='152' y='404' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='152' y='420' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='152' y='436' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='152' y='452' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='160' y='20' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='160' y='52' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='160' y='132' fill='currentColor' style='font-size:1em'>N</text>
+<text text-anchor='middle' x='160' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='160' y='228' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='160' y='244' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='160' y='324' fill='currentColor' style='font-size:1em'>N</text>
+<text text-anchor='middle' x='160' y='404' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='160' y='420' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='160' y='452' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='168' y='52' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='168' y='212' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='168' y='228' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='168' y='244' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='168' y='404' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='168' y='420' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='168' y='436' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='168' y='452' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='176' y='20' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='176' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='176' y='52' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='176' y='244' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='176' y='404' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='176' y='420' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='176' y='436' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='176' y='452' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='184' y='20' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='184' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='184' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='184' y='228' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='184' y='404' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='184' y='420' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='184' y='436' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='192' y='20' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='192' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='192' y='52' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='192' y='212' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='192' y='228' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='192' y='244' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='192' y='404' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='192' y='420' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='192' y='452' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='200' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='200' y='212' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='200' y='228' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='200' y='244' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='200' y='404' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='200' y='436' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='200' y='452' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='208' y='20' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='208' y='228' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='208' y='420' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='208' y='436' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='216' y='36' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='216' y='52' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='216' y='212' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='216' y='244' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='216' y='404' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='216' y='420' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='216' y='436' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='216' y='452' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='224' y='20' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='224' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='224' y='52' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='224' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='224' y='228' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='224' y='244' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='224' y='404' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='224' y='420' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='224' y='436' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='224' y='452' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='232' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='232' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='232' y='212' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='232' y='228' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='232' y='244' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='232' y='404' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='232' y='452' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='240' y='20' fill='currentColor' style='font-size:1em'>z</text>
+<text text-anchor='middle' x='240' y='36' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='240' y='228' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='240' y='420' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='240' y='436' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='248' y='20' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='248' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='248' y='52' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='248' y='212' fill='currentColor' style='font-size:1em'>z</text>
+<text text-anchor='middle' x='248' y='228' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='248' y='244' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='248' y='404' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='248' y='420' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='248' y='436' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='248' y='452' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='256' y='20' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='256' y='36' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='256' y='52' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='256' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='256' y='228' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='256' y='244' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='256' y='404' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='256' y='420' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='256' y='436' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='256' y='452' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='264' y='20' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='264' y='52' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='264' y='212' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='264' y='228' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='264' y='244' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='264' y='404' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='264' y='436' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='264' y='452' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='272' y='20' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='272' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='272' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='272' y='244' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='272' y='420' fill='currentColor' style='font-size:1em'>z</text>
+<text text-anchor='middle' x='272' y='436' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='272' y='452' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='280' y='212' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='280' y='404' fill='currentColor' style='font-size:1em'>z</text>
+<text text-anchor='middle' x='280' y='420' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='280' y='436' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='288' y='52' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='288' y='244' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='288' y='404' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='288' y='420' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='288' y='452' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='296' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='296' y='244' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='296' y='404' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='296' y='420' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='296' y='452' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='304' y='52' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='304' y='244' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='304' y='404' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='304' y='452' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='312' y='52' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='312' y='244' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='312' y='452' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='320' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='320' y='244' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='320' y='404' fill='currentColor' style='font-size:1em'>A</text>
+<text text-anchor='middle' x='320' y='452' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='328' y='52' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='328' y='244' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='328' y='404' fill='currentColor' style='font-size:1em'>N</text>
+<text text-anchor='middle' x='328' y='452' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='336' y='52' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='336' y='244' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='336' y='404' fill='currentColor' style='font-size:1em'>D</text>
+<text text-anchor='middle' x='336' y='452' fill='currentColor' style='font-size:1em'>.</text>
+</g>
+
+    </svg>
+  
+</div>
+<h4 id="what-is-written-to-to-the-file-sensor">
+  What is written to to the file sensor
+  <a class="heading-link" href="#what-is-written-to-to-the-file-sensor">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>This will write an entry in the file you have setup that looks like this:</p>
+<p>2025-04-20,10:30,&lsquo;FOOD&rsquo;,&lsquo;Coffee (15g CHO &amp; 1 tsp Sugar &amp; 400ml Fluids)&rsquo;,&lsquo;15&rsquo;</p>
+<p>2025-04-20,10:30,&lsquo;DRINK&rsquo;,&lsquo;Coffee (15g CHO &amp; 1 tsp Sugar &amp; 400ml Fluids)&rsquo;,&lsquo;400&rsquo;</p>
+<p>And the data split :</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Date</th>
+<th style="text-align:left">Time</th>
+<th style="text-align:left">Category</th>
+<th style="text-align:left">Food Info</th>
+<th style="text-align:left">Carbs / Fluids</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2025-04-20</td>
+<td style="text-align:left">10:30</td>
+<td style="text-align:left">&lsquo;FOOD&rsquo;</td>
+<td style="text-align:left">&lsquo;Coffee (15g CHO &amp;  1 tsp Sugar &amp;  400ml)&rsquo;</td>
+<td style="text-align:left">&lsquo;15&rsquo;</td>
+</tr>
+<tr>
+<td style="text-align:left">2025-04-20</td>
+<td style="text-align:left">10:30</td>
+<td style="text-align:left">&lsquo;DRINK&rsquo;</td>
+<td style="text-align:left">&lsquo;Coffee (15g CHO &amp;  1 tsp Sugar &amp;  400ml)&rsquo;</td>
+<td style="text-align:left">&lsquo;400&rsquo;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="symptom-severity-logging">
+  Symptom Severity Logging
+  <a class="heading-link" href="#symptom-severity-logging">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The Symptom Severity section consists of five main elements :</p>
+<ul>
+<li><a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">input_number Helper</a> required for the dashboard card to store the set value</li>
+<li>A Dashboard card to allow the values to be set</li>
+<li>A script to store severity values from the input_number helper to the  datafile</li>
+<li>An optional graph plotting historic data store in the input_number helper</li>
+</ul>
+<p><img src="/health_data_tracker_visualisation/severity_logging.jpg" alt="Severity Logging"></p>
+<h4 id="symptom-severity-logging---the-input_number-helper">
+  Symptom Severity Logging - The input_number helper
+  <a class="heading-link" href="#symptom-severity-logging---the-input_number-helper">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>The <a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">input_number Helper</a> needs to be created in Home Assistant to allow this value to be set in the dashboard.</p>
+<p><code>Settings -&gt; Devices &amp; Services -&gt; Helpers -&gt; + Create Helper -&gt; Number</code></p>
+<p>Give your helper a name, and under advanced select whether you want to use a slider or input field (either works with the script).</p>
+<h4 id="the-lovelace-dashboard-symptom-severity-logging-input-and-button-code">
+  The Lovelace Dashboard Symptom Severity Logging Input and Button code
+  <a class="heading-link" href="#the-lovelace-dashboard-symptom-severity-logging-input-and-button-code">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>horizontal-stack<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">cards</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">features</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">      </span>- <span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>numeric-input<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">style</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>buttons<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>tile<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_headache_severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">vertical</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">false</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Headache Severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">features_position</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>bottom<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">show_name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">show_icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#ca9ee6;font-style:italic">true</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>button<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">tap_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">15</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>perform-action<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">16</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>{}<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">17</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">perform_action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_headache_severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">18</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_headache_severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">19</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Update Headache<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">20</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>mdi:head-alert-outline<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">21</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">icon_height</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>20px<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">22</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">view_layout</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">23</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">position</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>sidebar<span style="color:#414559">
+</span></span></span></code></pre></div><p><img src="/health_data_tracker_visualisation/input_helper_severity_v2.jpg" alt="input_helper"></p>
+<p>I&rsquo;m using the <a href="https://github.com/RomRider/apexcharts-card"  class="external-link" target="_blank" rel="noopener">Apex Charts addon</a> for plots, it has a lot more flexibility than the normal Home Assistant graph card.</p>
+<h4 id="symptom-severity-logging---the-script">
+  Symptom Severity Logging - The script.
+  <a class="heading-link" href="#symptom-severity-logging---the-script">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>This script adds the data from the input_number helper and stores the data in the datafile in the correct CSV format.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#a6d189">&#34;health_headache_severity&#34;</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">alias</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Health - Headache Severity<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">sequence</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#a6d189">                 {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#a6d189">                 &#39;HEADACHE&#39;,&#39;Severity&#39;,
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#a6d189">                 &#39;{{ states(&#39;input_number.health_headache_severity&#39;) }}&#39;&#34;</span><span style="color:#414559">                
+</span></span></span></code></pre></div><h3 id="recording-sleep-information">
+  Recording Sleep Information
+  <a class="heading-link" href="#recording-sleep-information">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>(Recording multiple data items with a single button click)</p>
+<p>If you have a smart watch with an integration for Home Assistant, this could be automatic. My Galaxy smartwatch doesn&rsquo;t have an integration, so I logged sleep data manually.</p>
+<h4 id="the-dashboard-button-and-input-fields">
+  The Dashboard button and input fields
+  <a class="heading-link" href="#the-dashboard-button-and-input-fields">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p><a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">input_number Helpers</a> need to be created for each item you wish to record. For my example I was recording the sleep data from my smartwatch because there was no Home Assistant integration for it:</p>
+<ul>
+<li>Restless Sleep</li>
+<li>Light Sleep</li>
+<li>Motionless Sleep</li>
+</ul>
+<p><img src="/health_data_tracker_visualisation/input_helpers_sleep.jpg" alt="sleep_record"></p>
+<p>Using the script below, the data from the <a href="https://www.home-assistant.io/integrations/input_number/"  class="external-link" target="_blank" rel="noopener">input_number Helpers</a> helpers will be written to the file sensor.</p>
+<h4 id="the-lovelace-dashboard-card">
+  The Lovelace Dashboard Card
+  <a class="heading-link" href="#the-lovelace-dashboard-card">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#ca9ee6">type</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>entities<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559"></span><span style="color:#ca9ee6">entities</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_sleep_restless<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Restless (minutes)<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_sleep_light<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Light (minutes)<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>input_number.health_sleep_motionless<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Motionless (Minutes)<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">  </span>- <span style="color:#ca9ee6">entity</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>script.health_sleep_record<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">icon</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>mdi:sleep<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">secondary_info</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>last-changed<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#414559">    </span><span style="color:#ca9ee6">name</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Save Record<span style="color:#414559">
+</span></span></span></code></pre></div><h4 id="the-script-for-sleep-data-capture">
+  The script for sleep data capture
+  <a class="heading-link" href="#the-script-for-sleep-data-capture">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#ef9f76;background-color:#303446;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 1</span><span><span style="color:#a6d189">&#34;health_sleep_record&#34;</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 2</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">alias</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>Health - Sleep Record<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 3</span><span><span style="color:#414559">  </span><span style="color:#ca9ee6">sequence</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 4</span><span><span style="color:#414559">    
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 5</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 6</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 7</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 8</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b"> 9</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">10</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">11</span><span><span style="color:#a6d189">                 {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">12</span><span><span style="color:#a6d189">                 &#39;SLEEP&#39;,&#39;RESTLESS&#39;, 
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">13</span><span><span style="color:#a6d189">                 &#39;{{ states(&#39;input_number.health_sleep_restless&#39;) }}&#39;&#34;</span><span style="color:#414559">                
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">14</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">15</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">16</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">17</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">18</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">19</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span><span style="color:#c6d0f5">&gt;</span><span style="color:#a6d189">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">20</span><span><span style="color:#a6d189">                &#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">21</span><span><span style="color:#a6d189">                 {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">22</span><span><span style="color:#a6d189">                 &#39;SLEEP&#39;,&#39;LIGHT&#39;, 
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">23</span><span><span style="color:#a6d189">                 &#39;{{ states(&#39;input_number.health_sleep_light&#39;) }}&#39;&#34;</span><span style="color:#414559">                
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">24</span><span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">25</span><span><span style="color:#414559">    </span>- <span style="color:#ca9ee6">action</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.send_message<span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">26</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">target</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">27</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">entity_id</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>notify.file<span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">28</span><span><span style="color:#414559">      </span><span style="color:#ca9ee6">data</span><span style="color:#c6d0f5">:</span><span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">29</span><span><span style="color:#414559">        </span><span style="color:#ca9ee6">message</span><span style="color:#c6d0f5">:</span><span style="color:#414559"> </span>&gt; <span style="color:#414559">
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">30</span><span><span style="color:#414559">                </span><span style="color:#a6d189">&#34;{{ now().strftime(&#39;%Y-%m-%d&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">31</span><span><span style="color:#a6d189">                 {{ now().strftime(&#39;%H:%M&#39;)}},
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">32</span><span><span style="color:#a6d189">                 &#39;SLEEP&#39;,&#39;MOTIONLESS&#39;, 
+</span></span></span><span style="display:flex; background-color:#444858"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#774f3b">33</span><span><span style="color:#a6d189">                 &#39;{{ states(&#39;input_number.health_sleep_motionless&#39;) }}&#39;&#34;</span><span style="color:#414559">
+</span></span></span></code></pre></div><p>And that&rsquo;s it! 12,000 button clicks later and I&rsquo;m cured !</p>
+<p>If you want to find out more about my journey to cure my migraines, read on!</p>
+<h3>Read more about my journey here</h3>
+<ul>
+<li><a href="/projects/no-more-migraines-what-i-stopped-eating/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-1-the-beginning/" >Part 1 - No More Migraines, what I stopped eating</a></li>
+<li>Part 2 - Using Home Assistant to Track Symptoms &amp; Cure Migraines</li>
+<li><a href="/projects/homeassistant-health-dashboard-pt3/how-i-used-home-assistant-to-track-symptoms-and-cure-daily-migraines-part-3-visualising-data/" >Part 3 - Visualising the data for Food and Migraines</a></li>
+<li><a href="http://rodders.me/health_data_tracker_visualisation/vertical_food_timeline.html"  class="external-link" target="_blank" rel="noopener">A Visualisation of My Migraines and Food / Ingredients Consumed</a></li>
+</ul>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Rodders 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
